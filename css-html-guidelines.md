@@ -111,14 +111,14 @@ We prefer to do:
 ```
 
 And:
-<pre>
+```
 .results
   +make-row()
 .item
   +make-xs-column(12)
   +make-sm-column(6)
   +make-md-column(4)
-</pre>
+```
 
 You can see the <a href="https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_grid.scss" title="Mixins used in the grid system" target="_blank">mixins used in the grid system</a> also in Github.
 
@@ -131,7 +131,7 @@ We organize our SASS code in partials that we later import in a single file call
 
 These partials are organized in folders. Take a look at this example:
 
-<pre>
+```
 /stylesheets
 
   /utils
@@ -152,7 +152,7 @@ These partials are organized in folders. Take a look at this example:
 
   application.sass
 
-</pre>
+```
 
 
 The <i>/utils</i> folder is where we store our helpers, mixins and keyframes - coding tools that we use in our HTML and SASS files. We also have a file called <i>_variables.sass</i> that contains generic variables like color or typography definitions. However, page- or module-specific variables are not stored here but inside the corresponding layout or module file (you can find an example a couple of paragraphs from here).
@@ -165,7 +165,7 @@ Let's say that we have to develop a marketplace with a results page, where each 
 
 We would create a <i>_items.sass</i> file inside <i>/modules</i> and we would put there all the styles that apply to the items.
 
-<pre>
+```
 // modules/_item.sass
 
 .item
@@ -177,17 +177,17 @@ We would create a <i>_items.sass</i> file inside <i>/modules</i> and we would pu
 
   .title
     color: $item-primary-color
-</pre>
+```
 
 Now consider that these items have to look differently in the Homepage than in the Results view. In that case, we would create a <i>_home.sass</i> file inside <i>/layouts</i> with the following styles:
 
-<pre>
+```
 // modules/_home.sass
 
 .home
   .item
     background-color: inherit
-</pre>
+```
 
 <h5>NAMING CONVENTIONS</h5>
 
@@ -195,7 +195,7 @@ In order to name our elements and classes, we follow the modular approach explai
 
 Finally, in order to differentiate keyframes (animations) from classes or IDs, we name them without dashes or underscores:
 
-<pre>
+```
 // Keyframes
 
 @keyframes fadeIn
@@ -209,7 +209,7 @@ Finally, in order to differentiate keyframes (animations) from classes or IDs, w
     opacity: 1
   100%
     opacity: 0
-</pre>
+```
 
 <h5>OTHER GUIDELINES</h5>
 
