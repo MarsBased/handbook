@@ -8,8 +8,6 @@ Things should not only work well. They can also look good.
 
 Frontend developers, this one is for you.
 
-<!--more-->
-
 ###Workflows###
 
 Before we delve into the technologies we use, we will introduce our working methodologies here:
@@ -89,26 +87,28 @@ We tend to use always the last stable version of Bootstrap, in their SASS distri
 Finally, Bootstrap has a very powerful grid system. It can be used by simply including classes in the HTML markup, such as <i>.row</i> or <i>.col-xs-6</i>. However, instead of using those classes to define rows and columns, we prefer to use the Bootstrap mixins. They also allow you to define rows and columns, but you can do it directly in the SASS files, without dirtying the HTML code. Following this approach, we can completely separate the markup of a website from its styles and we make the application easier to maintain.
 
 In other words, instead of doing:
-<pre>
- ```<div class="container">
+
+```
+<div class="container">
   <div class="results row">
     <div class="item col-xs-12 col-sm-6 col-md-4">
       The Martian
     </div>
   </div>
- </div>```
-</pre>
+ </div>
+```
 
 We prefer to do:
-<pre>
- ```<div class="container">
+
+```
+<div class="container">
   <div class="results">
     <div class="item">
       The Martian
     </div>
   </div>
- </div>```
-</pre>
+ </div>
+```
 
 And:
 <pre>
