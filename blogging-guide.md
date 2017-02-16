@@ -82,7 +82,7 @@ First of all, you should take into account your timezone. Say, if you’re an of
 
 According to [Buffer](http://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
 
-Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Google Analytics"){:target="_blank"}, [Medium](http://medium.com "Medium") and many Wordpress plugins are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
+Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Google Analytics"), [Medium](http://medium.com "Medium") and many Wordpress plugins are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
 **Key question:** When are your target readers most prone to devote some time to read you?
 
 ###Produce content worth sharing
@@ -105,7 +105,7 @@ One thing that works very well for me, when I am looking for new ideas, is to re
 
 For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s [“How we hire”](http://micho.biz/post/117083319566/how-we-hire "Pablo Villalba Blog") and, in turn, inspired me to include it in our Article Ideas board on Trello.
 
-![Our blog ideas on Trello](https://marsbased.com/images/blog/post22a.png "Our blog ideas on Trello")
+![Our blog ideas on Trello](https://marsbased.com/images/blog/post22a-b7ff3a53.png "Our blog ideas on Trello")
 _We've got a Trello board for our blog posts._
 
 These posts were inspirational: not only do they make me want to write something similar for MarsBased, but they might also inspire us to adopt some new tools, strategies or techniques in our daily routines.
