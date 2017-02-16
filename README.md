@@ -1,5 +1,5 @@
-# reference
-Here you will find some of our guides &amp; interesting stuff you should read.
+# The MarsBased reference guides
+Here you will find some of our guides &amp; interesting stuff you should read. Feel free to use them anywhere, but we'd appreciate that you linked us back in appreciation.
 
 For now, we have the following resources available:
 
