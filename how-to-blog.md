@@ -1,10 +1,12 @@
+# How to blog
+
 At MarsBased, we are always learning new stuff. Running your own company means being constantly in the loop of learning things you could have never predicted you would ever need. Among other stuff, we have learnt how to run a blog.
 
 Here's a thing or two we have learnt along the way.
 
 After over a year of blogging for MarsBased and other sites, such as [Startup Grind](http://www.startupgrind.com/barcelona "Startup Grind Barcelona"), [Barcelona Ventures](http://barcelonaventures.com/blog/ "Barcelona Ventures blog") or [my personal Medium](https://medium.com/@lexrodba "@Lexrodba Medium"), I've learnt a thing or two that I wanted to share with all of you.
 
-###Choose a good title
+### Choose a good title
 
 Let's start off from the very beginning: the title. Nowadays titles do not only have to be understandable by humans, but by robots too. And while we don't refer to robots like [this one](http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/2/21/1392977241047/Robot-from-The-Terminator-010.jpg "Robot") or [this one](http://img4.wikia.nocookie.net/__cb20141005032524/deadliestfiction/images/e/eb/Optimus_Prime_Generation_1.jpg "Robot"), it's always a good idea to let Google bots and the rest of web crawlers "understand" that title.
 
@@ -14,7 +16,7 @@ Titles should be meaningful, just like the first sentence of the post. [Readers 
 
 Last, but not least, titles should include your keywords. If you're blogging about gadgets, include the words *wearables*, *tech*, *smartphones*, *gadgets*, etc. This will help SEO and thus increase your blog's visibility. Ideally, post titles [shouldn't exceed 60 characters](http://www.orbitmedia.com/blog/ideal-blog-post-length/ "Marketing tips").
 
-###Catch your reader's attention
+### Catch your reader's attention
 
 The first sentences of a post are crucial. As we stated before, they really do count to make a good impression and make clear what is the post about. They usually are the ones before the "Read more" button.
 
@@ -22,7 +24,7 @@ Moreover, the first sentences of a post count a lot for SEO, just like titles do
 
 However, just like titles, the first sentences must be an open invite to click on the post and continue reading, while clickbait is strongly discouraged.
 
-###Content
+### Content
 
 Nowadays, the definition of good content is, as Guy Kawasaki put it, "[content worth sharing](https://www.startupgrind.com/events/details/startup-grind-london-hosted-guy-kawasaki-canvaex-apple#/ "Startup Grind hosts Guy Kawasaki")".
 
@@ -32,7 +34,7 @@ As a result, your company name will be spread throughout the web if you do it ri
 
 One interesting tip: if you talk about companies or individuals in your post, it's a good idea to link to their website. For the extra points, you can mention them in the social networks and maybe earn some extra retweets/likes/shares.
 
-###Link
+### Link
 
 Back in the early days of the Internet, backlinking was a good idea. Back then, blogs and sites alike paid one another to have a link to their site, whatever the content was, just to pass onto one another visitors and page rank.
 
@@ -48,7 +50,7 @@ It is likewise important to add a good title attribute to your link, to help cra
 
 One of our favourite bloggers, [John Rampton](http://www.johnrampton.com/ "John Rampton website"), who writes kickass posts for [Entrepreneur.com](http://www.entrepreneur.com/ "Entrepreneur-com") and [Forbes](http://www.forbes.com/ "Forbes") told us to use the first three links of a blog post to link your previous posts when possible. We didn't find it suitable for this post, but most of the times it can fit in pretty well and will encourage newcomers to your blog to read your previous articles.
 
-###Images
+### Images
 
 Each blog post needs to have at least one image. Do not skip this part, ever.
 
@@ -60,13 +62,13 @@ On the tech side, images need to have their *alt* and *title* attributes being a
 
     <img src="http://route.to/image" alt="A group shot of the MarsBased team" title="A group shot of the MarsBased team">
 
-###Readability
+### Readability
 
 Use subtitles to distribute the reading rhythm along the post. One long post with no subtitles is harder to follow; whereas a well-structured blog post with evenly-divided sub-sections will help to maintain the reader's focus.
 
 Subtitles, when correctly marked using `<h2>` and `<h3>` tags, help crawlers index the page's content much better.
 
-###Style
+### Style
 
 The perfect blog post length is thought to be [around 1200 words](http://www.bitrebels.com/social/makes-perfect-blog-post-infographic/ "Infographic about blogging").
 
@@ -76,7 +78,7 @@ In this last case, remember what was the last blog post you read and thought "I'
 
 It is a good idea to re-read the post 3 o 4 times prior to publishing, and it's even more advisable to ask your team or another person to read it. What's obvious to you, it might not be for everyone. A concept might need further explanation, some typos go unnoticed by spell-checkers (*your* vs. *you're*, *then* vs *than*) or you might have left a sentence unfinished (these things happen, but at MarsBased we alwa
 
-###Call to action
+### Call to action
 
 Finally, the post should have a *raison d'être*: it can be an informative post, a how-to guide, an opinion to give food for thought, or an invitation to the new beta version of your product.
 
