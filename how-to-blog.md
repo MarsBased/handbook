@@ -14,6 +14,8 @@ Therefore, if you're writing a guide on how to craft good blog posts you might w
 
 Titles should be meaningful, just like the first sentence of the post. [Readers absorb the first and last three words of a sentence](https://blog.bufferapp.com/headline-formulas?utm_content=buffer144c3&utm_medium=social&utm_source=marsbased.com&utm_campaign=marsbased "Buffer blog"), so make them count. Also, avoid clickbait titles ("*I Unboxed My iPhone and I Couldn't Believe What Happened Next*") where possible. They're not worth it: they might earn you a thousand followers today, but all will be gone tomorrow if you don't deliver what's promised.
 
+Once you've got your title, make sure you capitalise accordingly by using [Title Capitalization](http://titlecapitalization.com/), selecting the Chicago Style Manual.
+
 Last, but not least, titles should include your keywords. If you're blogging about gadgets, include the words *wearables*, *tech*, *smartphones*, *gadgets*, etc. This will help SEO and thus increase your blog's visibility. Ideally, post titles [shouldn't exceed 60 characters](http://www.orbitmedia.com/blog/ideal-blog-post-length/ "Marketing tips").
 
 ### Catch your reader's attention
@@ -72,7 +74,7 @@ Subtitles, when correctly marked using `<h2>` and `<h3>` tags, help crawlers ind
 
 The perfect blog post length is thought to be [around 1200 words](http://www.bitrebels.com/social/makes-perfect-blog-post-infographic/ "Infographic about blogging").
 
-It is very important that you double-check your post thoroughly for typos, broken links, unformatted parts or unreferenced quotes. Mediocre or poorly processed posts seldom get shared.
+It is very important that you double-check your post thoroughly for typos, broken links, unformatted parts or unreferenced quotes. Mediocre or poorly processed posts seldom get shared. We use [Grammarly](https://app.grammarly.com/) for this.
 
 In this last case, remember what was the last blog post you read and thought "I'm going to share this one". Why did you do it? Was it the pictures? Was it funny? Was it because someone important wrote it? No. Most of the time you share it because you feel like more people should read it, and you either send it to specific people or you spread it on the web by sharing it through Twitter, Facebook or your social networks of choice.
 
