@@ -64,12 +64,10 @@ To learn more about Robots.txt and everything involved, check <a href="https://s
 
 Our sitemaps, generically, will be like this one:
 
-<i>
-   User-agent: *
-</i><br/>
-<i>
-   Sitemap: https://www.marsbased.com/sitemap.xml
-</i>
+```
+   User-agent: *
+   Sitemap: https://www.marsbased.com/sitemap.xml
+```
 
 These two lines mean that all crawlers are allowed (*) and the address of the sitemap file. We will generally not disallow access to assets unless we see this affects in performance. In the past, access to CSS and JS files was blocked, but not anymore, and Google strongly discourages it.
 
