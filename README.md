@@ -8,4 +8,8 @@ For now, we have the following resources available:
 1. [How to Write a Damn Good Blog Post](https://github.com/MarsBased/reference/blob/master/how-to-blog.md)
 1. [Our SEO Guidelines For New Projects](https://github.com/MarsBased/reference/blob/master/seo-guidelines.md)
 
+Other useful resources:
+
+1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity)
+
 Feel free to drop by the [MarsBased blog](https://marsbased.com/blog) to keep up with all our updates!
