@@ -8,11 +8,12 @@ Things should not only work well. They can also look good.
 
 Frontend developers, this one is for you.
 
-###Workflows###
+# Workflows
 
 Before we delve into the technologies we use, we will introduce our working methodologies here:
 
-<h4>Task management</h4>
+## Task management
+
 <a href="www.trello.com" title="Trello" target="_blank">Trello</a> is our tool of choice for managing tasks and weekly sprints.
 
 We have one board for each project. Inside the project's board, you'll find columns for the present and coming weeks, along with <i>Done, Review Pending, Bugs, Features,</i> and <i>Backlog</i>. In projects that have been already rolled out, you will see some columns for the deploys management, too.
@@ -23,7 +24,7 @@ The Project Manager will review the implementations and move the card to <i>Done
 
 The weekly sprints are defined on Mondays, in an online meeting between you and the Project Manager. However, don't hesitate to get in touch with the Project Manager at any time, if you need to discuss anything or have any question.
 
-<h4>Commits & Branches</h4>
+## Commits & Branches
 
 We work with both <a href="github.com" title="Github" target="_blank">Github</a> and <a href="bitbucket.org" title="Bitbucket" target="_blank">Bitbucket</a> and we always have separate repositories for the layout implementation and the development, so you don't have to worry about breaking stuff or learning Ruby on Rails. In other words, you will have to deal with HTML, CSS, and JS, only.
 
@@ -43,7 +44,7 @@ If you have changed the HTML and you have replaced some images, you will write:
 
 You might want to include other indications like <i>JS, README, CONFIG,</i> etc. This way, our developers will be able to identify very quickly what they have to change in the development to replicate our work.
 
-<h4>Testing</h4>
+## Testing
 
 Quality is one of the founding values of MarsBased. A while back ago, we defined quality as "<i>meeting and exceeding clients expectations while maintaining our own methodologies</i>". For that reason, exhaustive and successful testing is critical in our day to day.
 
@@ -56,9 +57,9 @@ Our testing workflow is plain and simple:
 
 Keep this in mind all the time: an excellent developer is not just someone who creates good code, but is also a good tester.
 
-###Tech Stack and Guidelines###
+# Tech Stack and Guidelines
 
-<h4>Middleman</h4>
+## Middleman
 
 <a href="middlemanapp.com" title="Middleman" target="_blank">Middleman</a> is a static websites generator built with Ruby on Rails. It integrates all the state-of-the-art frameworks and tools for frontend development (like SASS, Modernizr, Compass, Autoprefixer...) and allows you to use templating languages such as ERB or Liquid.
 
@@ -66,7 +67,7 @@ All our new projects are developed using Middleman, but before that, we used <a 
 
 In the project's README file, you will find instructions about how to install the required packages and run any of those tools.
 
-<h5>MIDDLEMAN TOOLS</h5>
+### MIDDLEMAN TOOLS
 
 * Middleman lets you organize your code in layouts and partials. Do it wisely, we don't want to have to deal with tons of files. Use partials only for stuff that will appear in several pages, or to split the code of very long pages, but always remember that <i>simpler is better</i>.
 * We have developed our own Middleman template called MarsMan. We use it as a model to create new projects. It contains all the folders, SASS mixins, frameworks and libraries that we use in our projects. Marsman is an open source project, so you can use it for your personal stuff or even send it to other people. You can download the code from <a href="https://github.com/MarsBased/marsman-template" title="MarsBased Github profile" target="_blank">our Github profile</a>.
@@ -78,7 +79,7 @@ You can find more information about Middleman and Jekyll in their official websi
 
 Also, if you never had the chance to use ERB, you can find some examples in <a href="http://benfrain.com/understanding-middleman-the-static-site-generator-for-faster-prototyping/" title="Middleman" target="_blank">this blog post</a>.
 
-<h4>Bootstrap</h4>
+## Bootstrap
 
 Most of our works are based on <a href="http://getbootstrap.com/" title="Bootstrap" target="_blank">Bootstrap</a>. It's a very well-known markup framework and it offers good compatibility with browsers and other components. Also, our developers are familiar with it and can reuse a lot of code.
 
@@ -122,11 +123,11 @@ And:
 
 You can see the <a href="https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/mixins/_grid.scss" title="Mixins used in the grid system" target="_blank">mixins used in the grid system</a> also in Github.
 
-<h4>SASS</h4>
+## SASS
 
 SASS is a CSS preprocessor that lets you use variables, functions, operations, and other useful stuff inside your CSS stylesheets. You can learn how to use SASS in their <a href="http://sass-lang.com/" title="SASS official website" target="_blank">official website</a>. We're sure you'll find it very easy!
 
-<h5>PARTIALS</h5>
+### PARTIALS
 We organize our SASS code in partials that we later import in a single file called <i>application.sass</i>.
 
 These partials are organized in folders. Take a look at this example:
@@ -189,7 +190,7 @@ Now consider that these items have to look differently in the Homepage than in t
     background-color: inherit
 ```
 
-<h5>NAMING CONVENTIONS</h5>
+### NAMING CONVENTIONS
 
 In order to name our elements and classes, we follow the modular approach explained in <a href="http://thesassway.com/advanced/modular-css-naming-conventions" title="Modular CSS naming conventions" target="_blank">this article</a> from <a href="http://thesassway.com/" title="The SASS Way" target="_blank">The SASS Way</a>. However, we don't apply the <i>parent-child</i> rules, as we prefer to use nesting for such cases. In any case, if you ever have to define parent-child relations, use a dash (-) as a separator instead of an underscore (_) or any other symbol.
 
@@ -211,13 +212,13 @@ Finally, in order to differentiate keyframes (animations) from classes or IDs, w
     opacity: 0
 ```
 
-<h5>OTHER GUIDELINES</h5>
+### OTHER GUIDELINES
 
 * You can create your own mixins, but do it only when they will save you a lot of time, without adding too much complexity to the project. We don't want to increase the application complexity because other less experienced coders might have to work on it at some point.
 * Nesting is one of the most powerful tools of SASS. However, it can be counterproductive if not used wisely. We follow the <a href="http://thesassway.com/beginner/the-inception-rule" title="The Inception Rule" target="_blank">Inception Rule</a> defined in The SASS Way. It says that you can't go more than four levels deep. It also explains how to organize the different selectors and properties in site-wide rules, page specific rules and objects.
 * In projects where we don't have to support IE8 or lower, we use REM units to define font sizes, margins, heights, widths, etc. REM units work in a similar way than EMs, but they are proportional to the HTML tag <i>font-size</i>. Bootstrap defines the HTML <i>font-size</i> to 10px, so using REM units is very easy: 1rem will always be equal to 10px, 1.4rem will be equal to 14px, 0.8rem will be equal to 8px, and so on.
 
-<h4>Autoprefixer, Modernizr, and Compass</h4>
+## Autoprefixer, Modernizr, and Compass
 
 <a href="https://github.com/middleman/middleman-autoprefixer" title="Autoprefixer" target="_blank">Autoprefixer</a> is a plugin that parses the CSS files and adds browser specific prefixes to the properties that require them. This means that you don't have to worry about adding prefixes such as -webkit-, -moz- or -ms- because Autoprefixer does it for you.
 
@@ -225,9 +226,10 @@ Finally, in order to differentiate keyframes (animations) from classes or IDs, w
 
 <a href="http://compass-style.org/" title="Compass" target="_blank">Compass</a> is another CSS framework included in our Middleman projects. We prefer to use Autoprefixer to add browser specific prefixes, but you might want to use Compass for other things, like its vast library of reliable mixins.
 
-<h4>Images and icons</h4>
+## Images and icons
 
-<h5>VECTORIAL IMAGES</h5>
+### VECTORIAL IMAGES
+
 For logos, icons and small images we prefer to use SVG files instead of PNGs or JPGs because SVGs are made from vectors and can be resized without losing quality.
 
 To include SVG files in the HTML code, drop the SVG files in the <i>shapes</i> directory. All SVG files are formatted in XML. Make sure that they don't have more data than the necessary (some apps like Adobe Illustrator include irrelevant information inside the SVG files that can produce errors).
@@ -258,11 +260,11 @@ Now you can include any SVG image in your HTML by simply calling it. Use this ma
 </svg>
 ```
 
-<h5>BOOTSTRAP GLYPHICONS AND FONT AWESOME</h5>
+### BOOTSTRAP GLYPHICONS AND FONT AWESOME
 
 If the design doesn't come with its own icons, we like to use the ones provided by Bootstrap and Font Awesome. If you don't find any suitable icon, try looking in websites like <a href="iconfinder.com" title="Iconfinder.com" target="_blank">iconfinder.com</a>.
 
-<h5>IMAGE HELPERS</h5>
+### IMAGE HELPERS
 
 In some cases, we will have to deal with normal images like PNGs or JPGs. In that case, we use the image-url helper in the CSS files to point to files stored in the images folder:
 
@@ -279,7 +281,7 @@ In the HTML markup, however, we use another helper called <i>image_tag</i>:
 
 You can find more examples of the <i>image\_tag</i> helper in the <a href="http://api.rubyonrails.org/classes/ActionView/Helpers/AssetTagHelper.html#method-i-image_tag" title="Ruby on Rails API documentation" target="_blank">Ruby on Rails API documentation</a>.
 
-<h4>JS libraries</h4>
+## JS libraries
 
 Not all the JS libraries work well with Rails and AngularJS. For that reason, and also because we like to standardize the code of our projects, we have created a list of preferred libraries. If you ever have to use another library, consult our Development Team first.
 
@@ -306,9 +308,9 @@ Not all the JS libraries work well with Rails and AngularJS. For that reason, an
 * <b>Image galleries:</b> Slick.js inside a modal.
 * <b>Chat mentions:</b> AT.js.
 
-<h4>Code spacing and formatting guidelines</h4>
+## Code spacing and formatting guidelines
 
-<h5>80 CHARACTERS PER LINE</h5>
+### 80 CHARACTERS PER LINE
 
 It's not always possible, but in order to improve code legibility we try to make lines no longer than 80 characters (this applies to HTML, JS, and SASS too).
 
@@ -323,7 +325,7 @@ If you have to split an HTML tag, do it between attributes and indent the second
 
 Advanced text editors like Sublime Text allow you to add a ruler on your screen that mark where the 80 characters per line are reached.
 
-<h5>HTML FILES</h5>
+### HTML FILES
 
 We don’t include any extra line-breaks between <i>divs</i> and other elements. Also, we avoid using HTML comments unless they are completely necessary to explain how something is supposed to work.
 
@@ -351,7 +353,7 @@ We prefer to do:
 
 <b>Bonus:</b> there is a Sublime Text plugin called <a href="https://github.com/SublimeText/TrailingSpaces" title="TrailingSpaces" target="_blank">TrailingSpaces</a> that detects unnecessary blank spaces in your code and deletes them all at once with a keyboard shortcut!
 
-<h5>SASS FILES</h5>
+### SASS FILES
 
 If a CSS selector doesn’t have any property inside it, we leave no space between the selector and the selector that comes next:
 
@@ -371,7 +373,7 @@ padding: 10px 20px
 border: 1px solid purple
 ```
 
-<h5>SEO</h5>
+### SEO
 
 We follow the SEO best practices of naming all the elements with HTML5 semantic tags, when possible, like <i>header, aside, section, nav, footer, article,</i> etc.
 
@@ -381,7 +383,8 @@ Finally, we always add the <i>title</i> attribute to all the links and <i>title<
 
 Have a look at <a href="https://developer.mozilla.org/en/docs/Sections_and_Outlines_of_an_HTML5_document" title="HTML5 elements" target="_blank">this website</a> for a complete guide of HTML5 elements.
 
-<h5>LINKS BETWEEN PAGES</h5>
+### LINKS BETWEEN PAGES
+
 Our layouts are used by our programmers to understand how they have to develop an application. However, our clients use them too to review the status of a project and to show the user interface to other people like investors or partners.
 
 For that reason, we create navigational layouts linking all the pages and our projects can be used as a normal application (although the content is completely static). For example, if someone clicks the “Sign up” link of the navigation bar, we take him to the Sign Up page, where he will be able to check how it looks like.
