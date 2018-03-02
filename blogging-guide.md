@@ -10,7 +10,7 @@ Blogging is nowadays a very important element in growing your company: it is one
 
 In this second part, we’re going to describe how to choose a blogging strategy for your company.
 
-###Choose a goal
+# Choose a goal
 
 First and foremost, one must identify what is the purpose of his/her blog. A blog can be a good tool to publish news about your company, how-to guides, inspirational stories, funny viral content or almost whatever you like.
 
@@ -26,7 +26,7 @@ And that brings us onto the next section.
 
 **Key question:** what do you want your blog to be known for?
 
-###Identify your target and blog for it###
+# Identify your target and blog for it
 
 Once you’ve selected the purpose of your blog, you need to choose the audience. Who will read your blog?
 
@@ -44,7 +44,7 @@ As for the language, technical posts might have technicisms, but it does not hur
 
 **Key question**: What readers do you want to engage with through your blog and what do you need of them?
 
-###Define your topics###
+# Define your topics
 
 Once you have chosen your goal and your audience, you must identify what will be interesting to your target readers.
 
@@ -58,7 +58,7 @@ The bottom line here is that choosing the right topics attracts like-minded peop
 
 **Key question:** What field(s) is your company most proficient in?
 
-###Measure your tempo###
+# Measure your tempo 
 
 It is a common mistake to start writing a blog with nothing to publish. Most people build up a few posts before launching the blog so that they can publish stacked posts for the first weeks, without having to worry about running out of content.
 
@@ -74,7 +74,7 @@ There are a few variations of the sentence “Content is king”. We’d like to
 
 **Key question:** How often can you afford making your blog your first priority?
 
-###Pick a date & time
+# Pick a date & time
 
 Once you have defined your blog frequency, you need to select what days & times are better for your readers.
 
@@ -85,7 +85,7 @@ According to [Buffer](http://buffer.com "Buffer") and other social media gurus, 
 Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Google Analytics"), [Medium](http://medium.com "Medium") and many Wordpress plugins are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
 **Key question:** When are your target readers most prone to devote some time to read you?
 
-###Produce content worth sharing
+# Produce content worth sharing
 
 We don’t really know a lot about how to monetise a blog, so this tip goes to bloggers that want to get exposure organically.
 
@@ -99,7 +99,7 @@ We can also learn a lot from Instagram, where famous Instagrammers ask to “tag
 
 **Key question:** if you read this blog entry somewhere else, would you share it?
 
-###Content must be educational and inspiring###
+# Content must be educational and inspiring
 
 One thing that works very well for me, when I am looking for new ideas, is to read a lot of blogs. From there, I always spot one or two blog entries that catch my attention and I want to mimic.
 
@@ -116,7 +116,7 @@ Good examples of educational blog posts are [this one](https://robots.thoughtbot
 
 **Key question:** What are your favourite blogs and why?
 
-###Make it visible###
+# Make it visible
 
 One tremendous mistake bloggers make is not letting the world know they have a blog.
 
