@@ -2,11 +2,11 @@ As a development consultancy, we get the chance to work on very different produc
 
 With over 20 different projects in our first two years, we've compiled our SEO 101 that we apply to all our projects.
 
-## Tools ##
+# Tools
 
 Before getting into detail, here are the tools that you will need.
 
-###Google Webmaster Tools###
+## Google Webmaster Tools
 
 <strong>URL:</strong> <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools" target="_blank">https://www.google.com/webmasters/tools/</a>
 
@@ -23,7 +23,7 @@ We will also check for errors here: 404s, performance errors, robots.txt not fou
 
 <strong>If, and only if, the site includes search</strong> and has got therefore search parameters in the URL, this needs to be configured. Here’s a <a href="https://support.google.com/webmasters/answer/6080550?hl=en" title="Google guide to set up search parameters" target="_blank">good guide to help you to set up the search parameters</a>. Typically, Google will figure it out automatically, and it’ll be right in the 80% of the cases, which is good enough. Don’t waste too much time with this.
 
-###Google Analytics###
+## Google Analytics
 
 <strong>URL:</strong> <a href="http://www.google.com/analytics" title="Google Analytics" target="_blank">http://www.google.com/analytics</a>
 
@@ -35,7 +35,7 @@ Google Analytics will provide you with the Google Analytics tracking code, which
 
 If you're a developer, you probably don't need anything else from Google Analytics. If you're a marketer, you're better off studying and testing it already!
 
-##The Sitemap##
+### The Sitemap
 
 The sitemap is typically an XML file that describes the structure of your site, and it’s placed in the root of the project. Sitemaps follow a convention that you can find in the <a href="https://en.wikipedia.org/wiki/Sitemaps" title="Wikipedia article on Sitemaps" target="_blank">Wikipedia entry about the Sitemaps files</a>.
 
@@ -49,7 +49,7 @@ You can even submit it from there. But most indexers will either look at <i>www.
 
 If you encounter any error, here’s <a href="https://support.google.com/webmasters/answer/35738?hl=en" title="Common mistakes in sitemaps files" target="_blank">a list of the most common errors when creating sitemaps</a>.
 
-##Robots.txt##
+### Robots.txt
 
 Robots.txt is a file we use to tell all crawlers how to behave when crawling a site. It is located at the root level (<i>www.site.com/robots.txt</i>) and can contain either generic rules (specified by the wildcard character *) or specific rules (only for Googlebot, for instance).
 
@@ -75,7 +75,7 @@ These two lines mean that all crawlers are allowed (*) and the address of the si
 
 Once you're past all the previous setup concerning Google Analytics and Google Webmaster Tools and your sitemap and robots files are correctly configured, let's code!
 
-##HTTPS##
+# HTTPS
 
 Before getting into actual code, you will need to enforce secure connections to your site.
 
@@ -83,7 +83,7 @@ Since 2015, <a href="http://thenextweb.com/google/2015/12/17/unsecured-websites-
 
 As we specified briefly in the Google Webmaster Tools section, you will need to add the HTTPS variants of your domain.
 
-##Tags, metatags and else##
+# Tags, metatags and else
 
 Finally, we can get our hands on the code!
 
@@ -91,7 +91,7 @@ A lot of things have changed in the last years. Don’t trust what you remember 
 
 Since we're writing an SEO 101 here, we will review the basics we implement in each project.
 
-###Metatags###
+## Metatags
 
 We will implement the following tags in the `<head>`:
 
@@ -103,7 +103,7 @@ The description needs to be adapted to the project’s description. Author and C
 
 The metatag `keywords` is deprecated. So don’t include it.
 
-###Tags###
+## Tags
 
 Each page needs a `<title>` tag like this:
 
@@ -128,7 +128,7 @@ Some considerations for the title:
 * DO NOT REPLICATE THEM - make sure each page has a unique title.
 * For hardcore understanding of this topic, use <a href="https://searchenginewatch.com/sew/how-to/2154469/write-title-tags-search-engine-optimization" title="Title tag on SEO" target="_blank">this article about the title tag written by Search Engine Watch</a>.
 
-###Schema.org###
+## Schema.org
 
 This one is painful to implement the first time, but once you get it, it’s really quick.
 
@@ -142,7 +142,7 @@ Pages with schema.org provide more meaningful information to the users, but also
 
 Frontend developers might have some concerns on how this can pollute their code. I actually wrote a piece on <a href="http://www.alexrodba.com/2016/03/23/How-To-Include-Extra-Schema-Org-Metadata-Without-Messing-Your-Content.html" title="How to include extra schema.org metadata without messing your content" target="_blank">how to include schema.org metadata without interfering with your current code</a>.
 
-###The content###
+## The content
 
 Some basic rules for content. They’re too many to remember unless you’ve been doing this for years. Use this as a checklist:
 
@@ -159,7 +159,7 @@ We should also avoid duplicated content. In our projects, most likely we will on
 
 For the extra points, use <a href="https://developers.google.com/speed/pagespeed/insights/?hl=en&utm_source=wmx&utm_campaign=wmx_otherlinks&url=http://marsbased.com/" title="pagespeed insights by google" target="_blank">Pagespeed Insights (by Google)</a> to help you to create the best experience.
 
-###Bonus track #1: Migrations###
+# Bonus track #1: Migrations
 
 This is critical: if we’re migrating a project from a URL structure to a different one, we need to massively redirect all old URLs with 301’s to the new ones. Otherwise, we will lose all traffic. I strongly recommend reading these articles:
 
@@ -170,7 +170,7 @@ Another important thing is that the old site might have metatags as validators (
 
 If we don't migrate these, some services might stop working!
 
-###Bonus track #2: Multi-language sites###
+# Bonus track #2: Multi-language sites
 
 Because we've got clients from all over the world, we sometimes work with multi-language sites. Here we need to properly tell the crawlers that two pages have the same content albeit in different languages.
 
