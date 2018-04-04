@@ -77,7 +77,7 @@ Each post should be categorised using tags. Currently, at MarsBased, we're using
 * __Business__: Self-explanatory. Same as __Productivity__, __Management__, __Sales__, __Marketing__, __Development__, etc.
 * __Startup Grind__: For Startup Grind posts.
 * __Remote__: For blog posts about remote work, such as best practices, DOs and DON'Ts, etc.
-* __Collaborative post__: For those posts where it's all faces and shit. The fun ones.
+* __Collaborative Post__: For those posts where it's all faces and shit. The fun ones.
 * __Guides__: For all these guides and How To blogs.
 
 There's no fixed number. Tags should be used, not abused, and should be all starting with a Capital letter.
