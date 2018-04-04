@@ -63,6 +63,25 @@ Images will also be fetched by RSS feeds and the sharing widgets of your favouri
 On the tech side, images need to have their *alt* and *title* attributes being as descriptive as possible. This will ultimately reflect on your SEO. Here's an example:
 
     <img src="http://route.to/image" alt="A group shot of the MarsBased team" title="A group shot of the MarsBased team">
+    
+### Tags
+
+Each post should be categorised using tags. Currently, at MarsBased, we're using these ones:
+
+* __MarsBased__: For general purpose company updates.
+* __Entrepreneurship__: When talking about entrepreneurship as a concept.
+* __News__: For news-like blog posts, where ours or our clients'
+* __Rails__: If the post is about Rails. Applies to other technologies: __Angular__, __Node.js__, __Ionic__, __Ruby__, __CSS__, __HTML__, __API__, etc.
+* __Naiz__: Whenever we want to blog about a client, we have to do it using their tag.
+* __Lessons Learnt__: For lessons learnt-like blog posts.
+* __Business__: Self-explanatory. Same as __Productivity__, __Management__, __Sales__, __Marketing__, __Development__, etc.
+* __Startup Grind__: For Startup Grind posts.
+* __Remote__: For blog posts about remote work, such as best practices, DOs and DON'Ts, etc.
+* __Collaborative post__: For those posts where it's all faces and shit. The fun ones.
+* __Guides__: For all these guides and How To blogs.
+
+There's no fixed number. Tags should be used, not abused, and should be all starting with a Capital letter.
+
 
 ### Readability
 
