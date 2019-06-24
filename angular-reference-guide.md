@@ -1,6 +1,8 @@
+# Our Curated Angular Reference Guide
+
 Among all the MarsBased devs, we share useful Angular resources, questions, experiences, tools, guides and tutorials to keep this curated Angular reference post up-to-date. Enjoy it!
 
-Most of the frontend projects we have developed until now have used Angular. As a result, we accumulate (and share) a lot of Angular knowledge inside the company. Most recently, we've blogged about <%= link_to "Comparing the Three Angular View Encapsulation Methods", '/blog/2019/06/17/angular-view-encapsulation/', title: "Comparing the Three Angular View Encapsulation Methods", target: '_blank' %> and <%= link_to "Change Detection Strategy in Angular", '/blog/2019/05/13/change-detection-strategy-angular/', title: "Change Detection Strategy in Angular", target: '_blank' %>, and we've even sent out <a href="https://mailchi.mp/1eb143713cff/welcome-to-the-marsbased-newsletter-2415953" title="MarsBased newsletter" target="_blank">a dedicated MarsBased newsletter about Angular</a>.
+Most of the frontend projects we have developed until now have used Angular. As a result, we accumulate (and share) a lot of Angular knowledge inside the company. Most recently, we've blogged about <a href="https://marsbased.com/blog/2019/06/17/angular-view-encapsulation/" title="Comparing the Three Angular View Encapsulation Methods" target="_blank">Comparing the Three Angular View Encapsulation Methods</a>, <a href="https://marsbased.com/blog/2019/05/13/change-detection-strategy-angular/" title="Changing Detection Strategy in Angular" target="_blank">Changing Detection Strategy in Angular</a>, and we've even sent out <a href="https://mailchi.mp/1eb143713cff/welcome-to-the-marsbased-newsletter-2415953" title="MarsBased newsletter" target="_blank">a dedicated MarsBased newsletter about Angular</a>.
 
 ## Getting started
 
@@ -15,9 +17,9 @@ In the official Angular documentation you can find:
 * __Style Guide:__ <a href="https://angular.io/guide/styleguide" title="Official Angular Documentation" target="_blank">https://angular.io/guide/styleguide</a>.
 * __Angular CLI:__ <a href="https://cli.angular.io/" title="Official Angular Documentation" target="_blank">https://cli.angular.io/</a>.
 
-Additionally, I recommend a course that doesn't require previous experience, and it includes TypeScript lessons: <a href="https://www.udemy.com/the-complete-guide-to-angular-2/" title="The Complete Guide to Angular 2" target="_blank">The Complete Guide to Angular 2</a>. You probably will know the author, Maximilian Schwarzmüller, as he has more frontend courses.
+Additionally, we recommend a course that doesn't require previous experience, and it includes TypeScript lessons: <a href="https://www.udemy.com/the-complete-guide-to-angular-2/" title="The Complete Guide to Angular 2" target="_blank">The Complete Guide to Angular 2</a>. You probably will know the author, Maximilian Schwarzmüller, as he has more frontend courses.
 
-I've to say, thought, that you will find some of these lessons to be irrelevant if you are an experienced developer, but the course covers the important concepts and adds some extra interesting lessons.
+We've got to say, though, that you will find some of these lessons to be irrelevant if you are an experienced developer, but the course covers the important concepts and adds some extra interesting lessons.
 
 __Ultimate Courses__ has a good collection of beginner/advanced courses. They are not free but the range of lessons and contents you can access is very broad: <a href="https://ultimatecourses.com/courses/angular" title="Ultimate Courses Angular" target="_blank">https://ultimatecourses.com/courses/angular</a>.
 
@@ -40,7 +42,7 @@ Some resources about reactive programming:
 * __Official documentation:__ <a href="https://rxjs-dev.firebaseapp.com/" title="RxJS documentation" target="_blank">https://rxjs-dev.firebaseapp.com/</a>
 * __Angular RxJS tutorial:__ <a href="https://angular.io/guide/rx-library" title="Angular RxJS tutorial" target="_blank">https://angular.io/guide/rx-library</a>
 
-RxJS is a powerful tool, but it comes with a set of drawbacks, too. Don't forget to take a look to our blog post about <%= link_to "Dealing with Memory Leaks in ReactiveX", '/blog/2018/06/18/dealing-with-memory-leaks-reactivex/', title: "Dealing with Memory Leaks in ReactiveX", target: '_blank' %> to dig deeper into more advanced notions.
+RxJS is a powerful tool, but it comes with a set of drawbacks, too. Don't forget to take a look to our blog post about <a title="Dealing with Memory Leaks in ReactiveX" href="https://marsbased.com/blog/2018/06/18/dealing-with-memory-leaks-reactivex/" target="_blank">Dealing with Memory Leaks in ReactiveX</a> to dig deeper into more advanced notions.
 
 __Angular Material__ is another helpful library. It has a big catalog of components you can reuse in your projects, so you can create new Angular styled projects in little to no time. Check it out: <a href="https://material.angular.io/" title="Angular Material" target="_blank">https://material.angular.io/</a>.
 
@@ -78,4 +80,4 @@ Check out some other great Angular articles we have cherripicked for you. They a
 
 <hr>
 
-Are you missing any resource or interesting article in this list? Feel free to suggest any or create a PR in our equivalent repo on Github.
+Are you missing any resource or interesting article in this list? Feel free to suggest additional useful resources by creating a PR to let us know!
