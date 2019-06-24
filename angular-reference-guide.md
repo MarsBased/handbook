@@ -70,14 +70,14 @@ Once you know the basics, you'll want to dig deeper into the advanced Angular pa
 
 ## Bonus!
 
-Check out some other great Angular articles we have cherripicked for you. They all review Angular key concepts and we've learnt a lot from them:
+Check out some other great Angular articles we have cherrypicked for you. They all review Angular key concepts and we've learnt a lot from them:
 
 * __Reddit Angular 2+:__ You will find interesting threads and some advanced questions in the <a href="https://www.reddit.com/r/Angular2/" title="Reddit Angular 2" target="_blank">Reddit community about Angular 2+</a>.
-* __Angular University:__ Although it's not updated anymore, they have great articles and tutorials still useful for most people. Browse them in <a href="https://blog.angular-university.io" title="Angular University" target="_blank">Angular University</a>.
+* __Angular University:__ Although it's not updated anymore, they have great articles and tutorials still useful for most people. Browse them at <a href="https://blog.angular-university.io" title="Angular University" target="_blank">Angular University</a>.
 * __Angular cheatsheet__: One of my favorites when starting out with Angular development. The ultimate <a href="https://angular.io/guide/cheatsheet" title="Angular cheatsheet" target="_blank">Angular cheatsheet</a>.
 * __Egghead__: Top developers give insightful and interesting talks on this platform. Find out more about <a href="https://egghead.io/courses/for/angular" title="Egghead" target="_blank">Egghead</a>.
 * __Adventures in Angular:__ If you are into podcasts, this is one of the best. Join me in following the <a href="https://devchat.tv/adv-in-angular/" title="Adventures in Angular podcast" target="_blank">Adventures in Angular podcast</a>!
 
 <hr>
 
-Are you missing any resource or interesting article in this list? Feel free to suggest additional useful resources by creating a PR to let us know!
+Are you missing any resource or interesting article on this list? Feel free to suggest additional useful resources by creating a PR to let us know!
