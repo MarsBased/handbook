@@ -77,6 +77,7 @@ Check out some other great Angular articles we have cherrypicked for you. They a
 * __Angular cheatsheet__: One of my favorites when starting out with Angular development. The ultimate <a href="https://angular.io/guide/cheatsheet" title="Angular cheatsheet" target="_blank">Angular cheatsheet</a>.
 * __Egghead__: Top developers give insightful and interesting talks on this platform. Find out more about <a href="https://egghead.io/courses/for/angular" title="Egghead" target="_blank">Egghead</a>.
 * __Adventures in Angular:__ If you are into podcasts, this is one of the best. Join me in following the <a href="https://devchat.tv/adv-in-angular/" title="Adventures in Angular podcast" target="_blank">Adventures in Angular podcast</a>!
+* __Angular Awesome:__ If you really really REALLY want to know all the things Angular, check out this incredible repository with dozens of resources: <a href="https://github.com/PatrickJS/awesome-angular" title="Angular Awesome" target="_blank">Angular Awesome</a>.
 
 <hr>
 
