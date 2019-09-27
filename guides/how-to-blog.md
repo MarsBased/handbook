@@ -1,4 +1,4 @@
-# How to blog
+# How to blog, according to MarsBased
 
 At MarsBased, we are always learning new stuff. Running your own company means being constantly in the loop of learning things you could have never predicted you would ever need. Among other stuff, we have learnt how to run a blog.
 

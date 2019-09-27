@@ -1,18 +1,20 @@
+# The MarsBased SEO Guidelines
+
 As a development consultancy, we get the chance to work on very different products and projects. From all of them, we learn something new, but in all of them, we apply our previous knowledge.
 
-With over 20 different projects in our first two years, we've compiled our SEO 101 that we apply to all our projects.
+With dozens of different projects in well over five years, we've compiled our SEO 101 that we apply to all our projects.
 
 # Tools
 
 Before getting into detail, here are the tools that you will need.
 
-## Google Webmaster Tools
+## Google Search Console (previously know as Google Webmaster Tools)
 
-<strong>URL:</strong> <a href="https://www.google.com/webmasters/tools/" title="Google Webmaster Tools" target="_blank">https://www.google.com/webmasters/tools/</a>
+<strong>URL:</strong> <a href="https://search.google.com/search-console" title="Google Search Console" target="_blank">https://search.google.com/search-console</a>
 
-<strong>Description:</strong> Google Webmaster Tools is a Google service to list and manage your domains. From domain verification to keyword analysis, this is a very useful tool. Amongst other things, you can verify the schema.org data, the robots.txt file and the sitemap structure.
+<strong>Description:</strong> Google Seatch Console is a Google service to list and manage your domains. From domain verification to keyword analysis, this is a very useful tool. Amongst other things, you can verify the schema.org data, the robots.txt file and the sitemap structure.
 
-We will use Google Webmaster Tools to add all variants of the same domain, in order to claim and verify them:
+We will use the Search Console to add all variants of the same domain, in order to claim and verify them:
 
 * http://marsbased.com
 * http://www.marsbased.com
@@ -29,7 +31,7 @@ We will also check for errors here: 404s, performance errors, robots.txt not fou
 
 <strong>Description:</strong> Google Analytics is <i>THE</i> tool when it comes to analysing user behaviour on a given site. It tracks every visitor down, from where they come from, what do they do on the site, and where do they go when they leave. Analytics does also allow you to create marketing campaigns, among other capabilities.
 
-This is like Google Webmaster Tools on steroids. There’s so much you can do here it's not even funny. You can track the user's behaviour, see them in real time, extract demographics of the audience that's visiting you, see from which channels do they come from, etc. However, if Google Webmaster Tools was too complicated for you, don't even try here.
+This is like Google Search Console on steroids. There’s so much you can do here it's not even funny. You can track the user's behaviour, see them in real time, extract demographics of the audience that's visiting you, see from which channels do they come from, etc. However, if Google Webmaster Tools was too complicated for you, don't even try here.
 
 Google Analytics will provide you with the Google Analytics tracking code, which you will find in the Admin tab. This is what you will implement in every project inside the `<head>` HTML tag.
 
@@ -41,9 +43,9 @@ The sitemap is typically an XML file that describes the structure of your site, 
 
 Normally, sitemaps can hold up to 50k URLs, but it’s advisable to split them into smaller sitemaps that link each other. Most indexers recognize also zipped sitemaps.
 
-Here’s <a href="http://www.pisosbancos.com/sitemaps/pisosbancos/sitemap.xml.gz" title="Sample sitemap" target="_blank">a sample sitemap we created</a>.
+Here’s <a href="https://marsbased.com/sitemap.xml" title="MarsBased sitemap" target="_blank">the sitemap file for our website</a>, for example.
 
-You can test the structure of your sitemap using Google Webmaster Tools.
+You can test the structure of your sitemap using Google Search Console.
 
 You can even submit it from there. But most indexers will either look at <i>www.site.com/sitemap.xml</i> or else read the sitemap location from the robots.txt file, where you can also specify it. We will see this in the next section!
 
@@ -55,10 +57,10 @@ Robots.txt is a file we use to tell all crawlers how to behave when crawling a s
 
 Generically, Robots.txt files have got a standardised structure that you can find in <a href="http://tools.seobook.com/robots-txt/" title="Robots.txt structure guide" target="_blank">this guide</a>.
 
-Like with the Sitemaps, Google Webmaster Tools has got an online tester for Robots.txt. Here, you can test its syntax and submit it.
+Like with the Sitemaps, Google Search Console has got an online tester for Robots.txt. Here, you can test its syntax and submit it.
 
-The above Robots.txt reads like this:
-<i>For all crawlers, do not disallow any route, and the site’s sitemap is located at: http://www.pisosbancos.com/sitemaps/pisosbancos/sitemap.xml.gz</i>
+The Robots.txt of our website reads like this:
+<i>For all crawlers, do not disallow any route, and the site’s sitemap is located at: https://marsbased.com/sitemap.xml</i>. You can find it here: <a href="https://marsbased.com/robots.txt" title="MarsBased robots.txt" target="_blank">https://marsbased.com/robots.txt</a>
 
 To learn more about Robots.txt and everything involved, check <a href="https://support.google.com/webmasters/answer/6062608?hl=en" title="Google's robots.txt files 101" target="_blank">Google’s detailed guide about this file type</a>.
 
@@ -71,7 +73,7 @@ Our sitemaps, generically, will be like this one:
 
 These two lines mean that all crawlers are allowed (*) and the address of the sitemap file. We will generally not disallow access to assets unless we see this affects in performance. In the past, access to CSS and JS files was blocked, but not anymore, and Google strongly discourages it.
 
-Once you're past all the previous setup concerning Google Analytics and Google Webmaster Tools and your sitemap and robots files are correctly configured, let's code!
+Once you're past all the previous setup concerning Google Analytics and Google Search Console and your sitemap and robots files are correctly configured, let's code!
 
 # HTTPS
 
@@ -79,7 +81,7 @@ Before getting into actual code, you will need to enforce secure connections to 
 
 Since 2015, <a href="http://thenextweb.com/google/2015/12/17/unsecured-websites-are-about-to-get-hammered-in-googles-search-ranking/#gref" title="HTTPS sites rank better in Google" target="_blank">HTTPS-enforced websites rank better</a>. Therefore, make sure you include HTTPS in your project.
 
-As we specified briefly in the Google Webmaster Tools section, you will need to add the HTTPS variants of your domain.
+As we specified briefly in the Google Search Console section, you will need to add the HTTPS variants of your domain.
 
 # Tags, metatags and else
 

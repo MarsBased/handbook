@@ -1,3 +1,5 @@
+# The MarsBased Blogging Guide
+
 We’ve been blogging for some time now, and we’ve learnt a thing or two. Because we’ve adopted transparency as an integral part of the company culture, we like sharing what we learn with you. It’s a genuine way to give back to the community that has helped so much become what we are now.
 
 In this entry, we will cover how to create a blogging strategy for your company.

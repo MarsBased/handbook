@@ -1,4 +1,4 @@
-# Our Curated Angular Reference Guide
+# The MarsBased Curated Angular Reference Guide
 
 Among all the MarsBased devs, we share useful Angular resources, questions, experiences, tools, guides and tutorials to keep this curated Angular reference post up-to-date. Enjoy it!
 
