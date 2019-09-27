@@ -7,14 +7,15 @@ Here you will find the most important information of the company to help you to 
 # Sections
 
 1. [First day](/sections/firstday.md)
-1. Company culture
-1. What influenced us
-1. Rosetta
-1. Benefits & perks
-1. How we work
-1. Our rituals
-1. Holidays
-1. Making a career
+1. [Company culture](/sections/companyculture.md)
+1. [What influenced us](/sections/influences.md)
+1. [What we do](/sections/whatwedo.md)
+1. [Our product: Rosetta](/sections/rosetta.md)
+1. [Benefits & perks](/sections/benefits.md)
+1. [How we work](/sections/howwework.md)
+1. [Our rituals](/sections/rituals.md)
+1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
+1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
 
@@ -31,3 +32,5 @@ For now, we have the following resources available:
 1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity)
 
 Feel free to drop by the [MarsBased blog](https://marsbased.com/blog) to keep up with all our updates!
+
+__Last updated on:__ 27/09/2019.
