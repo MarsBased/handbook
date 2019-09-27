@@ -1,29 +1,25 @@
 # Our Product: Rosetta
 
-MarsBased is a consultancy of expert developers in Ruby on Rails, Node.js, React and Angular who boosts companies using technology and agile methodologies.
+In 2019, we've started to develop our first product: __Rosetta__.
 
-## Technologies & services
+Rosetta is a tool for HR companies and departments to assess the language skills of their candidates.
 
-As a consultancy, we deal with many different clients, from all countries and all sectors. We've worked with clients from San Francisco to Singapore, from Germany to the Basque Country. As for the sectors, we've worked in fintech, we've built marketplaces, we've developed smart cities platforms, we've refactored other people's codes, we've done code audits and built dozens of web and mobile apps.
+## Current status
 
-You can find a description of the technologies we use in the services pages of our website:
+The project is still being developed and therefore we don't have much to share. We plan to launch an MVP before the end of the year.
 
-* __[Ruby on Rails](https://marsbased.com/services/ruby-on-rails)__
-*  __[Node.js](https://marsbased.com/services/node)__
-*  __[React](https://marsbased.com/services/react)__
-*  __[Angular](https://marsbased.com/services/Angular)__
+## Technologies
 
-The afortementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development.
+Once the MVP is developed, we will share more technical details about it.
 
-We have just started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competences or the bandwidth to assess the status and integrity of the companies they want to invest in or acquire.
+## Who's working on it?
 
-We will help them to audit several aspects of the technology of these companies like the infrastructure, the choice of languages, scalability, security issues, code quality and much more.
+We are working on it as a side-project inside the MarsBased hours, during every edition of the Zerg Rush. Therefore, the development pace is slow but steady.
 
-## Community
+## Why are we doing it?
 
-We spend a considerable amount of time and resources to develop community around us. Helping both the tech and startups communities in Barcelona, we have become one of the most active companies in the ecosystem.
+We wanted to explore the product side of business. We have developed dozens of products for other companies, so we wanted to venture in our own. We also want to diversify our income, and we thought that creating our own product would bring a different type of revenue.
 
-In the [Community](https://marsbased.com/community) section of our website you will find more detail about the high-level stuff that we do.
-
+We also want to make the recruitment world a bit more efficient and better by using technology and a different perspective.
 
 

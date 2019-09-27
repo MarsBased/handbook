@@ -11,11 +11,12 @@ Here you will find the most important information of the company to help you to 
 1. [What influenced us](/sections/influences.md)
 1. [What we do](/sections/whatwedo.md)
 1. [Our product: Rosetta](/sections/rosetta.md)
-1. [Benefits & perks](/sections/benefits.md)
 1. [How we work](/sections/howwework.md)
+1. [Operations](/sections/operations.md)
 1. [Our rituals](/sections/rituals.md)
+1. [Benefits & perks](/sections/benefits.md)
 1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
-1. [Careers at MarsBased](/sections/careers.md)
+# 1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
 
