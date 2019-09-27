@@ -6,7 +6,7 @@ Here you will find the most important information of the company to help you to 
 
 # Sections
 
-1. First day
+1. [First day](/sections/firstday.md)
 1. Company culture
 1. What influenced us
 1. Rosetta
