@@ -36,6 +36,14 @@ So far, we've done the following:
 * __2019:__ Dublin.
 * __2017:__ Tenerife.
 
+## Basecamp check-ins
+
+On Fridays, Basecamp will ask you a few questions. There's only that is mandatory for everyone, which is the highlights of the week.
+
+Reporting on how has your week been, both professionally and on a personal level, helps to overcome the feeling of loneliness of the remote worker. We have seen that those reports, and opening up about certain issues, helps to bond deeper with the rest of the team.
+
+Some weeks, you'll share more technical stuff, while on others you will share the pictures of your holidays, notify us of a big achievement/change in your life, share a personal passion you have we didn't know about or just vent about something that you just can't keep inside any longer.
+
 ## Coworking Wednesdays
 
 Those in Barcelona meet every Wednesdays at Spaces 22@ (C/Pallars 193, 08005, Barcelona). We've got a partnership with them to work from there once per week.

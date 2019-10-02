@@ -10,13 +10,14 @@ Here you will find the most important information of the company to help you to 
 1. [Company culture](/sections/companyculture.md)
 1. [What influenced us](/sections/influences.md)
 1. [What we do](/sections/whatwedo.md)
-1. [Our product: Rosetta](/sections/rosetta.md)
+1. [Projects](/sections/projects.md)
 1. [How we work](/sections/howwework.md)
+1. [Our product: Rosetta](/sections/rosetta.md)
 1. [Operations](/sections/operations.md)
 1. [Our rituals](/sections/rituals.md)
 1. [Benefits & perks](/sections/benefits.md)
 1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
-<!-- 1. [Careers at MarsBased](/sections/careers.md) -->
+1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
 
@@ -34,4 +35,4 @@ For now, we have the following resources available:
 
 Feel free to drop by the [MarsBased blog](https://marsbased.com/blog) and to subscribe to the [MarsBased newsletter](https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312) to keep up with all our updates!
 
-__Last updated on:__ 27/09/2019.
+__Last updated on:__ 02/10/2019.
