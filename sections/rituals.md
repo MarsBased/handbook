@@ -33,7 +33,7 @@ The idea is to go somewhere for a couple of working days (fly in and Martian Day
 So far, we've done the following:
 
 * __2019:__ Menorca.
-* __2019:__ Dublin.
+* __2018:__ Dublin.
 * __2017:__ Tenerife.
 
 ## Basecamp check-ins
