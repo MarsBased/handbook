@@ -6,9 +6,6 @@ Make sure you've read the welcome PDF and that you've got access to the main too
 
 By now, almost everything is set & ready. If you haven’t sent all of this, please do it:
 
-* Your address.
-* Phone number.
-* Bank account.
 * Twitter handle (preferably a “professional” one)
 * LinkedIn profile.
 * Github username.
