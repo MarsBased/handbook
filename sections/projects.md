@@ -2,7 +2,7 @@
 
 ## Before the project: sales
 
-We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, projects potentially riskful.
+We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, potentially riskful projects and so on.
 
 Our sales workflow is mostly executed by Àlex and complemented by someone from the tech team doing the estimates for the quote (usually Xavi and/or Jordi).
 
@@ -10,7 +10,7 @@ Our sales workflow is mostly executed by Àlex and complemented by someone from 
 
 We like to work on all the phases in the product lifecycle: from the conception of the idea to the maintenance.
 
-However, in soem cases we're hired to jump in directly into the phase of development, to complement an existing team.
+However, in some cases we're hired to jump in directly into the phase of development, to complement an existing team.
 
 But when we _do_ play with our rules, we do it as follows.
 

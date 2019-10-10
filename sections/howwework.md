@@ -4,33 +4,17 @@
 
 We are a remote working company. That means that we don’t have an office where we everyday work from.
 
-Being remote means:
+We will ask you to have your own space where you work from usually. A nice setup, in a comfortable environment with few distractions works best for most of us.
 
-* You can work from home.
-* You can work from somebody else’s home.
-* You can work from your favourite coffee shop (just don’t be a Starbucks guy)
-* You can work from the beach.
-* You can work while you’re travelling.
-* You can work from the local library.
-* You can work from a Caribbean island.
-* You can work from a coworking space.
-* You can work from Mars.
-* You can work from our future offices, if we decide to rent them.
-* Etc.
-
-Being remote does not mean:
-
-* Working only from home.
-* Isolating from people.
-* Working in only quiet places.
-* Being available all the time.
-* Etc.
+Take into consideration that we do calls with our clients, so you need to have fast and reliable internet and a presentable background for the videocalls.
 
 We believe in responsibility. We are all adults. As long as work gets done, we don’t care where you do it from.
 
 ## Async by default
 
 As a remote-working company, we resort to being async by default. That means, you should never expect immediate response from anyone, and we favour asynchronous communication like a good Basecamp post or written communication on Slack over calls.
+
+As a best practice, we all define a working schedule we will adhere to 90% of the time, so people know how can they expect us to be working, but it is not used for surveillance or micro-management.
 
 ## Open communication
 

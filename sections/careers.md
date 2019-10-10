@@ -16,8 +16,8 @@ We will check in with you regularly and define together a set of goals for you t
 
 A few examples of this are:
 
-* To wotk on at least two mid-sized projects in a new technology you don't know.
-* To be in chatge of the devops responsibilities in all the projects you're in.
+* To work on at least two mid-sized projects in a new technology you don't know.
+* To be in charge of the devops responsibilities in all the projects you're in.
 * To be able to manage international projects successfully
 * To contribute at least once per month to the blog of the company with technical blog posts.
 * Etc.
@@ -35,6 +35,18 @@ Then we've got the __Senior Developers__ which are the most numerous group of pe
 Last, but not least, we've got the __Developers__ who are slightly less experienced than the Senior Developers and it's the latest incorporation to our role structure.
 
 In the middle of all of them, there's they key role of the __Office Manager__, who enables all of us to work better and makes the company run more efficiently.
+
+## Salaries
+
+Every year, we check the temperature on the market, and we revise the salaries in the company.
+
+We like to offer good salaries which are on pair with most good companies in the market. When there is a huge correction on the market, we devise a plan to schedule raises for everyone.
+
+We do not decrease salaries if the markets go down. We keep them until they go up again.
+
+Every role in the company has a salary range, to give flexibility to people coming in at different times in the company. If you get a promotion, you will receive a salary raise to be executed immediately.
+
+
 
 
 

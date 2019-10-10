@@ -56,6 +56,12 @@ The development team meet online every Thursday to discuss tech.
 
 You will find more information about this practice on this blog post: [Going for Martian Tapas With our Distributed Development Team](https://marsbased.com/blog/2018/12/10/martian-tapas-remote-dev-team/).
 
+## Martian Coffees
+
+Everyday, we open a window for casual chatter twice a day. You will see on Slack a message announcing a virtual meeting on Hangouts at 10:30am and at 3:00pm.
+
+In this hangouts, you're always invited to join a sort of virtual water cooler for 10-15 minutes of break. If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
+
 ## Spotify contest & English Friday
 
 Being a small company which operates remotely for the most part means that we interact less frequently face-to-face than what most of us would like.

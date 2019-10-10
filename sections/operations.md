@@ -16,7 +16,7 @@ Mostly, we've got three big categories of operations.
 
 ## Accounting & numbers
 
-All expenses need to be sent to administration@marsbased.com with a photo of the receipt. Receipts originals must be kept and given to Jordi when possible, as we need to store them to comply with the law.
+All expenses need to be sent to administration@marsbased.com with the invoice or a photo of the receipt. Receipts originals must be kept and given to Jordi when possible, as we need to store them to comply with the law.
 
 We share the numbers of the company in every Martian Day and occasionally on Basecamp (approximately once per term), but feel free to ask more information about anything anytime.
 
