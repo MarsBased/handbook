@@ -4,7 +4,7 @@ Even though we're a 100%-remote company, we do a few activities both offline and
 
 ## Martian Day
 
-Every two months, more or less, we fly everyone in and we meet for a day of get-together.
+Once per term, more or less, we fly everyone in and we meet for a day of get-together.
 
 In the Martian Days we don't do client work, and we spend quality time sharing the numbers of the company, doing AMA sessions, workshops, keynotes, brainstormings and a few leisure activities like football matches, dinners and more!
 
@@ -22,7 +22,7 @@ We do another followup call at the end of the day to summarise what we've been u
 
 We tend to organise people in small groups with other team members they usually don't work with so they get more acquainted with one another.
 
-Once, our frontend developer Javier Artero went to the coworking for a Zerg Rush and found nobody there 🤣
+Once, our frontend developer Javier Artero didn't know it was purely an online thing, so he went to the coworking for a Zerg Rush and found nobody there 🤣
 
 ## Martian Retreat
 
@@ -38,7 +38,7 @@ So far, we've done the following:
 
 ## Basecamp check-ins
 
-On Fridays, Basecamp will ask you a few questions. There's only that is mandatory for everyone, which is the highlights of the week.
+On Fridays, Basecamp will ask you a few questions. There's only one that is mandatory for everyone, which is the highlights of the week.
 
 Reporting on how has your week been, both professionally and on a personal level, helps to overcome the feeling of loneliness of the remote worker. We have seen that those reports, and opening up about certain issues, helps to bond deeper with the rest of the team.
 
