@@ -22,11 +22,20 @@ A few examples of this are:
 * To contribute at least once per month to the blog of the company with technical blog posts.
 * Etc.
 
-## Titles & Roles
+## Project rotation
+
+We've got a lot of projects going on, some bigger than others. We try to rotate people between different projects so that they stay a maximum of 12 or 18 months in the same projects. However, because of project constraints such as the language of the client, management workload and so on, this might not always be possible.
+
+## Roles
 
 We are a small-sized company. We don't have a lot of roles, therefore.
 
 We have a layer of __Management__, consisting in the three founders of the company, first of all.
+
+- No són títols, són rols
+- tech leads no estan per sobre dels devs
+- pots ser dev en un projecte i tech lead en un altre
+- deixar molt clar el tema del tech lead
 
 Then, we have got a role immediately below them which is the __Tech Lead__, which is a very senior programmer who manages technical projects and has CTO-like abilities to weigh in into specific projects when needed. This role also gets to code, but only part-time.
 
@@ -42,10 +51,7 @@ Every year, we check the temperature on the market, and we revise the salaries i
 
 We like to offer good salaries which are on pair with most good companies in the market. When there is a huge correction on the market, we devise a plan to schedule raises for everyone.
 
-We do not decrease salaries if the markets go down. We keep them until they go up again.
-
-Every role in the company has a salary range, to give flexibility to people coming in at different times in the company. If you get a promotion, you will receive a salary raise to be executed immediately.
-
+Every role in the company has a salary range, to give flexibility to people coming in at different times in the company.
 
 
 
