@@ -14,7 +14,7 @@ There are a million reason why we have flexible schedules. Just drop us a line l
 
 Same for sick leave. Just let us know and rest a lot. We wish we could help you more with that.
 
-Same applies to the holidays and vacation: want to take a day off? do it. “Hey guys, next Monday I won’t be in town. Don’t contact me”. You know when you can take some time off and how to manage your time. You just need to coordinate with your team with sufficient notice (on Basecamp) and that'll do.
+Same applies to the holidays and vacation: want to take a day off? do it. “Hey guys, next Monday I won’t be in town. Don’t contact me”. You know when you can take some time off and how to manage your time. You just need to coordinate with your team with sufficient notice - a couple of weeks at least - (on Basecamp) and that'll do.
 
 For periods longer than two weeks, we just ask that you let us know with enough time to adjust the calendar & project planning. A couple of months before is OK.
 
