@@ -22,7 +22,7 @@ We actually have a thread for that on Basecamp. You should let us know with at l
 
 ## Local holidays
 
-We normally take Barcelona’s local holidays as our calendar, but we don’t want to force anybody to follow them. It is, however, advisable, in order to keep aligned with your team mates.
+Being most of the team members based in Barcelona, we normally take Barcelona’s local holidays as our official calendar. However, team members living in other locations, are asked to choose the local holidays that best suit them. This way, in the beginning of the year we set up the official holiday calendar for each team member.
 
 But feel free to exchange any local holidays for another normal day, any time. Flexibility, remember.
 
