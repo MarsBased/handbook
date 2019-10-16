@@ -28,20 +28,23 @@ We've got a lot of projects going on, some bigger than others. We try to rotate 
 
 ## Roles
 
-We are a small-sized company. We don't have a lot of roles, therefore.
+We are a small-sized company. We don't have a lot of roles.
 
-We have a layer of __Management__, consisting in the three founders of the company, first of all.
+We have a layer of __Management__, consisting in the three founders of the company, but that's mostly all regarding titles.
 
-- No són títols, són rols
-- tech leads no estan per sobre dels devs
-- pots ser dev en un projecte i tech lead en un altre
-- deixar molt clar el tema del tech lead
+The rest of the company members are on the same level, as there is no hyerarchy. All of the employee workforce have different roles in different projects, but not titles. Everyone is a developer.
 
-Then, we have got a role immediately below them which is the __Tech Lead__, which is a very senior programmer who manages technical projects and has CTO-like abilities to weigh in into specific projects when needed. This role also gets to code, but only part-time.
+For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working in two projects at the same time. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
 
-Then we've got the __Senior Developers__ which are the most numerous group of people in the company. For the first five years, we just hired this kind of developers, and that's why there are so many.
+That's why we don't have Tech Leads who manage developers, and we must be very careful to explain this to our candidates.
 
-Last, but not least, we've got the __Developers__ who are slightly less experienced than the Senior Developers and it's the latest incorporation to our role structure.
+The roles you, as part of the tech team, you may have the following roles:
+
+First, the __Tech Lead__, which is a very senior programmer who manages technical projects and has CTO-like abilities to weigh in into specific projects when needed. This role also gets to code, but only part-time.
+
+Then we've got the __Senior Developers__, which are the most common roles we're hired for. And then, naturally, the __Developers__, who are slightly less experienced than the Senior Developers.
+
+Again, this is just a role. You can be a Senior Developer in Rails for one project while being a Developer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
 
 In the middle of all of them, there's they key role of the __Office Manager__, who enables all of us to work better and makes the company run more efficiently.
 
