@@ -35,4 +35,4 @@ For now, we have the following resources available:
 
 Feel free to drop by the [MarsBased blog](https://marsbased.com/blog) and to subscribe to the [MarsBased newsletter](https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312) to keep up with all our updates!
 
-__Last updated on:__ 16/10/2019.
+__Last updated on:__ 17/10/2019.
