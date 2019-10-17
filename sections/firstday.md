@@ -28,6 +28,6 @@ You will then meet with Jordi who will give you the overall picture of how we ru
 
 ## Meet the team
 
-The first day, we especially encourage you to join the Martian coffee so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
+The first day, we especially encourage you to join the Martian coffee so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀_
 
 
