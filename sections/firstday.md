@@ -22,11 +22,11 @@ You should have received the work contract for your revision from Leire a few da
 
 ## Onboarding
 
-Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays & Materials](/sections/holidaysmaterials.md), etc.
+Leire will invite you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays & Materials](/sections/holidaysmaterials.md), etc.
 
 ## Your project
 
-You will then meet with Jordi and Xavi, who will explain you how we run our projects and all the details you need to know in order to start working with the client/project assigned.
+You will then meet with Jordi and Xavi, who will explain to you how we run our projects and all the details you need to know in order to start working with the client/project assigned.
 
 ## Meet the team
 

@@ -2,13 +2,13 @@
 
 Everything we do, we do it thinking in the long term. We proud ourselves in the fact that we lose less than one employee per year.
 
-While in other companyes, employees stay on average one year (or less!), at MarsBased the average is almost three years, and counting!
+While in other companies, employees stay on average one year (or less!), at MarsBased the average is almost three years and counting!
 
 This means, that we would like to have you for years to come with us, so we can grow together.
 
 ## Career plans?
 
-While we don't have pre-defined or standardised career plans, we do think about how we can contribute to develop the careers of our employees every day.
+While we don't have pre-defined or standardised career plans, we do think about how we can contribute to developing the careers of our employees every day.
 
 Being a small company gives us the advantage of being able to sit down with our employees on a regular basis and define their career plan with them: no arbitrary goals, no force-fed promotion to management, no bullshit.
 
@@ -30,11 +30,11 @@ We've got a lot of projects going on, some bigger than others. We try to rotate 
 
 We are a small-sized company. We don't have a lot of roles.
 
-We have a layer of __Management__, consisting in the three founders of the company, but that's mostly all regarding titles.
+We have a layer of __Management__, consisting of the three founders of the company, but that's mostly all regarding titles.
 
-The rest of the company members are on the same level, as there is no hyerarchy. All of the employee workforce have different roles in different projects, but not titles. Everyone is a developer.
+The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a developer.
 
-For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working in two projects at the same time. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
+For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working on two projects at the same time. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
 
 That's why we don't have Tech Leads who manage developers, and we must be very careful to explain this to our candidates.
 
@@ -46,13 +46,13 @@ Then we've got the __Senior Developers__, which are the most common roles we're 
 
 Again, this is just a role. You can be a Senior Developer in Rails for one project while being a Developer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
 
-In the middle of all of them, there's they key role of the __Office Manager__, who enables all of us to work better and makes the company run more efficiently.
+In the middle of all of them, there's the key role of the __Office Manager__, who enables all of us to work better and makes the company run more efficiently.
 
 ## Salaries
 
 Every year, we check the temperature on the market, and we revise the salaries in the company.
 
-We like to offer good salaries which are on pair with most good companies in the market. When there is a huge correction on the market, we devise a plan to schedule raises for everyone.
+We like to offer good salaries which are on par with most good companies in the market. When there is a huge correction on the market, we devise a plan to schedule raises for everyone.
 
 Every role in the company has a salary range, to give flexibility to people coming in at different times in the company.
 

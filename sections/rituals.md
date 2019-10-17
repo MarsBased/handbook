@@ -48,27 +48,29 @@ Some weeks, you'll share more technical stuff, while on others you will share th
 
 ## Coworking Wednesdays
 
-Those in Barcelona meet every Wednesdays at Spaces 22@ (C/Pallars 193, 08005, Barcelona). We've got a partnership with them to work from there once per week.
+Those in Barcelona meet every Wednesday at Spaces 22@ (C/Pallars 193, 08005, Barcelona). We've got a partnership with them to work from there once per week.
 
 It's a great occasion to get more acquainted with people, as we go together for breakfast, lunch and occasionally for some beers at the end of the day.
 
 ## Martian Tapas
 
-The development team meet online every Thursday to discuss tech.
+The development team meets online every Thursday to discuss tech.
 
 You will find more information about this practice on this blog post: [Going for Martian Tapas With our Distributed Development Team](https://marsbased.com/blog/2018/12/10/martian-tapas-remote-dev-team/).
 
 ## Martian Coffees
 
-Everyday, we open a window for casual chatter twice a day. You will see on Slack a message announcing a virtual meeting on Hangouts at 10:30am and at 3:00pm.
+Every day, we open a window for casual chatter twice a day. You will see on Slack a message announcing a virtual meeting on Hangouts at 10:30am and at 3:00pm.
 
-In this hangouts, you're always invited to join a sort of virtual water cooler for 10-15 minutes of break. If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
+In this Hangouts, you're always invited to join a sort of virtual water cooler for 10-15 minutes of break. If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
 
 ## Spotify contest & English Friday
 
-Being a small company which operates remotely for the most part means that we interact less frequently face-to-face than what most of us would like.
+Being a small company operating remotely for the most part means that we interact less frequently face-to-face than what most of us would like.
 
 We try to spice up Fridays by chatting only in English and by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
+
+To avoid repeating songs, check the [Martian Playlist Archive](https://open.spotify.com/playlist/7CCutbZd1ojXf3X3EP8QWr?si=_2oVYBrVQq6dHA8sri5eaQ) before submitting yours!
 
 ## Reading challenge
 

@@ -13,7 +13,7 @@ You can find a description of the technologies we use in the services pages of o
 *  __[React](https://marsbased.com/services/react)__
 *  __[Angular](https://marsbased.com/services/Angular)__
 
-The afortementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development.
+The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development.
 
 We have just started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competences or the bandwidth to assess the status and integrity of the companies they want to invest in or acquire.
 
@@ -25,7 +25,7 @@ Despite being a services company, we're building our product. Check it out in it
 
 We spend a considerable amount of time and resources to develop community around us. Helping both the tech and startups communities in Barcelona, we have become one of the most active companies in the ecosystem.
 
-In the [Community](https://marsbased.com/community) section of our website you will find more detail about the high-level stuff that we do.
+In the [Community](https://marsbased.com/community) section of our website, you will find more detail about the high-level stuff that we do.
 
 
 

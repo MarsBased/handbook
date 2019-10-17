@@ -2,17 +2,23 @@
 
 ## Remote
 
-We are a remote working company. That means that we don’t have an office where we everyday work from.
+We are a remote working company. That means that we don’t have an office where we everyday work.
 
-We will ask you to have your own space where you work from usually. A nice setup, in a comfortable environment with few distractions works best for most of us.
+We will ask you to have your own space where you work from usually. A nice setup, in a comfortable environment with few distractions, works best for most of us.
 
 Take into consideration that we do calls with our clients, so you need to have fast and reliable internet and a presentable background for the videocalls.
 
 We believe in responsibility. We are all adults. As long as work gets done, we don’t care where you do it from.
 
-## Async by default
+## Sync vs. async
 
-As a remote-working company, we resort to being async by default. That means, you should never expect immediate response from anyone, and we favour asynchronous communication like a good Basecamp post or written communication on Slack over calls.
+As a remote-working company, we should resort to being async by default as common courtesy in all-remote companies dictates.
+
+However, since we're all on the same timezone and we use Slack for a lot of things, we're friends with synchronous communication too.
+
+The general rule is: if it's faster and it makes sense, use sync.
+
+For things that require debate and thinking things through, we favour asynchronous communication like a good Basecamp post or a well-crafted message written on Slack over calls.
 
 As a best practice, we all define a working schedule we will adhere to 90% of the time, so people know how can they expect us to be working, but it is not used for surveillance or micro-management.
 
@@ -48,7 +54,7 @@ __Things we do in Spanish__:
 
 * Most internal communication on Slack.
 * Communication with Spanish-speaking clients.
-* Most content on the website is translated to Spanish, except for the blog.
+* Most content on the website is translated into Spanish, except for the blog.
 
 In the company presentations we do at the Martian Days, we speak meme.
 

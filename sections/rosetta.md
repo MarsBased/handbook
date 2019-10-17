@@ -18,7 +18,7 @@ We are working on it as a side-project inside the MarsBased hours, during every 
 
 ## Why are we doing it?
 
-We wanted to explore the product side of business. We have developed dozens of products for other companies, so we wanted to venture in our own. We also want to diversify our income, and we thought that creating our own product would bring a different type of revenue.
+We wanted to explore the product side of business. We have developed dozens of products for other companies, so we wanted to venture on our own. We also want to diversify our income, and we thought that creating our own product would bring a different type of revenue.
 
 We also want to make the recruitment world a bit more efficient and better by using technology and a different perspective.
 

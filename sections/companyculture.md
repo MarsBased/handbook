@@ -1,6 +1,6 @@
 # Company Culture
 
-We live by a very distinct and solid set of values which guide us in our day to day.
+We live by a very distinct and solid set of values guiding us in our day to day.
 
 These are the pillars of our company culture:
 

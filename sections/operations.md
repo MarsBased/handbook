@@ -1,6 +1,6 @@
 # Operations
 
-Our operations have been greatly improved and fine-tuned through the years. Our co-founder Jordi (COO) is in charge of operations, but some of these activities are distributed across different people and providers.
+Our operations have been greatly improved and fine-tuned over the years. Our co-founder Jordi (COO) is in charge of operations, but some of these activities are distributed across different people and providers.
 
 Well, providers are also people.
 
@@ -36,8 +36,8 @@ We're purely an inbound company. This means that companies find us, not the othe
 
 * __Website__: Our website is extremely fine-tuned in terms of SEO. In such a competitive landscape, we need to make sure people find us, and we're ranking very high in most interesting searches, purely by organic means.
 * __Blog__: Also on the website, we publish a blog entry every week now. Some are technical, some are about entrepreneurship, news of the company, sector insights or how-tos. We replicate most of our blogs to Medium for more coverage. If you're interested in blogging for the company, ping Àlex.
-* __Social media__: We invest little time in this because it doesn't really wield great results. But it's nice to be present.
-* __Newsletter__: We send a newsletter twice a month and we've got really good numbers. We have few followers but very loyal. Leire is in charge of the MarsBased newsletter.
+* __Social media__: We invest little time in this because it doesn't really yield great results. But it's nice to be present.
+* __Newsletter__: We send a newsletter twice a month and we've got really good numbers. We have just a few followers but very loyal. Leire is in charge of the MarsBased newsletter.
 * __Events__: Like it or not, our Startup Grind events are also part of this. We don't like to mix up stuff, but we're sponsoring and organising the event, and therefore we need to take credit for it as well.
 * __Community work__: We curate a Slack community and Startup Digest in Barcelona, which you read about in the Community page on the website. Both are managed between Àlex and Leire.
 
