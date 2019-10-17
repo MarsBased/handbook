@@ -2,6 +2,18 @@
 
 We, Martians, have a very distinct way of seeing the world. However, we're not alone in this. A few companies and individuals came before us and cleared the path, coined new terms and devised disruptive ways to work which inspired us to create our company and to work as we do.
 
+## A bit of background
+
+The three founders know each other since the early ages. Our careers have been intertwined in many stages, but we've coincided the three of us only in middle school. Before and after that, we've met in primary school, university, at the ESN association, freelancing, and once Jordi hired Xavi when he was the CTO of GreenData.
+
+For the bonus trivia points, Jordi then hired Juan to replace Xavi when Xavi left for Gnuine.
+
+The three of us spent a few years in traditional consulting, which inspired us to create our own company.
+
+The initial idea was to put up a website and work as an association of three freelancers. However, we started getting big projects quite early in the life of the company and we decided to create a proper SL (Spanish for LLC) and to start hiring people.
+
+The rest is history.
+
 ## Companies
 
 * __Basecamp__: The ultimate reason why we created our company. Their books, mentioned below, their company philosophy, the way they work, their love for the remote and their blunt opinions on the crazy startup madness are just a few of all the things we like about them.
