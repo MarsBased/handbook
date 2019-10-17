@@ -2,7 +2,7 @@
 
 ## Remote
 
-We are a remote working company. That means that we don’t have an office where we everyday work.
+We are a remote working company. That means that we don’t have an office to work in.
 
 We will ask you to have your own space where you work from usually. A nice setup, in a comfortable environment with few distractions, works best for most of us.
 
