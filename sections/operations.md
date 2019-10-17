@@ -26,7 +26,7 @@ Leire sits in the middle of our non-existent office and is the real catalyser of
 
 Anything related to logistics and how to make your day better, ask her. This includes the benefits & perks of being a MarsBased employee and much more.
 
-Leire is also in charge of the organisation of Startup Grind events and our annual conference.
+Leire is also in charge of the organisation of the [Startup Grind Barcelona](http://www.startupgrind.com/barcelona) events and our annual [Startup Grind Tech](https://startupgrind.cat) conference.
 
 ## Marketing and sales
 
