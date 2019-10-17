@@ -32,4 +32,3 @@ You will then meet with Jordi and Xavi, who will explain you how we run our proj
 
 The first day, we especially encourage you to join the [Martian coffee] (/rituals.md#martian-coffees) so that you get to know the rest of the team. We are looking forward to welcoming you! :-)
 
-

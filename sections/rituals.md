@@ -8,7 +8,7 @@ Once per term, more or less, we fly everyone in and we meet for a day of get-tog
 
 In the Martian Days we don't do client work, and we spend quality time sharing the numbers of the company, doing AMA sessions, workshops, keynotes, brainstormings and a few leisure activities like football matches, dinners and more!
 
-Needless to say, the company pays for the flights, meals and accommodation.
+Needless to say, the company pays for the flights, meals and accommodation. If you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance.  
 
 In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
 
@@ -35,6 +35,8 @@ So far, we've done the following:
 * __2019:__ Menorca.
 * __2018:__ Dublin.
 * __2017:__ Tenerife.
+
+As happens for the Martian Day, the company pays for the flights, meals and accommodation for the two working days. For those that decide staying for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance. 
 
 ## Basecamp check-ins
 
