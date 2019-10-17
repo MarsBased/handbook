@@ -20,7 +20,9 @@ Leire has already been in touch with you in order to provide you with all the ne
 
 You should have received the work contract for your revision from Leire a few days before your start day. Together with the contract, she has sent you the invitation for the first day to do an onboarding meeting through Slack or meet presencially, if you live in Barcelona. In this meeting, you will revise the work contract together with us to make sure everything is clear to proceed with the signature.
 
-Normally, we use HelloSign to sign the contract electronically. Apart from the formal part, this is the opportunity to comment on all the practical issues concerning How we work, Benefits & perks, Holidays & Material, Our rituals, etc.
+## Onboarding
+
+Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/howwework.md), [Our rituals](/rituals.md), [Benefits & Perks](/benefits.md), [Requesting Holidays & Materials](/holidaysmaterials.md), etc.
 
 ## Your project
 
@@ -28,4 +30,4 @@ You will then meet with Jordi who will give you the overall picture of how we ru
 
 ## Meet the team
 
-The first day, we especially encourage you to join the Martian coffee so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
+The first day, we especially encourage you to join the [Martian coffee](/rituals.md) so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
