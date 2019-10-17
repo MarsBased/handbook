@@ -4,6 +4,8 @@
 
 We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, potentially riskful projects and so on.
 
+On the other hand, to learn about what kind of projects we do, check our Playbook: [Chapter 5 - Project Types](https://marsbased.com/playbook/project-types/)
+
 Our sales workflow is mostly executed by Àlex and complemented by someone from the tech team doing the estimates for the quote (usually Xavi and/or Jordi).
 
 ## End-to-end development
