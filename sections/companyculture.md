@@ -1,6 +1,15 @@
 # Company Culture
 
-We live by a very distinct and solid set of values guiding us in our day to day.
+We live by a very distinct and solid set of values guiding us in our day to day. Our Company Culture has been fundamental to hiring and to growing the company.
+
+Company Culture is what happens when the founders are not in the room. It's a set of tools that will help you to act and decide better according to our values.
+
+You can read (almost) everything we know about company culture in these four blog posts:
+
+* [How We Came Up With Our Company Culture](https://marsbased.com/blog/2019/07/30/how-we-came-up-with-company-culture/)
+* [Our Company Culture Helps Us to Hire Faster and Better. Here's How!](https://marsbased.com/blog/2019/08/26/our-company-culture-helps-hiring-faster-better/)
+* [Leading by Example: Transmitting Company Culture in Your Organisation](https://marsbased.com/blog/2019/09/04/leading-by-example/)
+* [Maintaining Company Culture in Remote Environments](https://marsbased.com/blog/2019/09/09/maintaining-company-culture-remote-environments/)
 
 These are the pillars of our company culture:
 
