@@ -22,7 +22,7 @@ You should have received the work contract for your revision from Leire a few da
 
 ## Onboarding
 
-Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/howwework.md), [Our rituals](/rituals.md),[Benefits & Perks](/benefits.md), [Requesting Holidays & Materials](/holidaysmaterials.md), etc.
+Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/howwework.md), [Our rituals](/rituals.md), [Benefits & Perks](/benefits.md), [Requesting Holidays & Materials](/holidaysmaterials.md), etc.
 
 ## Your project
 
@@ -30,5 +30,5 @@ You will then meet with Jordi and Xavi, who will explain you how we run our proj
 
 ## Meet the team
 
-The first day, we especially encourage you to join the [Martian coffee] (/rituals.md#martian-coffees) so that you get to know the rest of the team. We are looking forward to welcoming you! :-)
+The first day, we especially encourage you to join the [Martian coffee](/rituals.md) so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
 
