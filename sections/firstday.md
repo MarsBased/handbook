@@ -2,7 +2,7 @@
 
 Welcome aboard! It is a great pleasure to welcome you to the MarsBased spaceship. Before proceeding to your tasks, this first chapter will help you to get set up in the company.
 
-Make sure you've read the welcome PDF and that you've got access to the main tools: Slack, Basecamp, Harvest, Forecast, Google Drive, Google Calendar, 1password and your email. The rest of the tools, you can find them in our [How We Work](/howwework.md) section.
+Make sure you've read the welcome PDF and that you've got access to the main tools: Slack, Basecamp, Harvest, Forecast, Google Drive, Google Calendar, 1password and your email. The rest of the tools, you can find them in our [How We Work](/sections/howwework.md) section.
 
 By now, almost everything is set & ready. If you haven’t sent all of this, please do it:
 
@@ -22,7 +22,7 @@ You should have received the work contract for your revision from Leire a few da
 
 ## Onboarding
 
-Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/howwework.md), [Our rituals](/rituals.md), [Benefits & Perks](/benefits.md), [Requesting Holidays & Materials](/holidaysmaterials.md), etc.
+Leire will invite you to the first day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays & Materials](/sections/holidaysmaterials.md), etc.
 
 ## Your project
 
@@ -30,4 +30,4 @@ You will then meet with Jordi who will give you the overall picture of how we ru
 
 ## Meet the team
 
-The first day, we especially encourage you to join the [Martian coffee](/rituals.md) so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
+The first day, we especially encourage you to join the [Martian coffee](/sections/rituals.md#martian-coffees) so that you get to know the rest of the team. We are looking forward to welcoming you! 🚀
