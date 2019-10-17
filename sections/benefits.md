@@ -13,7 +13,7 @@ As a MarsBased employee, you get:
 * __Office material__: The fact that we don't have an office doesn't mean that you shouldn't have one. We will cover the costs of your office material, such as a desk, a secondary screen, a chair, etc. (use sensibly).
 * __Language courses__: We give every employee up to USD 200 per quarter to use on iTalki to learn languages. Ask Leire if you want to request this.
 * __Paid coworking__: If working from home isn't your thing and you want to work from a coworking space, we will give you an allowance of 150 euro per month so you can choose whichever suits you best.
-* __Tickets for conferences__: We sometimes go to conferences, like FullStackFest or EuRuKo. Want to go to some conference? Ask us and we will review it to see how can we help you!
+* __Conferences__: We sometimes go to conferences, like FullStackFest or EuRuKo. Want to go to some conference? Ask us and we will review it to see how we can help you! Depending on the relevance for the company, you might get some days off for attending the conference, have conference tickets covered, or even get transportation and accommodation expenses covered. 
 * __Company retreat__: Once per year, we do a company off-site away from Barcelona to enjoy a few days together in a different environment.
 * __Martian Days__: Every 2-3 months, we meet for a couple of days in Barcelona for a company get-together. We share the numbers of the company, strategy, interesting new projects, we conduct workshops and internal trainings and much more.
 * __Zerg Rush__: A few times a year, we do an 8h online hackathon the entire team to work on internal and side projects.
