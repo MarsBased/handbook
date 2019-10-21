@@ -18,7 +18,7 @@ By now, almost everything is set & ready. If you haven’t sent all of this, ple
 
 Leire has already been in touch with you in order to provide you with all the necessary material you need to start working (laptop, keyboard, trackpad, etc.). You should have received your material by now.
 
-## Contract and practical issues
+## Contract
 
 You should have received the work contract for your revision from Leire a few days before your starting day. During the onboarding meeting, we will revise the work contract together with you to make sure everything is clear to proceed with the signature. Normally, we sign the contract electronically using HelloSign.
 
