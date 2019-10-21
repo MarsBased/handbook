@@ -34,7 +34,7 @@ We have a layer of __Management__, consisting of the three founders of the compa
 
 The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a developer.
 
-For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working on two projects at the same time. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
+For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working on two projects in parallel. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
 
 That's why we don't have Tech Leads who manage developers, and we must be very careful to explain this to our candidates.
 
