@@ -28,6 +28,7 @@ For now, we have the following resources available:
 1. [Our Blogging Guide](/guides/blogging-guide.md)
 1. [How to Write a Damn Good Blog Post](/guides/how-to-blog.md)
 1. [Our SEO Guidelines For New Projects](/guides/seo-guidelines.md)
+1. [MarsBased programming patterns](https://github.com/MarsBased/patterns)
 
 # Other useful resources
 
