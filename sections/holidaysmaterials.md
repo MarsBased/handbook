@@ -16,7 +16,7 @@ Same for sick leave. Just let us know and rest a lot. We wish we could help you 
 
 The same applies to the holidays and vacation: want to take a day off? do it. “Hey guys, on the 21st I won’t be in town. Don’t contact me”. You know when you can take some time off and how to manage your time. You just need to coordinate with your team with sufficient notice - a couple of weeks at least - (on Basecamp) and that'll do.
 
-We officially have 24 working days per year to take off apart from the official holidays marked in the company calendar. If for some reason one year you don’t enjoy all the available days off, you can enjoy them next year and the other way around. If you need some additional days, feel free to let us know!
+We officially have 23 working days per year to take off apart from the official holidays marked in the company calendar. If for some reason one year you don’t enjoy all the available days off, you can enjoy them next year and the other way around. If you need some additional days, feel free to let us know!
 
 If you need extra days, make sure to request it with enough time so we can coordinate accordingly!
 
