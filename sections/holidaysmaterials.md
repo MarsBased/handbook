@@ -18,7 +18,7 @@ The same applies to the holidays and vacation: want to take a day off? do it. â€
 
 We officially have 23 working days per year to take off apart from the official holidays marked in the company calendar. If for some reason one year you donâ€™t enjoy all the available days off, you can enjoy them next year and the other way around. If you need some additional days, feel free to let us know!
 
-If you need extra days, make sure to request it with enough time so we can coordinate accordingly!
+If you need extra days, make sure to request it with enough time so we can coordinate accordingly! For three or more days, we will ask you to give us one month of notice.
 
 We have a thread for that on Basecamp. You should let us know with at least a month of notice. Leire will add that to Harvest so we can all be on the same page, but make sure it's right if you're so kind!
 
