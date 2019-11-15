@@ -23,12 +23,13 @@ Here you will find the most important information about the company to help you 
 
 For now, we have the following resources available:
 
-1. [Our Curated Angular Reference Guide](/guides/angular-reference-guide.md)
 1. [Our Project Management Guidelines](/guides/pm-guidelines.md)
+1. [Our Git & Commit Guidelines](/guides/git-guidelines.md)
+1. [Some of our used programming patterns](https://github.com/MarsBased/patterns)
+1. [Our Curated Angular Reference Guide](/guides/angular-reference-guide.md)
+1. [Our SEO Guidelines For New Projects](/guides/seo-guidelines.md)
 1. [Our Blogging Guide](/guides/blogging-guide.md)
 1. [How to Write a Damn Good Blog Post](/guides/how-to-blog.md)
-1. [Our SEO Guidelines For New Projects](/guides/seo-guidelines.md)
-1. [MarsBased programming patterns](https://github.com/MarsBased/patterns)
 
 # Other useful resources
 
