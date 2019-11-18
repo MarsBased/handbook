@@ -27,7 +27,7 @@ Each commit message consists of a header, a body and a footer. The header has a 
 The header is mandatory and the scope of the header is **optional**.
 
 The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
-The lenguage used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
+The language used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
 
 The `<footer>` should contain a [closing reference to a github issue](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords),
 a Trello card link, a JIRA issue ID or link. If there is no project management tool that can be referenced or the issue was not created for this specific commit.
