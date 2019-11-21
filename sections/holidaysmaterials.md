@@ -1,8 +1,24 @@
 # Requesting Holidays & Materials
 
+## Local holidays
+
+Being most of the team members based in Barcelona, we normally take Barcelona’s local holidays as our official calendar. However, team members living in other locations, are asked to choose the local holidays that best suit them. This way, at the beginning of the year we set up the official holiday calendar for each team member.
+
+But feel free to exchange any local holidays for another normal day, any time. Flexibility, remember.
+
+
+## Vacations
+
+We officially have 24 working days per year to take off apart from the official holidays marked in the company calendar. If for some reason one year you don’t enjoy all the available days off, you can enjoy them next year and the other way around. If you need some additional days, feel free to let us know!
+
+Make sure to request your holidays with enough time so we can coordinate accordingly! If you are taking 1-2 days, let us know at least 2 weeks in advance. If you are taking three or more days, we will ask you to give us one month of notice. Before requesting your holidays, we kindly ask you to check the viability with the project you are working for, and let us know if there is any important deadline we should know in order to assign some other team member to the project if that’s needed. We’ll do our best so that you can enjoy those days! 
+
+We have a thread for requesting holidays on Basecamp. Leire will add that to Harvest-Forecast so we can all be on the same page, but make sure it's right if you're so kind!
+
+
 ## Sick leave and time off
 
-Everybody needs to go to the doctor. 
+Everybody needs to go to the doctor.
 
 Everybody needs to be at home when the repairman/plumber/DSL technician/etc comes and might be easily distracted.
 
@@ -14,19 +30,12 @@ There are a million reasons why we have flexible schedules. Just drop us a line 
 
 Same for sick leave. Just let us know and rest a lot. We wish we could help you more with that.
 
-The same applies to the holidays and vacation: want to take a day off? do it. “Hey guys, on the 21st I won’t be in town. Don’t contact me”. You know when you can take some time off and how to manage your time. You just need to coordinate with your team with sufficient notice - a couple of weeks at least - (on Basecamp) and that'll do.
+If you are sick and need to go to the doctor, there is no need that you compensate those hours later on. As we said, take rest and get on well soon!
 
-We officially have 23 working days per year to take off apart from the official holidays marked in the company calendar. If for some reason one year you don’t enjoy all the available days off, you can enjoy them next year and the other way around. If you need some additional days, feel free to let us know!
+If you have a regular appointment at the doctor within your ordinary working schedule, you can organize yourself to recover those hours when best fits you.
 
-If you need extra days, make sure to request it with enough time so we can coordinate accordingly! For three or more days, we will ask you to give us one month of notice.
+If for some reason you have to visit the doctor on a regular basis due to a treatment or whatsoever, let Leire know and she’ll be happy to help you find the best way to reconcile both. 
 
-We have a thread for that on Basecamp. You should let us know with at least a month of notice. Leire will add that to Harvest so we can all be on the same page, but make sure it's right if you're so kind!
-
-## Local holidays
-
-Being most of the team members based in Barcelona, we normally take Barcelona’s local holidays as our official calendar. However, team members living in other locations, are asked to choose the local holidays that best suit them. This way, at the beginning of the year we set up the official holiday calendar for each team member.
-
-But feel free to exchange any local holidays for another normal day, any time. Flexibility, remember.
 
 ## Requesting office material & other stuff
 
