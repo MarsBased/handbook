@@ -70,7 +70,7 @@ Being a small company operating remotely for the most part means that we interac
 
 We try to spice up Fridays by chatting only in English and by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
 
-To avoid repeating songs, check the [Martian Playlist Archive](https://open.spotify.com/playlist/7CCutbZd1ojXf3X3EP8QWr?si=_2oVYBrVQq6dHA8sri5eaQ) before submitting yours!
+Add your song to [Martian Friday Playlist - Current Edition](https://open.spotify.com/playlist/26YmBivvzQDQ3OXa176pAl?si=wyghRlg1SLWzO9ix7ROdIQ). To avoid repeating songs, check the [Martian Friday Playlist Archive](https://open.spotify.com/playlist/7CCutbZd1ojXf3X3EP8QWr?si=_2oVYBrVQq6dHA8sri5eaQ) before submitting yours!
 
 ## Reading challenge
 
