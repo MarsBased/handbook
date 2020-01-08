@@ -39,6 +39,7 @@ Choose the one that best fits the task:
 - fix: Represents a bug fix for your application.
 - feat: Adds a new feature to your application or library.
 - refactor: A code change that neither fixes a bug nor adds a feature.
+- deploy: Changes to modify or related to the deployment process.
 - chore: Upgrades libraries and/or performs maintenance tasks.
 - docs: Documentation only changes.
 - test: Adding missing tests or correcting existing tests.
