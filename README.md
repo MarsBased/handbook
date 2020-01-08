@@ -15,6 +15,7 @@ Here you will find the most important information about the company to help you 
 1. [Our product: Rosetta](/sections/rosetta.md)
 1. [Operations](/sections/operations.md)
 1. [Our rituals](/sections/rituals.md)
+1. [Open Source](/sections/opensource.md)
 1. [Benefits & perks](/sections/benefits.md)
 1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
 1. [Careers at MarsBased](/sections/careers.md)
