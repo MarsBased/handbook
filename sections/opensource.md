@@ -1,6 +1,6 @@
 # Open Source
 
-MarsBased would not exist without Open Source software. The programming languages and frameworks we use are open source, and a lot of the tools we use on our dairly work are open source too.
+MarsBased would not exist without Open Source software. The programming languages and frameworks we use are open source, and a lot of the tools we use on our daily work are open source too.
 
 We're actively supporting, creating and maintaining Open Source projects to make software development a better place for us all.
 
