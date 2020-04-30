@@ -16,6 +16,7 @@ Here you will find the most important information about the company to help you 
 1. [Operations](/sections/operations.md)
 1. [Our rituals](/sections/rituals.md)
 1. [Open Source](/sections/opensource.md)
+1. [Talks & Podcasts](/sections/talks.md)
 1. [Hiring](/sections/hiring.md)
 1. [Benefits & perks](/sections/benefits.md)
 1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
@@ -35,7 +36,7 @@ For now, we have the following resources available:
 
 # Other useful resources
 
-1. [MarsBased blog](https://marsbased.com/blog)
-1. [MarsBased newsletter](https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312)
-1. [MarsBased YouTube channel](https://www.youtube.com/channel/UCN95eGlyCaRBa9Iy12mVApg)
-1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity)
+1. [MarsBased blog](https://marsbased.com/blog){:target="_blank"}
+1. [MarsBased newsletter](https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312){:target="_blank"}
+1. [MarsBased YouTube channel](https://www.youtube.com/channel/UCN95eGlyCaRBa9Iy12mVApg){:target="_blank"}
+1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity){:target="_blank"}
