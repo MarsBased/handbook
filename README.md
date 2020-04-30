@@ -36,7 +36,7 @@ For now, we have the following resources available:
 
 # Other useful resources
 
-1. [MarsBased blog](https://marsbased.com/blog){:target="_blank"}
-1. [MarsBased newsletter](https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312){:target="_blank"}
-1. [MarsBased YouTube channel](https://www.youtube.com/channel/UCN95eGlyCaRBa9Iy12mVApg){:target="_blank"}
-1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity){:target="_blank"}
+1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
+1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
+1. <a href="https://www.youtube.com/channel/UCN95eGlyCaRBa9Iy12mVApg" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
+1. <a href="https://github.com/MarsBased/productivity" title="Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)" target="_blank">Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)</a>
