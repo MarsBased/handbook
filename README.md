@@ -19,20 +19,20 @@ Here you will find the most important information about the company to help you 
 1. [Talks & Podcasts](/sections/talks.md)
 1. [Hiring](/sections/hiring.md)
 1. [Benefits & perks](/sections/benefits.md)
-1. [Requesting Holidays & Material](/sections/holidaysmaterials.md)
+1. [Requesting holidays & material](/sections/holidaysmaterials.md)
 1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
 
 For now, we have the following resources available:
 
-1. [Our Project Management Guidelines](/guides/pm-guidelines.md)
-1. [Our Git & Commit Guidelines](/guides/git-guidelines.md)
+1. [Our project management guidelines](/guides/pm-guidelines.md)
+1. [Our Git & Commit guidelines](/guides/git-guidelines.md)
 1. [Some of our used programming patterns](https://github.com/MarsBased/patterns)
-1. [Our Curated Angular Reference Guide](/guides/angular-reference-guide.md)
-1. [Our SEO Guidelines For New Projects](/guides/seo-guidelines.md)
-1. [Our Blogging Guide](/guides/blogging-guide.md)
-1. [How to Write a Damn Good Blog Post](/guides/how-to-blog.md)
+1. [Our curated Angular reference guide](/guides/angular-reference-guide.md)
+1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
+1. [Our blogging guide](/guides/blogging-guide.md)
+1. [How to write a damn good blog post](/guides/how-to-blog.md)
 
 # Other useful resources
 
