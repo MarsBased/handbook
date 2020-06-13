@@ -15,6 +15,7 @@ Growth Hacking and Outbound Marketing with Àlex Rodríguez Bacardit" target="_b
 
 ## In Spanish
 
+* __Radio TeleTaxi__: Because of the presentation of his first book, Camino al éxit(o), Àlex was interviewed by the legendary Justo Molinero to discuss the book, MarsBased and how to face life - <a href="https://www.youtube.com/watch?v=cUnt5dxzCwQ" title="Àlex Rodríguez Bacardit at Radio TeleTaxi" target="_blank">LINK</a>.
 * __Cinco Días__: Our CEO, Àlex, was interviewed for this financial newspaper in Spain - <a href="https://www.dropbox.com/s/swm703uau8rgyso/12633759_10153833916187969_5451559627915928539_o.jpg?dl=0" title="Cinco Días interviewed Àlex Rodríguez Bacardit from MarsBased" target="_blank">LINK</a>.
 * __Agile Conference Spain 2019__: Àlex was invited to be the special keynote speaker and talk about how to do remote work in different kinds of organisations, comparing how we do it at MarsBased and how they do it at Startup Grind - <a href="https://youtu.be/smwJWdeNANc" title="Agile Conference Spain 2019 with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
 * __Startup Grind Barcelona__: Our COO, Jordi, was interviewed at Startup Grind Barcelona to talk about how we work at remote. We went for over an hour about his background, his previous jobs, and how we work at MarsBased (tools, methodologies, hiring, firing, and whatnot) - <a href="https://www.youtube.com/watch?v=F0NWOtGnjqE" title="Jordi Vendrell at Startup Grind BCN" target="_blank">LINK</a>.
