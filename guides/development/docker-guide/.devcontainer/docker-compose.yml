@@ -1,0 +1,138 @@
+version: '3.4'
+
+x-app: &app
+  stdin_open: true
+  tty: true
+  build:
+    context: .
+    dockerfile: ./Dockerfile
+  image: <application-name>-dev
+  environment: &env
+    NODE_ENV: development
+    RAILS_ENV: ${RAILS_ENV:-development}
+    REDIS_URL: redis://redis:6379/
+    REDIS_HOST: redis
+    REDIS_POST: 6379
+    DATABASE_URL: postgres://postgres:postgres@postgres:5432
+    DATABASE_USERNAME: postgres
+    DATABASE_PASSWORD: postgres
+    SELENIUM_URL: http://selenium:4444/wd/hub
+    TEST_APP_HOST: 'http://test'
+    TEST_APP_PORT: 8200
+    AWS_REGION: eu-west-1
+    AWS_ACCESS_KEY_ID: minio
+    AWS_SECRET_ACCESS_KEY: 2NVQWHvTT73XMgqapGchy6yAtwHezMZn
+    S3_BUCKET: <application-name>-development
+    S3_FORCE_PATH: 'true'
+    S3_ENDPOINT: http://172.17.0.1:9000
+
+    # Misc
+    BOOTSNAP_CACHE_DIR: /bundle/bootsnap
+    WEBPACKER_DEV_SERVER_HOST: webpacker
+    WEB_CONCURRENCY: 1
+    HISTFILE: /workspace/log/.bash_history
+    EDITOR: vi
+  volumes:
+    - ../:/workspace:cached
+    - rails_cache:/workspace/tmp/cache
+    - bundle:/bundle
+    - node_modules:/workspace/node_modules
+    - packs:/workspace/public/packs
+    - ./.psqlrc:/root/.psqlrc:ro
+    - ./.pryrc:/root/.pryrc:ro
+  depends_on:
+    - postgres
+    - redis
+    - minio
+    - selenium
+  tmpfs:
+    - /tmp
+
+services:
+  rails:
+    <<: *app
+    command: bundle exec rails server -b 0.0.0.0
+    ports:
+      - 3000:3000
+
+  jobs:
+    <<: *app
+    command: bundle exec sidekiq -C config/sidekiq.yml
+
+  webpacker:
+    stdin_open: true
+    tty: true
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: <application-name>-dev
+    command: ./bin/webpack-dev-server
+    ports:
+      - 3035:3035
+    volumes:
+      - ..:/workspace:cached
+      - bundle:/bundle
+      - node_modules:/workspace/node_modules
+      - packs:/workspace/public/packs
+    environment:
+      NODE_ENV: development
+      RAILS_ENV: ${RAILS_ENV:-development}
+      WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
+    tmpfs:
+      - /tmp
+
+  postgres:
+    image: postgres:<postgres-version>
+    volumes:
+      - ./.psqlrc:/root/.psqlrc:ro
+      - ./volumes/postgres:/var/lib/postgresql/data
+      - ./log:/root/log:cached
+    environment:
+      PSQL_HISTFILE: /root/log/.psql_history
+    ports:
+      - 5432
+
+  redis:
+    image: redis:<redis-version>-alpine
+    volumes:
+      - redis:/data
+    ports:
+      - 6379
+
+  minio:
+    image: minio/minio
+    volumes:
+      - ./volumes/minio:/data
+    environment:
+      MINIO_ACCESS_KEY: minio
+      MINIO_SECRET_KEY: 2NVQWHvTT73XMgqapGchy6yAtwHezMZn
+    ports:
+      - 9000:9000
+    command: server /data
+
+  minio-client:
+    image: minio/mc
+    command: /bin/sh
+    entrypoint: /bin/sh
+    volumes:
+      - ./scripts:/scripts:ro
+    depends_on:
+      - minio
+
+  # Useful to not depend on your computer chrome version
+  selenium:
+    image: selenium/standalone-chrome-debug
+    logging:
+      driver: none
+    volumes:
+      - ..:/workspace:cached
+    ports:
+      - 5900:5900
+      - 4444
+
+volumes:
+  redis:
+  bundle:
+  node_modules:
+  rails_cache:
+  packs:

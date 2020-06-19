@@ -1,0 +1,44 @@
+#!/usr/bin/env bash
+
+cd .devcontainer
+
+case "$1" in
+ start)
+   docker-compose up rails jobs webpacker
+   ;;
+ start-services)
+   docker-compose up postgres redis minio
+   ;;
+ stop)
+   docker-compose down
+   ;;
+ server)
+   docker-compose up -d rails && docker attach $(docker-compose ps -q rails)
+   ;;
+ jobs)
+   docker-compose up -d jobs && docker attach $(docker-compose ps -q jobs)
+   ;;
+ webpacker)
+   docker-compose up -d webpacker && docker attach $(docker-compose ps -q webpacker)
+   ;;
+ bash)
+   docker-compose run --rm rails bash
+   ;;
+ setup)
+   docker-compose build
+   docker-compose run --rm --entrypoint="/bin/sh -c /scripts/setup-minio.sh" minio-client
+   docker-compose run --rm rails setup
+   ;;
+ test)
+   docker-compose run --rm rails rspec
+   ;;
+ setup-localhost-alias)
+   cp com.user.docker-host-alias.plist /Library/LaunchDaemons/
+   chmod 0644 /Library/LaunchDaemons/com.user.docker-host-alias.plist
+   chown root:wheel /Library/LaunchDaemons/com.user.docker-host-alias.plist
+   launchctl load /Library/LaunchDaemons/com.user.docker-host-alias.plist
+   ;;
+ *)
+   docker-compose run --rm rails $*
+   ;;
+esac
