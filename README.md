@@ -28,7 +28,7 @@ For now, we have the following resources available:
 
 1. [Our project management guidelines](/guides/pm-guidelines.md)
 1. [Our Git & Commit guidelines](/guides/git-guidelines.md)
-1. [Some of our used programming patterns](https://github.com/MarsBased/patterns)
+1. [Some of our used programming patterns](/guides/patterns/index.md)
 1. [Our curated Angular reference guide](/guides/angular-reference-guide.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
 1. [Our blogging guide](/guides/blogging-guide.md)
