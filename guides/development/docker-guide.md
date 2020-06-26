@@ -20,7 +20,7 @@ It is useful to think of it as if the Docker image is just the bare-bones OS and
 
 In order to Dockerize a Rails application for development, we create a `.devcontainer` directory in the application root, which contains the `Dockerfile`, `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
-When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `ruby-version>`, `<major-node-version>` and `<bundler-version>`.
+When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<ruby-version>`, `<major-node-version>` and `<bundler-version>`.
 
 The `.devcontainer` directory contains the following files:
 * `docker-compose.yml`: [Docker compose configuration](#docker-compose-configuration).
