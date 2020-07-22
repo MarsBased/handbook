@@ -1,4 +1,4 @@
-# Projects
+# Project types
 
 ## Before the project: sales
 
