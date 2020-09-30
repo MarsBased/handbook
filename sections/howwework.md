@@ -69,6 +69,8 @@ _A grosso modo_ we use the following tools:
 * __Github__: Where we store our code and we also use it to manage the tasks and the projects from a technical perspective.
 * __Harvest/Forecast__: Where we track our hours and where we plan ahead. We're also using it to get reports and to invoice clients.
 * __Hubspot__: We use it for certain marketing purposes and to track the dealflow and to report on sales.
+* __JIRA__: We use it to manage all the projects on our end. We also use it for a lot of other areas in the company like hiring or operations.
+* __HelloSign__: We use it to sign all the documents digitally (NDAs, contracts and whatnot).
 
 
 
