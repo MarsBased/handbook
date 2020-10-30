@@ -16,7 +16,7 @@ In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
 
 In alternate months between Martian Days, we do our online hackathon called __Zerg Rush__, honouring one of our favourite games ever: Starcraft.
 
-Typically on Fridays, we meet online at 9am to distribute tasks and work on internal projects: our product Rosetta, documentation, libraries, open source, a new website, etc.
+Typically on Fridays, we meet online at 9am to distribute tasks and work on internal projects: documentation, libraries, open source, a new website, etc.
 
 We do another followup call at the end of the day to summarise what we've been up to and in which state are we leaving the project.
 

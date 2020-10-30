@@ -23,8 +23,6 @@ In 2019, we have just started to offer a new service: tech due diligences. A lot
 
 We will help them to audit several aspects of the technology of these companies like the infrastructure, the choice of languages, scalability, security issues, code quality and much more.
 
-Despite being a services company, we're building our product. Check it out in its dedicated page [Our Product: Rosetta](/sections/rosetta.md).
-
 ## Community
 
 We spend a considerable amount of time and resources to develop community around us. Helping both the tech and startups communities in Barcelona, we have become one of the most active companies in the ecosystem.
