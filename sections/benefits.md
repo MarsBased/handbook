@@ -21,5 +21,15 @@ As a MarsBased employee, you get:
 * __Christmas dinner and other surprises__: End of the year, start of the party! Our Christmas dinners (and the subsequent parties) are legendary. We also give a few Christmas gifts and some other surprises during the year.
 
 
+## Requesting office material & other stuff
 
+Count on our support with the materials you need to create or improve your working conditions. This includes the devices that make your work life easier, such as a trackpad, keyboard, etc., as well as the adequation of the workplace itself. 
+ 
+Those of you working from home may need a chair, a desk or an external monitor.
+ 
+Those of you that need a coworking space (because you don’t have the adequate working conditions at home or for some reason you work better from there), will get an allowance of 150 euro per month for paying the cost. 
+ 
+Contact Leire to request office material and other stuff you might need. She's the catalyser of everything in the company.
+
+We don't need a complicated process for this, do we?
 
