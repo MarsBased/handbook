@@ -1,4 +1,4 @@
-# Requesting Holidays & Materials
+# Holidays, Time off & Sick leave
 
 ## Local holidays
 
@@ -16,9 +16,7 @@ Make sure to request your holidays with enough time so we can coordinate accordi
 We have a thread for requesting holidays on Basecamp. Leire will add that to Harvest-Forecast so we can all be on the same page, but make sure it's right if you're so kind!
 
 
-## Sick leave and time off
-
-Everybody needs to go to the doctor.
+## Time off
 
 Everybody needs to be at home when the repairman/plumber/DSL technician/etc comes and might be easily distracted.
 
@@ -28,23 +26,19 @@ You might want to take a train to go for a long weekend on Friday but will be sp
 
 There are a million reasons why we have flexible schedules. Just drop us a line like “hey guys, Wednesday morning I might be off for three hours, I will catch up later” and that’s fine. A message on Slack on the #status channel will do.
 
+
+## Sick leave
+
 Same for sick leave. Just let us know and rest a lot. We wish we could help you more with that.
 
-If you are sick and need to go to the doctor, there is no need that you compensate those hours later on. As we said, take rest and get on well soon!
+If you feel sick and need to go to the doctor, there is no need that you compensate those hours later on. As we said, take rest and get on well soon! You don't need to worry about your sick leave affecting on your payroll. MarsBased will be covering your full salary also during the first 4 days of leave (period in which the company is exempt from paying the salary to the employee according to Spanish regulations). 
 
-If you have a regular appointment at the doctor within your ordinary working schedule, you can organize yourself to recover those hours when best fits you.
+If you are sick for more than 2 days, we'll kindly ask you to send us your doctor's medical sick leave document so that we can notify the Health Authority and comply with the legal requirements. 
+
+
+## Health appointment
+
+If you have a regular appointment at the doctor, the dentist, or you need to accompany a relative to the doctor within your ordinary working schedule, you are free to organize yourself as best fits you to recover those hours. You don't need to send us any proof of your doctor's visit.
 
 If for some reason you have to visit the doctor on a regular basis due to a treatment or whatsoever, let Leire know and she’ll be happy to help you find the best way to reconcile both. 
 
-
-## Requesting office material & other stuff
-
-Count on our support with the materials you need to create or improve your working conditions. This includes the devices that make your work life easier, such as a trackpad, keyboard, etc., as well as the adequation of the workplace itself. 
- 
-Those of you working from home may need a chair, a desk or an external monitor.
- 
-Those of you that need a coworking space (because you don’t have the adequate working conditions at home or for some reason you work better from there), will get an allowance of 150 euro per month for paying the cost. 
- 
-Contact Leire to request office material and other stuff you might need. She's the catalyser of everything in the company.
-
-We don't need a complicated process for this, do we?
