@@ -1,4 +1,4 @@
-# The MarsBased handbook
+# The MarsBased Handbook
 
 Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
 
