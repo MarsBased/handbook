@@ -19,7 +19,7 @@ Here you will find the most important information about the company to help you 
 1. [Talks & Podcasts](/sections/talks.md)
 1. [Hiring](/sections/hiring.md)
 1. [Benefits & perks](/sections/benefits.md)
-1. [Holidays, Time off & Sick leave](/sections/holidaysmaterials.md)
+1. [Holidays, Time off & Sick leave](/sections/holidays.md)
 1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
