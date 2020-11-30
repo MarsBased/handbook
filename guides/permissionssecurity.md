@@ -39,8 +39,14 @@ For security reasons, we don't want people from outside the company having acces
 * Never share an entire folder with someone, unless absolutely necessary. If you have to do it, for any reason, rename the folder adding (shared) at the end to make it easier to see that it has been shared outside MarsBased.
 * Never share anything only with a public link, unless absolutely necessary. It's much better to share with individual people.
 * If you need to share a file outside MarsBased, create a "Shared" folder and put the file in there. It will be easier to spot later on. However, don't share the entire folder, just the relevant file. The "Shared" folder is just a way to have all the shared files together.
+
+!["Shared" folder example](/../assets/drive.png)
+
 * If the people you want to add don't need editing capabilities, make sure to add them as "viewers" or "commenters".
 * If you add someone as a viewer or commenter, make sure to set an expiration date. Google Drive allows you to define expiration dates up to a year when you share a file with one of these roles. If that person needs access after the expiration date, she/he can make a request again. Sadly, editors can't have an expiration date.
+
+![Google Drive temporary access to a folder](/../assets/drive2.png)
+
 * If you have doubts or questions before sharing something with someone, ask Jordi and he will clarify.
 
 ### Naming
