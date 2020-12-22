@@ -42,6 +42,7 @@ Since we've got clients from abroad and clients from all over Spain, we use Engl
 
 __Things we do in English__:
 
+* Most internal communication on Slack.
 * We code and document always in English with no exception.
 * We post on Basecamp only in English too.
 * Our Startup Grind events and conferences.
@@ -52,7 +53,6 @@ __Things we do in English__:
 
 __Things we do in Spanish__:
 
-* Most internal communication on Slack.
 * Communication with Spanish-speaking clients.
 * Most content on the website is translated into Spanish, except for the blog.
 
