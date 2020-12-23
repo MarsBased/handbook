@@ -2,7 +2,7 @@
 
 Welcome aboard!
 
-It is a great pleasure to welcome you to the MarsBased spaceship. Before proceeding to your tasks, this Handbook will help you to get set up in the company.
+It is a great pleasure to welcome you to the MarsBased spaceship. Before proceeding to your tasks, look for Leire's welcoming email on your MarsBased email inbox as well as this Handbook, both of them will help you to get set up in the company.
 
 Make sure you've got access to the main tools: Slack, Basecamp, Harvest, Forecast, Google Drive, Google Calendar, 1password and your email. The rest of the tools, you can find them in our [How We Work](/sections/howwework.md) section.
 
