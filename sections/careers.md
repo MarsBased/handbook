@@ -1,14 +1,14 @@
 # Careers at MarsBased
 
-Everything we do, we do it thinking in the long term. We proud ourselves in the fact that we lose less than one employee per year.
+Everything we do, we do it thinking in the long term. We pride ourselves in the fact that we don't have employee turnover. The last Martian to walk out of the company did so in September 2017. That's well over three years, now!
 
-While in other companies, employees stay on average one year (or less!), at MarsBased the average is almost three years and counting!
+While in other companies employees stay on average one year (or less!), at MarsBased the average is almost three years and counting!
 
-This means, that we would like to have you for years to come with us, so we can grow together.
+This means that we would like to have you for years to come with us, so we can grow together.
 
 ## Career plans?
 
-While we don't have pre-defined or standardised career plans, we do think about how we can contribute to developing the careers of our employees every day.
+We're working on a framework to create our own career plans, to think about how we can contribute to developing the careers of our employees every day.
 
 Being a small company gives us the advantage of being able to sit down with our employees on a regular basis and define their career plan with them: no arbitrary goals, no force-fed promotion to management, no bullshit.
 
@@ -46,7 +46,7 @@ Then we've got the __Senior Developers__, which are the most common roles we're 
 
 Again, this is just a role. You can be a Senior Developer in Rails for one project while being a Developer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
 
-In the middle of all of them, there's the key role of the __Office Manager__, who enables all of us to work better and makes the company run more efficiently.
+In the middle of all of them, there's the key role of the __Head of People Operations__, Leire, who enables all of us to work better and makes the company run more efficiently.
 
 ## Salaries
 

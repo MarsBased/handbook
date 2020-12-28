@@ -16,7 +16,7 @@ The rest is history.
 
 ## Companies
 
-* __Basecamp__: The ultimate reason why we created our company. Their books, mentioned below, their company philosophy, the way they work, their love for the remote and their blunt opinions on the crazy startup madness are just a few of all the things we like about them. In fact, this Handbook draws a lot of inspiration from theirs!
+* __Basecamp__: The ultimate reason why we created our company. Their books, mentioned below, their company philosophy, the way they work, their love for  remote and their blunt opinions on the crazy startup madness are just a few of all the things we like about them. In fact, this Handbook draws a lot of inspiration from theirs!
 * __Thoughtbot__: Every consultancy should aspire to become like thoughtbot. Not only are they the leading Rails consultancy, but their open-source projects are used by many, their podcast is brilliant and their website and quality standards have been a large inspiration for us throughout the years.
 * __Buffer__: One of the very first big companies to embrace the radical transparency mode and their 100%-remote philosophy. The way we blog is largely influenced by these one-of-a-kind folks.
 

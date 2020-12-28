@@ -19,6 +19,7 @@ As a MarsBased employee, you get:
 * __Zerg Rush__: A few times a year, we do an 8h online hackathon the entire team to work on internal and side projects.
 * __Books__: We'll buy you a few books when you start working with us so you get acquainted with how we work and what we do. If you need to purchase any other book for work, let us know!
 * __Christmas dinner and other surprises__: End of the year, start of the party! Our Christmas dinners (and the subsequent parties) are legendary. We also give a few Christmas gifts and some other surprises during the year.
+* __Cool swag__: Once per year, we create company swag like t-shirts, coffee mugs, hoodies or... facemasks!
 
 
 ## Requesting office material & other stuff
@@ -27,7 +28,7 @@ Count on our support with the materials you need to create or improve your worki
  
 Those of you working from home may need a chair, a desk or an external monitor.
  
-Those of you that need a coworking space (because you don’t have the adequate working conditions at home or for some reason you work better from there), will get an allowance of 150 euro per month for paying the cost. 
+Those of you that need a coworking space (because you don’t have the adequate working conditions at home or for some reason you work better from there), will get an allowance of 150 euro per month to pay the cost. 
  
 Contact Leire to request office material and other stuff you might need. She's the catalyser of everything in the company.
 

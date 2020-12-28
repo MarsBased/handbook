@@ -26,7 +26,7 @@ We have been working both with AWS and DigitalOcean as hosting providers. We hav
 
 We ask the clients to contract the hosting services themselves and we manage them. Otherwise, we will charge them for these services.
 
-Midway through the project, we offer them the maintenance contract for the post-release phase.
+Halfway through the project, we offer them the maintenance contract for the post-release phase.
 
 ## Our techstack
 

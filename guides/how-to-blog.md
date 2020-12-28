@@ -4,8 +4,6 @@ At MarsBased, we are always learning new stuff. Running your own company means b
 
 Here's a thing or two we have learnt along the way.
 
-After over a year of blogging for MarsBased and other sites, such as [Startup Grind](http://www.startupgrind.com/barcelona "Startup Grind Barcelona"), [Barcelona Ventures](http://barcelonaventures.com/blog/ "Barcelona Ventures blog") or [my personal Medium](https://medium.com/@lexrodba "@Lexrodba Medium"), I've learnt a thing or two that I wanted to share with all of you.
-
 ### Choose a good title
 
 Let's start off from the very beginning: the title. Nowadays titles do not only have to be understandable by humans, but by robots too. And while we don't refer to robots like [this one](http://static.guim.co.uk/sys-images/Guardian/Pix/pictures/2014/2/21/1392977241047/Robot-from-The-Terminator-010.jpg "Robot") or [this one](http://img4.wikia.nocookie.net/__cb20141005032524/deadliestfiction/images/e/eb/Optimus_Prime_Generation_1.jpg "Robot"), it's always a good idea to let Google bots and the rest of web crawlers "understand" that title.
@@ -104,7 +102,3 @@ It is a good idea to re-read the post 3 o 4 times prior to publishing, and it's 
 Finally, the post should have a *raison d'être*: it can be an informative post, a how-to guide, an opinion to give food for thought, or an invitation to the new beta version of your product.
 
 Whatever the aim of the post is, it should conclude with a call to action. A call to action (often referred to as CTA) is an instruction to the audience to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today" ([source](http://homebusiness.about.com/od/homebusinessglossar1/g/Call-To-Action-Definition.htm "Definition of call to action")). If you don't know what call to action you should do, the message of your post might not be clear enough, yet you can always ask the audience to share the post around.
-
-Want an example of call to action? We'll wrap up the post with one!
-
-Are you a blogger? What tips have you got that we might have skipped? Share your opinion in the comments section below!

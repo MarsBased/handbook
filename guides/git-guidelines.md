@@ -36,13 +36,13 @@ a Trello card link, a JIRA issue ID or link. If there is no project management t
 
 Choose the one that best fits the task:
 
-- fix: Represents a bug fix for your application.
-- feat: Adds a new feature to your application or library.
-- refactor: A code change that neither fixes a bug nor adds a feature.
-- deploy: Changes to modify or related to the deployment process.
-- chore: Upgrades libraries and/or performs maintenance tasks.
-- docs: Documentation only changes.
-- test: Adding missing tests or correcting existing tests.
+- __fix:__ Represents a bug fix for your application.
+- __feat:__ Adds a new feature to your application or library.
+- __refactor:__ A code change that neither fixes a bug nor adds a feature.
+- __deploy:__ Changes to modify or related to the deployment process.
+- __chore:__ Upgrades libraries and/or performs maintenance tasks.
+- __docs:__ Documentation only changes.
+- __test:__ Adding missing tests or correcting existing tests.
 
 #### Scope
 
@@ -50,9 +50,9 @@ The scope is meant to describe a specific module / part of the application and i
 
 Some examples to serve as inspiration:
 
-- admin: refers to the admin panel
-- users: refers to the user management module
-- payment: changes on the payment gateway
+- __admin:__ refers to the admin panel.
+- __users:__ refers to the user management module.
+- __payment:__ changes on the payment gateway.
 
 #### Samples
 
@@ -124,4 +124,4 @@ This guide is heavily influenced by:
 - [Angular Commit Message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 
-Some part of this guide are a copy & paste of theirs. All the credit and respect 🙌 goes to the original authors.
+Some part of this guide are a copy & paste of theirs. All the credit and respect go to the original authors 🙌

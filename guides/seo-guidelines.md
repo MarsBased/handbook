@@ -12,7 +12,7 @@ Before getting into detail, here are the tools that you will need.
 
 <strong>URL:</strong> <a href="https://search.google.com/search-console" title="Google Search Console" target="_blank">https://search.google.com/search-console</a>
 
-<strong>Description:</strong> Google Seatch Console is a Google service to list and manage your domains. From domain verification to keyword analysis, this is a very useful tool. Amongst other things, you can verify the schema.org data, the robots.txt file and the sitemap structure.
+<strong>Description:</strong> Google Search Console is a Google service to list and manage your domains. From domain verification to keyword analysis, this is a very useful tool. Amongst other things, you can verify the schema.org data, the robots.txt file and the sitemap structure.
 
 We will use the Search Console to add all variants of the same domain, in order to claim and verify them:
 
@@ -30,8 +30,6 @@ We will also check for errors here: 404s, performance errors, robots.txt not fou
 <strong>URL:</strong> <a href="http://www.google.com/analytics" title="Google Analytics" target="_blank">http://www.google.com/analytics</a>
 
 <strong>Description:</strong> Google Analytics is <i>THE</i> tool when it comes to analysing user behaviour on a given site. It tracks every visitor down, from where they come from, what do they do on the site, and where do they go when they leave. Analytics does also allow you to create marketing campaigns, among other capabilities.
-
-This is like Google Search Console on steroids. There’s so much you can do here it's not even funny. You can track the user's behaviour, see them in real time, extract demographics of the audience that's visiting you, see from which channels do they come from, etc. However, if Google Webmaster Tools was too complicated for you, don't even try here.
 
 Google Analytics will provide you with the Google Analytics tracking code, which you will find in the Admin tab. This is what you will implement in every project inside the `<head>` HTML tag.
 
@@ -150,7 +148,7 @@ Some basic rules for content. They’re too many to remember unless you’ve bee
 * Avoid using “<i>click here</i>” as labels for anchors. Use descriptive text like “<i>read our favourite article about SEO for multilanguage sites</i>”.
 * Anchor elements to other websites, ALWAYS with a `target=_blank` attribute. We don’t want to lose navigation to other websites.
 * Images should ALWAYS include a descriptive `alt` attribute. Use keywords!
-*No more than one `h1` per page.
+* No more than one `h1` per page.
 * `<h1>` only includes `<h2>` (as many as you need). `<h2>` only includes `<h3>`, and so forth. Headers should be hierarchical.
 * Make sure that <strong>every page of the site is linked from another page</strong>. The site needs to be fully navigable just following links. Otherwise, crawlers will not be able to do it.
 * Make sure you use the right keywords for the blog posts and content on the site.
@@ -178,6 +176,4 @@ We need to tell the crawlers that two pages are the same, but in different langu
 
 <hr/>
 
-If you have followed me this far, hats off! This is but a very brief and quick introduction to the basics of SEO we introduce in every project we develop. We cannot cover everything and we try to optimise our time as much as possible.
-
-Let us know your best practices in the comments section below! Also, as mentioned previously, this is a basic SEO 101 guide, so if you want us to delve into deeper detail in any specific topic, let us know so we can write an entry about it!
+If you have read this far, hats off! This is but a very brief and quick introduction to the basics of SEO we introduce in every project we develop. We cannot cover everything and we try to optimise our time as much as possible.

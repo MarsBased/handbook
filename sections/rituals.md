@@ -16,13 +16,17 @@ In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
 
 In alternate months between Martian Days, we do our online hackathon called __Zerg Rush__, honouring one of our favourite games ever: Starcraft.
 
-Typically on Fridays, we meet online at 9am to distribute tasks and work on internal projects: documentation, libraries, open source, a new website, etc.
+Anyone in the company can suggest a project to work on the next Zerg Rush. The Tech Leads will then analyse all the projects to plan accordingly and work on them.
+
+Typically, Zerg Rushes happen on Fridays, we meet online at 9am to distribute tasks and work on internal projects: documentation, libraries, open source, a new website, etc.
 
 We do another followup call at the end of the day to summarise what we've been up to and in which state are we leaving the project.
 
 We tend to organise people in small groups with other team members they usually don't work with so they get more acquainted with one another.
 
 Once, our frontend developer Javier Artero didn't know it was purely an online thing, so he went to the coworking for a Zerg Rush and found nobody there 🤣
+
+As of 2021, the Zerg Rushes change slightly. Every MarsBased employee has got five days to work on development projects, go to conferences or learn new stuff. If the project has got any kind of cost (such as flights to/fro the conference, tickets, housing, etc.) it'll have to be discussed internally and we'll decide case by case.
 
 ## Martian Retreat
 
@@ -36,7 +40,9 @@ So far, we've done the following:
 * __2018:__ Dublin.
 * __2017:__ Tenerife.
 
-As happens for the Martian Day, the company pays for the flights, meals and accommodation for the two working days. For those that decide staying for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance. 
+In 2020, we had to cancel ours, as well as all of our in-person meetings and get-togethers, due to the COVID-19 pandemic.
+
+Like in the Martian Day, the company pays for the flights, meals and accommodation for the two working days. For those that decide staying for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance. 
 
 ## Basecamp check-ins
 
@@ -46,12 +52,6 @@ Reporting on how has your week been, both professionally and on a personal level
 
 Some weeks, you'll share more technical stuff, while on others you will share the pictures of your holidays, notify us of a big achievement/change in your life, share a personal passion you have we didn't know about or just vent about something that you just can't keep inside any longer.
 
-## Coworking Wednesdays
-
-Those in Barcelona meet every Wednesday at Spaces 22@ (C/Pallars 193, 08005, Barcelona). We've got a partnership with them to work from there once per week.
-
-It's a great occasion to get more acquainted with people, as we go together for breakfast, lunch and occasionally for some beers at the end of the day.
-
 ## Martian Tapas
 
 The development team meets online every Thursday to discuss tech.
@@ -60,23 +60,29 @@ You will find more information about this practice on this blog post: [Going for
 
 ## Martian Coffees
 
-Every Friday, we open a window for casual chatter. You will see on Slack a message announcing a virtual meeting on Hangouts at 10:30am.
+Every Friday, we open a window for casual chatter. You will see on Slack a message announcing a virtual meeting on Google Meet at 10:30am.
 
-In this Hangouts, you're always invited to join a sort of virtual water cooler for 30 minutes of break. If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
+In this Hangouts, you're always invited to join a sort of virtual water cooler for 30 minutes of break.
 
-## Spotify contest & English Friday
+If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
+
+## Spotify contest
 
 Being a small company operating remotely for the most part means that we interact less frequently face-to-face than what most of us would like.
 
-We try to spice up Fridays by chatting only in English and by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
+We try to spice up Fridays by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
 
 Add your song to [Martian Friday Playlist - Current Edition](https://open.spotify.com/playlist/26YmBivvzQDQ3OXa176pAl?si=wyghRlg1SLWzO9ix7ROdIQ). To avoid repeating songs, check the [Martian Friday Playlist Archive](https://open.spotify.com/playlist/7CCutbZd1ojXf3X3EP8QWr?si=_2oVYBrVQq6dHA8sri5eaQ) before submitting yours!
 
-## Reading challenge
+## Reading, drawing and other challenges
 
 A few people in the company have engaged in a reading challenge. At the beginning of the year, we set a number of books we want to read and we share it on [GoodReads](https://goodreads.com).
 
 There's no winner and no rules, just the pleasure of reading.
+
+Likewise, our good Pablo, spearheads a drawing contest every year with initiatives such as Inktober. Again, this is something not organised by the company and therefore not mandatory, but join us for the fun!
+
+Last, but not list, we've got a club on Strava! If you want to join it, click here: <a href="https://www.strava.com/clubs/martians" title="MarsBased Strava" target="_blank">MarsBased Strava club</a>.
 
 ---
 

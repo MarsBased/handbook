@@ -2,7 +2,9 @@
 
 Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
 
-Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible). If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate that you linked us back in appreciation.
+Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible).
+
+If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate that you linked us back in appreciation.
 
 # Sections
 

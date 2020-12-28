@@ -10,9 +10,9 @@ Being 100% remote means that we've got no office. Thus, little to no operations 
 
 Mostly, we've got three big categories of operations.
 
-* __Accounting & numbers__: All things related to bookkeeping, accounting, reports and all that jazz is mostly spearheaded by Jordi. We've got an accountant company we outsource big part of this, Altisent, and Leire helps Jordi with this area too.
+* __Accounting & numbers__: All things related to bookkeeping, accounting, reports and all that jazz is mostly spearheaded by Jordi. We've got an accountant company we outsource big part of this to, Altisent, and Leire helps Jordi with this area too.
 * __People operations__: Otherwise known as HR & administration, mostly commandeered by Leire. She is the ultimate enabler of everyone in the company and a pivotal role, central to all.
-* __Marketing and sales__: Àlex to command this part. Jordi and Xavi (and some devs occasionally) step in to help with the confection of proposals for clients, and Leire helps with the organisation of events and the newsletters.
+* __Marketing and sales__: Àlex leads these areas. Jordi and Xavi (and some developers, occasionally) step in to help with the confection of proposals for clients, and Leire helps with the organisation of events and the newsletters.
 
 ## Accounting & numbers
 
@@ -35,9 +35,9 @@ Leire is also in charge of the organisation of the [Startup Grind Barcelona](htt
 We're purely an inbound company. This means that companies find us, not the other way around. We need to make it easier for them to find us. Therefore, there are a few things we do to ease this process.
 
 * __Website__: Our website is extremely fine-tuned in terms of SEO. In such a competitive landscape, we need to make sure people find us, and we're ranking very high in most interesting searches, purely by organic means.
-* __Blog__: Also on the website, we publish a blog entry every week now. Some are technical, some are about entrepreneurship, news of the company, sector insights or how-tos. We replicate most of our blogs to Medium for more coverage. If you're interested in blogging for the company, ping Àlex.
+* __Blog__: Also on the website, we publish a blog entry every week. Some are technical, some are about entrepreneurship, news of the company, sector insights or how-tos. We replicate most of our blogs to Medium for more coverage. If you're interested in blogging for the company, ping Àlex.
 * __Social media__: We invest little time in this because it doesn't really yield great results. But it's nice to be present.
-* __Newsletter__: We send a newsletter twice a month and we've got really good numbers. We have just a few followers but very loyal. Leire is in charge of the MarsBased newsletter.
+* __Newsletter__: We send a newsletter once a month and we've got really good numbers. Leire is in charge of the MarsBased newsletter.
 * __Events__: Like it or not, our Startup Grind events are also part of this. We don't like to mix up stuff, but we're sponsoring and organising the event, and therefore we need to take credit for it as well.
 * __Community work__: We curate a Slack community and Startup Digest in Barcelona, which you read about in the Community page on the website. Both are managed between Àlex and Leire.
 

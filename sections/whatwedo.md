@@ -2,7 +2,7 @@
 
 MarsBased is a consultancy of expert developers in Ruby on Rails, Node.js, React and Angular who boosts companies using technology and agile methodologies.
 
-We started off in early 2014 as a web-only dev shop using Rails and Angular because Jordi and Xavi had been using these technologies in their previous companies. Over the years, we've expanded our technological horizons slightly.
+We started off in early 2014 as a web-only development shop using Rails and Angular because our founders Jordi and Xavi had been using these technologies in their previous companies. Over the years, we've expanded our technological horizons slightly.
 
 ## Technologies & services
 
@@ -17,17 +17,17 @@ You can find a description of the technologies we use in the services pages of o
 
 The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development.
 
-In fact, we started doing mobile development because a friend of ours wanted to work with us but wanted a mobile app. Even though we insisted that we didn't do mobile, she won the conversation and she's been a happy client now since 2015.
+In fact, we started doing mobile development because a friend of ours wanted to work with us but wanted a mobile app. Even though we insisted that we didn't do mobile, she won the conversation and she became happy client between 2015 and 2019, when she sold her company. Read more about it in this blog post we wrote 👉[How we helped DPL ETT to grow their business with our mobile apps](https://marsbased.com/blog/2019/12/27/how-we-helped-dpl-grow-285-percent-mobile-app/)  
 
-In 2019, we have just started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competences or the bandwidth to assess the status and integrity of the companies they want to invest in or acquire.
+In 2019, we started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competences, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire.
 
-We will help them to audit several aspects of the technology of these companies like the infrastructure, the choice of languages, scalability, security issues, code quality and much more.
+We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
 
 ## Community
 
 We spend a considerable amount of time and resources to develop community around us. Helping both the tech and startups communities in Barcelona, we have become one of the most active companies in the ecosystem.
 
-In the [Community](https://marsbased.com/community) section of our website, you will find more detail about the high-level stuff that we do.
+In the [Community](https://marsbased.com/community) section of our website, you will find more detail about the stuff that we do.
 
 
 

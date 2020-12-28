@@ -47,7 +47,6 @@ __Things we do in English__:
 * We post on Basecamp only in English too.
 * Our Startup Grind events and conferences.
 * Social media content.
-* We have English Fridays on Slack, where we are only allowed to write in English.
 * Communication with foreign clients.
 * All the content on the corporate website.
 

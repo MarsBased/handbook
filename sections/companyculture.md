@@ -1,6 +1,6 @@
 # Company Culture
 
-We live by a very distinct and solid set of values guiding us in our day to day. Our Company Culture has been fundamental to hiring and to growing the company.
+We live by a very distinct and solid set of values guiding us in our day to day. Our Company Culture has been fundamental to hiring and growing the company.
 
 Company Culture is what happens when the founders are not in the room. It's a set of tools that will help you to act and decide better according to our values.
 

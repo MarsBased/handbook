@@ -18,13 +18,13 @@ We have a thread for requesting holidays on Basecamp. Leire will add that to Har
 
 ## Time off
 
-Everybody needs to be at home when the repairman/plumber/DSL technician/etc comes and might be easily distracted.
+Everybody needs to be at home when the repairman/plumber/DSL technician/etc. comes and might be easily distracted.
 
 Sometimes our most loved ones need to be taken care of.
 
 You might want to take a train to go for a long weekend on Friday but will be splitting the day into two.
 
-There are a million reasons why we have flexible schedules. Just drop us a line like “hey guys, Wednesday morning I might be off for three hours, I will catch up later” and that’s fine. A message on Slack on the #status channel will do.
+There are a million reasons why we have flexible schedules. Just drop us a line like “_hey folks, Wednesday morning I might be off for three hours, I will catch up later_” and that’s fine. A message on Slack on the #status channel will do.
 
 
 ## Sick leave

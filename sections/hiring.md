@@ -2,7 +2,7 @@
 
 We grow organically by hiring 2-3 people every year. For the first five years of the company, we only hired very senior profiles, but we've loosened up a bit now to accommodate all kinds of different projects.
 
-Right now, because of COVID-19, we're not hiring. However, when this is over, we will be back to hiring, to increase our Ruby team and also a JS Tech Lead, as that's what we were looking for before all of this started.
+We are currently hiring, to increase our Ruby team and also a JS Tech Lead, but for a more up-to-date, check the <a href="https://marsbased.com/jobs" title="MarsBased jobs" target="_blank">Jobs section</a> on our website.
 
 # Referrals
 

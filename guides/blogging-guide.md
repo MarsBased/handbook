@@ -129,7 +129,7 @@ Things you can do:
 * Update all your social media profiles to link to your blog.
 * Add it to your LinkedIn profile in the “URLs” section.
 * Join blog listings.
-* Post your content in LinkedIn/Google+/Facebook groups.
+* Post your content in LinkedIn/Reddit/Quora/Facebook groups.
 * Automate your social network accounts to publish automatically every new entry using tools like IFTTT.
 * Ask famous people on Twitter to retweet you (do it only if the content relates to them).
 * Add it to your signature.
