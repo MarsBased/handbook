@@ -14,19 +14,20 @@ In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
 
 ## Zerg Rush
 
-In alternate months between Martian Days, we do our online hackathon called __Zerg Rush__, honouring one of our favourite games ever: Starcraft.
+We call __Zerg Rush__ to our online hackathons, honouring one of our favourite games ever: Starcraft.
 
-Anyone in the company can suggest a project to work on the next Zerg Rush. The Tech Leads will then analyse all the projects to plan accordingly and work on them.
+They started as a tool to force us to work on company improvements when the company had only 4-5 employees. Later on, it turned into a motivating tool by allowing us to defocus from the client projects and work with different colleagues in different things.
 
-Typically, Zerg Rushes happen on Fridays, we meet online at 9am to distribute tasks and work on internal projects: documentation, libraries, open source, a new website, etc.
+As of 2021, the Zerg Rushes change slightly. Every year, MarsBased defines a budget in number of days (2021 budget is 4 days), and the team is invited to make proposals on what to do with that budget. Proposals can be presented during a Martian Day or anytime during the year. They are discussed and voted (if needed) by the rest of the team members. 
 
-We do another followup call at the end of the day to summarise what we've been up to and in which state are we leaving the project.
+Zerg Rush days can be dedicated to training sessions, pair programming, live coding, contributing to open source, developing something for the company or even attending to an event. Obviously, it needs to be related to the company's activity. 
 
-We tend to organise people in small groups with other team members they usually don't work with so they get more acquainted with one another.
+The days can be scheduled together or however the team decides. For example, one year we could schedule all the days together and do a Zerg Week, and another keep them separate and do smaller Rushes more frequently.
 
-Once, our frontend developer Javier Artero didn't know it was purely an online thing, so he went to the coworking for a Zerg Rush and found nobody there 🤣
+Proposals requiring a budget in euros ((such as flights to/fro the conference, tickets, housing, etc.) have to be discussed internally and we'll decide case by case. 
 
-As of 2021, the Zerg Rushes change slightly. Every MarsBased employee has got five days to work on development projects, go to conferences or learn new stuff. If the project has got any kind of cost (such as flights to/fro the conference, tickets, housing, etc.) it'll have to be discussed internally and we'll decide case by case.
+Participation is completely optional. People not wanting to participate continue working on their client projects.
+
 
 ## Martian Retreat
 
