@@ -16,11 +16,11 @@ In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
 
 We call __Zerg Rush__ to our online hackathons, honouring one of our favourite games ever: Starcraft.
 
-They started as a tool to force us to work on company improvements when the company had only 4-5 employees. Later on, it turned into a motivating tool by allowing us to defocus from the client projects and work with different colleagues in different things.
+They started as a tool to force us to work on company improvements when the company had only 4-5 employees. Later on, they turned into a motivating tool by allowing us to defocus from the client projects and work with different colleagues in different things.
 
 As of 2021, the Zerg Rushes change slightly. Every year, MarsBased defines a budget in number of days (2021 budget is 4 days), and the team is invited to make proposals on what to do with that budget. Proposals can be presented during a Martian Day or anytime during the year. They are discussed and voted (if needed) by the rest of the team members. 
 
-Zerg Rush days can be dedicated to training sessions, pair programming, live coding, contributing to open source, developing something for the company or even attending to an event. Obviously, it needs to be related to the company's activity. 
+Zerg Rush days can be dedicated to training sessions, pair programming, live coding, contributing to open source, developing something for the company or even attending an event. Obviously, it needs to be related to the company's activity. 
 
 The days can be scheduled together or however the team decides. For example, one year we could schedule all the days together and do a Zerg Week, and another keep them separate and do smaller Rushes more frequently.
 
