@@ -24,9 +24,9 @@ Zerg Rush days can be dedicated to training sessions, pair programming, live cod
 
 The days can be scheduled together or however the team decides. For example, one year we could schedule all the days together and do a Zerg Week, and another keep them separate and do smaller Rushes more frequently.
 
-Proposals requiring a budget in euros ((such as flights to/fro the conference, tickets, housing, etc.) have to be discussed internally and we'll decide case by case. 
+Proposals requiring a budget in euros (such as flights to/from the conference, tickets, housing, etc.) have to be discussed internally and we'll decide case by case. 
 
-Participation is completely optional. People not wanting to participate continue working on their client projects.
+Participation is completely optional. People not wanting to participate will continue working on their client projects.
 
 
 ## Martian Retreat
