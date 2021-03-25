@@ -1,60 +1,64 @@
 # Git & Commit Guidelines
 
-This is a guide that covers how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to
-other Git tools like Gitlab or Bitbucket.
+This is a guide that covers how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like Gitlab or Bitbucket.
 
-Please, notice that at MarsBased we work with a large variety of clients. There could be clients that
-follow their own guidelines. You can always suggest improvements over their guidelines but there
-will be cases where it won't be possible to use ours.
+* **1.** [Commit Message Guidelines](#CommitMessageGuidelines)
+* **1.1** [Message Format](#MessageFormat)
+* **1.1.1** [Message Header Type](#HeaderType)
+* **1.1.2** [Message Header Scope](#HeaderScope)
+* **1.1.3** [Message Samples](#CommitMessageSamples)
+* **2.** [Git Branches Naming](#GitBranchesNaming)
+* **3.** [Git Workflow](#GitWorkflow)
+* **4.** [Credits](#Credits)
 
-## Commit Message Guidelines
+Please, notice that at MarsBased we work with a large variety of clients. There could be clients that follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it won't be possible to use ours.
 
-We have very precise rules over how our git commit messages can be formatted.
-This leads to more readable messages that are easy to follow when looking through the project history.
+## <a name='CommitMessageGuidelines'></a>Commit Message Guidelines
 
-### Commit Message Format
+We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history.
+
+### <a name='MessageFormat'></a>Commit Message Format
 
 Each commit message consists of a header, a body and a footer. The header has a special format that includes a type, a scope and a subject:
 
 ```
 <type>(<scope>): <subject>
-<BLANK LINE>
+-BLANK LINE-
 <description>
-<BLANK LINE>
+-BLANK LINE-
 <footer>
 ```
 
-The header is mandatory and the scope of the header is **optional**.
+The header is mandatory but you can leave his scope out as it is **optional**.
 
 The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
 The language used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
 
-The `<footer>` should contain a [closing reference to a github issue](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords),
-a Trello card link, a JIRA issue ID or link. If there is no project management tool that can be referenced or the issue was not created for this specific commit.
+The `<footer>` should contain a closing reference to a [github issue](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords), a Trello card link, a JIRA issue ID or link. If there is no GitHub issue or project management tool reference for this specific commit just leave it blank.
 
-#### Type
+#### <a name='HeaderType'></a>Type
 
 Choose the one that best fits the task:
 
 - __fix:__ Represents a bug fix for your application.
-- __feat:__ Adds a new feature to your application or library.
+- __feature:__ Adds a new feature to your application or library.
 - __refactor:__ A code change that neither fixes a bug nor adds a feature.
 - __deploy:__ Changes to modify or related to the deployment process.
 - __chore:__ Upgrades libraries and/or performs maintenance tasks.
 - __docs:__ Documentation only changes.
 - __test:__ Adding missing tests or correcting existing tests.
 
-#### Scope
+#### <a name='HeaderScope'></a>Scope
 
-The scope is meant to describe a specific module / part of the application and it's highly dependant on the application you are building.
+The scope is meant to describe a specific module/part of the application and it's highly dependant on the application you are building.
 
 Some examples to serve as inspiration:
 
-- __admin:__ refers to the admin panel.
-- __users:__ refers to the user management module.
-- __payment:__ changes on the payment gateway.
+- __admin:__ Refers to the admin panel.
+- __users:__ Refers to the user management module.
+- __payment:__ Changes on the payment gateway.
 
-#### Samples
+#### <a name='CommitMessageSamples'></a>Message Samples
 
 ```
 chore(deploy): Update Docker base image to v2.6
@@ -63,7 +67,7 @@ Closes #345
 ```
 
 ```
-feat(admin): Add users CRUD
+feature(admin): Add users CRUD
 
 We can now manage users through the admin panel.
 We have added a new search module with an integrated calendar to be able to
@@ -78,7 +82,7 @@ fix: Users can't logout when authenticated via oauth2
 JIRA Issue: 23456
 ```
 
-## Git branches naming
+## <a name='GitBranchesNaming'></a>Git branches naming
 
 Any branch created for the project will have the following structure:
 
@@ -86,38 +90,37 @@ Any branch created for the project will have the following structure:
 
 Samples:
 
-- feat/users-crud
+- feature/users-crud
 - fix/logout-for-oauth-users
 
+## <a name='GitWorkflow'></a>Git workflow
 
-## Git workflow
+We are using a modified and simplified version of [Gitflow](https://guides.github.com/introduction/flow/).
 
-We are using a modified and simplified version of Gitflow.
+For big projects already deployed to production there will always be 2 branches: `main` and `development`.
+The **main** branch will contain the code that has been deployed while the **development** branch will contain the most recent stable version of it.
 
-For big projects already deployed to production there will always be 2 branches: `master` and `develop`.
-The master branch will contain the code that has been deployed while the develop branch will contain the most recent stable version of it.
+For small projects or projects that are have not been deployed we allow simplifying this by working only with a `main` branch.
 
-For small projects or projects that are have not been deployed we allow simplifying this by working only with a `master` branch.
+These are the required steps to add new code to a branch (development or main, depending on the nature of the project).
 
-These are the required steps to add new code to a main branch (develop or master, depending on the nature of the project).
-
-- Create a new branch using the branch naming convention from the main branch.
-- Do as many commits as are required to complete the feature.
-- You may open a _draft_ Pull Request (PR) if you want some colleague to review your work in progress.
+- Create a new branch using the branch naming convention from the branch you think relevant (main, development).
+- Do as many commits as are required to complete your task.
+- You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleague to review your work in progress.
 - Once the work is finished, rebase your commits to leave only the meaningful ones for the reviewer to better understand your changes. Leaving only one commit is also fine.
-- Rebase with the main branch to have the latest changes.
+- Rebase your branch with the one from where you open yours to have the latest changes.
 - Open a Pull Request to be reviewed by your colleagues.
 - Once reviewed, squash & merge on the target branch. The commit resulting from the squash & merge must be compliant with the Commit Message Format.
 
-If the project is using a develop branch, this is the recommended way of merging against the master branch:
+If the project is using a development branch, this is the recommended way of merging against the main branch:
 
-- Create a Pull Request from develop to master
-- Once all automated tests and manual reviews have finished, merge the develop branch to the master branch by creating a merge commit strategy.
-- Create a new Github release pointing to the master branch and create a new tag to identify the release.
+- Create a Pull Request from development to main
+- Once all automated tests and manual reviews have finished, merge the development branch to the main branch by creating a merge commit strategy.
+- Create a new Github release pointing to the main branch and create a new tag to identify the release.
 
 You might want to add additional steps depending on your project.
 
-## Credits
+## <a name='Credits'></a>Credits
 
 This guide is heavily influenced by:
 
