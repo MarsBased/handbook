@@ -40,13 +40,13 @@ The `<footer>` should contain a closing reference to a [github issue](https://he
 
 Choose the one that best fits the task:
 
-- __fix:__ Represents a bug fix for your application.
-- __feature:__ Adds a new feature to your application or library.
-- __refactor:__ A code change that neither fixes a bug nor adds a feature.
-- __deploy:__ Changes to modify or related to the deployment process.
-- __chore:__ Upgrades libraries and/or performs maintenance tasks.
-- __docs:__ Documentation only changes.
-- __test:__ Adding missing tests or correcting existing tests.
+- __fix__: Represents a bug fix for your application.
+- __feature__: Adds a new feature to your application or library.
+- __refactor__: A code change that neither fixes a bug nor adds a feature.
+- __deploy__: Changes to modify or related to the deployment process.
+- __chore__: Upgrades libraries and/or performs maintenance tasks.
+- __docs__: Documentation only changes.
+- __test__: Adding missing tests or correcting existing tests.
 
 #### <a name='HeaderScope'></a>Scope
 
@@ -54,9 +54,9 @@ The scope is meant to describe a specific module/part of the application and it'
 
 Some examples to serve as inspiration:
 
-- __admin:__ Refers to the admin panel.
-- __users:__ Refers to the user management module.
-- __payment:__ Changes on the payment gateway.
+- __admin__: Refers to the admin panel.
+- __users__: Refers to the user management module.
+- __payment__: Changes on the payment gateway.
 
 #### <a name='CommitMessageSamples'></a>Message Samples
 
@@ -104,19 +104,19 @@ For small projects or projects that are have not been deployed we allow simplify
 
 These are the required steps to add new code to a branch (development or main, depending on the nature of the project).
 
-- Create a new branch using the branch naming convention from the branch you think relevant (main, development).
-- Do as many commits as are required to complete your task.
-- You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleague to review your work in progress.
-- Once the work is finished, rebase your commits to leave only the meaningful ones for the reviewer to better understand your changes. Leaving only one commit is also fine.
-- Rebase your branch with the one from where you open yours to have the latest changes.
-- Open a Pull Request to be reviewed by your colleagues.
-- Once reviewed, squash & merge on the target branch. The commit resulting from the squash & merge must be compliant with the Commit Message Format.
+1. Create a new branch using the branch naming convention from the branch you think relevant (main, development).
+2. Do as many commits as are required to complete your task.
+3. You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleague to review your work in progress.
+4. Once the work is finished, rebase your commits to leave only the meaningful ones for the reviewer to better understand your changes. Leaving only one commit is also fine.
+5. Rebase your branch with the one from where you open yours to have the latest changes.
+6. Open a Pull Request to be reviewed by your colleagues.
+7. Once reviewed, squash & merge on the target branch. The commit resulting from the squash & merge must be compliant with the Commit Message Format.
 
 If the project is using a development branch, this is the recommended way of merging against the main branch:
 
-- Create a Pull Request from development to main
-- Once all automated tests and manual reviews have finished, merge the development branch to the main branch by creating a merge commit strategy.
-- Create a new Github release pointing to the main branch and create a new tag to identify the release.
+1. Create a Pull Request from development to main
+2. Once all automated tests and manual reviews have finished, merge the development branch to the main branch by creating a merge commit strategy.
+3. Create a new Github release pointing to the main branch and create a new tag to identify the release.
 
 You might want to add additional steps depending on your project.
 
