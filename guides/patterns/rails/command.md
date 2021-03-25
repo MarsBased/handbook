@@ -5,13 +5,7 @@ It helps on keeping the Rails controllers and models thin, moving related logic 
 
 ## Solution overview
 
-We have chosen a custom solution to implement the command pattern.
-
-Considered alternatives:
-
-- [SimpleCommand](https://github.com/nebulab/simple_command): Adds some helper methods and integration with ActiveModel::Validations. Not worth to include an additional dependency.
-- [Rectify Commands](https://github.com/andypike/rectify#commands): Simple but lacks flexibility. It has some magic that makes the learning curve harder.
-- [Trailblazer](http://trailblazer.to/): It is difficult to implement it in isolation.
+We have chosen to use [SimpleCommand](https://github.com/nebulab/simple_command) to implement the Command pattern. SimpleCommand provides a standard way of defining commands and getting its result. Its a very lightweight gem (~ 100 LOC) which adds no external dependencies but provides a solid basis to create commands from.
 
 ## Usage: The command class
 
@@ -25,7 +19,7 @@ The name of the module doesn't need to match the name of a Rails model.
 module Users
   class Update # (1)
 
-    Result = Struct.new(:ok, :errors, :user, :other_param, keyword_init: true) # (2) (3)
+    prepend SimpleCommand #(2)
 
     def initialize(user, params) # (4)
       @user = user
@@ -35,22 +29,24 @@ module Users
     def call # (5)
       if @user.update(@params)
         some_private_method
-        Result.new(ok: true, user: @user)
+        @user
       else
         some_more_stuff
-        Result.new(errors: @user.errors)
+        errors.add_multiple_errors(@user.errors)
+        nil
       end
     end
 
   end
 end
+
+
 ```
 
 - (1) The command name should be a verb as it represents an action.
-- (2) Every command can build the Result object based on their needs. But we encourage always using the 'ok' and 'errors' keywords for coherence.
-- (3) `keyword_init: true` is only available since Ruby 2.5.
-- (4) All the parameters needed for the command to work must be passed to the initializer. The initializer should not contain any logic. It's only meant to be used for instance variable assignments.
-- (5) `call` is the only public method of the command. It doesn't accept parameters. The idea behind a command is a chainable class used to perform a single operation that is complex enough to require private methods or to depend on other commands or classes. The call method should always return a Result.
+- (2) We use the [SimpleCommand](https://github.com/nebulab/simple_command) gem to have basic functionality like asking if the execution was successful or not, and retrieving errors.
+- (3) All the parameters needed for the command to work must be passed to the initializer. The initializer should not contain any logic. It's only meant to be used for instance variable assignments.
+- (4) `call` is the only public method of the command. It doesn't accept parameters. The idea behind a command is a chainable class used to perform a single operation that is complex enough to require private methods or to depend on other commands or classes. The call method should return the resulting value of the action. Then we can ask the command for the success status or errors
 
 ## Usage: Calling the command
 
@@ -66,11 +62,11 @@ class UsersController < ApplicationController
   def update
     authorize User
 
-    Users::Update.new(user, user_params).call.then do |result| # (1)
-      if result.ok
+    Users::Update.call(user, user_params).then do |command| # (1)
+      if command.success?
         redirect_to dashboard_path # (2)
       else
-        @user = result.user
+        @user = command.result
         flash.now[:error] = t('.error')
         render :new
       end
