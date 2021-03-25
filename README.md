@@ -30,6 +30,10 @@ For now, we have the following resources available:
 1. [Our SEO Guidelines For New Projects](/guides/seo-guidelines.md)
 1. [MarsBased programming patterns](https://github.com/MarsBased/patterns)
 
+# Our development guides
+
+1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
+
 # Other useful resources
 
 1. [Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)](https://github.com/MarsBased/productivity)

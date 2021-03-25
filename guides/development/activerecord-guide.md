@@ -1,4 +1,4 @@
-# ActiveRecord cheat sheet
+# ActiveRecord guide
 
 ## Retrieving single records
 There are three ways to retrieve a single record matching a certain criteria. The method to use depends on whether we want it to raise an exception if not found or if we want to find by the primary key or other attributes.
@@ -23,7 +23,7 @@ Post.find_by(id: params[:id]) # Returns nil if the record does not exist
 This is useful to handle cases when a record may or may not exist.
 
 #### Performance
-In any of the forms, since we are making a search by ID the query will always be fast (as long as the index on the primary key has not deliberately been deleted). So the performance of a query like this is always very high.
+In any of the forms, since we are making a search by ID the query will always be fast (as long as the index on the primary key has not deliberately been deleted). So the performance of a query like this is always very good.
 
 ### Retrieve by other attributes
 Retrieving a record by a non-primary key attribute is quite common. We may want to find a post by a slug, author, tag, etc. When more than one record match the condition, only the first one is returned (in general, it will be the most recent record).
@@ -86,7 +86,7 @@ The best way to see when a particular expressions gets executed and how is to lo
 
 #### Examples
 
-If we have a console session open and we do `Post.where(created_at: 1.day.ago)` it will inmediately execute the query since the console will request the results to be printed.
+If we have a console session open and we do `Post.where(created_at: 1.day.ago)` it will immediately execute the query since the console will request the results to be printed.
 
 If we have in a controller a query like `@posts = Post.where(created_at: 1.day.ago)`, it won't be executed at this time. If we then do this in the view: `@posts.each do |post| ... end` it will execute the query at that time to be able to iterate over the records.
 
@@ -125,7 +125,6 @@ The argument is similar to finding a record by a non-primary key attribute. By d
 ## Joining tables
 A common technique used to build more complex queries is to join various tables together through their associations. This allows to filter a table by an attribute of an associated table, order by that attribute, etc.
 
-
 To join tables we use the `joins` method. Example:
 
 ```
@@ -145,7 +144,7 @@ Note that inside the where and order clauses we use `authors` (plural). This is 
 class User; end
 class Post
    belongs_to :author, class_name: 'User'
-   
+
    scope :from_female_authors ->() { joins(:author).where(users: { gender: :female })
 end
 ```
@@ -159,10 +158,10 @@ Post.joins(author: { address: :city }).where(cities: { country: 'ES' }) # Post -
 Often, though, these queries can be simplified why using `has_many through:` associations in the model which end up producing the same queries.
 
 ### How joining works at the database level
-At a high level a join between table A and table B works like this: 
+At a high level a join between table A and table B works like this:
 
-1. It creates a new *virtual relation* combining all the columns of table A and all the columns of table B.
-2. For every record in table A it takes all the records in table B that match the `ON` criteria. By default this matches the primary key of table B with the association foreign key in table A. For each matched record in B it adds a new row to the *virtual relation* with the values of the record in A and the values of the record in B.
+1. It creates a new *virtual table* combining all the columns of table A and all the columns of table B.
+2. For every record in table A it takes all the records in table B that match the `ON` criteria. By default this matches the primary key of table B with the association foreign key in table A. For each matched record in B it adds a new row to the *virtual table* with the values of the record in A and the values of the record in B.
 
 It's much easier to see with an example:
 
@@ -225,9 +224,61 @@ To remove duplicates we need to call `distinct`. Example: `Author.joins(:posts).
 
 Note that this only happens when joining on a `has_many` association, because for `belongs_to` and `has_one` there is always only one (at most) matching record in the joined table.
 
-## Protips
+## Avoiding N+1 queries
 
-Things to talk about:
+It is very easy to introduce N+1 queries when listing records. Example:
 
-* counts
-* N+1 queries
+```
+@posts = Posts.published.limit(50)
+@posts.each do |post|
+  puts post.author.name
+end
+```
+
+This will run a query to get all the posts from the database and then, for each post, it will run another query to load the author from the database, for a total of 51 queries.
+
+We can usually use `includes` to avoid the problem. Following the example we could fix the problem by changing the query to `@posts = Posts.published.includes(:author).limit(50)`.
+
+Doing it this way, Rails will only run 2 queries: one to get all the posts and one to get all the authors (by combining the author_id of each post in a single query).
+
+### Complex N+1 queries
+
+There are times where is not as easy as adding an includes, for example when adding conditions to the associated models. Example:
+
+```
+@authors = Author.all.limit(50)
+@authors.each do |author|
+  post = @author.posts.published.first
+  post.title
+end
+```
+
+In this example we want to only load published posts for each author, instead of all posts. In order to remove the N+1 query in this scenario we can define a different association in the model with a scope, like this:
+
+```
+class Author < ApplicationRecord
+  has_many :published_posts, -> { published }, class_name: 'Post', inverse_of: :author
+end
+```
+
+And now we can use `includes` as normal with this association:
+
+```
+@authors = Author.includes(:published_posts).limit(50)
+@authors.each do |author|
+  post = @author.published_posts.first
+  post.title
+end
+```
+
+Note that in the loop we need to use `@author.published_posts`. If we use `@author.posts.published` it will still trigger the N+1 queries, because Active Record will treat it as a different set of records (Active Record does not know that `published_posts` is the same as `posts.published`).
+
+## Aggregation functions
+
+We need to be careful when running queries that include aggregation functions because these are very hard (often impossible) to optimize by the database engine and often require a full scan of the table.
+
+Running an aggregation function, specially a count, on a big table can have a considerable negative impact on the performance of an application.
+
+When running aggregation queries it should always be by adding conditions that limit the scope of the results, so the full scan only needs to be done from the returned results.
+
+Protip: Use `size` instead of `count` unless you are doing a direct count on a table. Using `count` always triggers a query while using `size` is able to use the cached values of a previous query. Example: `Post.published.size` instead of `Post.published.count`.
