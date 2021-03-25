@@ -1,13 +1,18 @@
 #!/usr/bin/env bash
 
-cd .devcontainer
+cd .dockerdev
 
 case "$1" in
  start)
-   docker-compose up rails jobs webpacker
+   docker-compose up -d $2
+   docker attach $(docker-compose ps -q $2)
    ;;
  start-services)
-   docker-compose up postgres redis minio
+   docker-compose up -d db redis minio
+   ;;
+ run)
+   docker-compose up -d runner
+   docker-compose exec runner "${@:2}"
    ;;
  stop)
    docker-compose down
@@ -21,16 +26,10 @@ case "$1" in
  webpacker)
    docker-compose up -d webpacker && docker attach $(docker-compose ps -q webpacker)
    ;;
- bash)
-   docker-compose run --rm rails bash
-   ;;
  setup)
    docker-compose build
    docker-compose run --rm --entrypoint="/bin/sh -c /scripts/setup-minio.sh" minio-client
    docker-compose run --rm rails setup
-   ;;
- test)
-   docker-compose run --rm rails rspec
    ;;
  setup-localhost-alias)
    cp com.user.docker-host-alias.plist /Library/LaunchDaemons/
@@ -39,6 +38,7 @@ case "$1" in
    launchctl load /Library/LaunchDaemons/com.user.docker-host-alias.plist
    ;;
  *)
-   docker-compose run --rm rails $*
+   docker-compose up -d runner
+   docker-compose exec runner $*
    ;;
 esac

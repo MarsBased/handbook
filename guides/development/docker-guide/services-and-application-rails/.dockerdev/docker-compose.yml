@@ -1,14 +1,21 @@
 version: '3.4'
 
 x-app: &app
-  stdin_open: true
-  tty: true
   build:
     context: .
     dockerfile: ./Dockerfile
+    args:
+      BUNDLER_VERSION: '<bundler-version>'
   image: <application-name>-dev
-  environment: &env
-    NODE_ENV: development
+  tmpfs:
+    - /tmp
+
+x-backend: &backend
+  <<: *app
+  stdin_open: true
+  tty: true
+  environment: &backend-env
+    NODE_ENV: ${NODE_ENV:-development}
     RAILS_ENV: ${RAILS_ENV:-development}
     REDIS_URL: redis://redis:6379/
     REDIS_HOST: redis
@@ -30,14 +37,14 @@ x-app: &app
     BOOTSNAP_CACHE_DIR: /bundle/bootsnap
     WEBPACKER_DEV_SERVER_HOST: webpacker
     WEB_CONCURRENCY: 1
-    HISTFILE: /workspace/log/.bash_history
+    HISTFILE: /app/log/.bash_history
     EDITOR: vi
   volumes:
-    - ../:/workspace:cached
-    - rails_cache:/workspace/tmp/cache
+    - ../:/app:cached
+    - rails_cache:/app/tmp/cache
     - bundle:/bundle
-    - node_modules:/workspace/node_modules
-    - packs:/workspace/public/packs
+    - node_modules:/app/node_modules
+    - packs:/app/public/packs
     - ./.psqlrc:/root/.psqlrc:ro
     - ./.pryrc:/root/.pryrc:ro
   depends_on:
@@ -45,41 +52,45 @@ x-app: &app
     - redis
     - minio
     - selenium
-  tmpfs:
-    - /tmp
 
 services:
   rails:
-    <<: *app
+    <<: *backend
     command: bundle exec rails server -b 0.0.0.0
     ports:
       - 3000:3000
 
+  runner:
+    <<: *backend
+    command: /bin/bash
+    environment:
+      <<: *backend-env
+      HOST: http://rails:3000
+      DOMAIN: http://localhost:3000
+
   jobs:
-    <<: *app
+    <<: *backend
     command: bundle exec sidekiq -C config/sidekiq.yml
+    environment:
+      <<: *backend-env
+      HOST: http://rails:3000
 
   webpacker:
+    <<: *app
     stdin_open: true
     tty: true
-    build:
-      context: .
-      dockerfile: ./Dockerfile
-    image: <application-name>-dev
     command: ./bin/webpack-dev-server
     ports:
       - 3035:3035
     volumes:
-      - ..:/workspace:cached
+      - ..:/app:cached
       - bundle:/bundle
-      - node_modules:/workspace/node_modules
-      - packs:/workspace/public/packs
+      - node_modules:/app/node_modules
+      - packs:/app/public/packs
     environment:
-      NODE_ENV: development
+      NODE_ENV: ${NODE_ENV:-development}
       RAILS_ENV: ${RAILS_ENV:-development}
       WEBPACKER_DEV_SERVER_HOST: 0.0.0.0
-    tmpfs:
-      - /tmp
 
   postgres:
     image: postgres:<postgres-version>
@@ -125,7 +136,7 @@ services:
     logging:
       driver: none
     volumes:
-      - ..:/workspace:cached
+      - ..:/app:cached
     ports:
       - 5900:5900
       - 4444

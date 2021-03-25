@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+cd .dockerdev
+
+case "$1" in
+ start)
+   docker-compose up -d db redis minio
+   ;;
+ stop)
+   docker-compose down
+   ;;
+ setup)
+   docker-compose build
+   docker-compose run --rm --entrypoint="/bin/sh -c /scripts/setup-minio.sh" minio-client
+ *)
+   exit 0;
+esac

@@ -4,38 +4,74 @@ At MarsBased we use Docker to work on the development of applications. Using Doc
 * Makes setting up the environment for a project a breeze. This dramatically reduces the time to on-board new developers to a project.
 * The environment in which the application runs can be identical to the production environment. This allows to quickly detect bugs dependant on the OS or system packages.
 * Removes the need to have development dependencies (Ruby, Node, PostgreSQL, Redis) installed locally. Only Docker is needed to work on applications.
-* Avoids problems with having multiple versions of dependencies installed. Moreover, stops them for accumulating when versions are updated. 
+* Avoids problems with having multiple versions of dependencies installed. Moreover, stops them for accumulating when versions are updated.
 
 The approach that we follow to configure the Docker environment is heavily inspired by this [magnificent blog post from our evil colleges](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development).
 
-The key point of this way working is that **the Docker image is kept as minimal as possible and dependencies are installed on volumes**. 
+The key point of this way working is that **the Docker image is kept as minimal as possible and dependencies are installed on volumes**.
 
-By working this way, the image hardly ever needs to be re-built and we work very closely to how we would do it if we were working with local dependencies. For example: Instead of installing Ruby gems in the image, we mount a volume on the container to store the installed gems and run `bundle install` on the container. 
+By working this way, the image hardly ever needs to be re-built and we work very closely to how we would do it if we were working with local dependencies. For example: Instead of installing Ruby gems in the image, we mount a volume on the container to store the installed gems and run `bundle install` on the container.
 
 If gems were installed in the image then when there is a change in the used gems (like adding a new gem or updating one), the image needs to be rebuilt, thus needing to install **all gems** again (which can take a long time). By, instead, having gems installed on a volume, when there is a change in a gem, we can just run `bundle install` again (like we would do locally) and it will just install that new gem or updated version.
 
-It is useful to think of it as if the Docker image is just the bare-bones OS and you do the rest the same way you would do it locally (`bundle install`, `npm install`, etc.). More specifically, the image only contains the programming language and system packages (like ImageMagick or FFmpeg).
+It is useful to think of it as if the Docker image is just the bare-bones OS and you do the rest the same way you would do it locally (`bundle install`, `npm install`, etc.). More specifically, the image only contains the programming language and system packages (like ImageMagick).
 
-## Rails Docker for development setup
+There are 2 options to setup the development environment with Docker:
+* Services only: External services (database, Redis, Minio, Elastic Search, etc.) are run with Docker but the application runs locally.
+* Services + Application: Apart from services, the application is also run in a container.
 
-In order to Dockerize a Rails application for development, we create a `.devcontainer` directory in the application root, which contains the `Dockerfile`, `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+Running everything with Docker has the advantage of not needing to have any dependency installed locally, apart from Docker. The disadvantage is that it runs slower because the application can't use the full memory + CPU potential from the computer.
 
-When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<ruby-version>`, `<major-node-version>` and `<bundler-version>`.
+When working on a single application it makes sense to use the services only approach, while when working on multiple projects it is more convenient to run all applications in containers to avoid having a dependency hell in the computer.
 
-The `.devcontainer` directory contains the following files:
-* `docker-compose.yml`: [Docker compose configuration](#docker-compose-configuration).
-* `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
-* `Aptfile`: All required system dependencies (like ImageMagick or FFmpeg) need to be listed in this file. When the file is changed, the image needs to be rebuilt.
-* `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
+## Services only development setup
+
+In order to Dockerize the services for an application for development, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+
+When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`.
+
+The `.dockerdev` directory contains the following files:
+* `docker-compose.yml`: Contains only external services.
 * `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-* `com.user.docker-host-alias.plist`: This file is used to create an alias from the 127.17.0.1 to localhost, in order to [make Minio accessible from both the host and containers](#make-minio-accessible-everywhere)
-* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable the project would be called `devcontainer`.
+* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable the project would be called `dockerdev`.
 * `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
 * `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
 
-Apart from the files in `.devontainer` we have a few more moving pieces:
+Apart from the files in `.dockerdev` we have a few more moving pieces:
 * `bin/dockerdev`: [All development operations](#working-with-docker) with Docker are done through this script.
-* We need to add `.devcontainer/volumes/*` to the `.gitignore`.
+* We need to add `.dockerdev/volumes/*` to the `.gitignore`.
+
+### Working with Docker
+
+The `bin/dockerdev` script contains all the necessary commands to start, stop and manage the services.
+
+### Initial setup
+
+When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
+
+This will perform several things:
+* Build Docker images.
+* Create the Minio bucket.
+
+## Rails Docker for development setup
+
+In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+
+When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<ruby-version>` and `<bundler-version>`.
+
+The `.dockerdev` directory contains the following files:
+* `docker-compose.yml`: [Docker compose configuration](#docker-compose-configuration).
+* `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
+* `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
+* `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
+* `com.user.docker-host-alias.plist`: This file is used to create an alias from the 127.17.0.1 to localhost, in order to [make Minio accessible from both the host and containers](#make-minio-accessible-everywhere)
+* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable the project would be called `dockerdev`.
+* `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
+* `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+
+Apart from the files in `.dockerdev` we have a few more moving pieces:
+* `bin/dockerdev`: [All development operations](#working-with-docker) with Docker are done through this script.
+* We need to add `.dockerdev/volumes/*` to the `.gitignore`.
 * In the Webpacker config (`webpacker.yml`), the `host` of the `dev_server` needs to be set to `webpacker`.
 * [Capybara needs to be configured](#capybara-configuration) to use the selenium container.
 
@@ -43,7 +79,7 @@ Apart from the files in `.devontainer` we have a few more moving pieces:
 
 The `bin/dockerdev` script contains all the necessary commands to start, stop and manage the application.
 
-#### Application setup
+### Application setup
 
 When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
 
@@ -55,24 +91,24 @@ This will perform several things:
 
 From that point on, to install new gems or node modules you will need to do it from a container. You can open a container with bash by running `bin/dockerdev bash` and inside just run `bundle install` or `yarn install` as usual.
 
-#### Running the application
+### Running the application
 
-In order to have the application fully functional you need to run several processes:
+In order to have the application fully functional you need to run several processes in different terminal sessions:
 
-* Rails server: `bin/dockerdev server`
-* Webpack: `bin/dockerdev webpacker`
-* Background jobs: `bin/dockerdev jobs` (only needed if you wish to run background jobs like sending e-mails)
+* Rails server: `bin/dockerdev server`.
+* Webpack: `bin/dockerdev webpacker`.
+* Background jobs: `bin/dockerdev jobs` (only needed if you wish to run background jobs like sending e-mails).
 
 ### Rails commands
 
-In order to execute rails command you can use `bin/dockerdev [command]`. This will run the command inside a container.
+In order to execute rails command you can use `bin/dockerdev run [command]`. This will run the command inside a container. For example to run database migrations: `bin/dockerdev run rake db:migrate`.
 
 ### Other commands
 
-* Start all required services to run the application: `bin/dockerdev start`. This command is useful for team members working only on the front-end of the application, because they can just run this command and forget.
-* Stop and remove containers: `bin/dockerdev stop`
-* Open a bash session: `bin/dockerdev bash`
-* Run the test suite: `bin/dockerdev test`
+* Start only services: `bin/dockerdev start-services`
+* Stop and remove containers: `bin/dockerdev stop`.
+* Open a bash session: `bin/dockerdev run bash`.
+* Run the test suite: `bin/dockerdev run rspec`.
 
 ### Capybara configuration
 
@@ -111,7 +147,7 @@ RSpec.configure do |config|
 end
 
 # When using Webmock
-require 'webmock/rspec' 
+require 'webmock/rspec'
 WebMock.disable_net_connect!(
   allow_localhost: true,
   allow: [/selenium/, LOCAL_IP]
@@ -123,57 +159,34 @@ WebMock.disable_net_connect!(
 The Dockerfile used for development is pretty minimal. Below there is a description of each of its blocks
 
 ```docker
-FROM ruby:<ruby-version>
+FROM ruby:<ruby-version>-alpine
 ```
 
 We start from the ruby image which contains the full OS, basic system packages and, of course, Ruby itself.
 
 ```docker
-# Add NodeJS to sources list
-RUN curl -sL https://deb.nodesource.com/setup_<major-node-version>.x | bash -
-
-# Add Yarn to the sources list
-RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - \
-  && echo 'deb http://dl.yarnpkg.com/debian/ stable main' > /etc/apt/sources.list.d/yarn.list
-
-```
-
-We add a couple of sources to APT to be able to install Node and Yarn from their official sources.
-
-```docker
-# Install dependencies
-COPY ./Aptfile /tmp/Aptfile
-RUN apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get -yq dist-upgrade && \
-  DEBIAN_FRONTEND=noninteractive apt-get install -yq --no-install-recommends \
-    build-essential \
-    nodejs \
-    yarn \
-    $(cat /tmp/Aptfile | xargs) && \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* && \
+RUN apk --update add less bash git curl wget build-base && \
+    apk add postgresql-client && \
+    apk add nodejs yarn && \
+    apk add vim imagemagick && \
+    rm -rf /tmp/* /var/tmp/* && \
     truncate -s 0 /var/log/*log
 
 ```
 
 This does various things:
-* Upgrade the OS distribution.
 * Install basic build tools, often needed to install other packages.
+* Install a client to access the PostgreSQL database from a bash session if needed.
 * Install NodeJS and Yarn.
-* Install all the packages listed in `Aptfile`.
+* Install an editor (vim) and ImageMagick which is used in the majority of applications.
 * Clean packages, temporary files and logs.
 
 **NOTE:** All these operations are done in the same command to avoid caching unnecessary layers. This way the whole operation gets cached as a single layer.
 
 ```docker
-# Configure bundler and PATH
-ENV LANG=C.UTF-8 \
-  GEM_HOME=/bundle \
-  BUNDLE_JOBS=4 \
-  BUNDLE_RETRY=3
-ENV BUNDLE_PATH $GEM_HOME
-ENV BUNDLE_APP_CONFIG=$BUNDLE_PATH \
-  BUNDLE_BIN=$BUNDLE_PATH/bin
-ENV PATH /workspace/bin:$BUNDLE_BIN:$PATH
+ENV LANG=C.UTF-8
+ENV GEM_HOME=/bundle
+ENV PATH /app/bin:$GEM_HOME/bin:$GEM_HOME/gems/bin:$PATH
 ```
 
 This does various things:
@@ -181,39 +194,37 @@ This does various things:
 * Tell bundler to install gems in the `/bundle` directory. This goes hand in hand with the `bundle` volume that is mounted on the containers. By keeping the gems in a known location and a volume, we persist them across containers and container restarts.
 
 ```docker
-# Upgrade RubyGems and install required Bundler version
 RUN gem update --system && \
-    gem install bundler:<bundler-version>
+    gem install bundler:$BUNDLER_VERSION
 ```
 
 Install a pinned version of bundler. This is recommended to avoid the `Gemfile.lock` changing every time the image is re-built. Since the `Gemfile.lock` specifies the Bundler version used, if the image is recreated and a newer version happens to be installed, the `Gemfile.lock` will change once we install gems again.
 
 ```docker
-# Create a directory for the app code
-RUN mkdir -p /workspace
+RUN mkdir -p /app
 
-WORKDIR /workspace
+WORKDIR /app
 ```
 
 Create the directory where the app volume will be mounted and tell it to work from this directory.
- 
+
 ### Docker compose configuration
 
 The Docker compose setup contains services for both the application and infrastructure.
 
-All the application services inherit from a common `app` configuration, whose more interesting aspects are:
+All the application services inherit from a common `app` and/or `backend` configuration, whose more interesting aspects are:
 * All the infrastructure/running related environment variables are specified in this configuration. Application specific variables should be defined using another mechanism (like `dotenv`).
 * It uses volumes for various things:
-   * `../:/workspace:cached`: This makes the whole application available as a volume, so that changes to the codebase are propagated to the container.
+   * `../:/app:cached`: This makes the whole application available as a volume, so that changes to the codebase are propagated to the container.
    * `rails_cache`: Keeping the cache in a volume persists it across containers restarts, improving the performance of the application during development.
    * `bundle`: The image is configured to install gems in the `/bundle` directory of the container, therefore we need to make this directory available.
    * `./.psqlrc:/root/.psqlrc:ro` and `./.pryrc:/root/.pryrc:ro`: This is a simple way of copying files to the container without needing to embed them in the image.
-   
+
 The rest of services defined are pretty much self-explanatory.  
 
 ### Make Minio accessible everywhere
 
-When working with MacOS we need to run `sudo bin/dockerdev setup-localhost-alias` the first time we are setting up the project. 
+When working with MacOS we need to run `sudo bin/dockerdev setup-localhost-alias` the first time we are setting up the project.
 
 This sets up an alias of 172.17.0.1 to localhost in order to be able to interact with Minio.
 
