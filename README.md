@@ -37,6 +37,10 @@ For now, we have the following resources available:
 1. [Our blogging guide](/guides/blogging-guide.md)
 1. [How to write a damn good blog post](/guides/how-to-blog.md)
 
+# Our development guides
+
+1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
+
 # Other useful resources
 
 1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
