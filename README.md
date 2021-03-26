@@ -16,6 +16,7 @@ If you're a visitor and want to use them, feel free to use them anywhere, but we
 1. [Current projects](/sections/currentprojects.md)
 1. [How we work](/sections/howwework.md)
 1. [Operations](/sections/operations.md)
+1. [Development](/sections/development.md)
 1. [Our rituals](/sections/rituals.md)
 1. [Open Source](/sections/opensource.md)
 1. [Talks & Podcasts](/sections/talks.md)
