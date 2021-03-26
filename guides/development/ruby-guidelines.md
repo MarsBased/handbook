@@ -129,7 +129,7 @@ User.includes(:posts).each do |user|
 end
 ```
 
-You can find some more examples in the [Active Record guide](https://github.com/MarsBased/handbook/blob/master/guides/development/activerecord-guide.md).
+You can find some more examples in the [Active Record guide](/guides/development/activerecord-guide.md).
 
 ### 1.7. <a name='AvoidDefaultScope'></a>Avoid Default Scope
 In order to avoid unexpected and hidden behaviour, avoid using default_scope and use named scopes and explicit uses of those scopes:
