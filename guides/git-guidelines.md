@@ -9,7 +9,8 @@ This is a guide that covers how we expect to work with Git at MarsBased. Most of
 * **1.1.3** [Message Samples](#CommitMessageSamples)
 * **2.** [Git Branches Naming](#GitBranchesNaming)
 * **3.** [Git Workflow](#GitWorkflow)
-* **4.** [Credits](#Credits)
+* **4.** [Dangerous behaviours](#DangerousBehaviours)
+* **5.** [Credits](#Credits)
 
 Please, notice that at MarsBased we work with a large variety of clients. There could be clients that follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it won't be possible to use ours.
 
@@ -29,7 +30,7 @@ Each commit message consists of a header, a body and a footer. The header has a 
 <footer>
 ```
 
-The header is mandatory but you can leave his scope out as it is **optional**.
+The header is mandatory but the scope of the header is **optional**.
 
 The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
 The language used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
@@ -41,7 +42,7 @@ The `<footer>` should contain a closing reference to a [github issue](https://he
 Choose the one that best fits the task:
 
 - __fix__: Represents a bug fix for your application.
-- __feature__: Adds a new feature to your application or library.
+- __feature__ / __feat__: Adds a new feature to your application or library.
 - __refactor__: A code change that neither fixes a bug nor adds a feature.
 - __deploy__: Changes to modify or related to the deployment process.
 - __chore__: Upgrades libraries and/or performs maintenance tasks.
@@ -97,7 +98,7 @@ Samples:
 
 We are using a modified and simplified version of [Gitflow](https://guides.github.com/introduction/flow/).
 
-For big projects already deployed to production there will always be 2 branches: `main` and `development`.
+For big projects already deployed to production there will always be 2 branches: `main` (`master` in older projects) and `development`.
 The **main** branch will contain the code that has been deployed while the **development** branch will contain the most recent stable version of it.
 
 For small projects or projects that are have not been deployed we allow simplifying this by working only with a `main` branch.
@@ -119,6 +120,10 @@ If the project is using a development branch, this is the recommended way of mer
 3. Create a new Github release pointing to the main branch and create a new tag to identify the release.
 
 You might want to add additional steps depending on your project.
+
+## <a name='DangerousBehaviours'></a>Dangerous behaviours
+
+* Avoid using `git push -f` while working on the same brach with other developers. Use `git push --force-with-lease` instead.
 
 ## <a name='Credits'></a>Credits
 
