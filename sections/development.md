@@ -71,7 +71,7 @@ Responsibilities:
 - Decide the best way to implement the specifications decided by the Product Manager.
   - Take into account the project needs and tech debt in order to make the best decision possible, communicating with the Product Manager and the client the possible implications.
 - Communicate correctly all the decisions to the developers.
-- Review the code produced by the developers, ensuring:
+- [Review the code](/guides/code-reviews-guidelines.md) produced by the developers, ensuring:
   - All the code follow our quality standards at code and architecture levels.
   - The changes introduced met the requirements needed, no more and no less.
   - The changes don't introduce obvious bugs.
@@ -163,7 +163,7 @@ Also, take a final look at the description when you are done with the implementa
 
 Any change can lead to new bugs. Do not think a change won't break everything. Test extensively all use cases. Try to break the code. If you don't do it, an anonymous user will do it for you.
 
-Review your own code. Do not trust your past self. You are older and wiser now.
+[Review your own code](/guides/code-reviews-guidelines.md). Do not trust your past self. You are older and wiser now.
 
 After finishing a feature, try to look at the big picture. At this point is easier to detect possible improvements.
 
@@ -194,6 +194,7 @@ It's ok to spend time on this, it's part of your work as a developer.
 - [Angular guidelines](/guides/angular-reference-guide.md)
 - [Back-end guidelines](/guides/back-end-development-guidelines.md)
 - [Coding guidelines](/guides/coding-guidelines.md)
+- [Code reviews guidelines](/guides/code-reviews-guidelines.md)
 - [Git guidelines](/guides/git-guidelines.md)
 - [React guidelines](/guides/react-guidelines.md)
 - [Ruby & Rails guidelines](/guides/ruby-guidelines.md)
