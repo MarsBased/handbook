@@ -58,6 +58,6 @@ Example of a not constructive comment:
 Example of a constructive comment:
 
 > This can be simplified, we don't need to extract the numeric values for the status:
-* For assignment status we can directly do `where(status: %[preselected selected])`.
-* For appointment status we need to use `merge` otherwise will not work. Instead of `.where(customer_jobs_appointments: { status: appointment_statuses_keys })` we can do `.merge(CustomerJobs::Appointment.where(status: %[warning ready]))`.
-Also with these changes we don't need the rubocop disable flag.
+> * For assignment status we can directly do `where(status: %[preselected selected])`.
+> * For appointment status we need to use `merge` otherwise will not work. Instead of `.where(customer_jobs_appointments: { status: appointment_statuses_keys })` we can do `.merge(CustomerJobs::Appointment.where(status: %[warning ready]))`.
+> Also with these changes we don't need the rubocop disable flag.
