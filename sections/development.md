@@ -5,6 +5,7 @@
   - 1.1. [Project Manager](#ProjectManager)
   - 1.2. [Tech Lead](#TechLead)
   - 1.3. [Developer](#Developer)
+  - 1.4. [Developer - Reviewer contract](#Contract)
 - 2. [Project organization](#Projectorganization)
   - 2.1. [Weekly report](#Weeklyreport)
   - 2.2. [Weekly meeting with the client](#Weeklymeetingwiththeclient)
@@ -91,6 +92,10 @@ Responsibilities:
 - Continuously reviews its own code before passing it to reviewers. The soon any problem is detected, the fastest and easiest will be to fix it.
 - Release the code effectively, caring to not produce undesired side-effects (like downtime) on production.
 - Communicate blocking problems, delays and other issues to the Tech Lead.
+
+###  1.4. <a name='Contract'></a>Developer - Reviewer contract
+
+Collaboration between tech leads and developers in a team is governed by the [Developer - Reviewer contract](/guides/developer-reviewer-contract.md). If you are going to work as either a developer or tech lead, read it carefully because you will need to make sure you comply with it all the team.
 
 ##  2. <a name='Projectorganization'></a>Project organization
 

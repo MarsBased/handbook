@@ -15,6 +15,6 @@ The Developer - Reviewer contract is made as of 13th of December of 2019 by and 
 
 * You MUST NOT introduce bugs in neither new nor existing code.
 * You MUST NOT make typos.
-+ You MUST write specs that cover all the newly written code, unless agreed with the tech lead not to do so.
+* You MUST write specs that cover all the newly written code, unless agreed with the tech lead not to do so.
 * You MUST make sure the implementation properly addresses the task.
 * You MUST write appropriate documentation when needed.
