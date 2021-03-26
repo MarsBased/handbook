@@ -1,4 +1,4 @@
-# Ruby guidelines
+# Ruby & Rails guidelines
 
 We follow the `Rubocop` official [Rubocop Ruby coding style guide](https://github.com/rubocop/ruby-style-guide) as the primary source of best practices and conventions.
 
