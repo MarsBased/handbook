@@ -9,7 +9,7 @@
   - 2.1. [Weekly report](#Weeklyreport)
   - 2.2. [Weekly meeting with the client](#Weeklymeetingwiththeclient)
   - 2.3. [Weekly internal meeting](#Weeklyinternalmeeting)
-  - 2.4. [Agile development rituals](#Agilerituals)
+  - 2.4. [Agile development rituals](#Agiledevelopmentrituals)
 - 3. [Working principles](#Workingprinciples)
   - 3.1. [Speak like a Martian](#SpeaklikeaMartian)
   - 3.2. [No Martian left behind](#NoMartianleftbehind)
@@ -117,7 +117,7 @@ Once a week, the whole team gathers and runs a meeting with the client to discus
 
 Once a week, the whole team gathers to discuss tasks for the week, blocking issues or other organizational matters concerning the whole team.
 
-###  2.4. <a name='Agilerituals'></a>Agile development rituals
+###  2.4. <a name='Agiledevelopmentrituals'></a>Agile development rituals
 
 We usually use a SCRUM-based methodology with two week sprints, but it depends on the project needs.
 
