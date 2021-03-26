@@ -46,8 +46,4 @@ Don't comment the WHAT about a piece of code, only the WHY, and if necessary. Co
 #### 1.2.5 <a name='RefactorAndAddFeatures'></a>Refactor and add features
 Don't build new features and refactor at the same time unless that feature demands it. Focus on your current code and use code refactoring as a tool to achieve our goal. Refactor an unrelated part of the code that has nothing to do with that feature will not bring any value to you, to the reviewer and your codebase.
 #### 1.2.6 <a name='DontMakeTypos'></a>Don't Make Typos
-Don't make typos when writing classes / methods / variable names, code comments, literal string / page copies and documentation.
-
-Let your editor help you by installing a spell checker. Check [this basecamp post](https://3.basecamp.com/3091551/buckets/14511811/question_answers/2283440946) if you are using Vistual Studio Code.
-
-Look for any typos carefully when reviewing your own code.
+Be carefull with your typping. Writing classes/methods/variable names, code comments, literal string/page copies and documentation should be free of typos. Let your editor help you by installing a spell checker. Check [this basecamp post](https://3.basecamp.com/3091551/buckets/14511811/question_answers/2283440946) if you are using Vistual Studio Code. Remember, checking typos is part of code reviews.
