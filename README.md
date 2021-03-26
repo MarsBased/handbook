@@ -40,6 +40,7 @@ For now, we have the following resources available:
 # Our development guides
 
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
+1. [Our Docker guides](/guides/development/docker-guide.md)
 
 # Other useful resources
 
