@@ -197,7 +197,7 @@ It's ok to spend time on this, it's part of your work as a developer.
  Check out our more technical development guidelines (if you dare!).
 
 - [Active Record guidelines](/guides/development/activerecord-guide.md)
-- [Angular guidelines](/guides/angular-reference-guide.md)
+- [Angular guidelines](/guides/development/angular-guidelines.md)
 - [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
 - [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 - [Coding guidelines](/guides/development/coding-guidelines.md)
