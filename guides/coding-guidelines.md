@@ -17,6 +17,7 @@ Writing code can be as personal as hand-writing but we like to keep everyone wit
 		* **1.2.3** [Unnecessary dependencies](#UnnecessaryDependencies)
 		* **1.2.4** [Comment code to remove](#CommentCodeToRemove)
 		* **1.2.5** [Refactor and add features](#RefactorAndAddFeatures)
+		* **1.2.6** [Don't make typos](#DontMakeTypos)
 
 ### 1. <a name='DosandDonts'></a>Do's and Don'ts
 
@@ -44,3 +45,9 @@ Don't comment code to remove it, just delete it. We have git for god's sake.
 Don't comment the WHAT about a piece of code, only the WHY, and if necessary. Comments should exist if you believe that the solution you've chosen might need extra context to be understood. Always focus on the WHY instead of the WHAT as this last one is already there, is our code.
 #### 1.2.5 <a name='RefactorAndAddFeatures'></a>Refactor and add features
 Don't build new features and refactor at the same time unless that feature demands it. Focus on your current code and use code refactoring as a tool to achieve our goal. Refactor an unrelated part of the code that has nothing to do with that feature will not bring any value to you, to the reviewer and your codebase.
+#### 1.2.6 <a name='DontMakeTypos'></a>Don't Make Typos
+Don't make typos when writing classes / methods / variable names, code comments, literal string / page copies and documentation.
+
+Let your editor help you by installing a spell checker. Check [this basecamp post](https://3.basecamp.com/3091551/buckets/14511811/question_answers/2283440946) if you are using Vistual Studio Code.
+
+Look for any typos carefully when reviewing your own code.
