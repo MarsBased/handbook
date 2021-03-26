@@ -1,6 +1,6 @@
 # MarsBased React Style Guide
 
-Until know, we've used [create-react-app](https://reactjs.org/) to bootstrap React applications and we follow it's conventions.
+Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap React applications and we follow it's conventions.
 
 <!-- vscode-markdown-toc -->
 
@@ -28,7 +28,7 @@ Until know, we've used [create-react-app](https://reactjs.org/) to bootstrap Rea
   - 3.6. [Testing](#Testing)
 - 4. [Libraries](#Libraries)
   - 4.1. [Recommended libraries](#Recommendedlibraries)
-  - 4.2. [Other libraries we used](#Otherlibrariesweused)
+  - 4.2. [Other libraries we have used](#Otherlibrariesweused)
   - 4.3. [Libraries may worth take a look into](#Librariesmayworthtakealookinto)
   - 4.4. [References (libraries)](#Referenceslibraries)
 - 5. [ Learning resources](#Learningresources)
@@ -45,7 +45,7 @@ Until know, we've used [create-react-app](https://reactjs.org/) to bootstrap Rea
 
 ### 1.2. <a name='Useageneratortobootstraptheproject'></a>Use a generator to bootstrap the project
 
-We currently use [create react app](https://reactjs.org/)
+We currently use [create react app](https://create-react-app.dev/)
 
 ### 1.3. <a name='Writefunctionalcomponents'></a>Write functional components
 
@@ -53,7 +53,6 @@ Class components will be deprecated. For new components always use functions.
 
 ### 1.4. <a name='Usehooksforstatemanagement'></a>Use hooks for state management
 
-- Use hooks for state management
 - In general, prefer React's hooks for local stage management
 - Use a library (with hooks) for global state management
 - Avoid redux if possible (too complex)
@@ -66,8 +65,8 @@ It reduces boilerplate code a lot.
 
 We currently use:
 
-- REST: [react-query]()
-- GraphQL: [apollo-client]()
+- REST: [react-query](https://github.com/tannerlinsley/react-query)
+- GraphQL: [apollo-client](https://github.com/apollographql/apollo-client)
 
 ## 2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
 
@@ -75,9 +74,9 @@ We follow https://create-react-app.dev/docs/folder-structure/
 
 For small to medium projects this is recommended:
 
-- One entry point `src/index.ts`
-- One config file `src/config.ts`
-- One router `src/Router.tsx`
+- One entry point: `src/index.ts`
+- One config file: `src/config.ts`
+- One router: `src/Router.tsx`
 - Declare all app routes at `src/routes.ts` (see below)
 - All page components under `pages/` (can be nested to mimic routes path hierarchy)
 - All non-page components under `components/` (can be nested)
@@ -145,7 +144,7 @@ If using a repo for both api and client, put the above inside `client/` folder
 
 #### 3.1.1. <a name='Localstatemanagement'></a>Local state management
 
-React hooks are normally enough.
+React hooks are enough most of the time.
 
 #### 3.1.2. <a name='Globalstatemanagement'></a>Global state management
 
@@ -157,7 +156,7 @@ See zustand documentation.
 
 - Create a clean interface to each service. For example: `src/api/index.ts` (functions to send http requests to a REST API) or `src/graphql/index.ts` (queries and mutations of a GraphQL endpoint)
 - Create a file with the types (models): `<service-name>/types.ts`
-- Use declarative data fetching: instead of `fetch` prefer `useQuery` (available both in Apollo client and react-query)
+- Use declarative data fetching: prefer `useQuery` over `fetch` (available both in Apollo client and react-query)
 
 ### 3.3. <a name='GraphQL'></a>GraphQL
 
@@ -174,7 +173,7 @@ In general keep all graphql related code inside `graphql/` folder.
 - Client specific functionality inside `src/api/client.ts` (like, for example)
 - If Auth and API are different services, is common to have two folders (`src/auth` and `src/api`) and the API depends on authorization (JWT tokens, for example). If auth and API are in the same service, the `src/auth` folder can be omitted.
 
-### 3.5. <a name='RoutingonlyCRA'></a>Routing (only CRA)
+### 3.5. <a name='RoutingonlyCRA'></a>Routing (only create-react-app)
 
 Custom routing is only required with create react app (next.js has it's own routing standards and patterns).
 
@@ -186,7 +185,7 @@ Custom routing is only required with create react app (next.js has it's own rout
 
 A Page is a component that:
 
-- It is used in Router.tsx
+- It is used in `Router.tsx`
 - Can access route parameters (like in: `/post/:id`)
 - Lives inside `src/pages/` folder (can be nested to reflect actual url structure)
 
@@ -247,13 +246,13 @@ const { pageId, commentId } = useParams<Record<string, string>>();
 
 ### 3.6. <a name='Testing'></a>Testing
 
-Follow CRA guidelines: https://reactjs.org/docs/testing.html
+Follow React guidelines: https://reactjs.org/docs/testing.html
 
-- Favor end-to-end-testing over components test
+- Favour end-to-end-testing over components test
 - More important to cover critical paths that general coverage
 - Ensure business logic are pure functions and write unit test for them when needed
 
-When we wrote tests, we used [cypress](https://cypress.io)
+When we write tests, we use [Cypress](https://cypress.io)
 
 ## 4. <a name='Libraries'></a>Libraries
 
@@ -263,11 +262,11 @@ When we wrote tests, we used [cypress](https://cypress.io)
 - Forms: [react-hook-form](https://react-hook-form.com/)
 - Global state management: [zustand](https://github.com/pmndrs/zustand)
 - React query state: [react-query](https://github.com/tannerlinsley/react-query)
-- Http: [xy](https://github.com/sindresorhus/ky)
+- Http: [ky](https://github.com/sindresorhus/ky)
 - GraphQL API: [apollo-client](https://www.apollographql.com/docs/react/)
 - Routing: [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
 
-### 4.2. <a name='Otherlibrariesweused'></a>Other libraries we used
+### 4.2. <a name='Otherlibrariesweused'></a>Other libraries we have used
 
 - Styling
   - [tailwindcss](https://tailwindcss.com/)
@@ -280,10 +279,9 @@ When we wrote tests, we used [cypress](https://cypress.io)
 - Hooks:
   - [react-use](https://github.com/streamich/react-use)
 
-### 4.3. <a name='Librariesmayworthtakealookinto'></a>Libraries may worth take a look into
+### 4.3. <a name='Librariesmayworthtakealookinto'></a>Libraries which may worth take a look into
 
 - State management
-
   - [jotai](https://github.com/pmndrs/jotai)
   - [recoil](https://recoiljs.org/)
 
@@ -297,7 +295,7 @@ When we wrote tests, we used [cypress](https://cypress.io)
 ## 5. <a name='Learningresources'></a> Learning resources
 
 - React docs are quite good. Recommended reading: https://reactjs.org/docs/hello-world.html
-- egghead.io is one of my favourite places to learn and Kent C. Dodds is a master, so this can't fail: https://egghezad.io/courses/the-beginner-s-guide-to-reactjs
+- egghead.io is one of our favourite places to learn and Kent C. Dodds is a master, so this can't fail: https://egghezad.io/courses/the-beginner-s-guide-to-reactjs
 - To learn Redux, a course at egghead by the creator of Redux itself is a MUST: https://egghead.io/courses/getting-started-with-redux
-- I've head this tutorial is quite good for starting with React: https://www.fullstackreact.com/30-days-of-react/
+- This tutorial is quite good for starting with React: https://www.fullstackreact.com/30-days-of-react/
 - https://www.reddit.com/r/reactjs/
