@@ -20,7 +20,7 @@ It's useful to take an *algorithmic* approach when reviewing the code: take one 
 
 Testing the code while doing a review is not something that all companies do, mainly because it can be time consuming. At MarsBased we strongly think it is important to test the code when doing a review. However, take into account that depending on how critical / complex the code is and how difficult it is to test, testing should be less or more exhaustive.
 
-It is a matter of analyzing the cost / benefit ratio and applying common sense to it (is it worth spending a lot of time testing it? it depends on how critical is the code).
+It is a matter of analyzing the cost / benefit ratio and applying common sense to it (is it worth spending a lot of time testing it? it depends on how critical the code is).
 
 ## Checklist
 
@@ -32,7 +32,7 @@ This is the main things you should be looking out for in the reviewed code:
   * Can more now-unused code be removed?
 * Typos: Are there any typos in methods / classes / variables names, comments, literals and documentation?
 * Good practices: Is the code DRY, with short methods and small classes?
-* Code style: Does the code follow the MB conventions and it's idiomatic according to the programming language?
+* Code style: Does the code follow the MarsBased conventions and it's idiomatic according to the programming language?
 * I18n: Are all strings I18n-ized? (when doing a review for back-end code).
 * Background jobs: Are background jobs idempotent? (when doing a review for back-end code).
 * Naming: Do classes, methods and variable names use proper naming?
@@ -44,7 +44,7 @@ You might have other things that you usually check for. The key idea is that it'
 ## Comments in code reviews
 
 When writing comments:
-* Use “We”, not “you”. The developer is not alone, you are a team.
+* Use “we”, not “you”. The developer is not alone, you are a team.
 * Provide objective reasons that support the change. “Because I don’t like it” is not a reason.
 * Provide an alternative or a sketch of how you would do it instead.
 * Don't write only negative comments, write also positive comments:
