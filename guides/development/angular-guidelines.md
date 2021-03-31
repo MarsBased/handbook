@@ -485,7 +485,7 @@ Use [Transloco](https://github.com/ngneat/transloco).
 - [Spectator](https://github.com/ngneat/spectator). Angular test's helpers.
 - [Jest](https://jestjs.io/). General purpose JS testing.
 - [ESLint](https://eslint.org/). JS Linter
-- [Lodash](https://lodash.com/). Provides functions to manipulate data structures.
+- [Ramda](https://ramdajs.com)/[Rambda](https://github.com/selfrefactor/rambda). Provides immutability and side-effect free functions to manipulate data structures.
 - [Date-fns](https://date-fns.org/). Provides functions to manipulate dates.
 - [Angular Material](https://material.angular.io/). A collection of components and other Angular resources to build the UI.
 - [NgBootstrap](https://ng-bootstrap.github.io/#/home). Bootstrap library ported to Angular components.
