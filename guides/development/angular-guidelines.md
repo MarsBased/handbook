@@ -226,7 +226,7 @@ Do prefer the @HostListener and @HostBinding to the host property of the @Direct
 
 ### 1.12. <a name='ClassOrder'></a> Class members order
 
-Do sort the class as follow:
+Do sort class members as follow:
 
 1. Inputs/Outputs
 2. ViewChilds
