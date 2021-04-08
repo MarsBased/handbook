@@ -512,5 +512,7 @@ Other resources:
 - [Adventures in Angular](https://devchat.tv/adv-in-angular/)
 - [Angular Awesome resource list](https://github.com/PatrickJS/awesome-angular)
 
+These are our reference resources. Still, a project often needs extra libraries. Before adding a new library, it must be approved by the project's tech lead.
+
 
 Are you missing any resource or interesting article on this list? Feel free to suggest additional useful resources by creating a PR to let us know!
