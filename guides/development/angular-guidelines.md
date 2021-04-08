@@ -15,7 +15,7 @@ We follow the official and opionated [Angular coding style guide](https://angula
 	* 1.9. [HTML Attributes](#HTMLAttributes)
 	* 1.10. [Empty Observables](#EmptyObservables)
 	* 1.11. [HostListener/HostBinding decorators versus host metadata](#HostListenerHostBindingdecoratorsversushostmetadata)
-  * 1.12. [Class order](#ClassOrder)
+  * 1.12. [Class members order](#ClassOrder)
 * 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
 	* 2.1. [Project structure example](#Projectstructureexample)
 * 3. [Describe most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
