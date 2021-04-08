@@ -230,7 +230,7 @@ Do sort the class as follow:
 
 1. Inputs/Outputs
 2. ViewChilds
-3. Public variables
+3. Public properties
 4. Private variables
 5. Get methods
 6. Constructor
