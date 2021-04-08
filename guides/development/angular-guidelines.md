@@ -232,7 +232,7 @@ Do sort class members as follow:
 2. ViewChilds
 3. Public properties
 4. Private variables
-5. Get methods
+5. Class accessors
 6. Constructor
 7. Lifecycle Hooks
 8. Callback methods
