@@ -234,7 +234,7 @@ Do sort class members as follow:
 4. Private properties
 5. Class accessors
 6. Constructor
-7. Lifecycle Hooks
+7. Angular's lifecycle hooks
 8. Callback methods
 9. Public methods
 10. Private methods
