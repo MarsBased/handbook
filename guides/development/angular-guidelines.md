@@ -224,7 +224,7 @@ const checkActionDispatched = !isActionDispatched ?
 
 Do prefer the @HostListener and @HostBinding to the host property of the @Directive and @Component decorators. Refer to the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03) for more details.
 
-### 1.12. <a name='ClassOrder'></a> Class order
+### 1.12. <a name='ClassOrder'></a> Class members order
 
 Do sort the class as follow:
 
