@@ -15,6 +15,7 @@ We follow the official and opionated [Angular coding style guide](https://angula
 	* 1.9. [HTML Attributes](#HTMLAttributes)
 	* 1.10. [Empty Observables](#EmptyObservables)
 	* 1.11. [HostListener/HostBinding decorators versus host metadata](#HostListenerHostBindingdecoratorsversushostmetadata)
+  * 1.12. [Class members order](#ClassOrder)
 * 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
 	* 2.1. [Project structure example](#Projectstructureexample)
 * 3. [Describe most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
@@ -222,6 +223,60 @@ const checkActionDispatched = !isActionDispatched ?
 ###  1.11. <a name='HostListenerHostBindingdecoratorsversushostmetadata'></a>HostListener/HostBinding decorators versus host metadata
 
 Do prefer the @HostListener and @HostBinding to the host property of the @Directive and @Component decorators. Refer to the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03) for more details.
+
+### 1.12. <a name='ClassOrder'></a> Class members order
+
+Do sort class members as follow:
+
+1. Inputs/Outputs
+2. ViewChilds
+3. Public properties
+4. Private properties
+5. Class accessors
+6. Constructor
+7. Angular's lifecycle hooks
+8. Event methods
+9. Public methods
+10. Private methods
+
+```ts
+const MY_LIST = [{id: 1, value: 'option 1'}, {id: 2, value: 'option 2'}]
+@Component({
+   templateUrl: './my-component.component.html',
+   selector: 'my-component',
+})
+export class MyComponent {
+  @Input() categories: Category[];
+
+  @Output() disassociate = new EventEmitter<Category>();
+
+  @ViewChild(FormComponent) formCpm: FormComponent;
+
+  user: User;
+  category: Category;
+  private selectedUser: User;
+  private selectedCategory: Category;
+  readonly comboList = MY_LIST;
+
+  get isActive(): boolean {
+    return this.user.active;
+  }
+
+  constructor() { }
+
+  ngOnInit(): void {
+    this.initData();
+  }
+
+  submit(): void {
+    ...
+  }
+
+  private initData(): void {
+    ...
+  }
+}
+```
 
 ##  2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
 
