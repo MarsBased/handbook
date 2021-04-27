@@ -540,7 +540,6 @@ Use [Transloco](https://github.com/ngneat/transloco).
 - [Spectator](https://github.com/ngneat/spectator). Angular test's helpers.
 - [Jest](https://jestjs.io/). General purpose JS testing.
 - [ESLint](https://eslint.org/). JS Linter
-- [Lodash](https://lodash.com/). Provides functions to manipulate data structures.
 - [Date-fns](https://date-fns.org/). Provides functions to manipulate dates.
 - [Angular Material](https://material.angular.io/). A collection of components and other Angular resources to build the UI.
 - [NgBootstrap](https://ng-bootstrap.github.io/#/home). Bootstrap library ported to Angular components.
@@ -568,5 +567,6 @@ Other resources:
 - [Adventures in Angular](https://devchat.tv/adv-in-angular/)
 - [Angular Awesome resource list](https://github.com/PatrickJS/awesome-angular)
 
+These are our reference resources. Still, a project often needs extra libraries. Before adding a new library, it must be approved by the project's tech lead.
 
 Are you missing any resource or interesting article on this list? Feel free to suggest additional useful resources by creating a PR to let us know!
