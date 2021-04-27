@@ -282,9 +282,9 @@ export class MyComponent {
 
 Follow the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03) to name files and directories. Additionally:
 
-- Routed modules under the /routes directory.
-- Page components under the routed module directory /routes/\*/.
-- Regular components under the routed module directory /routes/\*/components.
+- Routed modules under the /pages directory.
+- Page components under the routed module directory /pages/\*/.
+- Regular components under the routed module directory /pages/\*/components.
 - Standalone modules under the /modules directory.
 - State management files under the /state directory.
 - Helpers, utils and custom libraries under the /libs directory.
@@ -294,12 +294,12 @@ Follow the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03
 ```
 cypress/                              # end-to-end tests
 src/app/
-|- routes/                            # routed modules
+|- pages/                            # routed modules
   |- admin/                           # routed /admin module
     |- components/                    # admin's modules
       |- avatar/
       |- navbar/
-    |- routes/                        # routed modules under /admin
+    |- pages/                        # routed modules under /admin
       |- planets/                     # routed /admin/planets module
     |- models/
     |- services/
@@ -329,9 +329,9 @@ src/app/
 
 ###  3.1. <a name='LazyPages'></a>Lazy Pages
 
-Lazy load every page always, placing routed modules under the /routes directory. This way, the architecture and the tree folder mirror the URL map presented to the user.
+Lazy load every page always, placing routed modules under the /pages directory. This way, the architecture and the tree folder mirror the URL map presented to the user.
 
-E.g. `http://sample.com/admin/planets` can be accessed from `src/app/routes/admin/routes/planets`.
+E.g. `http://sample.com/admin/planets` can be accessed from `src/app/pages/admin/pages/planets`.
 
 Check the next guides for further information about lazy loading and feature modules:
 
