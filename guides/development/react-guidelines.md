@@ -45,7 +45,11 @@ Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap Reac
 
 ### 1.2. <a name='Useageneratortobootstraptheproject'></a>Use a generator to bootstrap the project
 
-We currently use [create react app](https://create-react-app.dev/)
+A project generator saves lot of boilerplate work and provides common conventions. 
+
+We've used [create react app](https://create-react-app.dev/) for all our projects.
+
+We will consider using another system (mostly [next.js](https://nextjs.org/)) for newer projects, specially if they have important SEO requirements.
 
 ### 1.3. <a name='Writefunctionalcomponents'></a>Write functional components
 

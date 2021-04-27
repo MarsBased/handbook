@@ -31,7 +31,7 @@ For now, we have the following resources available:
 
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
 1. [Our project management guidelines](/guides/pm-guidelines.md)
-1. [Our Git & Commit guidelines](/guides/git-guidelines.md)
+1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
 1. [Some of our used programming patterns](/guides/patterns/index.md)
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)

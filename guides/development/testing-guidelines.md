@@ -1,6 +1,6 @@
 # Testing guidelines
 
-Reference structure https://github.com/MarsBased/marsgular/blob/master/docs/ANGULAR_STYLE_GUIDE.md (open to modification, but David might get mad at you)
+**NOTE: This guide is work in progress. This is just the layout to be properly written.**
 
 Do's
 * Write tests as 3 separate blocks (data preparation, execution and expectation)
