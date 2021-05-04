@@ -3,35 +3,37 @@
 Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap React applications and we follow it's conventions.
 
 <!-- vscode-markdown-toc -->
-
-- 1. [Do's and Don'ts](#DosandDonts)
-  - 1.1. [Use typescript if possible](#Usetypescriptifpossible)
-  - 1.2. [Use a generator to bootstrap the project](#Useageneratortobootstraptheproject)
-  - 1.3. [Write functional components](#Writefunctionalcomponents)
-  - 1.4. [Use hooks for state management](#Usehooksforstatemanagement)
-  - 1.5. [Use a declarative API library](#UseadeclarativeAPIlibrary)
-- 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
-  - 2.1. [Project structure example](#Projectstructureexample)
-  - 2.2. [References (project structure)](#Referencesprojectstructure)
-- 3. [Describe most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
-  - 3.1. [State management](#Statemanagement)
-    - 3.1.1. [Local state management](#Localstatemanagement)
-    - 3.1.2. [Global state management](#Globalstatemanagement)
-  - 3.2. [External services](#Externalservices)
-  - 3.3. [GraphQL](#GraphQL)
-  - 3.4. [REST](#REST)
-  - 3.5. [Routing (only CRA)](#RoutingonlyCRA)
-    - 3.5.1. [Page vs component](#Pagevscomponent)
-    - 3.5.2. [Route definitions](#Routedefinitions)
-    - 3.5.3. [Router.tsx](#Router.tsx)
-    - 3.5.4. [Access route parameters using hooks](#Accessrouteparametersusinghooks)
-  - 3.6. [Testing](#Testing)
-- 4. [Libraries](#Libraries)
-  - 4.1. [Recommended libraries](#Recommendedlibraries)
-  - 4.2. [Other libraries we have used](#Otherlibrariesweused)
-  - 4.3. [Libraries may worth take a look into](#Librariesmayworthtakealookinto)
-  - 4.4. [References (libraries)](#Referenceslibraries)
-- 5. [ Learning resources](#Learningresources)
+* 1. [Do's and Don'ts](#DosandDonts)
+	* 1.1. [Use typescript if possible](#Usetypescriptifpossible)
+	* 1.2. [Use a generator to bootstrap the project](#Useageneratortobootstraptheproject)
+	* 1.3. [Write functional components](#Writefunctionalcomponents)
+	* 1.4. [Use hooks for state management](#Usehooksforstatemanagement)
+	* 1.5. [Use a declarative API library](#UseadeclarativeAPIlibrary)
+	* 1.6. [Do use function declarations](#Dousefunctiondeclarations)
+	* 1.7. [Do name exports](#Donameexports)
+	* 1.8. [Do inline type props](#Doinlinetypeprops)
+* 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
+	* 2.1. [Project structure example](#Projectstructureexample)
+	* 2.2. [References (project structure)](#Referencesprojectstructure)
+* 3. [Describe most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
+	* 3.1. [State management](#Statemanagement)
+		* 3.1.1. [Local state management](#Localstatemanagement)
+		* 3.1.2. [Global state management](#Globalstatemanagement)
+	* 3.2. [External services](#Externalservices)
+	* 3.3. [GraphQL](#GraphQL)
+	* 3.4. [REST](#REST)
+	* 3.5. [Routing (only create-react-app)](#Routingonlycreate-react-app)
+		* 3.5.1. [Page vs component](#Pagevscomponent)
+		* 3.5.2. [Route definitions](#Routedefinitions)
+		* 3.5.3. [Router.tsx](#Router.tsx)
+		* 3.5.4. [Access route parameters using hooks](#Accessrouteparametersusinghooks)
+	* 3.6. [Testing](#Testing)
+* 4. [Libraries](#Libraries)
+	* 4.1. [Recommended libraries](#Recommendedlibraries)
+	* 4.2. [Other libraries we have used](#Otherlibrarieswehaveused)
+	* 4.3. [Libraries which may worth take a look into](#Librarieswhichmayworthtakealookinto)
+	* 4.4. [References (libraries)](#Referenceslibraries)
+* 5. [ Learning resources](#Learningresources)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -39,23 +41,23 @@ Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap Reac
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-## 1. <a name='DosandDonts'></a>Do's and Don'ts
+##  1. <a name='DosandDonts'></a>Do's and Don'ts
 
-### 1.1. <a name='Usetypescriptifpossible'></a>Use typescript if possible
+###  1.1. <a name='Usetypescriptifpossible'></a>Use typescript if possible
 
-### 1.2. <a name='Useageneratortobootstraptheproject'></a>Use a generator to bootstrap the project
+###  1.2. <a name='Useageneratortobootstraptheproject'></a>Use a generator to bootstrap the project
 
-A project generator saves lot of boilerplate work and provides common conventions. 
+A project generator saves lot of boilerplate work and provides common conventions.
 
 We've used [create react app](https://create-react-app.dev/) for all our projects.
 
 We will consider using another system (mostly [next.js](https://nextjs.org/)) for newer projects, specially if they have important SEO requirements.
 
-### 1.3. <a name='Writefunctionalcomponents'></a>Write functional components
+###  1.3. <a name='Writefunctionalcomponents'></a>Write functional components
 
 Class components will be deprecated. For new components always use functions.
 
-### 1.4. <a name='Usehooksforstatemanagement'></a>Use hooks for state management
+###  1.4. <a name='Usehooksforstatemanagement'></a>Use hooks for state management
 
 - In general, prefer React's hooks for local stage management
 - Use a library (with hooks) for global state management
@@ -63,7 +65,7 @@ Class components will be deprecated. For new components always use functions.
 
 See patterns (below) for example and usages.
 
-### 1.5. <a name='UseadeclarativeAPIlibrary'></a>Use a declarative API library
+###  1.5. <a name='UseadeclarativeAPIlibrary'></a>Use a declarative API library
 
 It reduces boilerplate code a lot.
 
@@ -72,7 +74,50 @@ We currently use:
 - REST: [react-query](https://github.com/tannerlinsley/react-query)
 - GraphQL: [apollo-client](https://github.com/apollographql/apollo-client)
 
-## 2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
+###  1.6. <a name='Dousefunctiondeclarations'></a>Do use function declarations
+
+For a better readability.
+
+```ts
+// Don't declare arrow functions
+const App = () => (
+  <div>
+    <Logo />
+  </div>
+);
+
+// DO declare functions
+function App() {
+  return (
+    <div>
+      <Logo />
+    </div>
+  );
+}
+```
+
+###  1.7. <a name='Donameexports'></a>Do name exports
+
+It allows to export multiple values and it encourages the use of the same naming.
+
+```ts
+export function LoginPage() {
+  ...
+}
+```
+
+###  1.8. <a name='Doinlinetypeprops'></a>Do inline type props
+
+When using a type once, we can save some lines declaring the type inline.
+
+```ts
+// DO inline type props
+export function LoginForm({user = ''}: {user: string}) {
+  ...
+}
+```
+
+##  2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
 
 We follow https://create-react-app.dev/docs/folder-structure/
 
@@ -89,7 +134,7 @@ For small to medium projects this is recommended:
 - One folder for locales: `locales/`
 - The rest: utility functions, helpers, etc... under `lib/` (keep it clean, please)
 
-### 2.1. <a name='Projectstructureexample'></a>Project structure example
+###  2.1. <a name='Projectstructureexample'></a>Project structure example
 
 ```
 src/
@@ -135,34 +180,34 @@ src/
 
 If using a repo for both api and client, put the above inside `client/` folder
 
-### 2.2. <a name='Referencesprojectstructure'></a>References (project structure)
+###  2.2. <a name='Referencesprojectstructure'></a>References (project structure)
 
 - Route definitions idea taken from [Redwood](https://github.com/redwoodjs/redwood) framework
 
-## 3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Describe most common patterns used to solve common problems
+##  3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Describe most common patterns used to solve common problems
 
-### 3.1. <a name='Statemanagement'></a>State management
+###  3.1. <a name='Statemanagement'></a>State management
 
 - In general, prefer hooks over any other solution
 - You-don-t-need-redux. But if so, use hooks interface
 
-#### 3.1.1. <a name='Localstatemanagement'></a>Local state management
+####  3.1.1. <a name='Localstatemanagement'></a>Local state management
 
 React hooks are enough most of the time.
 
-#### 3.1.2. <a name='Globalstatemanagement'></a>Global state management
+####  3.1.2. <a name='Globalstatemanagement'></a>Global state management
 
 Prefer [zustand](https://github.com/pmndrs/zustand) over React contexts or redux.
 
 See zustand documentation.
 
-### 3.2. <a name='Externalservices'></a>External services
+###  3.2. <a name='Externalservices'></a>External services
 
 - Create a clean interface to each service. For example: `src/api/index.ts` (functions to send http requests to a REST API) or `src/graphql/index.ts` (queries and mutations of a GraphQL endpoint)
 - Create a file with the types (models): `<service-name>/types.ts`
 - Use declarative data fetching: prefer `useQuery` over `fetch` (available both in Apollo client and react-query)
 
-### 3.3. <a name='GraphQL'></a>GraphQL
+###  3.3. <a name='GraphQL'></a>GraphQL
 
 We currently use [apollo-client](https://www.apollographql.com/docs/react/)
 
@@ -170,14 +215,14 @@ Try to generate types and code as much as possible.
 
 In general keep all graphql related code inside `graphql/` folder.
 
-### 3.4. <a name='REST'></a>REST
+###  3.4. <a name='REST'></a>REST
 
 - A single `src/api/index.ts` exports all possible API interactions
 - Use `src/api/types.ts` to declare API entity type definitions
 - Client specific functionality inside `src/api/client.ts` (like, for example)
 - If Auth and API are different services, is common to have two folders (`src/auth` and `src/api`) and the API depends on authorization (JWT tokens, for example). If auth and API are in the same service, the `src/auth` folder can be omitted.
 
-### 3.5. <a name='RoutingonlyCRA'></a>Routing (only create-react-app)
+###  3.5. <a name='Routingonlycreate-react-app'></a>Routing (only create-react-app)
 
 Custom routing is only required with create react app (next.js has it's own routing standards and patterns).
 
@@ -185,7 +230,7 @@ Custom routing is only required with create react app (next.js has it's own rout
 - Create a route definitions file `src/routes.ts` with all route paths
 - It helps to mimic the actual routes in the `/pages` folder
 
-#### 3.5.1. <a name='Pagevscomponent'></a>Page vs component
+####  3.5.1. <a name='Pagevscomponent'></a>Page vs component
 
 A Page is a component that:
 
@@ -193,7 +238,7 @@ A Page is a component that:
 - Can access route parameters (like in: `/post/:id`)
 - Lives inside `src/pages/` folder (can be nested to reflect actual url structure)
 
-#### 3.5.2. <a name='Routedefinitions'></a>Route definitions
+####  3.5.2. <a name='Routedefinitions'></a>Route definitions
 
 It's a file to generate route paths. Advantages:
 
@@ -219,7 +264,7 @@ import routes from "./routes";
 <Link to={routes.users()}>Users</Link>;
 ```
 
-#### 3.5.3. <a name='Router.tsx'></a>Router.tsx
+####  3.5.3. <a name='Router.tsx'></a>Router.tsx
 
 Use the `routes` definitions to create the routes placeholders:
 
@@ -239,7 +284,7 @@ Use the `routes` definitions to create the routes placeholders:
 </Router>
 ```
 
-#### 3.5.4. <a name='Accessrouteparametersusinghooks'></a>Access route parameters using hooks
+####  3.5.4. <a name='Accessrouteparametersusinghooks'></a>Access route parameters using hooks
 
 For a route like `/posts/:postId/comments/:commentId` we use the following code to access route params:
 
@@ -248,7 +293,7 @@ For a route like `/posts/:postId/comments/:commentId` we use the following code 
 const { pageId, commentId } = useParams<Record<string, string>>();
 ```
 
-### 3.6. <a name='Testing'></a>Testing
+###  3.6. <a name='Testing'></a>Testing
 
 Follow React guidelines: https://reactjs.org/docs/testing.html
 
@@ -258,9 +303,9 @@ Follow React guidelines: https://reactjs.org/docs/testing.html
 
 When we write tests, we use [Cypress](https://cypress.io)
 
-## 4. <a name='Libraries'></a>Libraries
+##  4. <a name='Libraries'></a>Libraries
 
-### 4.1. <a name='Recommendedlibraries'></a>Recommended libraries
+###  4.1. <a name='Recommendedlibraries'></a>Recommended libraries
 
 - Internationalization: [react-intl](https://www.npmjs.com/package/react-intl)
 - Forms: [react-hook-form](https://react-hook-form.com/)
@@ -270,7 +315,7 @@ When we write tests, we use [Cypress](https://cypress.io)
 - GraphQL API: [apollo-client](https://www.apollographql.com/docs/react/)
 - Routing: [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
 
-### 4.2. <a name='Otherlibrariesweused'></a>Other libraries we have used
+###  4.2. <a name='Otherlibrarieswehaveused'></a>Other libraries we have used
 
 - Styling
   - [tailwindcss](https://tailwindcss.com/)
@@ -283,20 +328,21 @@ When we write tests, we use [Cypress](https://cypress.io)
 - Hooks:
   - [react-use](https://github.com/streamich/react-use)
 
-### 4.3. <a name='Librariesmayworthtakealookinto'></a>Libraries which may worth take a look into
+###  4.3. <a name='Librarieswhichmayworthtakealookinto'></a>Libraries which may worth take a look into
 
 - State management
+
   - [jotai](https://github.com/pmndrs/jotai)
   - [recoil](https://recoiljs.org/)
 
 - Component library
   - [Chakra UI](https://chakra-ui.com/)
 
-### 4.4. <a name='Referenceslibraries'></a>References (libraries)
+###  4.4. <a name='Referenceslibraries'></a>References (libraries)
 
 - Blog: [Internationalize React apps done right](https://medium.com/ableneo/internationalize-react-apps-done-right-using-react-intl-library-82978dbe175e)
 
-## 5. <a name='Learningresources'></a> Learning resources
+##  5. <a name='Learningresources'></a> Learning resources
 
 - React docs are quite good. Recommended reading: https://reactjs.org/docs/hello-world.html
 - egghead.io is one of our favourite places to learn and Kent C. Dodds is a master, so this can't fail: https://egghezad.io/courses/the-beginner-s-guide-to-reactjs
