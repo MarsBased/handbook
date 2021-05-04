@@ -108,7 +108,7 @@ export function LoginPage() {
 
 ###  1.8. <a name='Doinlinetypeprops'></a>Do inline type props
 
-When using a type once, we can save some lines declaring the type inline.
+Tt reduces the external dependencies of the function and therefore is more easy to move or change it without errors.
 
 ```ts
 // DO inline type props
