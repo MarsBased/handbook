@@ -239,3 +239,34 @@ However, there is no way to access Minio from both places using the same URL:
 In order to overcome this limitation we make use of the fact that from the container the IP `127.17.0.1` can be used to access the host. By setting up an alias on the host from this IP to localhost we can use the URL http://127.17.0.1:9000 from both the host and the container:
 * From the host it just maps to localhost, so it's the same as before.
 * From the container it maps to the host, and from there it accesses Minio through the exposed port.
+
+## Common patterns
+
+Below there is a list of common setups or tasks we have needed to do and how we have solved it.
+
+### Sharing services between different applications
+
+Sometimes it is useful to share a service between multiple applications launched with Docker compose. For example, in a micro-services setup there might be 2 applications running at the same time and connecting to the same database.
+
+To achieve such a setup you can use an external network. First you need to define the following in the `docker-compose.yml` of both projects:
+
+```
+networks:
+  my-app-shared:
+    external:
+      name: my-app-shared
+```
+
+And then in the services you want to have in that external network you need to specify it in the service definition. Example:
+
+```
+redis:
+  image: redis:6.0-alpine
+  volumes:
+    - redis:/data
+  ports:
+    - 6397:6379
+  network: my-app-shared
+```
+
+Done!
