@@ -29,12 +29,9 @@ If you're a visitor and want to use them, feel free to use them anywhere, but we
 
 For now, we have the following resources available:
 
+1. [Branding guidelines](/guides/branding.md)
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
 1. [Our project management guidelines](/guides/pm-guidelines.md)
-1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
-1. [Some of our used programming patterns](/guides/patterns/index.md)
-1. [Angular guidelines](/guides/development/angular-guidelines.md)
-1. [React guidelines](/guides/development/react-guidelines.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
 1. [Our blogging guide](/guides/blogging-guide.md)
 1. [How to write a damn good blog post](/guides/how-to-blog.md)
@@ -43,6 +40,10 @@ For now, we have the following resources available:
 
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
 1. [Our Docker guides](/guides/development/docker-guide.md)
+1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
+1. [Some of our used programming patterns](/guides/development/patterns/index.md)
+1. [Angular guidelines](/guides/development/angular-guidelines.md)
+1. [React guidelines](/guides/development/react-guidelines.md)
 
 # Other useful resources
 
