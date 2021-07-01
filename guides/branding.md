@@ -4,7 +4,7 @@ When using our logos and brand identity, you've got to follow a few indications 
 
 # Name
 
-First and foremost, in written form, __MarsBased__ is one word and one world only, with a capital M and a capital B. Unless required to do so, the name of the company shall not be spelled in all uppercase (MARSBASED) or all lowercase letters (marsbased).
+First and foremost, in written form, __MarsBased__ is one word and one word only, with a capital M and a capital B. Unless required to do so, the name of the company shall not be spelt in all uppercase (MARSBASED) or all lowercase letters (marsbased).
 
 # Logo
 
@@ -22,7 +22,7 @@ The small one is the one we usually include in our social profiles.
 
 Preferably, we use the black and white logos, but we've got other options too.
 
-On black backgrounds, you first will use the white letters logo, and if the occassion suits it, the red letters logo. For most cases, the white letters logo will do, but on our corporate templates, for instance, we use a lot of red in other elements of the documents (page number, separators, tables, etc.). If red is a prominent colour on the document, you might want to use the red versions instead.
+On black backgrounds, you first will use the white letters logo, and if the occasion suits it, the red letters logo. For most cases, the white letters logo will do, but on our corporate templates, for instance, we use a lot of red in other elements of the documents (page number, separators, tables, etc.). If red is a prominent colour on the document, you might want to use the red versions instead.
 
 White letters on transparent background, full name:
 
@@ -32,17 +32,17 @@ Red letters on black background, full name:
 
 <img width="547" alt="06-MB-LOGOTIPO" src="https://user-images.githubusercontent.com/6558119/124117640-ab4bdc80-da70-11eb-8dd7-a0bee52237b9.png">
 
-White letters on black background, abreviated name:
+White letters on black background, abbreviated name:
 
 <img width="152" alt="08-MB-LOGOTIPO_REDUCCIÓN" src="https://user-images.githubusercontent.com/6558119/124117703-bacb2580-da70-11eb-9bbc-2d0e46a4807d.png">
 
-Red letters on black background, abreviated name:
+Red letters on black background, abbreviated name:
 
 <img width="152" alt="09-MB-LOGOTIPO_REDUCCIÓN" src="https://user-images.githubusercontent.com/6558119/124117707-bc94e900-da70-11eb-9949-f8b2bee39700.png">
 
 # Margins
 
-Consider respecting the space around the logos to let it breathe. Do not stack it right on top of other logos or next to other logos with no space between them. Here's some indications as to how much space is recommended:
+Consider respecting the space around the logos to let it breathe. Do not stack it right on top of other logos or next to other logos with no space between them. Here are some indications as to how much space is recommended:
 
 ![image](https://user-images.githubusercontent.com/6558119/124118127-4644b680-da71-11eb-862a-05571298278c.png) 
 
