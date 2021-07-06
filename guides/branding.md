@@ -80,6 +80,13 @@ __MB Digital–Mars ©__
 * CMYK: 0, 80, 64, 0 
 * RGB: 247, 81, 77
 
+# Social image
+
+Please use this image when linking to content by MarsBased and you haven't been provided a specific image:
+
+![share](https://user-images.githubusercontent.com/6558119/124573053-79a88c00-de49-11eb-80c8-e7193a7c0822.jpg)
+
+
 # Further uses
 
 If you want to learn more about secondary colours, in-document placing, fonts and much more, refer to our internal <a href="https://drive.google.com/open?id=1yqnRmVj67-C4vRgOxUfarDnPKkkTO7jk&authuser=alex.rodriguez%40marsbased.com&usp=drive_fs" target="_blank">Branding Guidelines</a> (only available to MarsBased team members).
