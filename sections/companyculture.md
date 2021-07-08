@@ -1,4 +1,4 @@
-# Company Culture
+# Company culture
 
 We live by a very distinct and solid set of values guiding us in our day to day. Our Company Culture has been fundamental to hiring and growing the company.
 

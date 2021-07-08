@@ -12,7 +12,7 @@ However, internal referrals work well, too.
 
 This company is based on the foundations of a good and strong relationship between employees, and in some cases, these relationships come from before. 
 
-Our first employee (Javier Pérez), David Gómez and Àlex (CEO) used to work together in VASS. Jordi, Xavi, Juan and Javier worked together in GreenData. Pablo and David Garmendia coincided in a company in Asturias. Oriol, we met him in the early days of MarsBased when he was running his company, Dineyo. One of our long-term freelancers, Pablo, we met him at the Startup Grind Barcelona events.
+Our first employee (Javier Pérez), David Gómez and Àlex (CEO) used to work together in VASS. Jordi, Xavi, Juan and Javier worked together in GreenData. Pablo and David Garmendia coincided in a company in Asturias. Oriol, we met him in the early days of MarsBased when he was running his company, Dineyo. We also met one of our long-term freelancers, Pablo at the Startup Grind Barcelona events.
 
 If you want to work again with someone you like, be it a friend or simply someone you respect and admire, we can give it a try. If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him.
 

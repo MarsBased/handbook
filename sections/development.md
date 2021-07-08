@@ -1,11 +1,12 @@
 # Development
 
+Developers, rejoice!
+
 ## Sections
 
-- 1. [Team organization](/sections/development/team-organization.md)
-- 2. [Project organization](/sections/development/project-organization.md)
-- 3. [Working principles](/sections/development/working-principles.md)
-- 4. [Development guidelines](#Developmentguidelines)
+- [Team organisation](/sections/development/team-organisation.md)
+- [Project organisation](/sections/development/project-organisation.md)
+- [Working principles](/sections/development/working-principles.md)
 
 ## Guides
 

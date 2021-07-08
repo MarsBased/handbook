@@ -2,9 +2,9 @@
 
 We welcome any suggestion, and we encourage discussions.
 
-This is an opinionated resource. In order to change these guides a vast majority of the MarsBased developers should agree. You can open a PR directly with your suggestions or you can create an issue to discuss and collect opinions before opening it.
+This is an opinionated resource. In order to change these guides, a vast majority of the MarsBased developers should agree. You can open a PR directly with your suggestions or you can create an issue to discuss and collect opinions before opening it.
 
-Ask any question about the guides opening an issue.
+Ask any questions about the guides opening an issue.
 
 ## Submitting changes
 

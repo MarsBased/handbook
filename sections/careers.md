@@ -1,6 +1,6 @@
 # Careers at MarsBased
 
-Everything we do, we do it thinking in the long term. We pride ourselves in the fact that we don't have employee turnover. The last Martian to walk out of the company did so in September 2017. That's well over three years, now!
+Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover. The last Martian to walk out of the company did so in September 2017. That's almost four years, now!
 
 While in other companies employees stay on average one year (or less!), at MarsBased the average is almost three years and counting!
 
@@ -38,7 +38,7 @@ For example, you might be a __Tech Lead__ in a project, but be a __Developer__ i
 
 That's why we don't have Tech Leads who manage developers, and we must be very careful to explain this to our candidates.
 
-The roles you, as part of the tech team, you may have the following roles:
+You, as part of the tech team, may have the following roles:
 
 First, the __Tech Lead__, which is a very senior programmer who manages technical projects and has CTO-like abilities to weigh in into specific projects when needed. This role also gets to code, but only part-time.
 

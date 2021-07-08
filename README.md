@@ -1,10 +1,12 @@
-# The MarsBased Handbook
+# The MarsBased Handbook 🚀
 
 Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
 
 Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
-If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate that you linked us back in appreciation.
+If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back in appreciation.
+
+We have decided to make this handbook publicly available so we can share as much as we can with other companies out there, potential candidates and prospective clients alike. Everyone is welcome!
 
 # Sections
 
@@ -47,6 +49,7 @@ For now, we have the following resources available:
 
 # Other useful resources
 
+1. <a href="https://marsbased.com" title="MarsBased website" target="_blank">MarsBased website</a>
 1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
 1. <a href="https://pod.link/1516103872" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
 1. <a href="https://pod.link/1516103872" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>

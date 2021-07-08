@@ -2,7 +2,7 @@
 
 ## Before the project: sales
 
-We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, potentially riskful projects and so on.
+We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, potentially high-risk projects and so on.
 
 On the other hand, to learn about what kind of projects we do, check our Playbook: [Chapter 5 - Project Types](https://marsbased.com/playbook/project-types/)
 
@@ -20,13 +20,19 @@ First, we design and conceive the idea together with the customer, defining the 
 
 Once the layouts are approved by the customer, we start the development. We can’t start the development otherwise, and we only develop what has been defined in the definition document or what exists on the layouts.
 
-Similar to what we do with the layouts, we normally work on a test environment that is shared with the customer with a public URL but protected with a username/password, so that they can validate the results in real time, show it to investors, etc.
+Similar to what we do with the layouts, we normally work on a test environment that is shared with the customer with a public URL but protected with a username/password, so that they can validate the results in real-time, show it to investors, etc.
 
-We have been working both with AWS and DigitalOcean as hosting providers. We have worked with PaaS alternatives as Heroku, EngineYard or Cloud66, and normally Xavi and the client's team will converge on a set of tools we will use in the project.
+We have been working both with AWS and DigitalOcean as hosting providers. We have worked with PaaS alternatives as Heroku, EngineYard or Cloud66, and normally Xavi and the client's team will agree on a set of tools we will use in the project.
 
 We ask the clients to contract the hosting services themselves and we manage them. Otherwise, we will charge them for these services.
 
 Halfway through the project, we offer them the maintenance contract for the post-release phase.
+
+## Maintenance & ongoing development
+
+We don't do maintenance projects _per se_. We believe that software is never finished, so even if the main release has been already delivered, we usually keep working on the project for as long as clients want.
+
+What we don't do is to work with bank of hours models or on-demand. Our developers work on a maximum of two projects per person, in either 20 hours per week or 40 hours per week capacities.
 
 ## Our techstack
 
@@ -37,7 +43,7 @@ However, there are a few principles that we always apply when we decide to choos
 * Use the technology that really fits your needs for a given project. All technologies have their advantages and drawbacks. There’s not a one-size-fits-all solution to every problem.
 * Prefer technologies that embrace readability as one of their principles. We believe that the code needs to be peer-reviewed, so we have to spend a lot of time reading code.
 * Choose technologies that increase your productivity. We want you to be happy, and we know that it can only be achieved if you feel productive.
-* Prefer technologies with a strong community behind. They are likely to be better battle-tested and they will get improvements over time.
+* Prefer technologies with a strong community behind them. They are likely to be better battle-tested and they will get improvements over time.
 * Be sure to check the license terms of a technology before start using it. We always work with Open Source technologies.
 
 Our current techstack is Ruby on Rails or Node.js for the backend and Angular or React for the frontend.
