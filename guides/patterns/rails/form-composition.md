@@ -1,6 +1,6 @@
 # Form composition pattern
 
-This pattern is used to have multiple models being saved in the same form without writing additional logic that the one Rails already provides.
+This pattern is used to have multiple models being saved in the same form without writing additional logic to the one provided by Rails already.
 
 ## Solution overview
 
@@ -43,7 +43,7 @@ class SignUpForm
 end
 ```
 
-- (1) The save method must save all the models and return true or false. In the example, saving the user saves the organization too. If you need to save non related models you need to wrap the save methods inside a transaction. For example:
+- (1) The save method must save all the models and return true or false. In the example, saving the user saves the organization too. If you need to save non-related models you need to wrap the save methods inside a transaction. For example:
 ```
 def save
   ActiveRecord::Base.transaction do
@@ -51,7 +51,7 @@ def save
   end
 end
 ```
-Checking if the records are valid before saving is not enough as unexpected race conditions could happen leaving inconsistent data in the database.
+Checking if the records are valid before saving is not enough as unexpected race conditions could happen, leaving inconsistent data in the database.
 - (2) Getters need to be created for every model we want in the form. As this is a create form, we are instantiating the models directly in the form.
 - (3) For every entity we need to create a entity_attributes=(attributes) method. This method will be used by Rails via ActiveModel::Model to treat the models as nested forms.
 
@@ -89,7 +89,7 @@ class SignUpsController < ApplicationController
 end
 ```
 
-- (1) As we can see the form object is treated as any other Active Record object. Parameters are received in the same way and we "save" it in the same way.
+- (1) As we can see the form object is treated as any other Active Record object. Parameters are received in the same way and we "save" them in the same way.
 
 ## `app/views/signups/new.html.erb`
 

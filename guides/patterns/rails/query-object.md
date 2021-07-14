@@ -2,7 +2,7 @@
 
 This pattern is used to encapsulate complex database queries in an object.
 
-It helps on maintaining Rails code simple by separating algorithms from how the data needs to be gathered.
+It helps to maintain Rails code simple by separating algorithms from how the data needs to be gathered.
 
 ## Solution overview
 
@@ -43,9 +43,9 @@ class SearchUsers # (1)
 end
 ```
 
-- (1) The name for that object explains its concrete use case. There's no need to add `Query` as prefix.
-- (2) The initializer takes an scope to start from. This allows to compose it with other query objects and/or regular ActiveRecord methods.
-- (3) The class has a single call method which takes the additional parameters needed to perform the query, if any. The method calls a number of private methods to incrementally build the query in small steps. In the end it adds an order clause to make sure the query always returns the same results having the same data in the DB.
+- (1) The name for that object explains its concrete use case. There's no need to add `Query` as a prefix.
+- (2) The initializer takes a scope to start from. This allows to compose it with other query objects and/or regular ActiveRecord methods.
+- (3) The class has a single call method taking the additional parameters needed to perform the query, if any. The method calls a number of private methods to incrementally build the query in small steps. In the end, it adds an order clause to make sure the query always returns the same results having the same data in the DB.
 
 ## Usage: Querying data
 
@@ -77,10 +77,10 @@ class UsersController < ApplicationController
 end
 ```
 
-- (1) `call` allways receives a previously filtered list of params
+- (1) `call` always receives a previously filtered list of params
 
 ## FAQ
 
 ### Are ActiveRecord-only implementations for searching (class methods, scopes,...) discouraged?
 
-No. Scopes usually contain easy queries, semantically useful across all the project. Query objects encapsulate complex queries that may combine multiple tables, specific performance tweaks; or their behavior is very specific to concrete use cases and are complex enough to need to be encapsulated individually.
+No. Scopes usually contain easy queries, semantically useful across the entire project. Query objects encapsulate complex queries that may combine multiple tables, specific performance tweaks; or their behaviour is very specific to concrete use cases and are complex enough to need to be encapsulated individually.

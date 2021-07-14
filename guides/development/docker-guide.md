@@ -1,12 +1,12 @@
 # The MarsBased Docker guide for development
 
 At MarsBased we use Docker to work on the development of applications. Using Docker for development has several benefits:
-* Makes setting up the environment for a project a breeze. This dramatically reduces the time to on-board new developers to a project.
-* The environment in which the application runs can be identical to the production environment. This allows to quickly detect bugs dependant on the OS or system packages.
+* Makes setting up the environment for a project a breeze. This dramatically reduces the time to onboard new developers to a project.
+* The environment in which the application runs can be identical to the production environment. This allows to quickly detect bugs depending on the OS or system packages.
 * Removes the need to have development dependencies (Ruby, Node, PostgreSQL, Redis) installed locally. Only Docker is needed to work on applications.
-* Avoids problems with having multiple versions of dependencies installed. Moreover, stops them for accumulating when versions are updated.
+* Avoids problems with having multiple versions of dependencies installed. Moreover, prevents them from accumulating when versions are updated.
 
-The approach that we follow to configure the Docker environment is heavily inspired by this [magnificent blog post from our evil colleges](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development).
+The approach that we follow to configure the Docker environment is heavily inspired by this [magnificent blog post from our evil colleagues](https://evilmartians.com/chronicles/ruby-on-whales-docker-for-ruby-rails-development).
 
 The key point of this way working is that **the Docker image is kept as minimal as possible and dependencies are installed on volumes**.
 
@@ -16,9 +16,9 @@ If gems were installed in the image then when there is a change in the used gems
 
 It is useful to think of it as if the Docker image is just the bare-bones OS and you do the rest the same way you would do it locally (`bundle install`, `npm install`, etc.). More specifically, the image only contains the programming language and system packages (like ImageMagick).
 
-There are 2 options to setup the development environment with Docker:
-* Services only: External services (database, Redis, Minio, Elastic Search, etc.) are run with Docker but the application runs locally.
-* Services + Application: Apart from services, the application is also run in a container.
+There are 2 options to set up the development environment with Docker:
+* __Services only:__ External services (database, Redis, Minio, Elastic Search, etc.) are run with Docker but the application runs locally.
+* __Services + Application:__ Apart from services, the application is also run in a container.
 
 Running everything with Docker has the advantage of not needing to have any dependency installed locally, apart from Docker. The disadvantage is that it runs slower because the application can't use the full memory + CPU potential from the computer.
 
@@ -26,14 +26,14 @@ When working on a single application it makes sense to use the services only app
 
 ## Services only development setup
 
-In order to Dockerize the services for an application for development, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`.
 
 The `.dockerdev` directory contains the following files:
 * `docker-compose.yml`: Contains only external services.
 * `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable the project would be called `dockerdev`.
+* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
 * `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
 * `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
 
@@ -65,7 +65,7 @@ The `.dockerdev` directory contains the following files:
 * `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 * `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
 * `com.user.docker-host-alias.plist`: This file is used to create an alias from the 127.17.0.1 to localhost, in order to [make Minio accessible from both the host and containers](#make-minio-accessible-everywhere)
-* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable the project would be called `dockerdev`.
+* `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
 * `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
 * `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
 
@@ -112,7 +112,7 @@ In order to execute rails command you can use `bin/dockerdev run [command]`. Thi
 
 ### Capybara configuration
 
-In order to get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `docker-compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
+To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `docker-compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
 
 To configure Capybara to use the container add the following to `spec_helper.rb`:
 
@@ -233,9 +233,9 @@ This sets up an alias of 172.17.0.1 to localhost in order to be able to interact
 Minio needs to be accessible both from the browser and from the containers. We need it from the browser in order to access files from pages (like images) and we need it from the container in order to upload files.
 
 However, there is no way to access Minio from both places using the same URL:
-* From the host we can access by using `localhost`: http://localhost:9000
-* From the container we can access by using the name of the container: http://minio:9000
+* From the host, we can access by using `localhost`: http://localhost:9000
+* From the container, we can access by using the name of the container: http://minio:9000
 
-In order to overcome this limitation we make use of the fact that from the container the IP `127.17.0.1` can be used to access the host. By setting up an alias on the host from this IP to localhost we can use the URL http://127.17.0.1:9000 from both the host and the container:
-* From the host it just maps to localhost, so it's the same as before.
-* From the container it maps to the host, and from there it accesses Minio through the exposed port.
+To overcome this limitation, we make use of the fact that from the container the IP `127.17.0.1` can be used to access the host. By setting up an alias on the host from this IP to localhost we can use the URL http://127.17.0.1:9000 from both the host and the container:
+* From the host, it just maps to localhost, so it's the same as before.
+* From the container, it maps to the host, and from there it accesses Minio through the exposed port.

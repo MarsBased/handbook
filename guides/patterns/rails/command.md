@@ -1,11 +1,11 @@
 # Command pattern
 
 The command pattern is a design pattern in which an object is used to encapsulate all information needed to perform an action.
-It helps on keeping the Rails controllers and models thin, moving related logic to their own.
+It helps in keeping the Rails controllers and models thin, thus moving related logic to their own.
 
 ## Solution overview
 
-We have chosen to use [SimpleCommand](https://github.com/nebulab/simple_command) to implement the Command pattern. SimpleCommand provides a standard way of defining commands and getting its result. Its a very lightweight gem (~ 100 LOC) which adds no external dependencies but provides a solid basis to create commands from.
+We have chosen to use [SimpleCommand](https://github.com/nebulab/simple_command) to implement the Command pattern. SimpleCommand provides a standard way of defining commands and getting its result. It is a very lightweight gem (~ 100 LOC) which adds no external dependencies but provides a solid basis to create commands from.
 
 ## Usage: The command class
 
@@ -85,13 +85,13 @@ end
 ### Should the command pattern be used for any code logic present at controllers?
 
 Commands are only intended to be used if there are side effects in the code or there are multiple operations that need to be performed as one.
-For simple ActiveRecord operations there is no need to create a Command.
+For simple ActiveRecord operations, there is no need to create a Command.
 
 As a rule of thumb, use a command if you are defining multiple private methods related to a common functionality inside a class that has other responsibilities besides the one you are implementing.
 
-### I need to create a module for just one command?
+### Do I need to create a module for just one command?
 
-Yes. It's important to start organizing commands as soon as posible to avoid having many unrelated classes in the commands folder.
+Yes. It's important to start organizing commands as soon as possible to avoid having many unrelated classes in the commands folder.
 
 ### Should I create a base class for commands to reuse functionality?
 
@@ -101,4 +101,4 @@ for other developers not used to the pattern.
 ### Testing guidelines
 
 One of the advantages of using commands is being able to test business logic without having to write controller or system tests.
-In order to maintain commands easy to test they shouldn't have dependencies from Rails controllers or views. Also, it's also recommended injecting dependencies that the command needs in the initializer to better mock them.
+To maintain commands easy to test they shouldn't have dependencies from Rails controllers or views. Also, it's recommended to inject dependencies needed by the command in the initializer to better mock them.

@@ -1,6 +1,6 @@
 # MarsBased Patterns
 
-A collection of MarsBased programming patterns in different languages.
+A collection of MarsBased programming patterns in different languages. For now, only Ruby on Rails.
 
 ## Ruby on Rails
 

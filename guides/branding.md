@@ -82,7 +82,7 @@ __MB Digital–Mars ©__
 
 # Social image
 
-Please use this image when linking to content by MarsBased and you haven't been provided a specific image:
+Please use this image when linking to content by MarsBased and you haven't been given a specific image:
 
 ![share](https://user-images.githubusercontent.com/6558119/124573053-79a88c00-de49-11eb-80c8-e7193a7c0822.jpg)
 

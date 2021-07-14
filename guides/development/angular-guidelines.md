@@ -1,6 +1,6 @@
 # MarsBased Angular Style Guide
 
-We follow the official and opionated [Angular coding style guide](https://angular.io/guide/styleguide) as the primary source of best practices and conventions.
+We follow the official and opinionated [Angular coding style guide](https://angular.io/guide/styleguide) as the primary source of best practices and conventions.
 
 <!-- vscode-markdown-toc -->
 * 1. [Do's and Don'ts](#DosandDonts)
@@ -18,7 +18,7 @@ We follow the official and opionated [Angular coding style guide](https://angula
   * 1.12. [Class members order](#ClassOrder)
 * 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
 	* 2.1. [Project structure example](#Projectstructureexample)
-* 3. [Describe most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
+* 3. [Description of the most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
 	* 3.1. [Lazy Pages](#LazyPages)
 	* 3.2. [API Services](#APIServices)
 		* 3.2.1. [Why?](#Why)
@@ -93,7 +93,7 @@ import { UserModel, ProductModel } from '../models';
 
 ###  1.3. <a name='UseCDKVirtualScroll'></a>Use CDK Virtual Scroll
 
-Do use [CDK Virtual Scroll](https://material.angular.io/cdk/scrolling/overview) when showing huge list of elements. It improves performance **drastically**. 
+Do use [CDK Virtual Scroll](https://material.angular.io/cdk/scrolling/overview) when showing huge lists of elements. It improves performance **drastically**. 
 
 ###  1.4. <a name='TypeLazymodules'></a>Type Lazy modules
 
@@ -325,7 +325,7 @@ src/app/
 |- app.module.ts                      # root module
 ```
 
-##  3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Describe most common patterns used to solve common problems
+##  3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Description of the most common patterns used to solve common problems
 
 ###  3.1. <a name='LazyPages'></a>Lazy Pages
 
@@ -348,7 +348,7 @@ Better control of the data flow, what happens if a request fails? should I keep 
 
 - **Reusable**. We often call the same endpoint from multiple parts of the app for different purposes, if the API service is not coupled with extra code we can reuse it easily.
 - **Flexible**. We don't need to store everything we retrieve from the API, and sometimes, we want to avoid it (like large data sets or blobs). Also, we could save/process the data in different ways depending on the context. Sometimes we'll want to cache data from responses, sometimes not. When retrieving an entity, we don't want to save it always in the same store, it could be a `selectedEntity`, `oldEntity`, `newEntity`, `originEntity`, etc... you get the idea.
-- **Independent**. API services doesn't have dependencies.
+- **Independent**. API services don't have dependencies.
   In short, I think this could help to avoid ambiguous rules when writing services, leading to a more uniform codebase.
 
 ####  3.2.2. <a name='How'></a>How?
@@ -366,7 +366,7 @@ export class UsersService {
 }
 ```
 
-We name this services adding the `api` suffix `users.api.service.ts`
+We name these services adding the `api` suffix `users.api.service.ts`
 
 ```ts
 @Injectable()
@@ -459,7 +459,7 @@ Check the [Angular University](https://blog.angular-university.io/angular-2-smar
 
 Akita offers, basically, two JS classes to interact with, the store for adding/modify objects and the query for consulting it, and that's all, no more Actions, Reducers nor Effects.
 
-Akita's decoupled components: All Akita store management could be done (and its fully recommended) throw a service so components are totally detached from it, an async method that interacts with the store remains as an async method for the component and could react to fulfillment if needed (not as flux-like store actions that are "flattened")
+Akita's decoupled components: All Akita store management could be done (and it is fully recommended) throw a service so components are totally detached from it, an async method that interacts with the store remains as an async method for the component and could react to fulfilment if needed (not as flux-like store actions that are "flattened")
 
 ####  3.5.1. <a name='GlobalEntities'></a>Global Entities
 
@@ -476,12 +476,12 @@ It's so recommended exposing globally all entities obtained from the backend and
 
 - `users-api.service.ts`: Expose methods for obtaining data from the backend.
 - `users.store.ts`: Defines users store. Docs
-- `users.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach creating composed queries in users-state.service instead of here and access to the query object only throw the service. Docs
+- `users.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach to create composed queries in users-state.service instead of here and access to the query object only throw the service. Docs
   users.state-service.ts: Acts as facade for any other service that want to interact with users entities, uses users-api.service to obtain users related data, fills/modifies store throw users.store and creates and exposes queries using users.query. Docs
 
 ####  3.5.2. <a name='Specificmodulerelatedlogic'></a>Specific module related logic
 
-For coding the logic related to a specific feature all state could be imported only in the related module, this case Entity store/query doesn't make sense so normal store and query objects could be used.
+To code the logic related to a specific feature, all states could be imported only in the related module. In this case, Entity store/query doesn't make sense so normal store and query objects could be used.
 
 |- users-section-module
 |- state/
@@ -490,12 +490,12 @@ For coding the logic related to a specific feature all state could be imported o
 |- users-section.query.ts
 
 - `users-section.store.ts`: Defines users-section store. Docs
-- `users-section.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach creating composed queries in users-section-state.service instead of here and access to the query object only throw the service. Docs
+- `users-section.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach to create composed queries in users-section-state.service instead of here and access to the query object only throw the service. Docs
 - `users-section-state.service.ts`: Holds all users-section related logic, interacts with users-section-store for filling/modifying objects, with users-section.query to expose them on demand and with api related services (users.state-service.ts) for obtaining backend data and modify/consult related store. Docs
 
 ###  3.6. <a name='Testing'></a>Testing
 
-Favor end-to-end-testing over components test.
+Favour end-to-end-testing over components test.
 
 - End-to-end: [Cypress](https://www.cypress.io/)
 - Components: [Spectator](https://github.com/ngneat/spectator) and [Jest](https://jestjs.io/)
@@ -538,7 +538,7 @@ Use [Transloco](https://github.com/ngneat/transloco).
 - [NgNeat Until Destroy lib](https://github.com/ngneat/until-destroy). Avoid memory leaks in components.
 - [Cypress](https://www.cypress.io/). E2E tests.
 - [Spectator](https://github.com/ngneat/spectator). Angular test's helpers.
-- [Jest](https://jestjs.io/). General purpose JS testing.
+- [Jest](https://jestjs.io/). General-purpose JS testing.
 - [ESLint](https://eslint.org/). JS Linter
 - [Date-fns](https://date-fns.org/). Provides functions to manipulate dates.
 - [Angular Material](https://material.angular.io/). A collection of components and other Angular resources to build the UI.
@@ -569,4 +569,4 @@ Other resources:
 
 These are our reference resources. Still, a project often needs extra libraries. Before adding a new library, it must be approved by the project's tech lead.
 
-Are you missing any resource or interesting article on this list? Feel free to suggest additional useful resources by creating a PR to let us know!
+Are you missing any resources or interesting articles on this list? Feel free to suggest additional useful resources by creating a PR to let us know!

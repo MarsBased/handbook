@@ -24,7 +24,7 @@ When we created the company, we didn’t have that much of a strategy, so we wro
 
 We have received a couple of project requests because of our post about technologies. In that post, we didn’t only show our expertise on the listed tools, but the content also made us rank higher on Google, especially in high-demanded technologies like AngularJS or Sidekiq because they’re specific enough to be very visible to the few people that google them.
 
-And that brings us onto the next section.
+And that brings us to the next section.
 
 **Key question:** what do you want your blog to be known for?
 
@@ -40,7 +40,7 @@ A safer way is to choose a very defined audience and go for it. For instance, if
 
 In our case, we want to build trust with companies we haven’t met yet and attract potential clients, by proving our expertise in web development. Therefore, we are sharing how we work, what we do, and things that are interesting to C-level personnel, our entry point in most companies.
 
-Defining a target audience will also help you choose the kind of content and the language level. You can blog about marketing for the CMOs, tech stuff for CTOs and productivity for CEOs. Having multiple targets or multiple topics is not less effective, so long as it is part of your business strategy and you cater all of them accordingly.
+Defining a target audience will also help you choose the kind of content and the language level. You can blog about marketing for the CMOs, tech stuff for CTOs and productivity for CEOs. Having multiple targets or multiple topics is not less effective, so long as it is part of your business strategy and you cater for all of them accordingly.
 
 As for the language, technical posts might have technicisms, but it does not hurt to explain the acronyms or lead the reader somewhere where he/she can find the definitions (e.g: "If you don’t know what Inbound Marketing is, read this post over here…”). The more specific your target audience is, the more niche keywords you are allowed to use. Elsewise, if you’re targeting a massive audience, you will have to use very high-level and generic language, avoiding all sorts of acronyms, technical words or jargon.
 
@@ -66,21 +66,21 @@ It is a common mistake to start writing a blog with nothing to publish. Most peo
 
 But even if you’re really committed to writing frequently, chances are, in your first blog you’ll write very effusively for some time and then will stop after a few weeks. That is why you should include the posting frequency in your strategy.
 
-It is better to define a frequency and follow it strictly. For instance, at MarsBased we decided to post once a month a while back ago, and since earlier this year we’ve achieved it. Now we plan to blog twice a month to include a technical post, and a non-technical post to cater our different targets.
+It is better to define a frequency and follow it strictly. For instance, at MarsBased we decided to post once a month a while back ago, and since earlier this year we’ve achieved it. Now we plan to blog twice a month to include a technical post, and a non-technical post to cater for our different targets.
 
-A good advice is to define a minimum, never a fixed number. It is better to say “I will post at least once every fortnight” than “I will publish 3 posts a month”. This way, if you're really prolific one month, you can go over your goal.
+A good piece of advice is to define a minimum, never a fixed number. It is better to say “I will post at least once every fortnight” than “I will publish 3 posts a month”. This way, if you're really prolific one month, you can go over your goal.
 
 As you grow your company, you will also want to grow your content team. Likewise, depending on how important is the blog to your goals, you will increase the number of posts per month/week/day at a sustainable pace.
 
 There are a few variations of the sentence “Content is king”. We’d like to add our bit to it: “Content is king, constancy is queen”.
 
-**Key question:** How often can you afford making your blog your first priority?
+**Key question:** How often can you afford to make your blog your first priority?
 
 # Pick a date & time
 
 Once you have defined your blog frequency, you need to select what days & times are better for your readers.
 
-First of all, you should take into account your timezone. Say, if you’re an offshoring development company from India and your target is the UK, try posting in their morning, so that people read your blog first thing during breakfast or during their commute to work. Also, companies targeting US clients should choose between East & West Coast. A good tactic is to publish for East Coast first, and then publish the link in the social networks for each different time zone you might have defined as target (West Coast, Japan, etc.).
+First of all, you should take into account your time zone. Say, if you’re an offshoring development company from India and your target is the UK, try posting in their morning, so that people read your blog first thing during breakfast or during their commute to work. Also, companies targeting US clients should choose between East & West Coast. A good tactic is to publish for East Coast first, and then publish the link in the social networks for each different time zone you might have defined as target (West Coast, Japan, etc.).
 
 According to [Buffer](http://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
 
@@ -95,7 +95,7 @@ One of our favourite social media gurus, Guy Kawasaki, explained what is the mos
 
 Social media is your friend and can really boost your number of views and shares: aim for retweets or shareable content. Not only will the entry be good, but you can also test stuff outside of the content. For instance, [Buffer test their blog posts titles using the social networks](https://blog.bufferapp.com/a-scientific-guide-to-writing-great-headlines-on-twitter-facebook-and-your-blog "Buffer Blog"). They share each blog entry with three or four different titles and perform A/B testing. The tweet that gets more visits, retweets, likes and favourites is the best title for the blog. This is only a way to A/B test it, but there are millions of ideas out there! Be creative!
 
-Social networks also offer a great chance to engage with your community. For those old enough to have used internet forums back when they were the thing - in the pre-Google or pre-Myspace days - we saw people posting stuff in forums to get like-minded people’s opinion and interesting discussions. You can do the same here, by wrapping up the post with a call to action, as we said in the first part of our blogging guide.
+Social networks also offer a great chance to engage with your community. For those old enough to have used internet forums back when they were the thing - in the pre-Google or pre-Myspace days - we saw people posting stuff in forums to get like-minded people’s opinions and interesting discussions. You can do the same here, by wrapping up the post with a call to action, as we said in the first part of our blogging guide.
 
 We can also learn a lot from Instagram, where famous Instagrammers ask to “tag a friend” when that photo relates to them in any way. Hence, we can ask our friends or colleagues to comment on a post we wrote if we think it applies to them.
 

@@ -6,7 +6,7 @@ We use 1password as our tool of choice to manage permissions and logins to all t
 
 Everyone has access to the basic logins that should be available company-wide because we organise them in vaults.
 
-Every project has got a vault to which you will have access if you are working in that project.
+Every project has got a vault to which you will have access if you are working on that project.
 
 We ask everyone to keep the logins tidy and up-to-date and the passwords as strong as possible. 1password can help you create strong and secure passwords. So remember that if you have signed up for a new tool or created a login that someone else might use, you should add it to the project's vault accordingly.
 
@@ -51,6 +51,6 @@ For security reasons, we don't want people from outside the company having acces
 
 ### Naming
 
-We always add the date before a file name to be able to see when was the file created easily. We only skip the date in files that are constantly edited and therefore are always up to date, or files where the date is completely irrelevant. Some examples are a guide, a Ruby test or a template.
+We always add the date before a file name to be able to see when was the file created easily. We only skip the date in files that are constantly edited and therefore are always up to date or files where the date is completely irrelevant. Some examples are a guide, a Ruby test or a template.
 
 

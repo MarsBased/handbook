@@ -28,11 +28,11 @@ However, just like titles, the first sentences must be an open invite to click o
 
 Nowadays, the definition of good content is, as Guy Kawasaki put it, "[content worth sharing](https://www.startupgrind.com/events/details/startup-grind-london-hosted-guy-kawasaki-canvaex-apple#/ "Startup Grind hosts Guy Kawasaki")".
 
-We can't emphasize enough how important a blog is for SEO. A blog allows you to have original content (yay!), on a regular basis (double yay!) that can be commented and shared, and therefore spread through the web (triple yay!).
+We can't emphasize enough how important a blog is for SEO. A blog allows you to have original content (yay!), on a regular basis (double yay!) that can be commented on and shared, and therefore spread through the web (triple yay!).
 
 As a result, your company name will be spread throughout the web if you do it right. Choose your keywords wisely (don't overbloat it, though!) and make it worth sharing. Then, your readers will do the work for you.
 
-One interesting tip: if you talk about companies or individuals in your post, it's a good idea to link to their website. For the extra points, you can mention them in the social networks and maybe earn some extra retweets/likes/shares.
+One interesting tip: if you talk about companies or individuals in your post, it's a good idea to link to their website. For the extra points, you can mention them on social networks and maybe earn some extra retweets/likes/shares.
 
 ### Link
 
@@ -48,7 +48,7 @@ It is likewise important to add a good title attribute to your link, to help cra
 
     <a href="http://blog.buffer.com" title="Buffer's Blog" target="_blank">Read Buffer's Blog</a>
 
-One of our favourite bloggers, [John Rampton](http://www.johnrampton.com/ "John Rampton website"), who writes kickass posts for [Entrepreneur.com](http://www.entrepreneur.com/ "Entrepreneur-com") and [Forbes](http://www.forbes.com/ "Forbes") told us to use the first three links of a blog post to link your previous posts when possible. We didn't find it suitable for this post, but most of the times it can fit in pretty well and will encourage newcomers to your blog to read your previous articles.
+One of our favourite bloggers, [John Rampton](http://www.johnrampton.com/ "John Rampton website"), who writes kickass posts for [Entrepreneur.com](http://www.entrepreneur.com/ "Entrepreneur-com") and [Forbes](http://www.forbes.com/ "Forbes") told us to use the first three links of a blog post to link your previous posts when possible. We didn't find it suitable for this post, but most of the time it can fit in pretty well and will encourage newcomers to your blog to read your previous articles.
 
 ### Images
 
@@ -68,7 +68,7 @@ Each post should be categorised using tags. Currently, at MarsBased, we're using
 
 * __MarsBased__: For general purpose company updates.
 * __Entrepreneurship__: When talking about entrepreneurship as a concept.
-* __News__: For news-like blog posts, where ours or our clients'
+* __News__: For news-like blog posts, whether ours or our clients'.
 * __Rails__: If the post is about Rails. Applies to other technologies: __Angular__, __Node.js__, __Ionic__, __Ruby__, __CSS__, __HTML__, __API__, etc.
 * __Naiz__: Whenever we want to blog about a client, we have to do it using their tag.
 * __Lessons Learnt__: For lessons learnt-like blog posts.
@@ -83,7 +83,7 @@ There's no fixed number. Tags should be used, not abused, and should be all star
 
 ### Readability
 
-Use subtitles to distribute the reading rhythm along the post. One long post with no subtitles is harder to follow; whereas a well-structured blog post with evenly-divided sub-sections will help to maintain the reader's focus.
+Use subtitles to distribute the reading rhythm throughout the post. One long post with no subtitles is harder to follow; whereas a well-structured blog post with evenly divided sub-sections will help to maintain the reader's focus.
 
 Subtitles, when correctly marked using `<h2>` and `<h3>` tags, help crawlers index the page's content much better.
 

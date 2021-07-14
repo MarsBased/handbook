@@ -8,7 +8,7 @@ With dozens of different projects in well over five years, we've compiled our SE
 
 Before getting into detail, here are the tools that you will need.
 
-## Google Search Console (previously know as Google Webmaster Tools)
+## Google Search Console (previously known as Google Webmaster Tools)
 
 <strong>URL:</strong> <a href="https://search.google.com/search-console" title="Google Search Console" target="_blank">https://search.google.com/search-console</a>
 
@@ -21,9 +21,9 @@ We will use the Search Console to add all variants of the same domain, in order 
 * https://marsbased.com
 * https://www.marsbased.com
 
-We will also check for errors here: 404s, performance errors, robots.txt not found, sitemap errors, etc. This is a most powerful tool and I recommend taking your time to explore it.
+We will also check for errors here: 404s, performance errors, robots.txt not found, sitemap errors, etc. This is a most powerful tool and we recommend taking your time to explore it.
 
-<strong>If, and only if, the site includes search</strong> and has got therefore search parameters in the URL, this needs to be configured. Here’s a <a href="https://support.google.com/webmasters/answer/6080550?hl=en" title="Google guide to set up search parameters" target="_blank">good guide to help you to set up the search parameters</a>. Typically, Google will figure it out automatically, and it’ll be right in the 80% of the cases, which is good enough. Don’t waste too much time with this.
+<strong>If, and only if, the site includes search</strong> and has got therefore search parameters in the URL, this needs to be configured. Here’s a <a href="https://support.google.com/webmasters/answer/6080550?hl=en" title="Google guide to set up search parameters" target="_blank">good guide to help you to set up the search parameters</a>. Typically, Google will figure it out automatically, and it’ll be right in 80% of the cases, which is good enough. Don’t waste too much time with this.
 
 ## Google Analytics
 
@@ -37,7 +37,7 @@ If you're a developer, you probably don't need anything else from Google Analyti
 
 ### The Sitemap
 
-The sitemap is typically an XML file that describes the structure of your site, and it’s placed in the root of the project. Sitemaps follow a convention that you can find in the <a href="https://en.wikipedia.org/wiki/Sitemaps" title="Wikipedia article on Sitemaps" target="_blank">Wikipedia entry about the Sitemaps files</a>.
+The sitemap is typically an XML file that describes the structure of your site, and it’s placed at the root of the project. Sitemaps follow a convention that you can find in the <a href="https://en.wikipedia.org/wiki/Sitemaps" title="Wikipedia article on Sitemaps" target="_blank">Wikipedia entry about the Sitemaps files</a>.
 
 Normally, sitemaps can hold up to 50k URLs, but it’s advisable to split them into smaller sitemaps that link each other. Most indexers recognize also zipped sitemaps.
 
@@ -47,7 +47,7 @@ You can test the structure of your sitemap using Google Search Console.
 
 You can even submit it from there. But most indexers will either look at <i>www.site.com/sitemap.xml</i> or else read the sitemap location from the robots.txt file, where you can also specify it. We will see this in the next section!
 
-If you encounter any error, here’s <a href="https://support.google.com/webmasters/answer/35738?hl=en" title="Common mistakes in sitemaps files" target="_blank">a list of the most common errors when creating sitemaps</a>.
+If you encounter any errors, here’s <a href="https://support.google.com/webmasters/answer/35738?hl=en" title="Common mistakes in sitemaps files" target="_blank">a list of the most common errors when creating sitemaps</a>.
 
 ### Robots.txt
 
@@ -69,7 +69,7 @@ Our sitemaps, generically, will be like this one:
    Sitemap: https://www.marsbased.com/sitemap.xml
 ```
 
-These two lines mean that all crawlers are allowed (*) and the address of the sitemap file. We will generally not disallow access to assets unless we see this affects in performance. In the past, access to CSS and JS files was blocked, but not anymore, and Google strongly discourages it.
+These two lines mean that all crawlers are allowed (*) and the address of the sitemap file. We will generally not disallow access to assets unless we see it affects performance. In the past, access to CSS and JS files was blocked, but not anymore, and Google strongly discourages it.
 
 Once you're past all the previous setup concerning Google Analytics and Google Search Console and your sitemap and robots files are correctly configured, let's code!
 
@@ -85,7 +85,7 @@ As we specified briefly in the Google Search Console section, you will need to a
 
 Finally, we can get our hands on the code!
 
-A lot of things have changed in the last years. Don’t trust what you remember to be true from 2004. Google is constantly experimenting and altering its algorithm, so you need to catch up on the recent happenings.
+A lot of things have changed in the last few years. Don’t trust what you remember to be true from 2004. Google is constantly experimenting and altering its algorithm, so you need to catch up on the recent happenings.
 
 Since we're writing an SEO 101 here, we will review the basics we implement in each project.
 
@@ -116,7 +116,7 @@ The `|` character separates entities. Typically the following structures are use
 
 The length of this string should not exceed 55-60 characters, as Google will only display as many.
 
-This is the most important tag in the page, so make sure to introduce keywords and the brand name. Simpler is better.
+This is the most important tag on the page, so make sure to introduce keywords and the brand name. Simpler is better.
 
 Some considerations for the title:
 
@@ -134,11 +134,11 @@ Head out to the <a href="http://schema.org/" title="Schema.org official website"
 
 Basically, this adds extra information to the HTML tags and attributes in order to help search engines understand complex data models and their attributes, so they can create rich snippets.
 
-In these pages, the Schema for recipes has been used, highlighting not only the picture, but also the ratings, the number of votes, number of reviews, the cooking time and the calories count.
+In these pages, the Schema for recipes has been used, highlighting not only the picture but also the ratings, the number of votes, number of reviews, the cooking time and the calories count.
 
 Pages with schema.org provide more meaningful information to the users, but also to the crawlers, and therefore rank better.
 
-Frontend developers might have some concerns on how this can pollute their code. I actually wrote a piece on <a href="http://www.alexrodba.com/2016/03/23/How-To-Include-Extra-Schema-Org-Metadata-Without-Messing-Your-Content.html" title="How to include extra schema.org metadata without messing your content" target="_blank">how to include schema.org metadata without interfering with your current code</a>.
+Frontend developers might have some concerns about how this can pollute their code. We actually wrote a piece on <a href="http://www.alexrodba.com/2016/03/23/How-To-Include-Extra-Schema-Org-Metadata-Without-Messing-Your-Content.html" title="How to include extra schema.org metadata without messing your content" target="_blank">how to include schema.org metadata without interfering with your current code</a>.
 
 ## The content
 
@@ -150,7 +150,7 @@ Some basic rules for content. They’re too many to remember unless you’ve bee
 * Images should ALWAYS include a descriptive `alt` attribute. Use keywords!
 * No more than one `h1` per page.
 * `<h1>` only includes `<h2>` (as many as you need). `<h2>` only includes `<h3>`, and so forth. Headers should be hierarchical.
-* Make sure that <strong>every page of the site is linked from another page</strong>. The site needs to be fully navigable just following links. Otherwise, crawlers will not be able to do it.
+* Make sure that <strong>every page of the site is linked from another page</strong>. The site needs to be fully navigable just by following links. Otherwise, crawlers will not be able to do it.
 * Make sure you use the right keywords for the blog posts and content on the site.
 
 We should also avoid duplicated content. In our projects, most likely we will only get duplicated content because of a poor configuration of the multi-language. If the client steals content from other sites we can't control it. Anyways, read <a href="https://moz.com/learn/seo/duplicate-content" title="Duplicate content" target="_blank">this article on how to deal with duplicated content using the rel=canonical tag, written by Moz</a>.
@@ -159,12 +159,12 @@ For the extra points, use <a href="https://developers.google.com/speed/pagespeed
 
 # Bonus track #1: Migrations
 
-This is critical: if we’re migrating a project from a URL structure to a different one, we need to massively redirect all old URLs with 301’s to the new ones. Otherwise, we will lose all traffic. I strongly recommend reading these articles:
+This is critical: if we’re migrating a project from a URL structure to a different one, we need to massively redirect all old URLs with 301’s to the new ones. Otherwise, we will lose all traffic. We strongly recommend reading these articles:
 
 * <a href="https://www.quicksprout.com/2014/06/02/how-to-retain-at-least-95-of-your-organic-traffic-after-a-site-redesign/" title="How to retain at least 95% of your traffic after a site redesign by Quicksprout" target="_blank">How to retain at least 95% of your traffic after a site redesign by Quicksprout</a>.
 * <a href="http://savvypanda.com/blog/intermediate-level/how-to-change-domain-names-not-lose-seo.html" title="How to change domain names and not lose SEO by SavvyPanda" target="_blank">How to change domain names and not lose SEO by SavvyPanda</a>.
 
-Another important thing is that the old site might have metatags as validators (to validate domain names, licenses and whatnot). Make sure you migrate these ones as well. 
+Another important thing is that the old site might have metatags as validators (to validate domain names, licenses and whatnot). Make sure you migrate these as well. 
 
 If we don't migrate these, some services might stop working!
 

@@ -2,7 +2,7 @@
 
 As a development consultancy, we help our clients beyond common development. We are a company of experts, and, as such, we are trusted by our clients to advise them on how to do things.
 
-There's a myriad ways we can help our clients. In fact, most clients praise us because we're not just excellent codes, but we also give outstanding delivery. Delivery includes communication, reporting, dealing with conflicts and setting expectations, among other nuances.
+There's a myriad of ways we can help our clients. In fact, most clients praise us because we're not just excellent codes, but we also give outstanding delivery. Delivery includes communication, reporting, dealing with conflicts and setting expectations, among other nuances.
 
 ## Why are we doing this?
 

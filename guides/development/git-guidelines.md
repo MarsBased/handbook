@@ -1,6 +1,6 @@
 # Git & Commit Guidelines
 
-This is a guide that covers how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like Gitlab or Bitbucket.
+This is a guide covering how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like Gitlab or Bitbucket.
 
 * **1.** [Commit Message Guidelines](#CommitMessageGuidelines)
 * **1.1** [Message Format](#MessageFormat)
@@ -32,7 +32,7 @@ Each commit message consists of a header, a body and a footer. The header has a 
 
 The header is mandatory but the scope of the header is **optional**.
 
-The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
+The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer than 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
 The language used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
 
 The `<footer>` should contain a closing reference to a [github issue](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords), a Trello card link, a JIRA issue ID or link. If there is no GitHub issue or project management tool reference for this specific commit just leave it blank.
@@ -78,7 +78,7 @@ https://trello.com/c/random-id/20-mycooltask
 ```
 
 ```
-fix: Users can't logout when authenticated via oauth2
+fix: Users can't log out when authenticated via oauth2
 
 JIRA Issue: 23456
 ```
@@ -98,7 +98,7 @@ Samples:
 
 We are using a modified and simplified version of [Gitflow](https://guides.github.com/introduction/flow/).
 
-For big projects already deployed to production there will always be 2 branches: `main` (`master` in older projects) and `development`.
+For big projects already deployed to production, there will always be two branches: `main` (`master` in older projects) and `development`.
 The **main** branch will contain the code that has been deployed while the **development** branch will contain the most recent stable version of it.
 
 For small projects or projects that are have not been deployed we allow simplifying this by working only with a `main` branch.
@@ -107,7 +107,7 @@ These are the required steps to add new code to a branch (development or main, d
 
 1. Create a new branch using the branch naming convention from the branch you think relevant (main, development).
 2. Do as many commits as are required to complete your task.
-3. You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleague to review your work in progress.
+3. You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleagues to review your work in progress.
 4. Once the work is finished, rebase your commits to leave only the meaningful ones for the reviewer to better understand your changes. Leaving only one commit is also fine.
 5. Rebase your branch with the one from where you open yours to have the latest changes.
 6. Open a Pull Request to be reviewed by your colleagues.
@@ -132,4 +132,4 @@ This guide is heavily influenced by:
 - [Angular Commit Message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 
-Some part of this guide are a copy & paste of theirs. All the credit and respect go to the original authors 🙌
+Some parts of this guide are a copy & paste of theirs. All the credit and respect go to the original authors 🙌
