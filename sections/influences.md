@@ -22,8 +22,7 @@ The rest is history.
 
 ## Books
 
-* <a href="https://www.goodreads.com/book/show/6732019-rework?ac=1&from_search=true&qid=NIE0hicvNB&rank=1" title="Rework by Jason Fried, David Heinemeier Hansson" target="_blank">__Rework__</a> and __<a href="https://www.goodreads.com/book/show/17316682-remote?ac=1&from_search=true&qid=NVpquaWPLX&rank=2" title="Remote: Office Not Required
-by David Heinemeier Hansson, Jason Fried" target="_blank">__Remote: Office Not Required__</a>: Both written by Jason Fried and DHH, the co-founders of Basecamp. Those books provided the epiphany that we could (and quite possibly, should) create a _different_ company. Most of our culture and workflows are based on these two books.
+* <a href="https://www.goodreads.com/book/show/6732019-rework?ac=1&from_search=true&qid=NIE0hicvNB&rank=1" title="Rework by Jason Fried, David Heinemeier Hansson" target="_blank">__Rework__</a> and <a href="https://www.goodreads.com/book/show/17316682-remote?ac=1&from_search=true&qid=NVpquaWPLX&rank=2" title="Remote: Office Not Required by David Heinemeier Hansson, Jason Fried" target="_blank">__Remote: Office Not Required__</a>: Both written by Jason Fried and DHH, the co-founders of Basecamp. Those books provided the epiphany that we could (and quite possibly, should) create a _different_ company. Most of our culture and workflows are based on these two books.
 
 ## People
 
