@@ -1,8 +1,8 @@
 # Careers at MarsBased
 
-Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover. The last Martian to walk out of the company did so in September 2017. That's almost four years, now!
+Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover.
 
-While in other companies employees stay on average one year (or less!), at MarsBased the average is almost three years and counting!
+While in other companies employees stay on average one year (or less!), at MarsBased the average is almost four years and counting!
 
 This means that we would like to have you for years to come with us, so we can grow together.
 
