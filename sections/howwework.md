@@ -63,14 +63,14 @@ It's also worth noting that in every Martian Day we allow for one presentation i
 
 _A grosso modo_ we use the following tools:
 
-* __1password__: For passwords and credentials management.
+* __1Password__: For passwords and credentials management.
 * __Google Suite__: For docs and mail and calendar, but you can use your own provided they integrate with one another!
 * __Basecamp__: For project management and internal one-to-many communication and reporting.
 * __Slack__: For one-to-one communication, screen-sharing and video calls, and also to communicate with a few clients who want to have it.
 * __Github__: Where we store our code and we also use it to manage the tasks and the projects from a technical perspective.
 * __Harvest/Forecast__: Where we track our hours and where we plan ahead. We're also using it to get reports and to invoice clients.
 * __Hubspot__: We use it for certain marketing purposes and to track the dealflow and to report on sales.
-* __JIRA__: We use it to manage all the projects on our end. We also use it for a lot of other areas in the company like hiring or operations.
+* __Linear__: We use it to manage all the projects on our end. We also use it for a lot of other areas in the company like hiring or operations.
 * __HelloSign__: We use it to sign all the documents digitally (NDAs, contracts and whatnot).
 
 
