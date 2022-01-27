@@ -18,7 +18,7 @@ Our rituals are:
 
 Each week, the developers fill a check-in on Basecamp with the tasks they were working on through the week, explaining their current status, estimated time left to finish each issue, and possible blockers that may arise.
 
-The check-in has to be completed before Friday.
+The check-in has to be completed before the weekend.
 
 With all the information, the Project Manager curates a weekly report for each client.
 
