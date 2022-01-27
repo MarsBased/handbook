@@ -54,7 +54,7 @@ Some weeks, you'll share more technical stuff, while on others you will share th
 
 ## Martian Tapas
 
-The development team meets online every Friday around lunchtime to discuss tech.
+The development team meets online every Tuesday around lunchtime to discuss tech.
 
 You will find more information about this practice on this blog post: [Going for Martian Tapas With our Distributed Development Team](https://marsbased.com/blog/2018/12/10/martian-tapas-remote-dev-team/).
 
@@ -72,7 +72,7 @@ Being a small company operating remotely means that we interact less frequently 
 
 We try to spice up Fridays by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
 
-To register to the contest, click the shortcut button on the MarsBased Slack chat bar, select the Spotify contest > sing up to the contest. If you have any trouble finding your Spotify ID, [check this tutorial](https://github.com/MarsBased/spotify-slack-bot/wiki/Get-the-correct-spotify-id). Add your song to [Martian Friday Playlist - Current Edition](https://open.spotify.com/playlist/26YmBivvzQDQ3OXa176pAl?si=wyghRlg1SLWzO9ix7ROdIQ). To avoid repeating songs, check the [Martian Friday Playlist Archive](https://open.spotify.com/playlist/7CCutbZd1ojXf3X3EP8QWr?si=_2oVYBrVQq6dHA8sri5eaQ) before submitting yours!
+To register to the contest, click the shortcut button on the MarsBased Slack chat bar, select the Spotify contest > sing up to the contest. If you have any trouble finding your Spotify ID, [check this tutorial](https://github.com/MarsBased/spotify-slack-bot/wiki/Get-the-correct-spotify-id). Add your song to [Martian Friday Playlist - Current Edition](https://open.spotify.com/playlist/4ofbgCTHsdrm7OWEjcxDUJ?si=c501738dbd574253). To avoid repeating songs, check the [Martian Friday Playlist Archive](https://open.spotify.com/playlist/6Fuql3xuG8pmRPqrD2QChm?si=83a48b5c0318436e) before submitting yours!
 
 ## Reading, drawing and other challenges
 
