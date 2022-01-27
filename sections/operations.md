@@ -41,7 +41,7 @@ We're purely an inbound company. This means that companies find us, not the othe
 * __Social media__: We invest little time in this because it doesn't yield great results. But it's nice to be present and the social profiles amplify our message and help to spread our content to new audiences.
 * __Newsletter__: We send a newsletter once a month and we've got really good numbers. Leire is in charge of the MarsBased newsletter.
 * __Events__: Our Startup Grind events are also part of this. We don't like to mix up stuff, but we're sponsoring and organising the event, and therefore we need to take credit for it as well. We host a monthly event with our team of volunteers.
-* __Community work__: We curate a Slack community and Startup Digest in Barcelona, which you read about on the <a href="https://marsbased.com/community" title="MarsBased - community" target="_blank"Community></a> page on the website. Both are managed between Àlex and Leire.
+* __Community work__: We curate a Slack community and Startup Digest in Barcelona, which you read about on the <a href="https://marsbased.com/community" title="MarsBased - community" target="_blank">Community></a> page on the website. Both are managed between Àlex and Leire.
 
 
 
