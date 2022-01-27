@@ -17,7 +17,7 @@ Let everybody know your daily schedule so the team can know when it's best to re
 
 Use the #status Slack channel and / or Slack built-in status messages to inform when you are not available.
 
-Update the status of the task you are working on frequently on Trello, JIRA or whatever tool we're using to that effect. Use comments in the project management tool to keep everybody in the loop. Use Slack instead if you need a more direct status report.
+Update the status of the task you are working on frequently on Linear. Use comments in the project management tool to keep everybody in the loop. Use Slack instead if you need a more direct status report.
 
 ## 2. <a name='NoMartianleftbehind'></a>No Martian left behind
 
@@ -81,7 +81,7 @@ Make sure that:
 
 - Your email inbox & notifications are clean. Some important notifications are received by email or Basecamp. For example, new issues being posted. A review being done. A task priority change.
 - Clean up the sources that send you notifications. Keep only the most meaningful ones to minimise the risk of missing important information.
-  - Disable all Basecamp/JIRA notifications you are not interested in.
+  - Disable all Basecamp/Linear notifications you are not interested in.
   - Disable notifications on shared Slack channels (e.g: #random, #status, #marsbased). Or disable notifications on all channels if you are in too many. If someone needs you for something relevant or important, they will use mentions.
   - Review and clean your email at least once a day.
   - Don't use the email as to do list. It's easy to mark as read an important email and forget about it. Use To Do lists instead.
