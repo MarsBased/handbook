@@ -22,6 +22,7 @@ As a MarsBased employee, you get:
 * __Books__: We'll buy you a few books when you start working with us so you get acquainted with how we work and what we do. If you need to purchase any other book for work, let us know!
 * __Christmas dinner and other surprises__: End of the year, start of the party! Our Christmas dinners (and the subsequent parties) are legendary. We also give a few Christmas gifts and some other surprises during the year.
 * __Cool swag__: Once per year, we create company swag like t-shirts, coffee mugs, hoodies or... facemasks!
+* __Referral bonus__: Refer talented people to the team and you will get a bonus of 1.000 euros per hire.
 
 
 ## How to proceed to get these benefits
