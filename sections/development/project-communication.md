@@ -1,9 +1,8 @@
-# Project organisation
+# Project communication
 
 1. [Weekly report](#Weeklyreport)
 2. [Weekly meeting with the client](#Weeklymeetingwiththeclient)
 3. [Weekly internal meeting](#Weeklyinternalmeeting)
-4. [Agile development rituals](#Agiledevelopmentrituals)
 
 Communication is vital for us, so we encourage a continuous flow of information between our team and the client to be always on the same page.
 
@@ -29,9 +28,3 @@ Once a week, the whole team gathers and runs a meeting with the client to discus
 ## 3. <a name='Weeklyinternalmeeting'></a>Weekly internal meeting
 
 Once a week, the whole team gathers to discuss tasks for the week, blocking issues or other organizational matters concerning the whole team.
-
-## 4. <a name='Agiledevelopmentrituals'></a>Agile development rituals
-
-We usually use a SCRUM-based methodology with two-week sprints, but it depends on the project needs.
-
-Using SCRUM, the Tech Lead defines before starting a sprint which tasks are included providing technical definition and estimation. Once the sprint is ready, a green light is given for developers to tackle the tasks one by one.
