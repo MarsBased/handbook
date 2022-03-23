@@ -65,7 +65,7 @@ In other ones, where we can effectively apply a continuous delivery approach, we
 - **To be deployed:** a task has passed the code review and has been merged, but it is still not deployed anywhere.
 - **Staging:** tasks deployed to the staging environment. The project manager (or the client, sometimes) does another review of the task in the staging environment.
 - **Done:** when a task gets the final OK it is moved to Done.
-- **Canceled:** tasks that have been canceled because they are duplicated or no longer needed.
+- **Cancelled:** tasks that have been cancelled because they are duplicated or no longer needed.
 
 ## 6. <a name='fields'></a>Fields
 
@@ -75,8 +75,8 @@ Here's a short description of the fields that we use when we create a new issue:
 - **Description:** Write as many details as possible about the task, it's important to write a proper description. The project manager / tech lead needs to understand what the task is about, its scope, difficulty and importance (or severity in case of a bug) to be able to plan when to develop it and decide who should work on it.
 - **Estimate:** How long do you think it can take to complete a task. The estimate is not compulsory, it’s just a guess to help the project manager and the client organize the development cycles. Don’t spend more than a couple of minutes thinking about it. We use an exponential list of values: 1, 2, 4, 8, 16, 32, 64. We count each story point as an hour of work. 
 - **Labels:** Labels categorize the details of an issue, describing it. There are labels for the technologies affected in the ticket, the specific task at hand (documentation, testing), or if the issue was not included in the client offer, among others. Add as many labels as needed.
-- **Priority:** The priority of a task is decided by the client or the project manager. The project manager is the final responsible for the prioritization, but that doesn't mean that other people can't add the initial priority or discuss it. If you are the person creating a task on Linear, please indicate its priority according to your own common sense. Is it a very important technical change? Is it a refactor that can wait a few more weeks? Setting up a priority will help the client and the project manager take better calls when planning the new development cycle. If you want, you can add a comment explaining why do you think a task is more or less urgent to do.
-- **Related issues:** Linear lets you link issues with each other and even indicate whether an issue is blocked or ir blocking another one.
+- **Priority:** The priority of a task is decided by the client or the project manager. The project manager is the final person responsible for the prioritization, but that doesn't mean that other people can't add the initial priority or discuss it. If you are the person creating a task on Linear, please indicate its priority according to your own common sense. Is it a very important technical change? Is it a refactor that can wait a few more weeks? Setting up a priority will help the client and the project manager take better calls when planning the new development cycle. If you want, you can add a comment explaining why do you think a task is more or less urgent to do.
+- **Related issues:** Linear lets you link issues with each other and even indicate whether an issue is blocked or is blocking another one.
 - **Child issues:** You can create child issues inside other issues. Use it when a task is too big or has multiple steps.
 - **Comments:** Use comments as much as you like, to update the rest of the team about a task, ask questions or answer your teammates. Linear is our source of truth so keeping it up to date with comments is very important.
 
