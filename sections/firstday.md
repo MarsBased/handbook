@@ -39,6 +39,10 @@ You will then meet with our founding team and have a good chat with our COO, Jor
 
 At the end of the day, you will also meet our CEO, Àlex, to wrap up the day! Take a good rest, after such an intense day!
 
+## Your buddy
+
+You'll be assigned an seasoned team member as a buddy in order to support you during the first months of your journey in the company. He/she will share informal knowledge related to day-to-day issues, culture, activities, etc. Your buddy will ping you throughout your first week for a first talk, and more will follow, regularly, on a weekly basis. 
+
 ## Meet the team
 
 The first week, we especially encourage you to join the [Martian coffee](/sections/rituals.md#martian-coffees) we celebrate on Fridays so that you get to know the rest of the team.
