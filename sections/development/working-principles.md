@@ -7,7 +7,7 @@
 5. [Who watches the watchmen?](#Whowatchesthewatchmen)
 6. [Async is the way](#Asyncistheway)
 
-Those are our principles, and if you don't like them... well, we are afraid Groucho Marx is not here.
+Those are our principles, and if you don't like them... well, you know how that goes.
 
 ## 1. <a name='SpeaklikeaMartian'></a>Speak like a Martian
 
@@ -21,9 +21,9 @@ Update the status of the task you are working on frequently on Linear. Use comme
 
 ## 2. <a name='NoMartianleftbehind'></a>No Martian left behind
 
-Software development is hard and no matter how expert you are, you may have doubts. Your team is here to support you.
+Software development is hard and no matter how expert you are. You may have doubts. Your team is here to support you.
 
-As soon as you are blocked on something, and after spending some time on it (around 40 minutes), don't hesitate to ask for help from a colleague.
+As soon as you are blocked with something, and after spending some time on it (around 40 minutes), don't hesitate to ask for help from a colleague.
 
 More often than not, you will find that solely by explaining it to someone else, the solution will dawn on you.
 

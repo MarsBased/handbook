@@ -2,7 +2,7 @@
 
 Our operations have been greatly improved and fine-tuned over the years. Our co-founder Jordi (COO) is in charge of operations, but some of these activities are distributed across different people and providers.
 
-Well, providers are also people.
+Well, providers are people too.
 
 ## Day to day & reference
 
@@ -12,7 +12,7 @@ Mostly, we've got three big categories of operations.
 
 * __Accounting & numbers__: All things related to bookkeeping, accounting, reports and all that jazz is mostly spearheaded by Jordi. We've got an accountant company we outsource a big part of this to - Altisent - and Leire helps Jordi with this area, too.
 * __People operations__: Otherwise known as HR & administration, mostly commandeered by Leire. She is the ultimate enabler of everyone in the company and a pivotal role, central to all.
-* __Marketing and sales__: Àlex leads these areas. Jordi and Xavi (and some developers, occasionally) step in to help with the confection of proposals for clients, and Leire helps with the organisation of events and the newsletters.
+* __Marketing and sales__: Àlex leads these areas. Jordi and Xavi (and some developers, occasionally) step in to help with the confection of proposals for clients, and Leire helps with the organisation of events, running the YouTube channel and the newsletters.
 
 ## Accounting & numbers
 

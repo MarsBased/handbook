@@ -1,4 +1,4 @@
-#  Team organisation
+# Team organisation
 
 1. [Project Manager](#ProjectManager)
 2. [Tech Lead](#TechLead)
@@ -19,7 +19,7 @@ Person in charge of the top-level tasks required by the client, communicating be
 
 __Duties:__
 
-- __Planification__
+- __Planning__
   - Set the overall project schedule and the sprints for each project phase.
   - Define all the different areas of the project including the scope, objectives, schedule and tasks.
   - Identify blocking issues compromising the smooth development of the project and provide solutions.
@@ -28,10 +28,10 @@ __Duties:__
   - Understand client needs and product roadmap.
   - Work with the development team to come up with an efficient solution to client needs.
   - Define specifications for the product features so they are clear for the development team.
-- __Organization__
-  - Project kick-off and set-up of all the tools required to organise and manage it.
+- __Organisation__
+  - Project kick-off and setup of all the tools required to organise and manage it.
   - Organise project documentation and credentials to ensure all the parties involved have access to it.
-  - Upon project completion, deliver the final product to the client as agreed and clean up the tools used.
+  - Upon project completion, deliver the final product to the client as agreed and clean up the tools.
 - __Communication and reporting__
   - Agree with clients on channels and frequency of meetings and reports to inform about the progress of the projects.
   - Coordinate meetings with team and clients to ensure the successful execution of each sprint of the project.
@@ -40,11 +40,11 @@ __Duties:__
 
 ## 2. <a name='TechLead'></a>Tech Lead
 
-A senior developer able to take ownership of the code developed by the team and help the client to improve their code.
+A senior developer able to take ownership of the code developed by the team and help the client to improve their code. Oftentimes, a sort of interim CTO for the projects, too, able to define architecture and take high-level decisions on critical aspects.
 
 __Duties:__
 
-- Decide the best way to implement the specifications decided by the Product Manager.
+- Decide the best way to implement the specifications decided by the client's Product Manager.
   - Take into account the project needs and tech debt in order to make the best decision possible, communicating with the Product Manager and the client the possible implications.
 - Communicate correctly all the decisions to the developers.
 - [Review the code](/guides/development/code-reviews-guidelines.md) produced by the developers, ensuring:

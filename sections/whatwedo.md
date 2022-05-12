@@ -15,9 +15,7 @@ You can find a description of the technologies we use in the services pages of o
 *  __[React](https://marsbased.com/services/react)__
 *  __[Angular](https://marsbased.com/services/Angular)__
 
-The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development.
-
-In fact, we started doing mobile development because a friend of ours wanted to work with us but wanted a mobile app. Even though we insisted that we didn't do mobile, she won the conversation and she became a happy client between 2015 and 2019, when she sold her company. Read more about it in this blog post we wrote 👉 [How we helped DPL ETT to grow their business with our mobile apps](https://marsbased.com/blog/2019/12/27/how-we-helped-dpl-grow-285-percent-mobile-app/)  
+The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform.
 
 In 2019, we started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire.
 

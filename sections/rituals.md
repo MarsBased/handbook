@@ -4,9 +4,9 @@ Even though we're a 100%-remote company, we do a few activities both offline and
 
 ## Martian Day
 
-Once per term, more or less, we fly everyone in and we meet for a day of get-together.
+Once per term, more or less, we fly everyone in and we meet for a day or two of get-together.
 
-In the Martian Days we don't do client work, and we spend quality time sharing the numbers of the company, doing AMA sessions, workshops, keynotes, brainstormings and a few leisure activities like football matches, dinners and more!
+In the Martian Days, we don't do client work, and we spend quality time sharing the numbers of the company, doing AMA sessions, workshops, keynotes, brainstormings and a few leisure activities like football matches, dinners and more!
 
 Needless to say, the company pays for the flights, meals and accommodation. If you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance.  
 
@@ -30,7 +30,7 @@ Participation is completely optional. People not wanting to participate will con
 
 ## Martian Retreat
 
-Once a year, we do a company retreat. A couple of years back, our developer Oriol came up with this great idea and we let him organise it.
+Once a year, we do a company retreat. A few years back, our very own Oriol came up with this great idea and we let him organise it.
 
 The idea is to go somewhere for a couple of working days (fly in and Martian Day on Thursday, and Zerg Rush on Friday) and then the more adventurous can enjoy a weekend away, too, if they want.
 
@@ -40,7 +40,7 @@ So far, we've done the following:
 * __2018:__ Dublin.
 * __2017:__ Tenerife.
 
-In 2020, we had to cancel ours, as well as all of our in-person meetings and get-togethers, due to the COVID-19 pandemic.
+In 2020, we had to cancel the retreat, as well as all of our in-person meetings and get-togethers, due to the COVID-19 pandemic. We went back to meeting in person in April 2022. Too long, but we wanted to play it safe!
 
 Like in the Martian Days, the company pays for the flights, meals and accommodation for the two working days. For those that decide to stay for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance. 
 
@@ -64,15 +64,17 @@ Every Friday, we open a window for casual chatter. You will see on Slack a messa
 
 In this platform (we're using Gather.town at the time of this writing), you're always invited to join a sort of virtual water cooler for 30 minutes of break.
 
+We like to celebrate certain milestones, like someone's Martian anniversary, their actual birthdays, the release of a big project or someone new joining the team. If there's nothing to celebrate, we will meet for an open agenda of online watercooler randomness.
+
 If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
 
 ## Spotify contest
 
 Being a small company operating remotely means that we interact less frequently face-to-face than what most of us would like.
 
-We try to spice up Fridays by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/).
+We used to spice up Fridays by playing our Spotify contest we describe on this blog post: [A Team Bonding Activity for Remote Teams Using Spotify](https://marsbased.com/blog/2019/04/29/team-bonding-activity-remote-teams-using-spotify/). Now, we just add songs to a monthly playlist because after five years, we sort of outgrew the contest and we wanted to be more chill about it.
 
-To register to the contest, click the shortcut button on the MarsBased Slack chat bar, select the Spotify contest > sing up to the contest. If you have any trouble finding your Spotify ID, [check this tutorial](https://github.com/MarsBased/spotify-slack-bot/wiki/Get-the-correct-spotify-id). Add your song to [Martian Friday Playlist - Current Edition](https://open.spotify.com/playlist/4ofbgCTHsdrm7OWEjcxDUJ?si=c501738dbd574253). To avoid repeating songs, check the [Martian Friday Playlist Archive](https://open.spotify.com/playlist/6Fuql3xuG8pmRPqrD2QChm?si=83a48b5c0318436e) before submitting yours!
+Check Basecamp for the links to the playlists or ask around on the #random channel.
 
 ## Reading, drawing and other challenges
 

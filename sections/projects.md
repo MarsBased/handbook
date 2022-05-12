@@ -2,7 +2,7 @@
 
 ## Before the project: sales
 
-We don’t take every project. Bad matches include: People with no money, people unlikely to understand our working methods, PHP PROJECTS, deadlines too tight, potentially high-risk projects and so on.
+We don’t take every project. Bad matches include: People who want to pay with equity, companies unlikely to understand our working methods, PHP PROJECTS, unreasonable and/or arbitrary deadlines, companies competing with our existing customers and so on.
 
 On the other hand, to learn about what kind of projects we do, check our Playbook: [Chapter 5 - Project Types](https://marsbased.com/playbook/project-types/)
 
@@ -10,29 +10,31 @@ Our sales workflow is mostly executed by Àlex and complemented by someone from 
 
 ## End-to-end development
 
-We like to work on all the phases in the product lifecycle: from the conception of the idea to the maintenance.
+We like to work on all the phases in the product lifecycle: from the conception of the idea to the maintenance. We are a one-stop shop.
 
-However, in some cases we're hired to jump in directly into the phase of development, to complement an existing team.
+However, in some cases we're hired to jump directly into the phase of development, to complement an existing team.
 
 But when we _do_ play with our rules, we do it as follows.
 
-First, we design and conceive the idea together with the customer, defining the user experience (UX) & screens. This is done using Middleman, HTML5 and CSS3, and we call it layouts or “maqueta”. We upload these to a design server so clients can see how it looks like on a real browser and play around.
+First, we design and conceive the idea together with the customer, defining the user experience (UX) & screens. This is done using Middleman, HTML5 and CSS3, and we call it layouts or “maqueta”, Spanish. We upload these to a design server so clients can see how it looks like on a real browser and play around with it.
 
 Once the layouts are approved by the customer, we start the development. We can’t start the development otherwise, and we only develop what has been defined in the definition document or what exists on the layouts.
 
-Similar to what we do with the layouts, we normally work on a test environment that is shared with the customer with a public URL but protected with a username/password, so that they can validate the results in real-time, show it to investors, etc.
+Similar to what we do with the layouts, we normally work on a test environment, shared with the customer with a public URL and protected with a username/password, so that they can validate the results in real-time, show it to investors, etc.
 
-We have been working both with AWS and DigitalOcean as hosting providers. We have worked with PaaS alternatives as Heroku, EngineYard or Cloud66, and normally Xavi and the client's team will agree on a set of tools we will use in the project.
+We have been working both with AWS and DigitalOcean as hosting providers. We have worked with PaaS alternatives as Heroku, EngineYard or Cloud66, and normally Xavi and the client's team will agree on a set of tools we will use in the project. However, we've got experience with other platforms like Microsoft Azure, Google Cloud Platform and more.
 
-We ask the clients to contract the hosting services themselves and we manage them. Otherwise, we will charge them for these services.
+We ask the clients to contract the hosting services themselves and give us access to them, so we can manage them without having to charge them for the overhead.
 
 Halfway through the project, we offer them the maintenance contract for the post-release phase.
 
 ## Maintenance & ongoing development
 
-We don't do maintenance projects _per se_. We believe that software is never finished, so even if the main release has been already delivered, we usually keep working on the project for as long as clients want.
+We don't believe in maintenance projects _per se_. We believe that software is never finished, so even if the main release has been already delivered, we usually keep working on the project for as long as clients want.
 
-What we don't do is to work with bank of hours models or on-demand. Our developers work on a maximum of two projects per person, in either 20 hours per week or 40 hours per week capacities.
+What we don't do is to work with bank of hours models or on-demand.
+
+We work with a minimum commitment of two full-time developers per project, plus the Tech Lead and Project Manager roles, who do a fraction of that time. Usually, for every 40h of development, we do 10 of project management plus ten of tech lead.
 
 ## Our techstack
 
@@ -46,7 +48,7 @@ However, there are a few principles that we always apply when we decide to choos
 * Prefer technologies with a strong community behind them. They are likely to be better battle-tested and they will get improvements over time.
 * Be sure to check the license terms of a technology before start using it. We always work with Open Source technologies.
 
-Our current techstack is Ruby on Rails or Node.js for the backend and Angular or React for the frontend.
+Our current techstack is Ruby on Rails or Node.js for the backend and Angular, Vue.js or React for the frontend.
 
 
 

@@ -1,8 +1,8 @@
 # Careers at MarsBased
 
-Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover.
+Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover. We go for _years_ without losing employees. Betweeen October 2017 and October 2021, we went for four years without losing any team member.
 
-While in other companies employees stay on average one year (or less!), at MarsBased the average is almost four years and counting!
+While in other companies employees stay on average one year (or less!), at MarsBased the average is almost five years and counting!
 
 This means that we would like to have you for years to come with us, so we can grow together.
 

@@ -15,11 +15,9 @@ Our rituals are:
 
 ## 1. <a name='Weeklyreport'></a>Weekly report
 
-Each week, the developers fill a check-in on Basecamp with the tasks they were working on through the week, explaining their current status, estimated time left to finish each issue, and possible blockers that may arise.
+Each week, Project Manager downloads the list with the tasks that the team was working on through the week, explaining their current status, estimated time left to finish each issue, and possible blockers that may arise. This list is transformed to a report, to be sent to the client.
 
-The check-in has to be completed before the weekend.
-
-With all the information, the Project Manager curates a weekly report for each client.
+In order to do this, every developer has to leave a daily status on each card/task he or she is working on, on Linear, so we can know the current state of the task at any given day.
 
 ## 2. <a name='Weeklymeetingwiththeclient'></a>Weekly meeting with the client
 
