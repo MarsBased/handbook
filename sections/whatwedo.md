@@ -14,10 +14,11 @@ You can find a description of the technologies we use in the services pages of o
 *  __[Node.js](https://marsbased.com/services/node)__
 *  __[React](https://marsbased.com/services/react)__
 *  __[Angular](https://marsbased.com/services/Angular)__
+*  __[Shopify](https://marsbased.com/services/Ecommerce)__
 
 The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform.
 
-In 2019, we started to offer a new service: tech due diligences. A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire.
+In 2019, we started to offer a new service: [tech due diligences](https://marsbased.com/services/techaudits/). A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire.
 
 We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
 

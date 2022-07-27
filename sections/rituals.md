@@ -4,13 +4,15 @@ Even though we're a 100%-remote company, we do a few activities both offline and
 
 ## Martian Day
 
-Once per term, more or less, we fly everyone in and we meet for a day or two of get-together.
+Once per quarter, more or less, we fly everyone in and we meet for a day or two of get-together.
 
 In the Martian Days, we don't do client work, and we spend quality time sharing the numbers of the company, doing AMA sessions, workshops, keynotes, brainstormings and a few leisure activities like football matches, dinners and more!
 
 Needless to say, the company pays for the flights, meals and accommodation. If you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance.  
 
-In Winter, we wrap our Martian Day with a Christmas dinner and a good party.
+In Winter, we wrap our Martian Day with a Winter dinner and a good party.
+
+Also, during the travel time, on the day before the Martian Day, you will do a best effort to work on the client projects, but don't overdo it. We understand that it might not be possible so whatever amount of time you will put into it, it'll be fine.
 
 ## Zerg Rush
 
@@ -32,21 +34,24 @@ Participation is completely optional. People not wanting to participate will con
 
 Once a year, we do a company retreat. A few years back, our very own Oriol came up with this great idea and we let him organise it.
 
-The idea is to go somewhere for a couple of working days (fly in and Martian Day on Thursday, and Zerg Rush on Friday) and then the more adventurous can enjoy a weekend away, too, if they want.
+The idea is to go somewhere for a couple of working days (fly in and Martian Day on Thursday, and leisure time on Friday) and then the more adventurous can enjoy a weekend away, too, if they want.
 
 So far, we've done the following:
 
+* __2022:__ Asturias.
 * __2019:__ Menorca.
 * __2018:__ Dublin.
 * __2017:__ Tenerife.
 
 In 2020, we had to cancel the retreat, as well as all of our in-person meetings and get-togethers, due to the COVID-19 pandemic. We went back to meeting in person in April 2022. Too long, but we wanted to play it safe!
 
-Like in the Martian Days, the company pays for the flights, meals and accommodation for the two working days. For those that decide to stay for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance. 
+Like in the Martian Days, the company pays for the flights, meals and accommodation for the two working days. For those that decide to stay for the weekend, hotel expenses, transport and meals of team activities are covered as well. Again, if you pay for any taxi or meal, please send a photo of the receipt to administration@marsbased.com and you will get reimbursed in your next payroll, under the concept of expense allowance.
+
+Also, during the travel time, on the day before the Martian Retreat, you will do a best effort to work on the client projects, but don't overdo it. We understand that it might not be possible so whatever amount of time you will put into it, it'll be fine.
 
 ## Basecamp check-ins
 
-On Fridays, Basecamp will ask you a few questions. There's only one that is mandatory for everyone, which is the highlights of the week.
+On Fridays, Basecamp might ask you a couple of questions, depending on which project you're assigned to. There's only one that is mandatory for everyone, which is the highlights of the week.
 
 Reporting on how has your week been, both professionally and on a personal level, helps to overcome the feeling of loneliness of the remote worker. We have seen that those reports, and opening up about certain issues, helps to bond deeper with the rest of the team.
 

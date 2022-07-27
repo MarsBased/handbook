@@ -6,7 +6,7 @@ In this entry, we will cover how to create a blogging strategy for your company.
 
 We’re really proud of how and what we blog, because it helps us keeping track of our evolution as a global development shop, and feel like this could prove useful to many others that come after us. Exactly the same way we learnt from others like [Buffer](http://www.buffer.com "Buffer"), [Dockyard](http://dockyard.com "Dockyard"), [Thoughtbot](http://thoughtbot.com "Thoughtbot") or other blogs we follow.
 
-A few weeks ago we published the [first part of our blogging guide](/blog/2015/05/05/The-MarsBased-Blogging-Guide/ "The MarsBased Blogging Guide pt.1"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
+Previously, we published the [first part of our blogging guide](/blog/2015/05/05/The-MarsBased-Blogging-Guide/ "The MarsBased Blogging Guide pt.1"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
 
 Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO, and helps you demonstrate your expertise to a very large audience.
 
@@ -60,7 +60,7 @@ The bottom line here is that choosing the right topics attracts like-minded peop
 
 **Key question:** What field(s) is your company most proficient in?
 
-# Measure your tempo 
+# Measure your tempo
 
 It is a common mistake to start writing a blog with nothing to publish. Most people build up a few posts before launching the blog so that they can publish stacked posts for the first weeks, without having to worry about running out of content.
 
@@ -105,10 +105,7 @@ We can also learn a lot from Instagram, where famous Instagrammers ask to “tag
 
 One thing that works very well for me, when I am looking for new ideas, is to read a lot of blogs. From there, I always spot one or two blog entries that catch my attention and I want to mimic.
 
-For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s [“How we hire”](http://micho.biz/post/117083319566/how-we-hire "Pablo Villalba Blog") and, in turn, inspired me to include it in our Article Ideas board on Trello.
-
-![Our blog ideas on Trello](https://marsbased.com/images/blog/post22a-b7ff3a53.png "Our blog ideas on Trello")
-_We've got a Trello board for our blog posts._
+For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s [“How we hire”](http://micho.biz/post/117083319566/how-we-hire "Pablo Villalba Blog") and, in turn, inspired me to include it in my list of Article Ideas on Apple Notes.
 
 These posts were inspirational: not only do they make me want to write something similar for MarsBased, but they might also inspire us to adopt some new tools, strategies or techniques in our daily routines.
 

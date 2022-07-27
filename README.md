@@ -2,6 +2,8 @@
 
 Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
 
+MarsBased is an async-first all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails and JavaScript.
+
 Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
 If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back in appreciation.

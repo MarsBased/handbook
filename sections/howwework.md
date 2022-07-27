@@ -10,7 +10,7 @@ Take into consideration that we do calls with our clients, so you need to have f
 
 We believe in responsibility. We are all adults. As long as work gets done, we don’t care where you do it from.
 
-## Sync vs. async
+## Async first
 
 As a remote-working company, we take async by default as common courtesy in all-remote companies dictates. We are _async-first_.
 

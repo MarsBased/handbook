@@ -1,16 +1,16 @@
 # Current projects
 
-Here's a breakdown of the current projects we're working on, as of 12/05/2022:
+Here's a breakdown of the current projects we're working on, as of 27/07/2022:
 
 First off, we are still working for <a href="https://naiz.eus" title="Naiz" target="_blank">Naiz</a>, evolving their platform. We have been working together since 2015, and we've been able to help them to undergo important transformations like the adaptation to a mobile-first design to all their widgets, a redesign of the entire site or improvements to their newsletter and caching systems.
 
 For them, we have become their <strong>technological partner of choice</strong>, helping them in many fronts even outside of development, but mostly we're doing both intensive backend development and frontend projects, combining a lot of different profiles from our team over the years.
 
-We also provide Rails development to <a href="https://localistico.com/" title="Localistico" target="_blank">Localistico</a>, a UK-based company driving online traffic to offline stores. We have been helping them with <strong>pure Rails backend development</strong> for four years now.
+We also provide Rails development to <a href="https://localistico.com/" title="Localistico" target="_blank">Localistico</a>, a UK-based company driving online traffic to offline stores. We have been helping them with <strong>pure Rails backend development</strong> for four years now, developing the core of their Rails app.
 
-Another pure Rails client we have is <a href="https://www.spin.app/" title="Spin" target="_blank">Spin</a>, the US-based e-scooters company, previously part of the Ford group, now part of Tier Mobility. We have been working for four years helping them to <strong>develop the core of their mobility platform as they scale up their services</strong> and expand their business to other countries.
+Another pure Rails client we have is <a href="https://www.spin.app/" title="Spin" target="_blank">Spin</a>, the US-based micromobility company, previously part of the Ford group, now part of Tier Mobility. We have been working for four years helping them to <strong>develop the core of their mobility platform as they scale up their services</strong> and expand their business to other countries.
 
-This is exactly what we do for another California-based business as well, <a href="http://valuationmetricsinc.com/" title="Valuation Metrics" target="_blank">Valuation Metrics</a>, a Citadel Securities company in the fintech sector. We started working with them six years ago when they were a small startup, and we helped them to transition to be a big team after their acquisition in late 2021. Now, we've got a team of five people working for them, redesigning their UI/UX, working on web accessibility, architecture, performance and overall security.
+This is exactly what we do for another California-based business as well, <a href="http://valuationmetricsinc.com/" title="Valuation Metrics" target="_blank">Valuation Metrics</a>, a Citadel Securities company in the fintech sector. We started working with them six years ago when they were a small startup, and we helped them to transition to be a big team after their acquisition in mid-2021. Now, we've got a team of five people working for them, redesigning their UI/UX, working on web accessibility, architecture, performance and overall security.
 
 Sometimes, our clients need also help with <strong>refactoring, improving their code and add testing</strong> to it to complement what their own team is doing, or to help them reach the quality they haven't been able to produce internally. This is the case of <a href="http://www.blueprinthq.com/" title="BlueprintHQ" target="_blank">BlueprintHQ</a>, a UK-based small startup whose founders moved on from development to sales and growing their business when they decided to bring us in as their tech team. They're also one of our longest-standing clients, going back to 2015.
 

@@ -25,7 +25,7 @@ As part of the welcome pack, you will also receive a copy of the following books
 * <a href="https://www.goodreads.com/book/show/6732019-rework?ac=1&from_search=true&qid=NIE0hicvNB&rank=1" title="Rework by Jason Fried, David Heinemeier Hansson" target="_blank">__Rework__</a>, by DHH & Jason Fried.
 * <a href="https://www.goodreads.com/book/show/17316682-remote?ac=1&from_search=true&qid=NVpquaWPLX&rank=2" title="Remote: Office Not Required
 by David Heinemeier Hansson, Jason Fried" target="_blank">__Remote: Office Not Required__</a>, by DHH & Jason Fried.
-* <a href="https://www.goodreads.com/book/show/45320175-camino-al-exit?ac=1&from_search=true&qid=qMoAvpogZC&rank=5" title="Camino al Exit(o) by Àlex Rodriguez Bacardit" target="_blank">__Camino al éxit(o)__</a>, by our CEO, Àlex Rodríguez Bacardit
+* <a href="https://www.goodreads.com/book/show/45320175-camino-al-exit?ac=1&from_search=true&qid=qMoAvpogZC&rank=5" title="Camino al Exit(o) by Àlex Rodriguez Bacardit" target="_blank">__Camino al éxit(o)__</a>, by our CEO, Àlex Rodríguez Bacardit.
 
 ## Contract
 
@@ -33,7 +33,7 @@ You should have received the work contract for your revision from Leire a few da
 
 ## Onboarding
 
-Leire will invite you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & perks](/sections/benefits.md), [Requesting holidays & materials](/sections/holidaysmaterials.md), etc.
+Leire will invite you to the first-day onboarding meeting on Slack. Apart from the contractual and formal parts, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & perks](/sections/benefits.md), [Requesting holidays & materials](/sections/holidaysmaterials.md), etc.
 
 ## Your project
 
