@@ -1,4 +1,4 @@
-# Holidays, Time off & Sick leave
+# Holidays, Time off & Paid leaves
 
 ## Local holidays
 
@@ -42,3 +42,15 @@ If you have a regular appointment at the doctor, the dentist, or you need to acc
 
 If for some reason you have to visit the doctor on a regular basis due to treatment or whatsoever, let Leire know and she’ll be happy to help you find the best way to reconcile both. 
 
+
+## Parental leave
+
+We try to support you as much as possible in the big adventure of having a baby if that’s your case.
+
+Take the time you need for the regular pregnancy controls, either you are pregnant or need to accompany your partner. There is no need for you to recover that time afterward.
+
+When the baby is born, the general parental leave is 16 weeks according to the current Spanish regulations. You decide if you want to take those weeks in a row or distribute them, but at least 6 weeks must be after the birth.
+
+Once you’re back from the parental leave, you’ll be eligible for the breastfeeding permit until the baby is 9 months old. You can either accumulate the hours and enjoy them at once as an extension of the parental leave, or have your work schedule reduced by 1 hour per day.
+
+These are the general terms, which are discussed to best adapt to the needs in each case.
