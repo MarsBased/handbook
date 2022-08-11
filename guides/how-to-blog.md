@@ -102,3 +102,9 @@ It is a good idea to re-read the post 3 o 4 times prior to publishing, and it's 
 Finally, the post should have a *raison d'être*: it can be an informative post, a how-to guide, an opinion to give food for thought, or an invitation to the new beta version of your product.
 
 Whatever the aim of the post is, it should conclude with a call to action. A call to action (often referred to as CTA) is an instruction to the audience to provoke an immediate response, usually using an imperative verb such as "call now", "find out more" or "visit a store today" ([source](http://homebusiness.about.com/od/homebusinessglossar1/g/Call-To-Action-Definition.htm "Definition of call to action")). If you don't know what call to action you should do, the message of your post might not be clear enough, yet you can always ask the audience to share the post around.
+
+### How to contribute?
+
+If you want to contribute to the MarsBased blog, just open a PR adding the blog post and add Àlex as a reviewer, or share with him some content using Google Docs or Basecamp if you feel like only doing the content part, but not the editing and SEO optimisation.
+
+We look for a weekly contribution to the blog, be it a guide, some piece of news, a technical post, some reflections... whatever related to what we do, who we are and what we believe in.
