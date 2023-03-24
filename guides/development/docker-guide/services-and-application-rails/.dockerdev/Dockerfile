@@ -5,6 +5,8 @@ ARG BUNDLER_VERSION
 # Install system dependencies
 RUN apk --update add less bash git curl wget build-base && \
     apk add postgresql-client && \
+    apk add postgresql-dev && \
+    apk add tzdata && \
     apk add nodejs yarn && \
     apk add vim imagemagick && \
     rm -rf /tmp/* /var/tmp/* && \
