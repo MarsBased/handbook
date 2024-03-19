@@ -18,7 +18,6 @@ As a MarsBased employee, you get:
 * __Sports & Health__: We want to contribute to your overall wellbeing, and that's why we're happy to offer you an allowance of 150 euros    per year to invest in sports and health-related activities or products. This can include gym fees, yoga lessons, the new running shoes you are willing to buy, a session with a personal trainer, etc.
 * __Company retreat__: Once per year, we do a company off-site away from Barcelona to enjoy a few days together in a different environment.
 * __Martian Days__: Every 2-3 months, we meet for a couple of days in Barcelona for a company get-together. We share the numbers of the company, strategy, interesting new projects, we conduct workshops and internal training and much more.
-* __Zerg Rush__: A few times a year, we do online hackathons with the entire team to work on internal and side projects.
 * __Books__: We'll buy you a few books when you start working with us so you get acquainted with how we work and what we do. If you need to purchase any other book for work, let us know!
 * __Christmas dinner and other surprises__: End of the year, start of the party! Our Christmas dinners (and the subsequent parties) are legendary. We also give a few Christmas gifts and some other surprises during the year.
 * __Cool swag__: Once per year, we create company swag like t-shirts, coffee mugs, hoodies or... facemasks!
