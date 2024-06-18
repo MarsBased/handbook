@@ -40,7 +40,7 @@ It may last around three months. After that period, the newcomer most likely fee
 
 As part of the onboarding process, during the first days, the newcomer gets a lot of information about the company, how we work, the specific project he/she has been assigned to, etc. In fact, many of those issues, have already been discussed during the hiring process, but it's always good to refresh them the first day.
 
-You can check what has already happened and explained in [Guided with :heart: by Martians](https://github.com/MarsBased/handbook/blob/master/sections/firstday.md#guided-with-heart-by-martians).
+You can check what has already happened and explained in [Guided with :heart: by Martians](/sections/firstday.md#guided-with-heart-by-martians).
 
 Check what's already happening to onboard a new Martian (more details on the onboarding guide)
 The buddy needs to know that the new employee has already heard about all the important things he/she needs to know to start doing his/her job, which takes out pressure from the buddy. The buddy is an important, but additional support, which means the transmission of no key information relies only on the buddy.
