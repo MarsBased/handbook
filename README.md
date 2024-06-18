@@ -27,6 +27,7 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Hiring](/sections/hiring.md)
 1. [Benefits & perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/holidays.md)
+2. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
