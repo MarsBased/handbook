@@ -111,7 +111,7 @@ Among Martians, we share the spirit of helping each other so whomever you have t
 
 To start with, today, you'll be introduced and guided through your first steps on Mars by:
 
-* **Leire** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/section/howwework.md), [Our rituals](/section/rituals.md), [Benefits & Perks](/section/benefits.md), [Requesting Holidays](/section/holidays.md), [Buddy System](/section/buddy.md), etc.
+* **Leire** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/holidays.md), [Buddy System](/sections/buddy.md), etc.
 * **Jordi and/or Xavi** will give you a general overview of how we run our projects.
 * The **tech lead or the project manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the developers you'll be working with.
 * **Àlex** will reach you for a call before you finish your first day so as to officially welcome you and clarify any questions that may have arisen during the day.
