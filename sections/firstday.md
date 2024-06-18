@@ -1,52 +1,129 @@
-# First day
+# First day at MarsBased
 
-Welcome aboard!
+Welcome aboard :alien:
 
-It is a great pleasure to welcome you to the MarsBased spaceship.
+It is a great pleasure to welcome you to the MarsBased spaceship. This will be an intense and exciting day/week, as pretty much everything will be new to you. Don't panic, Martians are with you to help this onboarding process be as smooth as possible. Be patient with yourself, in a few weeks you'll be speaking Martian already!
 
-Before proceeding to your tasks, look for Leire's welcoming email in your MarsBased email inbox and read this Handbook. Both of them will help you to get set up in the company.
+Take a few minutes to go through the different sections below. They will help you to get familiar with the company, the tools you'll be using, the team, etc.
 
-Make sure you've got access to the main tools: Slack, Linear, Basecamp, Harvest, Forecast, Google Drive, Google Calendar, 1Password and your email. The rest of the tools, you can find them in our [How We Work](/sections/howwework.md) section.
+* [Your Spaceship set-up](#your-spaceship-set-up-)
+* [Your profile & preferences](#your-profile--preferences-astronaut)
+* [Guided with :heart: by Martians](#guided-with-heart-by-martians)
 
-By now, almost everything is set & ready. If you haven’t sent us all of this, please do it:
+## Your Spaceship set-up 🚀
 
-* Twitter handle (preferably a “professional” one).
-* LinkedIn profile.
-* Github profile.
-* A picture for the website (preferably with white background).
-* A couple of fun facts about you for your bio (2 lines max).
+### Contract
 
-## Material
+You should have received the work contract for your revision from Leire a few days before your starting day. During the onboarding meeting, we will review the work contract together with you to make sure everything is clear and sign it using Dropbox Sign.
 
-Leire has already got in touch with you in order to provide you with all the necessary material you need to start working (laptop, keyboard, trackpad, etc.). You should have received your material by now.
+### Material
+
+You should have received your laptop and material by now. If you need any other equipment to work comfortably, feel free to let Leire know.
 
 As part of the welcome pack, you will also receive a copy of the following books:
 
-* <a href="https://www.goodreads.com/book/show/6732019-rework?ac=1&from_search=true&qid=NIE0hicvNB&rank=1" title="Rework by Jason Fried, David Heinemeier Hansson" target="_blank">__Rework__</a>, by DHH & Jason Fried.
-* <a href="https://www.goodreads.com/book/show/17316682-remote?ac=1&from_search=true&qid=NVpquaWPLX&rank=2" title="Remote: Office Not Required
-by David Heinemeier Hansson, Jason Fried" target="_blank">__Remote: Office Not Required__</a>, by DHH & Jason Fried.
-* <a href="https://www.goodreads.com/book/show/45320175-camino-al-exit?ac=1&from_search=true&qid=qMoAvpogZC&rank=5" title="Camino al Exit(o) by Àlex Rodriguez Bacardit" target="_blank">__Camino al éxit(o)__</a>, by our CEO, Àlex Rodríguez Bacardit.
+* [Rework](https://www.goodreads.com/book/show/6732019-rework?ac=1&from_search=true&qid=NIE0hicvNB&rank=1), by DHH & Jason Fried.
+* [Remote: Office Not Required](https://www.goodreads.com/book/show/17316682-remote?ac=1&from_search=true&qid=NVpquaWPLX&rank=2), by DHH & Jason Fried.
+* [Camino al éxit(o)](https://www.goodreads.com/book/show/45320175-camino-al-exit?ac=1&from_search=true&qid=qMoAvpogZC&rank=5), by our CEO, Àlex Rodríguez Bacardit.
 
-## Contract
+### Tools
 
-You should have received the work contract for your revision from Leire a few days before your starting day. During the onboarding meeting, we will review the work contract together with you to make sure everything is clear and sign it using HelloSign.
+Make sure you've got access to these main tools. Set up your profile, including your picture.
 
-## Onboarding
+#### Gmail
 
-Leire will invite you to the first-day onboarding meeting on Slack. Apart from the contractual and formal parts, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & perks](/sections/benefits.md), [Requesting holidays & materials](/sections/holidaysmaterials.md), etc.
+Access your account, and you'll find a bunch of emails regarding the access and setup of the tools listed below.
 
-## Your project
+Configure your email signature following the structure below. It can't be shown here on GitHub, but "MarsBased" goes in color `rgb(231,76,60)`. If it's easier, you can grab the example of Leire's signature from the emails you've exchanged with her.
 
-You will then meet with our founding team and have a good chat with our COO, Jordi and our CTO, Xavi, who will explain to you how we run our projects and all the details you need to know in order to start working with the client/project assigned.
+```
+Name Surname
+Position
+MarsBased
+```
 
-At the end of the day, you will also meet our CEO, Àlex, to wrap up the day! Take a good rest, after such an intense day!
+#### Google Drive
 
-## Your buddy
+You’ll find all the relevant documentation such as our guidelines, procedures, and activities of the company as well as our client projects here. To name a few:
 
-You'll be assigned an seasoned team member as a buddy in order to support you during the first months of your journey in the company. He/she will share informal knowledge related to day-to-day issues, culture, activities, etc. Your buddy will ping you throughout your first week for a first talk, and more will follow, regularly, on a weekly basis. 
+* [Forecast & Time Off](https://docs.google.com/spreadsheets/d/1F70bT40_mTTWUZZlGvcQmjlfNzoqQZSywA0fpHHUZaM/edit?gid=1199178965#gid=1199178965): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
+* [Google Drive Guidelines](https://docs.google.com/document/d/1YHNPSgsB8g0jLqu0jnKVarWFom-bEEENa1-rTP5zDqs/edit#heading=h.oolhxniimdhk): What documentation do we place in Google Drive and what other do we place in Github?
+* [Security Guidelines](https://docs.google.com/document/d/1FsCzS0RTGBO3BMzIq-hjnjKxqV6v5gHQFf7Pam4fy4Q/edit#heading=h.ly0rzhbv9kd6): Compiling good security practices to apply on yourself and your own devices.
 
-## Meet the team
+You'll have access to the docs related to design, activities, projects, templates, etc.
 
-The first week, we will host a special [Martian coffee](/sections/rituals.md#martian-coffees) to celebrate your joining, on Friday morning, so that you get to know the rest of the team.
+#### Google Calendar
 
-We are looking forward to welcoming you! 🚀
+You will find the Martian activities for the year as well as important dates such as Martian anniversaries, etc.
+
+#### Linear
+
+Used for async communication, project management and internal one-to-many communication and reporting. Get familiar with our Linear areas:
+
+* **MarsBased Talks:** It’s the main channel in which all the important communication with the team takes place.
+* **MarsBased:** It's the place where we list internal tasks unrelated to client projects.
+* **Project-specific teams:** Shared by the project members and the client. You’ll be added to the teams of the projects you’ll be working on.
+
+#### Slack
+
+Used for sync communications, and also to communicate with a few clients who want to have it. Both on Linear and Slack, we use English as our main communication language. What you need to know about the main Slack channels:
+
+* **Status:** We use this channel to let the team know when we are working and when we are off
+* **Random:** We have a random channel, shared with our freelancers, in which we discuss whatever topics we feel like. There are specific random channels as well. Feel free to join the ones you feel interested in!
+* **MarsBased:** We use it for all the issues related to the company, Martian activities, etc.
+* **Development:** We have a general development channel to share information and discuss development-related topics.
+
+#### Harvest
+
+To track your hours. This tool is used to invoice our clients. Ensure you have attributed all your hours worked at the end of each day.
+
+#### 1Password
+
+Here you’ll find all the passwords and credentials you need to start working. You should be able to access the MarsBased shared vault and the vault of the specific project you’ll be working on.
+
+You can find the rest of the tools in the How We Work section 🖖
+
+## Your profile & preferences :astronaut:
+
+### Your profile
+
+Please send Leire the following information so that we can include your profile on our website and link to the different channels:
+
+* Twitter handle (preferably a “professional” one).
+* LinkedIn profile.
+* Github username.
+* A picture for the website.
+* A couple of fun facts about you for your bio (2 lines max).
+
+### Preferences
+
+We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below, as well as any other important issue we should be aware of.
+
+* **Local holiday calendar:** Each of us chooses the official local calendar we'll be following, it normally corresponds to the city we live in. Please, let us know on Linear the calendar you’ll be following.
+* **Dietary restrictions or preferences:** Let Leire know if you have any dietary restrictions/preferences (any allergies, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc.
+* **Travel preferences:** Let Leire know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll try to make our most to make your travels as comfortable as possible.
+
+_There is no hurry, you can provide us with this information once you get a bit settled!_
+
+## Guided with :heart: by Martians
+
+Among Martians, we share the spirit of helping each other so whomever you have the chance to interact with, you'll find a colleague open to sharing experiences, learnings, and tips. There will be plenty of occasions to get to know the team, and the team to get to know you.
+
+To start with, today, you'll be introduced and guided through your first steps on Mars by:
+
+* **Leire** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning How We Work, Our rituals, Benefits & Perks, Requesting Holidays & Materials, Buddy system, etc.
+* **Jordi and/or Xavi** will give you a general overview of how we run our projects.
+* The **tech lead or the project manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the developers you'll be working with.
+* **Àlex** will reach you for a call before you finish your first day so as to officially welcome you and clarify any questions that may have arisen during the day.
+
+**Your buddy**, a seasoned team member that will support you during the first months of your journey in the company, will get in touch with you at some point during the week for a first talk, and more will follow, regularly, on a weekly basis. He/she will share informal knowledge related to day-to-day issues, culture, activities, etc., and will be at your disposal for any questions you may have after the big amount of information you'll receive during the first days.
+
+The **rest of the team** is already looking forward to meeting you at our weekly team appointment, which is on Fridays at 10.30 am. The first week, we'll host a special Martian breakfast to celebrate your joining. Save it on your agenda! 
+
+Meanwhile, you can feed your curious side by reading [10 facts about each Martian](https://docs.google.com/document/d/1CbQSss9fiAzffojUxCZUYt9aOWddNyTSx3BoS2XhQSw/edit#heading=h.oclq2ejj0ewt). 
+
+Don't forget to share yours so that we can get to know you a bit better 😉
+
+---
+
+Enjoy your day and let Leire know if you have any questions or need any help! 🙋🏻‍♀️
