@@ -12,7 +12,7 @@ We have decided to make this handbook publicly available so we can share as much
 
 # Sections
 
-1. [First day](/sections/firstday.md)
+1. [First day at MarsBased](/sections/firstday.md)
 1. [Company culture](/sections/companyculture.md)
 1. [What influenced us](/sections/influences.md)
 1. [What we do](/sections/whatwedo.md)
