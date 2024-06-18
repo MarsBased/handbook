@@ -6,8 +6,8 @@ It is a great pleasure to welcome you to the MarsBased spaceship. This will be a
 
 Take a few minutes to go through the different sections below. They will help you to get familiar with the company, the tools you'll be using, the team, etc.
 
-* [Your Spaceship set-up](#your-spaceship-set-up-)
-* [Your profile & preferences](#your-profile--preferences-astronaut)
+* [Your Spaceship set-up 🚀](#your-spaceship-set-up-)
+* [Your profile & preferences 🧑‍🚀](#your-profile--preferences-astronaut)
 * [Guided with :heart: by Martians](#guided-with-heart-by-martians)
 
 ## Your Spaceship set-up 🚀
