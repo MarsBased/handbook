@@ -1,39 +1,44 @@
 # MarsBased Angular Style Guide
 
+### 🚧 This guide is focused on Angular 2+, for Angular 17+ features see [here](./angular-17-guidelines.md) 🚧
+
+---
+
 We follow the official and opinionated [Angular coding style guide](https://angular.io/guide/styleguide) as the primary source of best practices and conventions.
 
 <!-- vscode-markdown-toc -->
-* 1. [Do's and Don'ts](#DosandDonts)
-	* 1.1. [Logic in templates](#Logicintemplates)
-	* 1.2. [Use index.ts](#Useindex.ts)
-	* 1.3. [Use CDK Virtual Scroll](#UseCDKVirtualScroll)
-	* 1.4. [Type Lazy modules](#TypeLazymodules)
-	* 1.5. [Private methods](#Privatemethods)
-	* 1.6. [Public methods](#Publicmethods)
-	* 1.7. [View Methods](#ViewMethods)
-	* 1.8. [Lifecycle Hooks](#LifecycleHooks)
-	* 1.9. [HTML Attributes](#HTMLAttributes)
-	* 1.10. [Empty Observables](#EmptyObservables)
-	* 1.11. [HostListener/HostBinding decorators versus host metadata](#HostListenerHostBindingdecoratorsversushostmetadata)
-  * 1.12. [Class members order](#ClassOrder)
-* 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
-	* 2.1. [Project structure example](#Projectstructureexample)
-* 3. [Description of the most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
-	* 3.1. [Lazy Pages](#LazyPages)
-	* 3.2. [API Services](#APIServices)
-		* 3.2.1. [Why?](#Why)
-		* 3.2.2. [How?](#How)
-	* 3.3. [Forms (Reactive Forms)](#FormsReactiveForms)
-		* 3.3.1. [Simple FormBuilder sample](#SimpleFormBuildersample)
-	* 3.4. [Smart and Dumb (Presentational) components](#SmartandDumbPresentationalcomponents)
-	* 3.5. [State Management (with Akita)](#StateManagementwithAkita)
-		* 3.5.1. [Global Entities](#GlobalEntities)
-		* 3.5.2. [Specific module related logic](#Specificmodulerelatedlogic)
-	* 3.6. [Testing](#Testing)
-	* 3.7. [Memory Leaks](#MemoryLeaks)
-	* 3.8. [I18N](#I18N)
-* 4. [Libraries](#Libraries)
-* 5. [Learning Resources](#LearningResources)
+
+- 1. [Do's and Don'ts](#DosandDonts)
+  - 1.1. [Logic in templates](#Logicintemplates)
+  - 1.2. [Use index.ts](#Useindex.ts)
+  - 1.3. [Use CDK Virtual Scroll](#UseCDKVirtualScroll)
+  - 1.4. [Type Lazy modules](#TypeLazymodules)
+  - 1.5. [Private methods](#Privatemethods)
+  - 1.6. [Public methods](#Publicmethods)
+  - 1.7. [View Methods](#ViewMethods)
+  - 1.8. [Lifecycle Hooks](#LifecycleHooks)
+  - 1.9. [HTML Attributes](#HTMLAttributes)
+  - 1.10. [Empty Observables](#EmptyObservables)
+  - 1.11. [HostListener/HostBinding decorators versus host metadata](#HostListenerHostBindingdecoratorsversushostmetadata)
+  - 1.12. [Class members order](#ClassOrder)
+- 2. [General project organization and architecture](#Generalprojectorganizationandarchitecture)
+  - 2.1. [Project structure example](#Projectstructureexample)
+- 3. [Description of the most common patterns used to solve common problems](#Describemostcommonpatternsusedtosolvecommonproblems)
+  - 3.1. [Lazy Pages](#LazyPages)
+  - 3.2. [API Services](#APIServices)
+    - 3.2.1. [Why?](#Why)
+    - 3.2.2. [How?](#How)
+  - 3.3. [Forms (Reactive Forms)](#FormsReactiveForms)
+    - 3.3.1. [Simple FormBuilder sample](#SimpleFormBuildersample)
+  - 3.4. [Smart and Dumb (Presentational) components](#SmartandDumbPresentationalcomponents)
+  - 3.5. [State Management (with Akita)](#StateManagementwithAkita)
+    - 3.5.1. [Global Entities](#GlobalEntities)
+    - 3.5.2. [Specific module related logic](#Specificmodulerelatedlogic)
+  - 3.6. [Testing](#Testing)
+  - 3.7. [Memory Leaks](#MemoryLeaks)
+  - 3.8. [I18N](#I18N)
+- 4. [Libraries](#Libraries)
+- 5. [Learning Resources](#LearningResources)
 
 <!-- vscode-markdown-toc-config
 	numbering=true
@@ -41,25 +46,20 @@ We follow the official and opinionated [Angular coding style guide](https://angu
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
 
-##  1. <a name='DosandDonts'></a>Do's and Don'ts
+## 1. <a name='DosandDonts'></a>Do's and Don'ts
 
 Add and follow the official [MarsBased Angular ESLint configuration](https://github.com/MarsBased/marstyle/tree/master/angular), where most of do's and dont's are already defined.
 
-###  1.1. <a name='Logicintemplates'></a>Logic in templates
+### 1.1. <a name='Logicintemplates'></a>Logic in templates
 
-Don't put logic in templates. 
+Don't put logic in templates.
 
 ```html
 <!-- bad  (component's logic, not HTML) -->
-<div *ngIf="user.active && !user.expired">
-  ...
-</div>
-
+<div *ngIf="user.active && !user.expired">...</div>
 
 <!-- good -->
-<div *ngIf="isUserVisible">
-  ...
-</div>
+<div *ngIf="isUserVisible">...</div>
 ```
 
 ```ts
@@ -73,29 +73,28 @@ export class MyComponent {
 }
 ```
 
-###  1.2. <a name='Useindex.ts'></a>Use index.ts
+### 1.2. <a name='Useindex.ts'></a>Use index.ts
 
 Do use index.ts when you see the opportunity. The model directory of a module is a good candidate. It decreases the number and size of imports in components and services.
 
 Export models from the /models directory:
 
 ```ts
-export * from './user.model';
-export * from './product.model';
-
+export * from "./user.model";
+export * from "./product.model";
 ```
 
 Import them where you need them:
 
 ```ts
-import { UserModel, ProductModel } from '../models';
+import { UserModel, ProductModel } from "../models";
 ```
 
-###  1.3. <a name='UseCDKVirtualScroll'></a>Use CDK Virtual Scroll
+### 1.3. <a name='UseCDKVirtualScroll'></a>Use CDK Virtual Scroll
 
-Do use [CDK Virtual Scroll](https://material.angular.io/cdk/scrolling/overview) when showing huge lists of elements. It improves performance **drastically**. 
+Do use [CDK Virtual Scroll](https://material.angular.io/cdk/scrolling/overview) when showing huge lists of elements. It improves performance **drastically**.
 
-###  1.4. <a name='TypeLazymodules'></a>Type Lazy modules
+### 1.4. <a name='TypeLazymodules'></a>Type Lazy modules
 
 Do Type lazy modules with `async` and `Promise` types.
 
@@ -108,11 +107,11 @@ Do Type lazy modules with `async` and `Promise` types.
 }
 ```
 
-###  1.5. <a name='Privatemethods'></a>Private methods
+### 1.5. <a name='Privatemethods'></a>Private methods
 
 Do mark the visibility of private methods when are called only from inside the class.
 
-###  1.6. <a name='Publicmethods'></a>Public methods
+### 1.6. <a name='Publicmethods'></a>Public methods
 
 Do not mark the visibility of public methods, as it's by default.
 
@@ -128,11 +127,11 @@ isUserVisible(): boolean {
 }
 ```
 
-###  1.7. <a name='ViewMethods'></a>View Methods
+### 1.7. <a name='ViewMethods'></a>View Methods
 
 Do not mark as private methods called from the component's view (public).
 
-###  1.8. <a name='LifecycleHooks'></a>Lifecycle Hooks
+### 1.8. <a name='LifecycleHooks'></a>Lifecycle Hooks
 
 - Add hooks just after the class constructor.
 - Add their interfaces to the class.
@@ -162,7 +161,7 @@ export class MyComponent implements OnInit, OnDestroy {
 }
 ```
 
-###  1.9. <a name='HTMLAttributes'></a>HTML Attributes
+### 1.9. <a name='HTMLAttributes'></a>HTML Attributes
 
 Do sort the HTML tag attributes.
 
@@ -175,52 +174,51 @@ Do sort the HTML tag attributes.
   4. Animations
   5. Static and native HTML properties.
 
-
 ```html
 <!-- bad (hard to follow) -->
-  <div 
-    class="user__container"
-    @fadeIn
-    [user]="user"
-    (refresh)="onUserRefresh()"
-    [title]="user.name"
-    *ngIf="isVisible"
-  >
-   ...
-  </>
+<div
+  class="user__container"
+  @fadeIn
+  [user]="user"
+  (refresh)="onUserRefresh()"
+  [title]="user.name"
+  *ngIf="isVisible"
+>
+  ...
+</div>
 
 <!-- good -->
-  <div 
-    *ngIf="isVisible"
-    [user]="user"
-    (refresh)="onUserRefresh()"
-    [title]="user.name"
-    @fadeIn
-    class="user__container"
-  >
-   ...
-  </>
+<div
+  *ngIf="isVisible"
+  [user]="user"
+  (refresh)="onUserRefresh()"
+  [title]="user.name"
+  @fadeIn
+  class="user__container"
+>
+  ...
+</div>
 ```
 
-###  1.10. <a name='EmptyObservables'></a>Empty Observables
+### 1.10. <a name='EmptyObservables'></a>Empty Observables
 
 Do prefer the EMPTY variable over the of operator when generating an empty observable.
 
 ```ts
 // bad (Don't use `of()` operator:)
-const checkActionDispatched = !isActionDispatched ? 
-  dispatch(new Action()) : 
-  of();
+const checkActionDispatched = !isActionDispatched
+  ? dispatch(new Action())
+  : of();
 
 // good
-import { EMPTY } from 'rxjs';
+import { EMPTY } from "rxjs";
 
-const checkActionDispatched = !isActionDispatched ? 
-  dispatch(new Action()) : 
-  EMPTY;
-``` 
+const checkActionDispatched = !isActionDispatched
+  ? dispatch(new Action())
+  : EMPTY;
+```
 
-###  1.11. <a name='HostListenerHostBindingdecoratorsversushostmetadata'></a>HostListener/HostBinding decorators versus host metadata
+### 1.11. <a name='HostListenerHostBindingdecoratorsversushostmetadata'></a>HostListener/HostBinding decorators versus host metadata
 
 Do prefer the @HostListener and @HostBinding to the host property of the @Directive and @Component decorators. Refer to the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03) for more details.
 
@@ -278,7 +276,7 @@ export class MyComponent {
 }
 ```
 
-##  2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
+## 2. <a name='Generalprojectorganizationandarchitecture'></a>General project organization and architecture
 
 Follow the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03) to name files and directories. Additionally:
 
@@ -289,7 +287,7 @@ Follow the [Angular Style Guide](https://angular.io/guide/styleguide#style-06-03
 - State management files under the /state directory.
 - Helpers, utils and custom libraries under the /libs directory.
 
-###  2.1. <a name='Projectstructureexample'></a>Project structure example
+### 2.1. <a name='Projectstructureexample'></a>Project structure example
 
 ```
 cypress/                              # end-to-end tests
@@ -325,9 +323,9 @@ src/app/
 |- app.module.ts                      # root module
 ```
 
-##  3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Description of the most common patterns used to solve common problems
+## 3. <a name='Describemostcommonpatternsusedtosolvecommonproblems'></a>Description of the most common patterns used to solve common problems
 
-###  3.1. <a name='LazyPages'></a>Lazy Pages
+### 3.1. <a name='LazyPages'></a>Lazy Pages
 
 Lazy load every page always, placing routed modules under the /pages directory. This way, the architecture and the tree folder mirror the URL map presented to the user.
 
@@ -338,11 +336,11 @@ Check the next guides for further information about lazy loading and feature mod
 - [Angular Feature Modules](https://angular.io/guide/feature-modules)
 - [Angular Lazy Loading](https://angular.io/guide/lazy-loading-ngmodules)
 
-###  3.2. <a name='APIServices'></a>API Services
+### 3.2. <a name='APIServices'></a>API Services
 
 We define a clear separation between API Services that retrieve data, usually from an API endpoint, from the rest of the services with business logic.
 
-####  3.2.1. <a name='Why'></a>Why?
+#### 3.2.1. <a name='Why'></a>Why?
 
 Better control of the data flow, what happens if a request fails? should I keep the current store? should I empty the store? are we writing code only for success responses? That depends on the context, if we couple API calls and other logic we lose control of the data flow. We'll find ourselves writing the same API calls with some modifications for different situations.
 
@@ -351,7 +349,7 @@ Better control of the data flow, what happens if a request fails? should I keep 
 - **Independent**. API services don't have dependencies.
   In short, I think this could help to avoid ambiguous rules when writing services, leading to a more uniform codebase.
 
-####  3.2.2. <a name='How'></a>How?
+#### 3.2.2. <a name='How'></a>How?
 
 ```ts
 @Injectable()
@@ -393,7 +391,7 @@ export class UsersAdminService {
 }
 ```
 
-###  3.3. <a name='FormsReactiveForms'></a>Forms (Reactive Forms)
+### 3.3. <a name='FormsReactiveForms'></a>Forms (Reactive Forms)
 
 The next articles are a good source to understand how to implement reactive forms in Angular:
 
@@ -401,7 +399,7 @@ The next articles are a good source to understand how to implement reactive form
 - [A thorough exploration of Angular Forms](https://indepth.dev/posts/1143/a-thorough-exploration-of-angular-forms)
 - [Angular Reactive Forms Tips and Tricks](https://netbasal.com/angular-reactive-forms-tips-and-tricks-bb0c85400b58)
 
-####  3.3.1. <a name='SimpleFormBuildersample'></a>Simple FormBuilder sample
+#### 3.3.1. <a name='SimpleFormBuildersample'></a>Simple FormBuilder sample
 
 Inject FormBuilder service to define forms fields and validations inside a component class.
 
@@ -441,7 +439,7 @@ After, we register the created form for the HTML container tag, and attach every
 </form>
 ```
 
-###  3.4. <a name='SmartandDumbPresentationalcomponents'></a>Smart and Dumb (Presentational) components
+### 3.4. <a name='SmartandDumbPresentationalcomponents'></a>Smart and Dumb (Presentational) components
 
 The only goal of a presentational component is to keep the UI logic isolated. It doesn't have access to injected business services. It communicates using @Input and @Output data flows.Presentational components communicate using Input and Output only.
 
@@ -455,13 +453,13 @@ Having a separation between smart and presentational components adds the advanta
 
 Check the [Angular University](https://blog.angular-university.io/angular-2-smart-components-vs-presentation-components-whats-the-difference-when-to-use-each-and-why/) article about smart and presentational components for a detailed explanation.
 
-###  3.5. <a name='StateManagementwithAkita'></a>State Management (with Akita)
+### 3.5. <a name='StateManagementwithAkita'></a>State Management (with Akita)
 
 Akita offers, basically, two JS classes to interact with, the store for adding/modify objects and the query for consulting it, and that's all, no more Actions, Reducers nor Effects.
 
 Akita's decoupled components: All Akita store management could be done (and it is fully recommended) throw a service so components are totally detached from it, an async method that interacts with the store remains as an async method for the component and could react to fulfilment if needed (not as flux-like store actions that are "flattened")
 
-####  3.5.1. <a name='GlobalEntities'></a>Global Entities
+#### 3.5.1. <a name='GlobalEntities'></a>Global Entities
 
 It's so recommended exposing globally all entities obtained from the backend and that's the perfect use-case for the entity store and entity query , both could be imported in a root provided (or shared module imported by) service, related with 💥 Angular API Services - Development and totally in the same page, could be something like:
 
@@ -479,7 +477,7 @@ It's so recommended exposing globally all entities obtained from the backend and
 - `users.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach to create composed queries in users-state.service instead of here and access to the query object only throw the service. Docs
   users.state-service.ts: Acts as facade for any other service that want to interact with users entities, uses users-api.service to obtain users related data, fills/modifies store throw users.store and creates and exposes queries using users.query. Docs
 
-####  3.5.2. <a name='Specificmodulerelatedlogic'></a>Specific module related logic
+#### 3.5.2. <a name='Specificmodulerelatedlogic'></a>Specific module related logic
 
 To code the logic related to a specific feature, all states could be imported only in the related module. In this case, Entity store/query doesn't make sense so normal store and query objects could be used.
 
@@ -493,7 +491,7 @@ To code the logic related to a specific feature, all states could be imported on
 - `users-section.query.ts`: Offers different methods for exposing store objects. Contrary to Akita recommendations, we think could be a better approach to create composed queries in users-section-state.service instead of here and access to the query object only throw the service. Docs
 - `users-section-state.service.ts`: Holds all users-section related logic, interacts with users-section-store for filling/modifying objects, with users-section.query to expose them on demand and with api related services (users.state-service.ts) for obtaining backend data and modify/consult related store. Docs
 
-###  3.6. <a name='Testing'></a>Testing
+### 3.6. <a name='Testing'></a>Testing
 
 Favour end-to-end-testing over components test.
 
@@ -501,7 +499,7 @@ Favour end-to-end-testing over components test.
 - Components: [Spectator](https://github.com/ngneat/spectator) and [Jest](https://jestjs.io/)
 - Unit JS tests: [Jest](https://jestjs.io/)
 
-###  3.7. <a name='MemoryLeaks'></a>Memory Leaks
+### 3.7. <a name='MemoryLeaks'></a>Memory Leaks
 
 Consider and prevent memory leaks from subscriptions in components.
 
@@ -509,30 +507,27 @@ Read [Dealing with memory leaks](https://marsbased.com/es/blog/2018/06/18/dealin
 
 To avoid these leaks, we use the [NgNeat Until Destroy lib](https://github.com/ngneat/until-destroy) that adds support for unsubscribing automatically from subscriptions when a component is destroyed.
 
-
 ```ts
-import { UntilDestroy, untilDestroyed } from '@ngneat/until-destroy';
+import { UntilDestroy, untilDestroyed } from "@ngneat/until-destroy";
 
 @UntilDestroy()
 @Component({})
 export class InboxComponent {
   ngOnInit() {
-    interval(1000)
-      .pipe(untilDestroyed(this))
-      .subscribe();
+    interval(1000).pipe(untilDestroyed(this)).subscribe();
   }
 }
 ```
 
 The order of decorators is important, make sure to put @UntilDestroy() before the @Component() decorator.
 
-###  3.8. <a name='I18N'></a>I18N
+### 3.8. <a name='I18N'></a>I18N
 
 For simplicity and ease of use, we don't use the translation services that Angular has in its core.
 
 Use [Transloco](https://github.com/ngneat/transloco).
 
-##  4. <a name='Libraries'></a>Libraries
+## 4. <a name='Libraries'></a>Libraries
 
 - [Transloco](https://github.com/ngneat/transloco). Translation library for Angular.
 - [NgNeat Until Destroy lib](https://github.com/ngneat/until-destroy). Avoid memory leaks in components.
@@ -544,7 +539,7 @@ Use [Transloco](https://github.com/ngneat/transloco).
 - [Angular Material](https://material.angular.io/). A collection of components and other Angular resources to build the UI.
 - [NgBootstrap](https://ng-bootstrap.github.io/#/home). Bootstrap library ported to Angular components.
 
-##  5. <a name='LearningResources'></a>Learning Resources
+## 5. <a name='LearningResources'></a>Learning Resources
 
 Our articles:
 
@@ -559,8 +554,8 @@ Other resources:
 - [RXJS official documentation](https://rxjs-dev.firebaseapp.com/)
 - [Angular RxJS tutorial](https://angular.io/guide/rx-library)
 - [Alligator Angular's courses](https://alligator.io/angular/)
-- [Angular in Depth blog](https://indepth.dev/angular) 
-- [Reddit Angular 2+](https://www.reddit.com/r/Angular2/) 
+- [Angular in Depth blog](https://indepth.dev/angular)
+- [Reddit Angular 2+](https://www.reddit.com/r/Angular2/)
 - [Angular University](https://blog.angular-university.io)
 - [Angular cheatsheet](https://angular.io/guide/cheatsheet)
 - [Egghead](https://egghead.io/courses/for/angular)
