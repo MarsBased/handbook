@@ -71,7 +71,7 @@ Hope your new purchase meets your expectations and allows you to work more comfo
 
 ## Language courses 🗣
 
-From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in such as Spanish, Japanese, or Basque 😅). 
+From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in such as Spanish, Japanese, or Basque 😅). You can devote up to one hour per week during the workday to language learning classes without needing to make up the time.
 
 ### Budget
 
