@@ -1,6 +1,6 @@
 # The MarsBased Handbook 🚀
 
-Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
+Welcome to **MarsBased**! This is the first thing you should read when boarding the **MarsBased** spaceship.
 
 MarsBased is an async-first all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails and JavaScript.
 
@@ -27,7 +27,7 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Hiring](/sections/hiring.md)
 1. [Benefits & perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/holidays.md)
-2. [Buddy System](/sections/buddy.md)
+1. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
 
 # Our guides
@@ -48,6 +48,7 @@ For now, we have the following resources available:
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
 1. [Some of our used programming patterns](/guides/patterns/README.md)
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
+1. [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
 
 # Other useful resources
@@ -61,4 +62,5 @@ For now, we have the following resources available:
 1. <a href="https://github.com/MarsBased/productivity" title="Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)" target="_blank">Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)</a>
 
 # Contributing
+
 We encourage you to contribute! Please check out the [Contributing guides](./CONTRIBUTING.md) for guidelines about how to proceed.
