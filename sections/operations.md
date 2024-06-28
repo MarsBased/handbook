@@ -10,23 +10,23 @@ Being 100% remote means that we've got no office. Thus, little to no operations 
 
 Mostly, we've got three big categories of operations.
 
-* __Accounting & numbers__: All things related to bookkeeping, accounting, reports and all that jazz is mostly spearheaded by Jordi. We've got an accountant company we outsource a big part of this to - Altisent - and Leire helps Jordi with this area, too.
-* __People operations__: Otherwise known as HR & administration, mostly commandeered by Leire. She is the ultimate enabler of everyone in the company and a pivotal role, central to all.
+* __Accounting & numbers__: All things related to bookkeeping, accounting, reports and all that jazz is mostly spearheaded by Jordi. We've got an accountant company we outsource a big part of this to - Altisent - and Leire/Eli help Jordi with this area, too.
+* __People operations__: Otherwise known as HR & administration, mostly commandeered by Leire/Eli. They are the ultimate enabler of everyone in the company and a pivotal role, central to all.
 * __Marketing and sales__: Àlex leads these areas. Jordi and Xavi (and some developers, occasionally) step in to help with the confection of proposals for clients, and Leire helps with the organisation of events, running the YouTube channel and the newsletters.
 
 ## Accounting & numbers
 
 All expenses need to be sent to administration@marsbased.com with the invoice or a photo of the receipt.
 
-We share the numbers of the company in every Martian Day and occasionally on Basecamp (approximately once per term), but feel free to ask for more information about anything anytime.
+We share the numbers of the company in every Martian Day, but feel free to ask for more information about anything anytime.
 
 ## People operations
 
-Leire sits in the middle of our non-existent office and is the real catalyser of everything that happens in the company. She makes everyone's days better and of MarsBased a great place to work in.
+Leire/Eli sits in the middle of our non-existent office and is the real catalyser of everything that happens in the company. She makes everyone's days better and of MarsBased a great place to work in.
 
 Anything related to logistics and how to make your day better, ask her. This includes the benefits & perks of being a MarsBased employee and much more.
 
-Leire is also in charge of the organisation of the [Startup Grind Barcelona](http://www.startupgrind.com/barcelona) events and our bigger ones like the [Startup Grind Tech](https://startupgrind.cat) conference and the Corporate Innovation Summit, and some of our marketing efforts, like the MarsBased newsletter or our YouTube channel.
+Leire/Eli is also in charge of the organisation of the [Startup Grind Barcelona](http://www.startupgrind.com/barcelona) events and our bigger ones like the [Startup Grind Tech](https://startupgrind.cat) conference and the Corporate Innovation Summit, and some of our marketing efforts, like the MarsBased newsletter or our YouTube channel.
 
 ## Marketing and sales
 
