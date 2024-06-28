@@ -1,8 +1,8 @@
 # What we do
 
-MarsBased is a consultancy of expert developers in Ruby on Rails, Node.js, React and Angular boosting companies using technology and agile methodologies.
+MarsBased is a consultancy of expert developers in Ruby on Rails, JavaScript (in all flavours: React, Node.js, Vue.js, React Native, Angular...) and Python, boosting companies using technology and agile methodologies.
 
-We started off in early 2014 as a web-only development shop using Rails and Angular because our founders Jordi and Xavi had been using these technologies in their previous companies. Over the years, we've expanded our technological horizons slightly.
+We started off in early 2014 as a web-only development shop using Rails and Angular because our founders Jordi and Xavi had been using these technologies in their previous companies. Over the years, we've expanded our technological horizons to new technologies and products.
 
 ## Technologies & services
 
@@ -15,12 +15,12 @@ You can find a description of the technologies we use in the services pages of o
 *  __[React](https://marsbased.com/services/react)__
 *  __[Angular](https://marsbased.com/services/Angular)__
 *  __[Shopify](https://marsbased.com/services/Ecommerce)__
+*  __[Technical Audits](https://marsbased.com/services/techaudits)__
+*  __[Artifical Intelligence](https://marsbased.com/services/ai)__
 
-The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform.
+The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform. We have also become very strong in AI over the years, integrating AI features and helping companies from as far back as 2014!
 
-In 2019, we started to offer a new service: [tech due diligences](https://marsbased.com/services/techaudits/). A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire.
-
-We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
+In 2019, we started to offer a new service: [tech due diligences](https://marsbased.com/services/techaudits/). A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire. We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
 
 ## Community
 
