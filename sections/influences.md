@@ -26,7 +26,6 @@ The rest is history.
 
 ## People
 
-* __Derek Andersen__: CEO at Startup Grind and Bevy, he envisioned the largest community of entrepreneurs worldwide and he's building it with a set of values we share: helping others before helping oneself, making friends and not connections, and giving before taking.
 * __David Bowie__: Contrary to popular belief, he was not the main inspiration behind our company name. But deep in our hearts, we know he _might_ have something to do with it.
 
 
