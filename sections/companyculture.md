@@ -9,3 +9,10 @@ These are the pillars of our company culture:
 * **Always exceed expectations:** We believe in specialisation and on going the extra mile for everything we do. We're not only really good developers, but our delivery is also excellent.
 * **Less is more:** We believe that less is more and that simplicity is beautiful. In the event of having to choose between quality and quantity, we will always err on the side of quality and we will never take rushed-up decisions or actions compromising our principles.
 * **Community-oriented:** We contribute heavily to the startups & tech communities in Barcelona. We mentor new developers, work on open source and organise and sponsor events all year round to help the new generations of startups & tech people in our ecosystem!
+
+If you are interested further in how we address company culture, we have a few blog entries about this topic:
+
+* [How We Came Up With Our Company Culture](https://marsbased.com/blog/2019/07/30/how-we-came-up-with-company-culture/)
+* [Our Company Culture Helps Us to Hire Faster and Better. Here's How!](https://marsbased.com/blog/2019/08/26/our-company-culture-helps-hiring-faster-better/)
+* [Leading by Example: Transmitting Company Culture in Your Organisation](https://marsbased.com/blog/2019/09/04/leading-by-example/)
+* [Maintaining Company Culture in Remote Environments](https://marsbased.com/blog/2019/09/09/maintaining-company-culture-remote-environments/)
