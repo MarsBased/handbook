@@ -1,19 +1,29 @@
-# Hiring
+# Become a Martian
 
-We grow organically by hiring 2-3 people every year. For the first five years of the company, we only hired very senior profiles, but we've loosened up a bit now to accommodate all kinds of different projects.
+## Join our team
 
-We are currently hiring, to increase our Ruby and JS teams, but for a more up-to-date, check the <a href="https://marsbased.com/jobs" title="MarsBased jobs" target="_blank">Jobs section</a> on our website.
+We grow organically by hiring 2-3 people annually. If you wish to join our team, please visit the [Jobs page](https://marsbased.com/jobs) on our website, where we post all our job openings. If there is no suitable position, you are welcome to apply using [this form](https://marsbased.typeform.com/to/XRf2DQ). Please note that due to the high volume of applications, we may not be able to respond to every candidate. However, we **always** provide a yes or no response to all the applicants we interview.
 
-# Referrals
+## The hiring process
 
-As a small company, we can’t do everything. We’ve tried outsourcing part of the hiring, but the truth is that it hasn’t worked well. Hiring agencies haven’t proved very useful to us. Job boards, on the contrary, work pretty well.
+Our head of people, Elisabet Renom, reviews all the candidate applications. She evaluates non-technical aspects of the candidature, such as the applicant's place of residence (we tend to hire more in Spain, Portugal, or other southern European countries), language skills, years of experience at each company, and cover letter.
 
-However, internal referrals work well, too.
+Elisabet selects the candidates who best fit the open position and interviews them. This initial interview aims to get to know the applicant and assess non-technical factors. All interviews are conducted online and typically last an hour. The communication between MarsBased and the company is conducted via email. We do not make phone calls or send WhatsApp messages.
 
-This company is based on the foundations of a good and strong relationship between employees, and in some cases, these relationships come from before. 
+If the candidate successfully passes this interview, we will then schedule a second interview with our CTO. This technical interview lasts for two hours and enables us to learn more about the candidate's background as a developer or tech lead.
 
-Our first employee (Javier Pérez), David Gómez and Àlex (CEO) used to work together in VASS. Jordi, Xavi, Juan and Javier worked together in GreenData. Pablo and David Garmendia coincided in a company in Asturias. Oriol, we met him in the early days of MarsBased when he was running his company, Dineyo. We also met one of our long-term freelancers, Pablo at the Startup Grind Barcelona events.
+Finally, if the candidate succeeds in the technical interview, we schedule another video call to perform a technical test. This is not a coding exercise, but rather a discussion where we ask the developer how they would architect a solution to a given problem. It usually takes an hour.
 
-If you want to work again with someone you like, be it a friend or simply someone you respect and admire, we can give it a try. If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him.
+## What do we value most
 
-We will pay the bonus after the third month of that person in the company.
+Some of our most important considerations when evaluating a candidate are (in no particular order):
+
+* Strong English speaking and writing skills.
+* Developer experience and skills matching the job requirements.
+* Stable employment history without frequent job changes.
+* Honest, transparent, humble, and open-minded personality that fits our team.
+* Interest and enthusiasm to join our company.
+* Residence in Spain, Portugal, or another southern European country.
+* Experience working remotely, either from home or a coworking space.
+* Reasonable salary expectations aligned with market rates and seniority.
+* Punctuality and professionalism when attending interviews and responding to emails.
