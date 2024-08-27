@@ -19,7 +19,7 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Project types](/sections/projects.md)
 1. [Current projects](/sections/currentprojects.md)
 1. [How we work](/sections/howwework.md)
-1. [Operations](/sections/operations.md)
+1. [Who is who](/sections/who-is-who.md)
 1. [Development](/sections/development.md)
 1. [Our rituals](/sections/rituals.md)
 1. [Open Source](/sections/opensource.md)
