@@ -1,14 +1,10 @@
 # Careers at MarsBased
 
-Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover. We go for _years_ without losing employees. Betweeen October 2017 and October 2021, we went for four years without losing any team member.
-
-While in other companies employees stay on average one year (or less!), at MarsBased the average is almost five years and counting!
+Everything we do, we do it thinking in the long term. We pride ourselves on the fact that we don't have employee turnover. We go for _years_ without losing employees. While in other companies employees stay on average one year (or less!), at MarsBased the average is almost five years and counting!
 
 This means that we would like to have you for years to come with us, so we can grow together.
 
 ## Career plans?
-
-We're working on a framework to create our own career plans, to think about how we can contribute to developing the careers of our employees every day.
 
 Being a small company gives us the advantage of being able to sit down with our employees on a regular basis and define their career plan with them: no arbitrary goals, no force-fed promotion to management, no bullshit.
 
@@ -30,7 +26,7 @@ We've got a lot of projects going on, some bigger than others. We try to rotate 
 
 We are a small-sized company. We don't have a lot of roles.
 
-We have a layer of __Management__, consisting of the three founders of the company, but that's mostly all regarding titles.
+We have a layer of __Management__, consisting of the three founders of the company, and Leire/Eli, our Head of People, who enables all of us to work better and makes the company run more efficiently, but that's mostly all regarding titles.
 
 The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a developer.
 
@@ -45,8 +41,6 @@ First, the __Tech Lead__, which is a very senior programmer who manages technica
 Then we've got the __Senior Developers__, which are the most common roles we're hired for. And then, naturally, the __Developers__, who are slightly less experienced than the Senior Developers.
 
 Again, this is just a role. You can be a Senior Developer in Rails for one project while being a Developer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
-
-In the middle of all of them, there's the key role of the __Head of People Operations__, Leire, who enables all of us to work better and makes the company run more efficiently.
 
 ## Salaries
 
