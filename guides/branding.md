@@ -12,81 +12,64 @@ __Note:__ If you're reading this section using Github's dark mode, you might not
 
 Our main logo is the one with the name of the company:
 
-<img width="547" alt="04-MB-LOGOTIPO" src="https://user-images.githubusercontent.com/6558119/124117809-db937b00-da70-11eb-8c7d-fc9009c45d52.png">
+<img width="547" alt="Main logo" src="/assets/logo-black.png">
 
-Sometimes, when we're forced to use a smaller logo or one with squared proportions, we use this one instead:
+Over dark backgrounds, we prefer using the red version of the logo. This is the logo used on <a href="https://marsbased.com/" title="MarsBased website" target="_blank">our website</a>:
 
-<img width="152" alt="07-MB-LOGOTIPO_REDUCCIÓN" src="https://user-images.githubusercontent.com/6558119/124117843-e221f280-da70-11eb-8980-f20e7e67cb30.png">
+<img width="547" alt="Main logo over dark backgrounds" src="/assets/logo-red.png">
 
-The small one is the one we usually include in our social profiles.
+We have an alternative white version of the logo, but we don't use it very often nowadays:
 
-Preferably, we use the black and white logos, but we've got other options too.
+<img width="547" alt="Alternative logo over dark backgrounds" src="/assets/logo-white.png">
 
-On black backgrounds, you first will use the white letters logo, and if the occasion suits it, the red letters logo. For most cases, the white letters logo will do, but on our corporate templates, for instance, we use a lot of red in other elements of the documents (page number, separators, tables, etc.). If red is a prominent colour on the document, you might want to use the red versions instead.
+Finally, we sometimes use green/turquoise when the red color is already highly prominent, or used by a different title, like on our <a href="https://podcast.marsbased.com/" target="_blank" title="Life on Mars">podcast website</a>:
 
-White letters on transparent background, full name:
+<img width="547" alt="Alternative logo" src="/assets/logo-green.png">
 
-<img width="547" alt="05-MB-LOGOTIPO" src="https://user-images.githubusercontent.com/6558119/124117611-a2f3a180-da70-11eb-8b6d-1564d221d215.png">
+Only use the green/turquoise logo over a #262728 background, like in this example:
 
-Red letters on black background, full name:
+<img width="547" alt="Alternative logo example" src="/assets/logo-green-example.png">
 
-<img width="547" alt="06-MB-LOGOTIPO" src="https://user-images.githubusercontent.com/6558119/124117640-ab4bdc80-da70-11eb-8dd7-a0bee52237b9.png">
+# Icon / Abbreviated
 
-White letters on black background, abbreviated name:
+Sometimes, when we're forced to use a smaller logo or one with squared proportions, we use the following ones instead:
 
-<img width="152" alt="08-MB-LOGOTIPO_REDUCCIÓN" src="https://user-images.githubusercontent.com/6558119/124117703-bacb2580-da70-11eb-9bbc-2d0e46a4807d.png">
+<img width="152" alt="Main abbreviated logo" src="/assets/logo-squared-black.png">
 
-Red letters on black background, abbreviated name:
+<img width="152" alt="Main abbreviated logo over dark backgrounds" src="/assets/logo-squared-red.png">
 
-<img width="152" alt="09-MB-LOGOTIPO_REDUCCIÓN" src="https://user-images.githubusercontent.com/6558119/124117707-bc94e900-da70-11eb-9949-f8b2bee39700.png">
+<img width="152" alt="Alternative abbreviated logo over dark backgrounds" src="/assets/logo-squared-white.png">
 
-# Margins
+<img width="152" alt="Alternative abbreviated logo" src="/assets/logo-squared-green.png">
 
-Consider respecting the space around the logos to let it breathe. Do not stack it right on top of other logos or next to other logos with no space between them. Here are some indications as to how much space is recommended:
+Follow the same color principles explained above.
 
-![image](https://user-images.githubusercontent.com/6558119/124118127-4644b680-da71-11eb-862a-05571298278c.png) 
+# Social profile picture
 
-And for the reduced logo:
+In social networks, platforms, and tools, where we need to display a company profile picture, we typically use one of the following options:
 
-![image](https://user-images.githubusercontent.com/6558119/124118158-5066b500-da71-11eb-8073-ed8281fce9e8.png)
+<img width="152" alt="Social picture" src="/assets/logo-social-red.png">
 
-# Logo sizes
-
-Our logo may be used in all sizes to increase its legibility. However, we recommend not making them smaller than:
-
-* __Full name logo:__
-  * Digital: 140px (width) 
-  * Print: 70mm (width)
-* __Reduced name logo:___
-  * Digital: 140px (width)
-  * Print: 8mm (width)
+<img width="152" alt="Alternative social picture" src="/assets/logo-social-green.png">
 
 # Corporate colours
 
-We use three main colours in all of our communications and assets:
+We use the following colours in all of our communications and assets:
 
-__MB Black–Space ©__ 
+__Red Mars ©__
 
-* CMYK: 82, 74, 60, 92 
-* RGB: 12, 9, 9
+* RGB: 255, 0, 51
+* CMYK: 0%, 100%, 80%, 0%
+* HEX: #FF0031
 
-__MB White–Rocket ©__
+__Green Martian ©__
 
-* CMYK: 0, 7, 6, 8 
-* RGB: 242, 240, 238
+* RGB: 0, 255, 191
+* CMYK: 100%, 0%, 25%, 0%
+* HEX: #00FFBE
 
-__MB Digital–Mars ©__ 
+__Grey Space Suit ©__
 
-* CMYK: 0, 80, 64, 0 
-* RGB: 247, 81, 77
-
-# Social image
-
-Please use this image when linking to content by MarsBased and you haven't been given a specific image:
-
-![share](https://user-images.githubusercontent.com/6558119/124573053-79a88c00-de49-11eb-80c8-e7193a7c0822.jpg)
-
-
-# Further uses
-
-If you want to learn more about secondary colours, in-document placing, fonts and much more, refer to our internal <a href="https://drive.google.com/open?id=1yqnRmVj67-C4vRgOxUfarDnPKkkTO7jk&authuser=alex.rodriguez%40marsbased.com&usp=drive_fs" target="_blank">Branding Guidelines</a> (only available to MarsBased team members).
+* RGB: 38, 39, 40
+* CMYK: 5%, 2%, 0%, 84%
+* HEX: #262728
