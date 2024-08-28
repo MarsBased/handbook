@@ -28,6 +28,7 @@ The folders distribution hasn't changed that much:
 * _Martian Tapas_, where you can find the Martian Tapas recordings;
 * a _Design_ folder with the company logos and images;
 * _Organization_, which contains the Forecast & Time Off spreadsheet, among other documents;
+* _Team_ includes a short biography of each one of your Martian colleagues (some of them are very funny!);
 * _Guides_, with books, guides, and training resources;
 * and finally, _Martian Days_, with company presentations.
 
