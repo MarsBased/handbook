@@ -41,7 +41,7 @@ The Backlog is our list of pending work, sorted by priority (urgent, high, mediu
 
 ## 3. <a name='cycles'></a>Cycles
 
-Cycles are like development sprints but with a different name. We work in bi-weekly sprints (or cycles 😅). The active cycle is where the development takes place. We typically plan the next development cycle right before finishing the previous one. Project managers and tech leads decide what's included according to the client's needs and the project priorities (we always try to mix technical improvements and maintenance tasks with new features).
+Cycles are like development sprints but with a different name. We work in three-week sprints (or cycles 😅). The active cycle is where the development takes place. We typically plan the next development cycle right before finishing the previous one. Project managers and tech leads decide what's included according to the client's needs and the project priorities (we always try to mix technical improvements and maintenance tasks with new features).
 
 When it comes to cycle planning, we always leave room for new urgent tasks or unforeseen situations by leaving 15-20% of our capacity unplanned.
 
@@ -65,7 +65,7 @@ In other ones, where we can effectively apply a continuous delivery approach, we
 - **To be deployed:** A task has passed the code review and has been merged, but it is still not deployed anywhere.
 - **Staging:** Tasks deployed to the staging environment. The project manager (or the client, sometimes) does another review of the task in the staging environment.
 - **Done:** When a task gets the final OK, it is moved to Done.
-- **Cancelled:** Tasks that have been cancelled because they are duplicated or no longer needed.
+- **Canceled:** Tasks that have been canceled because they are duplicated or no longer needed.
 
 ## 6. <a name='fields'></a>Fields
 
