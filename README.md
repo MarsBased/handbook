@@ -49,6 +49,11 @@ For now, we have the following resources available:
 1. [Some of our used programming patterns](/guides/patterns/README.md)
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
+2. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
+3. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
+4. [Coding guidelines](/guides/development/coding-guidelines.md)
+5. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+6. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
 
 # Other useful resources
 
