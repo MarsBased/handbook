@@ -36,7 +36,6 @@ For now, we have the following resources available:
 
 1. [Branding guidelines](/guides/branding.md)
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
-1. [Our project management guidelines](/guides/pm-guidelines.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
 1. [Our blogging guide](/guides/blogging-guide.md)
 1. [How to write a damn good blog post](/guides/how-to-blog.md)
