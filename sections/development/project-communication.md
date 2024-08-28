@@ -51,6 +51,8 @@ It is advisable to create meeting notes for the meeting and prepare them in adva
 
 ## Internal communication
 
+We avoid daily meetings to maximize development time. However, we maintain constant communication through Slack, Linear, and video calls. 
+
 At the beginning of the week, we will hold a project internal meeting with everyone involved. The meeting should not exceed 30 minutes. We do not conduct daily meetings, as we believe they are an inefficient use of time. However, you will be asked to respond to a brief automated Slack message at the end of your workday, summarizing your progress.
 
 ## Organization
