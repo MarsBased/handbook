@@ -24,8 +24,9 @@ Find below examples of products as well as the budget up to which the company is
 
 Given the tools we use, we recommend getting a Mac or Linux, but we're open to adapt to your preferences as much as possible. As a default, we offer the following two options:
 
-* [MacBook Air (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
-* [Mac Mini M2 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
+* [MacBook Air M3 (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
+* [MacBook Pro M4 (14”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-pro/)
+* [Mac Mini M4 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
 * [Slimbook Executive 14 with Ubunto or Linux Mint (14", 32GB RAM, 1TB NVMe)](https://slimbook.com/en/shop/product/executive-14-intel-i7-13700h-black-1112?category=8)
 
 #### Chair (200€)
