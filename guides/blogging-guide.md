@@ -1,16 +1,16 @@
 # The MarsBased Blogging Guide
 
-We’ve been blogging for some time now, and we’ve learnt a thing or two. Because we’ve adopted transparency as an integral part of the company culture, we like sharing what we learn with you. It’s a genuine way to give back to the community that has helped so much become what we are now.
+We’ve been blogging for over ten years now, and we’ve learnt a thing or two. Because we’ve adopted transparency as an integral part of the company culture, we like sharing what we learn with you. It’s a genuine way to give back to the community that has helped so much become what we are now.
 
-In this entry, we will cover how to create a blogging strategy for your company.
+In this guide, we will cover how to create a blogging strategy for your company.
 
-We’re really proud of how and what we blog, because it helps us keeping track of our evolution as a global development shop, and feel like this could prove useful to many others that come after us. Exactly the same way we learnt from others like [Buffer](http://www.buffer.com "Buffer"), [Dockyard](http://dockyard.com "Dockyard"), [Thoughtbot](http://thoughtbot.com "Thoughtbot") or other blogs we follow.
+We’re really proud of how and what we blog, because it helps us keeping track of our evolution as a business and development consultancy, and feel like this could prove useful to many others that come after us. Exactly the same way we learnt from others like [Buffer](http://www.buffer.com "Buffer"), [Dockyard](http://dockyard.com "Dockyard"), [Thoughtbot](http://thoughtbot.com "Thoughtbot") or other blogs we follow.
 
 Previously, we published the [first part of our blogging guide](/blog/2015/05/05/The-MarsBased-Blogging-Guide/ "The MarsBased Blogging Guide pt.1"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
 
-Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO, and helps you demonstrate your expertise to a very large audience.
+Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO, and helps you prove your expertise to a very large audience.
 
-In this second part, we’re going to describe how to choose a blogging strategy for your company.
+In this guide, we’re going to describe how to choose a blogging strategy for your company.
 
 # Choose a goal
 
@@ -18,11 +18,11 @@ First and foremost, one must identify what is the purpose of his/her blog. A blo
 
 One of the most common uses is content marketing. In this case, companies blog about the topics they want to be identified with and thus, they create new content for their site on a frequent basis. This content, in turn, attracts potential customers to their sales funnel. Google and most search engines like original content that updates regularly, hence being blogs a most useful tool.
 
-At MarsBased we use it to drive qualified traffic to our website, so we made it a key element in our sales toolset.
+At MarsBased we use it to drive qualified traffic to our website and attract talent, so we made it a key element in our sales toolset.
 
 When we created the company, we didn’t have that much of a strategy, so we wrote posts about our company evolution: what we did and why we did it. However, some of these posts helped us rank high enough in search engines because they contained the right keywords. For instance, our most visited blog entry is [this one we wrote about our tech stack](/blog/2014/03/24/how-we-make-the-right-app2/ "MarsBased tech stack").
 
-We have received a couple of project requests because of our post about technologies. In that post, we didn’t only show our expertise on the listed tools, but the content also made us rank higher on Google, especially in high-demanded technologies like AngularJS or Sidekiq because they’re specific enough to be very visible to the few people that google them.
+We have received many project requests over the years because of our posts about technologies. In that post, we didn’t only show our expertise on the listed tools, but the content also made us rank higher on Google, especially in high-demanded technologies like Angular (back in 2014-15) or Sidekiq because they’re specific enough to be very visible to the few people that google them.
 
 And that brings us to the next section.
 
@@ -54,7 +54,7 @@ The best blogs often cover just one specific topic. It might be travel, entrepre
 
 If you’re bootstrapping a company, you will most likely neither have the time to blog, nor the resources to have somebody do that for you. A good tip is to start small by covering a single topic. For instance, our buddies at [Quipu](https://getquipu.com/en "Quipu"), a personal finances app (built using Ruby on Rails!), chose to target small companies and freelancers/contractors that want to automate their bookkeeping. As a result of that, they are [blogging about personal finances](http://getquipu.com/blog/ "Quipu Blog"): how to do paperwork, how-to guides on taxes & forms, common mistakes in bookkeeping and tips about saving money on taxes are some of the topics they’ve dealt with.
 
-It might look obvious, but if you write about startups and entrepreneurship, don't review your most favourite restaurants. It's OK to go offtopic every once in a while, but not every second post.
+It might look obvious, but if you write about startups and entrepreneurship, don't review your most favourite restaurants. It's OK to go offtopic every once in a while, but not in every second post.
 
 The bottom line here is that choosing the right topics attracts like-minded people, it’ll rank great in Google and you can share it in niche groups or publications to be exposed to a larger audience.
 
@@ -85,7 +85,8 @@ First of all, you should take into account your time zone. Say, if you’re an o
 According to [Buffer](http://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
 
 Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Google Analytics"), [Medium](http://medium.com "Medium") and many Wordpress plugins are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
-**Key question:** When are your target readers most prone to devote some time to read you?
+
+**Key question:** When are your target readers most likely to invest some time to read you?
 
 # Produce content worth sharing
 
@@ -128,8 +129,12 @@ Things you can do:
 * Join blog listings.
 * Post your content in LinkedIn/Reddit/Quora/Facebook groups.
 * Automate your social network accounts to publish automatically every new entry using tools like IFTTT.
-* Ask famous people on Twitter to retweet you (do it only if the content relates to them).
+* Mention on social media other companies/individuals mentioned in the article, so they're notified about it (most people will engage with the content!)
 * Add it to your signature.
 * Etc.
 
 **Key question:** Where do you want your blog to get noticed?
+
+# Last but not least, what about AI?
+
+Don't ever write stuff using AI. We use it only to generate new ideas of a specific topic or to discuss the pros and cons of writing a certain article via a conversation so you can refine your angle, but the writing is 100% done by humans.
