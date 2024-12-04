@@ -8,7 +8,7 @@ Team members are asked to choose the local holidays that best suit them: Barcelo
 
 Feel free to exchange any local holidays for another normal day, any time.
 
-Use the [Forecast & Time Off](https://docs.google.com/spreadsheets/u/0/d/1F70bT40_mTTWUZZlGvcQmjlfNzoqQZSywA0fpHHUZaM/edit) Google Sheet to review your local holidays and days off, and to check your teammates' schedules.
+Use the [2025 Time Off](https://docs.google.com/spreadsheets/d/1kX1bUUjUc9MJWNqbx4z5NvWUsieUL0znwmiw2MVATIo/edit?usp=sharing) Google Sheet to review your local holidays and days off, and to check your teammates' schedules.
 
 > [!TIP]
 > Bookmark this Google Sheet for easy access, as you will have to access it often.
@@ -17,7 +17,7 @@ Use the [Forecast & Time Off](https://docs.google.com/spreadsheets/u/0/d/1F70bT4
 
 We officially have 24 working days per year to take off apart from the local holidays mentioned above.
 
-To request new holidays, open the [Forecast & Time Off](https://docs.google.com/spreadsheets/u/0/d/1F70bT40_mTTWUZZlGvcQmjlfNzoqQZSywA0fpHHUZaM/edit) Google Sheet and simply add a comment in the row named after you. Jordi will be automatically notified and will review the requests and approve them, adding another comment and notifying you back.
+To request new holidays, open the [2025 Time Off](https://docs.google.com/spreadsheets/d/1kX1bUUjUc9MJWNqbx4z5NvWUsieUL0znwmiw2MVATIo/edit?usp=sharing) Google Sheet, go to the tab/sheet named after you, and simply add a comment in the vacations column. Elisabet will be automatically notified and will review the requests and approve them, adding another comment, and notifying you back.
 
 > [!TIP]
 > To request multiple days off, add a comment to the first day's request, specifying all the days you need.
