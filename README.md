@@ -25,7 +25,8 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Talks & Podcasts](/sections/talks.md)
 1. [Benefits & Perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/holidays.md)
-2. [Buddy System](/sections/buddy.md)
+2. [Travel policy](/sections/travelpolicy.md)
+3. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
 2. [Become a Martian](/sections/become-a-martian.md)
 
