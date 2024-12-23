@@ -2,7 +2,7 @@
 
 ## Before the project: sales
 
-We don’t take every project. Bad matches include: People who want to pay with equity, companies unlikely to understand our working methods, PHP PROJECTS, unreasonable and/or arbitrary deadlines, companies competing with our existing customers and so on.
+We don’t take every project. Bad matches include: People who want to pay with equity, companies unlikely to understand our working methods, unreasonable and/or arbitrary deadlines, companies competing with our existing customers and so on.
 
 Our sales workflow is mostly executed by Àlex and complemented by someone from the tech team doing the estimates for the quote (usually Xavi and/or Jordi).
 
