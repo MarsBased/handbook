@@ -16,7 +16,8 @@ You can find a description of the technologies we use in the services pages of o
 *  __[Angular](https://marsbased.com/services/Angular)__
 *  __[Shopify](https://marsbased.com/services/Ecommerce)__
 *  __[Technical Audits](https://marsbased.com/services/techaudits)__
-*  __[Artifical Intelligence](https://marsbased.com/services/ai)__
+*  __[Artificial Intelligence](https://marsbased.com/services/ai)__
+*  __[UI/UX design](https://marsbased.com/services/design-ui-ux)__
 
 The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform. We have also become very strong in AI over the years, integrating AI features and helping companies from as far back as 2014!
 
