@@ -13,8 +13,8 @@ We will check in with you regularly and define together a set of goals for you t
 A few examples of this are:
 
 * To work on at least two mid-sized projects in a new technology you don't know.
-* To be in charge of the devops responsibilities in all the projects you're in.
-* To be able to manage international projects successfully
+* To be in charge of the DevOps responsibilities in all the projects you're in.
+* To be able to manage international projects successfully.
 * To contribute at least once per month to the blog of the company with technical blog posts.
 * Etc.
 
