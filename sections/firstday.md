@@ -6,11 +6,11 @@ It is a great pleasure to welcome you to the MarsBased spaceship. This will be a
 
 Take a few minutes to go through the different sections below. They will help you to get familiar with the company, the tools you'll be using, the team, etc.
 
-* [Your Spaceship set-up 🚀](#your-spaceship-set-up-)
+* [Your Spaceship setup 🚀](#your-spaceship-set-up-)
 * [Your profile & preferences 🧑‍🚀](#your-profile--preferences-astronaut)
 * [Guided with :heart: by Martians](#guided-with-heart-by-martians)
 
-## Your Spaceship set-up 🚀
+## Your Spaceship setup 🚀
 
 ### Contract
 
@@ -18,7 +18,7 @@ You should have received the work contract for your revision a few days before y
 
 ### Material
 
-You should have received your laptop and material by now. If you need any other equipment to work comfortably, feel free to let us know.
+You should have received your laptop and material, by now. If you need any other equipment to work comfortably, feel free to let us know.
 
 As part of the welcome pack, you will also receive a copy of the following books:
 
@@ -28,11 +28,11 @@ As part of the welcome pack, you will also receive a copy of the following books
 
 ### Tools
 
-Make sure you've got access to these main tools. Set up your profile, including your picture.
+Make sure you've got access to the following tools. Set up your profile, including your picture.
 
 #### Gmail
 
-Access your account, and you'll find a bunch of emails regarding the access and setup of the tools listed below.
+Access your account, and you'll find a few emails regarding the access and setup of the tools listed below.
 
 Configure your email signature following the structure below. It can't be shown here on GitHub, but "MarsBased" goes in color `rgb(231,76,60)`. If it's easier, you can grab the example of someone else's signature from the emails you've exchanged with us.
 
@@ -46,7 +46,7 @@ MarsBased
 
 You’ll find all the relevant documentation such as our guidelines, procedures, and activities of the company as well as our client projects here. To name a few:
 
-* [Forecast & Time Off](https://docs.google.com/spreadsheets/d/1F70bT40_mTTWUZZlGvcQmjlfNzoqQZSywA0fpHHUZaM/edit?gid=1199178965#gid=1199178965): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
+* [Forecast & Time Off](https://docs.google.com/spreadsheets/d/1kX1bUUjUc9MJWNqbx4z5NvWUsieUL0znwmiw2MVATIo/edit?gid=0#gid=0): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
 * [Google Drive Guidelines](https://docs.google.com/document/d/1YHNPSgsB8g0jLqu0jnKVarWFom-bEEENa1-rTP5zDqs/edit#heading=h.oolhxniimdhk): What documentation do we place in Google Drive and what other do we place in Github?
 * [Security Guidelines](https://docs.google.com/document/d/1FsCzS0RTGBO3BMzIq-hjnjKxqV6v5gHQFf7Pam4fy4Q/edit#heading=h.ly0rzhbv9kd6): Compiling good security practices to apply on yourself and your own devices.
 
@@ -93,7 +93,6 @@ You can find the rest of the tools in the How We Work section 🖖
 
 Please send Leire or Eli the following information so that we can include your profile on our website and link to the different channels:
 
-* Twitter handle (preferably a “professional” one).
 * Github username.
 * A picture for the website.
 * A couple of fun facts about you for your bio (2 lines max).
