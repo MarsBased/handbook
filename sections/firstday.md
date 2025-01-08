@@ -46,7 +46,7 @@ MarsBased
 
 You’ll find all the relevant documentation such as our guidelines, procedures, and activities of the company as well as our client projects here. To name a few:
 
-* [Forecast & Time Off](https://docs.google.com/spreadsheets/d/1kX1bUUjUc9MJWNqbx4z5NvWUsieUL0znwmiw2MVATIo/edit?gid=0#gid=0): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
+* [Time Off](https://docs.google.com/spreadsheets/d/1kX1bUUjUc9MJWNqbx4z5NvWUsieUL0znwmiw2MVATIo/edit?gid=0#gid=0): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
 * [Google Drive Guidelines](https://docs.google.com/document/d/1YHNPSgsB8g0jLqu0jnKVarWFom-bEEENa1-rTP5zDqs/edit#heading=h.oolhxniimdhk): What documentation do we place in Google Drive and what other do we place in Github?
 * [Security Guidelines](https://docs.google.com/document/d/1FsCzS0RTGBO3BMzIq-hjnjKxqV6v5gHQFf7Pam4fy4Q/edit#heading=h.ly0rzhbv9kd6): Compiling good security practices to apply on yourself and your own devices.
 
