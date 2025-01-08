@@ -79,7 +79,7 @@ Used for sync communications, and also to communicate with a few clients who wan
 
 To track your hours. This tool is used to invoice our clients. Ensure you have attributed all your hours worked at the end of each day.
 
-### Forecast
+#### Forecast
 
 It's a project assignment tool that allows you to view project assignments, see who is working on each project, check the start and end dates, and see your teammates' availability.
 
