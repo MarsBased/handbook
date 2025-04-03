@@ -1,4 +1,4 @@
-la f# The MarsBased Handbook 🚀
+# The MarsBased Handbook 🚀
 
 Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
 
