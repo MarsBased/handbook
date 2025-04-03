@@ -132,7 +132,7 @@ If using OpenAI's API:
 
 ## 🎁 Cheat Code: Prompt Structure
 
-[Persona or role]
++ [Persona or role]
 + [Clear task]
 + [Context]
 + [Constraints]
