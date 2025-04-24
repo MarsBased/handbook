@@ -1,10 +1,5 @@
 # Team organisation
 
-1. [Project Manager](#ProjectManager)
-2. [Tech Lead](#TechLead)
-3. [Developer](#Developer)
-4. [Developer - Reviewer contract](#Contract)
-
 We organise the people working on a project in three different roles:
 
 - Project Manager
@@ -13,7 +8,7 @@ We organise the people working on a project in three different roles:
 
 In some projects, the same team member can do multiple roles. A common situation is the tech lead doing the project management role or a developer also managing the communcation with the client.
 
-## 1. <a name='ProjectManager'></a>Project Manager
+## Project Manager
 
 Person in charge of the top-level tasks required by the client, communicating between their team and the MarsBased team effectively.
 
@@ -38,7 +33,7 @@ __Duties:__
   - Communicate proactively with the team and clients providing transparent information on the state of the project and thus avoiding snowball effects.
   - Act as the liaison between clients and developers.
 
-## 2. <a name='TechLead'></a>Tech Lead
+## Tech Lead
 
 A senior developer able to take ownership of the code developed by the team and help the client to improve their code. Oftentimes, a sort of interim CTO for the projects, too, able to define architecture and take high-level decisions on critical aspects.
 
@@ -52,10 +47,11 @@ __Duties:__
   - The changes introduced meet the requirements needed, no more and no less.
   - The changes don't introduce obvious bugs.
 - Write technical specifications for tasks.
+- Estimate the effort required to complete each task.
 - Perform research tasks to solve complex problems / requirements.
 - Decide 3rd party services to use (DevOps, log management, error tracking, etc.)
 
-### 3. <a name='Developer'></a>Developer
+## Developer
 
 Developers are in charge of building and maintaining the software following the previous analysis made by the Project Manager and the Tech Lead.
 
@@ -64,10 +60,11 @@ __Duties:__
 - Create the best possible code for each feature, following the guidelines provided by the Tech Lead.
 - Test extensively every issue to make sure it doesn't introduce new bugs, either in the feature itself or by producing regressions in the codebase.
   - Not only the happy path!
-- Review continuously his/her own code before passing it to reviewers. The sooner a problem is detected, the faster and easier will be to fix it.
+- Review continuously their own code before passing it to reviewers. The sooner a problem is detected, the faster and easier will be to fix it.
 - Release the code effectively, caring not to produce undesired side-effects (like downtime) in production stages.
 - Communicate blocking problems, delays and other issues to the Tech Lead in due time.
+- Update our task board on a daily basis.
 
-### 4. <a name='Contract'></a>Developer - Reviewer contract
+## Developer - Reviewer contract
 
 Collaboration between tech leads and developers in a team is governed by the [Developer - Reviewer contract](/guides/development/developer-reviewer-contract.md). If you are going to work as either a developer or tech lead, read it carefully because you will need to make sure you comply with it all the time.

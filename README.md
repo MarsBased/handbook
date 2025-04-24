@@ -2,7 +2,7 @@
 
 Welcome to **MarsBased**! This is the first thing you should read when boarding the **MarsBased** spaceship.
 
-MarsBased is an async-first all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails and JavaScript.
+MarsBased is an all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails, Python and JavaScript. We work at the intersection of business and technology, to help companies with their innovation projects using bleeding-edge technologies like AR/VR and AI.
 
 Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
@@ -19,16 +19,16 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Project types](/sections/projects.md)
 1. [Current projects](/sections/currentprojects.md)
 1. [How we work](/sections/howwework.md)
-1. [Operations](/sections/operations.md)
+1. [Who is who](/sections/who-is-who.md)
 1. [Development](/sections/development.md)
 1. [Our rituals](/sections/rituals.md)
-1. [Open Source](/sections/opensource.md)
 1. [Talks & Podcasts](/sections/talks.md)
-1. [Hiring](/sections/hiring.md)
-1. [Benefits & perks](/sections/benefits.md)
+1. [Benefits & Perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/holidays.md)
-1. [Buddy System](/sections/buddy.md)
+2. [Travel policy](/sections/travelpolicy.md)
+3. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
+2. [Become a Martian](/sections/become-a-martian.md)
 
 # Our guides
 
@@ -36,7 +36,7 @@ For now, we have the following resources available:
 
 1. [Branding guidelines](/guides/branding.md)
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
-1. [Our project management guidelines](/guides/pm-guidelines.md)
+1. [Prompt engineering basics](/guides/prompts.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
 1. [Our blogging guide](/guides/blogging-guide.md)
 1. [How to write a damn good blog post](/guides/how-to-blog.md)
@@ -50,16 +50,20 @@ For now, we have the following resources available:
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
 1. [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
+2. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
+3. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
+4. [Coding guidelines](/guides/development/coding-guidelines.md)
+5. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+6. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
 
 # Other useful resources
 
 1. <a href="https://marsbased.com" title="MarsBased website" target="_blank">MarsBased website</a>
 1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
-1. <a href="https://pod.link/1516103872" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
-1. <a href="https://pod.link/1516103872" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
+1. <a href="https://podcast.marsbased.com/" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
+1. <a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
 1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
-1. <a href="https://www.youtube.com/channel/UCN95eGlyCaRBa9Iy12mVApg" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
-1. <a href="https://github.com/MarsBased/productivity" title="Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)" target="_blank">Productivity: A repo containing productivity hacks (for now, only TextExpander snippets)</a>
+1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
 # Contributing
 

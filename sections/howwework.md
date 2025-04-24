@@ -2,9 +2,9 @@
 
 ## Remote
 
-We are a remote working company. That means that we don’t have an office to work in. In fact, we have been officeless and 100% remote since the very first day and we don't plan to change this ever.
+We are a remote working company. That means that we don’t have an office to work from. In fact, we have been officeless and 100% remote since the very first day and we don't plan to ever change this.
 
-We will ask you to have your own space where you work from usually. A nice setup, in a comfortable environment with few distractions, works best for most of us.
+We will ask you to have your own space where you usually work from. A nice setup, in a comfortable environment with few distractions, works best for most of us.
 
 Take into consideration that we do calls with our clients, so you need to have fast and reliable internet and a presentable background for the video calls.
 
@@ -24,7 +24,7 @@ Most one-on-one communication happens over Slack. In order to be all on the same
 
 This way, we also avoid clients being too intense in private conversations.
 
-If you want to talk about strictly private stuff, then this is a good occasion to do it privately.
+If you want to talk about strictly private stuff, this is a good occasion to do it privately.
 
 ## Video calls
 
@@ -69,5 +69,6 @@ _A grosso modo_ we use the following tools:
 * __Slack__: For one-to-one communication, and also to communicate with a few clients who want to have it.
 * __Github__: Where we store our code.
 * __Harvest__: Where we track our hours. We're also using it to get reports and to invoice clients.
+* __Forecast__: Where we keep track of our project assignments and time off.
 * __Dropbox Sign__: We use it to sign all the documents digitally (NDAs, contracts and whatnot).
 * __Figma__: Our preferred design platform.

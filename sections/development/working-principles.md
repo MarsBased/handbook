@@ -5,7 +5,6 @@
 3. [Let your code history speak for itself](#Letyourcodehistoryspeakforitself)
 4. [Measure twice, cut once!](#Measuretwicecutonce)
 5. [Who watches the watchmen?](#Whowatchesthewatchmen)
-6. [Async is the way](#Asyncistheway)
 
 Those are our principles, and if you don't like them... well, you know how that goes.
 
@@ -63,28 +62,10 @@ Test extensively all use cases. Try to break the code. If you don't do it, an an
 
 After finishing a feature, try to look at the big picture. At this point, it's easier to detect possible improvements.
 
-As a tip, when you are about to open a PR, use the Github web interface (or a local tool like [Gitx](https://rowanj.github.io/gitx/)) to make a review of your own code, as it if were from a different person. Even if you are confident that you know exactly what you have pushed, you surely will find unexpected stuff (like incorrectly pushed changes, a common example in Rails is unintended changes to schema.rb).
+As a tip, when you are about to open a PR, use the Github web interface to make a review of your own code, as it if were from a different person. Even if you are confident that you know exactly what you have pushed, you surely will find unexpected stuff.
 
 It's a good idea to wait some hours or even a day before making this self-review. When you finish working on a task you have tunnel vision about it.
 
 Revisiting it later or the next day will help you to spot mistakes or possible improvements. Give your brain a break.
 
 Applying an improvement left by a reviewer to an open PR needs to be done with extra caution. It's very easy to introduce a bug because the second time we tend to omit exhaustive testing. Remember, any change can lead to new bugs.
-
-## 6. <a name='Asyncistheway'></a>Async is the way
-
-MarsBased operates mainly asynchronously. Having +400 unread messages will cause you problems.
-
-First and foremost, we understand that being up-date with company communications is part of your job. No need to take your personal time after work to catch up with reports, company-wide announcements and whatnot.
-
-Make sure that:
-
-- Your email inbox & notifications are clean. Some important notifications are received by email or Basecamp. For example, new issues being posted. A review being done. A task priority change.
-- Clean up the sources that send you notifications. Keep only the most meaningful ones to minimise the risk of missing important information.
-  - Disable all Basecamp/Linear notifications you are not interested in.
-  - Disable notifications on shared Slack channels (e.g: #random, #status, #marsbased). Or disable notifications on all channels if you are in too many. If someone needs you for something relevant or important, they will use mentions.
-  - Review and clean your email at least once a day.
-  - Don't use the email as to do list. It's easy to mark as read an important email and forget about it. Use To Do lists instead.
-  - Look for your personal workflows to remember future actions. Each Martian has its own workflow. Ask for tips if you don't know how to do it.
-
-It's ok to spend time on this, it's part of your work as a developer.

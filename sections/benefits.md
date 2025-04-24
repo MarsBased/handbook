@@ -24,8 +24,9 @@ Find below examples of products as well as the budget up to which the company is
 
 Given the tools we use, we recommend getting a Mac or Linux, but we're open to adapt to your preferences as much as possible. As a default, we offer the following two options:
 
-* [MacBook Air (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
-* [Mac Mini M2 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
+* [MacBook Air M3 (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
+* [MacBook Pro M4 (14”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-pro/)
+* [Mac Mini M4 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
 * [Slimbook Executive 14 with Ubunto or Linux Mint (14", 32GB RAM, 1TB NVMe)](https://slimbook.com/en/shop/product/executive-14-intel-i7-13700h-black-1112?category=8)
 
 #### Chair (200€)
@@ -71,7 +72,7 @@ Hope your new purchase meets your expectations and allows you to work more comfo
 
 ## Language courses 🗣
 
-From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in such as Spanish, Japanese, or Basque 😅). You can devote up to one hour per week during the workday to language learning classes without needing to make up the time.
+From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in such as Spanish, Japanese, or Basque 😅). You can invest up to one hour per week during the workday to language learning classes without needing to make up for the time.
 
 ### Budget
 
@@ -87,7 +88,7 @@ For that purpose, you get up to 180€/200$ per quarter to taking on-site/online
 #### How to proceed if using other means
 
 1. Let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-19) your preferred option for taking language lessons.
-2. Make sure the academy or private professor you've chosen is able to issue us an invoice (either monthly or quarterly) so that we can make the payment to them or we can reimburse you for the payment you previously did. The invoice should include the following fiscal data:
+2. Make sure the academy or private professor you've chosen is able to issue us an invoice (either monthly or quarterly) so that we can make the payment to them or we can reimburse you for the payment you previously did. The invoice should include the following billing data:
 
 ```
 MarsBased SL
@@ -122,7 +123,7 @@ We normally hire 2-3 developers per year. We are open to receive recommendations
 
 If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him. We will pay the bonus after the third month of that person in the company.
 
-Let Leire know if you have any recommendation.
+Let Leire/Eli know if you have any recommendation.
 
 This is always a good opportunity to work with people you worked with and liked in the past!
 
@@ -185,7 +186,7 @@ If that's your case and need a coworking space, MarsBased will provide you with 
 
 ### How to proceed
 
-1. Let Leire know your need for a coworking.
+1. Let Leire/Eli know your need for a coworking.
 2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
 3. Normally, coworking spaces require signing a contract and they charge a fee on a monthly basis. Let's see which are the conditions in that specific case, and we'll agree on the easiest way to managing it (can be either directly from MarsBased or through you).
 4. **Let us know beforehand** when you are going to stop using your coworking space either **temporarily or permanently**. Let the coworking know that as well so as to avoid being charged for that period.

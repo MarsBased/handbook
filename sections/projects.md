@@ -2,9 +2,7 @@
 
 ## Before the project: sales
 
-We don’t take every project. Bad matches include: People who want to pay with equity, companies unlikely to understand our working methods, PHP PROJECTS, unreasonable and/or arbitrary deadlines, companies competing with our existing customers and so on.
-
-On the other hand, to learn about what kind of projects we do, check our Playbook: [Chapter 5 - Project Types](https://marsbased.com/playbook/project-types/)
+We don’t take every project. Bad matches include: People who want to pay with equity, companies unlikely to understand our working methods, unreasonable and/or arbitrary deadlines, companies competing with our existing customers and so on.
 
 Our sales workflow is mostly executed by Àlex and complemented by someone from the tech team doing the estimates for the quote (usually Xavi and/or Jordi).
 
@@ -48,7 +46,7 @@ However, there are a few principles that we always apply when we decide to choos
 * Prefer technologies with a strong community behind them. They are likely to be better battle-tested and they will get improvements over time.
 * Be sure to check the license terms of a technology before start using it. We always work with Open Source technologies.
 
-Our current techstack is Ruby on Rails or Node.js for the backend and Angular, Vue.js or React for the frontend.
+Our current techstack is Ruby on Rails, Python or Node.js for the backend and Angular, Vue.js or React for the frontend.
 
 
 
