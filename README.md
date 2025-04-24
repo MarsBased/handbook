@@ -1,6 +1,6 @@
 # The MarsBased Handbook 🚀
 
-Welcome to __MarsBased__! This is the first thing you should read when boarding the __MarsBased__ spaceship.
+Welcome to **MarsBased**! This is the first thing you should read when boarding the **MarsBased** spaceship.
 
 MarsBased is an all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails, Python and JavaScript. We work at the intersection of business and technology, to help companies with their innovation projects using bleeding-edge technologies like AR/VR and AI.
 
@@ -48,6 +48,7 @@ For now, we have the following resources available:
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
 1. [Some of our used programming patterns](/guides/patterns/README.md)
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
+1. [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
 2. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
 3. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
@@ -65,4 +66,5 @@ For now, we have the following resources available:
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
 # Contributing
+
 We encourage you to contribute! Please check out the [Contributing guides](./CONTRIBUTING.md) for guidelines about how to proceed.
