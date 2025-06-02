@@ -337,5 +337,3 @@ Ideally, you should also take care of having all the infrastructure components s
 - **Deployment system**: Kubernetes for example.
 
 ⚠️ IMPORTANT: At some point, major versions of any piece of software stop receiving security updates. When this happens to a major version of a library or other software component, then it's required to update it to a major version to one that still has Long-Term Support (LTS).
-
-

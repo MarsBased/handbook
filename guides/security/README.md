@@ -12,17 +12,17 @@ Good security practices start on yourself and your own devices (laptop, mobile p
 It is crucial to keep the web applications we work on as secure as possible. Even the smallest vulnerability, if exploited in the right way, can be disastrous for a client. Therefore, applying good security practices to the web applications we develop for clients (and even internal applications for MarsBased) is of the utmost importance.
 
 - [Web Application Security Features](web_application_security_features.md)
-- Common attack vectors
-- Admin panel protection
-- User accounts protection
-- Cookies best practices
-- Security related headers
-- Periodical Maintenance Tasks
-- Securing backups
+- [Common attack vectors](common_attack_vectors.md)
+- [Admin panel protection](admin_panel_protection.md)
+- [User accounts protection](user_accounts_protection.md)
+- [Cookies best practices](cookies_best_practices.md)
+- [Security related headers](security_related_headers.md)
+- [Periodical Maintenance Tasks](periodical_maintenance_tasks.md)
+- [Securing backups](securing_backups.md)
 
 ## MarsBased security
 
 There are some cross-client aspects we need to take into account at company level to make sure we minimize the exposure of MarsBased or clients projects and data.
 
-- 3rd Party Software Integrations
-- Off-Boarding
+- [3rd Party Software Integrations](3rd_party_software_integrations.md)
+- [Off-Boarding](off_boarding.md)
