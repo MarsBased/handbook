@@ -9,7 +9,7 @@ Cross-Site Scripting, most commonly known as XSS, is one of the most prominent a
 It consists of injecting an arbitrary script on a page. When another user is browsing the page, it will execute the script. The script could do anything: modify the user cookies, trigger a request on the user's behalf, copy some sensitive data and send it elsewhere, redirect the user to another site, etc.
 
 Any element on a page that renders user input data is susceptible to being vulnerable to XSS attacks.
-
+Even SVG files can be a vector for XSS if not handled carefully. While using an SVG as an `<img src="...">` is generally safe (scripts inside won't execute), injecting raw SVG content into the DOM via `innerHTML` or `dangerouslySetInnerHTML` can execute embedded scripts or malicious elements like `<script>`, `<image onerror>`, or `<foreignObject>`. Always sanitize SVG content before injecting it into the DOM.
 ### Mitigation
 
 There is no single technique to protect against XSS. Protection is achieved by following some best practices:
