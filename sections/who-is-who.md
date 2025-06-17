@@ -29,3 +29,60 @@ For any questions regarding logistics or ways to improve your workday, Leire/Eli
 Leire/Eli also oversees the organization of our public and internal events, such as the Martian Days and company retreats. Additionally, she contributes to our marketing efforts, including the MarsBased newsletter and our YouTube channel.
 
 Leire/Eli is the go-to person for any personal issues, sick leave requests, work schedule changes, or holiday requests.
+
+## Project Managers
+
+Project Managers at MarsBased are at the heart of keeping projects organized and ensuring smooth execution. Their responsibilities include:
+
+- **Organizing and structuring projects** to ensure clarity and focus.
+- **Handling project requests efficiently**, by:
+  - Writing down and accurately describing new issues.
+  - Retaining and applying essential information to resolve both functional and organizational queries.
+- **Communicating precisely**, avoiding vague or unclear messages, and always being accurate in responses.
+- **Unblocking and facilitating progress**, resolving issues independently whenever possible.
+- **Performing effective QA** to uphold our quality standards.
+- **Raising red flags proactively** regarding delays, budget concerns, high-risk decisions, or out-of-scope requests to ensure transparency and risk mitigation.
+- **Managing reporting and coordination**, including:
+  - Preparing regular project reports and status updates for both internal and external stakeholders.
+  - Leading weekly meetings with the client to review progress, align expectations, and address concerns.
+  - Organizing and conducting internal meetings with the project team to ensure alignment, track progress, and identify blockers.
+
+## Tech Leads
+
+Tech Leads play a crucial role in complementing Project Managers and ensuring technical excellence. Their responsibilities include:
+
+- **Owning project delivery**, taking full responsibility for ensuring everything functions as expected.
+- **Reviewing developed tasks promptly**, particularly those marked as “In Review”, when there are no other roles being able to review them.
+- **Thoughtfully define tasks from a technical standpoint** based on the team needs and project requirements.
+- **Proactively sharing project status** updates to keep all stakeholders informed.
+- **Prioritizing and delivering** even under tight deadlines.
+- **Championing company philosophy**, ensuring that developers are familiar with and apply MarsBased guidelines and best practices.
+- **Communicating clearly with clients**, bridging technical execution and client expectations.
+- **Solving problems in unfamiliar technologies**, demonstrating adaptability.
+- **Ensuring continuity**, making sure the project is well managed even in their absence.
+
+## Engineering Managers
+
+Engineering Managers at MarsBased share many responsibilities with Tech Leads but focus more on supporting the entire technical team’s growth and operational excellence. In addition to managing technical projects like Tech Leads, their key duties include:
+
+- **Maintaining high standards of technical delivery**, by mentoring, guiding, and reviewing team outputs.
+- **Leading by example**, balancing hands-on technical problem-solving with strategic oversight.
+- **Driving internal initiatives and technical resources**, by leading internal projects such as the creation and maintenance of security guides, coding guides, and project templates.
+- **Overseeing the elaboration and application of technical guides**, ensuring that best practices and company standards are not only documented but actively applied across all teams.
+- **Maintaining deep technical expertise**, possessing a level of knowledge about MarsBased technologies and infrastructure that is on par with the CTO, enabling them to make informed decisions and provide high-level guidance.
+
+## Developers
+
+Developers at MarsBased are at the core of our delivery. We value not only their ability to write code but also how they contribute to the success of the team, the project, and ultimately, our clients’ businesses. Our developers are expected to be self-driven, pragmatic, and collaborative, always striving for excellence in everything they do.
+
+We believe in a balanced approach that values **communication, accountability, agility, and craftsmanship**.
+
+Communication is the most critical aspect of our developer's day-to-day work. Our fully remote nature means that clear, frequent, and proactive communication is not optional — it is what keeps the spaceship flying.
+
+We expect developers to own the quality of what they build. They are the first line of defense against defects, misunderstandings, and technical debt.
+
+At MarsBased, we value speed, but not at the cost of quality. We believe in thoughtful execution that avoids unnecessary complexity.
+
+We take pride in our craft. Code at MarsBased should reflect clarity, simplicity, and respect for those who will maintain it after you.
+
+Above all, we expect developers to take ownership of their work. This means seeing beyond the immediate task, understanding the “why” behind what we build, and contributing to the success of the entire team. We don’t just ship code — we ship solutions that help our clients succeed.
