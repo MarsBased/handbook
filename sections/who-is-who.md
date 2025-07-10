@@ -47,6 +47,8 @@ Project Managers at MarsBased are at the heart of keeping projects organized and
   - Leading weekly meetings with the client to review progress, align expectations, and address concerns.
   - Organizing and conducting internal meetings with the project team to ensure alignment, track progress, and identify blockers.
 
+  Piloting our missions from Earth to Mars: Cristina, Mateja, and Rodrigo.
+
 ## Tech Leads
 
 Tech Leads play a crucial role in complementing Project Managers and ensuring technical excellence. Their responsibilities include:
@@ -61,6 +63,8 @@ Tech Leads play a crucial role in complementing Project Managers and ensuring te
 - **Solving problems in unfamiliar technologies**, demonstrating adaptability.
 - **Ensuring continuity**, making sure the project is well managed even in their absence.
 
+Making sure our spaceship stays on course: Javier, Juan, Pablo, Carlos, and José Antonio.
+
 ## Engineering Managers
 
 Engineering Managers at MarsBased share many responsibilities with Tech Leads but focus more on supporting the entire technical team’s growth and operational excellence. In addition to managing technical projects like Tech Leads, their key duties include:
@@ -70,6 +74,8 @@ Engineering Managers at MarsBased share many responsibilities with Tech Leads bu
 - **Driving internal initiatives and technical resources**, by leading internal projects such as the creation and maintenance of security guides, coding guides, and project templates.
 - **Overseeing the elaboration and application of technical guides**, ensuring that best practices and company standards are not only documented but actively applied across all teams.
 - **Maintaining deep technical expertise**, possessing a level of knowledge about MarsBased technologies and infrastructure that is on par with the CTO, enabling them to make informed decisions and provide high-level guidance.
+
+Overseeing our tech engines with precision and care: Juan Salvador.
 
 ## Developers
 
@@ -86,3 +92,5 @@ At MarsBased, we value speed, but not at the cost of quality. We believe in thou
 We take pride in our craft. Code at MarsBased should reflect clarity, simplicity, and respect for those who will maintain it after you.
 
 Above all, we expect developers to take ownership of their work. This means seeing beyond the immediate task, understanding the “why” behind what we build, and contributing to the success of the entire team. We don’t just ship code — we ship solutions that help our clients succeed.
+
+The crew coding our way through the galaxy: David, Jose Luis, José, Laura, Alejandro, Mateo, Enrique, Marta, Juan Pablo, Víctor, and Anna.
