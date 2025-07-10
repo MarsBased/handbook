@@ -55,7 +55,7 @@ Tech Leads play a crucial role in complementing Project Managers and ensuring te
 
 - **Owning project delivery**, taking full responsibility for ensuring everything functions as expected.
 - **Reviewing developed tasks promptly**, particularly those marked as “In Review”, when there are no other roles being able to review them.
-- **Thoughtfully define tasks from a technical standpoint** based on the team needs and project requirements.
+- **Thoughtfully define tasks from a technical standpoint** based on the team's needs and project requirements.
 - **Proactively sharing project status** updates to keep all stakeholders informed.
 - **Prioritizing and delivering** even under tight deadlines.
 - **Championing company philosophy**, ensuring that developers are familiar with and apply MarsBased guidelines and best practices.
@@ -83,7 +83,7 @@ Developers at MarsBased are at the core of our delivery. We value not only their
 
 We believe in a balanced approach that values **communication, accountability, agility, and craftsmanship**.
 
-Communication is the most critical aspect of our developer's day-to-day work. Our fully remote nature means that clear, frequent, and proactive communication is not optional — it is what keeps the spaceship flying.
+Communication is the most critical aspect of our developers' day-to-day work. Our fully remote nature means that clear, frequent, and proactive communication is not optional — it is what keeps the spaceship flying.
 
 We expect developers to own the quality of what they build. They are the first line of defense against defects, misunderstandings, and technical debt.
 
@@ -94,3 +94,7 @@ We take pride in our craft. Code at MarsBased should reflect clarity, simplicity
 Above all, we expect developers to take ownership of their work. This means seeing beyond the immediate task, understanding the “why” behind what we build, and contributing to the success of the entire team. We don’t just ship code — we ship solutions that help our clients succeed.
 
 The crew coding our way through the galaxy: David, Jose Luis, José, Laura, Alejandro, Mateo, Enrique, Marta, Juan Pablo, Víctor, and Anna.
+
+## Marketer & Podcast Co-Host
+
+As our Marketer & Podcast Co-Host, David helps bring the MarsBased voice to life by producing the Life on Mars podcast and supporting our blog, newsletter, social media, and YouTube channel. He also maintains our corporate website and contributes to ensuring our marketing engines run smoothly and consistently across all platforms.
