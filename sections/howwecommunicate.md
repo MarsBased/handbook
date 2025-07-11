@@ -4,7 +4,7 @@ Communication is the oxygen of our spaceship. As a remote company, staying align
 
 Here’s how we utilize our tools, along with some friendly reminders to ensure everything runs smoothly:
 
-## Slack
+## 💬 Slack
 
 Use it for:
 
@@ -22,7 +22,7 @@ Use it for:
 * Add a status when away or unavailable
 * Schedule messages if others are outside working hours
 
-## Linear
+## 📋 Linear
 
 Use it for:
 
@@ -39,7 +39,7 @@ Use it for:
 * Act on pending items
 * Keep tasks updated to inform your team
 
-## Gmail
+## 📧 Gmail
 
 Use it for:
 
@@ -56,7 +56,7 @@ Use it for:
 * Keep only actionable items in view
 * Schedule emails when sending outside work hours
 
-## Google Calendar
+## 📆 Google Calendar
 
 * Use it to organise your day and make your availability visible
 
@@ -67,7 +67,7 @@ Use it for:
 * Keep it up to date
 * Set your working hours
 
-## 📢 Communication Tips
+## 📢 Tips
 
 * Prepare for meetings
 * Be on time 🕐
