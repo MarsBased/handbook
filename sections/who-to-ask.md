@@ -15,7 +15,7 @@ Go to the People team for:
 * Company events & internal logistics.
 * General policies or admin support.
 * Workplace health & safety (PRL), training & medical checkups.
-* Concerns related to harassment, mobbing, or workplace conflict (handled confidentially).
+* Concerns related to harassment, mobbing, or workplace conflict.
 
 ## 🧰 Tools & Access
 
