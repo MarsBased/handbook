@@ -47,7 +47,7 @@ Project Managers at MarsBased are at the heart of keeping projects organized and
   - Leading weekly meetings with the client to review progress, align expectations, and address concerns.
   - Organizing and conducting internal meetings with the project team to ensure alignment, track progress, and identify blockers.
 
-  Piloting our missions from Earth to Mars: Cristina, Mateja, and Rodrigo.
+Piloting our missions from Earth to Mars: Cristina, Mateja, and Rodrigo.
 
 ## Tech Leads
 
