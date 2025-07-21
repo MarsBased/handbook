@@ -40,10 +40,10 @@ Follow this flow to get help with technical topics:
 * Start by asking the Tech Lead of your project.
 * If unavailable, or if your project doesn’t have one, or simply can’t help you, reach out to another Tech Lead or Engineering Manager whose expertise fits your question:
 
-  * Juan Salvador → Ruby on Rails, React, NextJS, NodeJS, Python, DevOps.
+  * Juan S. → Ruby on Rails, React, NextJS, NodeJS, Python, DevOps.
   * Pablo → Ruby on Rails, React, Remix, NodeJS, Shopify.
-  * Juan Artero → Ruby on Rails, React, Remix, Python, AI.
-  * Javier Artero → CSS, React, React Native, NextJS, WordPress.
+  * Juan A. → Ruby on Rails, React, Remix, Python, AI.
+  * Javier → CSS, React, React Native, NextJS, WordPress.
   * Carlos → React, Remix, React Native, NodeJS.
   * José Antonio → React, Remix, NextJS, NestJS, NodeJS.
 
