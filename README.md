@@ -10,7 +10,7 @@ If you're a visitor and want to use them, feel free to use them anywhere, but we
 
 We have decided to make this handbook publicly available so we can share as much as we can with other companies out there, potential candidates and prospective clients alike. Everyone is welcome!
 
-# Sections
+## Sections
 
 1. [First day at MarsBased](/sections/firstday.md)
 1. [Company culture](/sections/companyculture.md)
@@ -25,12 +25,12 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Talks & Podcasts](/sections/talks.md)
 1. [Benefits & Perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/holidays.md)
-2. [Travel policy](/sections/travelpolicy.md)
-3. [Buddy System](/sections/buddy.md)
+1. [Travel policy](/sections/travelpolicy.md)
+1. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
-2. [Become a Martian](/sections/become-a-martian.md)
+1. [Become a Martian](/sections/become-a-martian.md)
 
-# Our guides
+## Our guides
 
 For now, we have the following resources available:
 
@@ -41,8 +41,9 @@ For now, we have the following resources available:
 1. [Our blogging guide](/guides/blogging-guide.md)
 1. [How to write a damn good blog post](/guides/how-to-blog.md)
 
-# Our development guides
+## Our development guides
 
+1. [Security guidelines](/guides/security/README.md)
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
 1. [Our Docker guides](/guides/development/docker-guide.md)
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
@@ -50,13 +51,13 @@ For now, we have the following resources available:
 1. [Angular guidelines](/guides/development/angular-guidelines.md)
 1. [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
-2. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
-3. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
-4. [Coding guidelines](/guides/development/coding-guidelines.md)
-5. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
-6. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
+1. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
+1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
+1. [Coding guidelines](/guides/development/coding-guidelines.md)
+1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
 
-# Other useful resources
+## Other useful resources
 
 1. <a href="https://marsbased.com" title="MarsBased website" target="_blank">MarsBased website</a>
 1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
@@ -65,6 +66,6 @@ For now, we have the following resources available:
 1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
-# Contributing
+## Contributing
 
 We encourage you to contribute! Please check out the [Contributing guides](./CONTRIBUTING.md) for guidelines about how to proceed.
