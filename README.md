@@ -43,6 +43,7 @@ For now, we have the following resources available:
 
 ## Our development guides
 
+1. [Security guidelines](/guides/security/README.md)
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
 1. [Our Docker guides](/guides/development/docker-guide.md)
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
@@ -55,7 +56,6 @@ For now, we have the following resources available:
 1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
 1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
-1. [WIP: Security guidelines](/guides/security/README.md)
 
 ## Other useful resources
 
