@@ -51,7 +51,7 @@ Given the tools we use, we recommend getting a Mac or Linux, but we're open to a
 #### Mouse or Trackpad (135€)
 
 * [Apple Magic trackpad](https://www.apple.com/es/shop/product/MK2D3Z/A/magic-trackpad-superficie-multi%E2%80%91touch-blanca)
-* [Apple Magic mouse](https://www.apple.com/es/shop/product/MK2E3ZM/A/magic-mouse-superficie-multi%E2%80%91touch-blanca)
+* [Apple Magic mouse](https://www.apple.com/es/shop/product/MXK53ZM/A/magic-mouse-usb%E2%80%91c-superficie-multi%E2%80%91touch-blanca?fnode=c00599bad20ff3214dd4af2cf451f231d9f48152b6cf8b6f4b5ceeed8d9b035c5b958010a5a81a2609ddbed9c5d0d5183c8168540e45f2e1fb1c2efe3760fec1f68b722e698bba56ccc27eb4c8ae94efc2e998fdb149c0729c71a7690e4acce1)
 * [Logitech G402](https://www.amazon.es/Logitech-G402-botones-programables-Hyperion/dp/B00LFBEOUA/)
 
 #### Webcam (80€)
