@@ -10,6 +10,7 @@ It consists of injecting an arbitrary script on a page. When another user is bro
 
 Any element on a page that renders user input data is susceptible to being vulnerable to XSS attacks.
 Even SVG files can be a vector for XSS if not handled carefully. While using an SVG as an `<img src="...">` is generally safe (scripts inside won't execute), injecting raw SVG content into the DOM via `innerHTML` or `dangerouslySetInnerHTML` can execute embedded scripts or malicious elements like `<script>`, `<image onerror>`, or `<foreignObject>`. Always sanitize SVG content before injecting it into the DOM.
+
 ### Mitigation
 
 There is no single technique to protect against XSS. Protection is achieved by following some best practices:
@@ -18,7 +19,7 @@ There is no single technique to protect against XSS. Protection is achieved by f
 
 - When showing HTML, sanitize all user input: Use a white-listing technique to only allow a handful of safe HTML tags: _&lt;p&gt;_, _&lt;span&gt;_, _&lt;b&gt;_ , _&lt;i&gt;_, etc. And equally important: sanitize all attributes on these tags. Only allow a handful of safe attributes: _class_, _id_, etc. If you need to allow style attributes for example, make sure to properly sanitize them. They can be used to perform [CSS injection attacks](https://owasp.org/www-project-web-security-testing-guide/v41/4-Web_Application_Security_Testing/11-Client_Side_Testing/05-Testing_for_CSS_Injection).
 
-- On the front-end, avoid rendering user input as HTML: avoid the usage of jQuery's _html()_ as much as possible. Use _text()_ instead. Similarly, avoid using _innerHTML =_  unless you are sure the content is properly sanitized.
+- On the front-end, avoid rendering user input as HTML: avoid the usage of jQuery's _html()_ as much as possible. Use _text()_ instead. Similarly, avoid using _innerHTML =_ unless you are sure the content is properly sanitized.
 
 - [Implement a strict Content Security Policy (CSP)](web_application_security_features.md#implement-a-strict-content-security-policy-csp)
 
@@ -67,3 +68,25 @@ When storing sessions in the database, always reset the session after every logi
 #### Rails
 
 Call the _reset_session_ method after login. When using [Devise](https://github.com/heartcombo/devise) this is done automatically.
+
+#### Next.js
+
+If you store sessions server-side (database or Redis), rotate the session identifier after successful authentication and invalidate the old one. With cookie-based sessions, overwrite the session cookie with a newly generated, encrypted value on login and ensure cookies have `HttpOnly`, `Secure`, and `SameSite=Lax`:
+
+```ts
+// app/lib/auth.ts
+import { cookies } from "next/headers";
+
+export async function onSuccessfulLogin(newSessionValue: string) {
+  const store = await cookies();
+  // Invalidate any existing session value by overwriting with a fresh one
+  store.set("session", newSessionValue, {
+    httpOnly: true,
+    secure: true,
+    sameSite: "lax",
+    path: "/",
+  });
+}
+```
+
+For server-stored sessions, create a new row/record and return its ID; do not reuse the pre-login identifier.
