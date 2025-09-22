@@ -9,7 +9,7 @@ That way, developers and tech leads will work the same way regarding management,
 Set a workflow on the internal Slack channel of the project at 12 pm each weekday, so developers can share the progress they have made since the last update they did. This helps developers to share their progress, comment on blockers, doubts, etc. Take into account that sharing this information does not excuse them from maintaining Linear up-to-date.  
 
 <div style="text-align: center;">
-    <img src="/pm-guidelines-images/daily-status.png" alt="Daily Status Update Workflow on Slack" width="440" />
+    <img src="pm-guidelines-images/daily-status.png" alt="Daily Status Update Workflow on Slack" width="440" />
 </div>
 
 > **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project. 
@@ -27,7 +27,7 @@ To make sure everyone remembers to fill the report, we have 2 reminders:
 - On Slack, we have a weekly reminder using also a workflow (on Friday, at 9 am). 
 
 <div style="text-align: center;">
-    <img src="/pm-guidelines-images/weekly-report.png" alt="Internal Weekly Report Workflow on Slack" width="350" />
+    <img src="pm-guidelines-images/weekly-report.png" alt="Internal Weekly Report Workflow on Slack" width="350" />
 </div>
 
 > **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project. 
@@ -79,7 +79,7 @@ To ensure effective communication and proper documentation of meetings and updat
    After recording the sessions, the recordings should be organized and transferred to the “meeting notes” folder of the respective project in Google Drive. This will facilitate access and future consultation.
 
     <div style="text-align: center;">
-        <img src="/pm-guidelines-images/gemini-settings.png" alt="Gemini Settings" width="300" />
+        <img src="pm-guidelines-images/gemini-settings.png" alt="Gemini Settings" width="300" />
     </div>
 
 4. **Set up to ensure everyone receives the notes**  
