@@ -19,7 +19,7 @@ Internal weekly reports have the goal to help project managers fill the progress
 
 > **NOTE:** Although team members fill these reports, it is still good to check the Linear status of the project to make sure nothing is left out of the report. 
 
-The template for the  Internal Weekly Report can be found here: [Internal Weekly Report](https://docs.google.com/document/d/1BRmL2qPBwbF6WfapEaoOjqvPqsfS0Y9ijem9OS6GT4A/edit?usp=drive_link). It is already available as a Google Doc template in the MarsBased workspace, so when creating the first internal weekly report for your project you can do it with the option “From a template” when creating a new Google Document. Please, create the report on Monday so team members can fill it up during the week if they consider it appropriate, or just in case someone closes earlier than Friday. 
+The template for the  Internal Weekly Report can be found here: <a href="https://docs.google.com/document/d/1BRmL2qPBwbF6WfapEaoOjqvPqsfS0Y9ijem9OS6GT4A/edit?usp=drive_link" target="_blank">Internal Weekly Report</a>. It is already available as a Google Doc template in the MarsBased workspace, so when creating the first internal weekly report for your project you can do it with the option “From a template” when creating a new Google Document. Please, create the report on Monday so team members can fill it up during the week if they consider it appropriate, or just in case someone closes earlier than Friday. 
 
 To make sure everyone remembers to fill the report, we have 2 reminders:
 - On Friday, we tag each person in a comment on the document.
@@ -35,7 +35,7 @@ On projects that are closed-scope and we need to keep on a budget, it is good to
 
 To standardise this, we can use the same organization on a spreadsheet and keep improving it as we see the need.
 
-An example of this document can be found in the  Project Management Templates Drive folder, in the file [Hours control example](https://docs.google.com/spreadsheets/d/118kwlli8-m5qEXpIBtwdkWlEV9q54Thu431lUPG-0QU/edit?usp=drive_link). If you have any doubts regarding the content of this file or how to use it, contact another project manager.
+An example of this document can be found in the  Project Management Templates Drive folder, in the file <a href="https://docs.google.com/spreadsheets/d/118kwlli8-m5qEXpIBtwdkWlEV9q54Thu431lUPG-0QU/edit?usp=drive_link" target="_blank">Hours control example</a>. If you have any doubts regarding the content of this file or how to use it, contact another project manager.
 
 ## Drive folder organization
 
