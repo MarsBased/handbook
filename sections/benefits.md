@@ -27,7 +27,7 @@ Given the tools we use, we recommend getting a Mac or Linux, but we're open to a
 * [MacBook Air M3 (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
 * [MacBook Pro M4 (14”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-pro/)
 * [Mac Mini M4 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
-* [Slimbook Executive 14 with Ubunto or Linux Mint (14", 32GB RAM, 1TB NVMe)](https://slimbook.com/en/shop/product/executive-14-intel-i7-13700h-black-1112?category=8)
+* [Slimbook Executive 14 with Ubunto or Linux Mint (14", 32GB RAM, 1TB NVMe)](https://slimbook.com/en/executive)
 
 #### Chair (200€)
 
