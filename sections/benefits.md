@@ -45,7 +45,7 @@ Given the tools we use, we recommend getting a Mac or Linux, but we're open to a
 
 #### Keyboard (120€)
 
-* [Apple Magic keyboard](https://www.apple.com/es/shop/product/MK2A3Y/A/magic-keyboard-espa%C3%B1ol)
+* [Apple Magic keyboard](https://www.apple.com/es/shop/product/MXCL3Y/A/magic-keyboard-usb-c-espa%C3%B1ol?fnode=dcd057ab8f93f81202e0ada82d12124d2037283bf82870a11f54e14b85fa2c12366ae72e8d19fcbbfe7c565ad7eb64ca14e5c21c893bf22c5f6e02ab93a59fcb23cd9118bb9cb1d8511ab39fa6b497bf6cc3ff885d1d2bbcce48c949f1147954)
 * [Keychron K3 Wireless Mechanical keyboard](https://www.amazon.es/Keychron-inal%C3%A1mbrico-Ultra-Delgado-Hot-swappable-Low-Profile/dp/B0BY2SCHZT/)
 
 #### Mouse or Trackpad (135€)
