@@ -16,15 +16,16 @@
 1. [Our rituals](/sections/rituals.md)
 1. [Talks & Podcasts](/sections/talks.md)
 1. [Benefits & Perks](/sections/benefits.md)
-1. [Holidays, Time off & Paid leave](/sections/holidays.md)
-2. [Travel policy](/sections/travelpolicy.md)
-3. [Buddy System](/sections/buddy.md)
+1. [Holidays, Time off & Paid leave](/sections/timeoff.md)
+1. [Travel policy](/sections/policy-travel.md)
+1. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
-2. [Become a Martian](/sections/become-a-martian.md)
+1. [Become a Martian](/sections/become-a-martian.md)
 
 ## Our guides
 
 1. [Branding guidelines](/guides/branding.md)
+1. [Project management guidelines](/guides/pm-guidelines.md)
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
 1. [Prompt engineering basics](/guides/prompts.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
@@ -33,6 +34,7 @@
 
 ## Our development guides
 
+1. [Security guidelines](/guides/security/README.md)
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
 1. [Our Docker guides](/guides/development/docker-guide.md)
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
