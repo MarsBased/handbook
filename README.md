@@ -36,6 +36,7 @@ For now, we have the following resources available:
 
 1. [Branding guidelines](/guides/branding.md)
 1. [Project management guidelines](/guides/pm-guidelines.md)
+2. [Calendar, Slack & Linear Working Hours and Status Guidelines](/guides/working-hours-guidelines.md)
 1. [File storage, permissions & security](/guides/permissionssecurity.md)
 1. [Prompt engineering basics](/guides/prompts.md)
 1. [Our SEO guidelines for new projects](/guides/seo-guidelines.md)
