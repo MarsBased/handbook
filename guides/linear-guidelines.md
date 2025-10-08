@@ -60,7 +60,7 @@ The project manager should use the Epic tag in the following scenarios:
    - Assignment to the appropriate developer or team member responsible for executing that task.  
 4. **Link Subissues to the Epic.** Ensure that all relevant subissues are linked back to the Epic issue. This is only necessary if the subissues are NOT created using the **+ Add sub-issues** action of the Epic task.  
 
-        <img src="linear-guidelines-images/sub-issues-creation.png" alt="Subissues Creation from Existing Issue" width="600" />
+    <img src="linear-guidelines-images/sub-issues-creation.png" alt="Subissues Creation from Existing Issue" width="600" />
 
 5. **Close the Epic Upon Completion.** Once all subissues are completed and the feature is fully developed and tested, the PM should mark the Epic as complete.
 
@@ -91,22 +91,22 @@ Labels in Linear serve to categorize and provide context for issues, making it e
 
 - ***Technology*** **Labels.** Especially useful in projects that have a backend and a frontend, or that mix several technologies. MarsBased already has a set of labels that are specific to technologies in the first label. If you think you might need a different one, ask another PM to help you on this.
 
-         <img src="linear-guidelines-images/technology-labels.png" alt="Technology Labels" width="200" />
+    <img src="linear-guidelines-images/technology-labels.png" alt="Technology Labels" width="170" />
 
 - ***Type*** **Labels.** This label is essential for categorizing issues based on their nature or activity within the project. As for technologies, MarsBased already has a set of labels that are specific to types.  
 
-         <img src="linear-guidelines-images/type-labels.png" alt="Type Labels" width="270" />
+    <img src="linear-guidelines-images/type-labels.png" alt="Type Labels" width="270" />
 
 - ***Scope*** **Labels.** This label serves to classify issues based on their relationship to the project's established scope. It helps teams track changes in features and functionalities, ensuring everyone understands whether an issue pertains to new developments, adjustments, or exclusions from the original project scope. Possible values:
   - **New.** This label indicates that the issue pertains to a new feature or requirement that was not included in the original project scope or initial estimates.  
   - **Out of Scope.** This label is used for features or tasks that are deemed outside the project's defined boundaries and will not be included in the current development cycle, but we still want to keep them in the project for traceability purposes.  
   - **Updated.** This label signifies that there have been changes to previously defined features or requirements during the project lifecycle that affect the original scope of the task and its estimates.  
 
-         <img src="linear-guidelines-images/scope-labels.png" alt="Scope Labels" width="270" />
+    <img src="linear-guidelines-images/scope-labels.png" alt="Scope Labels" width="270" />
 
 - ***Role*** **Labels.** This label serves to classify issues based on the role that should develop it.
 
-         <img src="linear-guidelines-images/role-labels.png" alt="Role Labels" width="270" />
+    <img src="linear-guidelines-images/role-labels.png" alt="Role Labels" width="270" />
 
 > **NOTE:** If at some point you think you might need a different label for any category, ask another PM to help you with this.  
 
