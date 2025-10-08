@@ -18,7 +18,7 @@ We are an officeless company, but that doesn't mean you shouldn't have one. Coun
 ### Equipment & budget
 
 When you join our crew, you get a laptop or a desktop computer with the specs you like. Additionally, MarsBased covers the costs of your office materials, such as a desk, a secondary screen, a chair, etc. We only ask you to use it sensibly.
-Find below examples of products as well as the budget up to which the company is covering for each product type. You can, of course, choose a model not listed here. Feel free to choose your flavor! In case you choose a product that exceeds the budget, you will just have to cover the difference.
+Find below examples of products, as well as the budget up to which the company is covering for each product type. You can, of course, choose a model not listed here. Feel free to choose your flavor! In case you choose a product that exceeds the budget, you will just have to cover the difference.
 
 #### Laptop or desktop computer
 
@@ -76,7 +76,7 @@ From MarsBased, we strongly encourage you to improve your English skills (or any
 
 ### Budget
 
-For that purpose, you get up to 180€/200$ per quarter to taking on-site/online lessons, or using on the iTalki language learning platform.
+For that purpose, you get up to 180€/200$ per quarter to take on-site/online lessons, or use the iTalki language learning platform.
 
 #### How to proceed if using iTalki
 
@@ -121,9 +121,11 @@ Requests for technical training during working hours will be evaluated individua
 
 1. Whenever you want to invest in your training, let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-20) the product or service you want to get.
 2. Proceed with the purchase of the product/service.
-3. Send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com) (no invoice is needed in this case).
+3. Send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com).
 4. You will get reimbursed up to 150€/year in your next payroll.
-5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year. The “bonus” is considered part of the salary and therefore is subject to tax and social security retentions.
+5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
+
+Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions.
 
 Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
 
@@ -135,23 +137,25 @@ If you introduce us to this person and facilitate the conversations, you will ge
 
 Let Leire/Eli know if you have any recommendations.
 
-This is always a good opportunity to work with people you worked with and liked in the past!
+This is always a good opportunity to work with people you have worked with and liked in the past!
 
 ## Sports & Health 🚴🏻‍♀️
 
-We all know about the importance of exercising and doing sports for our health and general wellbeing, even though many times it turns out challenging to take the time to dedicate to it. From MarsBased, we'd like to give you a boost, encourage you to do the type of exercise you like.
+We all know about the importance of exercising and participating in sports for our health and overall well-being, even though it often proves challenging to dedicate the time to it. From MarsBased, we'd like to give you a boost and encourage you to do the type of exercise you enjoy.
 
 ### Allowance
 
-We offer you an allowance of 150€ per year to invest in sports and health-related activities or products. This can include gym fees, yoga lessons, the new running shoes you are willing to buy, or a session with a personal trainer. Whatever that sounds appealing to you.
+We offer you an allowance of 150€ per year to invest in sports and health-related activities or products. This can include gym fees, yoga lessons, the new running shoes you are willing to buy, or a session with a personal trainer. Whatever sounds appealing to you.
 
 ### How to proceed
 
 1. Once you make your choice of the product, activity, or service you want to use, let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-20).
 2. Proceed with the purchase of the product/service.
-3. Send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com) (no invoice is needed in this case).
+3. Send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com).
 4. You will get reimbursed up to 150€/year in your next payroll.
-5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year. The “bonus” is considered part of the salary and therefore is subject to tax and social security retentions.
+5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
+
+Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions.
 
 Have fun & stay in shape! 🏄🏻‍♀️ 
 
@@ -161,9 +165,9 @@ Martians sometimes go to conferences as a way of learning new things and meeting
 
 ### Origin of proposals
 
-In some cases, MarsBased is interested in (part of) the team participating in a specific conference, and therefore, the proposal for participation comes from the company itself. In this case, MarsBased pays for the conference fee + travel + hotel expenses. You don’t need to recover those work hours later on.
+In some cases, MarsBased is interested in (part of) the team participating in a specific conference, and therefore, the proposal for participation comes from the company itself. In this case, MarsBased pays for the conference fee + travel, + hotel expenses. You don’t need to recover those work hours later on.
 
-We are also open to your proposals. If you are interested in attending a conference in the sector, please let us know following these steps, and we will review it to see how we can help you.
+We are also open to your proposals. If you are interested in attending a conference in the sector, please let us know by following these steps, and we will review it to see how we can help you.
 
 ### How to suggest a proposal
 
@@ -178,11 +182,11 @@ We are also open to your proposals. If you are interested in attending a confere
 
 We'll evaluate the information provided, and depending on the relevance for the company, you might get some days off for attending the conference, have conference tickets covered, or even get transportation and accommodation expenses covered. The conference will be considered:
 
-* **Highly relevant:** when the content is directly related to your work and MarsBased activity. In this case, the company will be happy to pay for the conference fee + travel + hotel expenses. You won’t need to recover those hours later on.
-* **Interesting:** when the content is not very relevant for the company but offers learning potential for you as a developer. In this case, you'll be able to attend the conference during your work schedule. You won’t need to recover those hours later on.
+* **Highly relevant:** when the content is directly related to your work and MarsBased activity. In this case, the company will be happy to pay for the conference fee + travel, + hotel expenses. You won’t need to recover those hours later on.
+* **Interesting:** when the content is not very relevant for the company, but offers learning potential for you as a developer. In this case, you'll be able to attend the conference during your work schedule. You won’t need to recover those hours later on.
 * **Unrelated:** when the conference is not related to your work or MarsBased activity. In this case, the company offers you the flexibility to attend the conference during your work schedule and recover those hours another day as best fits you.
 
-For conferences considered interesting and unrelated, remember you can use the allowance you get for training & learning purposes to cover the conference fee, travel and/or hotel expenses.
+For conferences considered interesting and unrelated, remember you can use the allowance you get for training & learning purposes to cover the conference fee, travel, and/or hotel expenses.
 
 You are welcome to bring your proposals! 📭
 
@@ -218,11 +222,11 @@ Working from home might not be comfortable for everyone due to a lack of adequat
 
 ### Budget
 
-If that's your case and need a coworking space, MarsBased will provide you with an allowance of 150€ per month for paying the cost.
+If that's your case and you need a coworking space, MarsBased will provide you with an allowance of 150€ per month to pay the cost.
 
 ### How to proceed
 
-1. Let Leire/Eli know your need for a coworking.
+1. Let Leire/Eli know your need for coworking.
 2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
 3. Normally, coworking spaces require signing a contract, and they charge a fee on a monthly basis. Let's see what the conditions are in that specific case, and we'll agree on the easiest way to manage it (can be either directly from MarsBased or through you).
 4. **Let us know beforehand** when you are going to stop using your coworking space, either **temporarily or permanently**. Let the coworking know that as well, so as to avoid being charged for that period.
