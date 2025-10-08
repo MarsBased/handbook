@@ -126,7 +126,7 @@ Requests for technical training during working hours will be evaluated individua
 5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
 
 > [!NOTE]
-> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions.
+> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions from your paycheck.
 
 Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
 
@@ -157,7 +157,7 @@ We offer you an allowance of 150€ per year to invest in sports and health-rela
 5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
 
 > [!NOTE]
-> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions.
+> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions from your paycheck.
 
 Have fun & stay in shape! 🏄🏻‍♀️ 
 
