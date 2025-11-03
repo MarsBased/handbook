@@ -53,5 +53,5 @@ Let us know if you’re expecting a baby and we’ll try to support you as much 
 These are the general terms, which are discussed to best adapt to the needs in each case:
 
 * __Pregnancy controls:__ Take the time you need for the regular pregnancy controls, either you are pregnant or need to accompany your partner. There is no need for you to recover that time afterward.
-* __Parental leave:__ When the baby is born, the general parental leave is 16 weeks according to the current Spanish regulations. You decide if you want to take those weeks in a row or distribute them, but at least 6 weeks must be after the birth according to the law.
+* __Parental leave:__ When the baby is born, the general parental leave is 19 weeks according to the current Spanish regulations. You decide if you want to take those weeks in a row or distribute them, but at least 6 weeks must be after the birth according to the law.
 * __Breastfeeding permit:__ Once you’re back from parental leave, you’ll be eligible for the breastfeeding permit until the baby is 9 months old. You can either accumulate the hours and enjoy them at once as an extension of the parental leave, or have your work schedule reduced by 1 hour per day.
