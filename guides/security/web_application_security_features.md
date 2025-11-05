@@ -350,10 +350,10 @@ Always add _crossorigin="anonymous"_ when adding the integrity attribute to prev
 Example:
 
 ```html
-<!-- Load jQuery 2.1.4 from their CDN -->
+<!-- Load jQuery 3.7.1 from their CDN -->
 <script
-  src="https://code.jquery.com/jquery-2.1.4.min.js"
-  integrity="sha384-R4/ztc4ZlRqWjqIuvf6RX5yb/v90qNGx6fS48N0tRxiGkqveZETq72KgDVJCp2TC"
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="1H217gwSVyLSIfaLxHbE7dRb3v4mYCKbpQvzx0cegeju1MVsGrX5xXxAvs/HgeFs"
   crossorigin="anonymous"
 ></script>
 ```
@@ -363,7 +363,7 @@ Example:
 The integrity hash can be generated manually from any unix terminal with:
 
 ```bash
-curl -s https://code.jquery.com/jquery-2.1.4.min.js | \
+curl -s https://code.jquery.com/jquery-3.7.1.min.js | \
     openssl dgst -sha384 -binary | \
     openssl base64 -A
 ```
