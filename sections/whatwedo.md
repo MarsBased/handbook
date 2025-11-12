@@ -13,8 +13,8 @@ You can find a description of the technologies we use in the services pages of o
 * __[Ruby on Rails](https://marsbased.com/services/ruby-on-rails)__
 *  __[Node.js](https://marsbased.com/services/node)__
 *  __[React](https://marsbased.com/services/react)__
-*  __[Angular](https://marsbased.com/services/Angular)__
-*  __[Shopify](https://marsbased.com/services/Ecommerce)__
+*  __[Angular](https://marsbased.com/services/angular)__
+*  __[Shopify](https://marsbased.com/services/ecommerce)__
 *  __[Technical Audits](https://marsbased.com/services/techaudits)__
 *  __[Artificial Intelligence](https://marsbased.com/services/ai)__
 *  __[UI/UX design](https://marsbased.com/services/design-ui-ux)__
