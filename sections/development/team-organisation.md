@@ -6,7 +6,7 @@ We organise the people working on a project in three different roles:
 - Tech lead
 - Engineer
 
-In some projects, the same team member can do multiple roles. A common situation is the tech lead doing the project management role or an engineer also managing the communcation with the client.
+In some projects, the same team member can do multiple roles. A common situation is the tech lead doing the project management role or a software engineer also managing the communcation with the client.
 
 ## Project Manager
 
@@ -31,7 +31,7 @@ Person in charge of the top-level tasks required by the client, communicating be
   - Agree with clients on channels and frequency of meetings and reports to inform about the progress of the projects.
   - Coordinate meetings with team and clients to ensure the successful execution of each sprint of the project.
   - Communicate proactively with the team and clients providing transparent information on the state of the project and thus avoiding snowball effects.
-  - Act as the liaison between clients and engineers.
+  - Act as the liaison between clients and software engineers.
 
 ## Tech Lead
 
@@ -41,8 +41,8 @@ A senior engineer able to take ownership of the code developed by the team and h
 
 - Decide the best way to implement the specifications decided by the client's Product Manager.
   - Take into account the project needs and tech debt in order to make the best decision possible, communicating with the Product Manager and the client the possible implications.
-- Communicate correctly all the decisions to the engineers.
-- [Review the code](/guides/development/code-reviews-guidelines.md) produced by the engineers, ensuring:
+- Communicate correctly all the decisions to the software engineers.
+- [Review the code](/guides/development/code-reviews-guidelines.md) produced by the software engineers, ensuring:
   - All the code follows our quality standards at code and architecture levels.
   - The changes introduced meet the requirements needed, no more and no less.
   - The changes don't introduce obvious bugs.
@@ -53,7 +53,7 @@ A senior engineer able to take ownership of the code developed by the team and h
 
 ## Engineer
 
-Engineers are in charge of building and maintaining the software following the previous analysis made by the Project Manager and the Tech Lead.
+Software engineers are in charge of building and maintaining the software following the previous analysis made by the Project Manager and the Tech Lead.
 
 **Duties:**
 
@@ -67,4 +67,4 @@ Engineers are in charge of building and maintaining the software following the p
 
 ## Engineer - Reviewer contract
 
-Collaboration between tech leads and engineers in a team is governed by the [Engineer - Reviewer contract](/guides/development/engineer-reviewer-contract.md). If you are going to work as either an engineer or tech lead, read it carefully because you will need to make sure you comply with it all the time.
+Collaboration between tech leads and software engineers in a team is governed by the [Engineer - Reviewer contract](/guides/development/engineer-reviewer-contract.md). If you are going to work as either an engineer or tech lead, read it carefully because you will need to make sure you comply with it all the time.

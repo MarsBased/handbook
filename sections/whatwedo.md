@@ -1,6 +1,6 @@
 # What we do
 
-MarsBased is a consultancy of expert engineers in Ruby on Rails, JavaScript (in all flavours: React, Node.js, Vue.js, React Native, Angular...) and Python, boosting companies using technology and agile methodologies.
+MarsBased is a consultancy of expert software engineers in Ruby on Rails, JavaScript (in all flavours: React, Node.js, Vue.js, React Native, Angular...) and Python, boosting companies using technology and agile methodologies.
 
 We started off in early 2014 as a web-only development shop using Rails and Angular because our founders Jordi and Xavi had been using these technologies in their previous companies. Over the years, we've expanded our technological horizons to new technologies and products.
 

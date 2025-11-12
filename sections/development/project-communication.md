@@ -57,7 +57,7 @@ At the beginning of the week, we will hold a project internal meeting with every
 
 ## Organization
 
-The task management tool, Linear, requires daily updates. As a fully remote company, we rely on trust and effective communication to advance our projects. This is non-negotiable and involves everyone on the project, from the engineer to the project manager.
+The task management tool, Linear, requires daily updates. As a fully remote company, we rely on trust and effective communication to advance our projects. This is non-negotiable and involves everyone on the project, from the software engineer to the project manager.
 
 We will always try to plan three-week development cycles. If it’s not possible because the client doesn’t know what we’ll do, we will skip this guideline.
 

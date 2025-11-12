@@ -2,11 +2,11 @@
 
 This document contains information on actions related to managing projects that should be shared across all projects.
 
-That way, engineers and tech leads will work the same way regarding management, no matter which project they are working on. It will also help project managers when we need to transfer a project or check the status of another project for whatever reason.
+That way, software engineers and tech leads will work the same way regarding management, no matter which project they are working on. It will also help project managers when we need to transfer a project or check the status of another project for whatever reason.
 
 ## Daily updates
 
-Set a workflow on the internal Slack channel of the project at 12 pm each weekday, so engineers can share the progress they have made since the last update they did. This helps engineers to share their progress, comment on blockers, doubts, etc. Take into account that sharing this information does not excuse them from maintaining Linear up-to-date.
+Set a workflow on the internal Slack channel of the project at 12 pm each weekday, so software engineers can share the progress they have made since the last update they did. This helps software engineers to share their progress, comment on blockers, doubts, etc. Take into account that sharing this information does not excuse them from maintaining Linear up-to-date.
 
 <img src="pm-guidelines-images/daily-status.png" alt="Daily Status Update Workflow on Slack" width="440" />
 
@@ -14,7 +14,7 @@ Set a workflow on the internal Slack channel of the project at 12 pm each weekda
 
 ## Internal weekly reports
 
-Internal weekly reports have the goal to help project managers fill the progress reports that are sent to the client. They are supposed to be filled by everyone working on the project on Friday, before they close their week. Filling it on Friday helps engineers to have all the issues more recent in their heads. That way, project managers have all the information ready on Monday to fill the progress report for the clients.
+Internal weekly reports have the goal to help project managers fill the progress reports that are sent to the client. They are supposed to be filled by everyone working on the project on Friday, before they close their week. Filling it on Friday helps software engineers to have all the issues more recent in their heads. That way, project managers have all the information ready on Monday to fill the progress report for the clients.
 
 > **NOTE:** Although team members fill these reports, it is still good to check the Linear status of the project to make sure nothing is left out of the report.
 

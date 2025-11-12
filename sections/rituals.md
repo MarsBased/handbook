@@ -51,7 +51,7 @@ Every week, the chef (the presenter) is rotated. The session is 30 minutes long,
 * Turbo Websockets
 * First Steps in AI development
 
-The session is kicked off by the chef, introducing the topic and commenting on the topic selected for the current session, and it's also the moderator who will lead the conversation and moderate the debate among all the engineers involved, asking questions and adding remarks where appropriate.
+The session is kicked off by the chef, introducing the topic and commenting on the topic selected for the current session, and it's also the moderator who will lead the conversation and moderate the debate among all the software engineers involved, asking questions and adding remarks where appropriate.
 
 Other times, we call the session Martian Buffet, and there's no presenter as such, but everyone is free to give their opinion on a given topic.
 

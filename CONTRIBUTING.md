@@ -2,7 +2,7 @@
 
 We welcome any suggestion, and we encourage discussions.
 
-This is an opinionated resource. In order to change these guides, a vast majority of the MarsBased engineers should agree. You can open a PR directly with your suggestions or you can create an issue to discuss and collect opinions before opening it.
+This is an opinionated resource. In order to change these guides, a vast majority of the MarsBased software engineers should agree. You can open a PR directly with your suggestions or you can create an issue to discuss and collect opinions before opening it.
 
 Ask any questions about the guides opening an issue.
 

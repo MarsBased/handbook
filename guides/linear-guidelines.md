@@ -53,7 +53,7 @@ The project manager should use the Epic tag in the following scenarios:
 2. **Assign the Epic to the PM.** Assign this Epic issue to the Project Manager who will oversee its development.
 3. **Decompose into Subissues.** Break the Epic down into smaller subissues that specify individual tasks or components necessary to achieve the Epic's objectives. Each subissue should include:
    - A clear title and description.
-   - Assignment to the appropriate engineer or team member responsible for executing that task.
+   - Assignment to the appropriate software engineer or team member responsible for executing that task.
 4. **Link Subissues to the Epic.** Ensure that all relevant subissues are linked back to the Epic issue. This is only necessary if the subissues are NOT created using the **+ Add sub-issues** action of the Epic task.
 
 <img src="linear-guidelines-images/sub-issues-creation.png" alt="Subissues Creation from Existing Issue" width="600" />

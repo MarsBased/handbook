@@ -57,7 +57,7 @@ Make sure that only people working currently on the project has access to 3rd pa
 
 - Remote repository (example: Github).
 - Error tracking tools (example: Sentry)
-- Monitoring tools  (example: New Relic, DataDog).
+- Monitoring tools (example: New Relic, DataDog).
 - Analytics tools (example: Google Analytics, Mixpanel).
 - Code analysis tools (example: Code Climate).
 - Continuous Integration tools (example: Circle CI).
@@ -79,7 +79,7 @@ The majority of cloud providers have an IAM system that allows giving very speci
 
 - There should be just one or two admin users with complete control of the account.
 - The tech lead should have complete permissions over all the services used by the application, and IAM permissions to be able to configure and modify users. But she should not have permission for billing, or services not used by the application.
-- Most engineers should have only the necessary permissions to deploy, view the deployment service (EKS, ECS, etc.), and view the logs.
+- Most software engineers should have only the necessary permissions to deploy, view the deployment service (EKS, ECS, etc.), and view the logs.
 
 ⚠️ Another key point is adding only the strictly necessary permissions to users corresponding to the web application or 3rd party services.
 

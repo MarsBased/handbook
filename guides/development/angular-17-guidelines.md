@@ -30,7 +30,7 @@ Having a separation between smart and presentational components adds the advanta
 
 ## Structuring Application Architecture Using Routes
 
-In Angular, organizing the application's architecture by following the routes can enhance readability, maintainability, and scalability. Similar to other frameworks, using a route-based folder structure helps engineers quickly locate components associated with specific routes, improving overall development efficiency.
+In Angular, organizing the application's architecture by following the routes can enhance readability, maintainability, and scalability. Similar to other frameworks, using a route-based folder structure helps software engineers quickly locate components associated with specific routes, improving overall development efficiency.
 
 ### Folder Structure
 

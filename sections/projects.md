@@ -32,7 +32,7 @@ We don't believe in maintenance projects _per se_. We believe that software is n
 
 What we don't do is to work with bank of hours models or on-demand.
 
-We work with a minimum commitment of two full-time engineers per project, plus the Tech Lead and Project Manager roles, who do a fraction of that time. Usually, for every 40h of development, we do 10 of project management plus ten of tech lead.
+We work with a minimum commitment of two full-time software engineers per project, plus the Tech Lead and Project Manager roles, who do a fraction of that time. Usually, for every 40h of development, we do 10 of project management plus ten of tech lead.
 
 ## Our techstack
 

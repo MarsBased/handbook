@@ -105,7 +105,7 @@ We have different initiatives aimed at supporting Martians' professional growth 
 
 ### Allowance
 
-In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as an engineer, professional, and human. This can include conference fees, course registration, coaching sessions, buying books, etc.
+In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as a software engineer, professional, and human. This can include conference fees, course registration, coaching sessions, buying books, etc.
 
 You may also use part of your working hours for training if:
 
@@ -132,7 +132,7 @@ Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
 
 ## Referral bonus 👩🏻‍🚀
 
-We normally hire 2-3 engineers per year. We are open to receiving recommendations from you on colleagues you've worked with or any engineers you may know and think could be a good fit for our team.
+We normally hire 2-3 software engineers per year. We are open to receiving recommendations from you on colleagues you've worked with or any software engineers you may know and think could be a good fit for our team.
 
 If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him. We will pay the bonus after the third month of that person in the company.
 
@@ -186,7 +186,7 @@ We are also open to your proposals. If you are interested in attending a confere
 We'll evaluate the information provided, and depending on the relevance for the company, you might get some days off for attending the conference, have conference tickets covered, or even get transportation and accommodation expenses covered. The conference will be considered:
 
 - **Highly relevant:** when the content is directly related to your work and MarsBased activity. In this case, the company will be happy to pay for the conference fee + travel, + hotel expenses. You won’t need to recover those hours later on.
-- **Interesting:** when the content is not very relevant for the company, but offers learning potential for you as an engineer. In this case, you'll be able to attend the conference during your work schedule. You won’t need to recover those hours later on.
+- **Interesting:** when the content is not very relevant for the company, but offers learning potential for you as a software engineer. In this case, you'll be able to attend the conference during your work schedule. You won't need to recover those hours later on.
 - **Unrelated:** when the conference is not related to your work or MarsBased activity. In this case, the company offers you the flexibility to attend the conference during your work schedule and recover those hours another day as best fits you.
 
 For conferences considered interesting and unrelated, remember you can use the allowance you get for training & learning purposes to cover the conference fee, travel, and/or hotel expenses.

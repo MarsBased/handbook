@@ -119,7 +119,7 @@ To start with, today, you'll be introduced and guided through your first steps o
 
 * **Leire/Eli** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/holidays.md), [Buddy System](/sections/buddy.md), etc.
 * **Jordi and/or Xavi** will give you a general overview of how we run our projects.
-* The **tech lead or the project manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the engineers you'll be working with.
+* The **tech lead or the project manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the software engineers you'll be working with.
 * **Àlex** will reach you for a call before you finish your first day so as to officially welcome you and clarify any questions that may have arisen during the day.
 
 **Your buddy**, a seasoned team member that will support you during the first months of your journey in the company, will get in touch with you at some point during the week for a first talk, and more will follow, regularly, on a weekly basis. He/she will share informal knowledge related to day-to-day issues, culture, activities, etc., and will be at your disposal for any questions you may have after the big amount of information you'll receive during the first days.

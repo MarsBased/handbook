@@ -28,11 +28,11 @@ We are a small-sized company. We don't have a lot of roles.
 
 We have a layer of __Management__, consisting of the three founders of the company, and Leire/Eli, our Head of People, who enables all of us to work better and makes the company run more efficiently, but that's mostly all regarding titles.
 
-The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is an engineer.
+The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a software engineer.
 
 For example, you might be a __Tech Lead__ in a project, but be an __Engineer__ in another, even at the same time if you're working on two projects in parallel. Likewise, you might be an Engineer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to an Engineer role doesn't mean a demotion either!
 
-That's why we don't have Tech Leads who manage engineers, and we must be very careful to explain this to our candidates.
+That's why we don't have Tech Leads who manage software engineers, and we must be very careful to explain this to our candidates.
 
 You, as part of the tech team, may have the following roles:
 
