@@ -44,12 +44,12 @@ You might have other things that you usually check for. The key idea is that it'
 ## Comments in code reviews
 
 When writing comments:
-* Use “we”, not “you”. The developer is not alone, you are a team.
-* Provide objective reasons that support the change. “Because I don’t like it” is not a reason.
+* Use "we", not "you". The engineer is not alone, you are a team.
+* Provide objective reasons that support the change. "Because I don't like it" is not a reason.
 * Provide an alternative or a sketch of how you would do it instead.
 * Don't write only negative comments, write also positive comments:
   * Positive comments increase motivation.
-  * Positive comments encourage the developer to keep doing the right thing.
+  * Positive comments encourage the engineer to keep doing the right thing.
 
 Example of a not constructive comment:
 

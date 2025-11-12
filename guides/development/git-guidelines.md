@@ -123,7 +123,7 @@ You might want to add additional steps depending on your project.
 
 ## <a name='DangerousBehaviours'></a>Dangerous behaviours
 
-* Avoid using `git push -f` while working on the same brach with other developers. Use `git push --force-with-lease` instead.
+* Avoid using `git push -f` while working on the same brach with other engineers. Use `git push --force-with-lease` instead.
 
 ## <a name='Credits'></a>Credits
 

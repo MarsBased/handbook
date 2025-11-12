@@ -58,7 +58,7 @@ Tech Leads play a crucial role in complementing Project Managers and ensuring te
 - **Thoughtfully define tasks from a technical standpoint** based on the team's needs and project requirements.
 - **Proactively sharing project status** updates to keep all stakeholders informed.
 - **Prioritizing and delivering** even under tight deadlines.
-- **Championing company philosophy**, ensuring that developers are familiar with and apply MarsBased guidelines and best practices.
+- **Championing company philosophy**, ensuring that engineers are familiar with and apply MarsBased guidelines and best practices.
 - **Communicating clearly with clients**, bridging technical execution and client expectations.
 - **Solving problems in unfamiliar technologies**, demonstrating adaptability.
 - **Ensuring continuity**, making sure the project is well managed even in their absence.
@@ -77,21 +77,21 @@ Engineering Managers at MarsBased share many responsibilities with Tech Leads bu
 
 Overseeing our tech engines with precision and care: Juan Salvador.
 
-## Developers
+## Engineers
 
-Developers at MarsBased are at the core of our delivery. We value not only their ability to write code but also how they contribute to the success of the team, the project, and ultimately, our clients’ businesses. Our developers are expected to be self-driven, pragmatic, and collaborative, always striving for excellence in everything they do.
+Engineers at MarsBased are at the core of our delivery. We value not only their ability to write code but also how they contribute to the success of the team, the project, and ultimately, our clients' businesses. Our engineers are expected to be self-driven, pragmatic, and collaborative, always striving for excellence in everything they do.
 
 We believe in a balanced approach that values **communication, accountability, agility, and craftsmanship**.
 
-Communication is the most critical aspect of our developers' day-to-day work. Our fully remote nature means that clear, frequent, and proactive communication is not optional — it is what keeps the spaceship flying.
+Communication is the most critical aspect of our engineers' day-to-day work. Our fully remote nature means that clear, frequent, and proactive communication is not optional — it is what keeps the spaceship flying.
 
-We expect developers to own the quality of what they build. They are the first line of defense against defects, misunderstandings, and technical debt.
+We expect engineers to own the quality of what they build. They are the first line of defense against defects, misunderstandings, and technical debt.
 
 At MarsBased, we value speed, but not at the cost of quality. We believe in thoughtful execution that avoids unnecessary complexity.
 
 We take pride in our craft. Code at MarsBased should reflect clarity, simplicity, and respect for those who will maintain it after you.
 
-Above all, we expect developers to take ownership of their work. This means seeing beyond the immediate task, understanding the “why” behind what we build, and contributing to the success of the entire team. We don’t just ship code — we ship solutions that help our clients succeed.
+Above all, we expect engineers to take ownership of their work. This means seeing beyond the immediate task, understanding the "why" behind what we build, and contributing to the success of the entire team. We don't just ship code — we ship solutions that help our clients succeed.
 
 The crew coding our way through the galaxy: David, Jose Luis, José, Laura, Alejandro, Mateo, Enrique, Marta, Juan Pablo, Víctor, and Anna.
 

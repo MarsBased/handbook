@@ -1,7 +1,7 @@
 # The MarsBased Docker guide for development
 
 At MarsBased we use Docker to work on the development of applications. Using Docker for development has several benefits:
-* Makes setting up the environment for a project a breeze. This dramatically reduces the time to onboard new developers to a project.
+* Makes setting up the environment for a project a breeze. This dramatically reduces the time to onboard new engineers to a project.
 * The environment in which the application runs can be identical to the production environment. This allows to quickly detect bugs depending on the OS or system packages.
 * Removes the need to have development dependencies (Ruby, Node, PostgreSQL, Redis) installed locally. Only Docker is needed to work on applications.
 * Avoids problems with having multiple versions of dependencies installed. Moreover, prevents them from accumulating when versions are updated.

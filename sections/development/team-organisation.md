@@ -4,9 +4,9 @@ We organise the people working on a project in three different roles:
 
 - Project Manager
 - Tech lead
-- Developer
+- Engineer
 
-In some projects, the same team member can do multiple roles. A common situation is the tech lead doing the project management role or a developer also managing the communcation with the client.
+In some projects, the same team member can do multiple roles. A common situation is the tech lead doing the project management role or an engineer also managing the communcation with the client.
 
 ## Project Manager
 
@@ -31,18 +31,18 @@ __Duties:__
   - Agree with clients on channels and frequency of meetings and reports to inform about the progress of the projects.
   - Coordinate meetings with team and clients to ensure the successful execution of each sprint of the project.
   - Communicate proactively with the team and clients providing transparent information on the state of the project and thus avoiding snowball effects.
-  - Act as the liaison between clients and developers.
+  - Act as the liaison between clients and engineers.
 
 ## Tech Lead
 
-A senior developer able to take ownership of the code developed by the team and help the client to improve their code. Oftentimes, a sort of interim CTO for the projects, too, able to define architecture and take high-level decisions on critical aspects.
+A senior engineer able to take ownership of the code developed by the team and help the client to improve their code. Oftentimes, a sort of interim CTO for the projects, too, able to define architecture and take high-level decisions on critical aspects.
 
 __Duties:__
 
 - Decide the best way to implement the specifications decided by the client's Product Manager.
   - Take into account the project needs and tech debt in order to make the best decision possible, communicating with the Product Manager and the client the possible implications.
-- Communicate correctly all the decisions to the developers.
-- [Review the code](/guides/development/code-reviews-guidelines.md) produced by the developers, ensuring:
+- Communicate correctly all the decisions to the engineers.
+- [Review the code](/guides/development/code-reviews-guidelines.md) produced by the engineers, ensuring:
   - All the code follows our quality standards at code and architecture levels.
   - The changes introduced meet the requirements needed, no more and no less.
   - The changes don't introduce obvious bugs.
@@ -51,9 +51,9 @@ __Duties:__
 - Perform research tasks to solve complex problems / requirements.
 - Decide 3rd party services to use (DevOps, log management, error tracking, etc.)
 
-## Developer
+## Engineer
 
-Developers are in charge of building and maintaining the software following the previous analysis made by the Project Manager and the Tech Lead.
+Engineers are in charge of building and maintaining the software following the previous analysis made by the Project Manager and the Tech Lead.
 
 __Duties:__
 
@@ -65,6 +65,6 @@ __Duties:__
 - Communicate blocking problems, delays and other issues to the Tech Lead in due time.
 - Update our task board on a daily basis.
 
-## Developer - Reviewer contract
+## Engineer - Reviewer contract
 
-Collaboration between tech leads and developers in a team is governed by the [Developer - Reviewer contract](/guides/development/developer-reviewer-contract.md). If you are going to work as either a developer or tech lead, read it carefully because you will need to make sure you comply with it all the time.
+Collaboration between tech leads and engineers in a team is governed by the [Engineer - Reviewer contract](/guides/development/developer-reviewer-contract.md). If you are going to work as either an engineer or tech lead, read it carefully because you will need to make sure you comply with it all the time.

@@ -10,16 +10,16 @@ Our head of people, Elisabet Renom, reviews all the candidate applications. She 
 
 Elisabet selects the candidates who best fit the open position and interviews them. This initial interview aims to get to know the applicant and assess non-technical factors. All interviews are conducted online and typically last an hour. The communication between MarsBased and the company is conducted via email. We do not make phone calls or send WhatsApp messages.
 
-If the candidate successfully passes this interview, we will then schedule a second interview with our CTO. This technical interview lasts for two hours and enables us to learn more about the candidate's background as a developer or tech lead.
+If the candidate successfully passes this interview, we will then schedule a second interview with our CTO. This technical interview lasts for two hours and enables us to learn more about the candidate's background as an engineer or tech lead.
 
-Finally, if the candidate succeeds in the technical interview, we schedule another video call to perform a technical test. This is not a coding exercise, but rather a discussion where we ask the developer how they would architect a solution to a given problem. It usually takes an hour.
+Finally, if the candidate succeeds in the technical interview, we schedule another video call to perform a technical test. This is not a coding exercise, but rather a discussion where we ask the engineer how they would architect a solution to a given problem. It usually takes an hour.
 
 ## What do we value most
 
 Some of our most important considerations when evaluating a candidate are (in no particular order):
 
 * Strong English speaking and writing skills.
-* Developer experience and skills matching the job requirements.
+* Engineer experience and skills matching the job requirements.
 * Stable employment history without frequent job changes.
 * Honest, transparent, humble, and open-minded personality that fits our team.
 * Interest and enthusiasm to join our company.

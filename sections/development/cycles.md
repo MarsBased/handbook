@@ -61,7 +61,7 @@ In other ones, where we can effectively apply a continuous delivery approach, we
 - **Blocked:** If something is blocked, it goes into this column.
 - **In Progress:** Tasks we are developing currently.
 - **Needs Fixing:** Finished tasks that require fixes or polishing.
-- **In Review:** Finished issues go through a code review (typically from the tech lead of the project or another developer).
+- **In Review:** Finished issues go through a code review (typically from the tech lead of the project or another engineer).
 - **To be deployed:** A task has passed the code review and has been merged, but it is still not deployed anywhere.
 - **Staging:** Tasks deployed to the staging environment. The project manager (or the client, sometimes) does another review of the task in the staging environment.
 - **Done:** When a task gets the final OK, it is moved to Done.

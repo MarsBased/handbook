@@ -1,7 +1,8 @@
 # 🧠 Prompt Engineering 101
 
 ## 🎯 Goal
-Learn how to write better prompts to get the most out of ChatGPT and similar tools — for *all* kinds of tasks, not just coding.
+
+Learn how to write better prompts to get the most out of ChatGPT and similar tools — for _all_ kinds of tasks, not just coding.
 
 ---
 
@@ -22,6 +23,7 @@ Let’s go pro.
 ## 📦 Core Concepts of Prompting
 
 ### 1. **Context is King**
+
 LLMs love context. The more you give, the better the output.
 
 > ❌ “Write a blog post about AI.”  
@@ -35,7 +37,7 @@ LLMs love context. The more you give, the better the output.
 
 > “You're a senior full-stack dev.”  
 > “Act like a sassy but accurate technical recruiter.”  
-> “You're a product manager writing internal release notes.”  
+> “You're a product manager writing internal release notes.”
 
 Roles change everything. Try it.
 
@@ -55,7 +57,7 @@ Few-shot prompting is powerful.
 > “Explain this like I’m five.”  
 > “Summarize this in 3 bullet points.”  
 > “Reply in markdown, use emojis.”  
-> “Write code with comments in Spanish.”  
+> “Write code with comments in Spanish.”
 
 Constraints = better outputs.
 
@@ -78,7 +80,6 @@ LLMs love feedback.
 
 - 🔍 Debugging:  
   Paste an error and ask for causes + fixes.
-  
 - 📄 PR Summaries:  
   “Summarize this PR in 3 sentences for a non-dev.”
 
@@ -120,24 +121,23 @@ If using OpenAI's API:
   "model": "gpt-4",
   "temperature": 0.7,
   "messages": [
-    { "role": "system", "content": "You are a senior Rails developer." },
+    { "role": "system", "content": "You are a senior Rails engineer." },
     { "role": "user", "content": "Explain the pros and cons of Hotwire." }
   ]
 }
 ```
 
--	**system**: Sets the role/persona
--	**user**: The actual prompt
--	**temperature**: 0 = deterministic, 1 = creative/random
+- **system**: Sets the role/persona
+- **user**: The actual prompt
+- **temperature**: 0 = deterministic, 1 = creative/random
 
 ## 🎁 Cheat Code: Prompt Structure
 
-+ [Persona or role]
-+ [Clear task]
-+ [Context]
-+ [Constraints]
-+ [Optional: examples]
-+ [Optional: output formatting]
-
+- [Persona or role]
+- [Clear task]
+- [Context]
+- [Constraints]
+- [Optional: examples]
+- [Optional: output formatting]
 
 🔥

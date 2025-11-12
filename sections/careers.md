@@ -28,19 +28,19 @@ We are a small-sized company. We don't have a lot of roles.
 
 We have a layer of __Management__, consisting of the three founders of the company, and Leire/Eli, our Head of People, who enables all of us to work better and makes the company run more efficiently, but that's mostly all regarding titles.
 
-The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a developer.
+The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is an engineer.
 
-For example, you might be a __Tech Lead__ in a project, but be a __Developer__ in another, even at the same time if you're working on two projects in parallel. Likewise, you might be a Developer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to a Developer role doesn't mean a demotion either!
+For example, you might be a __Tech Lead__ in a project, but be an __Engineer__ in another, even at the same time if you're working on two projects in parallel. Likewise, you might be an Engineer in one and a Tech Lead in the next one, and that is not a promotion, it's just a role. Going from a Tech Lead to an Engineer role doesn't mean a demotion either!
 
-That's why we don't have Tech Leads who manage developers, and we must be very careful to explain this to our candidates.
+That's why we don't have Tech Leads who manage engineers, and we must be very careful to explain this to our candidates.
 
 You, as part of the tech team, may have the following roles:
 
 First, the __Tech Lead__, which is a very senior programmer who manages technical projects and has CTO-like abilities to weigh in into specific projects when needed. This role also gets to code, but only part-time.
 
-Then we've got the __Senior Developers__, which are the most common roles we're hired for. And then, naturally, the __Developers__, who are slightly less experienced than the Senior Developers.
+Then we've got the __Senior Engineers__, which are the most common roles we're hired for. And then, naturally, the __Engineers__, who are slightly less experienced than the Senior Engineers.
 
-Again, this is just a role. You can be a Senior Developer in Rails for one project while being a Developer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
+Again, this is just a role. You can be a Senior Engineer in Rails for one project while being an Engineer in React for another at the same time. The roles just define what can the client expect of you and what hourly fee should we charge them.
 
 ## Salaries
 

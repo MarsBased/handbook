@@ -1,6 +1,6 @@
 # Development
 
-Developers, rejoice!
+Engineers, rejoice!
 
 The development is the core of our work. Here, you'll find detailed information about our development process, the composition of our development teams, and our principles and communication policies.
 
