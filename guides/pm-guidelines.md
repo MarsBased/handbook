@@ -1,33 +1,33 @@
-
 # Project Management Guidelines
 
 This document contains information on actions related to managing projects that should be shared across all projects.
 
-That way, developers and tech leads will work the same way regarding management, no matter which project they are working on. It will also help project managers when we need to transfer a project or check the status of another project for whatever reason. 
+That way, engineers and tech leads will work the same way regarding management, no matter which project they are working on. It will also help project managers when we need to transfer a project or check the status of another project for whatever reason.
 
 ## Daily updates
 
-Set a workflow on the internal Slack channel of the project at 12 pm each weekday, so developers can share the progress they have made since the last update they did. This helps developers to share their progress, comment on blockers, doubts, etc. Take into account that sharing this information does not excuse them from maintaining Linear up-to-date.  
+Set a workflow on the internal Slack channel of the project at 12 pm each weekday, so engineers can share the progress they have made since the last update they did. This helps engineers to share their progress, comment on blockers, doubts, etc. Take into account that sharing this information does not excuse them from maintaining Linear up-to-date.
 
 <img src="pm-guidelines-images/daily-status.png" alt="Daily Status Update Workflow on Slack" width="440" />
 
-> **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project. 
+> **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project.
 
 ## Internal weekly reports
 
-Internal weekly reports have the goal to help project managers fill the progress reports that are sent to the client.  They are supposed to be filled by everyone working on the project on Friday, before they close their week. Filling it on Friday helps developers to have all the issues more recent in their heads. That way, project managers have all the information ready on Monday to fill the progress report for the clients. 
+Internal weekly reports have the goal to help project managers fill the progress reports that are sent to the client. They are supposed to be filled by everyone working on the project on Friday, before they close their week. Filling it on Friday helps engineers to have all the issues more recent in their heads. That way, project managers have all the information ready on Monday to fill the progress report for the clients.
 
-> **NOTE:** Although team members fill these reports, it is still good to check the Linear status of the project to make sure nothing is left out of the report. 
+> **NOTE:** Although team members fill these reports, it is still good to check the Linear status of the project to make sure nothing is left out of the report.
 
-The template for the  Internal Weekly Report can be found here: <a href="https://docs.google.com/document/d/1BRmL2qPBwbF6WfapEaoOjqvPqsfS0Y9ijem9OS6GT4A/edit?usp=drive_link" target="_blank">Internal Weekly Report</a>. It is already available as a Google Doc template in the MarsBased workspace, so when creating the first internal weekly report for your project you can do it with the option “From a template” when creating a new Google Document. Please, create the report on Monday so team members can fill it up during the week if they consider it appropriate, or just in case someone closes earlier than Friday. 
+The template for the Internal Weekly Report can be found here: <a href="https://docs.google.com/document/d/1BRmL2qPBwbF6WfapEaoOjqvPqsfS0Y9ijem9OS6GT4A/edit?usp=drive_link" target="_blank">Internal Weekly Report</a>. It is already available as a Google Doc template in the MarsBased workspace, so when creating the first internal weekly report for your project you can do it with the option “From a template” when creating a new Google Document. Please, create the report on Monday so team members can fill it up during the week if they consider it appropriate, or just in case someone closes earlier than Friday.
 
 To make sure everyone remembers to fill the report, we have 2 reminders:
+
 - On Friday, we tag each person in a comment on the document.
-- On Slack, we have a weekly reminder using also a workflow (on Friday, at 9 am). 
+- On Slack, we have a weekly reminder using also a workflow (on Friday, at 9 am).
 
 <img src="pm-guidelines-images/weekly-report.png" alt="Internal Weekly Report Workflow on Slack" width="350"/>
 
-> **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project. 
+> **NOTE:** To create a workflow on the channel, you can just copy a similar existing one and make the needed adjustments to fine-tune it to the project.
 
 ## Budget control
 
@@ -35,7 +35,7 @@ On projects that are closed-scope and we need to keep on a budget, it is good to
 
 To standardise this, we can use the same organization on a spreadsheet and keep improving it as we see the need.
 
-An example of this document can be found in the  Project Management Templates Drive folder, in the file <a href="https://docs.google.com/spreadsheets/d/118kwlli8-m5qEXpIBtwdkWlEV9q54Thu431lUPG-0QU/edit?usp=drive_link" target="_blank">Hours control example</a>. If you have any doubts regarding the content of this file or how to use it, contact another project manager.
+An example of this document can be found in the Project Management Templates Drive folder, in the file <a href="https://docs.google.com/spreadsheets/d/118kwlli8-m5qEXpIBtwdkWlEV9q54Thu431lUPG-0QU/edit?usp=drive_link" target="_blank">Hours control example</a>. If you have any doubts regarding the content of this file or how to use it, contact another project manager.
 
 ## Drive folder organization
 
