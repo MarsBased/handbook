@@ -45,7 +45,7 @@ Operating Systems periodically release security patches. Make sure to apply them
 
 This includes pirated software, movies, music, etc. If you need to use a paid software tool, ask MarsBased about the possibility of buying it.
 
-More generally, only download software and content from trusted sources. For developers, this includes system packages and libraries we add to applications.
+More generally, only download software and content from trusted sources. For software engineers, this includes system packages and libraries we add to applications.
 
 ## Use a good VPN when connecting to a shared Wi-Fi
 

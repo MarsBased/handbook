@@ -317,7 +317,7 @@ FactoryBot.define do
   name { 'Rocky Balboa '}
   age { 30 }
   active { true }
-  role { :developer }
+  role { :engineer }
 end
 ```
 
