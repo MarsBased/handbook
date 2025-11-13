@@ -19,6 +19,22 @@ There are other platform-specific solutions that can also be very useful and com
 - [Brakeman](https://brakemanscanner.org/) can scan for several vulnerabilities on Rails projects. It can be used in a Github Action to run on every pull request, run as a git commit hook, or run manually on the demand from the command line.
 - [Bundler-audit](https://github.com/rubysec/bundler-audit) can find vulnerable library versions and provide an upgrade path to a secure version.
 
+### Next.js
+
+- Enable dependency and runtime scanning in CI:
+  - `npm audit`/`yarn npm audit` for quick checks.
+  - [Dependabot](https://docs.github.com/en/code-security/dependabot) to monitor npm vulnerabilities and open upgrade PRs.
+- Add static checks and secure config verifications:
+  - Verify `next.config.js` has strict security headers (HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) and a CSP policy.
+  - Validate `images.remotePatterns` is restricted to known hosts; avoid overly broad wildcards.
+  - If using SVGs, confirm `dangerouslyAllowSVG` is truly needed and CSP for images is restrictive.
+- Lint for dangerous patterns:
+  - Disallow `dangerouslySetInnerHTML` without sanitization.
+  - Flag dynamic `child_process` usage and `require()` with untrusted values in server code.
+- Review authentication and session setup regularly:
+  - Ensure cookies are `HttpOnly`, `Secure`, `SameSite=Lax` and rotated on login.
+  - For Server Actions, set `serverActions.allowedOrigins` when behind proxies and keep `NEXT_SERVER_ACTIONS_ENCRYPTION_KEY` configured in self-hosted setups.
+
 ### Docker
 
 - [Docker scout](https://docs.docker.com/scout/) can be used to detect CVEs in all the layers of a Docker image.
@@ -57,7 +73,7 @@ Make sure that only people working currently on the project has access to 3rd pa
 
 - Remote repository (example: Github).
 - Error tracking tools (example: Sentry)
-- Monitoring tools  (example: New Relic, DataDog).
+- Monitoring tools (example: New Relic, DataDog).
 - Analytics tools (example: Google Analytics, Mixpanel).
 - Code analysis tools (example: Code Climate).
 - Continuous Integration tools (example: Circle CI).
