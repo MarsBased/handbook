@@ -130,7 +130,7 @@ Check that:
 - Logs are retained securely and access is controlled
 - Audit logs (if present) are reviewed periodically
 
-## Dependency & Runtime Updates (All Stacks)
+## Dependency & Runtime Updates (All Stacks)
 
 Make sure:
 
