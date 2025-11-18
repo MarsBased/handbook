@@ -96,7 +96,7 @@ Yes. It's important to start organizing commands as soon as possible to avoid ha
 ### Should I create a base class for commands to reuse functionality?
 
 The beauty of this solution is that it's very flexible. You can create the Result object that you want and it's very easy to understand
-for other developers not used to the pattern.
+for other software engineers not used to the pattern.
 
 ### Testing guidelines
 

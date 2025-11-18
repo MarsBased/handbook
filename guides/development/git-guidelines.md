@@ -2,15 +2,15 @@
 
 This is a guide covering how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like Gitlab or Bitbucket.
 
-* **1.** [Commit Message Guidelines](#CommitMessageGuidelines)
-* **1.1** [Message Format](#MessageFormat)
-* **1.1.1** [Message Header Type](#HeaderType)
-* **1.1.2** [Message Header Scope](#HeaderScope)
-* **1.1.3** [Message Samples](#CommitMessageSamples)
-* **2.** [Git Branches Naming](#GitBranchesNaming)
-* **3.** [Git Workflow](#GitWorkflow)
-* **4.** [Dangerous behaviours](#DangerousBehaviours)
-* **5.** [Credits](#Credits)
+- **1.** [Commit Message Guidelines](#CommitMessageGuidelines)
+- **1.1** [Message Format](#MessageFormat)
+- **1.1.1** [Message Header Type](#HeaderType)
+- **1.1.2** [Message Header Scope](#HeaderScope)
+- **1.1.3** [Message Samples](#CommitMessageSamples)
+- **2.** [Git Branches Naming](#GitBranchesNaming)
+- **3.** [Git Workflow](#GitWorkflow)
+- **4.** [Dangerous behaviours](#DangerousBehaviours)
+- **5.** [Credits](#Credits)
 
 Please, notice that at MarsBased we work with a large variety of clients. There could be clients that follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it won't be possible to use ours.
 
@@ -41,13 +41,13 @@ The `<footer>` should contain a closing reference to a [github issue](https://he
 
 Choose the one that best fits the task:
 
-- __fix__: Represents a bug fix for your application.
-- __feature__ / __feat__: Adds a new feature to your application or library.
-- __refactor__: A code change that neither fixes a bug nor adds a feature.
-- __deploy__: Changes to modify or related to the deployment process.
-- __chore__: Upgrades libraries and/or performs maintenance tasks.
-- __docs__: Documentation only changes.
-- __test__: Adding missing tests or correcting existing tests.
+- **fix**: Represents a bug fix for your application.
+- **feature** / **feat**: Adds a new feature to your application or library.
+- **refactor**: A code change that neither fixes a bug nor adds a feature.
+- **deploy**: Changes to modify or related to the deployment process.
+- **chore**: Upgrades libraries and/or performs maintenance tasks.
+- **docs**: Documentation only changes.
+- **test**: Adding missing tests or correcting existing tests.
 
 #### <a name='HeaderScope'></a>Scope
 
@@ -55,9 +55,9 @@ The scope is meant to describe a specific module/part of the application and it'
 
 Some examples to serve as inspiration:
 
-- __admin__: Refers to the admin panel.
-- __users__: Refers to the user management module.
-- __payment__: Changes on the payment gateway.
+- **admin**: Refers to the admin panel.
+- **users**: Refers to the user management module.
+- **payment**: Changes on the payment gateway.
 
 #### <a name='CommitMessageSamples'></a>Message Samples
 
@@ -123,7 +123,7 @@ You might want to add additional steps depending on your project.
 
 ## <a name='DangerousBehaviours'></a>Dangerous behaviours
 
-* Avoid using `git push -f` while working on the same brach with other developers. Use `git push --force-with-lease` instead.
+- Avoid using `git push -f` while working on the same brach with other software engineers. Use `git push --force-with-lease` instead.
 
 ## <a name='Credits'></a>Credits
 
