@@ -12,7 +12,7 @@ There are static analysis tools to automatically detect CVEs and other vulnerabi
 
 [Snyk](https://snyk.io/) is one such tool. It is cross-platform and allows detecting vulnerabilities in several language runtimes, in Docker images, Infrastructure-as-Code definitions, and Open Source dependencies.
 
-We will also check the dependency scanner built in GitHub. Check the [Dependant bot quickstart guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) on further details about how to configure it in your repository.
+We will also check the dependency scanner built in GitHub. Check the [Dependant bot quickstart guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) on further details on how to configure it in your repository.
 
 There are other platform-specific solutions that can also be very useful and complete the more generic scans.
 
