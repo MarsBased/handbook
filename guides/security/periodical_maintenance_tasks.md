@@ -12,7 +12,7 @@ There are static analysis tools to automatically detect CVEs and other vulnerabi
 
 [Snyk](https://snyk.io/) is one such tool. It is cross-platform and allows detecting vulnerabilities in several language runtimes, in Docker images, Infrastructure-as-Code definitions, and Open Source dependencies.
 
-We will also check the dependency scanner built in GitHub or GitLab.
+We will also check the dependency scanner built in GitHub. Check the [Dependant bot quickstart guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) on further details about how to configure it in your repository.
 
 There are other platform-specific solutions that can also be very useful and complete the more generic scans.
 
@@ -39,10 +39,12 @@ There are other platform-specific solutions that can also be very useful and com
   - For Server Actions, set `serverActions.allowedOrigins` when behind proxies and keep `NEXT_SERVER_ACTIONS_ENCRYPTION_KEY` configured in self-hosted setups.
 - Ensure that the application runs on a supported Node version.
 - Tools or lint rules should flag:
-  - Any usage of dangerouslySetInnerHTML without sanitization
-  - Dynamic calls to child_process
+  - Any usage of dangerouslySetInnerHTML without sanitization:
+    - eslint-plugin-react has react/no-danger
+  - Dynamic calls to child_process:
+    - eslint-plugin-security has security/detect-child-process
   - Dynamic require() using untrusted data
-  - Unvalidated users or session access
+    - eslint-plugin-import has import/no-dynamic-require
 
 ### Docker
 
