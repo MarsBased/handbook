@@ -58,6 +58,7 @@ For now, we have the following resources available:
 1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+1. [Accessibility guidelines](/guides/development/a11y-guidelines.md)
 1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
 
 ## Other useful resources
@@ -68,7 +69,6 @@ For now, we have the following resources available:
 1. <a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
 1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
-
 
 ## Contributing
 
