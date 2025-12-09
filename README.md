@@ -69,7 +69,7 @@ For now, we have the following resources available:
 1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
-
 ## Contributing
 
 We encourage you to contribute! Please check out the [Contributing guides](./CONTRIBUTING.md) for guidelines about how to proceed.
+​
