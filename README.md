@@ -58,6 +58,7 @@ For now, we have the following resources available:
 1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+1. [Accessibility guidelines](/guides/development/a11y/README.md)
 1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
 
 ## Other useful resources
