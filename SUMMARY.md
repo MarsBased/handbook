@@ -48,5 +48,11 @@
 1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
-1. [Accessibility guidelines](/guides/development/a11y/README.md)
 1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
+
+## Our accessibility guides
+
+1. [Accessibility guidelines](/guides/a11y/README.md)
+1. [Accessibility for designers](/guides/a11y/for-designers.md)
+1. [Accessibility for engineers](/guides/a11y/for-engineers.md)
+1. [Resources](/guides/a11y/resources.md)
