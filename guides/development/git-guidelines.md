@@ -39,7 +39,7 @@ Where:
 - `scope` is optional
 - `subject` is mandatory
 
-If the commit is not related to a Linear issue, the `issue-code` could be ignored but only if the commit is not a feature commit )(`feat`).
+If the commit is not related to a Linear issue, the `issue-code` could be ignored but only if the commit is not a feature commit (`feat`).
 
 The maximum length of the header must be 72 characters. Any other line of the commit message must not exceed 100 characters. This improves readability in GitHub and other git tools.
 
@@ -92,8 +92,6 @@ fix: update Docker base image to v2.6
 
 Any branch created for a project must follow these rules.
 
-**Important:** Do not use slashes (`/`) in branch names, as they may conflict with worktree creation workflows.
-
 ### Branches related to a Linear issue
 
 Use the branch name provided by Linear or the client project tracking tool:
@@ -132,7 +130,7 @@ For small or not-yet-deployed projects, it is acceptable to work directly on `ma
 Recommended workflow:
 
 1. Create a new branch from the appropriate base branch.
-2. Make as many commits as needed to complete the task.
+2. Make as many commits as needed to complete the task. Commit message naming is not enforced at this stage.
 3. Optionally open a draft Pull Request to get early feedback.
 4. Rebase and clean up commits before requesting review. Leaving a single commit is acceptable.
 5. Rebase your branch on top of the latest target branch.
@@ -145,9 +143,9 @@ If the project uses a `development` branch, merging to `main` should be done as 
 2. Once all checks and reviews pass, merge using a merge commit strategy.
 3. Create a new GitHub release and tag pointing to `main`.
 
-For small projects or small teams, we usually keep things simpler by working with a single long-lived branch, typically main, and skip a separate development branch. This reduces overhead and makes day-to-day work and releases easier to manage.
+For small projects or small teams, we usually keep things simpler by working with a single long-lived branch, typically `main`, and skip a separate development branch. This reduces overhead and makes day-to-day work and releases easier to manage.
 
-Even in this simplified setup, we still work with short-lived branches per feature or fix, open Pull Requests, and perform code reviews before merging into main.
+Even in this simplified setup, we still work with short-lived branches per feature or fix, open Pull Requests, and perform code reviews before merging into `main`.
 
 ## <a name="dangerousbehaviours"></a>Dangerous behaviours
 
