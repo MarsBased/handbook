@@ -1,135 +1,161 @@
 # Git & Commit Guidelines
 
-This is a guide covering how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like Gitlab or Bitbucket.
+This is a guide covering how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like GitLab or Bitbucket.
 
-- **1.** [Commit Message Guidelines](#CommitMessageGuidelines)
-- **1.1** [Message Format](#MessageFormat)
-- **1.1.1** [Message Header Type](#HeaderType)
-- **1.1.2** [Message Header Scope](#HeaderScope)
-- **1.1.3** [Message Samples](#CommitMessageSamples)
-- **2.** [Git Branches Naming](#GitBranchesNaming)
-- **3.** [Git Workflow](#GitWorkflow)
-- **4.** [Dangerous behaviours](#DangerousBehaviours)
-- **5.** [Credits](#Credits)
+- **1.** [Commit Message Guidelines](#commitmessageguidelines)
+- **1.1** [Message Format](#messageformat)
+- **1.1.1** [Message Header Type](#headertype)
+- **1.1.2** [Message Header Scope](#headerscope)
+- **1.1.3** [Message Samples](#commitmessagesamples)
+- **2.** [Git Branches Naming](#gitbranchesnaming)
+- **3.** [Git Workflow](#gitworkflow)
+- **4.** [Dangerous behaviours](#dangerousbehaviours)
+- **5.** [Credits](#credits)
 
-Please, notice that at MarsBased we work with a large variety of clients. There could be clients that follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it won't be possible to use ours.
+At MarsBased we work with a large variety of clients. Some clients may follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it will not be possible to use ours.
 
-## <a name='CommitMessageGuidelines'></a>Commit Message Guidelines
+## <a name="commitmessageguidelines"></a>Commit Message Guidelines
 
-We have very precise rules over how our git commit messages can be formatted. This leads to more readable messages that are easy to follow when looking through the project history.
+We have very precise rules on how git commit messages should be formatted. This leads to more readable messages that are easy to follow when reviewing the project history.
 
-### <a name='MessageFormat'></a>Commit Message Format
+We use **Linear** as our tracking tool. Whenever possible, commit messages should reference the related Linear issue.
 
-Each commit message consists of a header, a body and a footer. The header has a special format that includes a type, a scope and a subject:
+### <a name="messageformat"></a>Commit Message Format
+
+Each commit message consists of a header and an optional description.
+
+For squashed commits after merging a Pull Request, the commit message **must** follow this format:
 
 ```
-<type>(<scope>): <subject>
--BLANK LINE-
+[issue-code] <type>(<scope>): <subject>
+
 <description>
--BLANK LINE-
-<footer>
 ```
 
-The header is mandatory but the scope of the header is **optional**.
+Where:
 
-The maximum length of the header must be 72 characters and any other line of the commit message cannot be longer than 100 characters. This allows the message to be easier to read on GitHub as well as in various git tools.
-The language used in the commit messages is English. If the client wants to have access to the commit history for documentation purposes and they don't understand English, other languages can be used instead.
+- `issue-code` is the Linear issue identifier, for example `MARS-456`
+- `type` is mandatory
+- `scope` is optional
+- `subject` is mandatory
 
-The `<footer>` should contain a closing reference to a [github issue](https://help.github.com/en/github/managing-your-work-on-github/closing-issues-using-keywords), a Trello card link, a JIRA issue ID or link. If there is no GitHub issue or project management tool reference for this specific commit just leave it blank.
+If the commit is not related to a Linear issue, the `issue-code` could be ignored but only if the commit is not a feature commit (`feat`).
 
-#### <a name='HeaderType'></a>Type
+The maximum length of the header must be 72 characters. Any other line of the commit message must not exceed 100 characters. This improves readability in GitHub and other git tools.
 
-Choose the one that best fits the task:
+The language used in commit messages is English. If the client needs access to the commit history for documentation purposes and does not understand English, other languages may be used instead.
 
-- **fix**: Represents a bug fix for your application.
-- **feature** / **feat**: Adds a new feature to your application or library.
-- **refactor**: A code change that neither fixes a bug nor adds a feature.
-- **deploy**: Changes to modify or related to the deployment process.
-- **chore**: Upgrades libraries and/or performs maintenance tasks.
-- **docs**: Documentation only changes.
-- **test**: Adding missing tests or correcting existing tests.
+### <a name="headertype"></a>Type
 
-#### <a name='HeaderScope'></a>Scope
+Choose the type that best fits the task:
 
-The scope is meant to describe a specific module/part of the application and it's highly dependant on the application you are building.
+- **fix**: Represents a bug fix.
+- **feat**: Adds a new feature.
+- **deploy**: Changes related to the deployment process.
+- **chore**: Dependency upgrades, refactors or maintenance tasks.
+- **docs**: Documentation-only changes.
+- **test**: Adding or fixing tests.
 
-Some examples to serve as inspiration:
+### <a name="headerscope"></a>Scope
 
-- **admin**: Refers to the admin panel.
-- **users**: Refers to the user management module.
-- **payment**: Changes on the payment gateway.
+The scope describes the specific module or part of the application affected by the change. It is optional.
 
-#### <a name='CommitMessageSamples'></a>Message Samples
+Examples:
+
+- **admin**: Admin panel.
+- **users**: User management.
+- **payment**: Payment gateway.
+
+### <a name="commitmessagesamples"></a>Commit Message Samples
+
+With a Linear issue:
 
 ```
-chore(deploy): Update Docker base image to v2.6
-
-Closes #345
+[MARS-456] fix: review the commits documentation in handbook
 ```
 
 ```
-feature(admin): Add users CRUD
+[MARS-789] feat(admin): add users CRUD
 
 We can now manage users through the admin panel.
 We have added a new search module with an integrated calendar to be able to
 filter entities by creation date.
-
-https://trello.com/c/random-id/20-mycooltask
 ```
 
+Without a Linear issue (`feat` is not allowed):
+
 ```
-fix: Users can't log out when authenticated via oauth2
-
-JIRA Issue: 23456
+fix: update Docker base image to v2.6
 ```
 
-## <a name='GitBranchesNaming'></a>Git branches naming
+## <a name="gitbranchesnaming"></a>Git Branches Naming
 
-Any branch created for the project will have the following structure:
+Any branch created for a project must follow these rules.
 
-`<type>/<short-name-of-task>`
+### Branches related to a Linear issue
 
-Samples:
+Use the branch name provided by Linear or the client project tracking tool:
 
-- feature/users-crud
-- fix/logout-for-oauth-users
+Examples:
 
-## <a name='GitWorkflow'></a>Git workflow
+- `mars-456`
 
-We are using a modified and simplified version of [Gitflow](https://guides.github.com/introduction/flow/).
+This ensures that during the code review process, reviewers can simply copy the branch name from Linear and check out the code locally.
 
-For big projects already deployed to production, there will always be two branches: `main` (`master` in older projects) and `development`.
-The **main** branch will contain the code that has been deployed while the **development** branch will contain the most recent stable version of it.
+### Branches not related to a Linear issue
 
-For small projects or projects that are have not been deployed we allow simplifying this by working only with a `main` branch.
+Use one of the following formats:
 
-These are the required steps to add new code to a branch (development or main, depending on the nature of the project).
+- `feat-short-description`
+- `fix-short-description`
 
-1. Create a new branch using the branch naming convention from the branch you think relevant (main, development).
-2. Do as many commits as are required to complete your task.
-3. You may open a [_draft_ Pull Request (PR)](https://github.blog/2019-02-14-introducing-draft-pull-requests/) if you want some colleagues to review your work in progress.
-4. Once the work is finished, rebase your commits to leave only the meaningful ones for the reviewer to better understand your changes. Leaving only one commit is also fine.
-5. Rebase your branch with the one from where you open yours to have the latest changes.
-6. Open a Pull Request to be reviewed by your colleagues.
-7. Once reviewed, squash & merge on the target branch. The commit resulting from the squash & merge must be compliant with the Commit Message Format.
+Examples:
 
-If the project is using a development branch, this is the recommended way of merging against the main branch:
+- `feat-add-users-crud`
+- `fix-logout-for-oauth-users`
 
-1. Create a Pull Request from development to main
-2. Once all automated tests and manual reviews have finished, merge the development branch to the main branch by creating a merge commit strategy.
-3. Create a new Github release pointing to the main branch and create a new tag to identify the release.
+For client projects, adapt the naming to their requirements if needed.
 
-You might want to add additional steps depending on your project.
+## <a name="gitworkflow"></a>Git Workflow
 
-## <a name='DangerousBehaviours'></a>Dangerous behaviours
+We use a simplified version of Gitflow.
 
-- Avoid using `git push -f` while working on the same brach with other software engineers. Use `git push --force-with-lease` instead.
+For large projects already deployed to production, there are usually two long-lived branches:
 
-## <a name='Credits'></a>Credits
+- `main` (or `master` in older projects), which contains deployed code
+- `development`, which contains the latest stable changes
+
+For small or not-yet-deployed projects, it is acceptable to work directly on `main`.
+
+Recommended workflow:
+
+1. Create a new branch from the appropriate base branch.
+2. Make as many commits as needed to complete the task. Commit message naming is not enforced at this stage.
+3. Optionally open a draft Pull Request to get early feedback.
+4. Rebase and clean up commits before requesting review. Leaving a single commit is acceptable.
+5. Rebase your branch on top of the latest target branch.
+6. Open a Pull Request for review.
+7. Squash and merge. The resulting squashed commit message must follow the Commit Message Format.
+
+If the project uses a `development` branch, merging to `main` should be done as follows:
+
+1. Open a Pull Request from `development` to `main`.
+2. Once all checks and reviews pass, merge using a merge commit strategy.
+3. Create a new GitHub release and tag pointing to `main`.
+
+For small projects or small teams, we usually keep things simpler by working with a single long-lived branch, typically `main`, and skip a separate development branch. This reduces overhead and makes day-to-day work and releases easier to manage.
+
+Even in this simplified setup, we still work with short-lived branches per feature or fix, open Pull Requests, and perform code reviews before merging into `main`.
+
+## <a name="dangerousbehaviours"></a>Dangerous behaviours
+
+- Avoid using `git push -f` when working on a shared branch. Use `git push --force-with-lease` instead.
+
+## <a name="credits"></a>Credits
 
 This guide is heavily influenced by:
 
 - [Angular Commit Message guidelines](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 
-Some parts of this guide are a copy & paste of theirs. All the credit and respect go to the original authors 🙌
+Some parts are adapted from those sources. All credit goes to the original authors 🙌
