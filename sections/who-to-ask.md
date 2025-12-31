@@ -43,7 +43,6 @@ Follow this flow to get help with technical topics:
   * Juan S. → Ruby on Rails, React, NextJS, NodeJS, Python, DevOps.
   * Pablo → Ruby on Rails, React, Remix, NodeJS, Shopify.
   * Juan A. → Ruby on Rails, React, Remix, Python, AI.
-  * Javier → CSS, React, React Native, NextJS, WordPress.
   * Carlos → React, Remix, React Native, NodeJS.
   * José Antonio → React, Remix, NextJS, NestJS, NodeJS.
 
