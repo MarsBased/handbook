@@ -6,9 +6,9 @@ We grow organically by hiring 2-3 people annually. If you wish to join our team,
 
 ## The hiring process
 
-Our head of people, Elisabet Renom, reviews all the candidate applications. She evaluates non-technical aspects of the candidature, such as the applicant's place of residence (we tend to hire more in Spain, Portugal, or other southern European countries), language skills, years of experience at each company, and cover letter.
+Our People team reviews all the candidate applications. They evaluate non-technical aspects of the candidature, such as the applicant's place of residence (we tend to hire more in Spain, Portugal, or other southern European countries), language skills, years of experience at each company, and cover letter.
 
-Elisabet selects the candidates who best fit the open position and interviews them. This initial interview aims to get to know the applicant and assess non-technical factors. All interviews are conducted online and typically last an hour. The communication between MarsBased and the company is conducted via email. We do not make phone calls or send WhatsApp messages.
+The People team selects the candidates who best fit the open position and interviews them. This initial interview aims to get to know the applicant and assess non-technical factors. All interviews are conducted online and typically last an hour. The communication between MarsBased and the company is conducted via email. We do not make phone calls or send WhatsApp messages.
 
 If the candidate successfully passes this interview, we will then schedule a second interview with our CTO. This technical interview lasts for two hours and enables us to learn more about the candidate's background as a software engineer or tech lead.
 
