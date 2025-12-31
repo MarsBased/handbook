@@ -63,7 +63,7 @@ Tech Leads play a crucial role in complementing Project Managers and ensuring te
 - **Solving problems in unfamiliar technologies**, demonstrating adaptability.
 - **Ensuring continuity**, making sure the project is well managed even in their absence.
 
-Making sure our spaceship stays on course: Javier, Juan, Pablo, Carlos, and José Antonio.
+Making sure our spaceship stays on course: Juan, Pablo, Carlos, and José Antonio.
 
 ## Engineering Managers
 
