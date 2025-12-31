@@ -33,7 +33,7 @@ Kindly bear in mind:
 
 ## Medical leaves
 
-If you feel sick 🤒 and need to go to the doctor 👩🏻‍⚕️, there is no need for you to compensate for those hours later on. Just let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-17), take a good rest and get well soon! You don't need to worry about your sick leave affecting your payroll. MarsBased will be covering your full salary also during the first four days of leave (a period in which the company is exempt from paying the salary to the employee according to Spanish regulations).
+If you feel sick 🤒 and need to go to the doctor 👩🏻‍⚕️, there is no need for you to compensate for those hours later on. Just let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-657/fatalities-q1-2026), take a good rest and get well soon! You don't need to worry about your sick leave affecting your payroll. MarsBased will be covering your full salary also during the first four days of leave (a period in which the company is exempt from paying the salary to the employee according to Spanish regulations).
 
 If you are sick for more than two days, we kindly ask you to send us your doctor's medical sick leave document so that we can notify the Health Authority and comply with the legal requirements. If you are sick for 1-2 days, there is no need for you to send us that document.
 
