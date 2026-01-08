@@ -1,6 +1,6 @@
 # First day at MarsBased
 
-Welcome aboard :alien:
+Welcome aboard 👽
 
 It is a great pleasure to welcome you to the MarsBased spaceship. This will be an intense and exciting day, as pretty much everything will be new to you. Don't panic, Martians are with you to help this onboarding process to be as smooth as possible. Take your time. In a few weeks you'll be speaking Martian already!
 
@@ -8,7 +8,7 @@ Take a few minutes to go through the different sections below. They will help yo
 
 * [Your Spaceship setup 🚀](#your-spaceship-set-up-)
 * [Your profile & preferences 🧑‍🚀](#your-profile--preferences-astronaut)
-* [Guided with :heart: by Martians](#guided-with-heart-by-martians)
+* [Guided with ❤️ by Martians](#guided-with-heart-by-martians)
 
 ## Your Spaceship setup 🚀
 
@@ -91,7 +91,7 @@ Here you’ll find all the passwords and credentials you need to start working. 
 
 You can find the rest of the tools in the How We Work section 🖖
 
-## Your profile & preferences :astronaut:
+## Your profile & preferences 🧑‍🚀
 
 ### Your profile
 
@@ -111,7 +111,7 @@ We are a flexible company and try to adapt to your needs as much as possible. Pl
 
 _There is no hurry, you can provide us with this information once you get a bit settled!_
 
-## Guided with :heart: by Martians
+## Guided with ❤️ by Martians
 
 Among Martians, we share the spirit of helping each other so whomever you have the chance to interact with, you'll find a colleague open to sharing experiences, learnings, and tips. There will be plenty of occasions to get to know the team, and the team to get to know you.
 
