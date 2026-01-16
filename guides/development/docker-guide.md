@@ -79,7 +79,6 @@ Apart from the files in `.dockerdev` we have a few more moving pieces:
 
 - `bin/dockerdev`: [All development operations](#working-with-docker) with Docker are done through this script.
 - We need to add `.dockerdev/volumes/*` to the `.gitignore`.
-- In the Webpacker config (`webpacker.yml`), the `host` of the `dev_server` needs to be set to `webpacker`.
 - [Capybara needs to be configured](#capybara-configuration) to use the selenium container.
 
 ### Working with Docker
@@ -104,7 +103,6 @@ From that point on, to install new gems or node modules you will need to do it f
 In order to have the application fully functional you need to run several processes in different terminal sessions:
 
 - Rails server: `bin/dockerdev server`.
-- Webpack: `bin/dockerdev webpacker`.
 - Background jobs: `bin/dockerdev jobs` (only needed if you wish to run background jobs like sending e-mails).
 
 ### Rails commands
@@ -118,7 +116,7 @@ In order to execute rails command you can use `bin/dockerdev run [command]`. Thi
 - Open a bash session: `bin/dockerdev run bash`.
 - Run the test suite: `bin/dockerdev run rspec`.
 
-### Capybara configuration
+### Capybara configuration (Ruby on Rails only)
 
 To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `docker-compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
 
@@ -164,7 +162,8 @@ WebMock.disable_net_connect!(
 
 ### Dockerfile
 
-The Dockerfile used for development is pretty minimal. Below there is a description of each of its blocks
+The Dockerfile used for development is pretty minimal. Below there is a description of each of its blocks for a Ruby on Rails
+application. For a NodeJS or Python application the Dockerfile will vary.
 
 ```docker
 FROM ruby:<ruby-version>-alpine

@@ -46,19 +46,17 @@ For now, we have the following resources available:
 
 ## Our development guides
 
+1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Security guidelines](/guides/security/README.md)
-1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
-1. [Our Docker guides](/guides/development/docker-guide.md)
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
-1. [Some of our used programming patterns](/guides/patterns/README.md)
-1. [Angular guidelines](/guides/development/angular-guidelines.md)
-1. [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
+1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
+1. [Testing guidelines](/guides/development/testing-guidelines.md)
+1. [Our Docker guides](/guides/development/docker-guide.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
 1. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
-1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
-1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
-1. [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
+1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
+1. [Some of our used programming patterns](/guides/patterns/README.md)
 
 ## Our accessibility guides
 
