@@ -3,15 +3,15 @@
 > [!NOTE]
 > Being a **MarsBased** employee comes with a lot of benefits.
 
-- [Office Material 👩🏻‍💻](#office-material-)
-- [Language Courses 🗣](#language-courses-)
-- [Training & Learning 🤓](#training--learning-)
-- [Referral bonus 👩🏻‍🚀](#referral-bonus-)
-- [Sports & Health 🚴🏻‍♀️](#sports--health-%EF%B8%8F)
-- [Conferences 🎤](#conferences-)
-- [Coworking 🏢](#coworking-)
+- [Office Material 👩🏻‍💻](#office-material)
+- [Language Courses 🗣](#language)
+- [Training & Learning 🤓](#training)
+- [Referral bonus 👩🏻‍🚀](#referral)
+- [Sports & Health 🚴🏻‍♀️](#sports)
+- [Conferences 🎤](#conferences)
+- [Coworking 🏢](#coworking)
 
-## Office Material 👩🏻‍💻
+## <a name="office-material"></a> Office Material 👩🏻‍💻
 
 We are an officeless company, but that doesn't mean you shouldn't have one. Count on MarsBased support to create a comfortable working spaceship 🚀
 
@@ -70,7 +70,7 @@ Given the tools we use, we recommend getting a Mac or Linux, but we're open to a
 
 Hope your new purchase meets your expectations and allows you to work more comfortably 🙌🏼
 
-## Language courses 🗣
+## <a name="language"></a> Language courses 🗣
 
 From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in, such as Spanish, Japanese, or Basque 😅). You can invest up to one hour per week during the workday in English learning classes without needing to make up for the time.
 
@@ -99,7 +99,7 @@ Barcelona, 08025
 
 If you'd like to go for an alternative way of learning languages, let us know, and we'll do our best to adapt to it.
 
-## Training & Learning 🤓
+## <a name="training"></a> Training & Learning 🤓
 
 We have different initiatives aimed at supporting Martians' professional growth and skill development. From ensuring project rotation every time when possible, to the weekly Martian Tapas session, or the participation in conferences like the EuRuKo.
 
@@ -130,7 +130,7 @@ Requests for technical training during working hours will be evaluated individua
 
 Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
 
-## Referral bonus 👩🏻‍🚀
+## <a name="referral"></a> Referral bonus 👩🏻‍🚀
 
 We normally hire 2-3 software engineers per year. We are open to receiving recommendations from you on colleagues you've worked with or any software engineers you may know and think could be a good fit for our team.
 
@@ -140,7 +140,7 @@ Let Leire/Eli know if you have any recommendations.
 
 This is always a good opportunity to work with people you have worked with and liked in the past!
 
-## Sports & Health 🚴🏻‍♀️
+## <a name="sports"></a> Sports & Health 🚴🏻‍♀️
 
 We all know about the importance of exercising and participating in sports for our health and overall well-being, even though it often proves challenging to dedicate the time to it. From MarsBased, we'd like to give you a boost and encourage you to do the type of exercise you enjoy.
 
@@ -161,7 +161,7 @@ We offer you an allowance of 150€ per year to invest in sports and health-rela
 
 Have fun & stay in shape! 🏄🏻‍♀️
 
-## Conferences 🎤
+## <a name="conferences"></a> Conferences 🎤
 
 Martians sometimes go to conferences as a way of learning new things and meeting other colleagues in the sector.
 
@@ -220,7 +220,7 @@ This helps us:
 - Share knowledge with our audience.
 - Strengthen both personal and company reputation.
 
-## Coworking 🏢
+## <a name="coworking"></a> Coworking 🏢
 
 Working from home might not be comfortable for everyone due to a lack of adequate working conditions at home, difficulties in concentrating because relatives are around, or the feeling of being too isolated and needing to be surrounded by other coworkers.
 
