@@ -10,21 +10,21 @@ Small decisions in markup have a huge impact: keyboard navigation, screen reader
 
 ## Table of Contents
 
-- [1. Semantic HTML First](#SemanticHTMLFirst)
-- [2. Labels & Forms](#LabelsForms)
-- [3. Keyboard Navigation](#KeyboardNavigation)
-- [4. Images & Alt Text](#ImagesAltText)
-- [5. ARIA](#ARIA)
-- [6. Custom UI Components](#CustomUIComponents)
-- [7. Reduced Motion](#ReducedMotion)
-- [8. Basic Accessibility Testing](#BasicAccessibilityTesting)
-- [9. Engineering Accessibility Checklist](#EngineeringAccessibilityChecklist)
+- [Semantic HTML First](#SemanticHTMLFirst)
+- [Labels & Forms](#LabelsForms)
+- [Keyboard Navigation](#KeyboardNavigation)
+- [Images & Alt Text](#ImagesAltText)
+- [ARIA](#ARIA)
+- [Custom UI Components](#CustomUIComponents)
+- [Reduced Motion](#ReducedMotion)
+- [Basic Accessibility Testing](#BasicAccessibilityTesting)
+- [Engineering Accessibility Checklist](#EngineeringAccessibilityChecklist)
 
-## 1. <a name='SemanticHTMLFirst'></a>Semantic HTML First
+## <a name='SemanticHTMLFirst'></a>Semantic HTML First
 
 Native HTML elements come with accessibility built in: roles, keyboard behavior, focus handling, and meaningful semantics. Using them correctly is the easiest and most reliable way to build accessible interfaces.
 
-#### Use the right element for the job
+### Use the right element for the job
 
 - `<button>` for actions
 - `<a>` for navigation
@@ -39,7 +39,7 @@ This immediately gives you:
 - proper focus management without extra JS
 - better SEO and machine readability
 
-#### Don't replace native controls with divs
+### Don't replace native controls with divs
 
 Avoid patterns like:
 
@@ -59,7 +59,7 @@ If you must build a custom component, you'll need to manually add:
 
 This is significantly more work and easier to get wrong.
 
-#### Keep your HTML predictable
+### Keep your HTML predictable
 
 - Respect the natural heading hierarchy (`h1 → h2 → h3` …).
 - Avoid skipping levels (don't jump from `h1` to `h4`).
@@ -68,7 +68,7 @@ This is significantly more work and easier to get wrong.
 
 Good structure helps not only assistive tech but also users scanning the page visually.
 
-#### Bonus: Accessible = Machine-readable
+### Bonus: Accessible = Machine-readable
 
 Accessibility isn't just about people; it's about making content understandable to machines too.
 
@@ -82,12 +82,12 @@ Clear semantic HTML is easier for:
 
 Good markup benefits **every layer of the ecosystem**, not just screen readers. When you build accessible interfaces, you're also building machine-readable, maintainable code that works better for everyone.
 
-## 2. <a name='LabelsForms'></a>Labels & Forms
+## <a name='LabelsForms'></a>Labels & Forms
 
 Forms must be identifiable, operable, and understandable, both visually and with assistive technologies.  
 Good markup solves most accessibility issues automatically.
 
-#### Forms must be real `<form>` elements
+### Forms must be real `<form>` elements
 
 A search bar is still a form and it should use `<form>` and a submit button.  
 This improves semantics, keyboard support, and allows assistive tools to trigger the action correctly.
@@ -100,7 +100,7 @@ This improves semantics, keyboard support, and allows assistive tools to trigger
 </form>
 ```
 
-#### Always provide a real label
+### Always provide a real label
 
 - Every form control needs an associated `<label>` that must be programmatically associated with the field:
 
@@ -136,7 +136,7 @@ This improves semantics, keyboard support, and allows assistive tools to trigger
 
 - **Never rely on placeholders as labels**. Placeholders disappear on typing, offer poor contrast, and are not consistently announced by screen readers. Use them only for hints or examples (e.g., "you@example.com"), never as the main label.
 
-#### Required fields
+### Required fields
 
 - Mark required fields using the native `required` attribute; this automatically exposes the information to assistive tech.
 - When necessary, reinforce with `aria-required="true"` (e.g., in custom components).
@@ -148,7 +148,7 @@ This improves semantics, keyboard support, and allows assistive tools to trigger
 <input id="name" name="name" required />
 ```
 
-#### Autocomplete
+### Autocomplete
 
 Autocomplete helps users with cognitive disabilities, dyslexia, ADHD, or memory difficulties by reducing the amount of information they must recall and type.
 
@@ -160,7 +160,7 @@ Autocomplete helps users with cognitive disabilities, dyslexia, ADHD, or memory 
 <input type="email" id="email" name="email" autocomplete="email" required />
 ```
 
-#### Disabled fields
+### Disabled fields
 
 - Disabled native inputs are skipped by keyboard navigation and screen readers.
 - Avoid disabling fields without explanation; many users won't know why they can't interact.
@@ -188,7 +188,7 @@ Autocomplete helps users with cognitive disabilities, dyslexia, ADHD, or memory 
 <p id="coupon-info">Coupons are not available for this plan.</p>
 ```
 
-#### Group related fields
+### Group related fields
 
 For radios, checkboxes or grouped selections, use `<fieldset>` and `<legend>`:
 
@@ -200,7 +200,7 @@ For radios, checkboxes or grouped selections, use `<fieldset>` and `<legend>`:
 </fieldset>
 ```
 
-#### Helpful hints & instructions
+### Helpful hints & instructions
 
 - Provide short, actionable instructions near the field ("Must be 8–20 characters").
 - Use `aria-describedby` for hints that should be announced:
@@ -210,7 +210,7 @@ For radios, checkboxes or grouped selections, use `<fieldset>` and `<legend>`:
 <p id="username-hint">Must be unique and contain only letters or numbers.</p>
 ```
 
-#### Accessible errors
+### Accessible errors
 
 - Errors should describe the actual problem ("Password must be at least 8 characters", not "Invalid input") and be announced to screen readers.
 - They should appear near the field, not at the bottom of the form, and be visually distinct with both **color + text** (don't rely on red alone).
@@ -222,7 +222,7 @@ For radios, checkboxes or grouped selections, use `<fieldset>` and `<legend>`:
 <p id="email-error" role="alert">Enter a valid email address</p>
 ```
 
-#### Success messages
+### Success messages
 
 Users should be informed, not only visually, when an action succeeded.
 
@@ -237,13 +237,13 @@ Users should be informed, not only visually, when an action succeeded.
 
 These roles ensure the message is spoken automatically without requiring the user to focus it.
 
-#### Predictable keyboard flow
+### Predictable keyboard flow
 
 - Users must be able to complete the form with Tab, Shift+Tab, and Enter.
 - Maintain logical field order in the DOM. Do **not** rearrange form fields visually via CSS only.
 - Avoid trapping focus inside custom widgets unless necessary (e.g., date pickers), and provide a clear escape path.
 
-#### Provide focus styles
+### Provide focus styles
 
 - Don't remove focus outlines: they're essential for keyboard and low-vision users.
 - If you customize focus styles, ensure they're clearly visible (sufficient contrast, adequate size).
@@ -257,11 +257,11 @@ input:focus-visible {
 }
 ```
 
-## 3. <a name='KeyboardNavigation'></a>Keyboard Navigation
+## <a name='KeyboardNavigation'></a>Keyboard Navigation
 
 Keyboard accessibility is essential for users who cannot use a mouse (motor disabilities, repetitive strain injuries, temporary injuries) and for power-users who simply prefer keyboard interaction. If a UI can't be operated with a keyboard, it is not accessible.
 
-#### Ensure all interactive elements are reachable
+### Ensure all interactive elements are reachable
 
 - Links, buttons, inputs, and controls must be focusable with **Tab**.
 - Use **semantic elements first**: `<button>`, `<a>`, `<input>`, `<select>`, `<textarea>`.
@@ -282,7 +282,7 @@ Keyboard accessibility is essential for users who cannot use a mouse (motor disa
 
 But: **prefer a real `<button>` whenever possible**.
 
-#### Logical tab order
+### Logical tab order
 
 - The tab order must follow the visual reading order.
 - Avoid large jumps caused by:
@@ -291,7 +291,7 @@ But: **prefer a real `<button>` whenever possible**.
   - Moving elements into a new DOM position on focus or hover
 - Hidden elements (`display:none`, `visibility:hidden`) should not be focusable.
 
-#### Visible focus styles
+### Visible focus styles
 
 Users must always see **where they are** on the screen.
 
@@ -308,7 +308,7 @@ a:focus-visible {
 
 This avoids showing focus on mouse click, but keeps it for keyboard users.
 
-#### Focus behavior in complex UI
+### Focus behavior in complex UI
 
 Some components require explicit focus management:
 
@@ -344,20 +344,20 @@ modal.addEventListener("keydown", (e) => {
 
 For more complex scenarios, consider using libraries like [focus-trap](https://github.com/focus-trap/focus-trap) or [focus-trap-react](https://github.com/focus-trap/focus-trap-react) for React applications.
 
-#### Managing focus responsibly
+### Managing focus responsibly
 
 - Don't move elements into a different DOM position on focus: it breaks tab order.
 - If you manually call `.focus()`, make sure it's predictable and not surprising.
 - Returning focus to the trigger element after closing overlays improves usability.
 - Keep focus out of hidden or collapsed content (`display:none` elements should not be focusable).
 
-#### Don't hijack keyboard behavior
+### Don't hijack keyboard behavior
 
 - Don't override arrow keys unless you're building a component that traditionally uses them (menus, sliders, carousels).
 - Don't trap the user inside components unintentionally (e.g., in carousels or chat windows).
 - Avoid global `keydown` listeners that swallow Escape or Tab.
 
-#### Quick test
+### Quick test
 
 A 10-second test to catch most issues:
 
@@ -369,11 +369,11 @@ A 10-second test to catch most issues:
 
 If something can't be done with the keyboard, it's a red flag.
 
-## 4. <a name='ImagesAltText'></a>Images & Alt Text
+## <a name='ImagesAltText'></a>Images & Alt Text
 
 Images need meaningful text alternatives so assistive technologies can convey their purpose or content. The goal is not to describe the pixels, but to communicate the **intent**.
 
-#### When an image conveys information
+### When an image conveys information
 
 Provide a short, specific description that reflects what the user needs to understand.
 
@@ -387,7 +387,7 @@ Provide a short, specific description that reflects what the user needs to under
 - Avoid vague alt text such as "image", "photo", or the filename.
 - Keep it concise; screen readers read it inline with the rest of the content.
 
-#### When an image is decorative
+### When an image is decorative
 
 If an image adds visual flavour but no essential meaning, use an **empty alt attribute** so screen readers skip it.
 
@@ -397,7 +397,7 @@ If an image adds visual flavour but no essential meaning, use an **empty alt att
 
 - Never leave out the `alt` attribute completely; `<img>` without alt is announced as "unlabeled graphic".
 
-#### Icons inside buttons or links
+### Icons inside buttons or links
 
 If the text already communicates the action, the icon is decorative.
 
@@ -416,7 +416,7 @@ If the icon is the **only** content, give it a meaningful label:
 </button>
 ```
 
-#### Complex images & visual content (charts, diagrams, prototypes)
+### Complex images & visual content (charts, diagrams, prototypes)
 
 Some visuals contain more than a simple picture: they convey data, relationships or meaning.  
 Avoid placing essential explanations _only_ in tooltips, background images, or hover states, as they are not consistently accessible.
@@ -428,7 +428,7 @@ Use a **short `alt`** (if applicable) plus a **longer explanation**, ideally usi
   - If the image needs _no_ extended explanation, use only `alt`.
   - If the caption already _fully_ describes the visual, provide an empty alt so screen readers don't read everything twice.
 
-##### Using `<figure>` with images
+#### Using `<figure>` with images
 
 ```html
 <figure>
@@ -444,7 +444,7 @@ Use a **short `alt`** (if applicable) plus a **longer explanation**, ideally usi
 
 Screen readers treat the `figcaption` as the **semantic description** of the figure, but **only the non-duplicate parts** should appear there, not a copy of the `alt`.
 
-##### `<figure>` is not limited to `<img>`
+#### `<figure>` is not limited to `<img>`
 
 You can use it with **any standalone visual**: `<canvas>`, `<svg>`, `<video>`, or a rendered component.  
 In these cases, there is **no `alt` attribute**, so the description must be provided entirely in the caption.
@@ -462,7 +462,7 @@ In these cases, there is **no `alt` attribute**, so the description must be prov
 - The **caption becomes the only accessible description**, which is what users need.
 - If the design doesn't require a visible caption (e.g., the insight is already in the UI), hide it visually using the `.sr-only` utility class (see [Labels & Forms](#LabelsForms) for implementation details). This keeps the content accessible while preserving the intended layout.
 
-#### Background images
+### Background images
 
 Background images (CSS) **cannot** have `alt`. Ensure the essential content is in HTML, not CSS.
 
@@ -478,14 +478,14 @@ Background images (CSS) **cannot** have `alt`. Ensure the essential content is i
 }
 ```
 
-#### Do not encode text inside images
+### Do not encode text inside images
 
 Text embedded inside an image is invisible to screen readers, translators, and search engines.
 
 - Prefer real HTML text on top of a background.
 - If unavoidable, duplicate the text as `alt` or nearby content.
 
-#### Emojis and accessibility
+### Emojis and accessibility
 
 Screen readers read emoji names, which can be awkward or confusing. If an emoji conveys important meaning, use `aria-label` to control what gets announced:
 
@@ -495,17 +495,17 @@ Screen readers read emoji names, which can be awkward or confusing. If an emoji 
 
 For decorative emojis, you can use `aria-hidden="true"` to hide them from screen readers, similar to decorative images.
 
-## 5. <a name='ARIA'></a>ARIA
+## <a name='ARIA'></a>ARIA
 
 **ARIA** (Accessible Rich Internet Applications) provides attributes that help assistive technologies understand the structure, state and behavior of custom UI components.
 It is **not** a replacement for semantic HTML; it does **not** fix inaccessible markup, and it does not add keyboard behavior automatically. Moreover, it often adds complexity and can break accessibility if misused. Use it sparingly, and only when native elements cannot express the needed behavior.
 
-#### General rule
+### General rule
 
 > **"Use native HTML whenever possible.  
 > If you can use a `<button>`, `<a>`, `<label>`, `<fieldset>`, `<dialog>`, don't recreate them with `div`s and ARIA."**
 
-#### Appropriate ARIA use
+### Appropriate ARIA use
 
 Use ARIA only to **add** missing semantics to custom components:
 
@@ -523,7 +523,7 @@ Use ARIA only to **add** missing semantics to custom components:
 <div id="filters" hidden>...</div>
 ```
 
-#### When not to use ARIA
+### When not to use ARIA
 
 Avoid adding ARIA roles that duplicate or override native behaviors:
 
@@ -541,7 +541,7 @@ ARIA attributes alone do not provide keyboard support or focus behavior. If you 
 
 Which is why native elements are almost always better.
 
-#### Attributes that require caution
+### Attributes that require caution
 
 Use these only when you have a specific reason:
 
@@ -555,7 +555,7 @@ Use these only when you have a specific reason:
 </button>
 ```
 
-#### ARIA is not a substitute for correct structure
+### ARIA is not a substitute for correct structure
 
 Avoid using ARIA to compensate for:
 
@@ -569,7 +569,7 @@ Avoid using ARIA to compensate for:
 
 All of these should be fixed with HTML, CSS and proper component design.
 
-#### Quick mental model
+### Quick mental model
 
 - **First:** Use the correct native element
 - **Then:** Fix semantics with structure (labels, headings, lists)
@@ -578,7 +578,7 @@ All of these should be fixed with HTML, CSS and proper component design.
 For more detailed guidance, refer to **WAI-ARIA (W3C Web Accessibility Initiative)**:  
 https://www.w3.org/WAI/standards-guidelines/aria/
 
-## 6. <a name='CustomUIComponents'></a>Custom UI Components
+## <a name='CustomUIComponents'></a>Custom UI Components
 
 Custom UI components need to offer the same accessibility guarantees as their native HTML equivalents.  
 Buttons, links, checkboxes, dialogs and selects already come with built-in semantics, keyboard behavior, and assistive-technology support. When we replace them with `div`-based widgets, we must recreate all of that manually.
@@ -587,7 +587,7 @@ Whenever possible, prefer native elements or accessibility-focused headless libr
 
 Use a custom component only when the native option truly doesn't meet the product requirements.
 
-#### What every custom component must support
+### What every custom component must support
 
 If a component is custom, it must:
 
@@ -602,14 +602,14 @@ If a component is custom, it must:
 
 If any of these are missing, the component isn't complete.
 
-#### Follow established patterns
+### Follow established patterns
 
 For complex widgets (selects, tabs, dialogs, disclosures, listboxes, comboboxes), use the official patterns documented in the [WAI-ARIA Authoring Practices](https://www.w3.org/WAI/ARIA/apg/)
 
 These patterns define how the component should behave (roles, expected keyboard interactions, states, relationships).  
 They're not optional: assistive technologies rely on them.
 
-#### Common mistakes
+### Common mistakes
 
 - Using a `div` as a button without adding semantics or keyboard support.
 - Creating dropdowns that don't announce whether they're open or that can't be opened with the keyboard.
@@ -619,7 +619,7 @@ They're not optional: assistive technologies rely on them.
 - Modals that don't trap focus or don't return focus when closed.
 - Carousels or sliders that auto-rotate without user control or reduced-motion support.
 
-#### Example (simplified)
+### Example (simplified)
 
 **Incorrect**
 
@@ -705,12 +705,12 @@ list.addEventListener("keydown", (e) => {
 
 This is still simplified, but shows the minimum expected behavior: keyboard support, state management, and predictable focus handling.
 
-## 7. <a name='ReducedMotion'></a>Reduced Motion
+## <a name='ReducedMotion'></a>Reduced Motion
 
 Some users experience motion sensitivity, vertigo or cognitive overload when exposed to large, fast or unexpected animations.  
 CSS gives us tools to respect user preferences automatically, and we should use them whenever we animate UI elements.
 
-#### Respect `prefers-reduced-motion`
+### Respect `prefers-reduced-motion`
 
 Always wrap non-essential animations in a media query that checks for reduced-motion preferences:
 
@@ -727,7 +727,7 @@ Always wrap non-essential animations in a media query that checks for reduced-mo
 This should not remove _all_ transitions everywhere by default, but it shows the pattern.  
 Apply it selectively to components with significant movement.
 
-#### Avoid motion-heavy patterns
+### Avoid motion-heavy patterns
 
 - Big parallax effects
 - Auto-scrolling or scroll-jacking
@@ -737,7 +737,7 @@ Apply it selectively to components with significant movement.
 
 Prefer small opacity or color transitions that feel stable.
 
-#### Provide stable alternatives
+### Provide stable alternatives
 
 If your component uses motion to communicate state, ensure the same information is available without animation:
 
@@ -745,7 +745,7 @@ If your component uses motion to communicate state, ensure the same information 
 - A snackbar should not require motion to be noticed. Also use `role="status"` or clear styling.
 - A tooltip should not animate from far away; keep movement minimal.
 
-#### Animation libraries
+### Animation libraries
 
 If you use animation libraries ([Motion (formerly Framer Motion)](https://motion.dev/), [GSAP](https://gsap.com/), [React Spring](https://react-spring.dev/)):
 
@@ -773,7 +773,7 @@ function FadeIn({ children }) {
 }
 ```
 
-#### When motion is essential
+### When motion is essential
 
 If motion is part of the interaction (carousel, slider, drag & drop):
 
@@ -783,12 +783,12 @@ If motion is part of the interaction (carousel, slider, drag & drop):
 
 Respecting reduced-motion settings is not only an accessibility requirement, it also makes interfaces feel calmer, more stable and more professional.
 
-## 8. <a name='BasicAccessibilityTesting'></a>Basic Accessibility Testing
+## <a name='BasicAccessibilityTesting'></a>Basic Accessibility Testing
 
 Accessibility doesn't require a full audit to catch the biggest issues.  
 A few quick checks during development can prevent most blockers before they ship.
 
-#### Keyboard testing (the fastest and most important check)
+### Keyboard testing (the fastest and most important check)
 
 Try navigating your page with only:
 
@@ -800,7 +800,7 @@ Try navigating your page with only:
 
 If you get stuck, lose focus, or can't activate something, it's inaccessible.
 
-#### Screen reader smoke test
+### Screen reader smoke test
 
 You don't need to be an expert. Just test the basics:
 
@@ -818,7 +818,7 @@ Check that elements:
 
 A short 3-minute test can reveal missing labels, broken structure or incorrect roles.
 
-#### Built-in browser tools
+### Built-in browser tools
 
 Use Chrome DevTools → **Accessibility** pane:
 
@@ -827,7 +827,7 @@ Use Chrome DevTools → **Accessibility** pane:
 - Verify contrast directly in DevTools
 - Inspect focus order with "Tab" focus highlighting
 
-#### Automated tools (first pass)
+### Automated tools (first pass)
 
 Automated tools won't catch everything, but they're excellent for fast feedback:
 
@@ -836,14 +836,14 @@ Automated tools won't catch everything, but they're excellent for fast feedback:
 
 Run these early; treat errors as code smells.
 
-#### Test with reduced motion & zoom
+### Test with reduced motion & zoom
 
 - Enable **Reduce Motion** in OS settings
 - Ensure the UI still works and doesn't flicker or jump
 - Zoom to **200%** in the browser
 - Check that layout still holds and nothing becomes unreachable
 
-#### When working on components
+### When working on components
 
 Test your component in isolation:
 
@@ -855,7 +855,7 @@ Test your component in isolation:
 
 These checks take seconds and prevent major downstream issues.
 
-#### When QA time is limited
+### When QA time is limited
 
 At minimum, test:
 
@@ -869,7 +869,7 @@ At minimum, test:
 
 Small habits → huge accessibility wins for the whole product.
 
-## 9. <a name='EngineeringAccessibilityChecklist'></a>Engineering Accessibility Checklist
+## <a name='EngineeringAccessibilityChecklist'></a>Engineering Accessibility Checklist
 
 A fast, practical checklist to review implementations before shipping.
 
