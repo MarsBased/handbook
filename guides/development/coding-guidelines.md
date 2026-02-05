@@ -20,7 +20,7 @@ Focus on code readability. Code should tell a story. Code should be easy to unde
 		* **1.2.6** [Don't make typos](#DontMakeTypos)
 		* **1.2.7** [Avoid comments with TODOs](#AvoidTODOs)
 
-### 1. <a name="DosandDonts"></a>Do's and Don'ts
+## 1. <a name="DosandDonts"></a>Do's and Don'ts
 
 ### 1.1 <a name='Dos'></a>Do's
 
