@@ -6,11 +6,11 @@ It is a great pleasure to welcome you to the MarsBased spaceship. This will be a
 
 Take a few minutes to go through the different sections below. They will help you to get familiar with the company, the tools you'll be using, the team, etc.
 
-* [Your Spaceship setup 🚀](#your-spaceship-set-up-)
-* [Your profile & preferences 🧑‍🚀](#your-profile--preferences-astronaut)
-* [Guided with ❤️ by Martians](#guided-with-heart-by-martians)
+* [Your Spaceship setup 🚀](#spaceship)
+* [Your profile & preferences 🧑‍🚀](#profile-preferences)
+* [Guided with ❤️ by Martians](#guided)
 
-## Your Spaceship setup 🚀
+## <a name="spaceship"></a> Your Spaceship setup 🚀
 
 ### Contract
 
@@ -101,7 +101,7 @@ Please send Leire or Eli the following information so that we can include your p
 * A picture for the website.
 * A couple of fun facts about you for your bio (2 lines max).
 
-### Preferences
+### <a name="profile-preferences"></a> Preferences
 
 We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below, as well as any other important issue we should be aware of.
 
@@ -111,7 +111,7 @@ We are a flexible company and try to adapt to your needs as much as possible. Pl
 
 _There is no hurry, you can provide us with this information once you get a bit settled!_
 
-## Guided with ❤️ by Martians
+## <a name="guided"></a> Guided with ❤️ by Martians
 
 Among Martians, we share the spirit of helping each other so whomever you have the chance to interact with, you'll find a colleague open to sharing experiences, learnings, and tips. There will be plenty of occasions to get to know the team, and the team to get to know you.
 
