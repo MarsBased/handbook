@@ -1,6 +1,6 @@
 # Current projects
 
-Here's a breakdown of the current projects we're working on, as of 23/12/2024:
+Here's a breakdown of the current projects we're working on, as of 18/02/2026:
 
 First off, we are still working for <a href="https://naiz.eus" title="Naiz" target="_blank">Naiz</a>, evolving their platform. We have been working together since 2015, and we've been able to help them to undergo important transformations like the adaptation to a mobile-first design to all their widgets, a redesign of the entire site or improvements to their newsletter and caching systems. Almost ten years together, by now!
 
