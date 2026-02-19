@@ -21,6 +21,7 @@
 1. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
 1. [Become a Martian](/sections/become-a-martian.md)
+1. [Software and Device Usage policy](/sections/policy-software-and-device-usage.md)
 
 ## Our guides
 
