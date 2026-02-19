@@ -24,6 +24,7 @@
 1. [Digital disconnection policy](/sections/policy-digital%20disconnection.md)
 1. [Travel policy](/sections/policy-travel.md)
 1. [Careers at MarsBased](/sections/careers.md)
+1. [Software and Device Usage policy](/sections/policy-software-and-device-usage.md)
 
 ## Our guides
 
