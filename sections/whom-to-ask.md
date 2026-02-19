@@ -1,4 +1,4 @@
-# Who to ask
+# Whom to ask
 
 To make things easier, we’ve created this handy guide to help you navigate who to reach out to depending on the topic 🤓 
 
