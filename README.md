@@ -28,11 +28,11 @@ We have decided to make this handbook publicly available so we can share as much
 1. [Project types](/sections/projects.md)
 1. [Current projects](/sections/currentprojects.md)
 1. [Benefits & Perks](/sections/benefits.md)
-1. [Holidays, Time off & Paid leave](/sections/timeoff.md)
+1. [Holidays, time off & paid leave](/sections/timeoff.md)
 1. [Digital disconnection policy](/sections/policy-digital%20disconnection.md)
 1. [Travel policy](/sections/policy-travel.md)
 1. [Careers at MarsBased](/sections/careers.md)
-1. [Software and Device Usage policy](/sections/policy-software-and-device-usage.md)
+1. [Software and device usage policy](/sections/policy-software-and-device-usage.md)
 
 ## Our guides
 
