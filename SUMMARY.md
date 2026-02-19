@@ -4,23 +4,26 @@
 
 ## Sections
 
+1. [Become a Martian](/sections/become-a-martian.md)
 1. [First day at MarsBased](/sections/firstday.md)
+1. [Buddy System](/sections/buddy.md)
+1. [Who is who](/sections/who-is-who.md)
 1. [Company culture](/sections/companyculture.md)
 1. [What influenced us](/sections/influences.md)
+1. [Talks & Podcasts](/sections/talks.md)
 1. [What we do](/sections/whatwedo.md)
+1. [How we work](/sections/howwework.md)
+1. [How we communicate](/sections/howwecommunicate.md)
+1. [Whom to ask](/sections/whom-to-ask.md)
+1. [Our rituals](/sections/rituals.md)
+1. [Development](/sections/development.md)
 1. [Project types](/sections/projects.md)
 1. [Current projects](/sections/currentprojects.md)
-1. [How we work](/sections/howwework.md)
-1. [Who is who](/sections/who-is-who.md)
-1. [Development](/sections/development.md)
-1. [Our rituals](/sections/rituals.md)
-1. [Talks & Podcasts](/sections/talks.md)
 1. [Benefits & Perks](/sections/benefits.md)
 1. [Holidays, Time off & Paid leave](/sections/timeoff.md)
+1. [Digital disconnection policy](/sections/policy-digital%20disconnection.md)
 1. [Travel policy](/sections/policy-travel.md)
-1. [Buddy System](/sections/buddy.md)
 1. [Careers at MarsBased](/sections/careers.md)
-1. [Become a Martian](/sections/become-a-martian.md)
 
 ## Our guides
 
