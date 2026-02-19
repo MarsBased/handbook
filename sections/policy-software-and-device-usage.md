@@ -34,6 +34,4 @@ Access to information or equipment by MB shall be strictly exceptional, justifie
 * Audits: Technical access required for security audits or regulatory compliance.
 
 ## 7. Jurisdiction and Review
-This policy shall be interpreted in accordance with local labor laws. This document becomes effective upon communication and will be reviewed and updated annually.
-
-
+This policy shall be interpreted in accordance with local labor laws. This document may be reviewed and updated annually or as needed.
