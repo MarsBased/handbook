@@ -56,6 +56,220 @@ export type UserCardProps = {
 export const UserCard = ({ user }: UserCardProps) => { ... }
 ```
 
+## Prefer types over interfaces
+
+Use `type` instead of `interface` for defining object shapes and other type aliases. `type` is more versatile and consistent across different use cases.
+
+**Advantages of `type`:**
+
+- Can represent unions, intersections, tuples, mapped types, and conditional types — `interface` cannot
+- More consistent: one syntax for all type definitions
+- Cannot be declaration-merged (prevents accidental augmentation from other files)
+- Works more naturally with utility types (`Pick`, `Omit`, `Partial`, etc.)
+
+What `type` can do that `interface` cannot:
+
+```ts
+// ✅ type can represent unions
+type Status = "pending" | "active" | "disabled";
+
+// ✅ type can represent intersections concisely
+type AdminUser = User & { permissions: string[] };
+
+// ✅ type can represent tuples
+type Coordinate = [number, number];
+
+// ✅ type can use mapped and conditional types
+type Readonly<T> = { readonly [K in keyof T]: T[K] };
+type NonNullableFields<T> = { [K in keyof T]: NonNullable<T[K]> };
+
+// ❌ None of the above are possible with interface
+```
+
+Declaration merging pitfall:
+
+```ts
+// ⚠️ interface allows declaration merging, which can cause unexpected behavior
+// In file user.ts
+interface User {
+  name: string;
+  email: string;
+}
+
+// In another file or even the same file
+interface User {
+  role: string; // This silently merges into the original User interface
+}
+
+// Now User has name, email, AND role — which may be unintended
+
+// ✅ type does not allow declaration merging — redeclaring causes a compile error
+type User = {
+  name: string;
+  email: string;
+};
+
+type User = { // ❌ Error: Duplicate identifier 'User'
+  role: string;
+};
+```
+
+> **Exception:** `interface` is acceptable when you intentionally need declaration merging (e.g., augmenting third-party library types or extending `Window`).
+
+## Use explicit return types for complex functions
+
+Functions returning complex types that aren't easily inferred must have explicit return type annotations. Simple functions with obvious inference don't need them.
+
+**Why explicit return types matter:**
+
+- Acts as documentation of the function contract
+- Catches implementation errors at the function boundary, not at distant call sites
+- Prevents accidental return type changes from silently propagating
+- Produces better, more localized error messages
+
+**Problems when omitted:**
+
+- A small implementation change can accidentally alter the inferred return type, breaking callers far away
+- Error messages appear at call sites instead of at the function definition
+- Harder to understand what a function returns without reading its full implementation
+
+Accidental return type change without explicit annotation:
+
+```ts
+// ❌ Bad: No explicit return type
+function getUserDisplayData(user: User) {
+  return {
+    fullName: `${user.firstName} ${user.lastName}`,
+    email: user.email,
+    role: user.role,
+  };
+}
+
+// Later, someone refactors and accidentally changes the return shape:
+function getUserDisplayData(user: User) {
+  return {
+    fullName: `${user.firstName} ${user.lastName}`,
+    email: user.email,
+    role: user.role,
+    // Accidentally added — now the inferred return type changes silently
+    internalId: user.id,
+  };
+}
+
+// The error only surfaces far away at call sites:
+// "Property 'internalId' does not exist on type..." — confusing and hard to trace
+```
+
+```ts
+// ✅ Good: Explicit return type catches the mistake immediately at the function
+type UserDisplayData = {
+  fullName: string;
+  email: string;
+  role: UserRole;
+};
+
+function getUserDisplayData(user: User): UserDisplayData {
+  return {
+    fullName: `${user.firstName} ${user.lastName}`,
+    email: user.email,
+    role: user.role,
+    internalId: user.id, // ❌ Error right here: 'internalId' does not exist in type 'UserDisplayData'
+  };
+}
+```
+
+When explicit return types aren't needed:
+
+```ts
+// Simple functions with obvious inference don't need explicit return types
+const add = (a: number, b: number) => a + b;
+const isActive = (user: User) => user.status === "active";
+const toUpperCase = (value: string) => value.toUpperCase();
+```
+
+## Use named types, avoid anonymous types
+
+Prefer named types over inline/anonymous type literals. Named types improve reusability, readability, and maintainability.
+
+**Advantages:**
+
+- Reusable across the codebase
+- Better error messages — TypeScript shows the type name instead of the full expanded structure
+- Self-documenting: a name communicates intent
+- Easier refactoring — change the type definition in one place
+- Better IDE experience (hover tooltips show meaningful names)
+
+**Problems with anonymous types:**
+
+- Cannot be reused, leading to duplication
+- Error messages show the full object structure, making them hard to read
+- No single source of truth — changes must be made in every occurrence
+
+Anonymous types causing duplication and poor readability:
+
+```ts
+// ❌ Bad: Anonymous types repeated across the codebase
+function filterUsers(
+  users: User[],
+  filters: { status: string; role: string; active: boolean },
+): User[] {
+  // ...
+}
+
+function buildFilterQuery(
+  filters: { status: string; role: string; active: boolean },
+): string {
+  // ...
+}
+
+// If the filter shape changes, you have to update it everywhere
+// Error messages will show the full object structure:
+// "Argument of type '{ status: string; }' is not assignable to
+//  parameter of type '{ status: string; role: string; active: boolean }'"
+```
+
+```ts
+// ✅ Good: Named type used everywhere
+type UserFilters = {
+  status: string;
+  role: string;
+  active: boolean;
+};
+
+function filterUsers(users: User[], filters: UserFilters): User[] {
+  // ...
+}
+
+function buildFilterQuery(filters: UserFilters): string {
+  // ...
+}
+
+// Single source of truth — change in one place
+// Error messages are clear:
+// "Argument of type '{ status: string; }' is not assignable to
+//  parameter of type 'UserFilters'"
+```
+
+Anonymous types in React components:
+
+```ts
+// ❌ Bad: Anonymous prop types
+const UserCard = ({ name, email, role }: { name: string; email: string; role: string }) => {
+  // ...
+};
+
+// ✅ Good: Named prop types
+type UserCardProps = {
+  name: string;
+  email: string;
+  role: string;
+};
+
+const UserCard = ({ name, email, role }: UserCardProps) => {
+  // ...
+};
+```
+
 ### Export every type
 
 In an ideal world, all libraries would export the types of the objects they provide access to. Unfortunately, this is not always the case, so export every type you create.
