@@ -17,8 +17,6 @@ The development is the core of our work. Here, you'll find detailed information 
 Check out our more technical development guidelines (if you dare!).
 
 - [Active Record guidelines](/guides/development/activerecord-guide.md)
-- [Angular guidelines](/guides/development/angular-guidelines.md)
-- [Angular 17 guidelines](/guides/development/angular-17-guidelines.md)
 - [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
 - [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 - [Coding guidelines](/guides/development/coding-guidelines.md)
