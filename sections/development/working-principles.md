@@ -1,14 +1,14 @@
 # Working principles
 
-1. [Speak like a Martian](#SpeaklikeaMartian)
-2. [No Martian left behind](#NoMartianleftbehind)
-3. [Let your code history speak for itself](#Letyourcodehistoryspeakforitself)
-4. [Measure twice, cut once!](#Measuretwicecutonce)
-5. [Who watches the watchmen?](#Whowatchesthewatchmen)
+1. [Speak like a Martian](#1-speak-like-a-martian)
+2. [No Martian left behind](#2-no-martian-left-behind)
+3. [Let your code history speak for itself](#3-let-your-code-history-speak-for-itself)
+4. [Measure twice, cut once!](#4-measure-twice-cut-once)
+5. [Who watches the watchmen?](#5-who-watches-the-watchmen)
 
 Those are our principles, and if you don't like them... well, you know how that goes.
 
-## 1. <a name='SpeaklikeaMartian'></a>Speak like a Martian
+## 1. Speak like a Martian
 
 Be communicative with your team. We're far from each other, so any information you can provide about you and your work is welcome.
 
@@ -18,7 +18,7 @@ Use the #status Slack channel and / or Slack built-in status messages to inform 
 
 Update the status of the task you are working on frequently on Linear. Use comments in the project management tool to keep everybody in the loop. Use Slack instead if you need a more direct status report.
 
-## 2. <a name='NoMartianleftbehind'></a>No Martian left behind
+## 2. No Martian left behind
 
 Software development is hard and no matter how expert you are. You may have doubts. Your team is here to support you.
 
@@ -30,7 +30,7 @@ As a general rule, it's better to sort things early on before is too late, so th
 
 MarsBased encourages async communication and we all understand that someone might not be able to reply immediately; but by raising the flag it will be easier for everybody to organise the work and help you (sync or async).
 
-## 3. <a name='Letyourcodehistoryspeakforitself'></a>Let your code history speak for itself
+## 3. Let your code history speak for itself
 
 Git is a great tool to document the coding process. Take care of it.
 
@@ -42,7 +42,7 @@ Git is a great tool to document the coding process. Take care of it.
   - Explain how to test if it requires some setup.
   - If you made additional changes, like a refactor or some other change needed, please explain it.
 
-## 4. <a name='Measuretwicecutonce'></a>Measure twice, cut once!
+## 4. Measure twice, cut once!
 
 Take some time to read all the documentation available (ticket description and comments) before starting any task.
 
@@ -52,7 +52,7 @@ While you are working on the ticket, re-read its description to make sure no det
 
 Also, take a final look at the description when you are done with the implementation to double-check that the code is doing exactly what is expected.
 
-## 5. <a name='Whowatchesthewatchmen'></a>Who watches the watchmen?
+## 5. Who watches the watchmen?
 
 Any change can lead to new bugs. Do not think a change won't break everything or anything.
 
