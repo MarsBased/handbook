@@ -24,7 +24,7 @@ Most sites we build should implement these baseline nodes, at least.
 Used to define the publisher and the entity behind the website. In the case of our website, MarsBased is our organisation.
 
 Recommended:
-- "@type": "Organisation" (or "LocalBusiness" if truly local-first)
+- "@type": "Organization" (or "LocalBusiness" if truly local-first)
 - "name"
 - "url"
 - "logo" (as an ImageObject if possible)
@@ -160,6 +160,8 @@ Example (applicantLocationRequirements cut for legibility purposes):
 ````
 <script type="application/ld+json">
   { "@context":"https://schema.org/",
+      "@graph": [
+        {
         "@type":"JobPosting",
           "title":"Full Stack Software Engineer  (100% Remote)",
           "description":"We are looking for a Full Stack Software Engineer to join our Martian team.",
@@ -169,8 +171,9 @@ Example (applicantLocationRequirements cut for legibility purposes):
           "jobLocationType":"TELECOMMUTE",
           "employmentType":"FULL_TIME",
           "hiringOrganization":{"@id":"https://marsbased.com/#organization"},
-          "baseSalary":{"@type":"MonetaryAmount","currency":"EUR","value":{"@type":"QuantitativeValue","minValue":null,"maxValue":null,"unitText":"YEAR"}}
-  }
+          "baseSalary":{"@type":"MonetaryAmount","currency":"EUR","value": {"@type":"QuantitativeValue","minValue":40000,"maxValue":60000,"unitText":"YEAR"}}}
+              ]
+    }
 </script>
 ````
 
