@@ -51,7 +51,7 @@
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
 1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
 1. [Some of our used programming patterns](/guides/patterns/README.md)
-1. [Our schema.org implementation guidelines](/guides/schema.md)
+1. [Our schema implementation guidelines](/guides/schema.md)
 
 ## Our accessibility guides
 
