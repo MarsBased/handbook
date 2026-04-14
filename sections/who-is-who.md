@@ -98,3 +98,53 @@ The crew coding our way through the galaxy: David, Jose Luis, José, Laura, Alej
 ## Marketer & Podcast Co-Host
 
 As our Marketer & Podcast Co-Host, David helps bring the MarsBased voice to life by producing the Life on Mars podcast and supporting our blog, newsletter, social media, and YouTube channel. He also maintains our corporate website and contributes to ensuring our marketing engines run smoothly and consistently across all platforms.
+
+---
+
+# Information Security Management
+
+MarsBased holds ISO 27001 certification and maintains an Information Security Management System (ISMS) as part of its commitment to protecting client and company data. This section outlines the roles and responsibilities within the organization that support the ongoing operation, governance, and continuous improvement of that system.
+
+## Executive Management
+
+Executive management ensures adequate resources are allocated to implement and sustain the ISMS. They are responsible for strategic direction and oversight of the company's information security program.
+
+- **CEO:** Àlex Rodríguez
+- **CTO:** Xavier Redó
+- **COO:** Jordi Vendrell
+
+## Department Heads
+
+Department heads ensure their teams adhere to ISMS policies and contribute to compliance efforts. They are responsible for implementing security controls within their areas of responsibility.
+
+- **Business Development & Marketing:** Àlex Rodríguez
+- **Projects & Operations:** Jordi Vendrell
+- **HR & Administration:** Elisabet Renom
+- **Development:** Xavier Redó
+
+## Information Security Manager (ISM)
+
+The Information Security Manager oversees the implementation and monitoring of access controls, while designated Access Control Owners are responsible for granting, modifying, and revoking access rights. System Administrators implement technical controls in systems and applications according to established requirements.
+
+- **ISM:** Jordi Vendrell
+
+## Business Continuity Manager
+
+The Business Continuity Manager oversees the BIA process and ensures consistent methodology across the organization. Department Heads are responsible for providing accurate information about their business processes and identifying critical functions within their areas. The Information Security Manager ensures the integration of security requirements throughout the BIA process and contributes to security-focused recovery strategies.
+
+- **Business Continuity Manager:** Àlex Rodríguez
+
+## Oversight Committee
+
+The Oversight Committee provides governance, leadership, and direction for the organization's ISMS in alignment with the requirements of ISO 27001. The Committee ensures effective implementation, continuous improvement, and compliance with information security standards and organizational objectives.
+
+- **Chairperson:** Jordi Vendrell — Oversees the ISMS and ensures alignment with organizational goals. Leads Committee meetings, decision-making processes, and provides guidance on the prioritization of ISMS initiatives.
+- **Committee Member:** Àlex Rodríguez — Reviews and approves information security policies and objectives, assesses and allocates resources, monitors compliance, and provides input on risk management strategies.
+- **Secretary:** Xavier Redó — Maintains records of meetings, decisions, and actions. Documents and circulates meeting agendas, minutes, and action items.
+
+## ISMS Operational Roles
+
+- **ISMS Lead:** Jordi Vendrell — Owns the Statement of Applicability (SoA), oversees updates, and ensures alignment with risk treatment plans and organizational objectives.
+- **Risk Management Team:** Jordi Vendrell & Xavier Redó — Identifies and assesses risks to determine applicable controls and provides input and recommendations for the SoA.
+- **Departmental Managers:** Àlex Rodríguez, Xavier Redó, Jordi Vendrell & Elisabet Renom — Ensure implementation and adherence to controls relevant to their functions.
+- **Internal Audit Team:** Xavier Redó & Àlex Rodríguez — Validates the completeness and accuracy of the SoA during audits and highlights gaps or areas requiring improvement.
