@@ -20,7 +20,7 @@ We officially have 24 working days per year off, in addition to the local holida
   * The People team will be automatically notified. They will review your request, and you will receive a notification once it’s approved.
 
 > [!TIP]
-> For additional information, check out the [Holded User Guideline](https://drive.google.com/file/d/1i2-6WogIad5pdkHjAyfdVVIhInfb7OOc/view?usp=sharing).
+> For additional information, check out the [Holded User Guideline](https://drive.google.com/file/d/1Ycszs45UIloCqgRFLXzkpq7eEJ7DhXKw/view?usp=drive_link).
 
 Kindly bear in mind:
 
