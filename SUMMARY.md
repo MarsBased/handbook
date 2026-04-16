@@ -40,6 +40,7 @@
 
 ## Our development guides
 
+1. [AI Augmented Development](/guides/development/ai-augmented-development.md)
 1. [Coding guidelines](/guides/development/coding-guidelines.md)
 1. [Security guidelines](/guides/security/README.md)
 1. [Our Git & Commit guidelines](/guides/development/git-guidelines.md)
