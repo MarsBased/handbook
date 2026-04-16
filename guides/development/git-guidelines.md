@@ -2,25 +2,25 @@
 
 This is a guide covering how we expect to work with Git at MarsBased. Most of this guide is GitHub oriented but might be adapted to other Git tools like GitLab or Bitbucket.
 
-- **1.** [Commit Message Guidelines](#commitmessageguidelines)
-- **1.1** [Message Format](#messageformat)
-- **1.1.1** [Message Header Type](#headertype)
-- **1.1.2** [Message Header Scope](#headerscope)
-- **1.1.3** [Message Samples](#commitmessagesamples)
-- **2.** [Git Branches Naming](#gitbranchesnaming)
-- **3.** [Git Workflow](#gitworkflow)
-- **4.** [Dangerous behaviours](#dangerousbehaviours)
+- **1.** [Commit Message Guidelines](#commit-message-guidelines)
+- **1.1** [Message Format](#commit-message-format)
+- **1.1.1** [Message Header Type](#type)
+- **1.1.2** [Message Header Scope](#scope)
+- **1.1.3** [Message Samples](#commit-message-samples)
+- **2.** [Git Branches Naming](#git-branches-naming)
+- **3.** [Git Workflow](#git-workflow)
+- **4.** [Dangerous behaviours](#dangerous-behaviours)
 - **5.** [Credits](#credits)
 
 At MarsBased we work with a large variety of clients. Some clients may follow their own guidelines. You can always suggest improvements over their guidelines but there will be cases where it will not be possible to use ours.
 
-## <a name="commitmessageguidelines"></a>Commit Message Guidelines
+## Commit Message Guidelines
 
 We have very precise rules on how git commit messages should be formatted. This leads to more readable messages that are easy to follow when reviewing the project history.
 
 We use **Linear** as our tracking tool. Whenever possible, commit messages should reference the related Linear issue.
 
-### <a name="messageformat"></a>Commit Message Format
+### Commit Message Format
 
 Each commit message consists of a header and an optional description.
 
@@ -45,7 +45,7 @@ The maximum length of the header must be 72 characters. Any other line of the co
 
 The language used in commit messages is English. If the client needs access to the commit history for documentation purposes and does not understand English, other languages may be used instead.
 
-### <a name="headertype"></a>Type
+### Type
 
 Choose the type that best fits the task:
 
@@ -56,7 +56,7 @@ Choose the type that best fits the task:
 - **docs**: Documentation-only changes.
 - **test**: Adding or fixing tests.
 
-### <a name="headerscope"></a>Scope
+### Scope
 
 The scope describes the specific module or part of the application affected by the change. It is optional.
 
@@ -66,7 +66,7 @@ Examples:
 - **users**: User management.
 - **payment**: Payment gateway.
 
-### <a name="commitmessagesamples"></a>Commit Message Samples
+### Commit Message Samples
 
 With a Linear issue:
 
@@ -88,7 +88,7 @@ Without a Linear issue (`feat` is not allowed):
 fix: update Docker base image to v2.6
 ```
 
-## <a name="gitbranchesnaming"></a>Git Branches Naming
+## Git Branches Naming
 
 Any branch created for a project must follow these rules.
 
@@ -116,7 +116,7 @@ Examples:
 
 For client projects, adapt the naming to their requirements if needed.
 
-## <a name="gitworkflow"></a>Git Workflow
+## Git Workflow
 
 We use a simplified version of Gitflow.
 
@@ -147,11 +147,11 @@ For small projects or small teams, we usually keep things simpler by working wit
 
 Even in this simplified setup, we still work with short-lived branches per feature or fix, open Pull Requests, and perform code reviews before merging into `main`.
 
-## <a name="dangerousbehaviours"></a>Dangerous behaviours
+## Dangerous behaviours
 
 - Avoid using `git push -f` when working on a shared branch. Use `git push --force-with-lease` instead.
 
-## <a name="credits"></a>Credits
+## Credits
 
 This guide is heavily influenced by:
 

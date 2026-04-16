@@ -6,15 +6,15 @@ Linear is an incredible task management tool for development teams, but we use i
 
 In this section of the Handbook, we describe a few Linear concepts that every Martian ought to know.
 
-1. [Triage](#triage)
-2. [Backlog](#backlog)
-3. [Cycles](#cycles)
-4. [Projects](#projects)
-5. [Statuses](#statuses)
-6. [Fields](#fields)
-7. [Other tips](#tips)
+1. [Triage](#1-triage)
+2. [Backlog](#2-backlog)
+3. [Cycles](#3-cycles)
+4. [Projects](#4-projects)
+5. [Statuses](#5-statuses-columns-of-the-board)
+6. [Fields](#6-fields)
+7. [Other tips](#7-other-tips-and-best-practices)
 
-## 1. <a name='triage'></a>Triage
+## 1. Triage
 
 New tasks are typically created in the Triage section. It's like a list of things that we still haven't decided that we want to develop. Some tasks will be approved and moved to the backlog while others won't.
 
@@ -35,17 +35,17 @@ If it's a bug, make sure to include the following information:
 - Screenshots or a video showing the problem, if it's meaningful.
 - URLs (staging / production / Sentry / other monitoring platforms), if present.
 
-## 2. <a name='backlog'></a>Backlog
+## 2. Backlog
 
 The Backlog is our list of pending work, sorted by priority (urgent, high, medium, low). Tasks approved in the Triage section go here.
 
-## 3. <a name='cycles'></a>Cycles
+## 3. Cycles
 
 Cycles are like development sprints but with a different name. We work in three-week sprints (or cycles 😅). The active cycle is where the development takes place. We typically plan the next development cycle right before finishing the previous one. Project managers and tech leads decide what's included according to the client's needs and the project priorities (we always try to mix technical improvements and maintenance tasks with new features).
 
 When it comes to cycle planning, we always leave room for new urgent tasks or unforeseen situations by leaving 15-20% of our capacity unplanned.
 
-## 4. <a name='projects'></a>Projects
+## 4. Projects
 
 We use Linear projects in a slightly different way than it might seem.
 
@@ -55,7 +55,7 @@ In a few projects that are already in production, we use Linear projects to grou
 
 In other ones, where we can effectively apply a continuous delivery approach, we don't use Linear projects at all. So, as you can see, it depends a lot on each project 🤷🏻‍♂️
 
-## 5. <a name='statuses'></a>Statuses (columns of the board)
+## 5. Statuses (columns of the board)
 
 - **To Do:** Tasks assigned to the active cycle go here. We sort them by priority.
 - **Blocked:** If something is blocked, it goes into this column.
@@ -67,7 +67,7 @@ In other ones, where we can effectively apply a continuous delivery approach, we
 - **Done:** When a task gets the final OK, it is moved to Done.
 - **Canceled:** Tasks that have been canceled because they are duplicated or no longer needed.
 
-## 6. <a name='fields'></a>Fields
+## 6. Fields
 
 Here's a short description of the fields that we use when we create a new issue:
 
@@ -80,7 +80,7 @@ Here's a short description of the fields that we use when we create a new issue:
 - **Child issues:** You can create child issues inside other issues. Use it when a task is too big or has multiple steps.
 - **Comments:** Use comments as much as you like to update the rest of the team about a task, ask questions or answer your teammates. Linear is our source of truth so keeping it up to date with comments is very important.
 
-## 7. <a name='tips'></a>Other tips and best practices
+## 7. Other tips and best practices
 
 - We prefer working asynchronously. Please use the task comments to communicate if it's not urgent.
 - Keeping Linear organised is everyone's job, not just the tech lead's or the project manager's.
