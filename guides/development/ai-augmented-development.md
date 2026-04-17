@@ -79,6 +79,23 @@ The context window is finite. How you manage it directly affects output quality.
 
 Only the final result of a subagent returns to your main context, keeping it clean. If the task doesn't clearly benefit from parallelization or isolation, work directly in your main session.
 
+## Hooks
+
+Hooks are shell scripts that Claude Code runs automatically at specific points during a session — before reading a file, after writing one, when a tool is called, and so on. They run outside of Claude's context and cannot be overridden by prompts, which makes them the right place to enforce hard rules.
+
+We use hooks primarily for **security**: to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
+
+### Pre-read hook
+
+Our `pre-read` hook runs before Claude reads any file. It blocks access to:
+
+- **Credential files** — any file whose name starts with `.env` (`.env`, `.env.local`, `.env.production`, etc.) and `.netrc`.
+- **Sensitive directories** — `.ssh`, `.aws`, `.gnupg`, `.kube`, and `.docker`.
+
+If Claude tries to read a blocked path, the hook exits with a non-zero code and returns a `BLOCKED:` message. Claude Code surfaces this as an error and does not proceed with the read.
+
+The hook lives at `.claude/hooks/pre-read.sh` in the project repository and is wired up in `.claude/settings.json` under the `hooks` key.
+
 ## Resources
 
 - [How I work with AI coding agents (Daz)](https://daz.is/blog/how-i-work-with-ai-coding-agents/) — Deep dive into the RPI framework: how to structure research, write effective plans, and implement in chunks while keeping context quality high.
