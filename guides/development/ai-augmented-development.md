@@ -72,7 +72,9 @@ The context window is finite. How you manage it directly affects output quality.
 
 **Skills** are reusable, project-specific workflows packaged as prompts. They load on demand when you invoke them (e.g., `/review`, `/commit`) rather than occupying context at all times. We use skills for repetitive workflows like code reviews, commit message generation, and PR creation.
 
-**Subagents** are independent Claude Code instances that run in isolation with their own context window. We don't default to using subagents. We only reach for them when there is a clear reason:
+**Subagents** are independent Claude Code instances that run in isolation with their own context window. A useful mental model: treat a subagent the way you would treat someone you're delegating work to. When you identify a task you would hand off to a colleague — self-contained, well-defined, with a clear deliverable — that's a good candidate for a subagent. You scope the work, hand it over, and get back a result without being involved in the intermediate steps.
+
+We don't default to subagents. We only reach for them when there is a clear reason:
 
 1. **Parallelization** — When multiple independent tasks can run simultaneously (e.g., researching two unrelated parts of the codebase at once).
 2. **Specific isolated tasks** — When a well-defined task would generate large amounts of intermediate output that would pollute the main session (e.g., broad codebase searches, running verification suites).
