@@ -74,6 +74,8 @@ The context window is finite. How you manage it directly affects output quality.
 
 **Subagents** are independent Claude Code instances that run in isolation with their own context window. A useful mental model: treat a subagent the way you would treat someone you're delegating work to. When you identify a task you would hand off to a colleague — self-contained, well-defined, with a clear deliverable — that's a good candidate for a subagent. You scope the work, hand it over, and get back a result without being involved in the intermediate steps.
 
+A concrete example is the `pr-code-reviewer` agent. When a PR is ready for review, open a terminal, start Claude, and share the GitHub PR URL. The agent fetches the diff, evaluates it against a defined checklist — security, naming, test coverage, SOLID principles, commit conventions — and returns a structured review draft. Code review becomes something you delegate rather than something you do yourself.
+
 We don't default to subagents. We only reach for them when there is a clear reason:
 
 1. **Parallelization** — When multiple independent tasks can run simultaneously (e.g., researching two unrelated parts of the codebase at once).
