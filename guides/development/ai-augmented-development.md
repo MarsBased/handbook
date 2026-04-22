@@ -87,7 +87,10 @@ Only the final result of a subagent returns to your main context, keeping it cle
 
 Hooks are shell scripts that Claude Code runs automatically at specific points during a session — before reading a file, after writing one, when a tool is called, and so on. They run outside of Claude's context and cannot be overridden by prompts, which makes them the right place to enforce hard rules.
 
-We use hooks primarily for **security**: to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
+We use hooks for two main purposes:
+
+- **Security** — to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
+- **Static analysis and formatting** — to run tools like Prettier, ESLint, or RuboCop automatically after Claude modifies a file, so the codebase stays consistent without Claude having to remember to do it. For example, we run Prettier on every TypeScript file Claude edits.
 
 ### Pre-read hook
 
