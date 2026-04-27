@@ -39,7 +39,7 @@ If you are sick for more than two days, we kindly ask you to send us your doctor
 
 ## Health appointment
 
-If you have a regular appointment at the doctor or the dentist, or you need to accompany a relative to the doctor within your ordinary working schedule, you are free to organize yourself as best fits you to recover those hours. But please log them in advance under the 'Sick Leave' category on Holded so the team can plan accordingly. These absences are automatically approved. You don't need to send us any proof of your doctor's visit.
+If you have a regular appointment at the doctor or the dentist, or you need to accompany a relative to the doctor within your ordinary working schedule, you are free to organize yourself as best fits you to recover those hours. 
 
 If, for some reason, you have to visit the doctor regularly due to treatment or whatever, let the People team know, and they’ll be happy to help you find the best way to reconcile both.
 
