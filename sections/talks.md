@@ -1,53 +1,55 @@
 # Talks & Podcasts
 
-We get to speak at events, conferences and podcast pretty often now, so if you want to learn more about the company, its origins, the early days, where are we headed to and even some forecasts about the future, here's a few of them.
+At MarsBased, we have a long-standing tradition of sharing our knowledge with the global tech community. We frequently speak at international events, conferences, and external podcasts. 
 
-## Content in English
+If you want to dive deep into our company's origins, our philosophy on bootstrapping, how we scale all-remote engineering teams, or where we see the future of tech heading, this section contains our curated library of top-tier content.
 
-* __Startup Grind Tech Conference__: Our CTO, Xavi, talks in a panel about hiring and managing remote workers. Xavi provided the vision of the small company while Laura González (Schibsted) provided the perspective of the large corporate - <a href="https://www.youtube.com/watch?v=4MQIPrXPwKc&" title="Xavier Redó at Startup Grind Tech Conference 2018" target="_blank">LINK</a>.
-* __Startup Grind Glasgow__: Our CEO, Àlex, was hosted as the guest speaker at Startup Grind Glasgow in August 2019 to talk about bootstrapping companies, what is MarsBased and how to run all-remote companies - <a href="https://www.youtube.com/watch?v=puvv8-gtGRQ" title="Àlex Rodríguez Bacardit CEO & Founder at MarsBased - The Benefits of Bootstrapping & Remote Teams" target="_blank">LINK</a>.
-* __IndieHackers Barcelona__: Àlex was interviewed as the guest speaker to talk about bootstrapping, indie development, community building and growing an all-remote officeless company - <a href="https://www.youtube.com/watch?v=XWfxscnE5Ts" title="IndieHackers Barcelona #3 with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __Mensch-Sein mit Algorithmen__: Àlex was interviewed remotely by a German symposium about digital transformation. They covered digital transformation, remote work and innovation - <a href="https://www.youtube.com/watch?v=AUaYowJmTRM" title="Àlex Rodríguez Bacardit (Marsbased/ Startup Grind Barcelona) on the digital transformation" target="_blank">LINK</a>.
-* __IronHack__: Àlex gives a talk to each IronHack cohort in Barcelona about launching a business, fuckups and lessons learnt - <a href="https://www.youtube.com/watch?v=qvgrXkke52g" title="Launching your own tech company: lessons learned at MarsBased by Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __Startup Grind Chisinau__: Back in 2018, Àlex visited Moldova to speak at Startup Grind Chisinau, where he talked about his background, growing a services business, disrupting consulting, failed projects and bootstrapping businesses - <a href="https://www.youtube.com/watch?v=4EOEJ0WVRZk" title="Startup Grind Chișinău with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __FindThatLead__: Our buddy Gerard Compte, interviewed Àlex to talk about growth-hacking, expanding businesses, how to interview people, marketing and sales - <a href="https://www.youtube.com/watch?v=exBQEAv4hmw" title="
-Growth Hacking and Outbound Marketing with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __itnig__: Our friends at itnig interviewed Àlex on their weekly meetup with entrepreneurs - <a href="https://podcast.marsbased.com/podcasts-en/34-interview-with-alex-at-itnig/" title="Àlex interviewed at itnig" target="_blank">LINK</a>.
+---
 
-## Content in Spanish
+## The MarsBased Podcast - Life on Mars
 
-* __Radio TeleTaxi__: Because of the presentation of his first book, Camino al éxit(o), Àlex was interviewed by the legendary Justo Molinero to discuss the book, MarsBased and how to face life - <a href="https://www.youtube.com/watch?v=cUnt5dxzCwQ" title="Àlex Rodríguez Bacardit at Radio TeleTaxi" target="_blank">LINK</a>.
-* __Cinco Días__: Our CEO, Àlex, was interviewed for this financial newspaper in Spain - <a href="https://www.dropbox.com/s/swm703uau8rgyso/12633759_10153833916187969_5451559627915928539_o.jpg?dl=0" title="Cinco Días interviewed Àlex Rodríguez Bacardit from MarsBased" target="_blank">LINK</a>.
-* __Agile Conference Spain 2019__: Àlex was invited to be the special keynote speaker and talk about how to do remote work in different kinds of organisations, comparing how we do it at MarsBased and how they do it at Startup Grind - <a href="https://youtu.be/smwJWdeNANc" title="Agile Conference Spain 2019 with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __Startup Grind Barcelona__: Our COO, Jordi, was interviewed at Startup Grind Barcelona to talk about how we work in an all-remote environment. We went for over an hour about his background, his previous jobs, and how we work at MarsBased (tools, methodologies, hiring, firing, and whatnot) - <a href="https://www.youtube.com/watch?v=F0NWOtGnjqE" title="Jordi Vendrell at Startup Grind BCN" target="_blank">LINK</a>.
-* __La Tecnologeria__: Àlex, is interviewed to talk about his personal background, studying computer science, his transition through the consulting world and the story behind the creation of MarsBased, among other topics - <a href="https://tecnologeria.com/entrevistas/8x01/marsbased" title="La Tecnologeria with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __Catalonia Clusters__: Our CEO gave a two-hour webinar about remote work for companies affected by COVID-19. This webinar was given to all the members of all the business clusters in Catalonia - thousands - and it covers all the aspects of remote: different models, tools, sync vs async, management styles, communication tips, and more - <a href="https://watchity-videos-ireland.s3.amazonaws.com/wct-8741e24c-bdc1-4c3e-bec0-c3cc88879bf4/recorded/6edc2e5c-2291-4b86-9d72-2e84112d6588_continuous_2020-03-26T090008Z.mp4" title="Àlex Rodríguez Bacardit webinar on remote working" target="_blank">LINK</a>.
-* __Evidencia Creativa__: Our CEO, Àlex, was interviewed in a Colombian podcast about creativity, innovation and marketing to talk about company culture, marketing and remote work as an agency - <a href="https://pod.link/1033423186/episode/aHR0cHM6Ly9hcGkuc3ByZWFrZXIuY29tL2VwaXNvZGUvMjMxNTU0MzM=" title="Evidencia Creativa with Àlex Rodríguez Bacardit" target="_blank">LINK</a>.
-* __itnig__: Our friends at itnig interviewed Àlex on their podcast to discuss hiring software engineers and salaries in the tech world - <a href="https://www.youtube.com/watch?v=e4yN1yY5v-8" title="El mundo de los programadores: tecnología, salarios, cultura y bootcamps" target="_blank">LINK</a>.
+Managed by David and published weekly, the **MarsBased Podcast** is our core audio platform and flagship content initiative. Our goal is threefold: to foster a highly engaged tech community, to establish a strong internet presence that attracts potential clients, and to build industry credibility by swapping insights with world-class leaders. 
 
-## Content in Italian
+The podcast is split into two distinct editions to cater to our global audience, featuring both interviews with industry heavyweights and internal deep dives into MarsBased’s mission, tools, and decision-making processes.
 
-* __Interview with Salesforce__: Mario Moretti, from Salesforce, interviewed Àlex in Italian to talk about remote work, dealing with clients and how to do sales in full-remote environments - <a href="https://www.youtube.com/watch?v=s0dpKshkUNE&feature=share" title="MarsBased and Àlex Rodríguez Bacardit talking about remote work" target="_blank">LINK</a>.
-* __Startup Grind Veneto__: Àlex was interviewed in 2016, in Italian for the Startup Grind chapter of Veneto, in Italy, where they discussed technologies, programming languages, company culture in all-remote environments and our involvement with Startup Grind - <a href="https://www.youtube.com/watch?v=5RjTbCXADX4" title="Àlex Rodríguez Bacardit at Startup Grind Veneto" target="_blank">LINK</a>.
+You can subscribe and tune in on your favorite platform:
+* **English Edition:** [Web](https://podcast.marsbased.com/) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/life-on-mars-a-podcast-from-marsbased/id1516103624?l=en-GB)
+* **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
+* **Video Format:** Full video episodes and exclusive clips are available on our official [MarsBased YouTube Channel](https://www.youtube.com/@MarsBased).
 
-## Our podcast!
+### Top 3 featured episodes (English)
 
-If you want to know more, check out our own podcast, Life on Mars! Not only you will learn a lot more about us in every episode, but we also have got episodes where we only speak about our mission, vision, tools, philosphy, methodologies, decision-making processes and much more.
+* **[100x faster every 6 months: Linus Ekenstam on the future of AI](https://www.youtube.com/watch?v=AkTc49pofmU) (~37,500 views)**
+  Our most-watched English episode. A fascinating conversation with AI expert Linus Ekenstam on how automated tools and generative workflows are completely altering modern software development, scaling timelines, and what this means for the next generation of engineers.
+* **[Is your NDA a rookie mistake? Lessons from 12 years in tech - Building MarsBased #7](https://www.youtube.com/watch?v=Ibx7ReVdzEw) (~16,400 views)**
+  Part of our transparent *Building MarsBased* series. Our CEO Àlex Rodriguez Bacardit breaks down the operational, financial, and legal realities of running a tech agency, explaining why we stopped signing standard NDAs blindly and how we turned them into an effective client qualification tool.
+* **[Silicon Valley’s longest-standing CEO: 37 Years leading Micrel](https://www.youtube.com/watch?v=TeKKREqtTr0) (~6,400 views)**
+  An incredible masterclass in leadership longevity and corporate culture. We sit down with a Silicon Valley veteran to discuss what it takes to lead a tech company through decades of industry shifts without losing your core values.
 
-* __<a href="https://podcast.marsbased.com/" title="Life on Mars - English edition" target="_blank">Life on Mars - English edition</a>__
-* __<a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars - Spanish edition" target="_blank">Life on Mars - Spanish edition</a>__
+### Top 3 featured episodes (Spanish)
 
-Even though we mostly host other people from our immediate circles and companies we like, we also talk a lot about our company.
+* **[Repaso de 2025: Qué hicimos bien y qué hicimos mal](https://www.youtube.com/watch?v=kiMNHI41f1g) (~31,300 views)**
+  An exercise in raw transparency. The three founders (Àlex, Jordi, and Xavi) look back at the highs and lows of the previous year, openly discussing engineering market trends, revenue milestones, agency growth pains, and tactical mistakes.
+* **["El vibe coding es un arma de doble filo" con Midudev](https://www.youtube.com/watch?v=EXaFMqUcaWQ) (~22,700 views)**
+  We host top tech creator Midudev to dissect the rise of "vibe coding". A deep dive into how AI-assisted coding impacts code quality, junior developer learning curves, and the shifting dynamics within development teams.
+* **[De dibujar cómics a trabajar en Google: La trayectoria de Carlos Azaustre](https://www.youtube.com/watch?v=EPCHAnPpKRA) (~15,700 views)**
+  A highly inspiring career breakdown with tech educator Carlos Azaustre. We explore his unconventional journey from illustration to engineering at Google, discussing community building, continuous learning, and personal branding in tech.
 
-Here's a selection of some episodes where we discuss different areas of the company:
+---
 
-* __<a href="https://podcast.marsbased.com/podcasts-en/31-seven-years-of-marsbased-q-a-with-the-founders/" title="Seven years of MarsBased - Q&A with the founders" target="_blank">Seven years of MarsBased - Q&A with the founders</a> (English)__
-* __<a href="https://podcast.marsbased.com/podcasts-en/19-breakdown-of-2020-at-marsbased-month-by-month-with-alex-rodriguez-bacardit-ceo/" title="Breakdown of 2020 at MarsBased, month by month, with Àlex Rodríguez Bacardit (CEO)" target="_blank">Breakdown of 2020 at MarsBased, month by month, with Àlex Rodríguez Bacardit (CEO)</a> (English)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/52-respondemos-preguntas-sobre-bootstrapping-comunidad-futuro-de-ruby-y-javascript-producto-y-cultura-de-empresa/" title="Respondemos preguntas sobre bootstrapping, comunidad, futuro de Ruby y JavaScript, producto y cultura de empresa" target="_blank">Respondemos preguntas sobre bootstrapping, comunidad, futuro de Ruby y JavaScript, producto y cultura de empresa</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/51-adoptamos-el-trabajo-asincrono-en-marsbased/" title="Adoptamos el trabajo asíncrono en MarsBased" target="_blank">Adoptamos el trabajo asíncrono en MarsBased</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/32-siete-anos-de-marsbased-q-a-con-los-fundadores/" title="Siete años de MarsBased - Q&A con los fundadores" target="_blank">Siete años de MarsBased - Q&A con los fundadores</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/22-hablamos-de-css-con-marina-aisa-apple-y-javier-artero-marsbased/" title="Hablamos de CSS, con Marina Aisa (Apple) y Javier Artero (MarsBased)" target="_blank">Hablamos de CSS, con Marina Aisa (Apple) y Javier Artero (MarsBased)</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/20-repaso-del-2020-en-marsbased-con-jordi-vendrell-y-xavier-redo/" title="Repaso del 2020 en MarsBased, con Jordi Vendrell (COO) y Xavier Redó (CTO)" target="_blank">Repaso del 2020 en MarsBased, con Jordi Vendrell (COO) y Xavier Redó (CTO)</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/19-que-servicios-usamos-para-comunicacion-y-organizacion-en-marsbased/" title="Qué servicios usamos para comunicación y organización en MarsBased" target="_blank">Qué servicios usamos para comunicación y organización en MarsBased</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/5-que-puede-aprender-la-empresa-privada-del-open-source-xavier-noria-xavier-redo/" title="¿Qué puede aprender la empresa privada del Open Source? Xavier Nòria & Xavier Redó" target="_blank">¿Qué puede aprender la empresa privada del Open Source? Xavier Nòria & Xavier Redó</a> (Spanish)__
-* __<a href="https://podcast.marsbased.com/podcasts-es/1-como-trabajar-en-remoto-correctamente-con-jordi-vendrell-coo-marsbased/" title="Cómo trabajar en remoto correctamente, con Jordi Vendrell (COO @ MarsBased)" target="_blank">Cómo trabajar en remoto correctamente, con Jordi Vendrell (COO @ MarsBased)</a> (Spanish)__
+## External podcasts & talks
+
+Before scaling our own media channels, our founding team frequently toured the international conference circuit and featured in prominent business media. These appearances document our growth and foundational philosophies:
+
+### Tech conferences & communities
+* **Talent Arena (Mobile World Congress):** Both Àlex (CEO) and Xavi (CTO) have represented MarsBased as featured speakers at Talent Arena, the major talent-focused event held within the framework of the Mobile World Congress (MWC), delivering key talks on engineering culture, tech talent management, and modern software development.
+* **Startup Grind (Global Chapters):** Our CTO, Xavi, featured on a major panel discussing the nuances of hiring and managing remote workers from a small-agency perspective compared to corporate environments. Additionally, our CEO Àlex has been hosted at chapters from Glasgow to Chisinau, sharing our playbook on bootstrapping, officeless operations, and consulting.
+* **Agile Conference Spain:** Àlex delivered a keynote comparing the tactical application of remote work methodologies within highly agile setups like MarsBased versus community-driven ecosystems like Startup Grind.
+
+### Business media & ecosystem interviews
+* **Itnig:** Regular appearances on their popular meetup and podcast channels, discussing the realities of the Spanish startup ecosystem, tech salaries, and the challenges of recruiting high-caliber software engineers.
+* **Financial & Mainstream Press:** Features in top-tier financial newspapers like *Cinco Días*, alongside lighter biographical highlights such as Àlex’s interview on *Radio TeleTaxi* discussing entrepreneurial life lessons upon publishing his book.
+
+### International technical outreach
+* **Salesforce Italy:** An Italian-language feature starring Àlex, focused on how to maintain high client retention, run successful discovery phases, and close enterprise sales in fully remote technical environments.
+* **Mensch-Sein mit Algorithmen:** A remote feature by a German digital transformation symposium, focusing on innovation, remote agency structures, and modern operational frameworks.
