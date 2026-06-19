@@ -1,10 +1,10 @@
 # The MarsBased Handbook 🚀
 
-Welcome to **MarsBased**! This is the first thing you should read when boarding the **MarsBased** spaceship.
+Welcome to **MarsBased**! This is the first thing you should read when boarding the MarsBased spaceship.
 
-**MarsBased** is an all-remote development consultancy from Barcelona, building web and mobile products using Ruby on Rails, Python and JavaScript. We work at the intersection of business and technology, to help companies with their innovation projects using bleeding-edge technologies like AR/VR and AI.
+MarsBased is an all-remote development consultancy from Barcelona, pioneering **AI-augmented development** and leveraging advanced tools like **Claude Code**. We build web and mobile products using **Ruby on Rails, Python and JavaScript**, working at the intersection of business and technology. Driven by our **Research, Plan, and Implement** methodology, we help companies bring their innovation projects to life with maximum efficiency and precision.
 
-Here you will find the most important information about the company to help you to get familiar with it. We have also compiled some of our guides &amp; interesting stuff you should read (and some trivia & fun stories to make it more digestible).
+Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides & interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
 If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back in appreciation.
 
