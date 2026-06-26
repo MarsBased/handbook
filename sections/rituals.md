@@ -18,7 +18,9 @@ Once a year, we hold a company retreat lasting three to four days. The goal is t
 
 So far, we've done the following:
 
-* __2025:__ Tenerife (soon!).
+* __2027:__ TBC.
+* __2026:__ Pyrenees.
+* __2025:__ Tenerife.
 * __2024:__ Andorra.
 * __2023:__ Formentera.
 * __2022:__ Asturias.
