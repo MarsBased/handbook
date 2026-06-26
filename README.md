@@ -77,7 +77,7 @@ For now, we have the following resources available:
 1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
 1. <a href="https://podcast.marsbased.com/" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
 1. <a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
-1. <a href="https://marsbased.us7.list-manage.com/subscribe/post?u=1ab50c539712be36367b96b98&amp;id=89db0a6312" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
+1. <a href="https://marsbased.com/newsletter" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
 ## Contributing
