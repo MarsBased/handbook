@@ -37,19 +37,24 @@ You can subscribe and tune in on your favorite platform:
 
 ---
 
-## External podcasts & talks
+## External Podcasts & Talks
 
 Before scaling our own media channels, our founding team frequently toured the international conference circuit and featured in prominent business media. These appearances document our growth and foundational philosophies:
 
-### Tech conferences & communities
+### Tech Conferences & Communities
 * **Talent Arena (Mobile World Congress):** Both Àlex (CEO) and Xavi (CTO) have represented MarsBased as featured speakers at Talent Arena, the major talent-focused event held within the framework of the Mobile World Congress (MWC), delivering key talks on engineering culture, tech talent management, and modern software development.
-* **Startup Grind (Global Chapters):** Our CTO, Xavi, featured on a major panel discussing the nuances of hiring and managing remote workers from a small-agency perspective compared to corporate environments. Additionally, our CEO Àlex has been hosted at chapters from Glasgow to Chisinau, sharing our playbook on bootstrapping, officeless operations, and consulting.
-* **Agile Conference Spain:** Àlex delivered a keynote comparing the tactical application of remote work methodologies within highly agile setups like MarsBased versus community-driven ecosystems like Startup Grind.
+* **Startup Grind (Global Chapters):** Our CTO, Xavi, featured on a major panel at the [Startup Grind Tech Conference](https://www.youtube.com/watch?v=4MQIPrXPwKc&) discussing remote management alongside corporate perspectives. Our CEO, Àlex, has also been hosted globally to speak about bootstrapping and all-remote frameworks at [Startup Grind Glasgow](https://www.youtube.com/watch?v=puvv8-gtGRQ) and [Startup Grind Chisinau](https://www.youtube.com/watch?v=4EOEJ0WVRZk). Locally, our COO, Jordi, deep-dived into operational tools, hiring, and firing frameworks at [Startup Grind Barcelona](https://www.youtube.com/watch?v=F0NWOtGnjqE).
+* **IndieHackers Barcelona:** Àlex joined as a guest speaker at [IndieHackers Barcelona #3](https://www.youtube.com/watch?v=XWfxscnE5Ts) to talk about indie development, community building, and scaling an officeless company.
+* **Agile Conference Spain:** Àlex delivered a keynote presentation at [Agile Conference Spain](https://youtu.be/smwJWdeNANc) focusing on how to successfully structure remote work architectures across various organizational models.
+* **IronHack:** A long-standing educational collaboration where Àlex delivers an honest talk on [launching tech companies and lessons learned](https://www.youtube.com/watch?v=qvgrXkke52g) to incoming developer cohorts in Barcelona.
 
-### Business media & ecosystem interviews
-* **Itnig:** Regular appearances on their popular meetup and podcast channels, discussing the realities of the Spanish startup ecosystem, tech salaries, and the challenges of recruiting high-caliber software engineers.
-* **Financial & Mainstream Press:** Features in top-tier financial newspapers like *Cinco Días*, alongside lighter biographical highlights such as Àlex’s interview on *Radio TeleTaxi* discussing entrepreneurial life lessons upon publishing his book.
+### Business Media & Ecosystem Interviews
+* **Itnig:** Regular appearances discussing the realities of tech hiring and engineering workflows, including an early [meetup interview with entrepreneurs](https://podcast.marsbased.com/podcasts-en/34-interview-with-alex-at-itnig/) and a popular podcast episode breaking down [tech salaries, bootcamps, and engineering culture](https://www.youtube.com/watch?v=e4yN1yY5v-8).
+* **Financial & Mainstream Press:** Features in top-tier financial newspapers like [*Cinco Días*](https://www.dropbox.com/s/swm703uau8rgyso/12633759_10153833916187969_5451559627915928539_o.jpg?dl=0), alongside biographical highlights such as Àlex’s interview on the legendary [*Radio TeleTaxi*](https://www.youtube.com/watch?v=cUnt5dxzCwQ) discussing life frameworks and his book *Camino al éxit(o)*.
+* **Ecosystem Channels:** In-depth media interviews including a deep technical and personal background session on [*La Tecnologeria*](https://tecnologeria.com/entrevistas/8x01/marsbased), a marketing-focused talk with Gerard Compte on [*FindThatLead*](https://www.youtube.com/watch?v=exBQEAv4hmw), and an international podcast feature on creativity and agency culture with Colombia's [*Evidencia Creativa*](https://pod.link/1033423186/episode/aHR0cHM6Ly9hcGkuc3ByZWFrZXIuY29tL2VwaXNvZGUvMjMxNTU0MzM=).
+* **Catalonia Clusters:** A massive [two-hour remote management webinar](https://watchity-videos-ireland.s3.amazonaws.com/wct-8741e24c-bdc1-4c3e-bec0-c3cc88879bf4/recorded/6edc2e5c-2291-4b86-9d72-2e84112d6588_continuous_2020-03-26T090008Z.mp4) targeted at supporting businesses transition smoothly into all-remote models.
 
-### International technical outreach
-* **Salesforce Italy:** An Italian-language feature starring Àlex, focused on how to maintain high client retention, run successful discovery phases, and close enterprise sales in fully remote technical environments.
-* **Mensch-Sein mit Algorithmen:** A remote feature by a German digital transformation symposium, focusing on innovation, remote agency structures, and modern operational frameworks.
+### International Technical Outreach
+* **Salesforce Italy:** An Italian-language feature starring Àlex on [Salesforce Italy](https://www.youtube.com/watch?v=s0dpKshkUNE&feature=share), focused on managing business pipelines, dealing with clients, and closing B2B sales in full-remote environments.
+* **Startup Grind Veneto:** An Italian chapter interview at [Startup Grind Veneto](https://www.youtube.com/watch?v=5RjTbCXADX4) exploring programming languages, tech stacks, and remote cultural alignment.
+* **Mensch-Sein mit Algorithmen:** A remote interview by a German digital transformation symposium on [Mensch-Sein mit Algorithmen](https://www.youtube.com/watch?v=AUaYowJmTRM), discussing innovation and human management frameworks within automated industries.
