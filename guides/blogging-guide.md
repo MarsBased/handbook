@@ -106,13 +106,13 @@ We can also learn a lot from Instagram, where famous Instagrammers ask to “tag
 
 One thing that works very well for me, when I am looking for new ideas, is to read a lot of blogs. From there, I always spot one or two blog entries that catch my attention and I want to mimic.
 
-For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s [“How we hire”](http://micho.biz/post/117083319566/how-we-hire "Pablo Villalba Blog") and, in turn, inspired me to include it in my list of Article Ideas on Apple Notes.
+For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s “How we hire” and, in turn, inspired me to include it in my list of Article Ideas on Apple Notes.
 
 These posts were inspirational: not only do they make me want to write something similar for MarsBased, but they might also inspire us to adopt some new tools, strategies or techniques in our daily routines.
 
 On the other side, the content needs to be also useful and teach you something new. It must educate. This is especially so for companies like ours that want to prove their technical skills before they get hired.
 
-Good examples of educational blog posts are [this one](https://robots.thoughtbot.com/a-case-study-in-multiple-time-zones "Thoughtbot blog"), [this one](https://dockyard.com/blog/2015/07/31/taking-advantage-of-time-limitations-in-design "Dockyard blog") and [this one](http://chopdawg.com/managing-company-remotely/ "Chopdawg blog"), and we’re pretty sure they have helped those companies to earn a few more leads by demonstrating their expertise.
+Good examples of educational blog posts are [this one](https://thoughtbot.com/blog/a-case-study-in-multiple-time-zones "Thoughtbot blog") and [this one](https://dockyard.com/blog/2015/07/31/taking-advantage-of-time-limitations-in-design "Dockyard blog"), and we’re pretty sure they have helped those companies to earn a few more leads by demonstrating their expertise.
 
 **Key question:** What are your favourite blogs and why?
 

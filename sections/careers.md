@@ -26,7 +26,7 @@ We've got a lot of projects going on, some bigger than others. We try to rotate 
 
 We are a small-sized company. We don't have a lot of roles.
 
-We have a layer of __Management__, consisting of the three founders of the company, and Leire/Eli, our Head of People, who enables all of us to work better and makes the company run more efficiently, but that's mostly all regarding titles.
+We have a layer of __Management__, consisting of the three founders of the company, and Eli, our Head of People, who enables all of us to work better and makes the company run more efficiently, but that's mostly all regarding titles.
 
 The rest of the company members are on the same level, as there is no hierarchy. All of the employee workforce have different roles in different projects, but no titles. Everyone is a software engineer.
 

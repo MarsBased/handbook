@@ -1,6 +1,6 @@
 # MarsBased React Style Guide
 
-Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap React applications and we follow its conventions.
+We bootstrap React applications with [Vite](https://vite.dev/) for single-page apps, or a full framework like [Next.js](https://nextjs.org/) when server-side rendering or SEO matter. [Create React App](https://react.dev/), which we used on older projects, was deprecated by the React team in 2025 and should not be used for new projects.
 
 <!-- vscode-markdown-toc -->
 * 1. [Do's and Don'ts](#1-dos-and-donts)
@@ -22,7 +22,7 @@ Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap Reac
 	* 3.2. [External services](#32-external-services)
 	* 3.3. [GraphQL](#33-graphql)
 	* 3.4. [REST](#34-rest)
-	* 3.5. [Routing (only create-react-app)](#35-routing-only-create-react-app)
+	* 3.5. [Routing (SPA only)](#35-routing-spa-only)
 		* 3.5.1. [Page vs component](#351-page-vs-component)
 		* 3.5.2. [Route definitions](#352-route-definitions)
 		* 3.5.3. [Router.tsx](#353-routertsx)
@@ -49,9 +49,9 @@ Until now, we've used [create-react-app](https://reactjs.org/) to bootstrap Reac
 
 A project generator saves a lot of boilerplate work and provides common conventions.
 
-We've used [create react app](https://create-react-app.dev/) for all our projects.
+Use [Vite](https://vite.dev/) to scaffold single-page apps (`npm create vite@latest -- --template react-ts`). For projects with important SEO or server-rendering requirements, use [Next.js](https://nextjs.org/) instead.
 
-We will consider using another system (mostly [next.js](https://nextjs.org/)) for newer projects, especially if they have important SEO requirements.
+Older projects were bootstrapped with Create React App, but it's deprecated and must not be used for new projects.
 
 ###  1.3. Write functional components
 
@@ -71,7 +71,7 @@ It reduces boilerplate code a lot.
 
 We currently use:
 
-- REST: [react-query](https://github.com/tannerlinsley/react-query)
+- REST: [TanStack Query](https://tanstack.com/query) (formerly react-query)
 - GraphQL: [apollo-client](https://github.com/apollographql/apollo-client)
 
 ###  1.6. Do use function declarations
@@ -119,7 +119,7 @@ export function LoginForm({user = ''}: {user: string}) {
 
 ##  2. General project organization and architecture
 
-We follow https://create-react-app.dev/docs/folder-structure/
+We follow a conventional `src/` folder structure.
 
 For small to medium projects this is recommended:
 
@@ -222,9 +222,9 @@ In general, keep all graphql related code inside `graphql/` folder.
 - Client specific functionality inside `src/api/client.ts` (like, for example)
 - If Auth and API are different services, is common to have two folders (`src/auth` and `src/api`) and the API depends on authorization (JWT tokens, for example). If auth and API are in the same service, the `src/auth` folder can be omitted.
 
-###  3.5. Routing (only create-react-app)
+###  3.5. Routing (SPA only)
 
-Custom routing is only required with create react app (next.js has its own routing standards and patterns).
+Custom routing is only required for single-page apps built with Vite (Next.js has its own routing standards and patterns).
 
 - Use react-router-dom with hooks
 - Create a route definitions file `src/routes.ts` with all route paths
@@ -270,17 +270,11 @@ Use the `routes` definitions to create the routes placeholders:
 
 ```tsx
 <Router>
-  <Switch>
-    <Route exact path={routes.posts()}>
-      <PostsListPage />
-    </Route>
-    <Route exact path={routes.post(":id")}>
-      <PostPage />
-    </Route>
-    <Route exact path={routes.admin.users()}>
-      <AdminUsersListPage />
-    </Route>
-  </Switch>
+  <Routes>
+    <Route path={routes.posts()} element={<PostsListPage />} />
+    <Route path={routes.post(":id")} element={<PostPage />} />
+    <Route path={routes.admin.users()} element={<AdminUsersListPage />} />
+  </Routes>
 </Router>
 ```
 
@@ -289,13 +283,12 @@ Use the `routes` definitions to create the routes placeholders:
 For a route like `/posts/:postId/comments/:commentId` we use the following code to access route params:
 
 ```tsx
-// In next version of react-router types won't be required
-const { pageId, commentId } = useParams<Record<string, string>>();
+const { postId, commentId } = useParams();
 ```
 
 ###  3.6. Testing
 
-Follow React guidelines: https://reactjs.org/docs/testing.html
+Use [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/), the current community standard for testing React components.
 
 - Favour end-to-end-testing over components test
 - More important to cover critical paths than general coverage
@@ -310,10 +303,10 @@ When we write tests, we use [Cypress](https://cypress.io)
 - Internationalization: [react-intl](https://www.npmjs.com/package/react-intl)
 - Forms: [react-hook-form](https://react-hook-form.com/)
 - Global state management: [zustand](https://github.com/pmndrs/zustand)
-- React query state: [react-query](https://github.com/tannerlinsley/react-query)
+- Server state / data fetching: [TanStack Query](https://tanstack.com/query) (formerly react-query)
 - Http: [ky](https://github.com/sindresorhus/ky)
 - GraphQL API: [apollo-client](https://www.apollographql.com/docs/react/)
-- Routing: [react-router-dom](https://reacttraining.com/react-router/web/guides/quick-start)
+- Routing: [react-router-dom](https://reactrouter.com/)
 
 ###  4.2. Other libraries we have used
 
@@ -344,8 +337,8 @@ When we write tests, we use [Cypress](https://cypress.io)
 
 ##  5. Learning resources
 
-- React docs are quite good. Recommended reading: https://reactjs.org/docs/hello-world.html
-- egghead.io is one of our favourite places to learn and Kent C. Dodds is a master, so this can't fail: https://egghezad.io/courses/the-beginner-s-guide-to-reactjs
+- React docs are quite good. Recommended reading: https://react.dev/learn
+- egghead.io is one of our favourite places to learn and Kent C. Dodds is a master, so this can't fail: https://egghead.io/courses/the-beginner-s-guide-to-reactjs
 - To learn Redux, a course at egghead by the creator of Redux itself is a MUST: https://egghead.io/courses/getting-started-with-redux
 - This tutorial is quite good for starting with React: https://www.fullstackreact.com/30-days-of-react/
 - https://www.reddit.com/r/reactjs/

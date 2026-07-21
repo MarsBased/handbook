@@ -121,7 +121,7 @@ Every post should have a clear purpose. Whether it’s educating readers, guidin
 
 **Best Practices:**
 - Use imperative verbs (e.g., "Learn more", "Download now").
-- A/B test CTAs with tools like **Google Optimize** or **Hotjar** to see what works best.
+- A/B test CTAs with tools like **PostHog**, **VWO**, or **Hotjar** to see what works best.
 
 ---
 

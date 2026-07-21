@@ -13,7 +13,7 @@ Any team member with:
 * the time to be involved in the partnership process
 * the motivation to share the company culture, values
 
-is welcome to volunteer as a buddy. You just need to let Leire/Eli know, and she'll include you in the buddy pool for upcoming occasions.
+is welcome to volunteer as a buddy. You just need to let Eli know, and she'll include you in the buddy pool for upcoming occasions.
 
 ## What does a buddy do?
 

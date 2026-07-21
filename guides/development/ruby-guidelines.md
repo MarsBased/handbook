@@ -348,7 +348,7 @@ end
   * [Dotenv + dotenv-rails](https://github.com/bkeepers/dotenv) for environment variables.
   * [Activeadmin](https://github.com/activeadmin/activeadmin)  for admin panels.
   * [Devise](https://github.com/heartcombo/devise) for authentication.
-  * [Sidekiq](https://github.com/mperham/sidekiq) for background jobs.
+  * [Sidekiq](https://github.com/sidekiq/sidekiq) for background jobs.
   * [Sidekiq-cron](https://github.com/ondrejbartas/sidekiq-cron) for scheduled jobs.
   * [Sidekiq-failures](https://github.com/mhfs/sidekiq-failures) for error tracking in background jobs.
   * [Shrine](https://github.com/shrinerb/shrine) for file uploads.
