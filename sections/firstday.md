@@ -95,7 +95,7 @@ You can find the rest of the tools in the How We Work section 🖖
 
 ### Your profile
 
-Please send Leire or Eli the following information so that we can include your profile on our website and link to the different channels:
+Please send Eli the following information so that we can include your profile on our website and link to the different channels:
 
 * Github username.
 * A picture for the website.
@@ -106,8 +106,8 @@ Please send Leire or Eli the following information so that we can include your p
 We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below, as well as any other important issue we should be aware of.
 
 * **Local holiday calendar:** Each of us chooses the official local calendar we'll be following, it normally corresponds to the city we live in. Please, let us know on Linear the calendar you’ll be following.
-* **Dietary restrictions or preferences:** Let Leire/Eli know if you have any dietary restrictions/preferences (any allergies, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc.
-* **Travel preferences:** Let Leire/Eli know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll try to make our most to make your travels as comfortable as possible.
+* **Dietary restrictions or preferences:** Let Eli know if you have any dietary restrictions/preferences (any allergies, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc.
+* **Travel preferences:** Let Eli know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll try to make our most to make your travels as comfortable as possible.
 
 _There is no hurry, you can provide us with this information once you get a bit settled!_
 
@@ -117,7 +117,7 @@ Among Martians, we share the spirit of helping each other so whomever you have t
 
 To start with, today, you'll be introduced and guided through your first steps on Mars by:
 
-* **Leire/Eli** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/holidays.md), [Buddy System](/sections/buddy.md), etc.
+* **Eli** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/holidays.md), [Buddy System](/sections/buddy.md), etc.
 * **Jordi and/or Xavi** will give you a general overview of how we run our projects.
 * The **tech lead or the project manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the software engineers you'll be working with.
 * **Àlex** will reach you for a call before you finish your first day so as to officially welcome you and clarify any questions that may have arisen during the day.
@@ -132,4 +132,4 @@ Don't forget to share yours so that we can get to know you a bit better 😉
 
 ---
 
-Enjoy your day and let Leire/Eli know if you have any questions or need any help! 🙋🏻‍♀️
+Enjoy your day and let Eli know if you have any questions or need any help! 🙋🏻‍♀️

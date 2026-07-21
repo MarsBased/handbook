@@ -136,7 +136,7 @@ We normally hire 2-3 software engineers per year. We are open to receiving recom
 
 If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him. We will pay the bonus after the third month of that person in the company.
 
-Let Leire/Eli know if you have any recommendations.
+Let Eli know if you have any recommendations.
 
 This is always a good opportunity to work with people you have worked with and liked in the past!
 
@@ -230,7 +230,7 @@ If that's your case and you need a coworking space, MarsBased will provide you w
 
 ### How to proceed
 
-1. Let Leire/Eli know your need for coworking.
+1. Let Eli know your need for coworking.
 2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
 3. Normally, coworking spaces require signing a contract, and they charge a fee on a monthly basis. Let's see what the conditions are in that specific case, and we'll agree on the easiest way to manage it (can be either directly from MarsBased or through you).
 4. **Let us know beforehand** when you are going to stop using your coworking space, either **temporarily or permanently**. Let the coworking know that as well, so as to avoid being charged for that period.
