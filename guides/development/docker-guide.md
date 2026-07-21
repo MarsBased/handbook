@@ -135,7 +135,7 @@ LOCAL_IP = if ENV['SELENIUM_URL']
 Capybara.register_driver :selenium_remote do |app|
     Capybara::Selenium::Driver.new(app,
                                    browser: :remote,
-                                   desired_capabilities: :chrome,
+                                   options: Selenium::WebDriver::Chrome::Options.new,
                                    url: ENV['SELENIUM_URL'])
 end
 

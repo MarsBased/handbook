@@ -118,7 +118,7 @@ If using OpenAI's API:
 
 ```json
 {
-  "model": "gpt-4",
+  "model": "gpt-4o",
   "temperature": 0.7,
   "messages": [
     { "role": "system", "content": "You are a senior Rails engineer." },

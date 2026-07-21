@@ -93,7 +93,7 @@ Use **JSON-LD** for structured data, as it's preferred by search engines:
   "name": "MarsBased",
   "url": "https://marsbased.com",
   "sameAs": [
-    "https://twitter.com/marsbased",
+    "https://x.com/marsbased",
     "https://www.linkedin.com/company/marsbased"
   ]
 }

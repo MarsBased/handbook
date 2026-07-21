@@ -36,9 +36,9 @@ In any case:
 
 ℹ️ _A secure account is one that requires something that you know (the password) with something that you have (the 2FA code). This way, even if someone discovers what you know (the password), they still need what you have to access your account._
 
-You should enable 2FA for all services that support it. We recommend using [Authy](https://authy.com/). Authy uses TOTP codes as a 2FA mechanism and it's compatible with Google Authenticator.
+You should enable 2FA for all services that support it, using a TOTP authenticator app. Good options include [Ente Auth](https://ente.io/auth/), [Google Authenticator](https://support.google.com/accounts/answer/1066447), or [1Password](https://1password.com/) (which we already use and can store TOTP codes alongside your credentials). We used to recommend Authy, but Twilio discontinued its desktop apps in 2024, leaving it mobile-only.
 
-A TOTP code is a 6-digit code that changes every few seconds. When logging in to a service with 2FA enabled, you will need to check the code for that particular service in the Authy app and enter it. TOTP codes are not reusable, so even if you log in again before the code has expired, it won't allow using the same code. This makes it impossible for a bad actor to do a request reply attack to gain access to your account.
+A TOTP code is a 6-digit code that changes every few seconds. When logging in to a service with 2FA enabled, you will need to check the code for that particular service in your authenticator app and enter it. TOTP codes are not reusable, so even if you log in again before the code has expired, it won't allow using the same code. This makes it impossible for a bad actor to do a request reply attack to gain access to your account.
 
 Another popular option is to use 2FA by e-mail. It's the same idea but the code gets sent to your e-mail instead.
 
