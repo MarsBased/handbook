@@ -15,18 +15,20 @@ With dozens of different projects in well over five years, we've compiled our SE
 **Description:** Google Search Console is a powerful tool for managing your domains and monitoring their performance in Google search. From domain verification to keyword analysis and error tracking, this is an indispensable tool.
 
 - Use the **domain property** verification method to automatically include all variants of your domain (e.g., http/https, www/non-www).
-- Key features: 
-  - **Core Web Vitals** report to monitor performance metrics like Largest Contentful Paint (LCP) and Cumulative Layout Shift (CLS).
-  - **Index Coverage** to track and resolve indexing issues.
+- Key features:
+  - **Core Web Vitals** report to monitor performance metrics: Largest Contentful Paint (LCP), Interaction to Next Paint (INP), and Cumulative Layout Shift (CLS). INP replaced First Input Delay (FID) as the responsiveness metric in 2024 — if you find older guides or tooling referencing FID, treat it as deprecated.
+  - **Page Indexing** report (under *Indexing > Pages*) to track and resolve indexing issues.
+  - **Generative AI performance** report to see how your content shows up in Google's AI-powered search features (AI Overviews, AI Mode).
 
 ### Google Analytics 4 (GA4)
 
 **URL:** [https://analytics.google.com](https://analytics.google.com)
 
-**Description:** GA4 is the latest iteration of Google Analytics, offering event-based tracking, privacy-centric data collection, and predictive insights. It replaces Universal Analytics.
+**Description:** GA4 is Google's event-based analytics platform, with privacy-centric data collection and predictive insights.
 
-- Obtain the GA4 tracking code from the Admin section and embed it in the `<head>` of your HTML.
+- Obtain the GA4 tracking code from the Admin section and embed it in the `<head>` of your HTML (or load it via a tag manager).
 - GA4 supports custom event tracking and enhanced measurement for scrolls, video engagement, and more.
+- If the project targets the EU/UK, configure **Consent Mode** so tracking respects the visitor's cookie consent choice.
 
 ---
 
@@ -63,7 +65,7 @@ Test and submit your robots.txt file using Google Search Console.
 
 Ensure HTTPS is enforced site-wide, as non-HTTPS sites are flagged as insecure and perform poorly in rankings.
 
-- Use **HTTP/2** for improved speed and performance.
+- Use at least **HTTP/2**; prefer **HTTP/3** (QUIC) where your hosting/CDN supports it, since it's now widely adopted and improves load times, especially on mobile networks.
 - Implement **HSTS (HTTP Strict Transport Security)** for additional security.
 
 ---
@@ -75,11 +77,13 @@ Ensure HTTPS is enforced site-wide, as non-HTTPS sites are flagged as insecure a
 Modern SEO no longer uses outdated tags like `author` or `copyright`. Instead, include:
 
 ```html
-<meta name="robots" content="index, follow">
 <meta name="description" content="MarsBased is a web & mobile development consultancy.">
 <meta property="og:title" content="MarsBased | Web Development">
 <meta property="og:description" content="Development consultancy for web & mobile applications.">
+<meta property="og:image" content="https://www.marsbased.com/og-image.png">
 ```
+
+`index, follow` is the default behavior for `<meta name="robots">`, so you only need to add it explicitly when overriding it (e.g. `noindex` on a staging page).
 
 ### Schema.org
 
@@ -122,7 +126,18 @@ Key guidelines for content creation:
 
 ---
 
-## Bonus Track #1: Migrations
+## Bonus Track #1: AI Search (AEO/GEO)
+
+"AI search" actually covers two different readers, and they don't take the same input:
+
+- **Google's AI Overviews and AI Mode** are built on Google's normal Search ranking and quality systems. Per Google's own guidance, there's no special file or markup needed to appear in them — no `llms.txt`, no chunking content for AI consumption. The classic SEO fundamentals in this guide (E-E-A-T, structured data, genuinely helpful content) are what feed them. See [Google's AI features documentation](https://developers.google.com/search/docs/appearance/ai-features).
+- **Conversational answer engines** (ChatGPT, Claude, Perplexity) work differently: they fetch and cite pages directly, so serving them a clean, dedicated version of your content (e.g. `llms.txt`, per-page Markdown) measurably helps you get read and cited correctly. This is GEO (Generative Engine Optimization) proper, and it's what we cover in our [GEO guidelines](/guides/geo-guidelines.md), distilled from the AI-discoverability work shipped on marsbased.com itself.
+
+In short: don't bother with `llms.txt` for Google's AI Overviews, but do bother with it — along with the rest of the GEO guidelines — for being cited by LLM-based answer engines.
+
+---
+
+## Bonus Track #2: Migrations
 
 For URL structure or domain migrations:
 
@@ -136,7 +151,7 @@ Redirect 301 /old-page /new-page
 
 ---
 
-## Bonus Track #2: Multi-language Sites
+## Bonus Track #3: Multi-language Sites
 
 Use hreflang tags to signal equivalent content in different languages:
 
