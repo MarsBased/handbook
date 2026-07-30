@@ -30,6 +30,10 @@ Eli also oversees the organization of our public and internal events, such as th
 
 Eli is the go-to person for any personal issues, sick leave requests, work schedule changes, or holiday requests.
 
+## People Ops
+
+As our People Ops Specialist, [Valentina](https://www.linkedin.com/in/valentinagrodek/) ensures every Martian’s journey starts on the right foot by leading our hiring and onboarding processes. Beyond finding great talent, she helps keep the MarsBased team connected and engaged by supporting internal communication and shaping team activities and rituals.
+
 ## Project Managers
 
 Project Managers at MarsBased are at the heart of keeping projects organized and ensuring smooth execution. Their responsibilities include:
@@ -49,6 +53,18 @@ Project Managers at MarsBased are at the heart of keeping projects organized and
 
 Piloting our missions from Earth to Mars: [Cristina](https://www.linkedin.com/in/cristina-palomares-bonache/), [Mateja](https://www.linkedin.com/in/mateja-jermanis/), and [Rodrigo](https://www.linkedin.com/in/rodrigo-r-680a3558/).
 
+## Engineering Managers
+
+Engineering Managers at MarsBased share many responsibilities with Tech Leads but focus more on supporting the entire technical team’s growth and operational excellence. In addition to managing technical projects like Tech Leads, their key duties include:
+
+- **Maintaining high standards of technical delivery**, by mentoring, guiding, and reviewing team outputs.
+- **Leading by example**, balancing hands-on technical problem-solving with strategic oversight.
+- **Driving internal initiatives and technical resources**, by leading internal projects such as the creation and maintenance of security guides, coding guides, and project templates.
+- **Overseeing the elaboration and application of technical guides**, ensuring that best practices and company standards are not only documented but actively applied across all teams.
+- **Maintaining deep technical expertise**, possessing a level of knowledge about MarsBased technologies and infrastructure that is on par with the CTO, enabling them to make informed decisions and provide high-level guidance.
+
+Overseeing our tech engines with precision and care: [Juan Salvador](https://www.linkedin.com/in/juan-salvador-p%C3%A9rez-92a3901b/).
+
 ## Tech Leads
 
 Tech Leads play a crucial role in complementing Project Managers and ensuring technical excellence. Their responsibilities include:
@@ -63,19 +79,7 @@ Tech Leads play a crucial role in complementing Project Managers and ensuring te
 - **Solving problems in unfamiliar technologies**, demonstrating adaptability.
 - **Ensuring continuity**, making sure the project is well managed even in their absence.
 
-Making sure our spaceship stays on course: [Juan](https://www.linkedin.com/in/juan-artero-mart%C3%ADn-75256930/), [Pablo](https://www.linkedin.com/in/pablorco/), [Carlos](https://www.linkedin.com/in/carloslv/), and [José Antonio](https://www.linkedin.com/in/josean-fernandez/).
-
-## Engineering Managers
-
-Engineering Managers at MarsBased share many responsibilities with Tech Leads but focus more on supporting the entire technical team’s growth and operational excellence. In addition to managing technical projects like Tech Leads, their key duties include:
-
-- **Maintaining high standards of technical delivery**, by mentoring, guiding, and reviewing team outputs.
-- **Leading by example**, balancing hands-on technical problem-solving with strategic oversight.
-- **Driving internal initiatives and technical resources**, by leading internal projects such as the creation and maintenance of security guides, coding guides, and project templates.
-- **Overseeing the elaboration and application of technical guides**, ensuring that best practices and company standards are not only documented but actively applied across all teams.
-- **Maintaining deep technical expertise**, possessing a level of knowledge about MarsBased technologies and infrastructure that is on par with the CTO, enabling them to make informed decisions and provide high-level guidance.
-
-Overseeing our tech engines with precision and care: [Juan Salvador](https://www.linkedin.com/in/juan-salvador-p%C3%A9rez-92a3901b/).
+Making sure our spaceship stays on course: [Juan](https://www.linkedin.com/in/juan-artero-mart%C3%ADn-75256930/), [Pablo](https://www.linkedin.com/in/pablorco/), [Carlos](https://www.linkedin.com/in/carloslv/), [José Antonio](https://www.linkedin.com/in/josean-fernandez/), and [Marta](https://www.linkedin.com/in/marta-armada/).
 
 ## Engineers
 
@@ -93,7 +97,7 @@ We take pride in our craft. Code at MarsBased should reflect clarity, simplicity
 
 Above all, we expect software engineers to take ownership of their work. This means seeing beyond the immediate task, understanding the "why" behind what we build, and contributing to the success of the entire team. We don't just ship code: we ship solutions that help our clients succeed.
 
-The crew coding our way through the galaxy: [David](https://www.linkedin.com/in/davidgomezsanchez/), [Jose Luis](https://www.linkedin.com/in/jlestebanez/), [José](https://www.linkedin.com/in/jmmalaca/), [Laura](https://www.linkedin.com/in/laura-fari%C3%B1a-rodr%C3%ADguez-048a90b9/), Alejandro, [Enrique](https://www.linkedin.com/in/esquinas/), [Marta](https://www.linkedin.com/in/marta-armada/), and [Anna](https://www.linkedin.com/in/annavidalpons/).
+The crew coding our way through the galaxy: [David](https://www.linkedin.com/in/davidgomezsanchez/), [Jose Luis](https://www.linkedin.com/in/jlestebanez/), [José](https://www.linkedin.com/in/jmmalaca/), [Laura](https://www.linkedin.com/in/laura-fari%C3%B1a-rodr%C3%ADguez-048a90b9/), Alejandro, [Enrique](https://www.linkedin.com/in/esquinas/), [Anna](https://www.linkedin.com/in/annavidalpons/), [Dani](https://www.linkedin.com/in/daniel-cay-delgado/?locale=en), [Maxime](https://www.linkedin.com/in/mancelin/), and [Javier](https://www.linkedin.com/in/javierparragamunoz/?locale=en).
 
 ## Marketer & Podcast Co-Host
 
