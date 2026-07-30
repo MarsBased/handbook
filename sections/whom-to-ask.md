@@ -45,6 +45,7 @@ Follow this flow to get help with technical topics:
   * Juan A. → Ruby on Rails, React, Remix, Python, AI.
   * Carlos → React, Remix, React Native, NodeJS.
   * José Antonio → React, Remix, NextJS, NestJS, NodeJS.
+  * Marta → Accessibility, CSS, React, Design, Tailwind.
 
 * Still unsure, or is no one available to help? → Reach out to Xavi.
 
