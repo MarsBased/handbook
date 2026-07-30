@@ -4,7 +4,7 @@
 
 At MarsBased, we intentionally grow at an organic pace to preserve our culture and maintain sustainable operations. All currently open positions are listed on the [Jobs page](https://marsbased.com/jobs) of our website.
 
-If you do not see a role that aligns with your specific profile but feel you would make a great addition to the spaceship, you are welcome to submit an application through work@marsbased.com.
+If you do not see a role that aligns with your specific profile but feel you would make a great addition to the spaceship, you are welcome to submit an application through [work@marsbased.com](mailto:work@marsbased.com).
 
 Please note that due to the high volume of applications, we may not be able to respond to every candidate. However, we **always** provide a yes or no response to all the applicants we interview.
 
@@ -37,7 +37,11 @@ We focus on architectural decisions, trade-offs in real-world scenarios, and how
 
 It is also a two-way conversation, so you will have plenty of time to ask us about our tech stack, engineering standards, and daily workflows at MarsBased.
 
-After successful completion of the Technical Interview, we will conduct a reference check process where you will be asked for 3 references, ideally from people you have reported to in previous roles. This is the final step in our hiring process before we make a decision.
+### Step 4: Reference Check
+After successful completion of the Technical Interview, we will conduct a Reference Check process where you will be asked for 3 references, ideally from people you have reported to in previous roles. This is the final step in our hiring process before we make a decision.
+
+### Step 5: Job Offer
+If everything aligns and references are verified, we will reach out with a formal offer! We will walk you through the details of the compensation package, starting date, and contract terms. Once accepted, we’ll start preparing your onboarding so you have everything ready for your first day as a Martian.
 
 ## What do we value most
 
