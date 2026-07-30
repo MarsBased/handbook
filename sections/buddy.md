@@ -13,7 +13,7 @@ Any team member with:
 * the time to be involved in the partnership process
 * the motivation to share the company culture, values
 
-is welcome to volunteer as a buddy. You just need to let Eli know, and she'll include you in the buddy pool for upcoming occasions.
+is welcome to volunteer as a buddy. You just need to let the People team know, and they will include you in the buddy pool for upcoming occasions.
 
 ## What does a buddy do?
 
@@ -41,8 +41,6 @@ It may last around three months. After that period, the newcomer most likely fee
 As part of the onboarding process, during the first days, the newcomer gets a lot of information about the company, how we work, the specific project he/she has been assigned to, etc. In fact, many of those issues, have already been discussed during the hiring process, but it's always good to refresh them the first day.
 
 You can check what has already happened and explained in [Guided with ❤️ by Martians](/sections/firstday.md#guided-with-heart-by-martians).
-
-Check what's already happening to onboard a new Martian (more details on the onboarding guide)
 The buddy needs to know that the new employee has already heard about all the important things he/she needs to know to start doing his/her job, which takes out pressure from the buddy. The buddy is an important, but additional support, which means the transmission of no key information relies only on the buddy.
 
 We all have experienced that the first days in a new job are overwhelming for the amount of new information transferred, and we know that very often questions arise at a later stage, once he/she has the chance to digest the information and put the theory into practice. At this point, after the first few days, the role of the buddy is especially relevant and valuable.
