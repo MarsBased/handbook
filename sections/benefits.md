@@ -24,10 +24,10 @@ Find below examples of products, as well as the budget up to which the company i
 
 Given the tools we use, we recommend getting a Mac or Linux, but we're open to adapting to your preferences as much as possible. As a default, we offer the following two options:
 
-- [MacBook Air M3 (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
-- [MacBook Pro M4 (14”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-pro/)
+- [MacBook Air M5 (13 or 15”, 16GB RAM, 512 SSD)](https://www.apple.com/es/macbook-air/)
+- [MacBook Pro M5 (14”, 16GB RAM, 1TB SSD)](https://www.apple.com/es/macbook-pro/)
 - [Mac Mini M4 (16GB RAM, 512 SSD)](https://www.apple.com/es/mac-mini/)
-- [Slimbook Executive 14 with Ubunto or Linux Mint (14", 32GB RAM, 1TB NVMe)](https://slimbook.com/en/executive)
+- [Lenovo ThinkPad T14 Gen 6 (14”, 32GB RAM, 512GB SSD)](https://www.lenovo.com/es/es/laptops/results/?visibleDatas=8170%3AThinkPad)
 
 #### Chair (200€)
 
@@ -76,16 +76,9 @@ From MarsBased, we strongly encourage you to improve your English skills (or any
 
 ### Budget
 
-For that purpose, you get up to 180€/200$ per quarter to take on-site/online lessons, or use the iTalki language learning platform.
+For that purpose, you get up to 180€ per quarter to spend on on-site/online lessons, platform subscriptions, or private tutors.
 
-#### How to proceed if using iTalki
-
-1. Let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-19) you want to take up language lessons in iTalki.
-2. If this is your first time using iTalki, you will need to sign up and set up your profile. You can use the MarsBased email address or your personal one.
-3. Let us know the email address of your account so that we can transfer the credit of 200$. You will receive it in 1-2 days in your account.
-4. Every quarter or when you run out of credit after that period, reach out to us to request your credit again. You will receive it within 1-2 days in your account.
-
-#### How to proceed if using other means
+#### How to proceed
 
 1. Let us know on this [Linear issue](https://linear.app/marsbased/issue/MBT-19) your preferred option for taking language lessons.
 2. Make sure the academy or private professor you've chosen is able to issue us an invoice (either monthly or quarterly) so that we can make the payment to them, or we can reimburse you for the payment you previously made. The invoice should include the following billing data:
@@ -222,11 +215,13 @@ This helps us:
 
 ## <a name="coworking"></a> Coworking 🏢
 
-Working from home might not be comfortable for everyone due to a lack of adequate working conditions at home, difficulties in concentrating because relatives are around, or the feeling of being too isolated and needing to be surrounded by other coworkers.
+We want everyone to have a comfortable, productive, and inspiring workspace. For most of the team, that's working from home, but we know that's not for everyone, whether due to space constraints, home distractions, or simply because you thrive in an office environment.
+
+If working from home isn't the best fit for you, you can choose a coworking space as your alternative primary workspace. While this isn't designed as a daily hybrid supplement to working from home, we're always open to discussing exceptional situations.
 
 ### Budget
 
-If that's your case and you need a coworking space, MarsBased will provide you with an allowance of 150€ per month to pay the cost.
+If a coworking space is your chosen main workspace, MarsBased provides an allowance of up to 150€ per month to cover or contribute to the cost.
 
 ### How to proceed
 
