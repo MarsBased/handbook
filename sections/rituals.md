@@ -4,7 +4,7 @@ Even though we're a 100%-remote company, we do a few activities both offline and
 
 ## Martian Day
 
-Three times a year we fly everyone in and we meet for a day or two of get-together.
+Two times a year we fly everyone in and we meet for a day or two of get-together.
 
 In the Martian Days, we don't do client work, and we spend quality time sharing the numbers of the company, doing feedback roundtables, workshops, keynotes, brainstorming sessions, and a few leisure activities like padel tennis, dinners, karaoke, and more!
 
