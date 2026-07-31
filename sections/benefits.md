@@ -125,13 +125,20 @@ Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
 
 ## <a name="referral"></a> Referral bonus 👩🏻‍🚀
 
-We normally hire 2-3 software engineers per year. We are open to receiving recommendations from you on colleagues you've worked with or any software engineers you may know and think could be a good fit for our team.
+We'd love your recommendations for colleagues you've worked with or talented people in your network who would be a great fit for our team!
 
-If you introduce us to this person and facilitate the conversations, you will get a referral bonus of 1000€ if we end up hiring her or him. We will pay the bonus after the third month of that person in the company.
+Please let the People team know if you have someone in mind. Share as much of the following information as you have:
 
-Let Eli know if you have any recommendations.
+* Full name
+* Role
+* CV and/or LinkedIn profile
+* Contact information
+* How you know them
+* Whether they are aware you're referring them
 
-This is always a good opportunity to work with people you have worked with and liked in the past!
+If you make the introduction and facilitate the conversation, you will receive a €1,000 referral bonus if we hire them. The bonus is paid after their third month with the company.
+
+Referrals are always a great opportunity to bring on people you've loved working with in the past!
 
 ## <a name="sports"></a> Sports & Health 🚴🏻‍♀️
 
