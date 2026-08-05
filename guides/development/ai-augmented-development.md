@@ -102,15 +102,48 @@ Enable it globally in your user settings at `~/.claude/settings.json`:
 {
   "sandbox": {
     "enabled": true,
+    "filesystem": {
+      "denyRead": [
+        "~/.aws",
+        "~/.ssh",
+        "~/.gnupg",
+        "~/.netrc",
+        "~/.git-credentials",
+        "~/.config/gh",
+        "~/.config/gcloud",
+        "~/.docker/config.json",
+        "~/.kube/config",
+        "~/.npmrc",
+        "~/.pypirc",
+        "~/.cargo/credentials.toml",
+        "~/.azure",
+        "~/.terraformrc",
+        "~/.terraform.d"
+      ]
+    },
     "credentials": {
-      "files": [
-        { "path": "~/.aws/credentials", "mode": "deny" },
-        { "path": "~/.ssh", "mode": "deny" }
+      "envVars": [
+        { "name": "GITHUB_TOKEN", "mode": "deny" },
+        { "name": "GH_TOKEN", "mode": "deny" },
+        { "name": "AWS_ACCESS_KEY_ID", "mode": "deny" },
+        { "name": "AWS_SECRET_ACCESS_KEY", "mode": "deny" },
+        { "name": "AWS_SESSION_TOKEN", "mode": "deny" },
+        { "name": "NPM_TOKEN", "mode": "deny" },
+        { "name": "ANTHROPIC_API_KEY", "mode": "deny" },
+        { "name": "OPENAI_API_KEY", "mode": "deny" },
+        { "name": "RENDER_API_KEY", "mode": "deny" },
+        { "name": "DATABASE_URL", "mode": "deny" },
+        { "name": "RAILS_MASTER_KEY", "mode": "deny" },
+        { "name": "SECRET_KEY", "mode": "deny" }
       ]
     }
   }
 }
 ```
+
+The two blocks cover the two ways a secret leaks into a shell command. `denyRead` blocks sandboxed commands from reading credential files and directories on disk. `credentials.envVars` unsets those variables before each sandboxed command runs, so a token exported in your shell is not inherited by whatever Claude executes. Deny entries merge across every settings scope and only ever narrow access, so a project can add to this list but never remove from it.
+
+A denied variable is gone entirely for sandboxed commands, which will break a tool that genuinely needs it. If that happens, drop that single entry rather than removing the block.
 
 You can also run `/sandbox` inside a session, which opens a panel to configure it per project and tells you whether any dependency is missing. Choose Auto-allow mode: sandboxed commands run without prompting because the sandbox boundary is what contains them, and anything that can't be sandboxed falls back to the regular permission flow.
 
@@ -120,9 +153,9 @@ Pre-approve the domains you always need with `sandbox.network.allowedDomains` to
 
 ### What it does not cover
 
-The sandbox applies to Bash commands only. Claude Code's built-in tools — Read, Edit, Write, WebFetch — along with MCP servers and hooks run in-process and are governed by the permission system instead. Reads inside the sandbox are also unrestricted by default, which is why the `credentials` block above is part of the baseline config.
+The sandbox applies to Bash commands only. Claude Code's built-in tools — Read, Edit, Write, WebFetch — along with MCP servers and hooks run in-process and are governed by the permission system instead.
 
-This is the complement to our `pre-read` hook, not a replacement for it: the hook blocks Claude from reading credential files, while the sandbox restricts what shell commands and their subprocesses can reach. Both are needed.
+Within the sandbox, only writes are restricted by default: commands can read the entire machine unless you say otherwise, and there is no built-in credential deny list. That is why the `denyRead` and `credentials` entries above are part of the baseline config rather than an optional extra.
 
 ## Hooks
 
