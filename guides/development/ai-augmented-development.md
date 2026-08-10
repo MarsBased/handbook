@@ -83,6 +83,80 @@ We don't default to subagents. We only reach for them when there is a clear reas
 
 Only the final result of a subagent returns to your main context, keeping it clean. If the task doesn't clearly benefit from parallelization or isolation, work directly in your main session.
 
+## Sandboxing
+
+By default, any shell command Claude Code runs has the same access you do: your whole filesystem, your whole network. We enable sandbox mode on all machines to contain that.
+
+The sandbox is an OS-level isolation layer for Bash commands and their child processes — Seatbelt on macOS, bubblewrap on Linux and WSL2. It is enforced by the operating system, not by the model, so it holds regardless of what Claude decides to run or whether a command does more than its name suggests.
+
+It has two layers:
+
+- **Network** — Traffic from sandboxed commands goes through a proxy that enforces a domain allowlist. No domains are pre-approved: the first time a command needs to reach a new domain, Claude Code asks for approval, and approving allows that host for the rest of the session.
+- **Filesystem** — Commands can only write to the working directory and the session temp directory. No writing to `~/.zshrc`, `/bin`, or anything outside the project.
+
+### Enabling it
+
+Enable it globally in your user settings at `~/.claude/settings.json`:
+
+```json
+{
+  "sandbox": {
+    "enabled": true,
+    "filesystem": {
+      "denyRead": [
+        "~/.aws",
+        "~/.ssh",
+        "~/.gnupg",
+        "~/.netrc",
+        "~/.git-credentials",
+        "~/.config/gh",
+        "~/.config/gcloud",
+        "~/.docker/config.json",
+        "~/.kube/config",
+        "~/.npmrc",
+        "~/.pypirc",
+        "~/.cargo/credentials.toml",
+        "~/.azure",
+        "~/.terraformrc",
+        "~/.terraform.d"
+      ]
+    },
+    "credentials": {
+      "envVars": [
+        { "name": "GITHUB_TOKEN", "mode": "deny" },
+        { "name": "GH_TOKEN", "mode": "deny" },
+        { "name": "AWS_ACCESS_KEY_ID", "mode": "deny" },
+        { "name": "AWS_SECRET_ACCESS_KEY", "mode": "deny" },
+        { "name": "AWS_SESSION_TOKEN", "mode": "deny" },
+        { "name": "NPM_TOKEN", "mode": "deny" },
+        { "name": "ANTHROPIC_API_KEY", "mode": "deny" },
+        { "name": "OPENAI_API_KEY", "mode": "deny" },
+        { "name": "RENDER_API_KEY", "mode": "deny" },
+        { "name": "DATABASE_URL", "mode": "deny" },
+        { "name": "RAILS_MASTER_KEY", "mode": "deny" },
+        { "name": "SECRET_KEY", "mode": "deny" }
+      ]
+    }
+  }
+}
+```
+
+The two blocks cover the two ways a secret leaks into a shell command. `denyRead` blocks sandboxed commands from reading credential files and directories on disk. `credentials.envVars` unsets those variables before each sandboxed command runs, so a token exported in your shell is not inherited by whatever Claude executes. Deny entries merge across every settings scope and only ever narrow access, so a project can add to this list but never remove from it.
+
+A denied variable is gone entirely for sandboxed commands, which will break a tool that genuinely needs it. If that happens, drop that single entry rather than removing the block.
+
+You can also run `/sandbox` inside a session, which opens a panel to configure it per project and tells you whether any dependency is missing. Choose Auto-allow mode: sandboxed commands run without prompting because the sandbox boundary is what contains them, and anything that can't be sandboxed falls back to the regular permission flow.
+
+On Linux and WSL2, install the dependencies first with `sudo apt-get install bubblewrap socat` and restart Claude Code. Native Windows is not supported — run Claude Code inside WSL2.
+
+Pre-approve the domains you always need with `sandbox.network.allowedDomains` to avoid repeated prompts, and grant extra write paths with `sandbox.filesystem.allowWrite` when a tool genuinely needs them. Keep both lists narrow: a broad allowed domain is a data exfiltration path, since the proxy does not inspect TLS traffic by default.
+
+### What it does not cover
+
+The sandbox applies to Bash commands only. Claude Code's built-in tools — Read, Edit, Write, WebFetch — along with MCP servers and hooks run in-process and are governed by the permission system instead.
+
+Within the sandbox, only writes are restricted by default: commands can read the entire machine unless you say otherwise, and there is no built-in credential deny list. That is why the `denyRead` and `credentials` entries above are part of the baseline config rather than an optional extra.
+
 ## Hooks
 
 Hooks are shell scripts that Claude Code runs automatically at specific points during a session — before reading a file, after writing one, when a tool is called, and so on. They run outside of Claude's context and cannot be overridden by prompts, which makes them the right place to enforce hard rules.
@@ -109,4 +183,5 @@ The hook lives at `.claude/hooks/pre-read.sh` in the project repository and is w
 - [Research, Plan, Implement (Tyler Burleigh)](https://tylerburleigh.com/blog/2026/02/22/) — Practical walkthrough of RPI with concrete examples of `RESEARCH.md` and `PLAN.md` artifacts, phased implementation, and git-based rollback strategies.
 - [Session management and the 1M context window](https://claude.com/blog/using-claude-code-session-management-and-1m-context) — Anthropic's guide to managing Claude Code sessions: when to clear, rewind, compact, or delegate to subagents.
 - [How Claude remembers your project](https://code.claude.com/docs/en/memory) — Official documentation on CLAUDE.md files, `.claude/rules/`, auto memory, and how to write effective persistent instructions.
+- [Configure the sandboxed Bash tool](https://code.claude.com/docs/en/sandboxing) — Official documentation on the Bash sandbox: filesystem and network isolation, settings reference, and managed deployment options.
 - [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action) — Anthropic's hands-on training course covering Claude Code architecture, tool usage, context management, MCP servers, and GitHub integration through video lessons and projects.
