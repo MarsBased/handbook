@@ -7,7 +7,7 @@ The best way to approach typing in an application is always from the foundations
 - In a backend application that queries a database, start by typing your database models.
 - In a frontend application that queries an API, start by typing the API responses.
 
-You can save a lot of work by adding libraries to your stack that generate types automatically (TypeScript ORMs, API clients, Swagger/OpenAPI codegen, GraphQL codegen...).
+You can save a lot of work by adding libraries to your stack that generate types automatically (TypeScript ORMs, API clients, Swagger/OpenAPI codegen, GraphQL codegen...). We recommend [Hey API](https://heyapi.dev/) (`@hey-api/openapi-ts`) to generate a fully typed client from an OpenAPI specification, and [Drizzle](https://orm.drizzle.team/) as the TypeScript ORM, defining your database schema in TypeScript and inferring the types of your models from it.
 
 ## Don't repeat yourself
 
