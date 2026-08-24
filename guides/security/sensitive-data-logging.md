@@ -120,13 +120,15 @@ Rails.application.config.filter_redirect += [
 ]
 ```
 
-## Next.js with Pino
+## Node.js backends
 
-Next.js does not include a built-in log redaction mechanism. Use [Pino](https://github.com/pinojs/pino) as the structured logger and configure its `redact` option to remove sensitive fields.
+Node.js frameworks such as Next.js and Nest.js do not include a built-in log redaction mechanism, unlike Rails. Whatever the framework, the approach is the same: use a structured logger with redaction configured at startup, and never use `console.log` for application events.
+
+Our preferred logger is [Pino](https://github.com/pinojs/pino), which supports redaction natively. If a project already uses [Winston](https://github.com/winstonjs/winston), configure redaction through a custom format as shown below.
 
 ### Set up Pino with redaction
 
-Create a shared logger module and configure redaction at startup:
+Create a shared logger module and configure the `redact` option at startup. This applies to Next.js, Nest.js, Express, or any other Node.js framework:
 
 ```typescript
 // lib/logger.ts
@@ -162,7 +164,85 @@ export default logger;
 
 Import this logger everywhere. Do not use `console.log` for application events.
 
+### Pino in Nest.js
+
+In Nest.js, use [nestjs-pino](https://github.com/iamolegga/nestjs-pino) so the framework's `Logger` and the HTTP request logs go through Pino with the same redaction rules:
+
+```typescript
+// app.module.ts
+import { Module } from "@nestjs/common";
+import { LoggerModule } from "nestjs-pino";
+
+@Module({
+  imports: [
+    LoggerModule.forRoot({
+      pinoHttp: {
+        redact: {
+          paths: [
+            "req.headers.authorization",
+            "req.headers.cookie",
+            "req.body.password",
+            "req.body.token",
+            "res.headers['set-cookie']",
+            "*.password",
+            "*.secret",
+            "*.apiKey",
+          ],
+          censor: "[REDACTED]",
+        },
+      },
+    }),
+  ],
+})
+export class AppModule {}
+```
+
+Note that `pino-http` logs the full request object, so the paths must be prefixed with `req.` and `res.` to cover headers and bodies.
+
+### Winston
+
+Winston has no built-in redaction option. Add it with a custom format that filters sensitive keys before the entry is written:
+
+```typescript
+// lib/logger.ts
+import winston from "winston";
+
+const SENSITIVE_KEYS = [
+  "password", "token", "accesstoken", "refreshtoken",
+  "authorization", "cookie", "creditcard", "cvv",
+  "ssn", "secret", "apikey",
+];
+
+const redact = winston.format((info) => {
+  const filter = (value: unknown): unknown => {
+    if (Array.isArray(value)) return value.map(filter);
+    if (value && typeof value === "object") {
+      return Object.fromEntries(
+        Object.entries(value).map(([key, val]) =>
+          SENSITIVE_KEYS.includes(key.toLowerCase())
+            ? [key, "[REDACTED]"]
+            : [key, filter(val)]
+        )
+      );
+    }
+    return value;
+  };
+  return filter(info) as winston.Logform.TransformableInfo;
+});
+
+const logger = winston.createLogger({
+  format: winston.format.combine(redact(), winston.format.json()),
+  transports: [new winston.transports.Console()],
+});
+
+export default logger;
+```
+
+The redact format must be the first format in the `combine` chain so it runs before serialization. Unlike Pino's path-based redaction, this recursive approach also catches sensitive keys at any nesting depth.
+
 ### Avoid raw request data in logs
+
+The examples below use Next.js route handlers, but the same rules apply to Nest.js controllers and any other framework: redaction only covers structured fields, so never log raw request objects.
 
 ❌ **Bad** — logs the full request body, which can include passwords and tokens:
 
@@ -235,3 +315,5 @@ try {
 - GDPR Article 5 — data minimization: `https://gdpr-info.eu/art-5-gdpr/`
 - Rails parameter filters: `https://guides.rubyonrails.org/configuring.html`
 - Pino redaction: `https://github.com/pinojs/pino/blob/main/docs/redaction.md`
+- nestjs-pino: `https://github.com/iamolegga/nestjs-pino`
+- Winston custom formats: `https://github.com/winstonjs/winston#creating-custom-formats`
