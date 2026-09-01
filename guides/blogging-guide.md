@@ -20,7 +20,7 @@ One of the most common uses is content marketing. In this case, companies blog a
 
 At MarsBased we use it to drive qualified traffic to our website and attract talent, so we made it a key element in our sales toolset.
 
-When we created the company, we didn’t have that much of a strategy, so we wrote posts about our company evolution: what we did and why we did it. However, some of these posts helped us rank high enough in search engines because they contained the right keywords. For instance, our most visited blog entry is [this one we wrote about our tech stack](/blog/2014/03/24/how-we-make-the-right-app2/ "MarsBased tech stack").
+When we created the company, we didn’t have that much of a strategy, so we wrote posts about our company evolution: what we did and why we did it. However, some of these posts helped us rank high enough in search engines because they contained the right keywords. For instance, our most visited blog entry is [this one we wrote about our tech stack](https://marsbased.com/blog/2014/03/24/how-we-make-the-right-app2/ "MarsBased tech stack").
 
 We have received many project requests over the years because of our posts about technologies. In that post, we didn’t only show our expertise on the listed tools, but the content also made us rank higher on Google, especially in high-demanded technologies like Angular (back in 2014-15) or Sidekiq because they’re specific enough to be very visible to the few people that google them.
 
