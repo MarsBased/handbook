@@ -19,6 +19,7 @@ It is crucial to keep the web applications we work on as secure as possible. Eve
 - [Security related headers](security_related_headers.md)
 - [Periodical Maintenance Tasks](periodical_maintenance_tasks.md)
 - [Securing backups](securing_backups.md)
+- [Sensitive data in logs](sensitive-data-logging.md)
 
 ## MarsBased security
 

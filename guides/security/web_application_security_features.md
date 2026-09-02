@@ -420,23 +420,9 @@ References:
 
 ## Avoid logging sensitive data
 
-Make sure you are not writing any sensitive data to logs. These include user passwords, API tokens, nonces, etc.
+Do not write sensitive data to logs. This includes passwords, API tokens, session identifiers, credit card numbers, and personal data.
 
-For example: a login request will probably log the e-mail and password parameters. The password parameter should be filtered or removed to avoid it being written to the logs.
-
-### Implementation
-
-#### Rails
-
-Rails already filters the most common parameters by default. You can instruct Rails to filter other parameters with the config.filter_parameter_logging configuration option
-
-#### Next.js
-
-Audit logs and redact sensitive parameters before writing. Avoid logging raw request bodies, cookies, tokens, and secrets. Use structured logging and explicit allow-lists for fields.
-
-References:
-
-- Authentication (sessions): `https://nextjs.org/docs/app/building-your-application/authentication`
+For detailed guidance, framework-specific configuration, and code examples for both Rails and Next.js, see the dedicated guide: [Sensitive data in logs](sensitive-data-logging.md).
 
 ## Keep dependencies up to date
 
