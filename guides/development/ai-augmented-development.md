@@ -164,7 +164,7 @@ Hooks are shell scripts that Claude Code runs automatically at specific points d
 We use hooks for two main purposes:
 
 - **Security** — to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
-- **Static analysis and formatting** — to run tools like Prettier, ESLint, or RuboCop automatically after Claude modifies a file, so the codebase stays consistent without Claude having to remember to do it. For example, we run Prettier on every TypeScript file Claude edits.
+- **Static analysis and formatting** — to run tools like ESLint (with [ESLint Stylistic](https://eslint.style/) for formatting) or RuboCop automatically after Claude modifies a file, so the codebase stays consistent without Claude having to remember to do it. For example, we run `eslint --fix` on every TypeScript file Claude edits.
 
 ### Pre-read hook
 

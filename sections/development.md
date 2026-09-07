@@ -23,4 +23,5 @@ Check out our more technical development guidelines (if you dare!).
 - [Git guidelines](/guides/development/git-guidelines.md)
 - [React guidelines](/guides/development/react-guidelines.md)
 - [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
+- [TypeScript guidelines](/guides/typescript-guidelines.md)
 - [WIP: Testing guidelines](/guides/development/testing-guidelines.md)

@@ -53,7 +53,7 @@ export type PopulatedUser = Omit<User, "productIds"> & { products: Product[] };
 export type UserCardProps = {
   user: PopulatedUser
 }
-export const UserCard = ({ user }: UserCardProps) => { ... }
+export function UserCard({ user }: UserCardProps) { ... }
 ```
 
 ## Prefer types over interfaces
@@ -252,23 +252,25 @@ function buildFilterQuery(filters: UserFilters): string {
 
 Anonymous types in React components:
 
-```ts
+```tsx
 // ❌ Bad: Anonymous prop types
-const UserCard = ({ name, email, role }: { name: string; email: string; role: string }) => {
+export function UserCard({ name, email, role }: { name: string; email: string; role: string }) {
   // ...
-};
+}
 
-// ✅ Good: Named prop types
-type UserCardProps = {
+// ✅ Good: Named, exported prop types
+export type UserCardProps = {
   name: string;
   email: string;
   role: string;
 };
 
-const UserCard = ({ name, email, role }: UserCardProps) => {
+export function UserCard({ name, email, role }: UserCardProps) {
   // ...
-};
+}
 ```
+
+See also the component conventions in our [React guidelines](/guides/development/react-guidelines.md#18-do-name-prop-types).
 
 ### Export every type
 
@@ -516,11 +518,11 @@ This principle is **especially important** in React functional components. React
 
 ```tsx
 // ❌ Bad: Propagating nullable props in nested components
-type UserCardProps = {
+export type UserCardProps = {
   user: User | null;
 };
 
-const UserCard: React.FC<UserCardProps> = ({ user }) => {
+export function UserCard({ user }: UserCardProps) {
   // Repetitive check
   if (!user) return <div>No user</div>;
 
@@ -531,16 +533,16 @@ const UserCard: React.FC<UserCardProps> = ({ user }) => {
       <UserActions user={user} />
     </div>
   );
-};
+}
 
-const UserHeader: React.FC<UserCardProps> = ({ user }) => {
+export function UserHeader({ user }: UserCardProps) {
   // We have to check again
   if (!user) return null;
 
   return <h2>{user.name}</h2>;
-};
+}
 
-const UserDetails: React.FC<UserCardProps> = ({ user }) => {
+export function UserDetails({ user }: UserCardProps) {
   // And again
   if (!user) return null;
 
@@ -550,7 +552,7 @@ const UserDetails: React.FC<UserCardProps> = ({ user }) => {
       {/* ... */}
     </div>
   );
-};
+}
 ```
 
 Better approach:
@@ -558,15 +560,19 @@ Better approach:
 1. **Validation in the main component**:
 
 ```tsx
-const UserProfile: React.FC<{ userId: string | null }> = ({ userId }) => {
+export type UserProfileProps = { userId: string | null };
+
+export function UserProfile({ userId }: UserProfileProps) {
   // Handle the nullable once
   if (!userId) return <div>Please select a user</div>;
 
   return <UserProfileContent userId={userId} />;
-};
+}
 
 // This component always receives a non-nullable userId
-const UserProfileContent: React.FC<{ userId: string }> = ({ userId }) => {
+export type UserProfileContentProps = { userId: string };
+
+export function UserProfileContent({ userId }: UserProfileContentProps) {
   // We don't need to check if userId is null
   const { data: user, loading, error } = useUser(userId);
 
@@ -582,34 +588,35 @@ const UserProfileContent: React.FC<{ userId: string }> = ({ userId }) => {
       {/* ... */}
     </div>
   );
-};
+}
 
 // Components receive only the specific data they need
-const UserHeader: React.FC<{ name: string; avatar: string }> = ({
-  name,
-  avatar,
-}) => (
-  <header>
-    <img src={avatar} alt={name} />
-    <h1>{name}</h1>
-  </header>
-);
+export type UserHeaderProps = { name: string; avatar: string };
+
+export function UserHeader({ name, avatar }: UserHeaderProps) {
+  return (
+    <header>
+      <img src={avatar} alt={name} />
+      <h1>{name}</h1>
+    </header>
+  );
+}
 ```
 
 2. **Using nullish coalescing operators and default values in props**:
 
 ```tsx
-type UserAvatarProps = {
+export type UserAvatarProps = {
   user?: User;
   size?: "small" | "medium" | "large";
   fallbackImage?: string;
 };
 
-const UserAvatar: React.FC<UserAvatarProps> = ({
+export function UserAvatar({
   user,
   size = "medium",
   fallbackImage = "/images/default-avatar.png",
-}) => {
+}: UserAvatarProps) {
   // Using optional chaining with fallback
   const avatarUrl = user?.avatarUrl ?? fallbackImage;
   const userName = user?.name ?? "Unknown User";
@@ -621,5 +628,5 @@ const UserAvatar: React.FC<UserAvatarProps> = ({
       className={`avatar-${size}`}
     />
   );
-};
+}
 ```
