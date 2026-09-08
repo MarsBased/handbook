@@ -430,12 +430,12 @@ AppState.addEventListener("change", (status) => {
 // src/hooks/api/use-posts.ts
 export const postKeys = {
   all: ["posts"] as const,
-  lists: () => [...postKeys.all, "list"] as const,
+  list: (status?: PostStatus) => [...postKeys.all, "list", status] as const,
   detail: (id: string) => [...postKeys.all, "detail", id] as const,
 };
 
-export function usePosts() {
-  return useQuery({ queryKey: postKeys.lists(), queryFn: postsApi.list });
+export function usePosts(status?: PostStatus) {
+  return useQuery({ queryKey: postKeys.list(status), queryFn: () => postsApi.list(status) });
 }
 ```
 
