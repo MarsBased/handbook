@@ -1,6 +1,6 @@
 # MarsBased React Style Guide
 
-We bootstrap React applications with [Next.js](https://nextjs.org/) (App Router) by default. Use [Vite](https://vite.dev/) for single-page apps that don't need server-side rendering, SEO or server code. [Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app), which we used on older projects, was deprecated by the React team in 2025 and must not be used for new projects.
+We bootstrap React applications with [Next.js](https://nextjs.org/) (App Router) by default. Use [Vite](https://vite.dev/) for single-page apps that don't need server-side rendering, SEO or server code. [Create React App](https://react.dev/blog/2025/02/14/sunsetting-create-react-app), which we used on older projects, was deprecated by the React team in 2025 and must not be used for new projects. For mobile apps, see our [React Native guidelines](/guides/development/react-native-guidelines.md), which build on this guide.
 
 <!-- vscode-markdown-toc -->
 * 1. [Do's and Don'ts](#1-dos-and-donts)
