@@ -250,7 +250,7 @@ Font files live in the repository or go through the framework's font loader (`ne
 
 ### Lint styles on every edit and before every commit
 
-Stylelint with `stylelint-config-standard` should run in the post-edit hook for agents and in the pre-commit hook for everyone, as described in [AI Augmented Development](/guides/development/ai-augmented-development.md#hooks), next to the project's class-order tool. The standard config rejects three things we use, so each project overrides them: Tailwind's at-rules (`theme`, `source`, `utility`, `variant`, `custom-variant`, `apply`, `reference`, `config`, `plugin`, `slot`) go in `ignoreAtRules`; `selector-class-pattern` is set to the project's naming, BEM or camelCase; `custom-property-pattern` is relaxed to allow `--text-heading-l--line-height`. Lint findings are fixed, not disabled.
+Stylelint with `stylelint-config-standard` should run in the post-edit hook for agents, as described in [AI Augmented Development](/guides/development/ai-augmented-development.md#hooks), and in the lefthook pre-commit hook for everyone, as described in the [meta tools guide](/guides/development/meta-tools-guide.md#lefthook-git-hooks), next to the project's class-order tool. The standard config rejects three things we use, so each project overrides them: Tailwind's at-rules (`theme`, `source`, `utility`, `variant`, `custom-variant`, `apply`, `reference`, `config`, `plugin`, `slot`) go in `ignoreAtRules`; `selector-class-pattern` is set to the project's naming, BEM or camelCase; `custom-property-pattern` is relaxed to allow `--text-heading-l--line-height`. Lint findings are fixed, not disabled.
 
 ### Comment the origin of a magic number and delete dead CSS
 

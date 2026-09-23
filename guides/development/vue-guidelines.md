@@ -57,7 +57,7 @@ A project generator saves a lot of boilerplate work and provides common conventi
 - Default: [Nuxt](https://nuxt.com/): `bun create nuxt@latest`. Add the official modules you need with `bunx nuxi module add` (`@nuxt/eslint`, `@pinia/nuxt`, `@nuxtjs/i18n`, `@nuxt/test-utils`...).
 - Single-page apps without SSR, SEO or server code: [create-vue](https://github.com/vuejs/create-vue): `bun create vue@latest` (pick TypeScript, Vue Router, Pinia, Vitest, Playwright and ESLint; skip Prettier, see 1.9).
 
-We use [bun](https://bun.sh/) as the package and script manager: `bun install`, `bun add`, `bun run <script>` and `bunx <cli>` instead of their npm counterparts. Pin its version with [mise](https://mise.jdx.dev/) (`mise.toml`) so everyone and CI run the same one.
+We use [bun](https://bun.sh/) as the package and script manager: `bun install`, `bun add`, `bun run <script>` and `bunx <cli>` instead of their npm counterparts. Pin its version in `.bun-version`, as the [meta tools guide](/guides/development/meta-tools-guide.md#tool-versions) describes, so everyone and CI run the same one.
 
 Bun is only the package manager: the code still runs on Node.js LTS. `bun run dev` starts Vite and Nuxt on Node, and Nuxt builds for Nitro's default `node-server` preset. Don't force the Bun runtime (`bun --bun run`, Nitro's `bun` preset) without a concrete reason, and keep Vitest instead of `bun test`.
 
@@ -601,7 +601,7 @@ See also our [Testing guidelines](/guides/development/testing-guidelines.md).
 - Routing: Nuxt file-based routing, or [Vue Router](https://router.vuejs.org/) for SPAs
 - Testing: [Vitest](https://vitest.dev/), [Vue Testing Library](https://testing-library.com/docs/vue-testing-library/intro/), [@nuxt/test-utils](https://nuxt.com/docs/getting-started/testing), [Playwright](https://playwright.dev/)
 - Lint and format: [eslint-plugin-vue](https://eslint.vuejs.org/), [@nuxt/eslint](https://eslint.nuxt.com/), [ESLint Stylistic](https://eslint.style/)
-- Tooling: [bun](https://bun.sh/) as package and script manager (Node.js LTS as runtime), pinned with [mise](https://mise.jdx.dev/)
+- Tooling: [bun](https://bun.sh/) as package and script manager (Node.js LTS as runtime); versions, tasks, Git hooks and development processes as in the [meta tools guide](/guides/development/meta-tools-guide.md)
 
 ###  4.2. Other libraries we have used
 

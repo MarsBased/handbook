@@ -1,4 +1,5 @@
-version: '3.4'
+# Containers and volumes are named after the project, not after the .dockerdev directory.
+name: <application-name>-dev
 
 x-app: &app
   build:
