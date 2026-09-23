@@ -48,6 +48,7 @@
 1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
 1. [Testing guidelines](/guides/development/testing-guidelines.md)
 1. [Our Docker guides](/guides/development/docker-guide.md)
+1. [Our meta tools guide](/guides/development/meta-tools-guide.md)
 1. [React guidelines](/guides/development/react-guidelines.md)
 1. [React Native guidelines](/guides/development/react-native-guidelines.md)
 1. [TypeScript guidelines](/guides/typescript-guidelines.md)
