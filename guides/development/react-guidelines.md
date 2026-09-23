@@ -400,6 +400,19 @@ In general, keep all graphql related code inside `graphql/` folder.
 
 - Generate the client and its types from the OpenAPI spec with [Hey API](https://heyapi.dev/) (`@hey-api/openapi-ts`) into `src/api/generated/`. Its TanStack Query plugin produces ready-to-use query and mutation options. See our [TypeScript guidelines](/guides/typescript-guidelines.md)
 - Hand-write only `src/api/client.ts` (base URL, auth headers, interceptors) and thin wrappers around the generated code
+- Resolve the base URL once, in `src/api/client.ts`, from where the code runs. When the platform exposes the API over an internal network, server-side code (Next.js Server Components, Route Handlers and Server Actions) must use that internal URL and fall back to the public one; the browser only ever knows the public URL. Going out through the public hostname from the server pays for DNS, TLS and a round trip outside the network on every request
+
+```ts
+// src/api/client.ts
+import { config } from "@/config";
+
+// INTERNAL_API_URL is server-only, so in the browser it is undefined and the public URL is used
+const baseUrl = typeof window === "undefined" ? config.internalApiUrl || config.apiUrl : config.apiUrl;
+
+export const api = createClient({ baseUrl });
+```
+
+- Export the ready-to-use client, never the factory that takes a base URL. Repeating `internalApiUrl || apiUrl` in every service or hook is a step someone eventually forgets, the app still works, and the cost shows up as latency instead of as an error. Keep the factory for a second backend on a different host and block it elsewhere with ESLint `no-restricted-imports`
 - No spec? Fall back to a single `src/api/index.ts` exporting all API interactions and `src/api/types.ts` for entity type definitions
 - If Auth and API are different services, is common to have two folders (`src/auth` and `src/api`) and the API depends on authorization (JWT tokens, for example). If auth and API are in the same service, the `src/auth` folder can be omitted.
 
@@ -530,7 +543,7 @@ Only applies to Next.js. In a Vite SPA every component is a client component.
 
 - Every component under `app/` is a Server Component by default: it can be `async`, fetches data directly (database via Drizzle, API client) and has no hooks or event handlers
 - Add `"use client"` only to the leaves that need state, effects or browser APIs. Keep the boundary as low in the tree as possible
-- Data: Server Components fetch directly, client components use TanStack Query
+- Data: Server Components fetch directly, client components use TanStack Query. Both go through the same API client, which already targets the internal URL on the server (see [REST](#34-rest))
 - Mutations: Server Actions (`"use server"`) with `useActionState`. Keep react-hook-form for client-side validation UX
 - React 19: `use()` reads promises and context, `ref` is a normal prop (no `forwardRef`), `<Context value={...}>` renders as a provider
 - React Compiler: enable it (`reactCompiler: true` in `next.config.ts`, `babel-plugin-react-compiler` on Vite) and stop hand-writing `useMemo`, `useCallback` and `memo` unless profiling shows a need
