@@ -61,6 +61,7 @@ For now, we have the following resources available:
    1. [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
    1. [Testing guidelines](/guides/development/testing-guidelines.md)
    1. [Our Docker guides](/guides/development/docker-guide.md)
+   1. [Our meta tools guide](/guides/development/meta-tools-guide.md)
 
 1. [TypeScript guidelines](/guides/typescript-guidelines.md)
 
