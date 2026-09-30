@@ -28,6 +28,7 @@
 
 ## Our guides
 
+1. [MarsBased AI guidelines](/guides/ai-guidelines.md)
 1. [Branding guidelines](/guides/branding.md)
 1. [Project management guidelines](/guides/pm-guidelines.md)
 1. [Linear guidelines](/guides/linear-guidelines.md)
