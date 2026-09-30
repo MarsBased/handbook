@@ -38,6 +38,7 @@ We have decided to make this handbook publicly available so we can share as much
 
 For now, we have the following resources available:
 
+1. [MarsBased AI guidelines](/guides/ai-guidelines.md)
 1. [Branding guidelines](/guides/branding.md)
 1. [Project management guidelines](/guides/pm-guidelines.md)
 1. [Linear guidelines](/guides/linear-guidelines.md)
