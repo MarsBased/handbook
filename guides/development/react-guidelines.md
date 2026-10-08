@@ -564,7 +564,7 @@ See also our [Testing guidelines](/guides/development/testing-guidelines.md).
 
 - Framework: [Next.js](https://nextjs.org/) (default), [Vite](https://vite.dev/) for SPAs
 - Components: [shadcn/ui](https://ui.shadcn.com/) (our default choice; copies the components into `components/ui/`)
-- Styling: [tailwindcss](https://tailwindcss.com/) (used by default in all our frontend projects)
+- Styling: [tailwindcss](https://tailwindcss.com/) (used by default in all our frontend projects). See our [CSS guidelines](/guides/development/css-guidelines.md)
 - Internationalization: [react-intl](https://formatjs.github.io/docs/react-intl/), or [next-intl](https://next-intl.dev/) on Next.js App Router
 - Forms: [react-hook-form](https://react-hook-form.com/)
 - Validation: [zod](https://zod.dev/) (with `@hookform/resolvers` for forms)
