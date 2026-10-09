@@ -712,20 +712,29 @@ CSS gives us tools to respect user preferences automatically, and we should use 
 
 ### Respect `prefers-reduced-motion`
 
-Always wrap non-essential animations in a media query that checks for reduced-motion preferences:
+Always wrap non-essential movement in a media query that checks the user has no reduced-motion preference. Opacity and colour transitions can stay outside it: they are not motion.
 
 ```css
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+.panel {
+  transition: opacity 150ms ease-out;
+}
+
+.panel[data-state="closed"] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .panel {
+    transition-property: opacity, translate;
+  }
+
+  .panel[data-state="closed"] {
+    translate: 0 1rem;
   }
 }
 ```
 
-This should not remove _all_ transitions everywhere by default, but it shows the pattern.  
-Apply it selectively to components with significant movement.
+With reduced motion on, the panel only fades; without it, it also slides. Don't reach for a global rule that zeroes every animation under `prefers-reduced-motion: reduce`: it also removes the fades we want to keep.
 
 ### Avoid motion-heavy patterns
 
