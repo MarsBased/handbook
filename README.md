@@ -84,20 +84,20 @@ For now, we have the following resources available:
 
 ## Security guidelines
 
-1. [Security guidelines](/guides/security/README.md)
-   1. [Protect Yourself](/guides/security/protect_yourself.md)
-   1. [Protect Your Devices](/guides/security/protect_your_devices.md)
-   1. [Web Application Security Features](/guides/security/web_application_security_features.md)
-   1. [Common attack vectors](/guides/security/common_attack_vectors.md)
-   1. [Admin panel protection](/guides/security/admin_panel_protection.md)
-   1. [User accounts protection](/guides/security/user_accounts_protection.md)
-   1. [Cookies best practices](/guides/security/cookies_best_practices.md)
-   1. [Security related headers](/guides/security/security_related_headers.md)
-   1. [Periodical Maintenance Tasks](/guides/security/periodical_maintenance_tasks.md)
-   1. [Securing backups](/guides/security/securing_backups.md)
-   1. [Sensitive data in logs](/guides/security/sensitive-data-logging.md)
-   1. [3rd Party Software Integrations](/guides/security/3rd_party_software_integrations.md)
-   1. [Off-Boarding](/guides/security/off_boarding.md)
+1. [Overview](/guides/security/README.md)
+1. [Protect Yourself](/guides/security/protect_yourself.md)
+1. [Protect Your Devices](/guides/security/protect_your_devices.md)
+1. [Web Application Security Features](/guides/security/web_application_security_features.md)
+1. [Common attack vectors](/guides/security/common_attack_vectors.md)
+1. [Admin panel protection](/guides/security/admin_panel_protection.md)
+1. [User accounts protection](/guides/security/user_accounts_protection.md)
+1. [Cookies best practices](/guides/security/cookies_best_practices.md)
+1. [Security related headers](/guides/security/security_related_headers.md)
+1. [Periodical Maintenance Tasks](/guides/security/periodical_maintenance_tasks.md)
+1. [Securing backups](/guides/security/securing_backups.md)
+1. [Sensitive data in logs](/guides/security/sensitive-data-logging.md)
+1. [3rd Party Software Integrations](/guides/security/3rd_party_software_integrations.md)
+1. [Off-Boarding](/guides/security/off_boarding.md)
 
 ## Accessibility guidelines
 
