@@ -11,17 +11,6 @@ The development is the core of our work. Here, you'll find detailed information 
 - [Cycles and project management](/sections/development/cycles.md)
 - [Working principles](/sections/development/working-principles.md)
 
-## Guides
+## Engineering guides
 
-Check out our more technical development guidelines (if you dare!).
-
-- [Active Record guidelines](/guides/development/activerecord-guide.md)
-- [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
-- [Code reviews guidelines](/guides/development/code-reviews-guidelines.md)
-- [Coding guidelines](/guides/development/coding-guidelines.md)
-- [Docker guidelines](/guides/development/docker-guide.md)
-- [Git guidelines](/guides/development/git-guidelines.md)
-- [React guidelines](/guides/development/react-guidelines.md)
-- [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
-- [TypeScript guidelines](/guides/typescript-guidelines.md)
-- [WIP: Testing guidelines](/guides/development/testing-guidelines.md)
+See [Engineering guides](/README.md#engineering-guides) for our technical guidelines, organized by engineering workflow, TypeScript, frontend and mobile, and backend and architecture.

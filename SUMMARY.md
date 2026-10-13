@@ -55,8 +55,9 @@
    1. [Testing guidelines](/guides/development/testing-guidelines.md)
    1. [Our Docker guides](/guides/development/docker-guide.md)
 
+1. [TypeScript guidelines](/guides/typescript-guidelines.md)
+
 1. [Frontend & mobile](/guides/navigation/frontend-and-mobile.md)
-   1. [TypeScript guidelines](/guides/typescript-guidelines.md)
    1. [React guidelines](/guides/development/react-guidelines.md)
    1. [React Native guidelines](/guides/development/react-native-guidelines.md)
    1. [Our schema implementation guidelines](/guides/schema.md)
@@ -64,12 +65,12 @@
 1. [Backend & architecture](/guides/navigation/backend-and-architecture.md)
    1. [Back-end guidelines](/guides/development/back-end-development-guidelines.md)
    1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
-   1. [Our Rails ActiveRecord guide](/guides/development/activerecord-guide.md)
-   1. [Some of our used programming patterns](/guides/patterns/README.md)
-      1. [Presenter](/guides/patterns/rails/presenter.md)
-      1. [Command](/guides/patterns/rails/command.md)
-      1. [Form Composition](/guides/patterns/rails/form-composition.md)
-      1. [Query Object](/guides/patterns/rails/query-object.md)
+      1. [ActiveRecord guide](/guides/development/activerecord-guide.md)
+      1. [Rails patterns](/guides/patterns/README.md)
+         1. [Presenter](/guides/patterns/rails/presenter.md)
+         1. [Command](/guides/patterns/rails/command.md)
+         1. [Form Composition](/guides/patterns/rails/form-composition.md)
+         1. [Query Object](/guides/patterns/rails/query-object.md)
 
 ## Security guidelines
 
