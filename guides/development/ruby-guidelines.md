@@ -54,7 +54,7 @@ end
 
 Avoid using Active Record callbacks unless it's related to data persistence specially avoiding side effects like sending and e-email.
 
-Consider using the [command pattern](https://github.com/MarsBased/handbook/blob/master/guides/patterns/rails/command.md) to send the e-mail from a controller action.
+Consider using the [command pattern](https://github.com/MarsBased/handbook/blob/main/guides/patterns/rails/command.md) to send the e-mail from a controller action.
 
 ```ruby
 # WRONG

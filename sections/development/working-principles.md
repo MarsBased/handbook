@@ -34,7 +34,7 @@ MarsBased encourages async communication and we all understand that someone migh
 
 Git is a great tool to document the coding process. Take care of it.
 
-- Check out our [Git guidelines](https://github.com/MarsBased/handbook/blob/master/guides/development/git-guidelines.md)
+- Check out our [Git guidelines](https://github.com/MarsBased/handbook/blob/main/guides/development/git-guidelines.md)
 - We value a clean git history.
 - Write meaningful PRs:
   - Link the ticket you are working on.
