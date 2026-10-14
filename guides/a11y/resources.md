@@ -81,3 +81,5 @@ Tools to help designers check accessibility during the design phase.
 - **[Smashing Magazine – Accessibility Articles](https://www.smashingmagazine.com/category/accessibility/)**
 
 - **[CSS-Tricks – Accessibility Articles](https://css-tricks.com/tag/accessibility/)**
+
+- **[MarsBased CSS guidelines](/guides/development/css-guidelines.md)** – How we organise styles: tokens, focus, motion and theming rules.
