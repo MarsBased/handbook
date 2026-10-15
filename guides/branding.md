@@ -58,8 +58,8 @@ We use the following colours in all of our communications and assets:
 
 __Red Mars ©__
 
-* RGB: 255, 0, 51
-* CMYK: 0%, 100%, 80%, 0%
+* RGB: 255, 0, 49
+* CMYK: 0%, 100%, 81%, 0%
 * HEX: #FF0031
 
 __Green Martian ©__
