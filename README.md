@@ -70,6 +70,7 @@ For now, we have the following resources available:
 1. [Frontend & mobile](/guides/navigation/frontend-and-mobile.md)
    1. [React guidelines](/guides/development/react-guidelines.md)
    1. [React Native guidelines](/guides/development/react-native-guidelines.md)
+   1. [Vue guidelines](/guides/development/vue-guidelines.md)
    1. [CSS guidelines](/guides/development/css-guidelines.md)
    1. [Our schema.org implementation guidelines](/guides/schema.md)
 
