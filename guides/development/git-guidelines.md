@@ -104,15 +104,17 @@ This ensures that during the code review process, reviewers can simply copy the 
 
 ### Branches not related to a Linear issue
 
-Use one of the following formats:
+Use the same type vocabulary as commit messages, followed by a short description:
 
-- `feat-short-description`
-- `fix-short-description`
+- `<type>-short-description`
+
+Where `type` is one of the commit types above: `fix`, `feat`, `deploy`, `chore`, `docs`, `test`.
 
 Examples:
 
 - `feat-add-users-crud`
 - `fix-logout-for-oauth-users`
+- `chore-upgrade-expo-sdk`
 
 For client projects, adapt the naming to their requirements if needed.
 
