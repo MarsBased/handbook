@@ -10,23 +10,23 @@ As a consultancy, we deal with many different clients, from all countries and al
 
 You can find a description of the technologies we use in the services pages of our website:
 
-* **[AI-augmented Development](https://marsbased.com/services/ai)** (using Claude Code)
-* **[Ruby on Rails](https://marsbased.com/services/ruby-on-rails)**
-* **[Node.js](https://marsbased.com/services/node)**
-* **[React](https://marsbased.com/services/react)**
-* **[Angular](https://marsbased.com/services/angular)**
-* **[Shopify](https://marsbased.com/services/ecommerce)**
-* **[Technical Audits](https://marsbased.com/services/techaudits)**
-* **[UI/UX Design](https://marsbased.com/services/design-ui-ux)**
+* **[AI-augmented Development](https://marsbased.com/services/ai?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)** (using Claude Code)
+* **[Ruby on Rails](https://marsbased.com/services/ruby-on-rails?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[Node.js](https://marsbased.com/services/node?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[React](https://marsbased.com/services/react?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[Angular](https://marsbased.com/services/angular?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[Shopify](https://marsbased.com/services/ecommerce?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[Technical Audits](https://marsbased.com/services/techaudits?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
+* **[UI/UX Design](https://marsbased.com/services/design-ui-ux?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo)**
 
 The aforementioned technologies are used mostly for the web, but we also do mobile apps, just not so often. In this case, we use Ionic or React Native, but we never do native mobile development. We also do lots of e-commerce with Shopify and install and develop on the Consul/Decidim platform. Furthermore, our expertise in AI isn't new—we have been integrating AI features into client products since as far back as 2014, and today we combine that experience with our internal AI-augmented development workflows.
 
-In 2019, we started to offer a new service: [tech due diligences](https://marsbased.com/services/techaudits/). A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire. We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
+In 2019, we started to offer a new service: [tech due diligences](https://marsbased.com/services/techaudits/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo). A lot of VCs and M&A companies don't have the competencies, the personnel or the bandwidth to assess the status and integrity of the technology of the companies they want to invest in or acquire. We help them to audit several aspects of the technology of these companies like the infrastructure, the choice of programming languages and frameworks, scalability, security issues, code quality and much more.
 
 ## Community
 
 We spend a considerable amount of time and resources to develop community around us. Helping both the tech and startups communities in Barcelona, we have become one of the most active companies in the ecosystem.
 
-In the [Community](https://marsbased.com/community) section of our website, you will find more detail about the stuff that we do.
+In the [Community](https://marsbased.com/community?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=whatwedo) section of our website, you will find more detail about the stuff that we do.
 
 

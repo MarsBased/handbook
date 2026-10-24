@@ -13,8 +13,8 @@ Managed by David and published weekly, the **MarsBased Podcast** is our core aud
 The podcast is split into two distinct editions to cater to our global audience, featuring both interviews with industry heavyweights and internal deep dives into MarsBased’s mission, tools, and decision-making processes.
 
 You can subscribe and tune in on your favorite platform:
-* **English Edition:** [Web](https://podcast.marsbased.com/) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/life-on-mars-a-podcast-from-marsbased/id1516103624?l=en-GB)
-* **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
+* **English Edition:** [Web](https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/life-on-mars-a-podcast-from-marsbased/id1516103624?l=en-GB)
+* **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
 * **Video Format:** Full video episodes and exclusive clips are available on our official [MarsBased YouTube Channel](https://www.youtube.com/@MarsBased).
 
 ### Top 3 featured episodes (English)
@@ -49,7 +49,7 @@ Before scaling our own media channels, our founding team frequently toured the i
 * **IronHack:** A long-standing educational collaboration where Àlex delivers an honest talk on [launching tech companies and lessons learned](https://www.youtube.com/watch?v=qvgrXkke52g) to incoming developer cohorts in Barcelona.
 
 ### Business Media & Ecosystem Interviews
-* **Itnig:** Regular appearances discussing the realities of tech hiring and engineering workflows, including an early [meetup interview with entrepreneurs](https://podcast.marsbased.com/podcasts-en/34-interview-with-alex-at-itnig/) and a popular podcast episode breaking down [tech salaries, bootcamps, and engineering culture](https://www.youtube.com/watch?v=e4yN1yY5v-8).
+* **Itnig:** Regular appearances discussing the realities of tech hiring and engineering workflows, including an early [meetup interview with entrepreneurs](https://podcast.marsbased.com/podcasts-en/34-interview-with-alex-at-itnig/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) and a popular podcast episode breaking down [tech salaries, bootcamps, and engineering culture](https://www.youtube.com/watch?v=e4yN1yY5v-8).
 * **Financial & Mainstream Press:** Features in top-tier financial newspapers like Cinco Días, alongside biographical highlights such as Àlex’s interview on the legendary [*Radio TeleTaxi*](https://www.youtube.com/watch?v=cUnt5dxzCwQ) discussing life frameworks and his book *Camino al éxit(o)*.
 * **Ecosystem Channels:** In-depth media interviews including a deep technical and personal background session on [*La Tecnologeria*](https://tecnologeria.com/entrevistas/8x01/marsbased), a marketing-focused talk with Gerard Compte on [*FindThatLead*](https://www.youtube.com/watch?v=exBQEAv4hmw), and an international podcast feature on creativity and agency culture with Colombia's [*Evidencia Creativa*](https://pod.link/1033423186/episode/aHR0cHM6Ly9hcGkuc3ByZWFrZXIuY29tL2VwaXNvZGUvMjMxNTU0MzM=).
 * **Catalonia Clusters:** A massive two-hour remote management webinar targeted at supporting businesses transition smoothly into all-remote models.
