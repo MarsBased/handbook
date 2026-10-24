@@ -2,7 +2,7 @@
 
 GEO (Generative Engine Optimization) is the practice of making a site easy for LLM-based systems (ChatGPT, Claude, Perplexity, Google AI Overviews) to read, quote, and cite correctly. It's SEO's younger sibling: same goal (be found and trusted), different reader (a model summarizing your page instead of a crawler ranking it).
 
-These guidelines are distilled from the AI-discoverability work we shipped on marsbased.com itself. The site's own codebase (internally worked on as `mbweb`, and named `Perseverance` on GitHub) is where we built and hardened every pattern below (mainly Linear tickets WEB-513, WEB-574, WEB-577, WEB-579 and WEB-588). We treat our own site as the reference implementation: everything below is running in production, not theory.
+These guidelines are distilled from the AI-discoverability work we shipped on marsbased.com itself. The site's own codebase is where we built and hardened every pattern below. We treat our own site as the reference implementation: everything below is running in production, not in theory.
 
 ---
 
