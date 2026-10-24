@@ -8,7 +8,7 @@ We’re really proud of how and what we blog, because it helps us keeping track 
 
 Previously, we published the [first part of our blogging guide](/guides/how-to-blog.md "How to Blog, According to MarsBased"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
 
-Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO, and helps you prove your expertise to a very large audience.
+Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO and [GEO](/guides/geo-guidelines.md) (being cited by AI answer engines, not just ranked by search engines), and helps you prove your expertise to a very large audience.
 
 In this guide, we’re going to describe how to choose a blogging strategy for your company.
 
@@ -52,7 +52,7 @@ Once you have chosen your goal and your audience, you must identify what will be
 
 The best blogs often cover just one specific topic. It might be travel, entrepreneurship, productivity, cuisine or knitting. But some blogs cover many topics to attract different sorts of target readers.
 
-If you’re bootstrapping a company, you will most likely neither have the time to blog, nor the resources to have somebody do that for you. A good tip is to start small by covering a single topic. For instance, our buddies at [Quipu](https://getquipu.com/en "Quipu"), a personal finances app (built using Ruby on Rails!), chose to target small companies and freelancers/contractors that want to automate their bookkeeping. As a result of that, they are [blogging about personal finances](http://getquipu.com/blog/ "Quipu Blog"): how to do paperwork, how-to guides on taxes & forms, common mistakes in bookkeeping and tips about saving money on taxes are some of the topics they’ve dealt with.
+If you’re bootstrapping a company, you will most likely neither have the time to blog, nor the resources to have somebody do that for you. A good tip is to start small by covering a single topic. For instance, our buddies at [Quipu](https://getquipu.com/en "Quipu"), a personal finances app (built using Ruby on Rails!), chose to target small companies and freelancers/contractors that want to automate their bookkeeping. As a result of that, they are [blogging about personal finances](https://getquipu.com/blog/ "Quipu Blog"): how to do paperwork, how-to guides on taxes & forms, common mistakes in bookkeeping and tips about saving money on taxes are some of the topics they’ve dealt with.
 
 It might look obvious, but if you write about startups and entrepreneurship, don't review your most favourite restaurants. It's OK to go offtopic every once in a while, but not in every second post.
 
@@ -80,7 +80,7 @@ There are a few variations of the sentence “Content is king”. We’d like to
 
 Once you have defined your blog frequency, you need to select what days & times are better for your readers.
 
-First of all, you should take into account your time zone. Say, if you’re an offshoring development company from India and your target is the UK, try posting in their morning, so that people read your blog first thing during breakfast or during their commute to work. Also, companies targeting US clients should choose between East & West Coast. A good tactic is to publish for East Coast first, and then publish the link in the social networks for each different time zone you might have defined as target (West Coast, Japan, etc.).
+First of all, you should take into account your time zone. We're an all-remote company based in Barcelona targeting clients across Europe and the US, so we post in the morning CET: early enough for European readers over their first coffee, and still before the US East Coast wakes up. If your target spans multiple time zones, a good tactic is to publish for the earliest one first, then re-share the link on social media as each later time zone comes online (West Coast, Japan, etc.).
 
 According to [Buffer](https://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
 
@@ -96,7 +96,7 @@ One of our favourite social media gurus, Guy Kawasaki, explained what is the mos
 
 Social media is your friend and can really boost your number of views and shares: aim for retweets or shareable content. Not only will the entry be good, but you can also test stuff outside of the content. For instance, [Buffer test their blog posts titles using the social networks](https://blog.bufferapp.com/a-scientific-guide-to-writing-great-headlines-on-twitter-facebook-and-your-blog "Buffer Blog"). They share each blog entry with three or four different titles and perform A/B testing. The tweet that gets more visits, retweets, likes and favourites is the best title for the blog. This is only a way to A/B test it, but there are millions of ideas out there! Be creative!
 
-Social networks also offer a great chance to engage with your community. For those old enough to have used internet forums back when they were the thing - in the pre-Google or pre-Myspace days - we saw people posting stuff in forums to get like-minded people’s opinions and interesting discussions. You can do the same here, by wrapping up the post with a call to action, as we said in the first part of our blogging guide.
+Social networks also offer a great chance to engage with your community. The same instinct that once made people post in internet forums to get like-minded opinions and spark discussion still applies today, just on Reddit, Discord or LinkedIn groups instead. You can do the same here, by wrapping up the post with a call to action, as we said in the first part of our blogging guide.
 
 We can also learn a lot from Instagram, where famous Instagrammers ask to “tag a friend” when that photo relates to them in any way. Hence, we can ask our friends or colleagues to comment on a post we wrote if we think it applies to them.
 
@@ -112,7 +112,7 @@ These posts were inspirational: not only do they make me want to write something
 
 On the other side, the content needs to be also useful and teach you something new. It must educate. This is especially so for companies like ours that want to prove their technical skills before they get hired.
 
-Good examples of educational blog posts are [this one](https://thoughtbot.com/blog/a-case-study-in-multiple-time-zones "Thoughtbot blog") and [this one](https://dockyard.com/blog/2015/07/31/taking-advantage-of-time-limitations-in-design "Dockyard blog"), and we’re pretty sure they have helped those companies to earn a few more leads by demonstrating their expertise.
+Good examples of educational blog posts today are the engineering deep dives on [Stripe's blog](https://stripe.com/blog "Stripe blog") and [Vercel's blog](https://vercel.com/blog "Vercel blog"), and we’re pretty sure they have helped those companies earn a few more leads by demonstrating their expertise.
 
 **Key question:** What are your favourite blogs and why?
 
