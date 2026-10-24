@@ -43,6 +43,7 @@ Good content is shareable content. Blogs are essential for SEO because they prov
 - Focus on **content clusters**: group related posts under a central topic to boost topic authority.
 - Write for **user intent**: prioritize helpful, relevant answers over keyword stuffing.
 - Mention and link to companies or influencers in your content. Notify them via social media to potentially earn extra shares.
+- Structure posts so both search engines and LLM-based answer engines (ChatGPT, Claude, Perplexity) can quote them correctly: clear headings, direct answers, FAQ-style Q&A. See our [SEO guidelines](/guides/seo-guidelines.md) and, in particular, our [GEO guidelines](/guides/geo-guidelines.md) for how we make content citable by AI.
 
 ---
 

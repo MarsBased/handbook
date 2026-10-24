@@ -2,7 +2,9 @@
 
 ## 🎯 Goal
 
-Learn how to write better prompts to get the most out of ChatGPT and similar tools — for _all_ kinds of tasks, not just coding.
+Learn how to write better prompts to get the most out of Claude and similar tools — for _all_ kinds of tasks, not just coding.
+
+For how we work with Claude Code specifically (methodology, context management, skills, subagents), see the [AI Augmented Development guide](/guides/development/ai-augmented-development.md). For our policies on AI use, see the [AI guidelines](/guides/ai-guidelines.md).
 
 ---
 
@@ -24,7 +26,7 @@ Let’s go pro.
 
 ### 1. **Context is King**
 
-LLMs love context. The more you give, the better the output.
+Claude loves context. The more you give, the better the output.
 
 > ❌ “Write a blog post about AI.”  
 > ✅ “Write a 500-word blog post about how small dev agencies like MarsBased can use AI to automate documentation. Audience: CTOs. Tone: witty but professional.”
@@ -72,7 +74,7 @@ You’re allowed to keep going:
 > “Use TypeScript instead.”  
 > “Rewrite using a more optimistic tone.”
 
-LLMs love feedback.
+Claude loves feedback. As noted in our [AI guidelines](/guides/ai-guidelines.md#ask-for-concise-answers-and-iterate-instead-of-writing-long-prompts-and-skimming-the-response), it's often better to ask for a shorter answer and iterate than to write one giant prompt and skim a long response.
 
 ---
 
@@ -89,8 +91,8 @@ LLMs love feedback.
 - 📜 Commit messages:  
   “Write a conventional commit for this diff.”
 
-- 🤖 GitHub Copilot prompts:  
-  Use natural language to write comments that guide code generation.
+- 🤖 Claude Code prompts:  
+  Use natural language to describe the change you want; for anything non-trivial, follow the [RPI methodology](/guides/development/ai-augmented-development.md#the-research--plan--implement-rpi-methodology) (Research, Plan, Implement) instead of asking for a one-shot fix.
 
 ---
 
@@ -114,22 +116,24 @@ LLMs love feedback.
 
 ## ⚙️ Bonus: API-Level Prompting (1 Minute)
 
-If using OpenAI's API:
+If using Anthropic's Messages API:
 
 ```json
 {
-  "model": "gpt-4o",
-  "temperature": 0.7,
+  "model": "claude-sonnet-5-5",
+  "max_tokens": 1024,
+  "system": "You are a senior Rails engineer.",
   "messages": [
-    { "role": "system", "content": "You are a senior Rails engineer." },
     { "role": "user", "content": "Explain the pros and cons of Hotwire." }
   ]
 }
 ```
 
-- **system**: Sets the role/persona
-- **user**: The actual prompt
-- **temperature**: 0 = deterministic, 1 = creative/random
+- **system**: Sets the role/persona — kept separate from the conversation itself.
+- **messages**: The conversation, alternating `user`/`assistant` turns.
+- **max_tokens**: Caps how long the response can be; Claude will stop once it answers or hits this limit.
+
+For building tools, agents, or anything beyond one-off calls (model IDs, pricing, caching, tool use), check [Anthropic's API documentation](https://docs.claude.com).
 
 ## 🎁 Cheat Code: Prompt Structure
 

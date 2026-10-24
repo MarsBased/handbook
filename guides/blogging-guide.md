@@ -137,4 +137,6 @@ Things you can do:
 
 # Last but not least, what about AI?
 
-Don't ever write stuff using AI. We use it only to generate new ideas of a specific topic or to discuss the pros and cons of writing a certain article via a conversation so you can refine your angle, but the writing is 100% done by humans.
+AI is a fine brainstorming partner for a blog post: generating angles, outlining a structure, or talking through the pros and cons of a take before you commit to it. What it should never produce is the final, unedited copy.
+
+Follow our [AI guidelines](/guides/ai-guidelines.md): read, digest, and rewrite any AI-assisted draft until it reflects your own understanding and voice. If a post reads like raw AI output, readers (and clients) will wonder whether we actually understand what we're writing about. You should be able to stand behind every sentence as if you wrote it yourself — because, by the time it's published, you effectively did.
