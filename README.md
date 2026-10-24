@@ -2,11 +2,11 @@
 
 Welcome to **MarsBased**! This is the first thing you should read when boarding the MarsBased spaceship.
 
-MarsBased is an all-remote development consultancy from Barcelona, pioneering **AI-augmented development** and leveraging advanced tools like **Claude Code**. We build web and mobile products using **Ruby on Rails, Python and JavaScript**, working at the intersection of business and technology. Driven by our **Research, Plan, and Implement** methodology, we help companies bring their innovation projects to life with maximum efficiency and precision.
+MarsBased is an all-remote development consultancy from Barcelona, pioneering **AI-augmented development** and leveraging advanced tools like **Claude Code**. We build web and mobile products using **Ruby on Rails, JavaScript (React, Node.js, Vue.js, Angular) and Python**, and also offer technical audits and UI/UX design, helping companies at the intersection of business and technology bring their innovation projects to life with maximum efficiency and precision.
 
 Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides & interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
-If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back in appreciation.
+If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back.
 
 We have decided to make this handbook publicly available so we can share as much as we can with other companies out there, potential candidates and prospective clients alike. Everyone is welcome!
 
@@ -40,7 +40,6 @@ For now, we have the following resources available:
 
 1. [AI guidelines](/guides/navigation/ai.md)
    1. [MarsBased AI guidelines](/guides/ai-guidelines.md)
-   1. [Prompt engineering basics](/guides/prompts.md)
 
 1. [Project management & collaboration](/guides/navigation/project-management-and-collaboration.md)
    1. [Project management guidelines](/guides/pm-guidelines.md)
