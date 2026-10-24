@@ -30,7 +30,6 @@
 
 1. [AI guidelines](/guides/navigation/ai.md)
    1. [MarsBased AI guidelines](/guides/ai-guidelines.md)
-   1. [Prompt engineering basics](/guides/prompts.md)
 
 1. [Project management & collaboration](/guides/navigation/project-management-and-collaboration.md)
    1. [Project management guidelines](/guides/pm-guidelines.md)

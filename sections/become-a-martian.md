@@ -2,7 +2,7 @@
 
 ## Join our team
 
-At MarsBased, we intentionally grow at an organic pace to preserve our culture and maintain sustainable operations. All currently open positions are listed on the [Jobs page](https://marsbased.com/jobs) of our website.
+At MarsBased, we intentionally grow at an organic pace to preserve our culture and maintain sustainable operations. All currently open positions are listed on the [Jobs page](https://marsbased.com/jobs?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=become-a-martian) of our website.
 
 If you do not see a role that aligns with your specific profile but feel you would make a great addition to the spaceship, you are welcome to submit an application through [work@marsbased.com](mailto:work@marsbased.com).
 

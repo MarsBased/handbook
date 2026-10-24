@@ -14,7 +14,7 @@ Our main logo is the one with the name of the company:
 
 <img width="547" alt="Main logo" src="/assets/logo-black.png">
 
-Over dark backgrounds, we prefer using the red version of the logo. This is the logo used on <a href="https://marsbased.com/" title="MarsBased website" target="_blank">our website</a>:
+Over dark backgrounds, we prefer using the red version of the logo. This is the logo used on <a href="https://marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=branding" title="MarsBased website" target="_blank">our website</a>:
 
 <img width="547" alt="Main logo over dark backgrounds" src="/assets/logo-red.png">
 
@@ -22,7 +22,7 @@ We have an alternative white version of the logo, but we don't use it very often
 
 <img width="547" alt="Alternative logo over dark backgrounds" src="/assets/logo-white.png">
 
-Finally, we sometimes use green/turquoise when the red color is already highly prominent, or used by a different title, like on our <a href="https://podcast.marsbased.com/" target="_blank" title="Life on Mars">podcast website</a>:
+Finally, we sometimes use green/turquoise when the red color is already highly prominent, or used by a different title, like on our <a href="https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=branding" target="_blank" title="Life on Mars">podcast website</a>:
 
 <img width="547" alt="Alternative logo" src="/assets/logo-green.png">
 

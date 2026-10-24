@@ -4,9 +4,9 @@ We’ve been blogging for over ten years now, and we’ve learnt a thing or two.
 
 In this guide, we will cover how to create a blogging strategy for your company.
 
-We’re really proud of how and what we blog, because it helps us keeping track of our evolution as a business and development consultancy, and feel like this could prove useful to many others that come after us. Exactly the same way we learnt from others like [Buffer](http://www.buffer.com "Buffer"), [Dockyard](http://dockyard.com "Dockyard"), [Thoughtbot](http://thoughtbot.com "Thoughtbot") or other blogs we follow.
+We’re really proud of how and what we blog, because it helps us keeping track of our evolution as a business and development consultancy, and feel like this could prove useful to many others that come after us. Exactly the same way we learnt from others like [Buffer](https://buffer.com "Buffer"), [Dockyard](https://dockyard.com "Dockyard"), [Thoughtbot](https://thoughtbot.com "Thoughtbot") or other blogs we follow.
 
-Previously, we published the [first part of our blogging guide](/blog/2015/05/05/The-MarsBased-Blogging-Guide/ "The MarsBased Blogging Guide pt.1"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
+Previously, we published the [first part of our blogging guide](/guides/how-to-blog.md "How to Blog, According to MarsBased"). In the first part, we described how to craft a good blog post, by choosing a good title, the appropriate keywords, a fitting image, and other important criteria bloggers follow.
 
 Blogging is nowadays a very important element in growing your company: it is one of the cheapest methods to create [inbound marketing](https://en.wikipedia.org/wiki/Inbound_marketing "Definition of Inbound Marketing"), provides SEO, and helps you prove your expertise to a very large audience.
 
@@ -20,7 +20,7 @@ One of the most common uses is content marketing. In this case, companies blog a
 
 At MarsBased we use it to drive qualified traffic to our website and attract talent, so we made it a key element in our sales toolset.
 
-When we created the company, we didn’t have that much of a strategy, so we wrote posts about our company evolution: what we did and why we did it. However, some of these posts helped us rank high enough in search engines because they contained the right keywords. For instance, our most visited blog entry is [this one we wrote about our tech stack](https://marsbased.com/blog/2014/03/24/how-we-make-the-right-app2/ "MarsBased tech stack").
+When we created the company, we didn’t have that much of a strategy, so we wrote posts about our company evolution: what we did and why we did it. However, some of these posts helped us rank high enough in search engines because they contained the right keywords. For instance, our most visited blog entry is [this one we wrote about our tech stack](https://marsbased.com/blog/2014/03/24/how-we-make-the-right-app2/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=blogging-guide "MarsBased tech stack").
 
 We have received many project requests over the years because of our posts about technologies. In that post, we didn’t only show our expertise on the listed tools, but the content also made us rank higher on Google, especially in high-demanded technologies like Angular (back in 2014-15) or Sidekiq because they’re specific enough to be very visible to the few people that google them.
 
@@ -82,9 +82,9 @@ Once you have defined your blog frequency, you need to select what days & times 
 
 First of all, you should take into account your time zone. Say, if you’re an offshoring development company from India and your target is the UK, try posting in their morning, so that people read your blog first thing during breakfast or during their commute to work. Also, companies targeting US clients should choose between East & West Coast. A good tactic is to publish for East Coast first, and then publish the link in the social networks for each different time zone you might have defined as target (West Coast, Japan, etc.).
 
-According to [Buffer](http://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
+According to [Buffer](https://buffer.com "Buffer") and other social media gurus, the best time to blog is either early in the morning or right after lunch. There does not seem to be a consensus on which days of the week are better for blogging. Test it for yourself.
 
-Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Google Analytics"), [Medium](http://medium.com "Medium") and many Wordpress plugins are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
+Test, measure, repeat. [Google Analytics 4](https://analytics.google.com "Google Analytics 4") and your CMS's built-in analytics (see our [SEO guidelines](/guides/seo-guidelines.md)) are really effective when measuring the impact of your blog posts. By using them, you can understand your audience and adjust your publishing times to them.
 
 **Key question:** When are your target readers most likely to invest some time to read you?
 
@@ -92,7 +92,7 @@ Test, measure, repeat. [Google Analytics](http://www.google.com/analytics/ "Goog
 
 We don’t really know a lot about how to monetise a blog, so this tip goes to bloggers that want to get exposure organically.
 
-One of our favourite social media gurus, Guy Kawasaki, explained what is the most effective tactic to be noticed on social networks. His advice is to [create content worth sharing](https://www.startupgrind.com/events/details/startup-grind-london-hosted-guy-kawasaki-canvaex-apple#/ "Guy Kawasaki at Startup Grind"). Your content can be inspiring, educational, fun, viral, give free content or what have you, but it should really get your audience to spread the word for you.
+One of our favourite social media gurus, Guy Kawasaki, explained what is the most effective tactic to be noticed on social networks. His advice is to [create content worth sharing](https://startupgrind.com/blog/guy-kawasakis-social-media-strategy-make-followers-feel-recriprocation "Guy Kawasaki's social media strategy"). Your content can be inspiring, educational, fun, viral, give free content or what have you, but it should really get your audience to spread the word for you.
 
 Social media is your friend and can really boost your number of views and shares: aim for retweets or shareable content. Not only will the entry be good, but you can also test stuff outside of the content. For instance, [Buffer test their blog posts titles using the social networks](https://blog.bufferapp.com/a-scientific-guide-to-writing-great-headlines-on-twitter-facebook-and-your-blog "Buffer Blog"). They share each blog entry with three or four different titles and perform A/B testing. The tweet that gets more visits, retweets, likes and favourites is the best title for the blog. This is only a way to A/B test it, but there are millions of ideas out there! Be creative!
 
@@ -106,7 +106,7 @@ We can also learn a lot from Instagram, where famous Instagrammers ask to “tag
 
 One thing that works very well for me, when I am looking for new ideas, is to read a lot of blogs. From there, I always spot one or two blog entries that catch my attention and I want to mimic.
 
-For instance, CartoDB’s entry of [“How we hire”](https://medium.com/@saleiva/how-we-hire-3e696c3aee59 "CartoDB Medium") inspired Pablo Villalba’s “How we hire” and, in turn, inspired me to include it in my list of Article Ideas on Apple Notes.
+For instance, CartoDB’s (now CARTO) entry “How we hire” inspired Pablo Villalba’s “How we hire” and, in turn, inspired me to include it in my list of Article Ideas on Apple Notes.
 
 These posts were inspirational: not only do they make me want to write something similar for MarsBased, but they might also inspire us to adopt some new tools, strategies or techniques in our daily routines.
 
@@ -128,7 +128,7 @@ Things you can do:
 * Add it to your LinkedIn profile in the “URLs” section.
 * Join blog listings.
 * Post your content in LinkedIn/Reddit/Quora/Facebook groups.
-* Automate your social network accounts to publish automatically every new entry using tools like IFTTT.
+* Automate your social network accounts to publish automatically every new entry using tools like Buffer or Zapier.
 * Mention on social media other companies/individuals mentioned in the article, so they're notified about it (most people will engage with the content!)
 * Add it to your signature.
 * Etc.
@@ -139,4 +139,4 @@ Things you can do:
 
 AI is a fine brainstorming partner for a blog post: generating angles, outlining a structure, or talking through the pros and cons of a take before you commit to it. What it should never produce is the final, unedited copy.
 
-Follow our [AI guidelines](/guides/ai-guidelines.md): read, digest, and rewrite any AI-assisted draft until it reflects your own understanding and voice. If a post reads like raw AI output, readers (and clients) will wonder whether we actually understand what we're writing about. You should be able to stand behind every sentence as if you wrote it yourself — because, by the time it's published, you effectively did.
+Follow our [AI guidelines](/guides/ai-guidelines.md): read, digest, and rewrite any AI-assisted draft until it reflects your own understanding and voice. If a post reads like raw AI output, readers (and clients) will wonder whether we actually understand what we're writing about. You should be able to stand behind every sentence as if you wrote it yourself, because by the time it's published, you effectively did.

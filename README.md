@@ -2,11 +2,11 @@
 
 Welcome to **MarsBased**! This is the first thing you should read when boarding the MarsBased spaceship.
 
-MarsBased is an all-remote development consultancy from Barcelona, pioneering **AI-augmented development** and leveraging advanced tools like **Claude Code**. We build web and mobile products using **Ruby on Rails, Python and JavaScript**, working at the intersection of business and technology. Driven by our **Research, Plan, and Implement** methodology, we help companies bring their innovation projects to life with maximum efficiency and precision.
+MarsBased is an all-remote development consultancy from Barcelona, pioneering **AI-augmented development** and leveraging advanced tools like **Claude Code**. We build web and mobile products using **Ruby on Rails, JavaScript (React, Node.js, Vue.js, Angular) and Python**, and also offer technical audits and UI/UX design, helping companies at the intersection of business and technology bring their innovation projects to life with maximum efficiency and precision.
 
 Here you will find the most important information about the company to help you to get familiar with it. We also compiled some of our guides & interesting stuff you should read (and some trivia & fun stories to make it more digestible).
 
-If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back in appreciation.
+If you're a visitor and want to use them, feel free to use them anywhere, but we'd appreciate it that you linked us back.
 
 We have decided to make this handbook publicly available so we can share as much as we can with other companies out there, potential candidates and prospective clients alike. Everyone is welcome!
 
@@ -40,7 +40,6 @@ For now, we have the following resources available:
 
 1. [AI guidelines](/guides/navigation/ai.md)
    1. [MarsBased AI guidelines](/guides/ai-guidelines.md)
-   1. [Prompt engineering basics](/guides/prompts.md)
 
 1. [Project management & collaboration](/guides/navigation/project-management-and-collaboration.md)
    1. [Project management guidelines](/guides/pm-guidelines.md)
@@ -109,11 +108,11 @@ For now, we have the following resources available:
 
 ## Other useful resources
 
-1. <a href="https://marsbased.com" title="MarsBased website" target="_blank">MarsBased website</a>
-1. <a href="https://marsbased.com/blog" title="MarsBased blog" target="_blank">MarsBased blog</a>
-1. <a href="https://podcast.marsbased.com/" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
-1. <a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
-1. <a href="https://marsbased.com/newsletter" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
+1. <a href="https://marsbased.com?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased website" target="_blank">MarsBased website</a>
+1. <a href="https://marsbased.com/blog?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased blog" target="_blank">MarsBased blog</a>
+1. <a href="https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
+1. <a href="https://podcast.marsbased.com/podcasts-es/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
+1. <a href="https://marsbased.com/newsletter?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
 
 ## Contributing
