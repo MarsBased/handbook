@@ -39,7 +39,7 @@ When working on a single application it makes sense to use the services only app
 
 ## Services only development setup
 
-In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 ### Files
 
@@ -47,7 +47,7 @@ When copying the files from the [MarsBased Rails template](https://github.com/Ma
 
 The `.dockerdev` directory contains the following files:
 
-- `docker-compose.yml`: Contains only external services.
+- `compose.yml`: Contains only external services.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
 - `garage.toml`: [Garage configuration](#garage-s3-compatible-storage).
 - `garage-bootstrap.sh`: [Provisions the Garage node](#garage-s3-compatible-storage).
@@ -71,13 +71,13 @@ This will perform several things:
 
 ## Rails Docker for development setup
 
-In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 When copying the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository) you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<garage-version>`, `<ruby-version>` and `<bundler-version>`.
 
 The `.dockerdev` directory contains the following files:
 
-- `docker-compose.yml`: [Docker compose configuration](#docker-compose-configuration).
+- `compose.yml`: [Docker compose configuration](#docker-compose-configuration).
 - `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
 - `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
@@ -126,7 +126,7 @@ In order to execute rails command you can use `bin/dockerdev run [command]`. Thi
 
 ### Capybara configuration (Ruby on Rails only)
 
-To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `docker-compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
+To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
 
 To configure Capybara to use the container add the following to `spec_helper.rb`:
 
@@ -217,7 +217,7 @@ RUN gem update --system && \
     gem install bundler:$BUNDLER_VERSION
 ```
 
-Install a pinned version of bundler. The `BUNDLER_VERSION` build argument comes from `build.args` in `docker-compose.yml`. This is recommended to avoid the `Gemfile.lock` changing every time the image is re-built. Since the `Gemfile.lock` specifies the Bundler version used, if the image is recreated and a newer version happens to be installed, the `Gemfile.lock` will change once we install gems again.
+Install a pinned version of bundler. The `BUNDLER_VERSION` build argument comes from `build.args` in `compose.yml`. This is recommended to avoid the `Gemfile.lock` changing every time the image is re-built. Since the `Gemfile.lock` specifies the Bundler version used, if the image is recreated and a newer version happens to be installed, the `Gemfile.lock` will change once we install gems again.
 
 ```docker
 RUN mkdir -p /app
@@ -246,7 +246,7 @@ The rest of services defined are pretty much self-explanatory.
 
 We use [Garage](https://garagehq.deuxfleurs.fr/) to emulate Amazon S3 in development. Garage replaces MinIO, which we do not use anymore.
 
-The `garage` service in `docker-compose.yml` uses the `dxflrs/garage:<garage-version>` image. It mounts `garage.toml` as `/etc/garage.toml` and keeps metadata and data in volumes. It publishes the S3 API on port 3900.
+The `garage` service in `compose.yml` uses the `dxflrs/garage:<garage-version>` image. It mounts `garage.toml` as `/etc/garage.toml` and keeps metadata and data in volumes. It publishes the S3 API on port 3900.
 
 `garage.toml` configures a single development node:
 
@@ -258,7 +258,7 @@ A new Garage node does not accept S3 requests until you provision it. The `garag
 
 1. Start the `garage` service and wait for it.
 2. Assign and apply the cluster layout.
-3. Import the access key. The key must be the same as `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in `docker-compose.yml`.
+3. Import the access key. The key must be the same as `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in `compose.yml`.
 4. Create the bucket.
 5. Give the key read, write and owner access to the bucket.
 
