@@ -41,12 +41,6 @@ When working on a single application it makes sense to use the services only app
 
 In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
-### Local runtimes
-
-With this option, the application runs on the host. We use [mise](https://mise.jdx.dev/) to install and pin the language runtimes (Ruby, Node, Python) and tools such as [bun](https://bun.sh/). Each project has a `mise.toml` file in its root with the exact versions. Run `mise install` in the project root to install them.
-
-We use bun to install JavaScript dependencies (`bun install`). Ruby gems still use Bundler (`bundle install`).
-
 ### Files
 
 When copying the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository) you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<garage-version>`.
