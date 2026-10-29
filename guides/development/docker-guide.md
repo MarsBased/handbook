@@ -21,8 +21,8 @@ It is useful to think of it as if the Docker image is just the bare-bones OS and
 
 This guide supports two host systems:
 
-- **macOS** with Docker Desktop (or a compatible runtime such as OrbStack).
-- **Linux** with Docker Engine and the Compose plugin.
+- **macOS** with Docker Desktop.
+- **Linux** with Docker Engine and the Compose plugin. Docker Desktop for Linux is not supported, because it runs Docker in a virtual machine.
 
 Most steps are the same on the two systems. When a step applies to only one system, the step says so.
 
@@ -43,17 +43,15 @@ In order to Dockerize the services for development application, we create a `.do
 
 ### Files
 
-When copying the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository) you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<garage-version>`.
+Copy the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository). Then change the project name and the versions (Postgres, Redis, Garage) to the values for your application.
 
 The `.dockerdev` directory contains the following files:
 
-- `compose.yml`: Contains only external services.
+- `compose.yml`: Contains only external services. The top-level `name:` key sets the Compose project name. Without it, Compose takes the name from the directory, so the project would be called `dockerdev`.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
 - `garage.toml`: [Garage configuration](#garage-s3-compatible-storage).
 - `garage-bootstrap.sh`: [Provisions the Garage node](#garage-s3-compatible-storage).
-- `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the Postgres and Garage volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a colleague, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the Postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share them with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
@@ -62,30 +60,30 @@ Apart from the files in `.dockerdev` we have a few more moving pieces:
 
 ### Initial setup
 
-When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
+Run `bin/dockerdev start-services`. This command does these things:
 
-This will perform several things:
-
-- Build Docker images.
-- Provision Garage: create the cluster layout, the access key and the bucket.
+- Start Postgres and Redis.
+- Start and provision Garage: create the cluster layout, the access key and the bucket.
 
 ## Rails Docker for development setup
 
 In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
-When copying the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository) you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<garage-version>`, `<ruby-version>` and `<bundler-version>`.
+### Files
+
+Copy the files from the [MarsBased Rails template](https://github.com/MarsBased/rails-api-template) (internal repository). Then change the project name and the versions (Ruby, Bundler, Postgres, Redis, Garage) to the values for your application. The template script `bin/prepare_template.sh` changes the project name for you.
 
 The `.dockerdev` directory contains the following files:
 
-- `compose.yml`: [Docker compose configuration](#docker-compose-configuration).
+- `compose.yml`: [Docker compose configuration](#docker-compose-configuration). The top-level `name:` key sets the Compose project name. Without it, Compose takes the name from the directory, so the project would be called `dockerdev`.
 - `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
 - `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `garage.toml` and `garage-bootstrap.sh`: [Garage configuration and provisioning](#garage-s3-compatible-storage).
+- `docker-entrypoint.dev.sh`: The entrypoint of the image. It fixes the permissions of `/tmp` and then runs the container command.
+- `garage.toml`: [Garage configuration](#garage-s3-compatible-storage).
+- `garage-bootstrap.sh`: [Provisions the Garage node](#garage-s3-compatible-storage).
 - `com.user.docker-host-alias.plist` (macOS only): This file is used to create an alias from 172.17.0.1 to localhost, in order to [make Garage accessible from both the host and containers](#make-garage-accessible-everywhere).
-- `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the Postgres and Garage volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a colleague, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the Postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share them with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
@@ -93,7 +91,9 @@ Apart from the files in `.dockerdev` we have a few more moving pieces:
 - We need to add `.dockerdev/volumes/*` to the `.gitignore`.
 - [Capybara needs to be configured](#capybara-configuration-ruby-on-rails-only) to use the selenium container.
 
-### Application setup
+### Initial setup
+
+On macOS, first run `sudo bin/dockerdev setup-localhost-alias` one time. See [Make Garage accessible everywhere](#make-garage-accessible-everywhere).
 
 When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
 
@@ -174,30 +174,32 @@ The Dockerfile used for development is pretty minimal. Below there is a descript
 application. For a NodeJS or Python application the Dockerfile will vary.
 
 ```docker
-FROM ruby:<ruby-version>-alpine
+FROM ruby:<ruby-version>-slim
+
+ARG BUNDLER_VERSION
 ```
 
-We start from the ruby image which contains the full OS, basic system packages and, of course, Ruby itself.
+We start from the ruby image which contains the OS (Debian), basic system packages and, of course, Ruby itself. The `BUNDLER_VERSION` build argument comes from `build.args` in `compose.yml`.
 
 ```docker
-RUN apk --update add less bash git curl wget build-base && \
-    apk add postgresql-client && \
-    apk add nodejs yarn && \
-    apk add vim imagemagick && \
-    rm -rf /tmp/* /var/tmp/* && \
-    truncate -s 0 /var/log/*log
+RUN apt-get update -qq && \
+    apt-get upgrade -y && \
+    apt-get install --no-install-recommends -y curl libjemalloc2 libvips postgresql-client \
+    openssh-client build-essential git libpq-dev pkg-config nodejs npm libyaml-dev && \
+    rm -rf /var/lib/apt/lists /var/cache/apt/archives
 
+RUN npm install --global yarn
 ```
 
 This does various things:
 
 - Install basic build tools, often needed to install other packages.
 - Install a client to access the PostgreSQL database from a bash session if needed.
-- Install NodeJS and Yarn.
-- Install an editor (vim) and ImageMagick which is used in the majority of applications.
-- Clean packages, temporary files and logs.
+- Install libvips, which Active Storage uses to process images.
+- Install NodeJS, npm and Yarn.
+- Remove the package lists and the package cache.
 
-**NOTE:** All these operations are done in the same command to avoid caching unnecessary layers. This way the whole operation gets cached as a single layer.
+**NOTE:** The install and the cleanup are done in the same command. If the cleanup was in a different command, the removed files would stay in the earlier layer and the image would not get smaller.
 
 ```docker
 ENV LANG=C.UTF-8
@@ -211,21 +213,24 @@ This does various things:
 - Tell bundler to install gems in the `/bundle` directory. This goes hand in hand with the `bundle` volume that is mounted on the containers. By keeping the gems in a known location and a volume, we persist them across containers and container restarts.
 
 ```docker
-ARG BUNDLER_VERSION
-
 RUN gem update --system && \
     gem install bundler:$BUNDLER_VERSION
+
+RUN bundle config set --local without 'production'
 ```
 
-Install a pinned version of bundler. The `BUNDLER_VERSION` build argument comes from `build.args` in `compose.yml`. This is recommended to avoid the `Gemfile.lock` changing every time the image is re-built. Since the `Gemfile.lock` specifies the Bundler version used, if the image is recreated and a newer version happens to be installed, the `Gemfile.lock` will change once we install gems again.
+Install a pinned version of bundler. This is recommended to avoid the `Gemfile.lock` changing every time the image is re-built. Since the `Gemfile.lock` specifies the Bundler version used, if the image is recreated and a newer version happens to be installed, the `Gemfile.lock` will change once we install gems again. Bundler does not install the `production` gem group.
 
 ```docker
 RUN mkdir -p /app
-
 WORKDIR /app
+
+COPY docker-entrypoint.dev.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.dev.sh
+ENTRYPOINT ["docker-entrypoint.dev.sh"]
 ```
 
-Create the directory where the app volume will be mounted and tell it to work from this directory.
+Create the directory where the app volume will be mounted and tell it to work from this directory. Then set `docker-entrypoint.dev.sh` as the entrypoint.
 
 ### Docker compose configuration
 
@@ -246,33 +251,37 @@ The rest of services defined are pretty much self-explanatory.
 
 We use [Garage](https://garagehq.deuxfleurs.fr/) to emulate Amazon S3 in development. Garage replaces MinIO, which we do not use anymore.
 
-The `garage` service in `compose.yml` uses the `dxflrs/garage:<garage-version>` image. It mounts `garage.toml` as `/etc/garage.toml` and keeps metadata and data in volumes. It publishes the S3 API on port 3900.
+The `garage` service in `compose.yml` uses the `dxflrs/garage` image. It mounts `garage.toml` as `/etc/garage.toml` and keeps metadata and data in the named volumes `garage-meta` and `garage-data`. It publishes the S3 API on port 3900.
 
 `garage.toml` configures a single development node:
 
 - `replication_factor = 1`, because there is only one node.
-- `s3_region` must be the same value as the region that the application uses (for example `S3_REGION`). Garage rejects requests with a different region.
+- `s3_region` must be the same value as the `AWS_REGION` environment variable in `compose.yml`. Garage rejects requests with a different region.
 - The secrets in this file are for local development only.
 
 A new Garage node does not accept S3 requests until you provision it. The `garage-bootstrap.sh` script does these steps:
 
 1. Start the `garage` service and wait for it.
 2. Assign and apply the cluster layout.
-3. Import the access key. The key must be the same as `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in `compose.yml`.
+3. Import the access key. The key must be the same as `AWS_ACCESS_KEY_ID` and `AWS_SECRET_ACCESS_KEY` in `compose.yml`. Garage accepts only its own key format: the key ID is `GK` and 24 hexadecimal characters, and the secret is 64 hexadecimal characters.
 4. Create the bucket.
 5. Give the key read, write and owner access to the bucket.
 
-The script is idempotent. `bin/dockerdev setup` and `bin/dockerdev start-services` run it each time.
+The script is idempotent. `bin/dockerdev setup` and `bin/dockerdev start-services` run it each time. To run it again, use `bin/dockerdev bootstrap-garage`.
 
-**NOTE:** The Garage image has no shell. To run Garage commands, call the binary directly: `docker compose exec garage /garage status`.
+In Rails, the `garage` service in `config/storage.yml` uses this endpoint with `force_path_style: true`. The development environment stores Active Storage files in it.
+
+**NOTE:** The Garage image has no shell. To run Garage commands, call the binary directly from the `.dockerdev` directory: `cd .dockerdev && docker compose exec garage /garage status`.
 
 ### Make Garage accessible everywhere
+
+You need this section only for the Services + Application setup. In the Services only setup, the application and the browser run on the host, so use `http://localhost:3900`.
 
 Garage must be accessible from the browser and from the containers at the same URL. We use `http://172.17.0.1:3900` as the S3 endpoint.
 
 On **macOS**, run `sudo bin/dockerdev setup-localhost-alias` one time, when you first set up the project. This command adds 172.17.0.1 as an alias of localhost.
 
-On **Linux**, you do not need this step. The host already has the 172.17.0.1 address on the default Docker bridge (`docker0`).
+On **Linux** with Docker Engine, you do not need this step. The host already has the 172.17.0.1 address on the default Docker bridge (`docker0`).
 
 #### Why?
 
