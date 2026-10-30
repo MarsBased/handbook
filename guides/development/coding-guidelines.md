@@ -49,7 +49,7 @@ Less code the better, less code changes the better. As we like to build one thin
 Wait until something is painful to change or understand. Remember that we should keep it small and simple. Refactor without a purpose can lead to complexity, unnecessary abstractions and miscommunication about what you are trying to achieve.
 
 #### 1.2.2 Premature optimization
-In general don't do premature optimization, but always keep in mind that there are some basic techniques that can have big impact. Avoid N+1 queries (take advantage of the logs during development for this). Filter using SQL as long as possible (but keep a balance to avoid over-complicating the code). There are problems that can be avoided at first but don't go to deep blindly if there isn't any reason to.
+In general don't do premature optimization, but always keep in mind that there are some basic techniques that can have big impact. Avoid N+1 queries (detect them automatically, refer to the [back-end guidelines](/guides/development/back-end-development-guidelines.md#n1-queries)). Filter using SQL as long as possible (but keep a balance to avoid over-complicating the code). There are problems that can be avoided at first but don't go to deep blindly if there isn't any reason to.
 
 #### 1.2.3 Unnecessary dependencies
 Before adding a 3rd party library or a dependency think carefully if it's really necessary and the compromises you are making. We don't want to re-invent the wheel but sometimes it could be better to build what we need instead of depend on some library that do that and much more.
