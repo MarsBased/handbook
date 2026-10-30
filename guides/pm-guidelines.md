@@ -17,6 +17,8 @@ Set a workflow on the internal Slack channel of the project at 12 pm each weekda
 
 Internal weekly reports have the goal to help project managers fill the progress reports that are sent to the client.  They are supposed to be filled by everyone working on the project on Friday, before they close their week. Filling it on Friday helps developers to have all the issues more recent in their heads. That way, project managers have all the information ready on Monday to fill the progress report for the clients. 
 
+Although internal weekly reports are a key asset, it is up to the project manager to decide whether they are needed in each project. For example, in small projects, the daily updates and Linear may already provide enough information to prepare the client progress report. When in doubt, keep them.
+
 > **NOTE:** Although team members fill these reports, it is still good to check the Linear status of the project to make sure nothing is left out of the report. 
 
 The template for the  Internal Weekly Report can be found here: <a href="https://docs.google.com/document/d/1BRmL2qPBwbF6WfapEaoOjqvPqsfS0Y9ijem9OS6GT4A/edit?usp=drive_link" target="_blank">Internal Weekly Report</a>. It is already available as a Google Doc template in the MarsBased workspace, so when creating the first internal weekly report for your project you can do it with the option “From a template” when creating a new Google Document. Please, create the report on Monday so team members can fill it up during the week if they consider it appropriate, or just in case someone closes earlier than Friday. 

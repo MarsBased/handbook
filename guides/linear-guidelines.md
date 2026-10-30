@@ -23,6 +23,7 @@ This document contains information and templates about how to use Linear for org
     - [Independent Backend Task](#independent-backend-task)
     - [Independent Task with Frontend and Backend Work](#independent-task-with-frontend-and-backend-work)
     - [Epic](#epic)
+  - [Claude Skills for Linear](#claude-skills-for-linear)
 
 
 
@@ -126,6 +127,8 @@ Corresponds to the template of the Overview page of the projects in Linear.
 - **Deployments.** Explanation of how deployments are done in the project. Differentiate between Staging and Production deployments if needed.  
     - **Who can deploy.** List of people authorized to perform deploys of the project. Differentiate between Staging and Production deployments if needed.  
 
+> **NOTE:** Linear teams now have their own Overview page, where you can add documents in the *Team resources* section. When several projects belong to the same app, information that applies to all of them, such as *Architecture* and *Deployments*, can be documented once there instead of being repeated in each project. In that case, add a link to the team document in the project Overview.
+
 ### Bug
 
 - **Label.** Use always *Bug*.  
@@ -190,3 +193,17 @@ Corresponds to the template of the Overview page of the projects in Linear.
 - **Attachments.** Relevant files, mockups, design specifications.  
 - **Frontend Tasks (as subissues).** Specific subtasks to be developed in the frontend (created as actual subissues in Linear).  
 - **Backend Tasks (as subissues).** Specific tasks or APIs to be developed on the backend (created as actual subissues in Linear).  
+
+
+
+## Claude Skills for Linear
+
+Everyone at MarsBased has access to some Claude skills that help write projects and issues in Linear. Claude uses them automatically when you ask for one of these tasks (for example, *"Write a bug report for…"*).
+
+- **linear-project-overview.** Creates or updates the Overview page of a Linear project, based on the [Project Template](#project-template).
+- **define.** Writes the functional definition of a new feature as a Linear issue.
+- **bug.** Writes a bug report and creates it in Linear with the *Bug* label, based on the [Bug](#bug) template.
+
+All of them show you a draft first, and only save to Linear once you approve it.
+
+> **NOTE:** This guide is the reference. Skills may include fields that are not in these templates, or may be out of date. Adapt the result to what your team and project need, and remove the fields that don't apply.

@@ -23,10 +23,10 @@ You can define your usual working hours in Google Calendar by following these st
     <img src="working-hours-guidelines-images/calendar-settings.png" alt="Calendar Settings" width="600" />
 
 2. *Define your working hours*
-  1. In *General → Working hours*, tick the checkbox *Enable Working Hours*.  
-  2. Select the days of the week you work.  
-  3. Enter your working hours.  
-     - If you work the same schedule every day, define it for the first day and then click *Copy to all*.
+   1. In *General → Working hours & location*, tick the checkbox *Enable Working Hours*.  
+   2. Select the days of the week you work.  
+   3. Enter your working hours.  
+      - If you work the same schedule every day, define it for the first day and then click *Copy to all*.
        <img src="working-hours-guidelines-images/calendar-wh-settings.png" alt="Calendar Working Hours Settings" width="600" />
 
 📘 **Official documentation:** [Google Calendar Working Hours Help](https://support.google.com/calendar/answer/7638168?hl=en&co=GENIE.Platform%3DDesktop)
@@ -36,6 +36,8 @@ You can define your usual working hours in Google Calendar by following these st
 ## Set Your Out-of-Office Hours in Google Calendar
 
 To automate setting your status to *Out of Office* in both Slack and Linear, you need to tell Google Calendar when you are out of office.  
+
+**NOTE:** Out-of-office events are recommended, but not mandatory. Keep in mind that without them, Slack and Linear will not update your status automatically, so your teammates will have less visibility of your availability.
 
 The Out of Office events need to complement the working hours you set up in the previous step.
 
@@ -54,10 +56,11 @@ When you are done setting your working hours and out-of-office events, your cale
 
    <img src="working-hours-guidelines-images/ooo-creation.png" alt="Creating an out of office event" width="400" />
   
-3. Set the start and end time for your out-of-office period.  
-4. Set the *Repeat* option to *Weekly*, so the same out-of-office events are copied to all weeks.  
-5. (Optional) Enable *Automatically decline meetings* to prevent scheduling conflicts.  
-6. Repeat steps 2–5 until you define all the timeframes you are not working.
+3. Include *OOO* in the event title (for example, *Out of office (OOO)*), so Slack can update your status.  
+4. Set the start and end time for your out-of-office period.  
+5. Set the *Repeat* option to *Weekly*, so the same out-of-office events are copied to all weeks.  
+6. (Optional) Enable *Automatically decline meetings* to prevent scheduling conflicts.  
+7. Repeat steps 2–6 until you define all the timeframes you are not working.
 
 
 
@@ -93,9 +96,9 @@ Once all MarsBased team members have completed the setups above, you can expect 
 
     <img src="working-hours-guidelines-images/calendar-meet-with.png" alt="Calendar <i>Meet With...</i> option" width="600" />
 
-2. **Accurate Status Updates.** Both Slack and Linear will automatically show when a team member is *In a meeting* or *Out of Office*.
+2. **Accurate Status Updates.** Slack will automatically show when a team member is *In a meeting* or *Out of Office*, and Linear will show when they are *Out of Office*.
 
 3. **Better Google Calendar Event Planning.** When scheduling an event and inviting a MarsBased team member, Google Calendar will indicate with a *moon icon* 🌙 if the event is planned outside of their office hours.
 
-    <img src="working-hours-guidelines-images/calendar-planning-meet.png" alt="Planning a meet with Calendat" width="400" />
+    <img src="working-hours-guidelines-images/calendar-planning-meet.png" alt="Planning a meet with Calendar" width="400" />
   
