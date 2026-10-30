@@ -9,7 +9,7 @@ This guide describes some best practices we apply when doing code reviews.
 - Write a pull request description: what changes, why, and how to test it.
 - Link the Linear issue.
 - Add screenshots or a video for UI changes.
-- Review your own diff first.
+- Review your own diff first, unless the tech lead specifies otherwise.
 
 ### Who reviews
 
