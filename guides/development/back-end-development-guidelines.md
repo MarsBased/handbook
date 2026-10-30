@@ -313,7 +313,6 @@ The hosting service gives basic metrics and logs. That is not sufficient to find
 - **Health check**: an endpoint (for example `/up`) that the hosting service and the uptime monitor call.
 - **Uptime monitor**: an external service that sends an alert when the application is down.
 - **Alerts**: an alert for the error rate, the response time and the queue size. Send the alerts to the project Slack channel.
-- **Traces** (when the project needs them): use [OpenTelemetry](https://opentelemetry.io/), so you can change the vendor without changes to the code. Advanced monitoring needs would require a dedicated service like [Datadog](https://www.datadoghq.com/).
 
 | | Rails | TypeScript | Python |
 |---|---|---|---|
