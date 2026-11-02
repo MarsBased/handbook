@@ -5,7 +5,8 @@
 # the Render Deploy Hook of the `handbook` static site so a new build starts.
 #
 # Setup (once): Render dashboard -> handbook service -> Settings -> Deploy Hook,
-# then store the URL as the repository secret RENDER_HANDBOOK_DEPLOY_HOOK_URL.
+# then store the URL as the repository secret RENDER_DEPLOY_HOOK_URL.
+# To redeploy without a content change, run it from the Actions tab.
 name: Deploy handbook
 
 on:
@@ -13,6 +14,7 @@ on:
     branches: [main]
     paths-ignore:
       - '.github/**'
+  workflow_dispatch:
 
 concurrency:
   group: deploy-handbook
@@ -24,10 +26,10 @@ jobs:
     steps:
       - name: Trigger Render deploy
         env:
-          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_HANDBOOK_DEPLOY_HOOK_URL }}
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_DEPLOY_HOOK_URL }}
         run: |
           if [ -z "$RENDER_DEPLOY_HOOK_URL" ]; then
-            echo "RENDER_HANDBOOK_DEPLOY_HOOK_URL secret is not set" >&2
+            echo "RENDER_DEPLOY_HOOK_URL secret is not set" >&2
             exit 1
           fi
           curl --fail --silent --show-error --request POST "$RENDER_DEPLOY_HOOK_URL"
