@@ -19,9 +19,7 @@ This document contains information and templates about how to use Linear for org
   - [Project & Issues Linear Templates](#project--issues-linear-templates)
     - [Project Template](#project-template)
     - [Bug](#bug)
-    - [Independent Frontend Task](#independent-frontend-task)
-    - [Independent Backend Task](#independent-backend-task)
-    - [Independent Task with Frontend and Backend Work](#independent-task-with-frontend-and-backend-work)
+    - [Issue](#issue)
     - [Epic](#epic)
   - [Claude Skills for Linear](#claude-skills-for-linear)
 
@@ -56,7 +54,7 @@ The project manager should use the Epic tag in the following scenarios:
 
 1. **Create an Epic Issue.** In Linear, create a new issue representing the Epic and apply the "Epic" tag. Provide a clear and concise title followed by a detailed description of the feature's scope, objectives, and any relevant criteria for completion.  
 2. **Assign the Epic to the PM.** Assign this Epic issue to the Project Manager who will oversee its development.  
-3. **Decompose into Subissues.** Break the Epic down into smaller subissues that specify individual tasks or components necessary to achieve the Epic's objectives. Each subissue should include:  
+3. **Decompose into Subissues.** Break the Epic down into smaller subissues that specify individual tasks or components necessary to achieve the Epic's objectives. Each subissue should follow the [Issue](#issue) template and include:  
    - A clear title and description.  
    - Assignment to the appropriate developer or team member responsible for executing that task.  
 4. **Link Subissues to the Epic.** Ensure that all relevant subissues are linked back to the Epic issue. This is only necessary if the subissues are NOT created using the **+ Add sub-issues** action of the Epic task.  
@@ -138,52 +136,24 @@ Corresponds to the template of the Overview page of the projects in Linear.
 - **Attachments.** Videos or images supporting the actual outcome.
 - **Expected Outcome.** What the expected behavior should be.  
 
-### Independent Frontend Task
+### Issue
 
-- **Description.** Detailed explanation of the task requirements.  
-- **Error Control.** Errors that need to be handled.  
-- **Acceptance Criteria.** Conditions that must be met for the task to be considered complete.  
-- **Design Specifications.** Relevant design files or mockups for the task.  
-- **Modifications Over Design.** Changes over the previous files that need to be implemented.  
-- **Adherence to Design.** Is pixel-perfect needed?  
-- **Performance Considerations.** Notes on performance or optimization requirements.  
-- **Component Name.** Name of the component or element being created.  
-- **Other Considerations.** Cross-browser compatibility, accessibility, etc.  
+Use this template for any feature or task, whether it involves frontend, backend or both.
 
-### Independent Backend Task
+- **User Story.** As a *[persona]*, I want to *[action]* so that *[outcome]*.  
+- **Acceptance Criteria.** Checklist of explicit pass/fail conditions that must be met for the issue to be considered complete.  
+- **Flows.** How the feature behaves in each situation:  
+    - **Happy Path.** Steps when everything works as expected.  
+    - **Empty State.** What the user sees when there is no data.  
+    - **Loading State.** How loading is communicated to the user.  
+    - **Error States.** What triggers each error, the message shown, and how the user can recover.  
+- **Edge Cases.** Unusual situations and the expected behaviour (e.g., bad input, no connection, permissions denied).  
+- **Interactions & Feedback.** Clicks, hover states, transitions, animations, etc.  
+- **Design References.** Links to Figma frames, prototypes or screenshots.  
+- **Out of Scope.** Functionality explicitly excluded from the issue.  
+- **Open Questions.** Checklist of decisions still pending.  
 
-- **Description.** Detailed explanation of the task requirements  
-- **Error Control.** Errors that need to be handled  
-- **Acceptance Criteria.** Conditions that must be met for the task to be considered complete  
-- **Technical Definition.** This may include:  
-  - **Source Code Details.** Guides on how the feature should be implemented and/or parts of the source code that need to be modified or taken into account.  
-  - **Database Changes.** Specific changes needed in the database (e.g., schema modifications)  
-  - **API Endpoints.** New or updated API endpoints to be implemented  
-  - **Security Considerations.** Notes on required security measures or compliance  
-  - **Testing Requirements.** Details on testing that needs to be performed (e.g., unit tests, integration tests)  
-
-### Independent Task with Frontend and Backend Work 
-
-- **Description.** Detailed explanation of the feature requirements.  
-- **Error Control.** Errors that need to be handled.  
-- **Acceptance Criteria.** Conditions that must be met for the feature to be considered complete.  
-- **Attachments.** Relevant files, mockups, design specifications.  
-- **Frontend Tasks.** Specific tasks or implications to be developed in the frontend.  
-  - **Design Specifications.** Relevant design files or mockups for the task.  
-  - **Modifications Over Design.** Changes over the previous files that need to be implemented.  
-  - **Adherence to Design.** Is pixel-perfect needed?  
-  - **Performance Considerations.** Notes on performance or optimization requirements.  
-  - **Component Name.** Name of the component or element being created.  
-  - **Other Considerations.** Cross-browser compatibility, accessibility, etc.  
-- **Backend Tasks.** Specific tasks or APIs to be developed on the backend.  
-  - **Technical Definition.** This may include:  
-    - **Source Code Details.** Guides on how the feature should be implemented and/or parts of the source code that need to be modified or taken into account.  
-    - **Database Changes.** Specific changes needed in the database (e.g., schema modifications).  
-    - **API Endpoints.** New or updated API endpoints to be implemented.  
-    - **Security Considerations.** Notes on required security measures or compliance.  
-    - **Testing Requirements.** Details on testing that needs to be performed (e.g., unit tests, integration tests).  
-
-
+Omit the sections that don't apply, and add extra ones if the project needs them (for example, technical details for backend work). 
 
 ### Epic
 
@@ -191,8 +161,7 @@ Corresponds to the template of the Overview page of the projects in Linear.
 - **Assignee.** Use always *<project_manager>*.  
 - **Description.** Detailed explanation of the feature requirements.  
 - **Attachments.** Relevant files, mockups, design specifications.  
-- **Frontend Tasks (as subissues).** Specific subtasks to be developed in the frontend (created as actual subissues in Linear).  
-- **Backend Tasks (as subissues).** Specific tasks or APIs to be developed on the backend (created as actual subissues in Linear).  
+- **Subissues.** Tasks needed to complete the Epic, created as actual subissues in Linear. Each subissue follows the [Issue](#issue) template. 
 
 
 
@@ -201,7 +170,7 @@ Corresponds to the template of the Overview page of the projects in Linear.
 Everyone at MarsBased has access to some Claude skills that help write projects and issues in Linear. Claude uses them automatically when you ask for one of these tasks (for example, *"Write a bug report for…"*).
 
 - **linear-project-overview.** Creates or updates the Overview page of a Linear project, based on the [Project Template](#project-template).
-- **define.** Writes the functional definition of a new feature as a Linear issue.
+- **define.** Writes the functional definition of a new feature as a Linear issue, based on the [Issue](#issue) template.
 - **bug.** Writes a bug report and creates it in Linear with the *Bug* label, based on the [Bug](#bug) template.
 
 All of them show you a draft first, and only save to Linear once you approve it.
