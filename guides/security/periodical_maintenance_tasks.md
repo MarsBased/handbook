@@ -12,16 +12,46 @@ There are static analysis tools to automatically detect CVEs and other vulnerabi
 
 [Snyk](https://snyk.io/) is one such tool. It is cross-platform and allows detecting vulnerabilities in several language runtimes, in Docker images, Infrastructure-as-Code definitions, and Open Source dependencies.
 
+We will also check the dependency scanner built in GitHub. Check the [Dependant bot quickstart guide](https://docs.github.com/en/code-security/getting-started/dependabot-quickstart-guide) on further details on how to configure it in your repository.
+
 There are other platform-specific solutions that can also be very useful and complete the more generic scans.
 
 ### Rails
 
 - [Brakeman](https://brakemanscanner.org/) can scan for several vulnerabilities on Rails projects. It can be used in a Github Action to run on every pull request, run as a git commit hook, or run manually on the demand from the command line.
 - [Bundler-audit](https://github.com/rubysec/bundler-audit) can find vulnerable library versions and provide an upgrade path to a secure version.
+- Ruby version check: Ensure the apps run on a supported Ruby version.
+
+### Next.js
+
+- Enable dependency and runtime scanning in CI:
+  - `npm audit`/`yarn npm audit` for quick checks.
+  - [Dependabot](https://docs.github.com/en/code-security/dependabot) to monitor npm vulnerabilities and open upgrade PRs.
+- Add static checks and secure config verifications:
+  - Verify `next.config.js` has strict security headers (HSTS, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) and a CSP policy.
+  - Validate `images.remotePatterns` is restricted to known hosts; avoid overly broad wildcards.
+  - If using SVGs, confirm `dangerouslyAllowSVG` is truly needed and CSP for images is restrictive.
+- Lint for dangerous patterns:
+  - Disallow `dangerouslySetInnerHTML` without sanitization.
+  - Flag dynamic `child_process` usage and `require()` with untrusted values in server code.
+- Review authentication and session setup regularly:
+  - Ensure cookies are `HttpOnly`, `Secure`, `SameSite=Lax` and rotated on login.
+  - For Server Actions, set `serverActions.allowedOrigins` when behind proxies and keep `NEXT_SERVER_ACTIONS_ENCRYPTION_KEY` configured in self-hosted setups.
+- Ensure that the application runs on a supported Node version.
+- Tools or lint rules should flag:
+  - Any usage of dangerouslySetInnerHTML without sanitization:
+    - eslint-plugin-react has react/no-danger
+  - Dynamic calls to child_process:
+    - eslint-plugin-security has security/detect-child-process
+  - Dynamic require() using untrusted data
+    - eslint-plugin-import has import/no-dynamic-require
 
 ### Docker
 
 - [Docker scout](https://docs.docker.com/scout/) can be used to detect CVEs in all the layers of a Docker image.
+- _docker scan_ or platform-provided scanners
+- Snyk container scanning
+- Make sure the containers are built on top of OS images that are still supported and receiving security upgrades.
 
 ## Remove obsolete 3rd party integrations
 
@@ -57,7 +87,7 @@ Make sure that only people working currently on the project has access to 3rd pa
 
 - Remote repository (example: Github).
 - Error tracking tools (example: Sentry)
-- Monitoring tools  (example: New Relic, DataDog).
+- Monitoring tools (example: New Relic, DataDog).
 - Analytics tools (example: Google Analytics, Mixpanel).
 - Code analysis tools (example: Code Climate).
 - Continuous Integration tools (example: Circle CI).
@@ -79,7 +109,7 @@ The majority of cloud providers have an IAM system that allows giving very speci
 
 - There should be just one or two admin users with complete control of the account.
 - The tech lead should have complete permissions over all the services used by the application, and IAM permissions to be able to configure and modify users. But she should not have permission for billing, or services not used by the application.
-- Most developers should have only the necessary permissions to deploy, view the deployment service (EKS, ECS, etc.), and view the logs.
+- Most software engineers should have only the necessary permissions to deploy, view the deployment service (EKS, ECS, etc.), and view the logs.
 
 ⚠️ Another key point is adding only the strictly necessary permissions to users corresponding to the web application or 3rd party services.
 
@@ -88,3 +118,26 @@ Often an application will need to interact with the cloud provider. The most com
 ## Web application on production and pre-production environments
 
 Make sure only people working on the project have access to the application (in any of its environments). This usually translates into checking the admin users on the application, but it may be other types of user accounts or access methods.
+
+## Logging, Monitoring & Alerts
+
+Check that:
+
+- Sensitive data is filtered from logs:
+  - passwords, tokens, credit cards, secrets
+- Alerts exist for:
+  - login failures
+- unusual traffic patterns
+  - spikes in 4xx/5xx errors
+- Logs are retained securely and access is controlled
+- Audit logs (if present) are reviewed periodically
+
+## Dependency & Runtime Updates (All Stacks)
+
+Make sure:
+
+- Base images updated (for Docker)
+- Frameworks updated (Rails, Next.js)
+- Libraries and runtime dependencies upgraded
+- EOL/runtime versions are not in use
+- CI/CD pipeline has the latest scanning tools enabled

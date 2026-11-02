@@ -1,0 +1,15 @@
+$schema: https://api.gitbook.com/gitbook-docs.yaml
+version: 1
+
+site:
+  title: The MarsBased Handbook
+  structure:
+    # Keep the existing root SUMMARY.md and its cross-directory navigation together.
+    - type: space
+      key: space-handbook
+      title: The MarsBased Handbook
+      path: handbook
+      default: true
+      content:
+        directory: ./
+        language: en

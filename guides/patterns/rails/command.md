@@ -77,7 +77,7 @@ end
 
 ```
 
-- (1) Using the `then` keyword is only available since Ruby 2.6. For Ruby 2.5 `yield_self` can be used. Previous Ruby versions need to use `tap`. Take into account that tap is different from `yield_self` or `then`.
+- (1) The `then` keyword is available in all currently supported Ruby versions (`yield_self` is an alias for it). Take into account that `tap` is different from `yield_self` or `then`.
 - (2) The only logic expected to be present inside the `then` block are the calls to controller methods that are no available inside the command.
 
 ## FAQ
@@ -96,7 +96,7 @@ Yes. It's important to start organizing commands as soon as possible to avoid ha
 ### Should I create a base class for commands to reuse functionality?
 
 The beauty of this solution is that it's very flexible. You can create the Result object that you want and it's very easy to understand
-for other developers not used to the pattern.
+for other software engineers not used to the pattern.
 
 ### Testing guidelines
 

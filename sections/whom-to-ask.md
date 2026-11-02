@@ -1,4 +1,4 @@
-# Who to ask
+# Whom to ask
 
 To make things easier, we’ve created this handy guide to help you navigate who to reach out to depending on the topic 🤓 
 
@@ -43,9 +43,9 @@ Follow this flow to get help with technical topics:
   * Juan S. → Ruby on Rails, React, NextJS, NodeJS, Python, DevOps.
   * Pablo → Ruby on Rails, React, Remix, NodeJS, Shopify.
   * Juan A. → Ruby on Rails, React, Remix, Python, AI.
-  * Javier → CSS, React, React Native, NextJS, WordPress.
   * Carlos → React, Remix, React Native, NodeJS.
   * José Antonio → React, Remix, NextJS, NestJS, NodeJS.
+  * Marta → Accessibility, CSS, React, Design, Tailwind.
 
 * Still unsure, or is no one available to help? → Reach out to Xavi.
 

@@ -38,8 +38,6 @@ Try to keep the calls short and on point and be respectful of everyone's time. B
 
 We use both Spanish and English as primary languages across the company. We write all our documentation, issues, and discussions in English. However, we accept presentations in Spanish for the Martian Days, Martian Tapas and common meetings. Both languages are used indistinguishably in our gatherings.
 
-Knowing Spanish is not required, but it's a bonus.
-
 __Things we do in English__:
 
 * All internal communication on Slack.
@@ -49,13 +47,13 @@ __Things we do in English__:
 * Social media content.
 * Communication with foreign clients.
 * All the content on the corporate website.
-* The English feed of <a href="https://podcast.marsbased.com/" title="Life on Mars" target="_blank">our podcast</a>.
+* The English feed of <a href="https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=howwework" title="Life on Mars" target="_blank">our podcast</a>.
 
 __Things we do in Spanish__:
 
 * Communication with Spanish-speaking clients.
 * Most content on the website is translated into Spanish, except for the blog.
-* The Spanish feed of <a href="https://podcast.marsbased.com/podcasts-es/" title="Life on Mars" target="_blank">our podcast</a>.
+* The Spanish feed of <a href="https://podcast.marsbased.com/podcasts-es/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=howwework" title="Life on Mars" target="_blank">our podcast</a>.
 * Some internal presentations.
 
 ## Tools
@@ -72,3 +70,4 @@ _A grosso modo_ we use the following tools:
 * __Forecast__: Where we keep track of our project assignments and time off.
 * __Dropbox Sign__: We use it to sign all the documents digitally (NDAs, contracts and whatnot).
 * __Figma__: Our preferred design platform.
+* __Holded__: Our HR portal for managing personal documentation, absences, and time tracking.

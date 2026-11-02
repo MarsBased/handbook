@@ -1,10 +1,8 @@
-# MarsBased Patterns
+# Rails patterns
 
-A collection of MarsBased programming patterns in different languages. For now, only Ruby on Rails.
+Programming patterns used in our Ruby on Rails projects, as part of the [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md).
 
-## Ruby on Rails
-
-- [Presenter](rails/presenter.md)
-- [Command](rails/command.md)
-- [Form Composition](rails/form-composition.md)
-- [Query Object](rails/query-object.md)
+- [Presenter](/guides/patterns/rails/presenter.md)
+- [Command](/guides/patterns/rails/command.md)
+- [Form Composition](/guides/patterns/rails/form-composition.md)
+- [Query Object](/guides/patterns/rails/query-object.md)

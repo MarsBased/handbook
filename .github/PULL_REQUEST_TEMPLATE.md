@@ -14,4 +14,4 @@ Closes # .
 <!-- Put an `x` in the boxes that apply. You can also fill these out after creating the PR. -->
 
 - [ ] I have updated necessary documentation and links in the README.md or the doc folder
-- [ ] I have rebased from master, written good commit messages and squashed unnecessary commits
+- [ ] I have rebased from main, written good commit messages and squashed unnecessary commits

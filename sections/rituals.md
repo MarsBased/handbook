@@ -4,7 +4,7 @@ Even though we're a 100%-remote company, we do a few activities both offline and
 
 ## Martian Day
 
-Three times a year we fly everyone in and we meet for a day or two of get-together.
+Two times a year we fly everyone in and we meet for a day or two of get-together.
 
 In the Martian Days, we don't do client work, and we spend quality time sharing the numbers of the company, doing feedback roundtables, workshops, keynotes, brainstorming sessions, and a few leisure activities like padel tennis, dinners, karaoke, and more!
 
@@ -18,7 +18,9 @@ Once a year, we hold a company retreat lasting three to four days. The goal is t
 
 So far, we've done the following:
 
-* __2025:__ Tenerife (soon!).
+* __2027:__ TBC.
+* __2026:__ Pyrenees.
+* __2025:__ Tenerife.
 * __2024:__ Andorra.
 * __2023:__ Formentera.
 * __2022:__ Asturias.
@@ -51,7 +53,7 @@ Every week, the chef (the presenter) is rotated. The session is 30 minutes long,
 * Turbo Websockets
 * First Steps in AI development
 
-The session is kicked off by the chef, introducing the topic and commenting on the topic selected for the current session, and it's also the moderator who will lead the conversation and moderate the debate among all the developers involved, asking questions and adding remarks where appropriate.
+The session is kicked off by the chef, introducing the topic and commenting on the topic selected for the current session, and it's also the moderator who will lead the conversation and moderate the debate among all the software engineers involved, asking questions and adding remarks where appropriate.
 
 Other times, we call the session Martian Buffet, and there's no presenter as such, but everyone is free to give their opinion on a given topic.
 

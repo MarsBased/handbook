@@ -1,0 +1,33 @@
+# Publishes handbook.marsbased.com after every change to the handbook.
+#
+# The site itself is built by the MarsBased/perseverance repo (Astro), which
+# downloads this repo's default branch at build time. This workflow only pokes
+# the Render Deploy Hook of the `handbook` static site so a new build starts.
+#
+# Setup (once): Render dashboard -> handbook service -> Settings -> Deploy Hook,
+# then store the URL as the repository secret RENDER_HANDBOOK_DEPLOY_HOOK_URL.
+name: Deploy handbook
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '.github/**'
+
+concurrency:
+  group: deploy-handbook
+  cancel-in-progress: true
+
+jobs:
+  trigger-render:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Render deploy
+        env:
+          RENDER_DEPLOY_HOOK_URL: ${{ secrets.RENDER_HANDBOOK_DEPLOY_HOOK_URL }}
+        run: |
+          if [ -z "$RENDER_DEPLOY_HOOK_URL" ]; then
+            echo "RENDER_HANDBOOK_DEPLOY_HOOK_URL secret is not set" >&2
+            exit 1
+          fi
+          curl --fail --silent --show-error --request POST "$RENDER_DEPLOY_HOOK_URL"
