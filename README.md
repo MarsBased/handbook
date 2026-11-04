@@ -119,8 +119,10 @@ For now, we have the following resources available:
 1. <a href="https://marsbased.com/blog?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased blog" target="_blank">MarsBased blog</a>
 1. <a href="https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="Life on Mars - The MarsBased Podcast, English Edition" target="_blank">Life on Mars - The MarsBased Podcast, English Edition</a>
 1. <a href="https://podcast.marsbased.com/podcasts-es/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="Life on Mars - The MarsBased Podcast, Spanish Edition" target="_blank">Life on Mars - The MarsBased Podcast, Spanish Edition</a>
+1. <a href="https://marsbased.com/news?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased news" target="_blank">MarsBased news</a>
 1. <a href="https://marsbased.com/newsletter?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=readme" title="MarsBased newsletter" target="_blank">MarsBased newsletter</a>
 1. <a href="https://www.youtube.com/@MarsBased" title="MarsBased YouTube channel" target="_blank">MarsBased YouTube channel</a>
+1. <a href="https://www.linkedin.com/company/marsbased" title="MarsBased on LinkedIn" target="_blank">MarsBased on LinkedIn</a>
 
 ## Contributing
 

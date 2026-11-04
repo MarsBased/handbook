@@ -14,7 +14,7 @@ The podcast is split into two distinct editions to cater to our global audience,
 
 You can subscribe and tune in on your favorite platform:
 * **English Edition:** [Web](https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/life-on-mars-a-podcast-from-marsbased/id1516103624?l=en-GB)
-* **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
+* **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
 * **Video Format:** Full video episodes and exclusive clips are available on our official [MarsBased YouTube Channel](https://www.youtube.com/@MarsBased).
 
 ### Top 3 featured episodes (English)
