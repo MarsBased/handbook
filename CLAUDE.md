@@ -10,7 +10,7 @@ The handbook is deployed via **GitBook**. GitBook uses `SUMMARY.md` as its table
 
 Both `SUMMARY.md` and `README.md` contain the handbook's table of contents. **Both files must be updated** when creating, renaming, moving, or deleting any `.md` file:
 
-1. **New page** — Add an entry to both `SUMMARY.md` and `README.md` under the correct section (`Sections`, `Our guides`, `Our development guides`, `Our accessibility guides`). Follow the existing numbered-list format: `1. [Title](/path/to/file.md)`.
+1. **New page** — Add an entry to both `SUMMARY.md` and `README.md` under the correct group (`The Company`, `Our Method`, `The Martian Life`, `Best Practices`, `Our guides`, `Engineering guides`, `Security guidelines`, `Accessibility guidelines`). Follow the existing numbered-list format: `1. [Title](/path/to/file.md)`.
 2. **Renamed/moved page** — Update the path in both files to match.
 3. **Deleted page** — Remove its entry from both files.
 
