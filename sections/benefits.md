@@ -4,12 +4,12 @@
 > Being a **MarsBased** employee comes with a lot of benefits.
 
 - [Office Material 👩🏻‍💻](#office-material)
+- [Coworking 🏢](#coworking)
 - [Language Courses 🗣](#language)
 - [Training & Learning 🤓](#training)
-- [Referral bonus 👩🏻‍🚀](#referral)
 - [Sports & Health 🚴🏻‍♀️](#sports)
 - [Conferences 🎤](#conferences)
-- [Coworking 🏢](#coworking)
+- [Referral bonus 👩🏻‍🚀](#referral)
 
 ## <a name="office-material"></a> Office Material 👩🏻‍💻
 
@@ -70,6 +70,25 @@ Given the tools we use, we recommend getting a Mac or Linux, but we're open to a
 
 Hope your new purchase meets your expectations and allows you to work more comfortably 🙌🏼
 
+## <a name="coworking"></a> Coworking 🏢
+
+We want everyone to have a comfortable, productive, and inspiring workspace. For most of the team, that's working from home, but we know that's not for everyone, whether due to space constraints, home distractions, or simply because you thrive in an office environment.
+
+If working from home isn't the best fit for you, you can choose a coworking space as your alternative primary workspace. While this isn't designed as a daily hybrid supplement to working from home, we're always open to discussing exceptional situations.
+
+### Budget
+
+If a coworking space is your chosen main workspace, MarsBased provides an allowance of up to 150€ per month to cover or contribute to the cost.
+
+### How to proceed
+
+1. Let People team know your need for coworking.
+2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
+3. Normally, coworking spaces require signing a contract, and they charge a fee on a monthly basis. Let's see what the conditions are in that specific case, and we'll agree on the easiest way to manage it (can be either directly from MarsBased or through you).
+4. **Let us know beforehand** when you are going to stop using your coworking space, either **temporarily or permanently**. Let the coworking know that as well, so as to avoid being charged for that period.
+
+Count on us whenever you need something regarding your workspace!
+
 ## <a name="language"></a> Language courses 🗣
 
 From MarsBased, we strongly encourage you to improve your English skills (or any other language you're interested in, such as Spanish, Japanese, or Basque 😅). You can invest up to one hour per week during the workday in English learning classes without needing to make up for the time.
@@ -90,6 +109,8 @@ Sardenya 470, 2-1
 Barcelona, 08025
 ```
 
+If the invoice isn’t issued under MarsBased’s name, the reimbursement will be treated as part of your salary and, therefore, is subject to tax and social security retentions from your paycheck.
+
 If you'd like to go for an alternative way of learning languages, let us know, and we'll do our best to adapt to it.
 
 ## <a name="training"></a> Training & Learning 🤓
@@ -98,7 +119,7 @@ We have different initiatives aimed at supporting Martians' professional growth 
 
 ### Allowance
 
-In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as a software engineer, professional, and human. This can include conference fees, course registration, coaching sessions, buying books, etc.
+In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as a professional, and human. This can include conference fees, course registration, coaching sessions, buying books, etc.
 
 You may also use part of your working hours for training if:
 
@@ -118,27 +139,7 @@ Requests for technical training during working hours will be evaluated individua
 4. You will get reimbursed up to 150€/year in your next payroll.
 5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
 
-> [!NOTE]
-> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions from your paycheck.
-
 Have fun and enjoy the lifelong learning process! 🤹🏻‍♀️
-
-## <a name="referral"></a> Referral bonus 👩🏻‍🚀
-
-We'd love your recommendations for colleagues you've worked with or talented people in your network who would be a great fit for our team!
-
-Please let the People team know if you have someone in mind. Share as much of the following information as you have:
-
-* Full name
-* Role
-* CV and/or LinkedIn profile
-* Contact information
-* How you know them
-* Whether they are aware you're referring them
-
-If you make the introduction and facilitate the conversation, you will receive a €1,000 referral bonus if we hire them. The bonus is paid after their third month with the company.
-
-Referrals are always a great opportunity to bring on people you've loved working with in the past!
 
 ## <a name="sports"></a> Sports & Health 🚴🏻‍♀️
 
@@ -157,7 +158,7 @@ We offer you an allowance of 150€ per year to invest in sports and health-rela
 5. In case the allowance isn’t used (partly or at all) throughout the year (for any reason), the remaining amount of the allowance will be added to your payroll as a "bonus" at the end of the year.
 
 > [!NOTE]
-> Please note that both the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions from your paycheck.
+> Please note that, for both the Training & Learning and Sports & Health allowances, the unused amount and any reimbursements not issued under MarsBased’s name will be treated as part of your salary and, therefore, are subject to tax and social security retentions from your paycheck.
 
 Have fun & stay in shape! 🏄🏻‍♀️
 
@@ -220,21 +221,19 @@ This helps us:
 - Share knowledge with our audience.
 - Strengthen both personal and company reputation.
 
-## <a name="coworking"></a> Coworking 🏢
+## <a name="referral"></a> Referral bonus 👩🏻‍🚀
 
-We want everyone to have a comfortable, productive, and inspiring workspace. For most of the team, that's working from home, but we know that's not for everyone, whether due to space constraints, home distractions, or simply because you thrive in an office environment.
+We'd love your recommendations for colleagues you've worked with or talented people in your network who would be a great fit for our team!
 
-If working from home isn't the best fit for you, you can choose a coworking space as your alternative primary workspace. While this isn't designed as a daily hybrid supplement to working from home, we're always open to discussing exceptional situations.
+Please let the People team know if you have someone in mind. Share as much of the following information as you have:
 
-### Budget
+* Full name
+* Role
+* CV and/or LinkedIn profile
+* Contact information
+* How you know them
+* Whether they are aware you're referring them
 
-If a coworking space is your chosen main workspace, MarsBased provides an allowance of up to 150€ per month to cover or contribute to the cost.
+If you make the introduction and facilitate the conversation, you will receive a €1,000 referral bonus if we hire them. The bonus is paid after their third month with the company.
 
-### How to proceed
-
-1. Let Eli know your need for coworking.
-2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
-3. Normally, coworking spaces require signing a contract, and they charge a fee on a monthly basis. Let's see what the conditions are in that specific case, and we'll agree on the easiest way to manage it (can be either directly from MarsBased or through you).
-4. **Let us know beforehand** when you are going to stop using your coworking space, either **temporarily or permanently**. Let the coworking know that as well, so as to avoid being charged for that period.
-
-Count on us whenever you need something regarding your workspace!
+Referrals are always a great opportunity to bring on people you've loved working with in the past!
