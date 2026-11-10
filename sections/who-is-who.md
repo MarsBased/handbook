@@ -20,6 +20,16 @@ Over the years, Xavi has determined our company's tech stack, incorporating tech
 
 Jordi plays a key role in defining the company's processes, tools, and platforms.
 
+## Head of Administration & Compliance
+
+[Leire](https://www.linkedin.com/in/leireoiarbide/), as our Head of Administration & Compliance, keeps our spaceship running smoothly from behind the scenes. Invoices, contracts, paperwork: everything that keeps MarsBased in orbit goes through her hands, so the rest of us can focus on building great things.
+
+Leire takes care of our accountancy, accounts payable and banking, making sure every bill gets paid and every number adds up. If you have any questions about expense reports, invoicing or company documentation, she is the person to ask.
+
+Leire also makes sure we play by the rules here on Earth, staying on top of legal, tax and data protection requirements. Additionally, she works closely with our external advisors to keep our finances in order and our audits stress-free.
+
+Leire is the go-to person for payments, contract renewals, certificates, or official documents you might need from the company.
+
 ## Head of People
 
 [Eli](https://www.linkedin.com/in/elisabet-renom-b5834690/), as our Head of People, sits in the middle of our non-existent office and is the real catalyser of everything that happens in the company. She makes everyone's days better and of MarsBased a great place to work in.
@@ -97,7 +107,7 @@ We take pride in our craft. Code at MarsBased should reflect clarity, simplicity
 
 Above all, we expect software engineers to take ownership of their work. This means seeing beyond the immediate task, understanding the "why" behind what we build, and contributing to the success of the entire team. We don't just ship code: we ship solutions that help our clients succeed.
 
-The crew coding our way through the galaxy: [David](https://www.linkedin.com/in/davidgomezsanchez/), [Jose Luis](https://www.linkedin.com/in/jlestebanez/), [José](https://www.linkedin.com/in/jmmalaca/), [Laura](https://www.linkedin.com/in/laura-fari%C3%B1a-rodr%C3%ADguez-048a90b9/), Alejandro, [Enrique](https://www.linkedin.com/in/esquinas/), [Anna](https://www.linkedin.com/in/annavidalpons/), [Dani](https://www.linkedin.com/in/daniel-cay-delgado/?locale=en), [Maxime](https://www.linkedin.com/in/mancelin/), and [Javier](https://www.linkedin.com/in/javierparragamunoz/?locale=en).
+The crew coding our way through the galaxy: [David](https://www.linkedin.com/in/davidgomezsanchez/), [Jose Luis](https://www.linkedin.com/in/jlestebanez/), [José](https://www.linkedin.com/in/jmmalaca/), [Laura](https://www.linkedin.com/in/laura-fari%C3%B1a-rodr%C3%ADguez-048a90b9/), Alejandro, [Enrique](https://www.linkedin.com/in/esquinas/), [Anna](https://www.linkedin.com/in/annavidalpons/), [Dani](https://www.linkedin.com/in/daniel-cay-delgado/?locale=en), [Maxime](https://www.linkedin.com/in/mancelin/), [Javier](https://www.linkedin.com/in/javierparragamunoz/?locale=en), and [Artur](https://www.linkedin.com/in/artur-devolder-nicolau-67392b113/).
 
 ## Marketer & Podcast Co-Host
 
