@@ -14,7 +14,8 @@ Take a few minutes to go through the different sections below. They will help yo
 
 ### Contract
 
-During the onboarding meeting, we will review the work contract together with you to make sure everything is clear and sign it using Dropbox Sign.
+During the onboarding meeting, we’ll go through the contract and related agreements we’ve already sent you, to make sure everything is clear, and sign them using Dropbox Sign.
+You’ll also receive the information and training on occupational health and safety (prevención de riesgos laborales) related to your job.
 
 ### Material
 
@@ -46,7 +47,6 @@ MarsBased
 
 You’ll find all the relevant documentation such as our guidelines, procedures, and activities of the company as well as our client projects here. To name a few:
 
-* [Holded](https://drive.google.com/drive/folders/1jruqgh-RNREyVNy-ZB2X8F1_LrGrANZX?usp=share_link): This is the place to visit for requesting your holidays, notifying sick leaves, etc.
 * [Google Drive Guidelines](https://docs.google.com/document/d/1YHNPSgsB8g0jLqu0jnKVarWFom-bEEENa1-rTP5zDqs/edit#heading=h.oolhxniimdhk): What documentation do we place in Google Drive and what other do we place in Github?
 * [Security Guidelines](https://docs.google.com/document/d/1FsCzS0RTGBO3BMzIq-hjnjKxqV6v5gHQFf7Pam4fy4Q/edit#heading=h.ly0rzhbv9kd6): Compiling good security practices to apply on yourself and your own devices.
 
@@ -56,7 +56,7 @@ You'll have access to the docs related to design, activities, projects, template
 
 You will find the Martian activities for the year as well as important dates such as Martian anniversaries, your meetings, the Retreat dates, etc.
 
-The official timezone of the company is **CEST**.
+The official timezone of the company is **Spanish time (CET/CEST)**.
 
 #### Linear
 
@@ -75,9 +75,13 @@ Used for sync communications, and also to communicate with a few clients who wan
 * **marsbased:** We use it for all the issues related to the company, Martian activities, etc.
 * **team-development:** We have a general development channel to share information and discuss development-related topics.
 
+#### Holded
+
+Here you'll clock in and out every day to record your working hours (*registro de jornada*), which is mandatory by law. It's also the place to request your holidays and check your teammates' days off. For more details, check out the [Holded User Guideline](https://drive.google.com/drive/folders/1jruqgh-RNREyVNy-ZB2X8F1_LrGrANZX).
+
 #### Harvest
 
-To track your hours. This tool is used to invoice our clients. Ensure you have attributed all your hours worked at the end of each day.
+This tool is used to invoice our clients. Ensure you have attributed all your hours worked at the end of each day.
 
 #### Forecast
 
@@ -95,18 +99,15 @@ You can find the rest of the tools in the [How We Work](/sections/howwework.md) 
 
 ### Your profile
 
-Please send the People team the following information so that we can include your profile on our website and link to the different channels:
-
-* A picture for the website.
-* A brief presentation about yourself for your bio.
+We’d love to feature you on our website with a picture and a short bio. If you’d like to be included, the People team will ask you for them. It’s completely optional.
 
 ### <a name="profile-preferences"></a> Preferences
 
-We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below, as well as any other important issue we should be aware of.
+We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below. For dietary and travel preferences, we’ll send you a short optional form after the onboarding meeting.
 
-* **Local holiday calendar:** Each of us chooses the official local calendar we'll be following, it normally corresponds to the city we live in. Please, let us know on Linear the calendar you’ll be following.
-* **Dietary restrictions or preferences:** Let the People team know if you have any dietary restrictions/preferences (any allergies, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc.
-* **Travel preferences:** Let the People team know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll try to make our most to make your travels as comfortable as possible.
+* **Local holiday calendar:** Each of us chooses the official local calendar we'll be following, it normally corresponds to the city we live in. Please, let the People team know yours.
+* **Dietary restrictions or preferences:** Let us know if you have any dietary restrictions or preferences (allergies or intolerances, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc. We’ll only use this information for that purpose.
+* **Travel preferences:** Let the People team know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll do our best to make your travels as comfortable as possible.
 
 _There is no hurry, you can provide us with this information once you get a bit settled!_
 
@@ -116,14 +117,14 @@ Among Martians, we share the spirit of helping each other so whomever you have t
 
 To start with, today, you'll be introduced and guided through your first steps on Mars by:
 
-* **The People team** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, this is the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/timeoff.md), [Buddy System](/sections/buddy.md), etc.
+* **The People team** has already invited you to the first-day onboarding meeting on Slack. Apart from the contractual and formal part, we’ll walk you through our onboarding presentation, and it’s the opportunity to comment on all the practical issues concerning [How We Work](/sections/howwework.md), [Our rituals](/sections/rituals.md), [Benefits & Perks](/sections/benefits.md), [Requesting Holidays](/sections/timeoff.md), [Buddy System](/sections/buddy.md), etc.
 * **Jordi and/or Xavi** will give you a general overview of how we run our projects.
-* The **Tech Lead or the Project Manager** of the project you've been assigned to, will give you all the details you need to know in order to start working with the client/project. He/she will introduce you to the rest of the software engineers you'll be working with.
+* Depending on your role, the **Tech Lead or the Project Manager** of the project you've been assigned to, or the person leading your area, will give you all the details you need to know in order to start working. They will also introduce you to the rest of the team you'll be working with.
 * **Àlex** will reach you for a call before you finish your first day so as to officially welcome you and clarify any questions that may have arisen during the day.
 
-**Your Buddy**, a seasoned team member that will support you during the first months of your journey in the company, will get in touch with you at some point during the week for a first talk, and more will follow, regularly, on a weekly basis. He/she will share informal knowledge related to day-to-day issues, culture, activities, etc., and will be at your disposal for any questions you may have after the big amount of information you'll receive during the first days.
+**Your Buddy**, a seasoned team member that will support you during the first months of your journey in the company, will get in touch with you at some point during the week for a first talk, and more will follow, regularly, on a weekly basis. They will share informal knowledge related to day-to-day issues, culture, activities, etc., and will be at your disposal for any questions you may have after the big amount of information you'll receive during the first days.
 
-The **rest of the team** is already looking forward to meeting you at our weekly team appointment, which is on Fridays at 10.30am CEST. The first week, we'll host a special Martian breakfast to celebrate your joining. Save it on your agenda! 
+The **rest of the team** is already looking forward to meeting you at our weekly team appointment, which is on Fridays at 10.30am (Spanish time). The first week, we'll host a special Martian breakfast to celebrate your joining. Save it on your agenda! 
 
 Meanwhile, you can feed your curious side by reading [10 facts about each Martian](https://docs.google.com/document/d/1CbQSss9fiAzffojUxCZUYt9aOWddNyTSx3BoS2XhQSw/edit#heading=h.oclq2ejj0ewt). 
 
