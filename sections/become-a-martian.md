@@ -14,16 +14,18 @@ Behind every application is a real person, which is why our People team (HR) man
 
 When we review an application, we look at the big picture. Through the questions in our application form, we get a clear sense of your written communication, your motivation for joining MarsBased, and the context behind your career path and tenure at previous companies. 
 
-Alongside these insights, we evaluate your tech stack, past projects, language skills (English and/or Spanish), and location alignment, meaning we lean heavily toward hiring in Spain, Portugal, and Southern Europe.
+Alongside these insights, we evaluate your experience and past projects related to the role, language skills (English and/or Spanish), and location alignment, meaning we lean heavily toward hiring in Spain, Portugal, and Southern Europe.
 
 ### Step 1: HR Interview 
 Once applications are screened, the People team invites shortlisted candidates to an initial interview. 
 
-This first touchpoint is a two-way conversation designed to get to know each other. While we evaluate cultural alignment, soft skills, and mutual expectations alongside your tech stack and past projects, it is also an opportunity for us to share details about MarsBased, our culture, and how we work, and for you to ask us any questions you might have.
+This first touchpoint is a two-way conversation designed to get to know each other. While we evaluate cultural alignment, soft skills, and mutual expectations alongside your professional background, it is also an opportunity for us to share details about MarsBased, our culture, and how we work, and for you to ask us any questions you might have.
 
 All interviews are conducted entirely online via video call and typically last between 45 and 60 minutes.
 
 *Note: We do not send WhatsApp messages.*
+
+**Applying for a different role?** If you’re applying for a position such as Project Manager, Marketing, or People, the following steps are adapted to the role. We’ll walk you through the details during the HR interview.
 
 ### Step 2: Technical Assessment
 If you successfully pass the HR interview, we move on to the technical assessment. 
@@ -47,8 +49,8 @@ If everything aligns and references are verified, we will reach out with a forma
 
 Some of our most important considerations when evaluating a candidate are (in no particular order):
 
-* Strong English and Spanish speaking and writing skills.
-* Software engineer experience and skills matching the job requirements.
+* Strong English and/or Spanish speaking and writing skills.
+* Experience and skills matching the job requirements.
 * Stable employment history without frequent job changes.
 * Honest, transparent, humble, and open-minded personality that fits our team.
 * Interest and enthusiasm to join our company.
