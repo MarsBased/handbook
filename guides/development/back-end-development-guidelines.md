@@ -285,8 +285,8 @@ For ways to fix N+1 queries in Rails, refer to the [ActiveRecord guide](/guides/
 | | Rails | TypeScript | Python |
 |---|---|---|---|
 | Serialization | [Jbuilder](https://github.com/rails/jbuilder) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/) |
-| Pagination | [Kaminari](https://github.com/kaminari/kaminari), [Pagy](https://github.com/ddnexus/pagy) | `limit` with a cursor column in the ORM query | [fastapi-pagination](https://github.com/uriyyo/fastapi-pagination) |
-| OpenAPI | [rswag](https://github.com/rswag/rswag) | [zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi) | Built into FastAPI |
+| Pagination | [Kaminari](https://github.com/kaminari/kaminari) | `limit` with a cursor column in the ORM query | [fastapi-pagination](https://github.com/uriyyo/fastapi-pagination) |
+| OpenAPI | [rswag](https://github.com/rswag/rswag) | [zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi) to generate the specification, [swagger-ui-express](https://github.com/scottie1984/swagger-ui-express) to show it | Built into FastAPI |
 
 ## Data migrations
 
@@ -338,14 +338,9 @@ Use a linter that finds these problems before the deploy:
 The hosting service gives basic metrics and logs. That is not sufficient to find the cause of a problem in production. Each project must have:
 
 - **Error tracking**: [MarsBeacon](https://beacon.marsbased.com/), in the web processes and in the workers.
-- **Structured logs**: JSON logs with a request ID in each line. Use the same request ID in the jobs that the request enqueues.
 - **Health check**: an endpoint (for example `/up`) that the hosting service and the uptime monitor call.
 - **Uptime monitor**: [MarsBased Uptime](https://uptime.marsbased.com/), our self-hosted [Uptime Kuma](https://uptime.kuma.pet/) instance. It sends an alert when the application is down.
 - **Alerts**: an alert for the error rate, the response time and the queue size. Send the alerts to the project Slack channel.
-
-| | Rails | TypeScript | Python |
-|---|---|---|---|
-| Structured logs | [Lograge](https://github.com/roidrage/lograge), [Rails Semantic Logger](https://github.com/reidmorrison/rails_semantic_logger) | [Pino](https://getpino.io/) | [structlog](https://www.structlog.org/) |
 
 Do not log personal data or secrets. Refer to [sensitive data logging](/guides/security/sensitive-data-logging.md).
 
