@@ -12,7 +12,7 @@ Focus on code readability. Code should tell a story. Code should be easy for any
     - [1.1.4 Write meaningful code comments](#id-1.1.4-write-meaningful-code-comments)
     - [1.1.5 Keep it small](#id-1.1.5-keep-it-small)
   - [1.2 Don'ts](#id-1.2-donts)
-    - [1.2.1 Refactor ahead of time](#id-1.2.1-dont-refactor-ahead-of-time)
+    - [1.2.1 Refactor ahead of time](#id-1.2.1-refactor-ahead-of-time)
     - [1.2.2 Premature optimization](#id-1.2.2-premature-optimization)
     - [1.2.3 Unnecessary dependencies](#id-1.2.3-unnecessary-dependencies)
     - [1.2.4 Don't comment code to remove it, just delete it](#id-1.2.4-dont-comment-code-to-remove-it-just-delete-it)
@@ -30,7 +30,7 @@ Code should be simple and easy to understand. Use good names for variables and m
 [Keep it simple, stupid](https://en.wikipedia.org/wiki/KISS_principle).
 
 #### 1.1.2 Naming is key
-Spend some time looking for good class, method and variable names. Use long and descriptive names for both functions/methods and variables. Avoid single-letter names, except in conventional idioms such as loop indexes (`i`) or exception variables (`e`). Remember you are writing code for others and for yourself, so make it the best. Push to give the readers a good time.
+Pay special attention to class, method and variable names. Use long and descriptive names for both functions/methods and variables. Avoid single-letter names, except in conventional idioms such as loop indexes (`i`) or exception variables (`e`). Remember you are writing code for others and for yourself, so make it the best. Push to give the readers a good time.
 
 Naming is key!
 
@@ -42,14 +42,20 @@ If you find unrelated dead code or legacy code, don't remove it in the same pull
 #### 1.1.4 Write meaningful code comments
 Don't comment on the WHAT of a piece of code, only on the WHY, and only if necessary. Comments should exist if you believe that the solution you've chosen might need extra context to be understood. Always focus on the WHY instead of the WHAT, as the WHAT is already there: it is our code.
 
-AI agents often add comments that only repeat the WHAT. Look for them and remove them. See our [AI guidelines](/guides/ai-guidelines.md#remove-ai-generated-code-comments-that-add-no-value).
+AI agents often add comments that only repeat the WHAT. They also add comments that describe the history of the development session, for example:
+
+```ruby
+# Simplified this per your feedback, removed the retry logic we added earlier
+```
+
+This history is not a WHY that helps the reader. It belongs in the commit message or the pull request description, not in the code. Look for these comments and remove them. See our [AI guidelines](/guides/ai-guidelines.md#remove-ai-generated-code-comments-that-add-no-value).
 
 #### 1.1.5 Keep it small
 The less code, the better. The fewer code changes, the better. As we like to build one thing at a time, we should also build it as simple and focused as possible. Less code is easier to understand, and fewer code changes make it much more accessible for you and for our colleagues as reviewers.
 
 ### 1.2 Don'ts
 
-#### 1.2.1 Don't refactor ahead of time
+#### 1.2.1 Refactor ahead of time
 Wait until something is painful to change or understand. Remember that we should keep it small and simple. Refactoring without a purpose can lead to complexity, unnecessary abstractions and miscommunication about what you are trying to achieve.
 
 #### 1.2.2 Premature optimization
