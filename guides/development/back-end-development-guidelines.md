@@ -100,7 +100,7 @@ A lock in a single Redis instance with a TTL is not safe for correctness. A fail
 - Use Redis locks for efficiency only, for example to prevent two workers from generating the same report.
 - For correctness (payments, stock, balances), use the database:
   - unique constraints
-  - row locks (`SELECT ... FOR UPDATE`)
+  - row locks (`SELECT ... FOR UPDATE`). Refer to [Idempotency](#idempotency).
   - PostgreSQL advisory locks
   - optimistic locking with a version column
 - Make the job idempotent, so a duplicate run does no damage. Refer to [Background jobs](#background-jobs).
@@ -154,15 +154,48 @@ Validate each request with a schema. Accept only the parameters that you expect.
 A job can run more than once: retries, a worker crash, a deploy. Make each job idempotent, so a second run gives the same result as the first run.
 
 - Pass IDs as arguments, not full objects. Load the record again in the job.
-- Claim the work in one atomic step before you do it. A separate check (`return if invoice.sent?`) is not sufficient, because two runs can pass the check at the same time:
-
-  ```ruby
-  claimed = Invoice.where(id: invoice_id, sent_at: nil).update_all(sent_at: Time.current) == 1
-  return unless claimed
-  ```
-
-- Use an idempotency key when you call an external API that supports it (for example Stripe).
 - Use unique constraints to prevent duplicate records.
+- Claim the job before you do the work. Lock the row, check the status and set it to `running` in one short transaction.
+- Use `SKIP LOCKED`. If a different run holds the lock, the job stops and does not wait.
+- When the work ends, set the status to `done`.
+
+```ruby
+# Rails
+claimed = Job.transaction do
+  job = Job.lock("FOR UPDATE SKIP LOCKED").find_by(id: job_id)
+  next false unless job&.pending?
+
+  job.running!
+end
+return unless claimed
+```
+
+```typescript
+// TypeScript (Drizzle)
+const claimed = await db.transaction(async (tx) => {
+  const [job] = await tx.select().from(jobs)
+    .where(eq(jobs.id, jobId))
+    .for('update', { skipLocked: true });
+  if (job?.status !== 'pending') return false;
+
+  await tx.update(jobs).set({ status: 'running' }).where(eq(jobs.id, jobId));
+  return true;
+});
+if (!claimed) return;
+```
+
+```python
+# Python (SQLAlchemy)
+with session.begin():
+    job = session.scalars(
+        select(Job).where(Job.id == job_id).with_for_update(skip_locked=True)
+    ).one_or_none()
+    claimed = job is not None and job.status == "pending"
+    if claimed:
+        job.status = "running"
+if not claimed:
+    return
+```
 
 ### Retries
 
