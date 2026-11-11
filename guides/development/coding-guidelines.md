@@ -12,7 +12,7 @@ Focus on code readability. Code should tell a story. Code should be easy for any
     - [1.1.4 Write meaningful code comments](#id-1.1.4-write-meaningful-code-comments)
     - [1.1.5 Keep it small](#id-1.1.5-keep-it-small)
   - [1.2 Don'ts](#id-1.2-donts)
-    - [1.2.1 Don't refactor ahead of time](#id-1.2.1-dont-refactor-ahead-of-time)
+    - [1.2.1 Refactor ahead of time](#id-1.2.1-dont-refactor-ahead-of-time)
     - [1.2.2 Premature optimization](#id-1.2.2-premature-optimization)
     - [1.2.3 Unnecessary dependencies](#id-1.2.3-unnecessary-dependencies)
     - [1.2.4 Don't comment code to remove it, just delete it](#id-1.2.4-dont-comment-code-to-remove-it-just-delete-it)
