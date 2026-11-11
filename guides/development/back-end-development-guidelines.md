@@ -262,24 +262,29 @@ For ways to fix N+1 queries in Rails, refer to the [ActiveRecord guide](/guides/
 
 - **Versioning**: put the version in the URL (`/api/v1/...`). Make a new version only for changes that break clients. Adding a field does not break clients.
 - **Pagination**: paginate all list endpoints. Use cursor pagination for large lists or lists that change frequently. Use offset pagination (`page`, `per_page`) for small lists and admin panels. Put a maximum on the page size.
-- **Errors**: use the correct HTTP status code. Return the error body in the [Problem Details format (RFC 9457)](https://www.rfc-editor.org/rfc/rfc9457), with the `Content-Type: application/problem+json` header:
+- **Serialization**: use a serializer to define the output. Never return the model directly, because it can expose private columns.
+- **Naming**: use `camelCase` for JSON keys in new projects. If an existing project uses `snake_case`, keep `snake_case`. Do not mix the two conventions in one project. Rails and Python use `snake_case` by default. Configure them to return `camelCase`:
 
-  ```json
-  {
-    "type": "https://example.com/errors/validation",
-    "title": "Validation failed",
-    "status": 422,
-    "errors": [{ "pointer": "#/email", "detail": "is already taken" }]
-  }
+  ```ruby
+  # Rails (Jbuilder), config/initializers/jbuilder.rb
+  Jbuilder.key_format camelize: :lower
+  Jbuilder.deep_format_keys true
   ```
 
-- **Serialization**: use a serializer to define the output. Never return the model directly, because it can expose private columns.
-- **Naming**: use `snake_case` or `camelCase` for JSON keys, and use the same one in all endpoints of the project.
+  ```python
+  # Python (Pydantic)
+  from pydantic import BaseModel, ConfigDict
+  from pydantic.alias_generators import to_camel
+
+  class Schema(BaseModel):
+      model_config = ConfigDict(alias_generator=to_camel, populate_by_name=True)
+  ```
+
 - **Documentation**: describe the API with [OpenAPI](https://www.openapis.org/). Generate the specification from the code or from the tests when possible.
 
 | | Rails | TypeScript | Python |
 |---|---|---|---|
-| Serialization | [Jbuilder](https://github.com/rails/jbuilder), [Alba](https://github.com/okuramasafumi/alba) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/) |
+| Serialization | [Jbuilder](https://github.com/rails/jbuilder) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/) |
 | Pagination | [Kaminari](https://github.com/kaminari/kaminari), [Pagy](https://github.com/ddnexus/pagy) | `limit` with a cursor column in the ORM query | [fastapi-pagination](https://github.com/uriyyo/fastapi-pagination) |
 | OpenAPI | [rswag](https://github.com/rswag/rswag) | [zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi) | Built into FastAPI |
 
