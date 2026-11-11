@@ -121,8 +121,8 @@ Some projects do not need Redis. PostgreSQL can be the queue, the cache and the 
 
 | | Rails | TypeScript | Python |
 |---|---|---|---|
-| Authentication | [Devise](https://github.com/heartcombo/devise) | [Passport](https://www.passportjs.org/), [Better Auth](https://www.better-auth.com/) | JWT in the controller layer, [pwdlib](https://github.com/frankie567/pwdlib) to hash passwords, [Authlib](https://authlib.org/) for OAuth flows |
-| Authorization | [Pundit](https://github.com/varvet/pundit) | [CASL](https://casl.js.org/) | No library. Write policy functions in the project. |
+| Authentication | [Devise](https://github.com/heartcombo/devise) | [NextAuth.js](https://authjs.dev/), in Next.js projects only | JWT in the controller layer, [pwdlib](https://github.com/frankie567/pwdlib) to hash passwords, [Authlib](https://authlib.org/) for OAuth flows |
+| Authorization | [Pundit](https://github.com/varvet/pundit) | No library. Write policy functions in the project. | No library. Write policy functions in the project. |
 
 Refer also to the [security guides](/guides/security/README.md), in particular [user accounts protection](/guides/security/user_accounts_protection.md).
 
