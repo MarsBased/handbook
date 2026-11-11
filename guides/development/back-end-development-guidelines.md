@@ -1,12 +1,11 @@
 # Back-end development guidelines
 
-These guidelines apply to all our back-end stacks: Ruby on Rails, TypeScript (Node.js) and Python. Each section gives the principle first, then the tools that we use in each stack.
+These guidelines apply to all our back-end stacks: Ruby on Rails, TypeScript (Node.js) and Python (FastAPI). Each section gives the principle first, then the tools that we use in each stack.
 
 For stack-specific details, read also:
 
 - [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md) and the [ActiveRecord guide](/guides/development/activerecord-guide.md)
 - [TypeScript guidelines](/guides/typescript-guidelines.md)
-- [Testing guidelines](/guides/development/testing-guidelines.md)
 
 ## Do's and Don'ts
 
@@ -19,7 +18,7 @@ Do's
 
 Don'ts
 
-- We try to avoid writing code that has unexpected side effects (sending an e-mail, making an API call) as much as possible. In particular this affects the usage of model callbacks (Rails callbacks, ORM hooks in TypeScript, Django signals in Python). We minimize their use and only use them to do some calculation at the persistence layer or some simple operation.
+- We try to avoid writing code that has unexpected side effects (sending an e-mail, making an API call) as much as possible. In particular this affects the usage of model callbacks (Rails callbacks, ORM hooks in TypeScript, SQLAlchemy events in Python). We minimize their use and only use them to do some calculation at the persistence layer or some simple operation.
 
 ## Common patterns
 
@@ -29,7 +28,7 @@ Don'ts
 
 - Services:
 
-  - MarsBased self-hosted tracking solution or [Sentry](https://sentry.io/) for error reporting
+  - [MarsBeacon](https://beacon.marsbased.com/), our self-hosted error tracker, for error reporting
   - [Wasabi](https://wasabi.com/) or [AWS S3](https://aws.amazon.com/s3/) for uploads
   - [Cloudflare](https://www.cloudflare.com/) for CDN / reverse proxy. If the final users are from Spain we avoid Cloudflare as it can be blocked by Spanish ISPs.
   - [GitHub Actions](https://github.com/features/actions) for CI
@@ -112,20 +111,18 @@ Some projects do not need Redis. PostgreSQL can be the queue, the cache and the 
 
 - Rails 8 ships database-backed adapters: [Solid Queue](https://github.com/rails/solid_queue), [Solid Cache](https://github.com/rails/solid_cache) and [Solid Cable](https://github.com/rails/solid_cable). They also work in Rails 7.1+. Our default stays Sidekiq with Redis. Consider the Solid adapters for small projects with a low job volume.
 - TypeScript: [pg-boss](https://github.com/timgit/pg-boss) and [Graphile Worker](https://worker.graphile.org/) are job queues on PostgreSQL.
-- Python: [Procrastinate](https://procrastinate.readthedocs.io/) is a job queue on PostgreSQL. Django 6.0 adds a tasks API (`django.tasks`). For production, it needs a third-party back end with a worker.
+- Python: [Procrastinate](https://procrastinate.readthedocs.io/) is a job queue on PostgreSQL.
 
 ## Authentication and authorization
 
 - Do not write your own authentication. Use a library that the community maintains.
 - Check authorization in each action. Use one policy object per resource, not checks spread across controllers.
 - Deny access by default. Make tests that prove a user cannot access the records of a different user.
-- Accept only the parameters that you expect. Never pass the request body directly to the ORM.
 
 | | Rails | TypeScript | Python |
 |---|---|---|---|
-| Authentication | [Devise](https://github.com/heartcombo/devise), Rails 8 authentication generator | [Passport](https://www.passportjs.org/), [Better Auth](https://www.better-auth.com/) | Django auth, [django-allauth](https://allauth.org/), [Authlib](https://authlib.org/) for OAuth and OpenID Connect |
-| Authorization | [Pundit](https://github.com/varvet/pundit), [ActionPolicy](https://actionpolicy.evilmartians.io/) | [CASL](https://casl.js.org/) | [django-rules](https://github.com/dfunckt/django-rules), policy functions |
-| Allowed parameters | Strong parameters (`params.expect`, `params.require.permit`) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/) models, DRF serializers |
+| Authentication | [Devise](https://github.com/heartcombo/devise) | [Passport](https://www.passportjs.org/), [Better Auth](https://www.better-auth.com/) | JWT in the controller layer, [pwdlib](https://github.com/frankie567/pwdlib) to hash passwords, [Authlib](https://authlib.org/) for OAuth flows |
+| Authorization | [Pundit](https://github.com/varvet/pundit) | [CASL](https://casl.js.org/) | No library. Write policy functions in the project. |
 
 Refer also to the [security guides](/guides/security/README.md), in particular [user accounts protection](/guides/security/user_accounts_protection.md).
 
@@ -135,7 +132,15 @@ Limit the requests to sensitive endpoints: sign in, sign up, password reset, and
 
 - Rails: the built-in `rate_limit` in controllers (Rails 7.2+), or [Rack::Attack](https://github.com/rack/rack-attack).
 - TypeScript: [rate-limiter-flexible](https://github.com/animir/node-rate-limiter-flexible), or the module of the framework (for example `@nestjs/throttler`).
-- Python: [django-ratelimit](https://django-ratelimit.readthedocs.io/), [SlowAPI](https://github.com/laurentS/slowapi) for FastAPI.
+- Python: [SlowAPI](https://github.com/laurentS/slowapi).
+
+## Schema validation
+
+Validate each request with a schema. Accept only the parameters that you expect. Never pass the request body directly to the ORM.
+
+| Rails | TypeScript | Python |
+|---|---|---|
+| Strong parameters (`params.expect`, `params.require.permit`) | [Zod](https://zod.dev/) | [Pydantic](https://docs.pydantic.dev/) |
 
 ## Background jobs
 
@@ -187,10 +192,13 @@ await queue.add('order-confirmation', { orderId: order.id });
 ```
 
 ```python
-# Python (Django + Celery)
-with transaction.atomic():
-    order = Order.objects.create(**data)
-    transaction.on_commit(lambda: send_order_confirmation.delay(order.id))
+# Python (SQLAlchemy + Celery)
+with Session(engine) as session, session.begin():
+    order = Order(**data)
+    session.add(order)
+    session.flush()
+    order_id = order.id
+send_order_confirmation.delay(order_id)
 ```
 
 In Rails 7.2+, you can also set `self.enqueue_after_transaction_commit = true` in the job class. The default value changes between Rails versions, so set it explicitly.
@@ -201,20 +209,7 @@ When the job must never get lost, use the [transactional outbox pattern](https:/
 
 Do not rely on somebody to watch the logs. Detect N+1 queries automatically, in development and in the test suite.
 
-| Stack | Tool | How it works |
-|---|---|---|
-| Rails | [`strict_loading`](https://guides.rubyonrails.org/active_record_querying.html#strict-loading) | Raises an error or logs a warning when the code lazy-loads an association. In the default mode (`:all`), it also catches single lazy loads that are not N+1 queries. |
-| Rails | [Prosopite](https://github.com/charkost/prosopite) | Detects N+1 queries with no false positives. Use it in the test suite. |
-| Rails | [Bullet](https://github.com/flyerhzm/bullet) | Detects N+1 queries and unused eager loading. |
-| Python (SQLAlchemy) | `lazy="raise"`, `raiseload()` | Raises an error when the code lazy-loads a relationship. Same idea as `strict_loading`. |
-| Python (Django) | [django-zeal](https://github.com/taobojlen/django-zeal) | Detects N+1 queries in development and tests. |
-| Python (Django) | `assertNumQueries` | Makes a test fail when the number of queries changes. |
-| TypeScript | Query count in tests | Count the queries with the ORM logger (for example the Drizzle `logger` option) and assert the number. |
-| All | [Sentry](https://docs.sentry.io/product/issues/issue-details/performance-issues/n-one-queries/) performance issues | Detects N+1 queries in production. Make sure that the SDK of the project supports it. |
-
-Our rules:
-
-- Rails: in new projects, turn on `strict_loading` for N+1 queries only:
+- Rails, new projects: turn on [`strict_loading`](https://guides.rubyonrails.org/active_record_querying.html#strict-loading) for N+1 queries only. It raises an error or logs a warning when the code lazy-loads an association. The default mode (`:all`) also catches single lazy loads that are not N+1 queries, thus use `:n_plus_one_only`:
 
   ```ruby
   # config/application.rb
@@ -225,12 +220,9 @@ Our rules:
   config.active_record.action_on_strict_loading_violation = :log
   ```
 
-- Rails: in existing projects, add Prosopite or Bullet to the test suite.
-- Python: use `lazy="raise"` on SQLAlchemy relationships, or django-zeal in Django projects.
-- TypeScript: for each list endpoint, add a test that asserts the number of queries.
-
-The ORMs in TypeScript (Drizzle, Prisma, TypeORM) have no common N+1 detector. If a project uses GraphQL, use [DataLoader](https://github.com/graphql/dataloader) to batch the queries.
-
+- Rails, existing projects: add [Prosopite](https://github.com/charkost/prosopite) or [Bullet](https://github.com/flyerhzm/bullet) to the test suite. Prosopite detects N+1 queries with no false positives. Bullet also detects unused eager loading.
+- Python: use `lazy="raise"` on SQLAlchemy relationships, or `raiseload()` in the query. The code raises an error when it lazy-loads a relationship.
+- TypeScript: for each list endpoint, add a test that asserts the number of queries. Count the queries with the ORM logger (for example the Drizzle `logger` option). The ORMs in TypeScript (Drizzle, Prisma, TypeORM) have no common N+1 detector. If a project uses GraphQL, use [DataLoader](https://github.com/graphql/dataloader) to batch the queries.
 For ways to fix N+1 queries in Rails, refer to the [ActiveRecord guide](/guides/development/activerecord-guide.md#avoiding-n1-queries).
 
 ## API conventions
@@ -254,9 +246,9 @@ For ways to fix N+1 queries in Rails, refer to the [ActiveRecord guide](/guides/
 
 | | Rails | TypeScript | Python |
 |---|---|---|---|
-| Serialization | [Jbuilder](https://github.com/rails/jbuilder), [Alba](https://github.com/okuramasafumi/alba) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/), DRF serializers |
-| Pagination | [Kaminari](https://github.com/kaminari/kaminari), [Pagy](https://github.com/ddnexus/pagy) | `limit` with a cursor column in the ORM query | DRF pagination, [fastapi-pagination](https://github.com/uriyyo/fastapi-pagination) |
-| OpenAPI | [rswag](https://github.com/rswag/rswag) | [zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi) | Built into FastAPI, [drf-spectacular](https://github.com/tfranzel/drf-spectacular) |
+| Serialization | [Jbuilder](https://github.com/rails/jbuilder), [Alba](https://github.com/okuramasafumi/alba) | [Zod](https://zod.dev/) schemas | [Pydantic](https://docs.pydantic.dev/) |
+| Pagination | [Kaminari](https://github.com/kaminari/kaminari), [Pagy](https://github.com/ddnexus/pagy) | `limit` with a cursor column in the ORM query | [fastapi-pagination](https://github.com/uriyyo/fastapi-pagination) |
+| OpenAPI | [rswag](https://github.com/rswag/rswag) | [zod-to-openapi](https://github.com/asteasolutions/zod-to-openapi) | Built into FastAPI |
 
 ## Data migrations
 
@@ -288,7 +280,6 @@ Safe procedures for risky operations in PostgreSQL:
 Use a linter that finds these problems before the deploy:
 
 - Rails: [strong_migrations](https://github.com/ankane/strong_migrations).
-- Python (Django): [django-pg-zero-downtime-migrations](https://github.com/tbicr/django-pg-zero-downtime-migrations).
 - All stacks: [Squawk](https://squawkhq.com/) checks SQL migration files.
 
 ### Backfills
@@ -308,10 +299,10 @@ Use a linter that finds these problems before the deploy:
 
 The hosting service gives basic metrics and logs. That is not sufficient to find the cause of a problem in production. Each project must have:
 
-- **Error tracking**: Sentry or the MarsBased self-hosted solution, in the web processes and in the workers.
+- **Error tracking**: [MarsBeacon](https://beacon.marsbased.com/), in the web processes and in the workers.
 - **Structured logs**: JSON logs with a request ID in each line. Use the same request ID in the jobs that the request enqueues.
 - **Health check**: an endpoint (for example `/up`) that the hosting service and the uptime monitor call.
-- **Uptime monitor**: an external service that sends an alert when the application is down.
+- **Uptime monitor**: [MarsBased Uptime](https://uptime.marsbased.com/), our self-hosted [Uptime Kuma](https://uptime.kuma.pet/) instance. It sends an alert when the application is down.
 - **Alerts**: an alert for the error rate, the response time and the queue size. Send the alerts to the project Slack channel.
 
 | | Rails | TypeScript | Python |
