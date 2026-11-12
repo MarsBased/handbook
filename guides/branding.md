@@ -8,11 +8,9 @@ First and foremost, in written form, __MarsBased__ is one word and one word only
 
 # Logo
 
-__Note:__ If you're reading this section using Github's dark mode, you might not see things correctly. Considering turning it off temporarily.
-
 Our main logo is the one with the name of the company:
 
-<img width="547" alt="Main logo" src="/assets/logo-black.png">
+<img width="547" alt="Main logo" src="/assets/logo-black-on-white.png">
 
 Over dark backgrounds, we prefer using the red version of the logo. This is the logo used on <a href="https://marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=branding" title="MarsBased website" target="_blank">our website</a>:
 
@@ -34,7 +32,7 @@ Only use the green/turquoise logo over a #262728 background, like in this exampl
 
 Sometimes, when we're forced to use a smaller logo or one with squared proportions, we use the following ones instead:
 
-<img width="152" alt="Main abbreviated logo" src="/assets/logo-squared-black.png">
+<img width="152" alt="Main abbreviated logo" src="/assets/logo-squared-black-on-white.png">
 
 <img width="152" alt="Main abbreviated logo over dark backgrounds" src="/assets/logo-squared-red.png">
 
@@ -64,7 +62,7 @@ __Red Mars ©__
 
 __Green Martian ©__
 
-* RGB: 0, 255, 191
+* RGB: 0, 255, 190
 * CMYK: 100%, 0%, 25%, 0%
 * HEX: #00FFBE
 
@@ -73,3 +71,16 @@ __Grey Space Suit ©__
 * RGB: 38, 39, 40
 * CMYK: 5%, 2%, 0%, 84%
 * HEX: #262728
+
+# Typography
+
+Our website uses the __Graphik__ typeface for page titles, section titles and other highlighted elements. We use it in four weights:
+
+* Graphik Regular
+* Graphik Medium
+* Graphik Bold
+* Graphik Super
+
+Body text on our website uses each device's default system font.
+
+Graphik is a commercial typeface, so the font files are not included in this handbook.
