@@ -345,6 +345,9 @@ end
 ```
 
 ## 4. Gems
+
+For more tools by topic (N+1 detection, rate limiting, migrations, logs), refer to the [back-end guidelines](/guides/development/back-end-development-guidelines.md).
+
 * General
   * [Keynote](https://github.com/rf-/keynote) for presenters.
   * [Simple form](https://github.com/heartcombo/simple_form) for form generation.
