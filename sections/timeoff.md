@@ -35,13 +35,21 @@ Kindly bear in mind:
 
 If you feel sick 🤒 and need to go to the doctor 👩🏻‍⚕️, there is no need for you to compensate for those hours later on. If it’s an emergency or an urgent matter, don’t worry about Holded: just inform the People team and focus on yourself. We will do it for you. 
 
-If you are sick for more than two days, we kindly ask you to send us your doctor's medical sick leave document so that we can notify the Health Authority and comply with the legal requirements. If you are sick for 1-2 days, there is no need for you to send us that document.
+If you’re feeling unwell for a day or two, just let the People team know and take the time to rest. There’s no need to send us any document. 
+
+If your doctor gives you an official sick leave (baja médica), please let us know as soon as you can. You don’t need to send us the paperwork: Social Security will notify us directly, so you can focus on getting better.
 
 ## Health appointment
 
-If you have a regular appointment at the doctor or the dentist, or you need to accompany a relative to the doctor within your ordinary working schedule, you are free to organize yourself as best fits you to recover those hours. 
+If you have a regular appointment at the doctor or the dentist, or you need to accompany a relative to a planned doctor’s appointment within your ordinary working schedule, you are free to organize yourself as best fits you to recover those hours. 
 
 If, for some reason, you have to visit the doctor regularly due to treatment or whatever, let the People team know, and they’ll be happy to help you find the best way to reconcile both.
+
+## Paid leaves
+
+In certain situations (wedding, illness or hospitalization of a family member, bereavement, moving house, etc.) you’re entitled to paid time off. These are set by the Estatuto de los Trabajadores (art. 37) and our collective agreement for consulting and IT companies (art. 22).
+
+If you need one, just reach out to the People team and we’ll go through it together.
 
 ## Parental leave
 
@@ -53,5 +61,11 @@ Let us know if you’re expecting a baby, and we’ll try to support you as much
 These are the general terms, which are discussed to best adapt to the needs in each case:
 
 * __Pregnancy controls:__ Take the time you need for the regular pregnancy controls, whether you are pregnant or need to accompany your partner. There is no need for you to recover that time afterward.
-* __Parental leave:__ When the baby is born, the general parental leave is 19 weeks according to the current Spanish regulations. You decide if you want to take those weeks in a row or distribute them, but at least 6 weeks must be after the birth, according to the law.
-* __Breastfeeding permit:__ Once you’re back from parental leave, you’ll be eligible for the breastfeeding permit until the baby is 9 months old. You can either accumulate the hours and enjoy them at once as an extension of the parental leave, or have your work schedule reduced by 1 hour per day.
+* __Parental leave:__ When the baby is born, the general parental leave is 19 weeks according to the current Spanish regulations:
+
+  * The first 6 weeks must be taken right after the birth, in a row and full-time.
+  * 11 weeks can be distributed as you prefer until the baby turns one.
+  * The last 2 weeks can be taken any time until your child turns 8.
+
+  Let us know how you’d like to plan them, and we’ll organize it together.
+* __Childcare permit (breastfeeding):__ Once you’re back from parental leave, you’ll be eligible for this permit until the baby is 9 months old, whether you’re the mother or the father. You can either accumulate the hours and enjoy them at once as an extension of the parental leave, or have your work schedule reduced by 1 hour per day.
