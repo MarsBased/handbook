@@ -4,18 +4,27 @@ To make things easier, we’ve created this handy guide to help you navigate who
 
 Remember that using the proper channels keeps things efficient, avoids confusion, and helps everyone stay aligned, especially in a fully remote company like ours:
 
-## 🧭 People & Admin
+## 🧭 People
 
 Go to the People team for:
 
 * Time off, sick leave & special permissions (hospitalisation, bereavement, moving, marriage, parental leave, etc.).
-* Payroll, reimbursements & benefits.
+* Payroll & benefits.
 * HR documents & contracts. 
 * Onboarding & Offboarding.
 * Company events & internal logistics.
-* General policies or admin support.
+* General HR policies.
 * Workplace health & safety (PRL), training & medical checkups.
 * Concerns related to harassment, mobbing, or workplace conflict.
+
+## 📋 Administration & Compliance
+
+Go to Leire for:
+
+* Payments & expense reports.
+* Invoicing and company documentation.
+* Certificates or official documents you might need from the company.
+* Legal, tax & data protection questions.
 
 ## 🧰 Tools & Access
 
