@@ -106,8 +106,8 @@ We’d love to feature you on our website with a picture and a short bio. If you
 We are a flexible company and try to adapt to your needs as much as possible. Please, let us know your preferences regarding the topics below. For dietary and travel preferences, we’ll send you a short optional form after the onboarding meeting.
 
 * **Local holiday calendar:** Each of us chooses the official local calendar we'll be following, it normally corresponds to the city we live in. Please, let the People team know yours.
-* **Dietary restrictions or preferences:** Let us know if you have any dietary restrictions or preferences (allergies or intolerances, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc. We’ll only use this information for that purpose.
-* **Travel preferences:** Let the People team know your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We'll do our best to make your travels as comfortable as possible.
+* **Dietary restrictions or preferences:** Let us know through the form if you have any dietary restrictions or preferences (allergies or intolerances, gluten-free, vegetarian, vegan, alcohol-free, etc.) so that we can take them into account for the organization of our face-to-face activities such as the Martian Day, Retreat, etc. We’ll only use this information for that purpose.
+* **Travel preferences:** Let us know through the form your preferred means of transport (flight, train, own car, etc.) and whether you prefer to sit by the window or aisle. We’ll do our best to make your travels as comfortable as possible.
 
 _There is no hurry, you can provide us with this information once you get a bit settled!_
 
