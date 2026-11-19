@@ -119,7 +119,7 @@ We have different initiatives aimed at supporting Martians' professional growth 
 
 ### Allowance
 
-In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as a professional, and human. This can include conference fees, course registration, coaching sessions, buying books, etc.
+In addition to the mentioned, MarsBased offers you an allowance of 150€ per year to invest in your learning process as a professional and as a human. This can include conference fees, course registration, coaching sessions, buying books, etc.
 
 You may also use part of your working hours for training if:
 
