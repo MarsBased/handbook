@@ -82,7 +82,7 @@ If a coworking space is your chosen main workspace, MarsBased provides an allowa
 
 ### How to proceed
 
-1. Let People team know your need for coworking.
+1. Let the People team know your need for coworking.
 2. If you've already identified the coworking place that suits you, that's great. Otherwise, we’ll help you find one (especially if you are based in Barcelona, where we know more places).
 3. Normally, coworking spaces require signing a contract, and they charge a fee on a monthly basis. Let's see what the conditions are in that specific case, and we'll agree on the easiest way to manage it (can be either directly from MarsBased or through you).
 4. **Let us know beforehand** when you are going to stop using your coworking space, either **temporarily or permanently**. Let the coworking know that as well, so as to avoid being charged for that period.
