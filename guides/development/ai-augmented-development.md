@@ -8,16 +8,9 @@ This guide covers how we work with AI coding agents, the methodology we follow, 
 
 Some customers have their own rules for AI tools. A customer can require a different tool, or it can forbid AI tools on its code. In these projects, use the customer rules, not this guide. Tell the tech lead of the project before you start work.
 
-## Models and updates
+## Models
 
-We do not pin a model version. Use the default model of the current Claude Code release.
-
-Keep Claude Code up to date:
-
-- Keep auto-updates on. Do not set `DISABLE_AUTOUPDATER` or `DISABLE_UPDATES`.
-- If you use Homebrew or WinGet, set `CLAUDE_CODE_PACKAGE_MANAGER_AUTO_UPDATE` to `1`.
-- If you use a different package manager, update Claude Code each week.
-- Run `claude --version` to see the version that you use.
+We do not pin a model version. Opus is our default model. Some tasks fit a different model better, and Sonnet is enough for simple tasks. Use `/model` to change the model.
 
 ## The Research / Plan / Implement (RPI) methodology
 
@@ -140,6 +133,11 @@ Enable it globally in your user settings at `~/.claude/settings.json`:
         "~/**/.env.*",
         "~/**/config/master.key",
         "~/**/config/credentials/*.key"
+      ],
+      "allowRead": [
+        "~/**/.env.example",
+        "~/**/.env.*.example",
+        "~/**/.env.sample"
       ]
     },
     "credentials": {
@@ -164,11 +162,11 @@ Enable it globally in your user settings at `~/.claude/settings.json`:
 
 The two blocks cover the two ways a secret leaks into a shell command. `denyRead` blocks sandboxed commands from reading credential files and directories on disk. `credentials.envVars` unsets those variables before each sandboxed command runs, so a token exported in your shell is not inherited by whatever Claude executes. Deny entries merge across every settings scope and only ever narrow access, so a project can add to this list but never remove from it.
 
-The `~/**/` entries block the secrets of each project in your home directory: `.env` files and Rails key files. Without them, a sandboxed command can read these files, and Auto-allow mode does not ask you first. If a project keeps a secret in a different file, add that file to the project `.claude/settings.json`. The `~/**/.env.*` entry also blocks `.env.example`.
+The `~/**/` entries block the secrets of each project in your home directory: `.env` files and Rails key files. Without them, a sandboxed command can read these files, and Auto-allow mode does not ask you first. If a project keeps a secret in a different file, add that file to the project `.claude/settings.json`. `allowRead` opens the `.env` templates again, for example `.env.example` and `.env.sample`, because they contain no secrets.
 
-These entries apply to Bash commands only. The [Pre-read hook](#pre-read-hook) covers `.env` files for the Read tool.
+These entries apply to Bash commands only. To block the Read tool, add `Read` deny rules to `permissions.deny`.
 
-Some commands load these files when the application starts, for example `bin/rails`. In the sandbox, these commands can fail or start without the secrets. Claude can then retry the command outside the sandbox, where `denyRead` does not apply. In Manual mode, Claude Code asks you first. An allow rule that matches the command approves the retry without a prompt. Approve only the commands that you expect.
+Some commands load these files when the application starts, for example `bin/rails`. In the sandbox, these commands fail with an `Operation not permitted` error. Claude can then retry the command outside the sandbox, where `denyRead` does not apply. In Manual mode, Claude Code asks you first. An allow rule that matches the command approves the retry without a prompt. Approve only the commands that you expect.
 
 Commands in `sandbox.excludedCommands`, for example `docker compose *`, also run outside the sandbox and can read these files.
 
@@ -190,21 +188,9 @@ Within the sandbox, only writes are restricted by default: commands can read the
 
 Hooks are shell scripts that Claude Code runs automatically at specific points during a session — before reading a file, after writing one, when a tool is called, and so on. They run outside of Claude's context and cannot be overridden by prompts, which makes them the right place to enforce hard rules.
 
-We use hooks for two main purposes:
+We use hooks for static analysis and formatting:
 
-- **Security** — to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
 - **Static analysis and formatting** — to run tools like ESLint (with [ESLint Stylistic](https://eslint.style/) for formatting) or RuboCop automatically after Claude modifies a file, so the codebase stays consistent without Claude having to remember to do it. For example, we run `eslint --fix` on every TypeScript file Claude edits.
-
-### Pre-read hook
-
-Our `pre-read` hook runs before Claude reads any file. It blocks access to:
-
-- **Credential files** — any file whose name starts with `.env` (`.env`, `.env.local`, `.env.production`, etc.) and `.netrc`.
-- **Sensitive directories** — `.ssh`, `.aws`, `.gnupg`, `.kube`, and `.docker`.
-
-If Claude tries to read a blocked path, the hook exits with a non-zero code and returns a `BLOCKED:` message. Claude Code surfaces this as an error and does not proceed with the read.
-
-The hook lives at `.claude/hooks/pre-read.sh` in the project repository and is wired up in `.claude/settings.json` under the `hooks` key.
 
 ## Resources
 
