@@ -1,8 +1,16 @@
 # AI Augmented Development
 
-At MarsBased, all developers use [Claude Code](https://claude.ai/download) as our primary AI coding tool. Rather than treating AI as a glorified autocomplete, we follow a structured methodology that keeps humans in control of decisions while letting AI handle the heavy lifting.
+At MarsBased, [Claude Code](https://claude.ai/download) is our default AI coding tool. Rather than treating AI as a glorified autocomplete, we follow a structured methodology that keeps humans in control of decisions while letting AI handle the heavy lifting.
 
 This guide covers how we work with AI coding agents, the methodology we follow, and how we set up our environment for consistent results.
+
+## Customer rules
+
+Some customers have their own rules for AI tools. A customer can require a different tool, or it can forbid AI tools on its code. In these projects, use the customer rules, not this guide. Tell the tech lead of the project before you start work.
+
+## Models
+
+We do not pin a model version. Opus is our default model. Some tasks fit a different model better, and Sonnet is enough for simple tasks. Use `/model` to change the model.
 
 ## The Research / Plan / Implement (RPI) methodology
 
@@ -45,6 +53,8 @@ Human judgment applies at three moments, not just at the end:
 2. **After Plan** — Is the approach sound?
 3. **After Implementation** — Does the output match requirements and plan?
 
+You are accountable for all the code that you merge. This rule is the same when an AI agent wrote the code or reviewed it.
+
 ## CLAUDE.md and rules
 
 Claude Code starts every session with a fresh context window. `CLAUDE.md` files give it persistent instructions so you don't re-explain the same things every time.
@@ -74,7 +84,7 @@ The context window is finite. How you manage it directly affects output quality.
 
 **Subagents** are independent Claude Code instances that run in isolation with their own context window. A useful mental model: treat a subagent the way you would treat someone you're delegating work to. When you identify a task you would hand off to a colleague — self-contained, well-defined, with a clear deliverable — that's a good candidate for a subagent. You scope the work, hand it over, and get back a result without being involved in the intermediate steps.
 
-A concrete example is the `pr-code-reviewer` agent. When a PR is ready for review, open a terminal, start Claude, and share the GitHub PR URL. The agent fetches the diff, evaluates it against a defined checklist — security, naming, test coverage, SOLID principles, commit conventions — and returns a structured review draft. Code review becomes something you delegate rather than something you do yourself.
+A concrete example is the `pr-code-reviewer` agent. When a PR is ready for review, open a terminal, start Claude, and share the GitHub PR URL. The agent fetches the diff, evaluates it against a defined checklist — security, naming, test coverage, SOLID principles, commit conventions — and returns a structured review draft. The draft is not a final review. The human reviewer reads the diff, decides on each finding, and approves the PR. The agent does not approve a PR. The author and the reviewer are accountable for the merged code.
 
 We don't default to subagents. We only reach for them when there is a clear reason:
 
@@ -118,7 +128,16 @@ Enable it globally in your user settings at `~/.claude/settings.json`:
         "~/.cargo/credentials.toml",
         "~/.azure",
         "~/.terraformrc",
-        "~/.terraform.d"
+        "~/.terraform.d",
+        "~/**/.env",
+        "~/**/.env.*",
+        "~/**/config/master.key",
+        "~/**/config/credentials/*.key"
+      ],
+      "allowRead": [
+        "~/**/.env.example",
+        "~/**/.env.*.example",
+        "~/**/.env.sample"
       ]
     },
     "credentials": {
@@ -143,6 +162,14 @@ Enable it globally in your user settings at `~/.claude/settings.json`:
 
 The two blocks cover the two ways a secret leaks into a shell command. `denyRead` blocks sandboxed commands from reading credential files and directories on disk. `credentials.envVars` unsets those variables before each sandboxed command runs, so a token exported in your shell is not inherited by whatever Claude executes. Deny entries merge across every settings scope and only ever narrow access, so a project can add to this list but never remove from it.
 
+The `~/**/` entries block the secrets of each project in your home directory: `.env` files and Rails key files. Without them, a sandboxed command can read these files, and Auto-allow mode does not ask you first. If a project keeps a secret in a different file, add that file to the project `.claude/settings.json`. `allowRead` opens the `.env` templates again, for example `.env.example` and `.env.sample`, because they contain no secrets.
+
+These entries apply to Bash commands only. To block the Read tool, add `Read` deny rules to `permissions.deny`.
+
+Some commands load these files when the application starts, for example `bin/rails`. In the sandbox, these commands fail with an `Operation not permitted` error. Claude can then retry the command outside the sandbox, where `denyRead` does not apply. In Manual mode, Claude Code asks you first. An allow rule that matches the command approves the retry without a prompt. Approve only the commands that you expect.
+
+Commands in `sandbox.excludedCommands`, for example `docker compose *`, also run outside the sandbox and can read these files.
+
 A denied variable is gone entirely for sandboxed commands, which will break a tool that genuinely needs it. If that happens, drop that single entry rather than removing the block.
 
 You can also run `/sandbox` inside a session, which opens a panel to configure it per project and tells you whether any dependency is missing. Choose Auto-allow mode: sandboxed commands run without prompting because the sandbox boundary is what contains them, and anything that can't be sandboxed falls back to the regular permission flow.
@@ -161,21 +188,9 @@ Within the sandbox, only writes are restricted by default: commands can read the
 
 Hooks are shell scripts that Claude Code runs automatically at specific points during a session — before reading a file, after writing one, when a tool is called, and so on. They run outside of Claude's context and cannot be overridden by prompts, which makes them the right place to enforce hard rules.
 
-We use hooks for two main purposes:
+We use hooks for static analysis and formatting:
 
-- **Security** — to prevent Claude from reading files that contain secrets or credentials, regardless of what the task is or what it is asked to do.
 - **Static analysis and formatting** — to run tools like ESLint (with [ESLint Stylistic](https://eslint.style/) for formatting) or RuboCop automatically after Claude modifies a file, so the codebase stays consistent without Claude having to remember to do it. For example, we run `eslint --fix` on every TypeScript file Claude edits.
-
-### Pre-read hook
-
-Our `pre-read` hook runs before Claude reads any file. It blocks access to:
-
-- **Credential files** — any file whose name starts with `.env` (`.env`, `.env.local`, `.env.production`, etc.) and `.netrc`.
-- **Sensitive directories** — `.ssh`, `.aws`, `.gnupg`, `.kube`, and `.docker`.
-
-If Claude tries to read a blocked path, the hook exits with a non-zero code and returns a `BLOCKED:` message. Claude Code surfaces this as an error and does not proceed with the read.
-
-The hook lives at `.claude/hooks/pre-read.sh` in the project repository and is wired up in `.claude/settings.json` under the `hooks` key.
 
 ## Resources
 
