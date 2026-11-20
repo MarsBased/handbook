@@ -9,7 +9,7 @@ This guide describes some best practices we apply when doing code reviews.
 - Write a pull request description: what changes, why, and how to test it.
 - Link the Linear issue.
 - Add screenshots or a video for UI changes.
-- Review your own diff first, unless the tech lead specifies otherwise.
+- Review your own diff first.
 
 ### Who reviews
 
@@ -76,8 +76,8 @@ When writing comments:
 - Don't write only negative comments, write also positive comments:
   - Positive comments increase motivation.
   - Positive comments encourage the software engineer to keep doing the right thing.
-- Prefix non-blocking comments with `nit:` (small detail) or `suggestion:` (optional idea). The author must resolve all other comments before the merge.
-- If you disagree after two rounds of comments, talk in a call.
+- Only comment on what needs to change. If a detail is not worth a change, do not mention it.
+- If you still disagree after two rounds of comments, think about a call. A short call usually resolves a disagreement faster than more written comments.
 
 Example of a not constructive comment:
 
