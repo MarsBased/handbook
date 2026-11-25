@@ -13,26 +13,26 @@ Managed by David and published weekly, the **MarsBased Podcast** is our core aud
 The podcast is split into two distinct editions to cater to our global audience, featuring both interviews with industry heavyweights and internal deep dives into MarsBased’s mission, tools, and decision-making processes.
 
 You can subscribe and tune in on your favorite platform:
-* **English Edition:** [Web](https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/life-on-mars-a-podcast-from-marsbased/id1516103624?l=en-GB)
+* **English Edition:** [Web](https://podcast.marsbased.com/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/2fCTBQIMivKx0PP2Pu7hcW) | [Apple Podcasts](https://podcasts.apple.com/es/podcast/marsbased-podcast-life-on-mars/id1516103624?l=en-GB)
 * **Spanish Edition:** [Web](https://podcast.marsbased.com/podcasts-es?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) | [Spotify](https://open.spotify.com/show/0OtwB1eJI2PlzRwhSMdjW3) | [Apple Podcasts](https://podcasts.apple.com/us/podcast/life-on-mars-el-podcast-de-marsbased/id1516103872?l=es-MX)
 * **Video Format:** Full video episodes and exclusive clips are available on our official [MarsBased YouTube Channel](https://www.youtube.com/@MarsBased).
 
 ### Top 3 featured episodes (English)
 
-* **[100x faster every 6 months: Linus Ekenstam on the future of AI](https://www.youtube.com/watch?v=AkTc49pofmU) (~37,500 views)**
+* **[100x faster every 6 months: Linus Ekenstam on the future of AI](https://www.youtube.com/watch?v=AkTc49pofmU) (~37,600 views)**
   Our most-watched English episode. A fascinating conversation with AI expert Linus Ekenstam on how automated tools and generative workflows are completely altering modern software development, scaling timelines, and what this means for the next generation of engineers.
 * **[Is your NDA a rookie mistake? Lessons from 12 years in tech - Building MarsBased #7](https://www.youtube.com/watch?v=Ibx7ReVdzEw) (~16,400 views)**
   Part of our transparent *Building MarsBased* series. Our CEO Àlex Rodriguez Bacardit breaks down the operational, financial, and legal realities of running a tech agency, explaining why we stopped signing standard NDAs blindly and how we turned them into an effective client qualification tool.
-* **[Silicon Valley’s longest-standing CEO: 37 Years leading Micrel](https://www.youtube.com/watch?v=TeKKREqtTr0) (~6,400 views)**
-  An incredible masterclass in leadership longevity and corporate culture. We sit down with a Silicon Valley veteran to discuss what it takes to lead a tech company through decades of industry shifts without losing your core values.
+* **[How we landed HP, Ford & FC Barcelona as clients - Building MarsBased](https://www.youtube.com/watch?v=uLCD0i73-Pk) (~10,300 views)**
+  How does a small development agency land work with global giants? Our CEO Àlex Rodríguez Bacardit shares the strategies we use to negotiate, win and maintain contracts with large corporate clients: why the 5-year mark is a tipping point for enterprise trust, how inbound marketing and technical SEO bring enterprise leads without cold calling, and why saying no to massive deals early on can strengthen your reputation.
 
 ### Top 3 featured episodes (Spanish)
 
 * **[Repaso de 2025: Qué hicimos bien y qué hicimos mal](https://www.youtube.com/watch?v=kiMNHI41f1g) (~31,300 views)**
   An exercise in raw transparency. The three founders (Àlex, Jordi, and Xavi) look back at the highs and lows of the previous year, openly discussing engineering market trends, revenue milestones, agency growth pains, and tactical mistakes.
-* **["El vibe coding es un arma de doble filo" con Midudev](https://www.youtube.com/watch?v=EXaFMqUcaWQ) (~22,700 views)**
+* **["El vibe coding es un arma de doble filo" con Midudev](https://www.youtube.com/watch?v=EXaFMqUcaWQ) (~23,200 views)**
   We host top tech creator Midudev to dissect the rise of "vibe coding". A deep dive into how AI-assisted coding impacts code quality, junior developer learning curves, and the shifting dynamics within development teams.
-* **[De dibujar cómics a trabajar en Google: La trayectoria de Carlos Azaustre](https://www.youtube.com/watch?v=EPCHAnPpKRA) (~15,700 views)**
+* **[De dibujar cómics a trabajar en Google: La trayectoria de Carlos Azaustre](https://www.youtube.com/watch?v=EPCHAnPpKRA) (~16,100 views)**
   A highly inspiring career breakdown with tech educator Carlos Azaustre. We explore his unconventional journey from illustration to engineering at Google, discussing community building, continuous learning, and personal branding in tech.
 
 ---
@@ -43,7 +43,7 @@ Before scaling our own media channels, our founding team frequently toured the i
 
 ### Tech Conferences & Communities
 * **Talent Arena (Mobile World Congress):** Both Àlex (CEO) and Xavi (CTO) have represented MarsBased as [featured speakers at Talent Arena](https://www.youtube.com/watch?v=kvLKdtge25g), the major talent-focused event held within the framework of the Mobile World Congress (MWC), delivering key talks on engineering culture, tech talent management, and modern software development.
-* **Startup Grind (Global Chapters):** Our CTO, Xavi, featured on a major panel at the [Startup Grind Tech Conference](https://www.youtube.com/watch?v=4MQIPrXPwKc&) discussing remote management alongside corporate perspectives. Our CEO, Àlex, has also been hosted globally to speak about bootstrapping and all-remote frameworks at [Startup Grind Glasgow](https://www.youtube.com/watch?v=puvv8-gtGRQ) and [Startup Grind Chisinau](https://www.youtube.com/watch?v=4EOEJ0WVRZk). Locally, our COO, Jordi, deep-dived into operational tools, hiring, and firing frameworks at Startup Grind Barcelona.
+* **Startup Grind (Global Chapters):** Our CTO, Xavi, featured on a major panel at the [Startup Grind Tech Conference](https://www.youtube.com/watch?v=4MQIPrXPwKc) discussing remote management alongside corporate perspectives. Our CEO, Àlex, has also been hosted globally to speak about bootstrapping and all-remote frameworks at [Startup Grind Glasgow](https://www.youtube.com/watch?v=puvv8-gtGRQ) and [Startup Grind Chisinau](https://www.youtube.com/watch?v=4EOEJ0WVRZk). Locally, our COO, Jordi, deep-dived into operational tools, hiring, and firing frameworks at Startup Grind Barcelona.
 * **IndieHackers Barcelona:** Àlex joined as a guest speaker at [IndieHackers Barcelona #3](https://www.youtube.com/watch?v=XWfxscnE5Ts) to talk about indie development, community building, and scaling an officeless company.
 * **Agile Conference Spain:** Àlex delivered a keynote presentation at [Agile Conference Spain](https://youtu.be/smwJWdeNANc) focusing on how to successfully structure remote work architectures across various organizational models.
 * **IronHack:** A long-standing educational collaboration where Àlex delivers an honest talk on [launching tech companies and lessons learned](https://www.youtube.com/watch?v=qvgrXkke52g) to incoming developer cohorts in Barcelona.
@@ -51,7 +51,7 @@ Before scaling our own media channels, our founding team frequently toured the i
 ### Business Media & Ecosystem Interviews
 * **Itnig:** Regular appearances discussing the realities of tech hiring and engineering workflows, including an early [meetup interview with entrepreneurs](https://podcast.marsbased.com/podcasts-en/34-interview-with-alex-at-itnig/?utm_source=github_handbook&utm_medium=referral&utm_campaign=evergreen&utm_content=talks) and a popular podcast episode breaking down [tech salaries, bootcamps, and engineering culture](https://www.youtube.com/watch?v=e4yN1yY5v-8).
 * **Financial & Mainstream Press:** Features in top-tier financial newspapers like Cinco Días, alongside biographical highlights such as Àlex’s interview on the legendary [*Radio TeleTaxi*](https://www.youtube.com/watch?v=cUnt5dxzCwQ) discussing life frameworks and his book *Camino al éxit(o)*.
-* **Ecosystem Channels:** In-depth media interviews including a deep technical and personal background session on [*La Tecnologeria*](https://tecnologeria.com/entrevistas/8x01/marsbased), a marketing-focused talk with Gerard Compte on [*FindThatLead*](https://www.youtube.com/watch?v=exBQEAv4hmw), and an international podcast feature on creativity and agency culture with Colombia's [*Evidencia Creativa*](https://pod.link/1033423186/episode/aHR0cHM6Ly9hcGkuc3ByZWFrZXIuY29tL2VwaXNvZGUvMjMxNTU0MzM=).
+* **Ecosystem Channels:** In-depth media interviews including a deep technical and personal background session on [*La Tecnologeria*](https://tecnologeria.com/entrevistas/8x01/marsbased), a marketing-focused talk with Gerard Compte on [*FindThatLead*](https://www.youtube.com/watch?v=exBQEAv4hmw), and an international podcast feature on creativity and agency culture with Colombia's *Evidencia Creativa*.
 * **Catalonia Clusters:** A massive two-hour remote management webinar targeted at supporting businesses transition smoothly into all-remote models.
 
 ### International Technical Outreach
