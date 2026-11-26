@@ -90,6 +90,7 @@ For now, we have the following resources available:
          1. [Command](/guides/patterns/rails/command.md)
          1. [Form Composition](/guides/patterns/rails/form-composition.md)
          1. [Query Object](/guides/patterns/rails/query-object.md)
+   1. [Elysia guidelines](/guides/development/elysia-guidelines.md)
 
 ## Security guidelines
 
