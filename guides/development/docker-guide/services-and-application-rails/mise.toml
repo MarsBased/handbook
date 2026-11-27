@@ -1,0 +1,35 @@
+# Docker tasks for the services + application setup. Rails runs in a container, so
+# there are no runtimes to pin here: every command goes through docker compose.
+# See the meta tools guide for task conventions.
+
+[tasks.setup]
+description = "Fresh clone to running stack: images, gems, packages, database"
+run = """
+set -e
+docker compose -f .dockerdev/compose.yml build
+docker compose -f .dockerdev/compose.yml run --rm rails bin/setup
+"""
+
+[tasks.dev]
+description = "Rails and Sidekiq in containers, one dekit task each"
+raw = true
+run = "dekit"
+
+# `run --rm --service-ports` instead of `up`: the container gets the terminal, so
+# byebug and pry breakpoints are interactive inside the dekit task.
+[tasks."dev:rails"]
+raw = true
+run = "docker compose -f .dockerdev/compose.yml run --rm --service-ports rails"
+
+[tasks."dev:jobs"]
+raw = true
+run = "docker compose -f .dockerdev/compose.yml run --rm jobs"
+
+[tasks."docker:run"]
+description = "Run a command in the application container, e.g. `mise run docker:run bin/rails db:migrate`"
+raw = true
+run = "docker compose -f .dockerdev/compose.yml run --rm runner"
+
+[tasks."docker:down"]
+description = "Stop and remove every container; the data in .dockerdev/volumes stays"
+run = "docker compose -f .dockerdev/compose.yml down"

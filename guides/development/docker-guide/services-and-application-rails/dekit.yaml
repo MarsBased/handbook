@@ -1,0 +1,10 @@
+# Tasks for `mise run dev`. Each one runs its mise task, which runs the process in
+# its own container. PostgreSQL, Redis and Selenium start with them through
+# depends_on in compose.yml; `mise run docker:down` stops those too.
+tasks:
+  rails:
+    cmd: mise run dev:rails
+    autostart: true
+  # Only needed for background jobs, such as sending e-mails: start it with `s`.
+  jobs:
+    cmd: mise run dev:jobs

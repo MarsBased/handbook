@@ -295,24 +295,11 @@ Import from `src/` with the `@/` alias (`@/components/...`, `@/hooks/api/...`) a
 
 ###  2.4. Tooling
 
-- Package and script manager: [bun](https://bun.sh/) (`bun install`, `bun add`, `bun run <script>`, `bunx <cli>`), pinned with [mise](https://mise.jdx.dev/) (`mise.toml`) so everyone and CI run the same version
-- Git hooks: [lefthook](https://github.com/evilmartians/lefthook), installed on `bun install` through the `prepare` script. Pre-commit lints staged files with `--fix` and `--max-warnings 0`; pre-push runs typecheck, lint and tests with coverage
+- Package and script manager: [bun](https://bun.sh/) (`bun install`, `bun add`, `bun run <script>`, `bunx <cli>`), pinned in `.bun-version`, as the [meta tools guide](/guides/development/meta-tools-guide.md#tool-versions) describes, so everyone and CI run the same version
+- Git hooks: lefthook, set up as in the [meta tools guide](/guides/development/meta-tools-guide.md#lefthook-git-hooks). Pre-commit lints staged files with `--fix` and `--max-warnings 0`; pre-push runs typecheck, lint and tests with coverage
 - CI runs the same three commands: `lint -- --max-warnings 0`, `typecheck` and `test:cov`
-- Scripts to expect in every project (run with `bun run <script>`): `start`, `android`, `ios`, `web`, `lint`, `lint:fix`, `typecheck`, `test`, `test:cov`, `api:generate`
-- Projects with more than one service (the app plus its backend, a database, a mock server) run them together with [mprocs](https://github.com/pvolok/mprocs): one committed `mprocs.yaml` at the repository (or meta repository) root, one process per service, started with `bun run dev`. Every developer gets the same set of processes, one window, per-process logs and restarts. A single-service app doesn't need it: `bun run start` is enough
-
-```yaml
-# mprocs.yaml
-procs:
-  app:
-    cwd: ./mobile
-    shell: bun run start
-  backend:
-    cwd: ./backend
-    shell: bun run dev
-  db:
-    shell: docker compose up postgres
-```
+- `package.json` scripts to expect in every project: `start`, `android`, `ios`, `web`, `lint`, `lint:fix`, `typecheck`, `test`, `test:cov`, `api:generate`. CI calls them directly; in development, run them through the mise tasks that wrap them (see [Tasks CI runs](/guides/development/meta-tools-guide.md#tasks-ci-runs))
+- Projects with more than one service (the app plus its backend, a database, a mock server) run them together with dekit, set up as in the [meta tools guide](/guides/development/meta-tools-guide.md#dekit-development-processes): `mise run dev` starts every service, and the Expo dev server (`bun run start`) is one of its tasks. A single-service app doesn't need it: the `start` script is enough
 
 ##  3. Common patterns
 
@@ -627,7 +614,7 @@ Analytics, marketing, payments and crash reporting SDKs are the code most likely
 - Builds and releases: [EAS](https://expo.dev/eas) Build, Submit and Update, with [expo-dev-client](https://docs.expo.dev/versions/latest/sdk/dev-client/) for development builds
 - Testing: [jest-expo](https://docs.expo.dev/develop/unit-testing/), [React Native Testing Library](https://callstack.github.io/react-native-testing-library/)
 - Lint and format: `eslint-config-expo`, [ESLint Stylistic](https://eslint.style/), `@tanstack/eslint-plugin-query`, `eslint-plugin-react-you-might-not-need-an-effect`, `eslint-plugin-simple-import-sort`
-- Tooling: [bun](https://bun.sh/), [mise](https://mise.jdx.dev/), [lefthook](https://github.com/evilmartians/lefthook), [mprocs](https://github.com/pvolok/mprocs) for multi-service dev environments
+- Tooling: [bun](https://bun.sh/); mise, lefthook and dekit as in the [meta tools guide](/guides/development/meta-tools-guide.md)
 
 ###  4.2. Other libraries we have used
 

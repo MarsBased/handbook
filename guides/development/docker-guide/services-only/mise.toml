@@ -1,0 +1,14 @@
+# Docker tasks for the services-only setup. Merge them into the project's mise.toml;
+# the rest of that file (tools, env, setup, dev) is described in the meta tools guide.
+
+[tasks."db:up"]
+description = "Start PostgreSQL and Redis in the background and wait until they are up"
+run = "docker compose -f .dockerdev/compose.yml up --detach --wait"
+
+[tasks."dev:db"]
+description = "PostgreSQL and Redis in the foreground, for the dekit db task"
+run = "docker compose -f .dockerdev/compose.yml up"
+
+[tasks."db:down"]
+description = "Stop and remove the service containers; the data in .dockerdev/volumes stays"
+run = "docker compose -f .dockerdev/compose.yml down"

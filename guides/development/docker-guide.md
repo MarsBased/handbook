@@ -19,106 +19,101 @@ It is useful to think of it as if the Docker image is just the bare-bones OS and
 
 There are 2 options to set up the development environment with Docker:
 
-- **Services only:** External services (database, Redis, Minio, Elastic Search, etc.) are run with Docker but the application runs locally.
+- **Services only:** External services (database, Redis, Elasticsearch, etc.) are run with Docker but the application runs locally.
 - **Services + Application:** Apart from services, the application is also run in a container.
 
 Running everything with Docker has the advantage of not needing to have any dependency installed locally, apart from Docker. The disadvantage is that it runs slower because the application can't use the full memory + CPU potential from the computer.
 
-When working on a single application it makes sense to use the services only approach, while when working on multiple projects it is more convenient to run all applications in containers to avoid having a dependency hell in the computer.
+Services only is our default: the application runs natively, with the runtimes that [mise](/guides/development/meta-tools-guide.md#mise-versions-environment-and-tasks) installs per project. Use services + application when the project cannot run natively. This usually happens in old projects whose dependencies can no longer be installed on a current machine, for example gems that only work with OpenSSL 1.1.
 
 ## Services only development setup
 
-In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize the services for the development application, we create a `.dockerdev` directory in the application root, which contains the `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`.
 
 The `.dockerdev` directory contains the following files:
 
-- `docker-compose.yml`: Contains only external services.
+- `compose.yml`: Contains only external services. Its `name` key sets the Docker Compose project name; without it, Docker Compose takes the name from the directory, and every project would be called `dockerdev`.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
-- `bin/dockerdev`: [All development operations](#working-with-docker) with Docker are done through this script.
+- `mise.toml`: [All development operations](#working-with-docker) with Docker are mise tasks, as described in the [meta tools guide](/guides/development/meta-tools-guide.md#docker-local-services).
 - We need to add `.dockerdev/volumes/*` to the `.gitignore`.
 
 ### Working with Docker
 
-The `bin/dockerdev` script contains all the necessary commands to start, stop and manage the services.
+The example `mise.toml` wraps every `docker compose` call, so nobody has to remember the `-f .dockerdev/compose.yml` flag:
+
+- `mise run db:up`: start the services in the background and wait until they are up.
+- `mise run db:down`: stop and remove the containers. The data in `.dockerdev/volumes` stays.
+- `mise run dev:db`: the services in the foreground, for the `db` task of [dekit](/guides/development/meta-tools-guide.md#dekit-development-processes).
 
 ### Initial setup
 
-When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
-
-This will perform several things:
-
-- Build Docker images.
-- Create the Minio bucket.
+When setting up an application for the first time, you just need to run `mise run setup`. The project's `setup` task calls `db:up`, which starts the services.
 
 ## Rails Docker for development setup
 
-In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `docker-compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize a Rails application for development, we create a `.dockerdev` directory in the application root, which contains the `Dockerfile`, `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`, `<ruby-version>` and `<bundler-version>`.
 
 The `.dockerdev` directory contains the following files:
 
-- `docker-compose.yml`: [Docker compose configuration](#docker-compose-configuration).
+- `compose.yml`: [Docker compose configuration](#docker-compose-configuration).
 - `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
 - `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `com.user.docker-host-alias.plist`: This file is used to create an alias from the 127.17.0.1 to localhost, in order to [make Minio accessible from both the host and containers](#make-minio-accessible-everywhere)
-- `.env`: This file is read by Docker compose when it runs, and we use it to define a single environment variable with the name of the Docker compose project. By default, Docker compose takes the name from the directory, so without this environment variable, the project would be called `dockerdev`.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
-- `bin/dockerdev`: [All development operations](#working-with-docker) with Docker are done through this script.
+- `mise.toml`: [All development operations](#working-with-docker) with Docker are mise tasks, as described in the [meta tools guide](/guides/development/meta-tools-guide.md#docker-local-services).
+- `dekit.yaml`: the [development processes](/guides/development/meta-tools-guide.md#dekit-development-processes), one task per container.
 - We need to add `.dockerdev/volumes/*` to the `.gitignore`.
 - [Capybara needs to be configured](#capybara-configuration) to use the selenium container.
 
 ### Working with Docker
 
-The `bin/dockerdev` script contains all the necessary commands to start, stop and manage the application.
+The example `mise.toml` wraps every `docker compose` call, so nobody has to remember the `-f .dockerdev/compose.yml` flag. Rails runs in a container, so mise installs no runtimes here; it only holds the tasks.
 
 ### Application setup
 
-When setting up an application for the first time, you just need to run `bin/dockerdev setup`.
+When setting up an application for the first time, you just need to run `mise run setup`.
 
 This will perform several things:
 
 - Build Docker images.
-- Create the Minio bucket.
 - Install dependencies.
 - Prepare the database.
 
-From that point on, to install new gems or node modules you will need to do it from a container. You can open a container with bash by running `bin/dockerdev bash` and inside just run `bundle install` or `yarn install` as usual.
+From that point on, to install new gems or node modules you will need to do it from a container. You can open a container with bash by running `mise run docker:run bash` and inside just run `bundle install` or `yarn install` as usual.
 
 ### Running the application
 
-In order to have the application fully functional you need to run several processes in different terminal sessions:
+`mise run dev` opens dekit with one task per process, each in its own container:
 
-- Rails server: `bin/dockerdev server`.
-- Background jobs: `bin/dockerdev jobs` (only needed if you wish to run background jobs like sending e-mails).
+- `rails`: the Rails server, started automatically. Breakpoints are interactive in its task.
+- `jobs`: Sidekiq, only needed if you wish to run background jobs like sending e-mails. Select it and press `s`.
+
+PostgreSQL, Redis and Selenium start with them, through `depends_on` in `compose.yml`.
 
 ### Rails commands
 
-In order to execute rails command you can use `bin/dockerdev run [command]`. This will run the command inside a container. For example to run database migrations: `bin/dockerdev run rake db:migrate`.
+In order to execute a Rails command you can use `mise run docker:run [command]`. This will run the command inside a container. For example to run database migrations: `mise run docker:run bin/rails db:migrate`.
 
 ### Other commands
 
-- Start only services: `bin/dockerdev start-services`
-- Stop and remove containers: `bin/dockerdev stop`.
-- Open a bash session: `bin/dockerdev run bash`.
-- Run the test suite: `bin/dockerdev run rspec`.
+- Stop and remove every container: `mise run docker:down`.
+- Open a bash session: `mise run docker:run bash`.
+- Run the test suite: `mise run docker:run bundle exec rspec`.
 
 ### Capybara configuration (Ruby on Rails only)
 
-To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `docker-compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
+To get reliable test runs, we run system tests against a container that runs a pinned version of Chromium (`selenium` service in `compose.yml`). This also avoids the need to have Chrome installed locally to run the test suite.
 
 To configure Capybara to use the container add the following to `spec_helper.rb`:
 
@@ -231,23 +226,3 @@ All the application services inherit from a common `app` and/or `backend` config
   - `./.psqlrc:/root/.psqlrc:ro` and `./.pryrc:/root/.pryrc:ro`: This is a simple way of copying files to the container without needing to embed them in the image.
 
 The rest of services defined are pretty much self-explanatory.
-
-### Make Minio accessible everywhere
-
-When working with MacOS we need to run `sudo bin/dockerdev setup-localhost-alias` the first time we are setting up the project.
-
-This sets up an alias of 172.17.0.1 to localhost in order to be able to interact with Minio.
-
-#### Why?
-
-Minio needs to be accessible both from the browser and from the containers. We need it from the browser in order to access files from pages (like images) and we need it from the container in order to upload files.
-
-However, there is no way to access Minio from both places using the same URL:
-
-- From the host, we can access by using `localhost`: http://localhost:9000
-- From the container, we can access by using the name of the container: http://minio:9000
-
-To overcome this limitation, we make use of the fact that from the container the IP `127.17.0.1` can be used to access the host. By setting up an alias on the host from this IP to localhost we can use the URL http://127.17.0.1:9000 from both the host and the container:
-
-- From the host, it just maps to localhost, so it's the same as before.
-- From the container, it maps to the host, and from there it accesses Minio through the exposed port.
