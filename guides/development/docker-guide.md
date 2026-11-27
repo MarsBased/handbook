@@ -19,12 +19,12 @@ It is useful to think of it as if the Docker image is just the bare-bones OS and
 
 There are 2 options to set up the development environment with Docker:
 
-- **Services only:** External services (database, Redis, Minio, Elastic Search, etc.) are run with Docker but the application runs locally.
+- **Services only:** External services (database, Redis, Elastic Search, etc.) are run with Docker but the application runs locally.
 - **Services + Application:** Apart from services, the application is also run in a container.
 
 Running everything with Docker has the advantage of not needing to have any dependency installed locally, apart from Docker. The disadvantage is that it runs slower because the application can't use the full memory + CPU potential from the computer.
 
-When working on a single application it makes sense to use the services only approach, while when working on multiple projects it is more convenient to run all applications in containers to avoid having a dependency hell in the computer.
+Services only is our default: the application runs natively, with the runtimes that [mise](/guides/development/meta-tools-guide.md#mise-versions-environment-and-tasks) installs per project. Use services + application when the project cannot run natively. This usually happens in old projects whose dependencies can no longer be installed on a current machine, for example gems that only work with OpenSSL 1.1.
 
 ## Services only development setup
 
@@ -36,8 +36,7 @@ The `.dockerdev` directory contains the following files:
 
 - `compose.yml`: Contains only external services. Its `name` key sets the Docker Compose project name; without it, Docker Compose takes the name from the directory, and every project would be called `dockerdev`.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a college, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
@@ -54,7 +53,7 @@ The example `mise.toml` wraps every `docker compose` call, so nobody has to reme
 
 ### Initial setup
 
-When setting up an application for the first time, you just need to run `mise run setup`. The project's `setup` task calls `docker:setup`, which starts the services and creates the Minio bucket.
+When setting up an application for the first time, you just need to run `mise run setup`. The project's `setup` task calls `db:up`, which starts the services.
 
 ## Rails Docker for development setup
 
@@ -68,9 +67,7 @@ The `.dockerdev` directory contains the following files:
 - `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
 - `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `com.user.docker-host-alias.plist`: This file is used to create an alias from the 127.17.0.1 to localhost, in order to [make Minio accessible from both the host and containers](#make-minio-accessible-everywhere)
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres and minio volumes. This makes it easier to manipulate them, back them up if you are migrating to a new laptop, share them with a college, etc.
-- `scripts` directory: This directory contains some utilities to aid in the setup of the environment.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a college, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
@@ -90,7 +87,6 @@ When setting up an application for the first time, you just need to run `mise ru
 This will perform several things:
 
 - Build Docker images.
-- Create the Minio bucket.
 - Install dependencies.
 - Prepare the database.
 
@@ -101,10 +97,9 @@ From that point on, to install new gems or node modules you will need to do it f
 `mise run dev` opens dekit with one task per process, each in its own container:
 
 - `rails`: the Rails server, started automatically. Breakpoints are interactive in its task.
-- `webpacker`: the asset dev server, started automatically.
 - `jobs`: Sidekiq, only needed if you wish to run background jobs like sending e-mails. Select it and press `s`.
 
-PostgreSQL, Redis, Minio and Selenium start with them, through `depends_on` in `compose.yml`.
+PostgreSQL, Redis and Selenium start with them, through `depends_on` in `compose.yml`.
 
 ### Rails commands
 
@@ -231,23 +226,3 @@ All the application services inherit from a common `app` and/or `backend` config
   - `./.psqlrc:/root/.psqlrc:ro` and `./.pryrc:/root/.pryrc:ro`: This is a simple way of copying files to the container without needing to embed them in the image.
 
 The rest of services defined are pretty much self-explanatory.
-
-### Make Minio accessible everywhere
-
-When working with macOS we need to run `mise run docker:localhost-alias` the first time we are setting up the project. It asks for your password, because it installs a system launch daemon.
-
-This sets up an alias of 172.17.0.1 to localhost in order to be able to interact with Minio.
-
-#### Why?
-
-Minio needs to be accessible both from the browser and from the containers. We need it from the browser in order to access files from pages (like images) and we need it from the container in order to upload files.
-
-However, there is no way to access Minio from both places using the same URL:
-
-- From the host, we can access by using `localhost`: http://localhost:9000
-- From the container, we can access by using the name of the container: http://minio:9000
-
-To overcome this limitation, we make use of the fact that from the container the IP `127.17.0.1` can be used to access the host. By setting up an alias on the host from this IP to localhost we can use the URL http://127.17.0.1:9000 from both the host and the container:
-
-- From the host, it just maps to localhost, so it's the same as before.
-- From the container, it maps to the host, and from there it accesses Minio through the exposed port.

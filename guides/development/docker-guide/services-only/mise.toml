@@ -2,18 +2,13 @@
 # the rest of that file (tools, env, setup, dev) is described in the meta tools guide.
 
 [tasks."db:up"]
-description = "Start PostgreSQL, Redis and Minio in the background and wait until they are up"
-run = "docker compose -f .dockerdev/compose.yml up --detach --wait postgres redis minio"
+description = "Start PostgreSQL and Redis in the background and wait until they are up"
+run = "docker compose -f .dockerdev/compose.yml up --detach --wait"
 
 [tasks."dev:db"]
-description = "PostgreSQL, Redis and Minio in the foreground, for the dekit db task"
-run = "docker compose -f .dockerdev/compose.yml up postgres redis minio"
+description = "PostgreSQL and Redis in the foreground, for the dekit db task"
+run = "docker compose -f .dockerdev/compose.yml up"
 
 [tasks."db:down"]
 description = "Stop and remove the service containers; the data in .dockerdev/volumes stays"
 run = "docker compose -f .dockerdev/compose.yml down"
-
-[tasks."docker:setup"]
-description = "Create the Minio bucket. Called by `mise run setup`"
-depends = ["db:up"]
-run = "docker compose -f .dockerdev/compose.yml run --rm --entrypoint='/bin/sh -c /scripts/setup-minio.sh' minio-client"

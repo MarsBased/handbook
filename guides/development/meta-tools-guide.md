@@ -36,11 +36,13 @@ Five rules decide most of the questions this guide answers. When a situation is 
 
 **One command per intent, one owner per command.** There will be four things in a repository able to run the tests: a `package.json` script, a mise task, a moon task and a mani task. If all four are wired, nobody knows which one is canonical and two of them are quietly out of date. Each tool owns one layer, and calls flow in one direction only (see [How they compose](#how-they-compose)).
 
-**Things that execute our code run natively under mise. Things we talk to over a socket run in containers.** Node, Bun, Ruby, the linter, the CLIs: mise. PostgreSQL, Redis, S3, the search engine, the message broker: Docker Compose, every time. A runtime wants to be fast, on the real file system, with a debugger attached and the editor resolving it. A service wants to be disposable and identical for everyone, down to the extensions, with a volume you can delete when the data gets weird.
+**By default, things that execute our code run natively under mise, and things we talk to over a socket run in containers.** Node, Bun, Ruby, the linter, the CLIs: mise. PostgreSQL, Redis, the search engine, the message broker: Docker Compose. A runtime that runs natively is faster, works on the real file system and is easier to debug. A service in a container is identical for everyone and can be deleted and recreated.
 
-**People run mise tasks. CI runs standard scripts.** Many CI runners and deployment platforms do not let you install mise, so everything they run lives in the ecosystem's standard files (`package.json` scripts, Rake tasks, `bin/` scripts) and reads runtime versions from the standard version files. In development, those same commands are always run through the mise tasks that wrap them.
+The exception is a project that cannot run natively. Some old projects that we have not been able to upgrade depend on libraries that can no longer be installed on a current machine, for example gems that only work with OpenSSL 1.1. Those projects also run the application in a container, with the "services + application" setup of our [Docker guide](/guides/development/docker-guide.md).
 
-**Hooks are a fast feedback loop, not a security boundary. CI is the boundary.** A check that must never be skipped belongs in CI. The hook is the early warning, and an escape hatch for it is fine.
+**People run mise tasks. CI runs standard scripts.** Everything CI or a deployment runs lives in the ecosystem's standard files (`package.json` scripts, Rake tasks, `bin/` scripts), and mise tasks wrap those same commands for development. See [Tasks CI runs](#tasks-ci-runs).
+
+**Hooks are early warnings and can be skipped when the situation calls for it.** CI enforces every check required to merge.
 
 **The README describes what the project is, not how to get it running.** The repository already knows how to get itself running. The README carries the three commands and points here.
 
@@ -80,13 +82,13 @@ eval "$(mise activate bash)"
 
 Other shells (fish, nushell, PowerShell) are covered in the [mise docs](https://mise.jdx.dev/installing-mise.html#shells). Tools that bypass the shell (IDEs, CI steps) can use `mise exec -- node --version` or `mise which node`.
 
-**Trust is a security feature, not a nuisance.** A config file that sets environment variables and runs commands is a code execution vector. The first time mise sees a config it refuses to load its environment and templates until you run `mise trust`, and asks again when the file changes. Review the file before trusting it, and do not train yourself to type `mise trust` reflexively on repositories cloned from the internet.
+mise refuses to load a config's environment and templates until you run `mise trust`, and asks again when the file changes, because a config that sets environment variables and runs commands can execute code. Review the file before trusting it.
 
 ### Tool versions
 
 Language runtimes and tools are pinned in two different places, depending on who else has to read the version.
 
-**Language runtimes go in their ecosystem's standard version file.** mise is rarely available by default in CI runners, build images or deployment platforms, but every ecosystem has a version file that its own tooling already reads: the official setup actions, the buildpacks, the hosting platforms and the other version managers your teammates might still use. If the only copy of the version lives in `mise.toml`, the laptop and the deployment silently drift apart. So the runtime version lives in the file the ecosystem already reads, and mise reads that same file:
+**Language runtimes go in their ecosystem's standard version file.** CI and deployment platforms do not run mise (see [Tasks CI runs](#tasks-ci-runs)), but every ecosystem has a version file that its own tooling already reads: the official setup actions, the buildpacks, the hosting platforms and other version managers. mise reads that same file, so the laptop and the deployment use the same version:
 
 | Runtime | Version file | Also read by |
 |---|---|---|
@@ -122,7 +124,7 @@ Rules:
 - **Each version lives in exactly one file.** A runtime that has a version file must not also appear in `[tools]`. `mise.toml` takes precedence over idiomatic files, so a duplicate makes the laptop ignore the file that the deploy reads, and the two drift apart again.
 - **Commit one version file per runtime.** Some runtimes accept several (Node also reads `.node-version` and `package.json`, Go also reads `.go-version`). Commit only the one in the table above, so there is never a question of which one wins.
 - **Declare the meta tools too.** lefthook, dekit, mani and any other CLI the tasks call go in `[tools]`. Beyond runtimes, mise has `npm:`, `cargo:`, `pipx:`, `go:`, `ubi:` and `aqua:` backends, so your formatter, `terraform` or any release binary from GitHub can be pinned in the same file.
-- **Point CI at the version file too.** Every official setup action has a `*-version-file` input (see the table). Use it instead of repeating the version in the workflow, and do not install mise in CI (see [Tasks CI runs](#tasks-ci-runs)).
+- **Point CI at the version file too.** Every official setup action has a `*-version-file` input (see the table). Use it instead of repeating the version in the workflow.
 - **When a platform ignores the version file, pin it there and say so.** For example, Vercel takes the Node major from `engines.node` in `package.json` or from the project settings, and Heroku takes Ruby from the `ruby` line in the `Gemfile` (`ruby file: ".ruby-version"` makes it read the file). Set the platform to the same version and add a comment above `idiomatic_version_file_enable_tools` in `mise.toml` saying where the second copy lives. Version files do not reliably support comments.
 - **Bumping a runtime is a one-file change.** Edit the version file, run `mise install`, and commit with a message that says why the version changed. `mise use` writes to `mise.toml`, so only use it for tools that live there.
 
@@ -214,12 +216,12 @@ Things worth knowing:
 
 ### Tasks CI runs
 
-Many CI runners and deployment platforms do not allow installing mise, or make it awkward enough that nobody keeps it working. So anything CI or a deployment runs is **not** defined in mise. It lives in the ecosystem's standard file, which every runner can execute with nothing more than the official setup action:
+Many CI runners and deployment platforms do not allow installing mise. So anything CI or a deployment runs is **not** defined in mise. It lives in the ecosystem's standard file, which every runner can execute with only the official setup action:
 
 | Ecosystem | Where CI commands live | CI calls |
 |---|---|---|
 | JavaScript / TypeScript | `scripts` in `package.json` | `bun run lint`, `npm run test` |
-| Ruby | Rake tasks and `bin/` scripts | `bin/rails test`, `bin/rubocop` |
+| Ruby | Rake tasks and `bin/` scripts | `bin/rspec spec` |
 | Anything else | An executable in `bin/` | `bin/lint` |
 
 ```jsonc
@@ -238,9 +240,8 @@ The matching mise tasks are one-line wrappers (`run = "bun run lint"`), so the c
 
 Rules:
 
-- **CI never installs mise and never calls `mise run`.** It installs runtimes from the [standard version files](#tool-versions) with the official setup actions and calls the standard scripts directly.
 - **Development only uses mise tasks.** Developers, hooks, dekit tasks and agents call `mise run lint`, never `bun run lint`. The mise task is where the environment, the `.env` and the `depends` chain come from.
-- **Development-only tasks can live only in mise.** `setup`, `dev`, `db:up`, `db:reset` or `lint:staged` are never run by CI, so they do not need a standard script.
+- **Development-only tasks live only in mise.** `setup`, `dev`, `db:up`, `db:reset` and `lint:staged` need no standard script.
 
 ### Standard task names
 
@@ -260,25 +261,24 @@ Use the same names in every project so that nobody has to read `mise.toml` to ge
 | `db:reset` | Drop the volume, migrate, seed. The database back to its initial state. |
 | `reset` | Everything `setup` does from a clean slate: no containers, no volumes, no stray processes. |
 
-**`setup` and `reset` are idempotent.** Running either twice in a row leaves the machine in the same state as running it once, and running it on a half-broken checkout repairs it instead of failing. In practice: guard anything that creates a file (`[ -f .env ] || cp .env.example .env`), rely on installers that are no-ops when nothing changed (`bun install`, `bundle install`, `lefthook install`), keep migrations incremental and seeds additive, and in `reset` tear down with commands that tolerate absence (`docker compose down --volumes --remove-orphans` succeeds when nothing is running). A task that only works from a fresh clone is a task nobody can run on the day they need it.
+**`setup` and `reset` are idempotent.** Running either twice in a row leaves the machine in the same state as running it once, and running it on a half-broken checkout repairs it instead of failing. In practice: guard anything that creates a file (`[ -f .env ] || cp .env.example .env`), rely on installers that are no-ops when nothing changed (`bun install`, `bundle install`, `lefthook install`), keep migrations incremental and seeds additive, and in `reset` tear down with commands that tolerate absence (`docker compose down --volumes --remove-orphans` succeeds when nothing is running).
 
 Group related tasks with a colon prefix (`db:`, `docker:`, `test:`), and keep the plain name (`test`) for the thing you run most.
 
 ## Docker: local services
 
-Docker runs the infrastructure a project depends on locally: PostgreSQL, Redis, Minio, Elasticsearch, Mailpit. The application itself runs on the host with the runtime mise installs, which keeps it fast and keeps debugging simple. Our [Docker guide](/guides/development/docker-guide.md) describes this "services only" setup in depth, along with the "services + application" alternative for when the whole stack has to run in containers.
+Docker runs the infrastructure a project depends on locally: PostgreSQL, Redis, Elasticsearch, Mailpit. The application itself runs on the host with the runtime mise installs, which keeps it fast and keeps debugging simple. Our [Docker guide](/guides/development/docker-guide.md) describes this "services only" setup in depth, along with the "services + application" alternative for projects that cannot run natively.
 
 In the context of this guide, Docker is a dependency of mise tasks:
 
 ```yaml
 # .dockerdev/compose.yml
-# Local development infrastructure only; production uses a managed database.
-# Credentials must match DATABASE_URL in the root .env (see .env.example).
 name: acme
 
 services:
   postgres:
     image: postgres:18
+    # Credentials must match DATABASE_URL in the root .env (see .env.example).
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -304,7 +304,7 @@ volumes:
 
 Conventions:
 
-- **Services only, never runtimes.** See the [Principles](#principles). If you find yourself writing a `Dockerfile` for the application in development, read the Docker guide first and make sure you need it.
+- **Services only by default.** The application runs in a container only when the project cannot run natively (see the [Principles](#principles)). Before writing a `Dockerfile` for the application in development, read the Docker guide and make sure you need it.
 - **Keep it in `.dockerdev/`**, away from any production `Dockerfile` in the root.
 - **Set `name`** so containers and volumes are not called after the directory, which is `dockerdev` for every project.
 - **Add a `healthcheck` to every service** and start them with `docker compose up --detach --wait`, so the task that follows (`db:migrate`) does not race the database.
@@ -315,7 +315,7 @@ Conventions:
 
 ## lefthook: Git hooks
 
-Everyone has been told to run the linter before committing. Nobody does it reliably. [lefthook](https://lefthook.dev/) manages Git hooks from a `lefthook.yml` committed to the repository. It is a single Go binary, so it works the same for a Rails, Next.js or Python project, and it runs jobs in parallel.
+[lefthook](https://lefthook.dev/) manages Git hooks from a `lefthook.yml` committed to the repository, so that checks run automatically before committing. It is a single Go binary, so it works the same for a Rails, Next.js or Python project, and it runs jobs in parallel.
 
 ### Setup
 
@@ -337,7 +337,6 @@ pre-commit:
       glob: "*.{ts,tsx,js,json,css}"
       run: mise run lint:staged {staged_files}
       stage_fixed: true
-    # Type-checks run across the whole project: partial checks are unsound.
     - name: typecheck
       glob: "*.{ts,tsx}"
       run: mise run typecheck
@@ -351,16 +350,16 @@ pre-push:
       run: mise run e2e
 ```
 
-Four features carry the whole thing:
+The four features this config relies on:
 
-- **`parallel: true`.** The linter, the type checker and the formatter run at the same time. This is the difference between a 1.5 second hook and a 6 second hook, and 6 seconds is where people start typing `--no-verify`.
+- **`parallel: true`.** The linter, the type checker and the formatter run at the same time to speed up checks.
 - **`glob` + `{staged_files}`.** The job only runs when matching files are staged, and only receives those files. Touching a README does not trigger a type check.
 - **`stage_fixed: true`.** Autofixes get staged, so the commit contains the fixed code instead of failing and making you re-add everything.
-- **`skip: [merge, rebase]`.** Hooks do not fire forty times during an interactive rebase, and formatting a merge commit does not rewrite files you did not touch.
+- **`skip: [merge, rebase]`.** Hooks do not run on every commit of a rebase, and formatting a merge commit does not rewrite files you did not touch.
 
 Conventions:
 
-- **Hooks call mise tasks.** The hook is a trigger, the task is the truth. When the lint command changes, `lefthook.yml` stays correct. lefthook never defines real work.
+- **Hooks call mise tasks.** When the lint command changes, `lefthook.yml` stays correct. lefthook never defines real work.
 - **`pre-commit` must be fast.** Lint and format staged files, type-check when it takes seconds. A test suite is `pre-push`.
 - **`pre-push` runs the tests.** Unit tests before end-to-end. If the end-to-end suite takes minutes and CI already gates merges on it, leave it out of the hook.
 - **Do not validate commit messages in a hook.** Our [Git guidelines](/guides/development/git-guidelines.md) only enforce the message format on the squashed commit, and intermediate commits are free-form.
@@ -369,7 +368,7 @@ Conventions:
 ### Day to day
 
 - `lefthook run pre-commit --all-files` runs a hook by hand on the whole repository. CI does not run hooks: it calls the [standard scripts](#tasks-ci-runs) the hooks' mise tasks wrap.
-- `LEFTHOOK=0 git commit` or `git commit --no-verify` skips the hooks. That is fine: hooks are the early warning, CI is the boundary. Do it knowingly, not by habit.
+- `LEFTHOOK=0 git commit` or `git commit --no-verify` skips the hooks. CI still runs every required check.
 - Personal overrides go in a git-ignored `lefthook-local.yml`, which merges into the main file. Skipping the end-to-end suite on push because you are on a train is a valid use:
 
 ```yaml
@@ -544,19 +543,17 @@ Conventions:
 - **Keep the lockfile in text form** (`bun.lock`). Binary lockfiles are unreviewable when five people touch dependencies in the same week.
 - **`package.json` scripts are the primitive.** One package, one command, no cross-package knowledge. mise tasks and moon tasks call them; they never call mise or moon.
 
-The honest limitation: workspaces solve dependency resolution, not builds. `bun run --filter '*' build` rebuilds everything every time and does not know that `packages/types` must build before `apps/api`. With five packages that is fine. With forty packages and CI on every pull request, that is where your afternoon goes, and where moon starts.
+Workspaces solve dependency resolution, not builds. `bun run --filter '*' build` rebuilds everything every time and does not know that `packages/types` must build before `apps/api`. That is fine for a few packages. When the repository has many packages and CI runs on every pull request, the build becomes slow, and that is the problem [moon](#moon-monorepo-task-graph) solves.
 
 ## moon: monorepo task graph
 
 [moon](https://moonrepo.dev/) is a task runner and build system for monorepos, in the same category as Turborepo and Nx. Where mise tasks and workspace scripts are a flat list, moon knows which project depends on which, hashes inputs and outputs to skip work that has not changed, and can run only what a change affected.
 
-It is the heaviest tool in this guide: `.moon/workspace.yml`, `.moon/toolchains.yml`, inherited tasks in `.moon/tasks.yml`, a `moon.yml` per project, an afternoon of setup and a week of getting `inputs` right. **Do not adopt it on a three-package repository.** Bun workspaces plus mise tasks cover most of our monorepos. The honest triggers are:
+It is the heaviest tool in this guide: `.moon/workspace.yml`, `.moon/toolchains.yml`, inherited tasks in `.moon/tasks.yml` and a `moon.yml` per project, plus the time needed to get `inputs` right. **Do not adopt it on a small repository.** Bun workspaces plus mise tasks cover most of our monorepos. Adopt it when:
 
 - CI is slow enough that people stop waiting for it.
 - There are enough packages that build order is a source of bugs.
 - The repository is polyglot enough that `bun run --filter` stops covering it.
-
-A build system adopted too early is a config file nobody understands, maintained by whoever adopted it.
 
 ### Shape
 
@@ -633,9 +630,9 @@ moon check --all              # every project's build and test tasks
 moon ci                       # what CI runs: affected tasks against the base branch
 ```
 
-### The three ideas that earn the config
+### What moon adds
 
-1. **The graph is explicit.** `deps: ["^:build"]` is the whole trick. No shell script hardcodes the build order, and nobody discovers the order was wrong by seeing a stale `dist/` in production.
+1. **The graph is explicit.** `deps: ["^:build"]` declares that a project's build needs the builds of its dependencies first. No shell script hardcodes the build order.
 2. **Caching is content-based.** A task's cache key hashes its `inputs`, the command, the declared env vars, and its dependencies' hashes. Same hash, no rerun: moon replays the stored output and restores the `outputs`. This is why declaring `inputs` honestly is the highest-leverage thing in a moon config. Too broad (`**/*`) and you never get a hit; too narrow and you get a *wrong* hit, a build that silently skipped a change, which is far worse.
 3. **Affected detection.** `moon ci` compares against the base branch, works out which projects the changed files belong to, walks the graph to find what depends on them, and runs only that. A pull request touching one README runs nothing. Remote caching lets CI warm a cache that laptops read from.
 
@@ -651,7 +648,7 @@ Both can install runtimes and both can run tasks. You have to pick an owner for 
 | Task graph, caching, affected-only | no | yes | **moon** |
 | Non-JS tooling (terraform, CLIs) | yes | no | mise |
 
-**mise owns the toolchain, moon owns the graph.** mise already has to exist for the CLIs moon does not know about. moon itself is the exception: CI has to run it without mise, so it is a dev dependency in the root `package.json` (`@moonrepo/cli`) and `bun install` installs it everywhere. Leave versions out of `.moon/toolchains.yml` so moon uses whatever is on `PATH`.
+**mise owns the toolchain, moon owns the graph.** mise already has to exist for the CLIs moon does not know about. moon itself is the exception: CI runs it too (see [Tasks CI runs](#tasks-ci-runs)), so it is a dev dependency in the root `package.json` (`@moonrepo/cli`) instead of a mise tool. Leave versions out of `.moon/toolchains.yml` so moon uses whatever is on `PATH`.
 
 **Calls flow in one direction only:**
 
@@ -667,7 +664,7 @@ Never the reverse. A `moon.yml` that shells out to `mise run` nests the two runn
 - moon hashes the toolchain version into its cache key only when it manages the toolchain. Since mise does, moon cannot see a Node bump and will happily replay a cache entry built with the old version. Fix: `/mise.toml` and the runtime version files (here `/.nvmrc` and `/.bun-version`) are inputs of every inherited task, as in `.moon/tasks.yml` above.
 - mise exports env vars into the shell and moon inherits them, but moon does not hash what it was never told about. Any env var that changes a task's output gets declared in the task's `env`.
 
-**In CI there is no mise.** The setup action reads the version file, `bun install` brings moon, and a `ci` script in the root `package.json` runs `moon ci`. Locally, `mise run ci` wraps that same script:
+**CI calls moon through a standard script.** A `ci` script in the root `package.json` runs `moon ci`, and `mise run ci` wraps that same script locally:
 
 ```yaml
 steps:

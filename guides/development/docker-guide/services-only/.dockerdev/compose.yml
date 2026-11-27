@@ -1,4 +1,3 @@
-# Containers and volumes are named after the project, not after the .dockerdev directory.
 name: <application-name>-dev
 
 services:
@@ -14,7 +13,6 @@ services:
       POSTGRES_PASSWORD: postgres
       POSTGRES_DB: <database-name>
       PSQL_HISTFILE: /root/log/.psql_history
-    # Fixed host ports: the application runs on the host and connects to localhost.
     ports:
       - 5432:5432
     healthcheck:
@@ -29,26 +27,6 @@ services:
       - redis:/data
     ports:
       - 6379:6379
-
-  minio:
-    image: minio/minio
-    volumes:
-      - ./volumes/minio:/data
-    environment:
-      MINIO_ACCESS_KEY: minio
-      MINIO_SECRET_KEY: 2NVQWHvTT73XMgqapGchy6yAtwHezMZn
-    ports:
-      - 9000:9000
-    command: server /data
-
-  minio-client:
-    image: minio/mc
-    command: /bin/sh
-    entrypoint: /bin/sh
-    volumes:
-      - ./scripts:/scripts:ro
-    depends_on:
-      - minio
 
 volumes:
   redis:

@@ -3,16 +3,15 @@
 # See the meta tools guide for task conventions.
 
 [tasks.setup]
-description = "Fresh clone to running stack: images, Minio bucket, gems, packages, database"
+description = "Fresh clone to running stack: images, gems, packages, database"
 run = """
 set -e
 docker compose -f .dockerdev/compose.yml build
-docker compose -f .dockerdev/compose.yml run --rm --entrypoint='/bin/sh -c /scripts/setup-minio.sh' minio-client
 docker compose -f .dockerdev/compose.yml run --rm rails bin/setup
 """
 
 [tasks.dev]
-description = "Rails, webpacker and Sidekiq in containers, one dekit task each"
+description = "Rails and Sidekiq in containers, one dekit task each"
 raw = true
 run = "dekit"
 
@@ -21,10 +20,6 @@ run = "dekit"
 [tasks."dev:rails"]
 raw = true
 run = "docker compose -f .dockerdev/compose.yml run --rm --service-ports rails"
-
-[tasks."dev:webpacker"]
-raw = true
-run = "docker compose -f .dockerdev/compose.yml run --rm --service-ports webpacker"
 
 [tasks."dev:jobs"]
 raw = true
@@ -38,13 +33,3 @@ run = "docker compose -f .dockerdev/compose.yml run --rm runner"
 [tasks."docker:down"]
 description = "Stop and remove every container; the data in .dockerdev/volumes stays"
 run = "docker compose -f .dockerdev/compose.yml down"
-
-[tasks."docker:localhost-alias"]
-description = "macOS only, once per machine: alias 172.17.0.1 to localhost so Minio has one URL"
-run = """
-set -e
-sudo cp .dockerdev/com.user.docker-host-alias.plist /Library/LaunchDaemons/
-sudo chmod 0644 /Library/LaunchDaemons/com.user.docker-host-alias.plist
-sudo chown root:wheel /Library/LaunchDaemons/com.user.docker-host-alias.plist
-sudo launchctl load /Library/LaunchDaemons/com.user.docker-host-alias.plist
-"""
