@@ -23,18 +23,17 @@ As with our other guides, some clients have their own tooling; you can suggest o
 - **5.** [lefthook: Git hooks](#lefthook-git-hooks)
 - **6.** [dekit: development processes](#dekit-development-processes)
 - **7.** [Workspaces: one repository, many packages](#workspaces-one-repository-many-packages)
-- **8.** [moon: monorepo task graph](#moon-monorepo-task-graph)
-- **9.** [mani: multiple repositories](#mani-multiple-repositories)
-- **10.** [Agent rules](#agent-rules)
-- **11.** [How they compose](#how-they-compose)
-- **12.** [Adoption order](#adoption-order)
-- **13.** [New project checklist](#new-project-checklist)
+- **8.** [mani: multiple repositories](#mani-multiple-repositories)
+- **9.** [Agent rules](#agent-rules)
+- **10.** [How they compose](#how-they-compose)
+- **11.** [Adoption order](#adoption-order)
+- **12.** [New project checklist](#new-project-checklist)
 
 ## Principles
 
 Five rules decide most of the questions this guide answers. When a situation is not covered below, apply these.
 
-**One command per intent, one owner per command.** There will be four things in a repository able to run the tests: a `package.json` script, a mise task, a moon task and a mani task. If all four are wired, nobody knows which one is canonical and two of them are quietly out of date. Each tool owns one layer, and calls flow in one direction only (see [How they compose](#how-they-compose)).
+**One command per intent, one owner per command.** There will be three things in a repository able to run the tests: a `package.json` script, a mise task and a mani task. If all three are wired, nobody knows which one is canonical and one of them is quietly out of date. Each tool owns one layer, and calls flow in one direction only (see [How they compose](#how-they-compose)).
 
 **By default, things that execute our code run natively under mise, and things we talk to over a socket run in containers.** Node, Bun, Ruby, the linter, the CLIs: mise. PostgreSQL, Redis, the search engine, the message broker: Docker Compose. A runtime that runs natively is faster, works on the real file system and is easier to debug. A service in a container is identical for everyone and can be deleted and recreated.
 
@@ -56,11 +55,10 @@ The exception is a project that cannot run natively. Some old projects that we h
 | "Remember to lint before you commit" | [lefthook](https://lefthook.dev/) | `lefthook.yml` |
 | "Open four terminals" | [dekit](https://github.com/pvolok/dekit) | `dekit.yaml` |
 | "These five packages depend on each other" | Bun / pnpm workspaces | `package.json` |
-| "The build takes nine minutes and rebuilds everything" | [moon](https://moonrepo.dev/) | `.moon/`, `moon.yml` |
 | "We have twelve repositories, not one" | [mani](https://manicli.com/) | `mani.yaml` |
 | "The coding agent also reads the stale README" | `CLAUDE.md` | root + one per area |
 
-The default toolset for a single-repository project is **mise + Docker Compose + lefthook + dekit**. Add **workspaces** when a second package appears, **mani** when the project is spread across repositories, and **moon** only for monorepos where the build has become slow enough to hurt.
+The default toolset for a single-repository project is **mise + Docker Compose + lefthook + dekit**. Add **workspaces** when a second package appears and **mani** when the project is spread across repositories.
 
 Every one of these tools is installed by mise, so `mise install` is always the first and only manual step.
 
@@ -214,7 +212,7 @@ Things worth knowing:
 - **`depends` runs in parallel.** When order matters, chain the dependencies (`db:seed` depends on `db:migrate`, which depends on `db:wait`) instead of listing them all in one `depends`.
 - **Trailing arguments are appended to the command.** `mise run lint:staged file.ts` runs `biome check --write --no-errors-on-unmatched file.ts`, which is how lefthook passes the staged files.
 - **Interactive tasks need `raw = true`.** mise captures task output by default; anything that draws a UI or asks for confirmation (dekit, database GUIs, Playwright's UI mode) needs the raw terminal.
-- **`sources` and `outputs` give a cheap `make`-style skip.** If no source changed, the task does not run. Use it for generated code and single-package builds. Do not use it in a repository where moon owns the cache: two caches that disagree are worse than one.
+- **`sources` and `outputs` give a cheap `make`-style skip.** If no source changed, the task does not run. Use it for generated code and single-package builds.
 - **Long scripts become files in `mise-tasks/`.** An executable with a shebang and a `#MISE description=` comment is a task. Real bash or Python with arguments and a linter beats ten lines of TOML-escaped shell.
 - **Write inline scripts in POSIX shell.** Tasks run in `sh`, not in each developer's login shell.
 - **Comment the non-obvious.** A task file is read by the next person at 6pm on a Friday when the database is broken. Say why a task exists and when to reach for it, not what the command does.
@@ -260,7 +258,7 @@ Use the same names in every project so that nobody has to read `mise.toml` to ge
 | `typecheck` | Static type checks (`tsc --noEmit`, Sorbet, mypy...). |
 | `test` | Fast test suite with no external infrastructure beyond the database. |
 | `e2e` | Browser or end-to-end suite. Boots what it needs. |
-| `ci` | Runs locally what CI runs, by calling the same standard scripts. In a moon repository, wraps the `ci` script that runs `moon ci`. |
+| `ci` | Runs locally what CI runs, by calling the same standard scripts. |
 | `db:up` / `db:down` | Start and stop the service containers on their own. |
 | `db:migrate` / `db:seed` | Apply migrations, load fixtures. |
 | `db:reset` | Drop the volume, migrate, seed. The database back to its initial state. |
@@ -546,139 +544,11 @@ Conventions:
 - **Internal packages are referenced as `workspace:*`**, never a published version. Edit `packages/ui`, the change is live in `apps/web`.
 - **Use catalogs** so React does not drift to three different minors across the monorepo.
 - **Keep the lockfile in text form** (`bun.lock`). Binary lockfiles are unreviewable when five people touch dependencies in the same week.
-- **`package.json` scripts are the primitive.** One package, one command, no cross-package knowledge. mise tasks and moon tasks call them; they never call mise or moon.
+- **`package.json` scripts are the primitive.** One package, one command, no cross-package knowledge. mise tasks call them; they never call mise.
 
-Workspaces solve dependency resolution, not builds. `bun run --filter '*' build` rebuilds everything every time and does not know that `packages/types` must build before `apps/api`. That is fine for a few packages. When the repository has many packages and CI runs on every pull request, the build becomes slow, and that is the problem [moon](#moon-monorepo-task-graph) solves.
+Workspaces solve dependency resolution, not builds. `bun run --filter '*' build` rebuilds everything every time and does not know that `packages/types` must build before `apps/api`. That is fine for a few packages.
 
-## moon: monorepo task graph
-
-[moon](https://moonrepo.dev/) is a task runner and build system for monorepos, in the same category as Turborepo and Nx. Where mise tasks and workspace scripts are a flat list, moon knows which project depends on which, hashes inputs and outputs to skip work that has not changed, and can run only what a change affected.
-
-It is the heaviest tool in this guide: `.moon/workspace.yml`, `.moon/toolchains.yml`, inherited tasks in `.moon/tasks.yml` and a `moon.yml` per project, plus the time needed to get `inputs` right. **Do not adopt it on a small repository.** Bun workspaces plus mise tasks cover most of our monorepos. Adopt it when:
-
-- CI is slow enough that people stop waiting for it.
-- There are enough packages that build order is a source of bugs.
-- The repository is polyglot enough that `bun run --filter` stops covering it.
-
-### Shape
-
-```yaml
-# .moon/workspace.yml
-projects:
-  - "apps/*"
-  - "packages/*"
-
-vcs:
-  defaultBranch: "main"
-```
-
-```yaml
-# .moon/toolchains.yml
-# No versions here on purpose: the standard version files own them. mise (locally)
-# and the setup actions (CI) read those files and put the binaries on PATH.
-bun: {}
-node: {}
-```
-
-```yaml
-# .moon/tasks.yml, inherited by every project
-fileGroups:
-  sources:
-    - "src/**/*"
-
-tasks:
-  build:
-    inputs:
-      - "@group(sources)"
-      - "package.json"
-      - "/mise.toml"   # a runtime bump must bust the cache; see below
-      - "/.nvmrc"
-      - "/.bun-version"
-  test:
-    inputs:
-      - "@group(sources)"
-      - "tests/**/*"
-```
-
-```yaml
-# apps/web/moon.yml
-language: "typescript"
-type: "application"
-
-dependsOn:
-  - "ui"
-  - "types"
-
-tasks:
-  build:
-    command: "bun run build"
-    deps:
-      - "^:build"       # ^ = the build task of every project I depend on
-    outputs:
-      - "dist"
-  test:
-    command: "bun test"
-    deps:
-      - "~:build"       # ~ = a task in this same project
-  dev:
-    command: "bun run dev"
-    options:
-      persistent: true
-      cache: false
-```
-
-```bash
-moon run web:build            # this project and everything it needs, in order
-moon run :test                # every project that has a test task
-moon run :test --affected     # only projects touched by uncommitted changes
-moon check --all              # every project's build and test tasks
-moon ci                       # what CI runs: affected tasks against the base branch
-```
-
-### What moon adds
-
-1. **The graph is explicit.** `deps: ["^:build"]` declares that a project's build needs the builds of its dependencies first. No shell script hardcodes the build order.
-2. **Caching is content-based.** A task's cache key hashes its `inputs`, the command, the declared env vars, and its dependencies' hashes. Same hash, no rerun: moon replays the stored output and restores the `outputs`. This is why declaring `inputs` honestly is the highest-leverage thing in a moon config. Too broad (`**/*`) and you never get a hit; too narrow and you get a *wrong* hit, a build that silently skipped a change, which is far worse.
-3. **Affected detection.** `moon ci` compares against the base branch, works out which projects the changed files belong to, walks the graph to find what depends on them, and runs only that. A pull request touching one README runs nothing. Remote caching lets CI warm a cache that laptops read from.
-
-### moon and mise overlap in two places
-
-Both can install runtimes and both can run tasks. You have to pick an owner for each, and the failure when you get it wrong is not a crash, it is a stale cache.
-
-| Concern | mise | moon | Owner |
-|---|---|---|---|
-| Installing runtimes and CLIs | yes | yes | **mise** |
-| Environment variables | yes | per task | mise, declared again in moon tasks that depend on them |
-| Human-facing entry points | yes | yes | **mise** |
-| Task graph, caching, affected-only | no | yes | **moon** |
-| Non-JS tooling (terraform, CLIs) | yes | no | mise |
-
-**mise owns the toolchain, moon owns the graph.** mise already has to exist for the CLIs moon does not know about. moon itself is the exception: CI runs it too (see [Tasks CI runs](#tasks-ci-runs)), so it is a dev dependency in the root `package.json` (`@moonrepo/cli`) instead of a mise tool. Leave versions out of `.moon/toolchains.yml` so moon uses whatever is on `PATH`.
-
-**Calls flow in one direction only:**
-
-```
-mise run test  →  moon run :test --affected  →  bun test  (package.json script)
-bun run ci     →  moon ci                    →  bun test  (CI, no mise)
-```
-
-Never the reverse. A `moon.yml` that shells out to `mise run` nests the two runners, and mise's `sources`/`outputs` skipping then fights moon's cache.
-
-**Two correctness gotchas that follow from this split:**
-
-- moon hashes the toolchain version into its cache key only when it manages the toolchain. Since mise does, moon cannot see a Node bump and will happily replay a cache entry built with the old version. Fix: `/mise.toml` and the runtime version files (here `/.nvmrc` and `/.bun-version`) are inputs of every inherited task, as in `.moon/tasks.yml` above.
-- mise exports env vars into the shell and moon inherits them, but moon does not hash what it was never told about. Any env var that changes a task's output gets declared in the task's `env`.
-
-**CI calls moon through a standard script.** A `ci` script in the root `package.json` runs `moon ci`, and `mise run ci` wraps that same script locally:
-
-```yaml
-steps:
-  - uses: oven-sh/setup-bun@v2
-    with:
-      bun-version-file: .bun-version
-  - run: bun install   # dependencies, plus moon itself
-  - run: bun run ci    # → moon ci
-```
+When a monorepo outgrows this (CI too slow, build order causing bugs), it needs a task graph with caching. We do not have a standard tool for that yet: discuss it with the team before adopting one.
 
 ## mani: multiple repositories
 
@@ -793,15 +663,13 @@ mani            → across repos:  sync, fan out a command that already exists
         │                         (Docker Compose holds the backing services)
         ├── lefthook  → at commit:    fast checks on staged files, via mise tasks
         ├── dekit     → while coding: the multi-process dev loop, via mise tasks
-        └── workspaces → in repo:     packages resolve to each other
-              └── moon → CI & local:  the task graph, the cache, affected-only
+        ├── workspaces → in repo:     packages resolve to each other
         └── CLAUDE.md (root + per area) → for the agent: which command for which intent
 ```
 
 And the overlap trap, stated as who owns what:
 
 - **`package.json` scripts** are the primitive. One package, one command, no cross-package knowledge. Everything else calls these.
-- **moon** owns the graph and the cache, and nothing else. If a task depends on another package's output or benefits from caching, it belongs to moon. CI runs it. It does not own the toolchain.
 - **mise** owns runtimes, env vars and the human-facing entry points. It holds every version number, directly or through the standard version files it reads, and it installs every other tool here. Its tasks are thin wrappers (`mise run dev`, `mise run test`) and the only way developers run commands. CI never calls them. It is the thing you tell a new person about.
 - **Docker Compose** owns the services, and only the services.
 - **lefthook** never defines real work. It calls mise tasks, on staged files, fast.
@@ -857,9 +725,8 @@ Starting from a normal repository, in the order a growing codebase starts to hur
 3. **lefthook**. Half an hour, pays back the first time it catches a broken commit.
 4. **dekit** when you catch yourself with four terminals open. Fifteen minutes.
 5. **Workspaces** when you have a second package that is not a fork of the first.
-6. **moon** only when the build is slow enough to hurt. Not before.
-7. **mani** only when you genuinely have many repositories to herd.
-8. **Agent rules** any time after step 1. They get better as the steps above give them real commands to point at.
+6. **mani** only when you genuinely have many repositories to herd.
+7. **Agent rules** any time after step 1. They get better as the steps above give them real commands to point at.
 
 A handful of small files, each about twenty lines, each doing one thing, each deletable on its own. The alternative is not zero config; it is config that lives in people's heads and in a stale README.
 
@@ -879,5 +746,4 @@ A handful of small files, each about twenty lines, each doing one thing, each de
 - [ ] The README starts with the three commands and the dekit keys, and describes what the project is rather than how to run it.
 - [ ] `CLAUDE.md` names the real entry points and never a command that does not exist.
 - [ ] Workspaces: internal packages use `workspace:*`, shared versions use a catalog, `package.json` scripts stay the primitive.
-- [ ] moon (if adopted): no versions in `.moon/toolchains.yml`, `/mise.toml` is an input of inherited tasks, `@moonrepo/cli` is a root dev dependency, a `ci` script runs `moon ci` and `mise run ci` wraps it, no `moon.yml` calls `mise run`.
 - [ ] Multi-repository project: a meta repository with `mani.yaml`, tags by role and state, `shell: bash -c`, tasks that only fan out.
