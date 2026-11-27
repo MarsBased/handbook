@@ -4,3 +4,4 @@
 1. [Ruby & Rails guidelines](/guides/development/ruby-guidelines.md)
    1. [ActiveRecord guide](/guides/development/activerecord-guide.md)
    1. [Rails patterns](/guides/patterns/README.md)
+1. [Elysia guidelines](/guides/development/elysia-guidelines.md)
