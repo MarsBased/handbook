@@ -8,7 +8,7 @@ Two times a year we fly everyone in and we meet for a day or two of get-together
 
 In the Martian Days, we don't do client work, and we spend quality time sharing the numbers of the company, doing feedback roundtables, workshops, keynotes, brainstorming sessions, and a few leisure activities like padel tennis, dinners, karaoke, and more!
 
-Needless to say, the company pays for the flights, meals and accommodation. If you pay for any taxi or meal, please send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com) and you will get reimbursed in your next payroll, under the concept of expense allowance.
+Needless to say, the company pays for the flights, meals and accommodation. If you pay for any taxi or meal, please send a photo of the receipt to [administration@marsbased.com](mailto:administration@marsbased.com) and you will get reimbursed in your next payroll, under the concept of expense allowance.
 
 In Winter, we wrap our Martian Day with a Winter dinner and a good party.
 
@@ -18,7 +18,7 @@ Once a year, we hold a company retreat lasting three to four days. The goal is t
 
 So far, we've done the following:
 
-* __2027:__ TBC.
+* __2027:__ Mallorca.
 * __2026:__ Pyrenees.
 * __2025:__ Tenerife.
 * __2024:__ Andorra.
@@ -30,15 +30,15 @@ So far, we've done the following:
 * __2018:__ Dublin.
 * __2017:__ Tenerife.
 
-Like in the Martian Days, the company pays for the flights, meals and accommodation for the whole trip. Again, if you pay for any taxi or meal, please send a photo of the receipt to [admin@marsbased.com](mailto:admin@marsbased.com) and you will get reimbursed in your next payroll, under the concept of expense allowance.
+Like in the Martian Days, the company pays for the flights, meals and accommodation for the whole trip. Again, if you pay for any taxi or meal, please send a photo of the receipt to [administration@marsbased.com](mailto:administration@marsbased.com) and you will get reimbursed in your next payroll, under the concept of expense allowance.
 
-## Weekly highlights
+## Weekly Highlights
 
 On Fridays, we post a thread on Linear where each Martian reports how their week has been. Filling this report is mandatory. However, you have flexibility in its format, length, and content.
 
-Reporting on how your week has been, both professionally and on a personal level, helps to overcome the feeling of loneliness of the remote worker. We have seen that those reports and opening up about certain issues help to bond deeper with the rest of the team.
+The report is mainly about your work week, but you're also welcome to share how things are going on a personal level, only if you feel like it. We've seen that opening up helps to overcome the feeling of loneliness that can come with remote work and to bond more deeply with the rest of the team.
 
-Some weeks, you'll share more technical stuff, while on others you will share the pictures of your holidays, notify us of a big achievement/change in your life, share a personal passion that you have we didn't know about or just vent about something that you just can't keep inside any longer.
+Some weeks, you'll share more technical stuff, while on others you may share pictures of your holidays, tell us about a big achievement/change in your life, share a personal passion that we didn't know about or just vent about something that you just can't keep inside any longer. It's completely up to you.
 
 ## Martian Tapas
 
@@ -69,4 +69,6 @@ We like to celebrate certain milestones, like someone's Martian anniversary, the
 
 If you join, signal it with an emoji reaction to the Slack message so we know there's someone in there!
 
+## Question of the Week
 
+Every week, we post a random question on Slack. It can be about anything: your favorite movie, the best trip you've ever taken, or that strange hobby nobody knows about. Answering is completely optional, but it's a fun way to get to know each other a bit better.
