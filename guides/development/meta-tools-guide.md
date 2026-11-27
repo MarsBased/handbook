@@ -178,23 +178,28 @@ description = "Block until PostgreSQL answers, without starting it"
 run = "docker compose -f .dockerdev/compose.yml exec -T postgres pg_isready -U postgres"
 
 [tasks."db:migrate"]
+description = "Apply pending database migrations"
 depends = ["db:wait"]
 run = "bun run --cwd packages/db db:migrate"
 
 [tasks."db:seed"]
+description = "Migrate, then load the development seed data"
 # depends run in parallel, so ordering is a chain: seed after migrate, migrate after db:wait
 depends = ["db:migrate"]
 run = "bun run --cwd packages/db db:seed"
 
 # CI runs these package.json scripts directly; the tasks are the development entry point.
 [tasks.lint]
+description = "Lint the whole project"
 run = "bun run lint"
 
 [tasks."lint:staged"]
+description = "Lint and fix the files passed as arguments"
 # For the pre-commit hook. mise appends trailing arguments to the command.
 run = "bun x biome check --write --no-errors-on-unmatched"
 
 [tasks.test]
+description = "Run the test suite"
 run = "bun run test"
 
 [tasks."db:studio"]
@@ -209,7 +214,7 @@ Things worth knowing:
 - **`depends` runs in parallel.** When order matters, chain the dependencies (`db:seed` depends on `db:migrate`, which depends on `db:wait`) instead of listing them all in one `depends`.
 - **Trailing arguments are appended to the command.** `mise run lint:staged file.ts` runs `biome check --write --no-errors-on-unmatched file.ts`, which is how lefthook passes the staged files.
 - **Interactive tasks need `raw = true`.** mise captures task output by default; anything that draws a UI or asks for confirmation (dekit, database GUIs, Playwright's UI mode) needs the raw terminal.
-- **`sources` and `outputs` give a cheap `make`-style skip.** If no source changed, the task does not run. Use it for generated code and single-package builds. Do not use it in a repository where moon owns the cache: two caches that disagree is worse than one.
+- **`sources` and `outputs` give a cheap `make`-style skip.** If no source changed, the task does not run. Use it for generated code and single-package builds. Do not use it in a repository where moon owns the cache: two caches that disagree are worse than one.
 - **Long scripts become files in `mise-tasks/`.** An executable with a shebang and a `#MISE description=` comment is a task. Real bash or Python with arguments and a linter beats ten lines of TOML-escaped shell.
 - **Write inline scripts in POSIX shell.** Tasks run in `sh`, not in each developer's login shell.
 - **Comment the non-obvious.** A task file is read by the next person at 6pm on a Friday when the database is broken. Say why a task exists and when to reach for it, not what the command does.
@@ -220,7 +225,7 @@ Many CI runners and deployment platforms do not allow installing mise. So anythi
 
 | Ecosystem | Where CI commands live | CI calls |
 |---|---|---|
-| JavaScript / TypeScript | `scripts` in `package.json` | `bun run lint`, `npm run test` |
+| JavaScript / TypeScript | `scripts` in `package.json` | `bun run lint`, `bun run test` |
 | Ruby | Rake tasks and `bin/` scripts | `bin/rspec spec` |
 | Anything else | An executable in `bin/` | `bin/lint` |
 
@@ -381,7 +386,7 @@ pre-push:
 
 ## dekit: development processes
 
-Your application is not one process. API, front end, worker, CSS watcher, the service containers. Six terminal tabs lose track of which is which and one crashes silently; `concurrently` interleaves everything into one stream and cannot restart just the worker; tmux is great if everyone on the team knows tmux.
+Your application is not one process. It is an API, a front end, a worker, a CSS watcher and the service containers. With six terminal tabs, you lose track of which is which, and one crashes silently; `concurrently` interleaves everything into one stream and cannot restart just the worker; tmux is great if everyone on the team knows tmux.
 
 [dekit](https://github.com/pvolok/dekit) is a process manager with a TUI: a list of tasks on the left, the selected task's output on the right. Each keeps its own scrollback, each can be started, stopped and restarted on its own, and the output pane is interactive, so a dev server asking "port 3000 in use, use 3001?" can be answered.
 
@@ -856,7 +861,7 @@ Starting from a normal repository, in the order a growing codebase starts to hur
 7. **mani** only when you genuinely have many repositories to herd.
 8. **Agent rules** any time after step 1. They get better as the steps above give them real commands to point at.
 
-Six small files, each about twenty lines, each doing one thing, each deletable on its own. The alternative is not zero config; it is config that lives in people's heads and in a stale README.
+A handful of small files, each about twenty lines, each doing one thing, each deletable on its own. The alternative is not zero config; it is config that lives in people's heads and in a stale README.
 
 ## New project checklist
 

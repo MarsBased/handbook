@@ -19,7 +19,7 @@ It is useful to think of it as if the Docker image is just the bare-bones OS and
 
 There are 2 options to set up the development environment with Docker:
 
-- **Services only:** External services (database, Redis, Elastic Search, etc.) are run with Docker but the application runs locally.
+- **Services only:** External services (database, Redis, Elasticsearch, etc.) are run with Docker but the application runs locally.
 - **Services + Application:** Apart from services, the application is also run in a container.
 
 Running everything with Docker has the advantage of not needing to have any dependency installed locally, apart from Docker. The disadvantage is that it runs slower because the application can't use the full memory + CPU potential from the computer.
@@ -28,7 +28,7 @@ Services only is our default: the application runs natively, with the runtimes t
 
 ## Services only development setup
 
-In order to Dockerize the services for development application, we create a `.dockerdev` directory in the application root, which contains the `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
+In order to Dockerize the services for the development application, we create a `.dockerdev` directory in the application root, which contains the `compose.yml` and other support files. Separating it into its own directory avoids mixing it with the production Docker setup which usually resides in the root.
 
 When copying the files from this repo you need to replace several values for the appropriate in your application. These values are: `<application-name>`, `<postgres-version>`, `<redis-version>`.
 
@@ -36,7 +36,7 @@ The `.dockerdev` directory contains the following files:
 
 - `compose.yml`: Contains only external services. Its `name` key sets the Docker Compose project name; without it, Docker Compose takes the name from the directory, and every project would be called `dockerdev`.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a college, etc.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
@@ -67,7 +67,7 @@ The `.dockerdev` directory contains the following files:
 - `Dockerfile`: [Dockerfile used to build the image for development](#dockerfile).
 - `.pryrc`: This file is copied to running containers to improve the development experience when working on Pry.
 - `.psqlrc`: This file is copied to running containers to improve the development experience when working on a Postgres session.
-- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a college, etc.
+- `volumes` directory: This directory needs to be gitignored and its purpose is to store the contents of the postgres volume. This makes it easier to manipulate it, back it up if you are migrating to a new laptop, share it with a colleague, etc.
 
 Apart from the files in `.dockerdev` we have a few more moving pieces:
 
